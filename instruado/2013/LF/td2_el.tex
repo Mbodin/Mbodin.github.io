@@ -1,0 +1,177 @@
+\documentclass[11pt,a4paper]{article}
+  \usepackage[T1]{fontenc}%
+  \usepackage[obeyspaces]{url} % \urlstyle{sf}%
+  \usepackage{mathpazo}%
+\usepackage[dvips]{epsfig}
+\usepackage[latin1]{inputenc}
+
+\input{../macroTD} 
+  
+\titreTD{Langages Formels}{TD 2}{Résiduels et automates finis} 
+
+\setboolean{corrige}{true}
+
+
+\newcommand\abs[1]{\left|#1\right|}
+ 
+
+\parskip=-0.1\baselineskip \sloppy
+
+
+\newcommand{\N}{\mathbb{N}}%
+\newcommand{\D}{\mathbb{D}}%
+\newcommand{\dist}{\mathop{\mathrm{d}}}%
+\newcommand{\fix}{\mathop{\mathrm{Fix}}}%
+
+\begin{document}
+
+\thispagestyle{empty}
+\maketitle
+
+\begin{exer}[R\'esiduels]
+
+
+  \begin{question}
+    Calculer le r\'esiduel de $L$ par rapport à tout mot $u$ sur $\Sigma
+    = \{a,b\}$ dans les exemples suivants~:
+    \[ L = a^*b^* \hspace{2cm} L' = \{a^nb^n\st \ n \geq 0\}\]
+    \vspace{-4ex}
+  \end{question}
+
+ 
+  \begin{question}
+    Si $x$ est une lettre de $\Sigma$, que valent $x^{-1}(L_1 \cup L_2)$,
+    $x^{-1}(L_1 L_2)$ et $x^{-1}L_1^*$ où $L_1$ et $L_2$ sont deux langages sur $\Sigma$?
+  \end{question}
+
+
+\end{exer}
+
+
+\begin{exer}[Codes et quotients]
+
+On étend la définition des résiduels à gauche à des langages sur
+$\Sigma^*$ : le {\bf quotient à gauche} d'un langage $L_1$ par un
+langage $L_2$ est défini par $L_2^{-1}L_1 = \bigcup_{u \in L_2} u^{-1}
+L_1$.
+
+Soit $X$ un sous-ensemble de $\Sigma^+$. On définit la suite $(U_i)$ de
+langages
+\[
+\left\{
+\begin{array}{rcl}
+U_1 &=& X^{-1}X \smallsetminus \{\varepsilon\}\\
+U_{n+1} &=& X^{-1}U_{n} \cup U_{n}^{-1}X \mbox{ pour } n \geq 1\\
+\end{array}
+\right.
+\]
+
+\begin{question}
+Montrer que pour tout $n \geq 1$, et pour tout $k \in [1,n]$, 
+\[ \varepsilon \in U_n \iff \exists u \in U_k, \exists i,j \geq 0
+\mbox{ tels que } uX^i \cap X^j \neq \emptyset \mbox{ avec } i+j+k=n
+\]
+\end{question}
+
+
+  On appelle {\bf code} sur un alphabet $\Sigma$ tout langage $X$ sur
+  $\Sigma$ tel que pour toutes familles $(x_i) \in X^{\llbracket 1, p \rrbracket}$
+  et $(y_i) \in X^{\llbracket 1, q \rrbracket}$,
+  $x_1x_2 \ldots x_p = y_1y_2 \ldots y_q$ entraine $p = q$ et
+  $x_i = y_i$ pour tout $i$. Dire que $X$ est un code revient donc à
+  dire que tout \'el\'ement de $X^*$ se factorise de manière unique sur
+  $X$.
+
+\begin{question}
+En déduire que $X$ est un code si et seulement si aucun des $U_i$ ne
+contient $\varepsilon$.
+\end{question}
+
+\end{exer}
+
+
+
+\begin{exer}
+  Écrire un automate déterministe qui reconnaît les entiers écrits en base $2$ qui sont congrus à $1$
+  modulo $3$.
+\end{exer}
+
+
+\begin{exer}[La méthode de Thompson]
+  On décide d'ajouter aux automates non déterministes la possibilité d'utiliser des
+  $\varepsilon$-transitions. $\varepsilon$ est une étiquette de transition qui correspond au mot vide.
+  
+  Par exemple, $b \in \mathcal{L}(A)$, avec $A$ l'automate ci-dessous.
+
+  \begin{center}
+    \input{autoepsilon.pstex_t}
+  \end{center}
+
+  \begin{question}
+    Proposer un algorithme de déterminisation des automates finis à $\varepsilon$-transitions et
+    l'appliquer sur l'exemple ci-dessus.
+  \end{question}
+
+
+  \begin{question}
+    Montrer que tout automate fini non déterministe est équivalent à un automate fini non déterministe
+    ayant un unique état initial et un unique état final.
+  \end{question}
+
+
+  \begin{question}
+    Soient $A$ et $B$ deux automates finis. Construire des automates reconnaissant
+\[\mathcal{L}(A) . \mathcal{L}(B)\hspace{2cm}\mathcal{L}(A) \cup \mathcal{L}(B)\hspace{2cm}\mathcal{L}(A)^*\]
+  \end{question}
+
+
+\end{exer}
+
+
+\begin{exer}[Déterminisation]
+  \begin{question}
+    Déterminiser l'automate suivant :
+    
+    \begin{center}
+      \input{auto2.pstex_t}
+    \end{center}
+  \end{question}
+
+\begin{question}
+  Nous allons maintenant calculer la complexité au pire de la déterminisation d'un automate en fonction de son
+  nombre d'états. On a vu en cours que le déterminisé d'un automate à
+  $Q$ états a au plus  $2^{|Q|}$ états, nous allons détailler un exemple.
+    Considérons l'automate $A$ suivant, qui reconnaît l'ensemble des mots de $\{a,b\}^*$ dont la
+    $n^e$ lettre en partant de la fin est un $a$ (on suppose $n>0$):
+
+    \begin{center}
+      \input{auto3.pstex_t}
+    \end{center}
+
+    Soit $B = (Q, \Sigma = \{a,b\}, q_0, F, \delta)$ un automate fini déterministe reconnaissant le même
+    langage que $A$.
+
+    \begin{subquestion}
+      Montrer que $B$ est complet (i.e. si $u \in \Sigma^*$, alors $\delta(q_0,u)$ existe).
+    \end{subquestion}
+
+
+    \begin{subquestion}
+      Prouver que la fonction $\varphi : \begin{array}[t]{l} \Sigma^{n-1}  \rightarrow  Q \\
+	u \mapsto q_u = \delta(q_0,u) \end{array} $ est injective. 
+
+En conclure que la
+      déterminisation de $A$ est au pire exponentielle en nombre d'états.
+    \end{subquestion}
+
+
+\end{question}
+
+
+
+\end{exer}
+
+
+\end{document}
+
+

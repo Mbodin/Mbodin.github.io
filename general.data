@@ -1,0 +1,144 @@
+eo
+=langname
+Esperanto
+=textLink
+Ligilo
+=textHide
+Kaŝi
+=textShow
+Montri
+=textHideAll
+Kaŝi ĉiun
+=textShowAll
+Montri ĉiun
+=textStart
+Eki na
+=needJSCSS
+Por bone foliumi tiun retejon, mi konsilas al vi uzi retfoliumilon kiu kapablas ruli <span class = "name">Ĝavaskripto</span>n aŭ <span class = "name">CSS</span>n.
+=JSCSSnotthere
+Se vi legas tiun ĉi mesaĝon, signifas ke nek <span class = "name">JavaScript</span>, nek <span class = "name">CSS</span> ruleblas (aŭ estas ŝaltata) per via nuna foliumilo.
+=noLanguageDetected
+<a class = "switchLanguage_eo internalLink" href = "#eo">Alklaki tie por legi tiun retpaĝon Esperante</a>.
+=relocation
+Tiu retejo baldaŭ ŝanĝos sian retlokon.  Mi do konsilegas al vi kontroli ĉu la nova pretas tie:  
+=working
+Mi ŝanĝas tiun ĉi retejon:  ĝi probable nun ŝajnas stranga… sed baldaŭ ne plu!
+=notUpToDate
+Tiu parto de tiu ĉi retejo ne nun ĝisdatas… sed mi konscias tion kaj baldaŭ zorgos pri tio!
+=created
+Retejo kreita per <span class = "name">Martin Bodin</span>.  Se vi renkontas ian ajn problemon kun ĝi, bonvolu <span class = "contactme">kontakti min</span>.
+=socials
+Alklaki ĉi tie pro aktivigi sociajn skriptojn.
+=validHTML5
+Normale estas valida laŭ <span class = "name">HTML5</span>
+=validCSS3
+Normale estas valida laŭ <span class = "name">CSS3</span>
+=wrongLang
+Ŝajnas ke tiu paĝo ne afiŝas per la ĝusta lingvo:  <a class = "switchLanguage_eo internalLink" href = "#eo">ĉu pliŝatus vi legi ĝin Esperante</a>?
+=errorInSocial
+Ia problemo okazis dum la eko de ies socia skripto…
+=spyingSocials
+Sociaj skriptoj estas kodoj el diversaj ne-ĉiel-fidemaj retejoj kaj povas kaŝobservi vin.  Se vi ne fidas ilin, <a onclick = "setPassingArgument ('social', 'no', true)" class = "internalLink" href = "#">alklaku ĉi tie por malaktivigi ilin</a>.
+=permanentSocials
+Por aŭtomate aktivigi sociajn skriptojn dum vi retumas en ĉi tiu retejo sen devi alklaki ĉi sube, <a href = "javascript: permanentSocials ()">alklaku ĉi tie</a>.
+=contactmeNoJS
+mailto:martin[Bonvolu anstataŭigi tiun ĉi per punkto]bodin[kaj tiun ĉi per ĉe-signo]inria[kaj per alia puntko]fr
+=switchLanguage
+Ŝanĝi je lingvo
+
+en
+=langname
+English
+=textLink
+Link
+=textHide
+Hide
+=textShow
+Show
+=textHideAll
+Hide All
+=textShowAll
+Show All
+=textStart
+Start
+=needJSCSS
+To correctly visualise this website, I advise you to use a browser able to execute <span class = "name">JavaScript</span> or <span class = "name">CSS</span>.
+=JSCSSnotthere
+If you read this message, this means that neither <span class = "name">JavaScript</span>, nor <span class = "name">CSS</span> are compatible with (or set up by) your current browser.
+=noLanguageDetected
+<a class = "switchLanguage_en internalLink" href = "#en">Click here to get the English version of this webpage.</a>
+=relocation
+This website will soon change its location.  I thus strongly advise you to check if the new one is already available there:  
+=working
+I’m currently working on this website:  it probably now feels a bit weird… but it won’t soon!
+=notUpToDate
+This part of the website is not up to date yet… but I’m conscious of it and shall fix it soon!
+=created
+Website created by <span class = "name">Martin Bodin</span>.  In case of issues with this website, do not hesitate to <span class = "contactme">contact me</span>.
+=socials
+Click here to activate social scripts.
+=validHTML5
+Should be valid according to <span class = "name">HTML5</span>
+=validCSS3
+Should be valid according to <span class = "name">CSS3</span>
+=wrongLang
+It seems that this page isn’t displaying in your prefered language:  <a class = "switchLanguage_en internalLink" href = "#en">do you prefer to read it in English</a>?
+=errorInSocial
+An error occured while executing some social scripts…
+=spyingSocials
+Social scripts involves third-party sources that can’t always be trusted and that can spy you.  If you don’t trust them, <a onclick = "setPassingArgument ('social', 'no', true)" class = "internalLink" href = "#">click here to disable them</a>.
+=permanentSocials
+To automatically enable social scripts while surfing in this website without being forced to click underneath, <a href = "javascript: permanentSocials ()">click here</a>.
+=contactmeNoJS
+mailto:martin[please replace this text by a dot]bodin[and this one by an at symbol]inria[and a dot again]fr
+=switchLanguage
+Switch Language
+
+fr
+=langname
+French
+=textLink
+Lien
+=textHide
+Cacher
+=textShow
+Montrer
+=textHideAll
+Cacher tout
+=textShowAll
+Montrer tout
+=textStart
+Lancer
+=needJSCSS
+Pour naviguer correctement sur ce site, je conseille fortement d’utiliser un navigateur capable d’exécuter du <span class = "name">JavaScript</span> ou du <span class = "name">CSS</span>.
+=JSCSSnotthere
+Si vous lisez ce message, c’est que ni <span class = "name">JavaScript</span>, ni <span class = "name">CSS</span> ne sont supportés (ou activés) par votre navigateur actuel.
+=noLanguageDetected
+<a class = "switchLanguage_fr internalLink" href = "#fr">Cliquez ici pour voir le contenu de cette page en Français</a>.
+=relocation
+Ce site Internet va bientôt changer d’adresse.  Je vous recommande donc chaudement de vérifier si le nouveau site est déjà disponible à cette adresse :  
+=working
+Je suis en train de bricoler ce site :  il doit sembler un brin étrange… mais ça devrait bientôt s’améliorer !
+=notUpToDate
+Cette partie du site n’est pas à jour… mais j’en ai bien conscience et devrait bientôt m’en occuper !
+=created
+Site conçu par <span class = "name">Martin Bodin</span>.  En cas de problème avec ce site, n’hésitez pas à <span class = "contactme">me contacter</span>.
+=socials
+Cliquez ici pour activer les scripts sociaux.
+=validHTML5
+Devrait respecter l’<span class = "name">HTML5</span>
+=validCSS3
+Devrait respecter le <span class = "name">CSS3</span>
+=wrongLang
+Il semblerait que cette page ne s’affiche pas dans votre langue préférée :  <a class = "switchLanguage_fr internalLink" href = "#fr">préférez-vous la lire en Français</a> ?
+=errorInSocial
+Une erreur s’est produite lors de l’exécution de certain scripts sociaux.
+=spyingSocials
+Les scripts sociaux nécessitent l’usage de scripts venant de sources tierces à qui l’on ne peut pas toujours faire confiance et qui peuvent vous espionner.  Si vous ne leur faites pas confiance, <a onclick = "setPassingArgument ('social', 'no', true)" class = "internalLink" href = "#">cliquez ici pour les désactiver</a>.
+=permanentSocials
+Pour activer automatiquement les scripts sociaux lors de la navigation sur ce site sans avoir à cliquer en bas de la page, <a href = "javascript: permanentSocials ()">cliquez ici</a>.
+=contactmeNoJS
+mailto:martin[merci de remplacer ceci par un point]bodin[et ceci par un arobase]inria[et encore un point]fr
+=switchLanguage
+Changer de langue
+

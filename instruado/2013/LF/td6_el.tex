@@ -1,0 +1,218 @@
+\documentclass[11pt,a4paper]{article}
+  \usepackage[T1]{fontenc}%
+  \usepackage[obeyspaces]{url} % \urlstyle{sf}%
+  \usepackage{mathpazo}%
+\usepackage[dvips]{epsfig}
+\usepackage[latin1]{inputenc}
+\usepackage{textcomp}
+
+\input{../macroTD} 
+  
+\titreTD{Langages Formels}{TD 6}{Lemme de l'étoile et Lemme d'Ogden} 
+
+\setboolean{corrige}{true}
+
+% \documentclass[11pt]{article}
+
+ 
+
+\parskip=0.3\baselineskip \sloppy
+
+
+\newcommand{\fleche}{\rightarrow}%
+\newcommand{\Rat}{\mathsf{Rat}}%
+\newcommand{\N}{\mathbb{N}}%
+\newcommand{\D}{\mathbb{D}}%
+\newcommand{\dist}{\mathop{\mathrm{d}}}%
+\newcommand{\fix}{\mathop{\mathrm{Fix}}}%
+\newcommand{\vertbar}{\ \vert \ }%
+%\newcommand{\vdashl}{\vdash\mspace{-6 mu}\textthreequartersemdash}%
+\def\vdashl{\mathrel {\scriptstyle |} \joinrel\mathrel {\scriptstyle -}\joinrel\mathrel {\scriptstyle -}\joinrel\mathrel {\scriptstyle -}}
+\def\vdashle{\mathrel {\scriptstyle |} \joinrel\mathrel {\scriptstyle \overset{*}{-}}\joinrel\mathrel {\scriptstyle -}\joinrel\mathrel {\scriptstyle -}}
+\def\vdashlp{\mathrel {\scriptstyle |} \joinrel\mathrel {\scriptstyle \overset{+}{-}}\joinrel\mathrel {\scriptstyle -}\joinrel\mathrel {\scriptstyle -}}
+
+\begin{document}
+
+\thispagestyle{empty}
+\maketitle
+
+
+\begin{exer}[Point d'\emph{Étoile noire}, le lemme de l'étoile nous suffit !]
+
+Montrer que les langages suivants ne sont pas algébriques.
+\begin{enumerate}
+\item $L_1 = \{a^ib^jc^k,\ i<j<k\}$ ;
+\item $L_2 = \{a^nb^nc^m,\ n \leq  m \leq  2n\}$ ;
+\item $L_3 = \{a^{2^n},\ n \geq 0 \}$ ;
+\item $L_4 = \{a^{n^2},\ n \geq 0 \}$ ;
+\end{enumerate}
+
+\Correction{
+}
+
+
+
+\end{exer}
+
+
+\begin{exer}[Lemme d'Ogden]
+
+L'objectif de cet exercice est de montrer une version plus forte du lemme de
+l'étoile pour les langages algébriques~:
+\begin{Lemma}{Ogden}
+  Soit $L$ un langage algébrique. Il existe un entier $N$ tel que pour
+  tout mot $z\in L$ dans lequel on marque au moins $N$ positions
+  distinctes, il est possible de décomposer $z$ sous la forme
+  $z=uxvyw$ avec
+  \begin{itemize}
+  \item $x$ ou $y$ contient au moins une position marquée,
+  \item $xvy$ contient au plus $N$ positions marquées,
+  \item pour tout $i\geq 0$, $ux^ivy^iw\in L$.
+  \end{itemize}
+\end{Lemma}
+
+\begin{question}
+  On se donne une grammaire algébrique propre $G$ engendrant un langage $L$.
+  Montrer qu'il existe une grammaire sous forme normale de Chomsky (CNF)
+  reconnaissant le langage $L-\{\varepsilon\}$.
+\end{question}
+
+$\blacktriangleright$~Rappel : Une grammaire CNF est une grammaire dont toutes les
+productions sont de la forme
+  \[A\rightarrow BC\quad \textrm{ou}\quad A\rightarrow a\]
+  
+
+\Correction{
+}
+
+
+
+
+
+\begin{Def}{}{}
+  Soit $T$ un sous-arbre d'un arbre de dérivation selon une grammaire
+  CNF. On suppose marquées certaines feuilles de $T$. On appelle
+  \emph{embranchement} un n\oe ud de $T$ ayant deux fils, tel que
+  chacun de ses fils contienne au moins une feuille marquée.
+\end{Def}
+
+\begin{question}
+  Soit $T$ un sous-arbre d'un arbre de dérivation selon une grammaire
+  CNF. On suppose qu'au moins $2^h$ feuilles distinctes de $T$ ont été
+  marquées.
+  
+  Montrer qu'il existe un chemin, de la racine à une feuille, passant
+  par au moins $h$ embranchements.
+\end{question}
+
+\Correction{
+}
+    
+
+
+
+
+
+
+\begin{question}
+  On considère une grammaire CNF $G$ engendrant le langage $L$.
+  Montrer qu'il existe un entier $N$ tel que :
+  \begin{itemize}
+  \item pour tout mot $w\in L$ dans lequel on marque au moins $N$ positions,
+  \item pour tout arbre de dérivation de $w$,
+  \end{itemize}
+  il existe deux embranchements $b_1$ et $b_2$ tels que
+  \begin{itemize}
+  \item[$\bullet$] $b_1$ est un ancêtre de $b_2$,
+  \item[$\bullet$] $b_1$ est un ancêtre d'au plus $N$ feuilles marquées,
+  \item[$\bullet$] $b_1$ et $b_2$ sont étiquetés par la même variable.
+  \end{itemize}
+\end{question}
+
+
+\Correction{
+}
+
+
+\begin{question}
+  En déduire le lemme d'Ogden.  
+\end{question} 
+
+\Correction{
+}
+
+
+\begin{question} 
+  On s'intéresse au langage $L_5=\{a^ib^jc^kd^l\quad |\quad i=0\quad \textrm{ou}\quad 
+  j=k=l\}$.
+
+
+  \begin{subquestion}
+    Montrer que pour tout $N\in\N^+$ et tout mot $z\in L_5$ avec $|z| \ge N$, il existe une
+    décomposition $z=uxvyw$ telle que
+    \begin{itemize}
+    \item $|xy|\geq 1$
+    \item $|xvy|\leq N$
+    \item pour tout $i\geq 0$, $ux^ivy^iw\in L_5$.
+    \end{itemize}
+  \end{subquestion}
+  
+  \Correction{
+  }
+
+
+
+  \begin{subquestion}
+    Montrer que $L_5$ n'est pas algébrique.
+  \end{subquestion}
+
+  \Correction{
+  }
+\end{question}
+
+
+\end{exer}
+
+
+\begin{exer}[Couper la poire en deux n'est pas toujours rationnel.]
+
+  Pour tout langage $L$ sur $\Sigma$, on d\'efinit
+  \[\frac{1}{2}L=\left\{x\in\Sigma^* \middle| \exists y\in \Sigma^*,\ |x|=|y|\ \textrm{et}\ xy\in L\right\}\]
+
+  \begin{question}
+    Montrer que le langage $L_6=\left\{a^nb^nc^md^{3m} \middle| n,m\geq 1\right\}$
+    est alg\'ebrique.
+  \end{question}
+
+  \Correction{
+  }
+  
+  \begin{question}
+    Calculer $\frac12L_6$.
+  \end{question}
+
+  \Correction{
+  }
+
+
+
+
+  \begin{question}
+    Montrer que $\frac12L_6$ n'est pas alg\'ebrique.
+  \end{question}
+
+  \Correction{
+}
+
+
+
+
+\end{exer}
+
+
+
+
+
+\end{document}
+
+

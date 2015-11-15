@@ -1,0 +1,679 @@
+
+.invisible {
+	display:  none ;
+}
+
+p {
+	text-align:  justify ;
+}
+
+.center {
+	text-align:  center ;
+	margin-left:  auto ;
+	margin-right:  auto ;
+}
+
+p.center {
+	text-align:  center ;
+	margin-left:  auto ;
+	margin-right:  auto ;
+}
+
+html {
+	margin:  0 ;
+	padding:  0 ;
+}
+
+body {
+	min-width:  800px ;
+	color:  #2e3436 ;
+	background-color:  #eeeeec ;
+	margin:  0 ;
+	padding:  0 ;
+}
+
+.langcontainer {
+    margin:  0 ;
+    padding:  0 ;
+}
+
+div.needlang, div.nolanguagedetected, div.langen, div.langeo, div.langfr {
+    margin:  0 ;
+    padding:  0 ;
+}
+
+.needlang, .langen, .langeo, .langfr {
+	display:  none ;
+}
+
+#en:target .langen,
+#eo:target .langeo,
+#fr:target .langfr,
+#en:target .needlang,
+#eo:target .needlang,
+#fr:target .needlang {
+    display:  block ;
+}
+
+.nolanguagedetected {
+    display:  block ;
+	margin-left:  auto ;
+	margin-right:  auto ;
+	text-align:  center ;
+}
+
+#en:target .nolanguagedetected,
+#eo:target .nolanguagedetected,
+#fr:target .nolanguagedetected {
+	display:  none ;
+}
+
+a {
+	text-decoration:  none ;
+	color:  #75507b ;
+}
+
+a:hover, a:active {
+	text-decoration:  underline ;
+}
+
+.message {
+	margin-left:  auto ;
+	margin-right:  auto ;
+	width:  90% ;
+	text-align:  center ;
+	padding:  3px ;
+	border:  2px solid #eeeeec ;
+	background-color:  #ad7fa8 ;
+	color:  #eeeeec ;
+}
+
+
+.paperName {
+	font-weight: bold ;
+}
+
+.journal {
+	font-style: italic ;
+}
+
+.name {
+	font-variant: small-caps ;
+}
+
+.town {
+	font-variant: small-caps ;
+}
+
+
+ul.blocks {
+	list-style:  none ;
+	margin:  0 ;
+	padding:  0 ;
+}
+
+ul.blocks li {
+	display:  inline ;
+	margin:  0 1em 0 1em ;
+	padding:  0 ;
+}
+
+#banner {
+	width:  100% ;
+	margin:  0px ;
+	padding:  0px ;
+	border:  none ;
+}
+
+header {
+	display:  block ;
+}
+
+footer {
+	display:  block ;
+	clear:  both ;
+}
+
+#foot {
+	width:  100% ;
+	margin:  0px ;
+	padding:  0px ;
+	border:  none ;
+	height:  15em ;
+}
+
+p.footbar {
+	font-size:  small ;
+	color:  #5c3566 ;
+	text-align:  center ;
+}
+
+#social-messages {
+	display:  block ;
+	clear:  both ;
+}
+
+#titlebar {
+	padding:  0.5ex 1em 0.5ex 1em ;
+	margin:  0 ;
+	background-color:  #75507b ;
+	clear:  both ;
+}
+
+#titlebar:after {
+	content:  "";
+	visibility:  hidden ; 
+	display:  block ;
+	height:  0 ;
+	clear:  both ;
+}
+
+#titlebar h1 {
+	color:  #eeeeec ;
+	text-shadow:  0.5ex 0.5ex 0.6ex #5c3566 ;
+	margin:  0.5ex 0 ;
+}
+
+#titlebar a {
+	color:  #eeeeec ;
+}
+
+
+#menu {
+	text-align:  center ;
+	color:  #eeeeec ;
+	margin:  0 ;
+}
+
+#menu li {
+	text-align:  center ;
+	list-style:  none ;
+	padding:  5px 1em 1ex 1em ;
+	border:  none ; 
+}
+
+.leftMenuItem {
+	float:  left ;
+}
+
+.rightMenuItem {
+	float:  right ;
+}
+
+#menu a {
+	color:  #eeeeec ;
+}
+
+.menuIsCurrentlyViewed {
+	text-shadow:  1ex 1ex 0.4ex #5c3566 ;
+}
+
+#main {
+	width:  90% ;
+	padding:  60px 60px 60px 60px ;
+	overflow:  visible ;
+}
+
+#imageOfMe {
+	float:  right ;
+	margin:  2em 2em 2em 2em ;
+	height:  6cm ;
+	border:  4px solid #5c3566 ;
+}
+
+hr {
+	width:  40% ;
+	margin:  1.6em auto ;
+	border:  1px solid #ad7fa8 ;
+}
+
+
+h2 {
+	color:  #75507b ;
+}
+
+h2:hover {
+	color:  #5c3566 ;
+}
+
+h3 {
+	font-weight:  bold ;
+	color:  #75507b ;
+	margin-bottom:  0ex ;
+	border-bottom:  2px solid #eeeeec ;
+}
+
+h3:hover {
+	color:  #5c3566 ;
+}
+
+
+.englobingProjectItem {
+	margin-top:  10px ;
+	font-size:  0 ;
+}
+
+.englobingProjectItem h3 {
+	margin-top:  0 ;
+	border-right:  2px solid #eeeeec ;
+}
+
+.englobingProjectItem:hover h3 {
+	border-bottom:  2px solid #ad7fa8 ;
+	border-right:  2px solid #ad7fa8 ;
+}
+
+.projectDescription {
+	margin:  0 0 0 1ex ;
+	padding:  0.5ex 0 1ex 1ex ;
+	border-left:  2px solid #ad7fa8 ;
+	width:  95% ;
+}
+
+.englobingProjectItemDescription {
+	display:  inline-block ;
+	vertical-align:  top ;
+	width:  75% ;
+	margin:  0 ;
+	padding:  0 ;
+	font-size:  1rem ;
+}
+
+.englobingProjectLinks {
+	padding:  0.5ex 0.7em 0.5ex 0 ;
+	margin:  0 ;
+	width:  23% ;
+	display:  inline-block ;
+	vertical-align:  top ;
+	min-height:  2em ;
+	border-top:  2px solid #eeeeec ;
+	font-size:  1rem ;
+}
+
+.projectLinks {
+	padding:  0.2ex 1ex ;
+	margin:  0 ;
+}
+
+.projectLinks li, .errorLog li, .allLoadedFighters li, .listitem li {
+	/* If you have a better way to use an svg image and to set its length in a “li” item, I’m interested! */
+	list-style-type:  none ;
+	padding-left:  1.5em ;
+	background-size:  1em ;
+	background-image:  url(puce.svg) ;
+	background-color:  #eeeeec ;
+	background-repeat:  no-repeat ;
+	background-position:  left center ;
+}
+
+.englobingProjectItem:hover .englobingProjectLinks {
+	border-top:  2px solid #ad7fa8 ;
+}
+
+
+#maintainer {
+	text-align: right ;
+}
+
+.flag_en, .flag_eo, .flag_fr {
+	display:  inline ;
+}
+
+#en:target .flag_en,
+#eo:target .flag_eo,
+#fr:target .flag_fr {
+    display:  none ;
+}
+
+#en:target #menu li.flag_list_alt,
+#eo:target #menu li.flag_list_alt,
+#fr:target #menu li.flag_list_alt {
+	display:  none ;
+}
+
+.flag {
+	width:  3ex ;
+	display:  block ;
+}
+
+#menu .divflag {
+	padding:  2px ;
+	margin:  5px 1em 1ex 1em ;
+	background-color:  #5c3566 ;
+}
+
+#menu .divflag:hover {
+	background-color:  #ad7fa8 ;
+}
+
+#menu ul {
+	margin:  0 ;
+	padding:  0 1em ;
+}
+
+#menu ul:after {
+	content:  "" ;
+	display:  block ;
+	clear:  both ;
+	height:  0 ;
+	line-height:  0 ;
+	visibility:  hidden ;
+}
+
+.toc {
+	border:  2px solid #ad7fa8 ;
+	padding:  0 0 0 0 ;
+	margin:  0 0 0 0 ;
+	overflow:  auto ;
+	position:  relative ;
+}
+
+.toc:hover {
+	border:  2px solid #75507b ;
+	background-color:  #ad7fa8 ;
+}
+
+.tocHover {
+	padding:  0 0 0 0 ;
+	margin:  0 0 0 0 ;
+	overflow:  auto ;
+	position:  relative ;
+	border:  2px solid #75507b ;
+	background-color:  #ad7fa8 ;
+}
+
+.toc a {
+	font:  bold small serif ;
+	color:  #ad7fa8 ;
+}
+
+.toc:hover a {
+	color:  #eeeeec ;
+}
+
+.tocHover a, .toc:hover a, .toc a:focus {
+	font:  bold small serif ;
+	color:  #eeeeec ;
+}
+
+.toc .tocMain li {
+	list-style:  none ;
+	margin:  0 0 0 0 ;
+	padding:  0 0 1px 1em ;
+	border-left:  6px solid #eeeeec ;
+	border-right:  6px solid #eeeeec ;
+}
+
+.tocHover .tocMain li, .toc:hover .tocMain li {
+	list-style:  none ;
+	margin:  0 0 0 0 ;
+	padding:  0 0 1px 1em ;
+	border-left:  6px solid #ad7fa8 ;
+	border-right:  6px solid #ad7fa8 ;
+}
+
+.toc .tocMain li:hover, .tocHover .tocMain li:hover {
+	border-left:  6px solid #75507b ;
+	border-right:  6px solid #75507b ;
+}
+
+.toc a.toc_command, .tocHover a.toc_command {
+	font:  small serif ;
+	float:  right ;
+	color:  #eeeeec ;
+	padding:  0 1em 0 1em ;
+}
+
+.toc a.toc_command:hover, .tocHover a.toc_command:hover, .toc a.toc_command:focus, .tocHover a.toc_command:focus {
+	text-decoration:  underline ;
+	cursor:  pointer ;
+}
+
+.toc .tocMain {
+	overflow:  auto ;
+	margin:  0 0 0 0 ;
+	padding:  1ex 0 1ex 0 ;
+	display:  block ;
+	width:  83% ;
+	border-right:  2px solid #eeeeec ;
+}
+
+.tocHover .tocMain, .toc:hover .tocMain {
+	overflow:  auto ;
+	margin:  0 0 0 0 ;
+	padding:  1ex 0 1ex 0 ;
+	display:  block ;
+	width:  83% ;
+	border-right:  2px solid #75507b ;
+}
+
+.tocAll {
+	overflow:  auto ;
+	width:  15% ;
+	position:  absolute ;
+	right:  0 ;
+	top:  20% ;
+}
+
+.tocAll ul {
+	vertical-align:  middle ;
+	list-style:  none ;
+	margin:  0 ;
+	padding:  0 ;
+}
+
+.tocAll li {
+	display:  block ;
+	margin:  1ex 0 1ex 0 ;
+	padding:  0 ;
+}
+
+h2 a.toc_command {
+	font:  small serif ;
+	float:  right ;
+	color:  #eeeeec ;
+	padding:  0 1em 0 1em ;
+}
+
+h2:hover a.toc_command {
+	color:  #ad7fa8 ;
+}
+
+/* TODO:  Split this file to something more readable and modular. */
+
+#drop_zone {
+	width:  100% ;
+	height:  2em ;
+	vertical-align:  middle ;
+}
+
+#importFile {
+	width:  60% ;
+}
+
+#text_zone p {
+	margin:  0.5ex auto ;
+}
+
+#text_zone textarea {
+	width:  100% ;
+	max-width:  100% ;
+	height:  auto ;
+}
+
+.errorLog {
+	border:  2px solid #ef2929 ;
+	padding:  1ex 1em ;
+	margin:  1em ;
+}
+
+.errorLog p {
+	margin:  0.5ex auto ;
+}
+
+
+#settingsForm {
+	margin:  1em auto ;
+	text-align:  center ;
+}
+
+p.settingButton {
+	margin:  1ex 2em ;
+	display:  inline-block ;
+}
+
+p#TCW_winning {
+	border:  2px solid #ad7fa8 ;
+	text-align:  center ;
+	margin-left:  auto ;
+	margin-right:  auto ;
+	color:  #5c3566 ;
+	font-size:  large ;
+}
+
+p#TCW_winning p {
+	text-align:  center ;
+}
+
+#TCW_events {
+	height:  6em ;
+	overflow:  auto ;
+	resize:  vertical ;
+	border:  2px solid #ad7fa8 ;
+}
+
+#TCW_events li, #TCW_board li {
+	list-style-type:  none ;
+	padding-left:  3em ;
+	font-family:  "Ubuntu Monospace", monospace;
+}
+
+#TCW_examples, #TCW_Mines {
+	text-align:  center ;
+}
+
+#TCW_examples li, #TCW_Mines li {
+	margin:  1ex 1em ;
+	display:  inline-block ;
+}
+
+.TCW_Data {
+	color:  #cc0000 ;
+	font-family:  "Ubuntu Monospace", monospace;
+}
+
+.TCW_Cp {
+	color:  #73d216 ;
+	font-family:  "Ubuntu Monospace", monospace;
+}
+
+.TCW_Add {
+	color:  #edd400 ;
+	font-family:  "Ubuntu Monospace", monospace;
+}
+
+.TCW_If {
+	color:  #3465a4 ;
+	font-family:  "Ubuntu Monospace", monospace;
+}
+
+.TCW_Goto {
+	color:  #75507b ;
+	font-family:  "Ubuntu Monospace", monospace;
+}
+
+.TCW_Back {
+	color:  #06989a ;
+	font-family:  "Ubuntu Monospace", monospace;
+}
+
+.TCW_Duplicate {
+	color:  #babdb6 ;
+	font-family:  "Ubuntu Monospace", monospace;
+}
+
+.TCW_cell {
+	font-style:  italic ;
+	text-decoration:  underline ;
+}
+
+
+dl.explainitem {
+	display:  inline-block ;
+	width:  30% ;
+	padding:  0 ;
+	margin:  1ex 1em ;
+	box-shadow:  1px 1px 5px 1px rgba(46, 52, 54, 1) ;
+}
+
+dl.explainitem dt {
+	background-color:  #d3d7cf ;
+	width:  100% ;
+	font-weight:  bold ;
+	text-align:  center ;
+	text-shadow:  0.2ex 0.2ex 0.3ex #5c3566 ;
+}
+
+dl.explainitem dd {
+	width:  80% ;
+	text-align:  justify ;
+}
+
+.tabparagraph {
+	display:  inline ;
+	vertical-align:  middle ;
+	margin:  0ex 2em ;
+}
+
+
+dl.tableDescription {
+	margin:  2em 0px ;
+	width:  85% ;
+	clear:  both ;
+}
+
+dl.tableDescription dt {
+	width:  19% ;
+	background-color:  #75507b ;
+	text-align:  center ;
+	color:  #eeeeec ;
+	margin-right:  0px ;
+	margin-bottom:  1px ;
+	padding-right:  0em ;
+	float:  left ;
+	clear:  left ;
+}
+
+dl.tableDescription dd {
+	float:  left ;
+	display:  block ;
+	margin-bottom:  1px ;
+	width:  60% ;
+	padding-left:  1em ;
+	margin-left:  0px ;
+	border-left:  1em solid #75507b ;
+}
+
+dl.tableDescription:after {
+	content:  "" ;
+	display:  block ;
+	clear:  both ;
+	height:  0 ;
+	line-height:  0 ;
+	visibility:  hidden ;
+}
+
+.Ext_hand, .Ext_stack {
+	text-align:  center ;
+}
+
+#Expansion table {
+	border-collapse:  collapse ;
+}
+
+.Ext_hand li, .Ext_stack li {
+	list-style-type:  none ;
+	margin:  1ex 1em ;
+	display:  inline-block ;
+}
+

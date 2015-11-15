@@ -1,0 +1,140 @@
+\documentclass[11pt,a4paper]{article}
+  \usepackage[T1]{fontenc}%
+  \usepackage[obeyspaces]{url} % \urlstyle{sf}%
+  \usepackage{mathpazo}%
+\usepackage[dvips]{epsfig}
+\usepackage[latin1]{inputenc}
+
+\input{../macroTD} 
+  
+\titreTD{Langages Formels}{TD 1}{Mots et langages} 
+
+\setboolean{corrige}{true}
+
+
+\parskip=0.3\baselineskip \sloppy
+
+
+\newcommand{\N}{\mathbb{N}}%
+\newcommand{\D}{\mathbb{D}}%
+\newcommand{\dist}{\mathop{\mathrm{d}}}%
+\newcommand{\fix}{\mathop{\mathrm{Fix}}}%
+\newcommand\abs[1]{\left\lvert #1 \right\rvert}
+
+\begin{document}
+
+\thispagestyle{empty}
+\maketitle
+
+
+
+\begin{exer}[Une histoire de moutons\ldots]
+
+    Soit $\Sigma$ un alphabet non vide.
+    Montrez que le language $\Sigma^*$ est infini dénombrable.
+
+\end{exer}
+
+\begin{exer}[Révisons les conjugaisons]
+
+
+Deux mots $u$ et $v$ sur un alphabet $\Sigma$ sont dits {\bf
+  conjugués} s'il existe des mots $s$ et $t$ sur $\Sigma$ tels que
+$u = st$ et $v = ts$. 
+
+
+\begin{question}
+Montrer que la relation binaire $\sim$ sur $\Sigma^*$ définie par $u
+\sim v $ ssi $u$ et $v$ sont conjugués est une relation d'équivalence.
+\end{question}
+
+
+\begin{question}
+Montrer que pour tout $n \geq 1$, $u \sim v \iff u^n \sim v^n$.
+\end{question}
+
+\begin{question}
+Montrer que $u \sim v$ si et seulement s'il existe un mot $w$ tel que
+$uw=wv$.
+\end{question}
+
+\end{exer}
+
+
+\begin{exer}[On and On and On]
+
+
+  On appelle {\bf code} sur un alphabet $\Sigma$ tout langage $X$ sur
+  $\Sigma$ tel que pour toutes familles $(x_i) \in X^{\llbracket 1, p \rrbracket}$
+  et $(y_i) \in X^{\llbracket 1, q \rrbracket}$,
+  $x_1x_2 \ldots x_p = y_1y_2 \ldots y_q$ entraine $p = q$ et
+  $x_i = y_i$ pour tout $i$. Dire que $X$ est un code revient donc à
+  dire que tout \'el\'ement de $X^*$ se factorise de manière unique sur
+  $X$.
+  
+  \begin{question}
+    Les langages suivants sont-ils des codes ?
+    \begin{itemize}
+    \item $X_1 = \{ab, baa, abba, aabaa\}$
+    \item $X_2 = \{b, ab, baa, abaa, aaaa\}$
+    \item $X_3 = \{aa, ab, aab, bba\}$
+    \item $X_4 = \{a, ba, bba, baab\}$
+    \end{itemize}
+  \end{question}
+
+
+  
+  \begin{question}
+    Soit $u$ un mot de $\Sigma^*$, montrer que l'ensemble $\{u\}$ est un
+    code si et seulement si $u \not= \epsilon$.
+  \end{question}
+  
+
+  \begin{question}
+    Soient $u$ et $v$ deux mots distincts de $\Sigma^*$, montrer que la
+    partie $\{u,v\}$ est un code si et seulement si $u$ et $v$ ne
+    commutent pas.
+  \end{question}
+
+
+
+  \begin{question}
+    Soit $X$ une partie de $\Sigma^*$ ne contenant pas $\epsilon$ et telle
+    qu'aucun mot de $X$ ne soit pr\'efixe propre d'un autre mot de
+    $X$.  Montrer que $X$ est un code (un tel code est appel\'e code
+    pr\'efixe).
+  \end{question}
+
+\end{exer}
+
+
+
+\begin{exer}[Mots multiplicativement dépendants]
+
+
+  Deux mots $u$ et $v$ sont dits {\bf multiplicativement dépendants}
+  s'ils sont puissances d'un même troisième, c'est à dire s'il existe
+  un mot $w$ et deux entiers $m$ et $n$ tels que
+$$u = w^n \ \mbox{et} \ v = w^m$$
+
+
+Deux mots $u$ et $v$ sont dits {\bf commutatifs} si $u v = v u$.
+
+
+\begin{question}
+Donner un exemple de deux mots commutatifs de longueur supérieure à 2
+\end{question}
+
+\begin{question}
+Prouver la proposition suivante :
+
+\begin{Prop}
+Deux mots $u$ et $v$ commutent si et seulement si ils sont multiplicativement dépendants.
+\end{Prop}
+\end{question}
+
+\end{exer}
+
+\end{document}
+
+

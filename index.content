@@ -1,0 +1,147 @@
+page
+en
+Home
+eo
+Ĉefpaĝo
+fr
+Page personnelle
+end
+
+menu
+top.tree
+end
+
+updating
+
+description
+en
+	Welcome in the professional webpage of <span class = "name">Martin Bodin</span>.
+eo
+	Bonvenon en la laborretpaĝo de <span class = "name">Martin Bodin</span>.
+fr
+	Bienvenu sur la page professionnelle de <span class = "name">Martin Bodin</span>.
+end
+
+description
+en
+	It might be interesting to note this website is available in three language (<a class = "switchLanguage_en internalLink" href = "index.html?lang=en#en">English</a>, <a class = "switchLanguage_eo internalLink" href = "index.html?lang=eo#eo">Esperanto</a> and <a class = "switchLanguage_fr internalLink" href = "index.html?lang=fr#fr">French</a>).
+eo
+	Eblas interesigi scii ke tiu retejo disponeblas trilingve (<a class = "switchLanguage_eo internalLink" href = "index.html?lang=eo#eo">Esperanto</a>, la <a class = "switchLanguage_en internalLink" href = "index.html?lang=en#en">Angla</a> kaj la <a class = "switchLanguage_fr internalLink" href = "index.html?lang=fr#fr">Franca</a>).
+fr
+	Il peut être intéressant de noter que ce site est disponible dans trois langues différentes (<a class = "switchLanguage_fr internalLink" href = "index.html?lang=fr#fr">Français</a>, <a class = "switchLanguage_eo internalLink" href = "index.html?lang=eo#eo">Espéranto</a> et <a class = "switchLanguage_en internalLink" href = "index.html?lang=en#en">Anglais</a>).
+end
+
+description
+all
+	<span class = "name">Martin</span>.
+end
+
+specdescription
+en
+	<dl class = "tableDescription">
+		<dt>Current position</dt>
+		<dd>Ph.D. student at <a href = "http://www.irisa.fr/en"><span class = "name">IRISA</span></a>, <span class = "town">Rennes</span> under the supervision of <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> and <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.</dd>
+		<dt>Team</dt>
+		<dd><a href = "http://www.irisa.fr/celtique/"><span class = "name">Celtique</span></a></dd>
+		<dt>Address</dt>
+		<dd>Bureau F213,
+			Campus de <span class = "name">Beaulieu</span>,
+			263 avenue du général <span class = "name">Leclerc</span> — Bâtiment 12,
+			35 042 <span class = "town">Rennes</span> cedex,
+			<span class = "town">France</span>
+		</dd>
+		<dt>Phone number</dt>
+		<dd>+33 2 99 84 22 59</dd>
+		<dt>CV</dt>
+		<dd><a href = "rimedoj/cv_en.pdf">Available there</a></dd>
+		<dt>Public key</dt>
+		<dd><a href = "rimedoj/id_rsa.pub">Available there</a></dd>
+		<dt>Other pages of me in the Internet</dt>
+		<dd>
+			<ul class = "blocks">
+				<li><a href = "http://en.wikipedia.org/wiki/User:Greatfermat"><span class = "name">Wikipedia</span></a></li>
+				<li><a href = "http://en.wiktionary.org/wiki/User:Greatfermat"><span class = "name">Wiktionary</span></a></li>
+				<li><a href = "http://dblp.uni-trier.de/pers/hd/b/Bodin:Martin.html"><span class = "name">DBLP</span></a></li>
+				<li><a href = "https://launchpad.net/~martin-bodin"><span class = "name">Launchpad</span></a></li>
+				<li><a href = "http://sourceforge.net/users/greatfermat"><span class = "name">Sourceforge</span></a></li>
+				<li><a href = "https://plus.google.com/+MartinBodin/"><span class = "name">Google+</span></a></li>
+				<li><a href = "http://scholar.google.fr/citations?user=OoWGEVEAAAAJ&amp;hl=en"><span class = "name">Google Scholar</span></a></li>
+				<li><a href = "http://tatoeba.org/eng/user/profile/MartinShadock"><span class = "name">Tatoeba</span></a></li>
+				<li><a href = "http://www.duolingo.com/MartinShadock"><span class = "name">Duolingo</span></a></li>
+			</ul>
+		</dd>
+	</dl>
+eo
+	<dl class = "tableDescription">
+		<dt>Aktuala pozicio</dt>
+		<dd>Doctorado studento en la <a href = "http://www.irisa.fr/"><span class = "name">IRISA</span></a>, <span class = "town">Rennes</span> superrigardate de <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> kaj <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.</dd>
+		<dt>Skipo</dt>
+		<dd><a href = "http://www.irisa.fr/celtique/"><span class = "name">Celtique</span></a></dd>
+		<dt>Adreso</dt>
+		<dd>Bureau F213,
+			Campus de <span class = "name">Beaulieu</span>,
+			263 avenue du général <span class = "name">Leclerc</span> — Bâtiment 12,
+			35 042 <span class = "town">Rennes</span> cedex,
+			<span class = "town">Francio</span>
+		</dd>
+		<dt>Telefono</dt>
+		<dd>+33 2 99 84 22 59</dd>
+		<dt>CV</dt>
+		<dd><a href = "rimedoj/cv_en.pdf">Havebla tie ĉi</a></dd>
+		<dt>Publika ŝlosilo</dt>
+		<dd><a href = "rimedoj/id_rsa.pub">Havebla tie ĉi</a></dd>
+		<dt>Miaj aliaj paĝoj en la Interreto</dt>
+		<dd>
+			<ul class = "blocks">
+				<li><a href = "http://eo.wikipedia.org/wiki/Uzanto:Greatfermat"><span class = "name">Vikipedio</span></a></li>
+				<li><a href = "http://eo.wiktionary.org/wiki/Uzanto:Greatfermat"><span class = "name">Vikivortaro</span></a></li>
+				<li><a href = "http://dblp.uni-trier.de/pers/hd/b/Bodin:Martin.html"><span class = "name">DBLP</span></a></li>
+				<li><a href = "https://launchpad.net/~martin-bodin"><span class = "name">Launchpad</span></a></li>
+				<li><a href = "http://sourceforge.net/users/greatfermat"><span class = "name">Sourceforge</span></a></li>
+				<li><a href = "https://plus.google.com/+MartinBodin/"><span class = "name">Google+</span></a></li>
+				<li><a href = "http://scholar.google.fr/citations?user=OoWGEVEAAAAJ&amp;hl=eo"><span class = "name">Google Scholar</span></a></li>
+				<li><a href = "http://tatoeba.org/epo/user/profile/MartinShadock"><span class = "name">Tatoeba</span></a></li>
+				<li><a href = "http://www.duolingo.com/MartinShadock"><span class = "name">Duolingo</span></a></li>
+			</ul>
+		</dd>
+	</dl>
+fr
+	<dl class = "tableDescription">
+		<dt>Position actuelle</dt>
+		<dd>Doctorant à l’<a href = "http://www.irisa.fr/fr"><span class = "name">IRISA</span></a>, <span class = "town">Rennes</span> sous la tutelle d’<a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> et de <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.</dd>
+		<dt>Équipe</dt>
+		<dd><a href = "http://www.irisa.fr/celtique/"><span class = "name">Celtique</span></a></dd>
+		<dt>Adresse</dt>
+		<dd>Bureau F213,
+			Campus de <span class = "name">Beaulieu</span>,
+			263 avenue du général <span class = "name">Leclerc</span> — Bâtiment 12,
+			35 042 <span class = "town">Rennes</span> cedex
+		</dd>
+		<dt>Téléphone</dt>
+		<dd>02 99 84 22 59</dd>
+		<dt>CV</dt>
+		<dd><a href = "rimedoj/cv_fr.pdf">Disponible ici</a></dd>
+		<dt>Clef publique</dt>
+		<dd><a href = "rimedoj/id_rsa.pub">Disponible ici</a></dd>
+		<dt>Mes autres pages sur Internet</dt>
+		<dd>
+			<ul class = "blocks">
+				<li><a href = "http://fr.wikipedia.org/wiki/Utilisateur:Greatfermat"><span class = "name">Wikipédia</span></a></li>
+				<li><a href = "http://fr.wiktionary.org/wiki/Utilisateur:Greatfermat"><span class = "name">Wiktionnaire</span></a></li>
+				<li><a href = "http://dblp.uni-trier.de/pers/hd/b/Bodin:Martin.html"><span class = "name">DBLP</span></a></li>
+				<li><a href = "https://launchpad.net/~martin-bodin"><span class = "name">Launchpad</span></a></li>
+				<li><a href = "http://sourceforge.net/users/greatfermat"><span class = "name">Sourceforge</span></a></li>
+				<li><a href = "https://plus.google.com/+MartinBodin/"><span class = "name">Google+</span></a></li>
+				<li><a href = "http://scholar.google.fr/citations?user=OoWGEVEAAAAJ&amp;hl=fr"><span class = "name">Google Scholar</span></a></li>
+				<li><a href = "http://tatoeba.org/fre/user/profile/MartinShadock"><span class = "name">Tatoeba</span></a></li>
+				<li><a href = "http://www.duolingo.com/MartinShadock"><span class = "name">Duolingo</span></a></li>
+			</ul>
+		</dd>
+	</dl>
+end
+
+maintainer
+	<a href = "javascript:void 42"><img id = "imageOfMe" src = "rimedoj/moi.png" alt = "Me — Moi — Mi" /></a> <!-- TODO:  Change this “alt” property according to the language. -->
+	<script type = "text/javascript" src = "skriptoj/imageOfMe.js" async = "async"></script>
+end
+

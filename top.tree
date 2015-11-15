@@ -1,0 +1,80 @@
+
+menuItem
+index
+en
+Home
+eo
+Ĉefpaĝo
+fr
+Page principale
+end
+
+menuItem
+esplorado
+en
+Research
+eo
+Esplorado
+fr
+Travaux de recherche
+end
+
+menuItem
+instruado
+en
+Teaching
+eo
+Instruado
+fr
+Enseignement
+end
+
+StartIgnore
+# Temporary ignoring this part.
+
+hiddenItems
+en
+Other
+eo
+Aliaĵoj
+fr
+Autres
+end
+
+menuItem
+programaro
+en
+Softwares
+eo
+Programaro
+fr
+Créations logicielles
+end
+
+menuItem
+ludaro
+en
+Games
+eo
+Ludaro
+fr
+Jeux
+end
+
+EndHidden
+
+EndIgnore
+
+menuSpace
+
+menuItemContact
+en
+Contact me
+eo
+Kontakti min
+fr
+Me contacter
+end
+
+menuFlags
+

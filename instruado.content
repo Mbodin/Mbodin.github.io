@@ -1,0 +1,75 @@
+page
+en
+Teaching
+eo
+Instruaro
+fr
+Enseignement
+end
+
+menu
+top.tree
+end
+
+updating
+
+description
+en
+	Here stands my teaching activity.
+eo
+	Jen mia instruistaro.
+fr
+	Cette page recense les travaux d’enseignement auxquels j’ai participé.
+end
+
+section
+all
+	2012–2013
+end
+
+item
+all
+	<a href = "http://www.bretagne.ens-cachan.fr/"><span class = "name">ENS Cachan Bretagne</span></a>, Langages formels
+description
+en
+	Tutorials for L3 students.
+eo
+	Superrigardaj laboroj por L3 lernantoj.
+fr
+	TD pour des normaliens de première année (L3).
+internalLink
+instruado/2013/LF/index
+en
+	Go to the module’s page
+eo
+	Iri al ĝia paĝo
+fr
+	Aller à la page du module
+link
+en
+	<a href = "http://perso.bretagne.ens-cachan.fr/~dit/People/David.Cachera/Enseignement/LF/tdlf.html"><span class = "name">David Cachera</span>’s page for this course</a>
+eo
+	<a href = "http://perso.bretagne.ens-cachan.fr/~dit/People/David.Cachera/Enseignement/LF/tdlf.html">La paĝo de <span class = "name">David Cachera</span> pri ĝin</a>
+fr
+	<a href = "http://perso.bretagne.ens-cachan.fr/~dit/People/David.Cachera/Enseignement/LF/tdlf.html">La page de <span class = "name">David Cachera</span> sur ce cours</a>
+link
+en
+	<a href = "http://www.irisa.fr/celtique/jobin/support_fr.html"><span class = "name">Arnaud Jobin</span>’s</a>
+eo
+	<a href = "http://www.irisa.fr/celtique/jobin/support_fr.html">Tiu de <span class = "name">Arnaud Jobin</span></a>
+fr
+	<a href = "http://www.irisa.fr/celtique/jobin/support_fr.html">Celle d’<span class = "name">Arnaud Jobin</span></a>
+end
+
+item
+all
+	<a href = "http://www.insa-rennes.fr"><span class = "name">Insa Rennes</span></a>, Introduction à la programmation en <span class = "name">Scheme</span>
+description
+en
+	Courses and tutorials for L1 students.
+eo
+	Kursoj kaj superrigardaj laboroj por L1 lernantoj.
+fr
+	Cours/TD et TP pour des étudiants de L1.
+end
+

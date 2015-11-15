@@ -1,0 +1,350 @@
+page
+en
+Formal Languages
+eo
+Abstrakaj lingvaĵoj
+fr
+Langages formels
+end
+
+menu
+../../../top.tree
+../2013.tree
+end
+
+section
+en
+Tutorials
+eo
+Superrigardataj laboroj
+fr
+Travaux dirigés
+end
+
+description
+en
+	The <span class = "name">LaTeX</span> files use <a href = "macroTD.tex">this header file</a> to compile.
+eo
+	La <span class = "name">LaTeX</span>aj dosieroj uzas <a href = "macroTD.tex">ĉi-tiu kapaĵan dosieron</a> por konstruiĝi.
+fr
+	Les fichiers <span class = "name">LaTeX</span> utilisent <a href = "macroTD.tex">le fichier d’en-têtes suivant</a> pour compiler.
+end
+
+item
+en
+1st T:	Words and Languages
+eo
+1a SL:	Vortoj kaj Lingvaĵoj
+fr
+TD 1 :	Mots et Langages
+description
+link
+en
+	<a href = "td1.pdf">Subject</a>
+eo
+	<a href = "td1.pdf">Subjekto</a>
+fr
+	<a href = "td1.pdf">Sujet</a>
+link
+en
+	<a href = "td1_el.tex">Sources</a>
+eo
+	<a href = "td1_el.tex">Fontoj</a>
+fr
+	<a href = "td1_el.tex">Sources</a>
+end
+
+item
+en
+2st T:	Residual and Finite Automata
+eo
+2a SL:	Restaĵoj kaj Finaj aŭtomatoj
+fr
+TD 2 :	Résiduels et Automates finis
+description
+link
+en
+	<a href = "td2.pdf">Subject</a>
+eo
+	<a href = "td2.pdf">Subjekto</a>
+fr
+	<a href = "td2.pdf">Sujet</a>
+link
+en
+	<a href = "td2_el.tex">Sources</a>
+eo
+	<a href = "td2_el.tex">Fontoj</a>
+fr
+	<a href = "td2_el.tex">Sources</a>
+link
+en
+	<a href = "td2_figures.tar.bz2">Figures</a>
+eo
+	<a href = "td2_figures.tar.bz2">Bildoj</a>
+fr
+	<a href = "td2_figures.tar.bz2">Figures</a>
+end
+
+item
+en
+3st T:	Minimisation and Rationnal Languages
+eo
+3a SL:	Minimumigo kaj Racionala lingvaĵoj
+fr
+TD 3 :	Minimisation et Langages rationnels
+description
+link
+en
+	<a href = "td3.pdf">Subject</a>
+eo
+	<a href = "td3.pdf">Subjekto</a>
+fr
+	<a href = "td3.pdf">Sujet</a>
+link
+en
+	<a href = "td3_el.tex">Sources</a>
+eo
+	<a href = "td3_el.tex">Fontoj</a>
+fr
+	<a href = "td3_el.tex">Sources</a>
+link
+en
+	<a href = "td3_figures.tar.bz2">Pictures</a>
+eo
+	<a href = "td3_figures.tar.bz2">Bildoj</a>
+fr
+	<a href = "td3_figures.tar.bz2">Figures</a>
+end
+
+item
+en
+4st T:	Minimisation and Rationnal Languages
+eo
+4a SL:	Minimumigo kaj Racionala lingvaĵoj
+fr
+TD 4 :	Minimisation et Langages rationnels
+description
+link
+en
+	<a href = "td4.pdf">Subject</a>
+eo
+	<a href = "td4.pdf">Subjekto</a>
+fr
+	<a href = "td4.pdf">Sujet</a>
+link
+en
+	<a href = "td4_el.tex">Sources</a>
+eo
+	<a href = "td4_el.tex">Fontoj</a>
+fr
+	<a href = "td4_el.tex">Sources</a>
+end
+
+item
+en
+5st T:	Grammars and Algebraic Languages
+eo
+5a SL:	Gramatikoj kaj Algebraj lingvaĵoj
+fr
+TD 5 :	Grammaires et Langages algébriques
+description
+link
+en
+	<a href = "td5.pdf">Subject</a>
+eo
+	<a href = "td5.pdf">Subjekto</a>
+fr
+	<a href = "td5.pdf">Sujet</a>
+link
+en
+	<a href = "td5_el.tex">Sources</a>
+eo
+	<a href = "td5_el.tex">Fontoj</a>
+fr
+	<a href = "td5_el.tex">Sources</a>
+end
+
+item
+en
+6st T:	Pumping Lemma and <span class = "name">Ogden</name>’s Lemma
+eo
+6a SL:	Pumplemo kaj Lemo de <span class = "name">Ogden</name>
+fr
+TD 6 :	Lemme de l’étoile et Lemme d’<span class = "name">Ogden</name>
+description
+link
+en
+	<a href = "td6.pdf">Subject</a>
+eo
+	<a href = "td6.pdf">Subjekto</a>
+fr
+	<a href = "td6.pdf">Sujet</a>
+link
+en
+	<a href = "td6_el.tex">Sources</a>
+eo
+	<a href = "td6_el.tex">Fontoj</a>
+fr
+	<a href = "td6_el.tex">Sources</a>
+end
+
+item
+en
+7st T:	Algebraic Langages and Stack Automata
+eo
+7a SL:	Algebraj lingvaĵoj kaj stakaj Aŭtomatoj
+fr
+TD 7 :	Langages Algébriques et Automates à Pile
+description
+link
+en
+	<a href = "td7.pdf">Subject</a>
+eo
+	<a href = "td7.pdf">Subjekto</a>
+fr
+	<a href = "td7.pdf">Sujet</a>
+link
+en
+	<a href = "td7_el.tex">Sources</a>
+eo
+	<a href = "td7_el.tex">Fontoj</a>
+fr
+	<a href = "td7_el.tex">Sources</a>
+end
+
+item
+en
+8st T:	Algebraic Languages and Stack Automata (II)
+eo
+8a SL:	Algebraj lingvaĵoj kaj Stakaj Aŭtomatoj (sekvantaĵoj)
+fr
+TD 8 :	Langages algébriques et Automates à pile (suite)
+description
+link
+en
+	<a href = "td8.pdf">Subject</a>
+eo
+	<a href = "td8.pdf">Subjekto</a>
+fr
+	<a href = "td8.pdf">Sujet</a>
+link
+en
+	<a href = "td8_el.tex">Sources</a>
+eo
+	<a href = "td8_el.tex">Fontoj</a>
+fr
+	<a href = "td8_el.tex">Sources</a>
+end
+
+item
+en
+9st T:	Syntactic Analysis
+eo
+9a SL:	Sintaksa analizo
+fr
+TD 9 :	Analyse syntaxique
+description
+link
+en
+	<a href = "td9.pdf">Subject</a>
+eo
+	<a href = "td9.pdf">Subjekto</a>
+fr
+	<a href = "td9.pdf">Sujet</a>
+link
+en
+	<a href = "td9_el.tex">Sources</a>
+eo
+	<a href = "td9_el.tex">Fontoj</a>
+fr
+	<a href = "td9_el.tex">Sources</a>
+end
+
+item
+en
+10st T:	Syntactic Analysis and Algebraic Languages
+eo
+10a SL:	Sintaksa analizo kaj Algebraj lingvaĵoj
+fr
+TD 10 :	Analyse syntaxique et Langages algébriques
+description
+link
+en
+	<a href = "td10.pdf">Subject</a>
+eo
+	<a href = "td10.pdf">Subjekto</a>
+fr
+	<a href = "td10.pdf">Sujet</a>
+link
+en
+	<a href = "td10_el.tex">Sources</a>
+eo
+	<a href = "td10_el.tex">Fontoj</a>
+fr
+	<a href = "td10_el.tex">Sources</a>
+end
+
+item
+en
+11st T:	<span class = "name">Turing</span> Machines
+eo
+11a SL:	<span class = "name">Turing</span>aj maŝinoj
+fr
+TD 11 :	Machines de <span class = "name">Turing</span>
+description
+link
+en
+	<a href = "td11_el.tex">Sources</a>
+eo
+	<a href = "td11_el.tex">Fontoj</a>
+fr
+	<a href = "td11_el.tex">Sources</a>
+end
+
+item
+en
+12st T:	Primitive recursive functions
+eo
+12a SL:	Primitivaj memuzataj funkcioj
+fr
+TD 12 :	Fonctions primitives récursives
+description
+link
+en
+	<li><a href = "td12.pdf">Subject</a></li>
+eo
+	<li><a href = "td12.pdf">Subjekto</a></li>
+fr
+	<li><a href = "td12.pdf">Sujet</a></li>
+link
+en
+	<li><a href = "td12_el.tex">Sources</a></li>
+eo
+	<li><a href = "td12_el.tex">Fontoj</a></li>
+fr
+	<li><a href = "td12_el.tex">Sources</a></li>
+end
+
+section
+en
+Annals
+eo
+Analoj
+fr
+Annales
+description
+end
+
+item
+all
+2012–2013
+description
+link
+en
+	<a href = "examen_12–13.pdf">Subject</a>
+eo
+	<a href = "examen_12–13.pdf">Subjekto</a>
+fr
+	<a href = "examen_12–13.pdf">Sujet</a>
+end
+

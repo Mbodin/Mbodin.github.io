@@ -1,0 +1,197 @@
+\documentclass[11pt,a4paper]{article}
+  \usepackage[T1]{fontenc}%
+  \usepackage[obeyspaces]{url} % \urlstyle{sf}%
+  \usepackage{mathpazo}%
+\usepackage[dvips]{epsfig}
+\usepackage[latin1]{inputenc}
+
+\input{../macroTD} 
+  
+\titreTD{Langages Formels}{TD 3}{Minimisation et langages rationnels}
+
+\setboolean{corrige}{true}
+
+% \documentclass[11pt]{article}
+
+ 
+
+\parskip=0.3\baselineskip \sloppy
+
+
+\newcommand{\Rat}{\mathsf{Rat}}%
+\newcommand{\N}{\mathbb{N}}%
+\newcommand{\D}{\mathbb{D}}%
+\newcommand{\dist}{\mathop{\mathrm{d}}}%
+\newcommand{\fix}{\mathop{\mathrm{Fix}}}%
+
+\begin{document}
+
+\thispagestyle{empty}
+\maketitle
+
+
+
+
+\begin{exer}[Minimisons !]
+  \begin{question}
+    Minimiser les automates suivants en utilisant l'algorithme vu en cours :
+    \begin{center} \begin{tabular}{cc}
+	\input{auto1.pstex_t} &
+	\input{auto2.pstex_t} 
+      \end{tabular}
+    \end{center}
+
+\Correction{
+
+    % À compléter.
+
+}
+
+  \end{question}
+
+  \begin{question}
+    Déterminiser et minimiser l'automate suivant.
+    À votre avis si on généralise à $n$ états, combien
+    d'états aura le déterminisé ? Le minimal ?
+    \begin{center} \input{automax.pstex_t} \end{center}  
+
+\Correction{
+
+}
+
+  \end{question}
+\end{exer}
+
+
+
+\begin{exer}[Trois Lemmes pour les étudiants sous le ciel]
+
+  Dans cet exercice, nous allons considérer les trois versions du lemme de l'Étoile :
+  \begin{enumerate}
+  \item Si $L$ est un langage reconnu par un automate fini, alors 
+    $$\exists n \in \N, \ \ \forall u \in L,\ |u| \ge n \ \Longrightarrow \ \exists v,t,w \in \Sigma^*, \quad u = vtw \ \land \ \
+    |t| >0 \ \land \ \forall m \in \N, \ vt^mw \in L$$
+  \item Si $L$ est un langage reconnu par un automate fini, alors 
+    $$\exists n \in \N, \ \ \forall u=rst \in L ,\ |s| \ge n \ \Longrightarrow \ \exists v,w,x \in \Sigma^*, \quad s= vxw \land \ \
+    |x| >0 \ \land \ \forall m \in \N, \ rvx^mwt \in L$$
+  \item Si $L$ est un langage reconnu par un automate fini, alors 
+    $$
+\begin{array}{r}
+\exists n \in \N, \ \ \forall u=ru_1 u_2 \dots u_n s \in L, \ (\forall i, |u_i| \ge 1) \ \Longrightarrow \ \exists 1 \le i
+    < j \le n, \quad \forall m \in \N, \\
+ ru_1\dots u_{i-1}(u_i\dots u_j)^m u_{j+1}\dots u_n s \in L
+\end{array}
+$$
+  \end{enumerate}
+
+  \begin{question}
+    Soit $L = \{ u \in \{a,b\}^* \st |u|_a = |u|_b \}$, montrer que $L$ vérifie le
+    Lemme~1 mais pas le Lemme~2.
+  \end{question}
+
+
+
+  \Correction{
+
+} 
+
+
+  \begin{question}
+    Soit $L' = \{(ab)^n (cd)^n \st n \in \N \} \cup \Sigma^* (aa+bb+cc+dd+ac+bd) \Sigma^*$, avec $\Sigma = \{a,b,c,d
+    \}$. Montrer que $L'$ vérifie le Lemme~2 mais pas le Lemme~3.
+  \end{question}
+
+  \Correction{
+
+    }
+
+
+
+\end{exer}
+
+
+
+\begin{exer}[Ceci n'est pas un lemme de l'étoile]
+
+\begin{question}
+  Soit $L$ un langage reconnaissable. Montrer qu'il existe $N > 0$ tel que
+
+\begin{equation*}
+\begin{gathered}
+\forall u \in \Sigma^*, |u| \ge N, \exists x,y,z \in \Sigma^*, |y| \ge 1, u = xyz \land \\
+\forall i \ge 0, \ \forall v \in \Sigma^*, \ (uv \in L \iff xy^izv \in L)
+\end{gathered}
+\end{equation*}
+
+
+\Correction{
+
+}
+
+\end{question}
+
+
+\begin{question}
+Soit un langage $L \subseteq \Sigma^*$ tel qu'il existe $N>0$ tel que
+\begin{equation*}
+\begin{gathered}
+\forall u \in \Sigma^*, |u| \ge N, \exists x,y,z \in \Sigma^*, |y| \ge 1, u = xyz \land \\
+\forall i \ge 0, \ \forall v \in \Sigma^*, \ (uv \in L \iff xy^izv \in L)
+\end{gathered}
+\end{equation*}
+
+Montrer que $L$ est reconnaissable.
+
+%%% Indication :
+%% On pourra construire un automate
+%% $A = (Q, \Sigma, \delta, q_0, F)$ tel que
+%% $Q = \{q_w \st |w| < N\}$ qui reconnaît $L$.
+
+
+\Correction{
+
+}
+
+
+
+\end{question}
+
+
+\end{exer}
+
+
+
+\begin{exer}[Le barman aveugle]
+
+
+  On dispose de 4 jetons, chacun ayant une face bleue et une face rouge. Un joueur (le barman) a les
+  yeux bandés. Son but est de retourner les 4 jetons sur la même couleur.
+  Dès que les 4 jetons sont retournés, la partie s'arrête et le barman a gagné.
+
+  Pour cela, il peut retourner à chaque tour 1, 2 ou 3 jetons.
+  Un autre joueur perturbe le jeu en tournant le plateau sur lequel reposent les jetons
+  d'un quart de tour, d'un demi-tour ou de trois quarts de tour entre chaque opération du barman.
+
+  \begin{center}
+    \input{barman.pstex_t}
+  \end{center}
+
+  En utilisant une modélisation par des automates, montrer que le barman a une stratégie gagnante,
+  c'est-à-dire que quoi que fasse le tourneur de plateau, il a moyen de gagner.
+
+  \Correction{
+
+
+  }
+  
+
+
+
+\end{exer}
+
+
+
+
+\end{document}
+
+

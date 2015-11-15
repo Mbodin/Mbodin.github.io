@@ -1,0 +1,117 @@
+page
+all
+CVFP 2013
+end
+
+menu
+../../../top.tree
+../2013.tree
+end
+
+section
+en
+Tutorials
+eo
+Superrigardataj laboroj
+fr
+TP
+end
+
+item
+en
+Let’s Play With <span class = "name">Spin</span>
+eo
+Unua <span class = "name">Spin</span>a uzado
+fr
+Première utilisation de <span class = "name">Spin</span>
+description
+all
+	…
+link
+en
+	<a href = "tp1.pdf">Subject</a>
+eo
+	<a href = "tp1.pdf">Subjekto</a>
+fr
+	<a href = "tp1.pdf">Sujet</a>
+link
+en
+	<a href = "philosophers.pml">The dinning philosophers</a>
+eo
+	<a href = "philosophers.pml">La manĝantaj filosofioj</a>
+fr
+	<a href = "philosophers.pml">Le dîner des philosophes</a>
+end
+
+item
+en
+Let’s Play With <span class = "name">Coq</span>
+eo
+Pruvi programaĵojn per <span class = "name">Coq</span>
+fr
+Prouver des programmes à l’aide de <span class = "name">Coq</span>
+description
+all
+	…
+link
+en
+	<a href = "tp2.pdf">Subject</a>
+eo
+	<a href = "tp2.pdf">Subjekto</a>
+fr
+	<a href = "tp2.pdf">Sujet</a>
+link
+en
+	<a href = "basics.v">Basics</a>
+eo
+	<a href = "basics.v">Bazoj</a>
+fr
+	<a href = "basics.v">Bases</a>
+link
+en
+	<a href = "arithmetic.v">Arithmetics</a>
+eo
+	<a href = "arithmetic.v">Aritmetikaĵoj</a>
+fr
+	<a href = "arithmetic.v">Arithmétique</a>
+link
+en
+	<a href = "dichotomy.mlw">Dichotomic program</a>
+eo
+	<a href = "dichotomy.mlw">Duonigema programaĵo</a>
+fr
+	<a href = "dichotomy.mlw">Tri dichotomique</a>
+link
+en
+	<a href = "from_dichotomy.v">Dichotomic <span class = "name">Coq</span> properties</a>
+eo
+	<a href = "from_dichotomy.v">Duonigaj <span class = "name">Coq</span>aj lemoj</a>
+fr
+	<a href = "from_dichotomy.v">Propriété <span class = "name">Coq</span> sur le tri dichotomique</a>
+end
+
+section
+en
+Miscellanous
+eo
+Aliaĵoj
+fr
+Fourre-tout
+description
+end
+
+item
+all
+Pictionnary
+description
+all
+	…
+link
+en
+	<a href = "cards.pdf">Cards</a>
+eo
+	<a href = "cards.pdf">Kartoj</a>
+fr
+	<a href = "cards.pdf">Cartes</a>
+end
+

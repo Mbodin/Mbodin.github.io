@@ -1,0 +1,226 @@
+page
+en
+Research
+eo
+Esplorado
+fr
+Travaux de recherche
+end
+
+menu
+top.tree
+end
+
+updating
+
+description
+en
+	I’m currently in PhD thesis at <span class = "name">INRIA</span> <span class = "town">Rennes</span> under the supervision of <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> and <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.
+	I’m working on formal analysis of <span class = "name">JavaScript</span>.
+eo
+	Mi estas PhD studento ĉe <span class = "name">INRIA</span> <span class = "town">Rennes</span> superrigardate de <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> kaj <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.
+	Mi laboras en formalajn analizojn de <span class = "name">Ĝavaskripto</span>.
+fr
+	Je suis actuellement en doctorat à l’<span class = "name">INRIA</span> de <span class = "town">Rennes</span> sous la tutelle d’<a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> et de <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.
+	Je travaille sur des analyses formelles de <span class = "name">JavaScript</span>.
+end
+
+description
+en
+	I’m part of <a href = "http://jscert.org">the <span class = "name">JSCert</span></a> and <a href = "http://www.seccloud.cominlabs.ueb.eu">the <span class = "name">SecCloud</span></a> projects.
+	The <a href = "http://jscert.org">the <span class = "name">JSCert</span> project</a> aims to build models of <span class = "name">JavaScript</span> in <a href = "http://coq.inria.fr">the <span class = "name">Coq</span> proof assistant</a> and to design automated tools based on those semantics.
+	The <a href = "http://seccloud.cominlabs.ueb.eu">the <span class = "name">SecCloud</span> project</a> aims to provide a comprehensive language-based approach to the definition, analysis and implementation of secure applications developed using <span class = "name">JavaScript</span> and similar languages.
+eo
+	Mi estas parton de la projektoj <a href = "http://jscert.org"><span class = "name">JSCert</span></a> kaj <a href = "http://www.seccloud.cominlabs.ueb.eu"><span class = "name">SecCloud</span></a>.
+	La <a href = "http://jscert.org">projekto <span class = "name">JSCert</span></a> celas al konstrui modelojn de <span class = "name">Ĝavaskripto</span> en <a href = "http://coq.inria.fr">la pruvhelpilo <span class = "name">Coq</span></a> kaj konstrui aŭtomatajn ilojn purvatajn per tiuj semantikoj.
+	La <a href = "http://seccloud.cominlabs.ueb.eu">projekto <span class = "name">SecCloud</span></a> celas ellabori lingvaĵbazajn laborgvidojn por la difino, analizo kaj realigo de sekuraj programaĵoj ellaboritaj per <span class = "name">Ĝavaskripto</span> aŭ similaj lingvaĵoj.
+fr
+	Je fais partie des projets <a href = "http://jscert.org"><span class = "name">JSCert</span></a> et <a href = "http://www.seccloud.cominlabs.ueb.eu"><span class = "name">SecCloud</span></a>.
+	Le <a href = "http://jscert.org">projet <span class = "name">JSCert</span></a> a pour but de construire des modèles de <span class = "name">JavaScript</span> en <a href = "http://coq.inria.fr"><span class = "name">Coq</span></a> et de concevoir des outils d’analyses automatiques basés sur ces modèles formels.
+	Le <a href = "http://seccloud.cominlabs.ueb.eu">projet <span class = "name">SecCloud</span></a> a pour but de concevoir une approche orientée langages de programation pour la définition, l’analyse et l’implémentation d’applications sécurisées développées en <span class = "name">JavaScript</span> ou en des langages similaires.
+end
+
+section
+en
+Publications
+eo
+Eldonaĵoj
+fr
+Publications
+end
+
+item
+all
+JFLA 2013
+description
+all
+	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a> and <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">A Certified <span class = "name">JavaScript</span> Interpreter</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2013.
+link
+en
+	<a href = "papers/jfla13.pdf">Full text</a>
+eo
+	<a href = "papers/jfla13.pdf">Papero</a>
+fr
+	<a href = "papers/jfla13.pdf">Papier</a>
+link
+en
+	<a href = "papers/jfla13_slides.pdf">Slides</a>
+eo
+	<a href = "papers/jfla13_slides.pdf">Diapozitivoj</a>
+fr
+	<a href = "papers/jfla13_slides.pdf">Présentation</a>
+link
+all
+	<!-- FIXME:  Add a BibTeX file. -->
+end
+
+item
+all
+APLAS 2011
+description
+all
+	<a href = "http://www-verimag.imag.fr/~monniaux/"><span class = "name">David Monniaux</span></a> and <a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <span class = "paperName">Modular Abstractions of Reactive Nodes using Disjunctive Invariants</span>, <span class = "journal">Programming Languages and Systems (APLAS)</span>, 2011.
+link
+en
+	<a href = "papers/aplas11.pdf">Full text</a>
+eo
+	<a href = "papers/aplas11.pdf">Papero</a>
+fr
+	<a href = "papers/aplas11.pdf">Papier</a>
+link
+en
+	<a href = "papers/aplas11_slides.pdf">Slides</a>
+eo
+	<a href = "papers/aplas11_slides.pdf">Diapozitivoj</a>
+fr
+	<a href = "papers/aplas11_slides.pdf">Présentation</a>
+link
+all
+	<!-- FIXME:  Add a BibTeX file. -->
+end
+
+section
+en
+Internships Reports
+eo
+Raportoj de internulejoj
+fr
+Rapports de stages
+end
+
+item
+all
+2012, <span class = "town">Rennes</span>
+description
+en
+	An internship I’ve done with <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> and <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> in <span class = "town">Rennes</span>.
+	I’ve made a <span class = "name">JavaScript</span> interpreter proven correct in <span class = "name">Coq</span>.
+eo
+	Internulejo farita kun <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> kaj <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> en <span class = "town">Rennes</span>.
+	Mi faritis interpretiston de <span class = "name">Ĝavaskripto</span> pruvitan korektan per <span class = "name">Coq</span>.
+fr
+	Un stage que j’ai fait sous la tutelle d’<a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> et de <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> dans la belle ville de <span class = "town">Rennes</span>.
+	J’y ai créé un interpréteur <span class = "name">JavaScript</span> prouvé correct en <span class = "name">Coq</span>.
+link
+en
+	<a href = "M2/stage/rapport.pdf">Report</a>
+eo
+	<a href = "M2/stage/rapport.pdf">Raporto</a>
+fr
+	<a href = "M2/stage/rapport.pdf">Rapport</a>
+link
+en
+	<a href = "M2/stage/slides.pdf">Slides</a>
+eo
+	<a href = "M2/stage/slides.pdf">Diapozitivoj</a>
+fr
+	<a href = "M2/stage/slides.pdf">Présentation</a>
+end
+
+item
+all
+2011, <span class = "town">Amsterdam</span>
+description
+en
+	An internship I’ve done with <a href = "http://www.cs.vu.nl/~diem/"><span class = "name">Dimitri Hendriks</span></a> and <a href = "http://joerg.endrullis.de/"><span class = "name">Jörg Endrullis</span></a> in <span class = "town">Amsterdam</span>.
+	The idea was to analysis streams and other coinductive types in <span class = "name">Coq</span> using rewriting reasoning.
+eo
+	Internulejo farita kun <a href = "http://www.cs.vu.nl/~diem/"><span class = "name">Dimitri Hendriks</span></a> kaj <a href = "http://joerg.endrullis.de/"><span class = "name">Jörg Endrullis</span></a> en <span class = "town">Amsterdam</span>.
+	Ĝia ideo estis analizi fluojn kaj alterajn coinduktajn tipojn en <span class = "name">Coq</span> per reverkadaj rezonadoj.
+fr
+	Un stage que j’ai fait avec <a href = "http://www.cs.vu.nl/~diem/"><span class = "name">Dimitri Hendriks</span></a> and <a href = "http://joerg.endrullis.de/"><span class = "name">Jörg Endrullis</span></a> à <span class = "town">Amsterdam</span>.
+	Dans l’idée, je devais transformer automatiquement des preuves de réécriture sur des objets inductifs en des preuves <span class = "name">Coq</span> correctes.
+link
+en
+	<a href = "M1/stages/2/rapport.v.pdf">Report</a>
+eo
+	<a href = "M1/stages/2/rapport.v.pdf">Raporto</a>
+fr
+	<a href = "M1/stages/2/rapport.v.pdf">Rapport</a>
+link
+en
+	<a href = "M1/stages/2/slides.v.pdf">Slides</a>
+eo
+	<a href = "M1/stages/2/slides.v.pdf">Diapozitivoj</a>
+fr
+	<a href = "M1/stages/2/slides.v.pdf">Présentation</a>
+end
+
+item
+all
+2011, <span class = "town">Paris</span>
+description
+en
+	An internship I’ve done with <a href = "http://www.pps.univ-paris-diderot.fr/~gimenez/"><span class = "name">Stéphane Gimenez</span></a> in <span class = "town">Paris</span>.
+	I’ve been working on structures theory, linear logic, and all on the paths between them.
+eo
+	Internulejo farita kun <a href = "http://www.pps.univ-paris-diderot.fr/~gimenez/"><span class = "name">Stéphane Gimenez</span></a> en <span class = "town">Paris</span>.
+	Mi laboris sur teorio de strukturoj, lineara logiko, kaj la vojoj inter ilin.
+fr
+	Un stage que j’ai fait avec <a href = "http://www.pps.univ-paris-diderot.fr/~gimenez/"><span class = "name">Stéphane Gimenez</span></a> à <span class = "town">Paris</span>.
+	J’ai travaillé sur la théorie des structures, la logique linéaire, et les liens que l’on peut faire entre eux.
+link
+en
+	<a href = "M1/stages/1/rapport.pdf">Report</a>
+eo
+	<a href = "M1/stages/1/rapport.pdf">Raporto</a>
+fr
+	<a href = "M1/stages/1/rapport.pdf">Rapport</a>
+link
+en
+	<a href = "M1/stages/1/slides.pdf">Slides</a>
+eo
+	<a href = "M1/stages/1/slides.pdf">Diapozitivoj</a>
+fr
+	<a href = "M1/stages/1/slides.pdf">Présentation</a>
+end
+
+item
+all
+2010, <span class = "town">Grenoble</span>
+description
+en
+	An internship I’ve done with <a href = "http://www-verimag.imag.fr/~monniaux/"><span class = "name">David Monniaux</span></a> in <span class = "town">Grenoble</span>.
+	I’ve been working on an analysis of dataflow programming languages.
+eo
+	Mia unua internulejo farita kun <a href = "http://www-verimag.imag.fr/~monniaux/"><span class = "name">David Monniaux</span></a> en <span class = "town">Grenoble</span>.
+	Mi laboris sur analizoj de ondaj progamlingvoj.
+fr
+	Mon premier stage, effectué sous la tutelle de <a href = "http://www-verimag.imag.fr/~monniaux/"><span class = "name">David Monniaux</span></a> à <span class = "town">Grenoble</span>.
+	Mon but était de faire des analyses automatiques de language de programmation par flots.
+link
+en
+	<a href = "L3/stage/rapport.pdf">Report</a>
+eo
+	<a href = "L3/stage/rapport.pdf">Raporto</a>
+fr
+	<a href = "L3/stage/rapport.pdf">Rapport</a>
+link
+en
+	<a href = "L3/stage/slides.pdf">Slides</a>
+eo
+	<a href = "L3/stage/slides.pdf">Diapozitivoj</a>
+fr
+	<a href = "L3/stage/slides.pdf">Présentation</a>
+end
+

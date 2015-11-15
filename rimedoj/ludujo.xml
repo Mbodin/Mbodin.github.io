@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<games>
+
+	<item>
+		<name>7 Wonders</name>
+		<trictrac>15203</trictrac>
+		<boardgamegeek>68448</boardgamegeek>
+		<author>Antoine Bauza</author>
+		<illustrator>Miguel Coimbra</illustrator>
+		<favourite />
+	</item>
+
+	<item>
+		<name>7 Wonders — Cities</name>
+		<trictrac>15920</trictrac>
+		<boardgamegeek>111661</boardgamegeek>
+		<author>Antoine Bauza</author>
+		<illustrator>Miguel Coimbra</illustrator>
+		<extension />
+	</item>
+
+	<item>
+		<name>Meurtre sur le Nil</name>
+		<trictrac>16385</trictrac>
+		<author>Guillaume Montiage</author>
+		<illustrator>Bony</illustrator>
+		<murder />
+	</item>
+
+	<item>
+		<name>String Railways</name>
+		<trictrac>16463</trictrac>
+		<author>Hisashi Hayashi</author>
+		<illustrator>Franck Dion</illustrator>
+		<favourite />
+	</item>
+
+	<item>
+		<name>Polar Base</name>
+		<trictrac>16452</trictrac>
+		<author>Jérôme Larré</author>
+		<author>Ludovic Papaïs</author>
+		<illustrator>Julien de Jaeger</illustrator>
+		<impro />
+	</item>
+
+	<item>
+		<name>Fiasco</name>
+		<trictrac>16159</trictrac>
+		<author>Jason Morningstar</author>
+		<illustrator>John Harper</illustrator>
+		<illustrator>John Morningstar</illustrator>
+		<rpfun />
+	</item>
+
+	<item>
+		<name>Phantom</name>
+		<trictrac>15749</trictrac>
+		<boardgamegeek>113937</boardgamegeek>
+		<author>Xavier Lardy</author>
+		<illustrator>Morlock</illustrator>
+	</item>
+
+	<item>
+		<name>CrimeBox Investigation</name>
+		<trictrac>16055</trictrac>
+		<boardgamegeek>121987</boardgamegeek>
+		<author>Cymon Kraft</author>
+		<illustrator>Cédric Lefebvre</illustrator>
+		<impro />
+	</item>
+
+	<item>
+		<name>Tschak!</name>
+		<trictrac>15326</trictrac>
+		<boardgamegeek>104377</boardgamegeek>
+		<author>Dominique Ehrhard</author>
+		<illustrator>Vincent Dutrait</illustrator>
+	</item>
+
+	<item>
+		<name>Splits</name>
+		<trictrac>12911</trictrac>
+		<boardgamegeek>54137</boardgamegeek>
+		<author>Francesco Rotta</author>
+		<good />
+	</item>
+
+	<item>
+		<name>Tsuro</name>
+		<trictrac>5871</trictrac>
+		<boardgamegeek>16992</boardgamegeek>
+		<author>Tom McMurchie</author>
+		<illustrator>Cathy Brigg</illustrator>
+		<illustrator>Shane Small</illustrator>
+		<illustrator>Franz Vohwinkel</illustrator>
+		<illustrator>Imelda Vohwinkel</illustrator>
+	</item>
+
+	<item>
+		<name>Small World</name>
+		<trictrac>15426</trictrac>
+		<boardgamegeek>40692</boardgamegeek>
+		<author>Philippe Keyaerts</author>
+		<illustrator>Miguel Coimbra</illustrator>
+		<favourite />
+	</item>
+
+	<item>
+		<name>Rigor Mortis</name>
+		<trictrac>8467</trictrac>
+		<author>Riccardo Crosa</author>
+		<author>Chiara Ferlito</author>
+		<author>Fabrizio Bonifacio</author>
+		<author>Massimiliano Enrico</author>
+		<author>Walter Obert</author>
+		<impro />
+	</item>
+
+	<item>
+		<name>Rigor Mortis — L’Aube des héros</name>
+		<author>Riccardo Crosa</author>
+		<author>Chiara Ferlito</author>
+		<author>Fabrizio Bonifacio</author>
+		<author>Massimiliano Enrico</author>
+		<author>Walter Obert</author>
+		<impro />
+		<extension />
+	</item>
+
+	<item>
+		<name>Cameleon</name>
+		<trictrac>12588</trictrac>
+		<boardgamegeek>69465</boardgamegeek>
+		<author>Hervé Rigal</author>
+		<illustrator>Tony Rochon</illustrator>
+	</item>
+
+	<item>
+		<name>Eco Fluxx</name>
+		<trictrac>9977</trictrac>
+		<boardgamegeek>18333</boardgamegeek>
+		<author>Andrew Looney</author>
+		<author>Alison Frane</author>
+	</item>
+
+	<item>
+		<name>Castle Panic</name>
+		<trictrac>12030</trictrac>
+		<boardgamegeek>43443</boardgamegeek>
+		<author>Justin De Witt</author>
+		<illustrator>Justin De Witt</illustrator>
+		<good />
+	</item>
+
+	<item>
+		<name>Nottingham</name>
+		<trictrac>6205</trictrac>
+		<boardgamegeek>21754</boardgamegeek>
+		<author>Uwe Rosenberg</author>
+		<illustrator>Christof Tisch</illustrator>
+	</item>
+
+	<item>
+		<name>Les Loups-Garous de Thiercelieux</name>
+		<trictrac>241</trictrac>
+		<boardgamegeek>25821</boardgamegeek>
+		<author>Philippe des Pallières</author>
+		<author>Hervé Marly</author>
+		<illustrator>Alexios Tjoyas</illustrator>
+	</item>
+
+	<item>
+		<name>Munchkin</name>
+		<trictrac>3759</trictrac>
+		<boardgamegeek>1927</boardgamegeek>
+		<author>Steve Jackson</author>
+		<illustrator>John Kovalic</illustrator>
+	</item>
+
+	<item>
+		<name>Monsieur je sais tout :  le jeu de cartes</name>
+		<trictrac>11399</trictrac>
+		<author>Rob Elliot</author>
+	</item>
+
+	<item>
+		<name>Donjon Clefs en Mains</name>
+		<trictrac>12029</trictrac>
+		<author>Arnaud Moragues</author>
+		<illustrator>Joann Sfar</illustrator>
+		<illustrator>Lewis Trondheim</illustrator>
+		<rpfun />
+	</item>
+
+</games>
+

@@ -291,18 +291,30 @@ while (scalar @pagesToBeParsed + scalar @menusToBeParsed != 0){
 						my $tab = $$currentObject{$field};
 						if ($currentField eq $allID){
 							for my $lang (@languages){
+                                if (exists ${$$tab[-1]}{$lang}){
+                                    ${$$tab[-1]}{$lang} .= "\n";
+                                }
 								${$$tab[-1]}{$lang} .= $_;
 							}
 						} else {
+							if (exists ${$$tab[-1]}{$currentField}){
+							    ${$$tab[-1]}{$currentField} .= "\n";
+                            }
 							${$$tab[-1]}{$currentField} .= $_;
 						}
 					} else {
 						if ($currentField eq $allID){
 							for my $lang (@languages){
+								if (exists $$currentObject{$lang}){
+								    $$currentObject{$lang} .= "\n";
+                                }
 								$$currentObject{$lang} .= $_;
 							}
 						} else {
-							$$currentObject{$currentField} .= $_;
+							if (exists $$currentObject{$currentField}){
+                                $$currentObject{$currentField} .= "\n";
+                            }
+							$$currentObject{$currentField} .= "\n" . $_;
 						}
 					}
 				} else {

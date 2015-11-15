@@ -25,8 +25,6 @@ Unua <span class = "name">Spin</span>a uzado
 fr
 Première utilisation de <span class = "name">Spin</span>
 description
-all
-	…
 link
 en
 	<a href = "tp1.pdf">Subject</a>
@@ -51,8 +49,6 @@ Pruvi programaĵojn per <span class = "name">Coq</span>
 fr
 Prouver des programmes à l’aide de <span class = "name">Coq</span>
 description
-all
-	…
 link
 en
 	<a href = "tp2.pdf">Subject</a>
@@ -104,8 +100,6 @@ item
 all
 Pictionnary
 description
-all
-	…
 link
 en
 	<a href = "cards.pdf">Cards</a>

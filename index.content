@@ -15,20 +15,23 @@ updating
 
 description
 en
-	Welcome in the professional webpage of <span class = "name">Martin Bodin</span>.
+	I am a PhD student at <span class = "name">INRIA</span> <span class = "town">Rennes</span> under the supervision of <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> and <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.
+	I work on formal analysis of <span class = "name">JavaScript</span>.
 eo
-	Bonvenon en la laborretpaĝo de <span class = "name">Martin Bodin</span>.
+	Mi estas doktoriĝanto ĉe <span class = "name">INRIA</span> <span class = "town">Rennes</span> superrigardate de <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> kaj <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.
+	Mi laboras pri formalaj analizoj de <span class = "name">Javaskripto</span>.
 fr
-	Bienvenu sur la page professionnelle de <span class = "name">Martin Bodin</span>.
+	Je suis doctorant à l’<span class = "name">INRIA</span> de <span class = "town">Rennes</span> sous la supervision d’<a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> et de <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.
+	Je travaille sur des analyses formelles de <span class = "name">JavaScript</span>.
 end
 
 description
 en
-	It might be interesting to note this website is available in three language (<a class = "switchLanguage_en internalLink" href = "index.html?lang=en#en">English</a>, <a class = "switchLanguage_eo internalLink" href = "index.html?lang=eo#eo">Esperanto</a> and <a class = "switchLanguage_fr internalLink" href = "index.html?lang=fr#fr">French</a>).
+	This website is also available in <a class = "switchLanguage_eo internalLink" href = "index.html?lang=eo#eo">Esperanto</a> and <a class = "switchLanguage_fr internalLink" href = "index.html?lang=fr#fr">French</a>.
 eo
-	Eblas interesigi scii ke tiu retejo disponeblas trilingve (<a class = "switchLanguage_eo internalLink" href = "index.html?lang=eo#eo">Esperanto</a>, la <a class = "switchLanguage_en internalLink" href = "index.html?lang=en#en">Angla</a> kaj la <a class = "switchLanguage_fr internalLink" href = "index.html?lang=fr#fr">Franca</a>).
+	Tiu ĉi retejo ankaŭ disponeblas <a class = "switchLanguage_en internalLink" href = "index.html?lang=en#en">angle</a> kaj <a class = "switchLanguage_fr internalLink" href = "index.html?lang=fr#fr">france</a>.
 fr
-	Il peut être intéressant de noter que ce site est disponible dans trois langues différentes (<a class = "switchLanguage_fr internalLink" href = "index.html?lang=fr#fr">Français</a>, <a class = "switchLanguage_eo internalLink" href = "index.html?lang=eo#eo">Espéranto</a> et <a class = "switchLanguage_en internalLink" href = "index.html?lang=en#en">Anglais</a>).
+	Ce site est aussi disponible en <a class = "switchLanguage_eo internalLink" href = "index.html?lang=eo#eo">Espéranto</a> et en <a class = "switchLanguage_en internalLink" href = "index.html?lang=en#en">Anglais</a>.
 end
 
 description
@@ -56,7 +59,7 @@ en
 		<dd><a href = "rimedoj/cv_en.pdf">Available there</a></dd>
 		<dt>Public key</dt>
 		<dd><a href = "rimedoj/id_rsa.pub">Available there</a></dd>
-		<dt>Other pages of me in the Internet</dt>
+		<dt>Other pages about me</dt>
 		<dd>
 			<ul class = "blocks">
 				<li><a href = "http://en.wikipedia.org/wiki/User:Greatfermat"><span class = "name">Wikipedia</span></a></li>
@@ -64,10 +67,9 @@ en
 				<li><a href = "http://dblp.uni-trier.de/pers/hd/b/Bodin:Martin.html"><span class = "name">DBLP</span></a></li>
 				<li><a href = "https://launchpad.net/~martin-bodin"><span class = "name">Launchpad</span></a></li>
 				<li><a href = "http://sourceforge.net/users/greatfermat"><span class = "name">Sourceforge</span></a></li>
-				<li><a href = "https://plus.google.com/+MartinBodin/"><span class = "name">Google+</span></a></li>
 				<li><a href = "http://scholar.google.fr/citations?user=OoWGEVEAAAAJ&amp;hl=en"><span class = "name">Google Scholar</span></a></li>
 				<li><a href = "http://tatoeba.org/eng/user/profile/MartinShadock"><span class = "name">Tatoeba</span></a></li>
-				<li><a href = "http://www.duolingo.com/MartinShadock"><span class = "name">Duolingo</span></a></li>
+				<!--<li><a href = "http://www.duolingo.com/MartinShadock"><span class = "name">Duolingo</span></a></li>-->
 			</ul>
 		</dd>
 	</dl>
@@ -90,7 +92,7 @@ eo
 		<dd><a href = "rimedoj/cv_en.pdf">Havebla tie ĉi</a></dd>
 		<dt>Publika ŝlosilo</dt>
 		<dd><a href = "rimedoj/id_rsa.pub">Havebla tie ĉi</a></dd>
-		<dt>Miaj aliaj paĝoj en la Interreto</dt>
+		<dt>Aliaj paĝoj pri mi</dt>
 		<dd>
 			<ul class = "blocks">
 				<li><a href = "http://eo.wikipedia.org/wiki/Uzanto:Greatfermat"><span class = "name">Vikipedio</span></a></li>
@@ -98,10 +100,9 @@ eo
 				<li><a href = "http://dblp.uni-trier.de/pers/hd/b/Bodin:Martin.html"><span class = "name">DBLP</span></a></li>
 				<li><a href = "https://launchpad.net/~martin-bodin"><span class = "name">Launchpad</span></a></li>
 				<li><a href = "http://sourceforge.net/users/greatfermat"><span class = "name">Sourceforge</span></a></li>
-				<li><a href = "https://plus.google.com/+MartinBodin/"><span class = "name">Google+</span></a></li>
 				<li><a href = "http://scholar.google.fr/citations?user=OoWGEVEAAAAJ&amp;hl=eo"><span class = "name">Google Scholar</span></a></li>
 				<li><a href = "http://tatoeba.org/epo/user/profile/MartinShadock"><span class = "name">Tatoeba</span></a></li>
-				<li><a href = "http://www.duolingo.com/MartinShadock"><span class = "name">Duolingo</span></a></li>
+				<!--<li><a href = "http://www.duolingo.com/MartinShadock"><span class = "name">Duolingo</span></a></li>-->
 			</ul>
 		</dd>
 	</dl>
@@ -123,7 +124,7 @@ fr
 		<dd><a href = "rimedoj/cv_fr.pdf">Disponible ici</a></dd>
 		<dt>Clef publique</dt>
 		<dd><a href = "rimedoj/id_rsa.pub">Disponible ici</a></dd>
-		<dt>Mes autres pages sur Internet</dt>
+		<dt>D’autres pages me concernant</dt>
 		<dd>
 			<ul class = "blocks">
 				<li><a href = "http://fr.wikipedia.org/wiki/Utilisateur:Greatfermat"><span class = "name">Wikipédia</span></a></li>
@@ -131,10 +132,9 @@ fr
 				<li><a href = "http://dblp.uni-trier.de/pers/hd/b/Bodin:Martin.html"><span class = "name">DBLP</span></a></li>
 				<li><a href = "https://launchpad.net/~martin-bodin"><span class = "name">Launchpad</span></a></li>
 				<li><a href = "http://sourceforge.net/users/greatfermat"><span class = "name">Sourceforge</span></a></li>
-				<li><a href = "https://plus.google.com/+MartinBodin/"><span class = "name">Google+</span></a></li>
 				<li><a href = "http://scholar.google.fr/citations?user=OoWGEVEAAAAJ&amp;hl=fr"><span class = "name">Google Scholar</span></a></li>
 				<li><a href = "http://tatoeba.org/fre/user/profile/MartinShadock"><span class = "name">Tatoeba</span></a></li>
-				<li><a href = "http://www.duolingo.com/MartinShadock"><span class = "name">Duolingo</span></a></li>
+				<!--<li><a href = "http://www.duolingo.com/MartinShadock"><span class = "name">Duolingo</span></a></li>-->
 			</ul>
 		</dd>
 	</dl>

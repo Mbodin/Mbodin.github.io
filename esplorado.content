@@ -15,25 +15,25 @@ updating
 
 description
 en
-	I’m currently in PhD thesis at <span class = "name">INRIA</span> <span class = "town">Rennes</span> under the supervision of <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> and <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.
-	I’m working on formal analysis of <span class = "name">JavaScript</span>.
+	I am a PhD student at <span class = "name">INRIA</span> <span class = "town">Rennes</span> under the supervision of <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> and <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.
+	I work on formal analysis of <span class = "name">JavaScript</span>.
 eo
-	Mi estas PhD studento ĉe <span class = "name">INRIA</span> <span class = "town">Rennes</span> superrigardate de <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> kaj <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.
-	Mi laboras en formalajn analizojn de <span class = "name">Ĝavaskripto</span>.
+	Mi estas doktoriĝanto ĉe <span class = "name">INRIA</span> <span class = "town">Rennes</span> superrigardate de <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> kaj <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.
+	Mi laboras pri formalaj analizoj de <span class = "name">Javaskripto</span>.
 fr
-	Je suis actuellement en doctorat à l’<span class = "name">INRIA</span> de <span class = "town">Rennes</span> sous la tutelle d’<a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> et de <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.
+	Je suis doctorant à l’<span class = "name">INRIA</span> de <span class = "town">Rennes</span> sous la supervision d’<a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> et de <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.
 	Je travaille sur des analyses formelles de <span class = "name">JavaScript</span>.
 end
 
 description
 en
-	I’m part of <a href = "http://jscert.org">the <span class = "name">JSCert</span></a> and <a href = "http://www.seccloud.cominlabs.ueb.eu">the <span class = "name">SecCloud</span></a> projects.
+	I am part of <a href = "http://jscert.org">the <span class = "name">JSCert</span></a> and <a href = "http://www.seccloud.cominlabs.ueb.eu">the <span class = "name">SecCloud</span></a> projects.
 	The <a href = "http://jscert.org">the <span class = "name">JSCert</span> project</a> aims to build models of <span class = "name">JavaScript</span> in <a href = "http://coq.inria.fr">the <span class = "name">Coq</span> proof assistant</a> and to design automated tools based on those semantics.
 	The <a href = "http://seccloud.cominlabs.ueb.eu">the <span class = "name">SecCloud</span> project</a> aims to provide a comprehensive language-based approach to the definition, analysis and implementation of secure applications developed using <span class = "name">JavaScript</span> and similar languages.
 eo
 	Mi estas parton de la projektoj <a href = "http://jscert.org"><span class = "name">JSCert</span></a> kaj <a href = "http://www.seccloud.cominlabs.ueb.eu"><span class = "name">SecCloud</span></a>.
-	La <a href = "http://jscert.org">projekto <span class = "name">JSCert</span></a> celas al konstrui modelojn de <span class = "name">Ĝavaskripto</span> en <a href = "http://coq.inria.fr">la pruvhelpilo <span class = "name">Coq</span></a> kaj konstrui aŭtomatajn ilojn purvatajn per tiuj semantikoj.
-	La <a href = "http://seccloud.cominlabs.ueb.eu">projekto <span class = "name">SecCloud</span></a> celas ellabori lingvaĵbazajn laborgvidojn por la difino, analizo kaj realigo de sekuraj programaĵoj ellaboritaj per <span class = "name">Ĝavaskripto</span> aŭ similaj lingvaĵoj.
+	La <a href = "http://jscert.org">projekto <span class = "name">JSCert</span></a> celas al konstrui modelojn de <span class = "name">Javaskripto</span> en <a href = "http://coq.inria.fr">la pruvhelpilo <span class = "name">Coq</span></a> kaj konstrui aŭtomatajn ilojn purvatajn per tiuj semantikoj.
+	La <a href = "http://seccloud.cominlabs.ueb.eu">projekto <span class = "name">SecCloud</span></a> celas ellabori lingvaĵbazajn laborgvidojn por la difino, analizo kaj realigo de sekuraj programaĵoj ellaboritaj per <span class = "name">Javaskripto</span> aŭ similaj lingvaĵoj.
 fr
 	Je fais partie des projets <a href = "http://jscert.org"><span class = "name">JSCert</span></a> et <a href = "http://www.seccloud.cominlabs.ueb.eu"><span class = "name">SecCloud</span></a>.
 	Le <a href = "http://jscert.org">projet <span class = "name">JSCert</span></a> a pour but de construire des modèles de <span class = "name">JavaScript</span> en <a href = "http://coq.inria.fr"><span class = "name">Coq</span></a> et de concevoir des outils d’analyses automatiques basés sur ces modèles formels.
@@ -117,7 +117,7 @@ en
 	I’ve made a <span class = "name">JavaScript</span> interpreter proven correct in <span class = "name">Coq</span>.
 eo
 	Internulejo farita kun <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> kaj <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> en <span class = "town">Rennes</span>.
-	Mi faritis interpretiston de <span class = "name">Ĝavaskripto</span> pruvitan korektan per <span class = "name">Coq</span>.
+	Mi faritis interpretiston de <span class = "name">Javaskripto</span> pruvitan korektan per <span class = "name">Coq</span>.
 fr
 	Un stage que j’ai fait sous la tutelle d’<a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> et de <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> dans la belle ville de <span class = "town">Rennes</span>.
 	J’y ai créé un interpréteur <span class = "name">JavaScript</span> prouvé correct en <span class = "name">Coq</span>.

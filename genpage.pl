@@ -564,6 +564,7 @@ while (my ($directoryname, $page) = each %allParsedPages){
 				"textStart",
 				"needJSCSS",
 				"JSCSSnotthere",
+				"badJS",
 				"noLanguageDetected",
 				"created",
 				"socials",

@@ -174,6 +174,7 @@ function switchLanguage (newLang, firstTime){
 
 	iterTab ([
 			"wrongLang",
+            "badJS",
 			"errorInSocial"
 		], fetchNodesLang)
 

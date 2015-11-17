@@ -2,10 +2,10 @@
 <html xmlns = "http://www.w3.org/1999/xhtml">
 	<!-- Here the content of page “<tmpl_var name = "pageName" />”. -->
 	<head>
-		<meta charset="utf-8"> 
-		<!-- This page has been generated using home-made Perl scripts…  I hope nothing wrong appeared in it.  Do not hesitate to contact me if you noticed anything. -->
+		<meta charset="utf-8">
+		<!-- This page has been generated using home-made Perl scripts…  I hope nothing wrong appeared in it.  Do not hesitate to contact me if you notice anything. -->
 		<title id = "documentTitle"><tmpl_var name = "titlePageAllLanguages" /></title>
-		<meta http-equiv = "Content-Type" content = "text/html; charset=utf-8" /> 
+		<meta http-equiv = "Content-Type" content = "text/html; charset=utf-8" />
 		<link rel = "icon" type = "image/svg+xml" href = "<tmpl_var name = pathToRoot />rimedoj/favicon.svg" sizes = "any" />
 		<link rel = "stylesheet" type = "text/css" href = "<tmpl_var name = pathToRoot />rimedoj/cxefa.css" />
 		<meta name = "viewport" content = "width=device-width" />
@@ -19,10 +19,10 @@
 			<tmpl_loop name = "allLanguages">
 			<div xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "messageToBeRemoved_<tmpl_var name = lang />" class = "lang<tmpl_var name = lang />">
 				<p class = "message">
-					<tmpl_var name = "needJSCSS" />
+					<tmpl_var name = "JSCSSnotthere" />
 				</p>
 				<p class = "message">
-					<tmpl_var name = "JSCSSnotthere" />
+					<tmpl_var name = "needJSCSS" />
 				</p>
 			</div>
 			</tmpl_loop>
@@ -33,7 +33,8 @@
 		</tmpl_loop>
 		</div>
 		<script type = "text/javascript"><!--//--><![CDATA[//><!--
-			var pathToRoot = "<tmpl_var name = pathToRoot />" // TODO:  Remove this once getPathFromRoot and getPathToRoot would have been implemented properly.
+			// TODO:  Remove this once getPathFromRoot and getPathToRoot would have been implemented properly.
+			var pathToRoot = "<tmpl_var name = pathToRoot />"
 			var pathFromRoot = "<tmpl_var name = pathFromRoot />"
 		// --><!]]>
 		</script>
@@ -92,8 +93,10 @@
 			</tmpl_loop>
 			</tmpl_if>
 			<div class = "invisible">
+                <!-- See “lingvoj” for more details. -->
 				<tmpl_loop name = "allLanguages">
 				<p class = "message" xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "wrongLang_<tmpl_var name = lang />"><tmpl_var name = "wrongLang" /></p>
+				<p class = "message" xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "badJS_<tmpl_var name = lang />"><tmpl_var name = "badJS" /></p>
 				<p class = "message" xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "errorInSocial_<tmpl_var name = lang />"><tmpl_var name = "errorInSocial" /></p>
 				</tmpl_loop>
 			</div>
@@ -108,11 +111,22 @@
 		</nav>
 		<script type = "text/javascript" src = "<tmpl_var name = pathToRoot />skriptoj/lingvoj.js"></script>
 		<script type = "text/javascript"><!--//--><![CDATA[//><!--
-			// Removing JavaScript warning message (I prefer to do this that way, as the “script” tag stands for more things than just JavaScript).
 			(function (){
+				// Removing JavaScript warning message (I prefer to do this that way, as the “script” tag stands for more things than just JavaScript).
 				iterLanguages (function (lang){
 					removeNode (document.getElementById ("messageToBeRemoved" + addIfNotEmpty (lang, "_")))
 					})
+
+				// Checking whether the browser correctly implements EcmaScript 5.1, version of JavaScript on which this website has been developped.
+				// Of course, we won’t check everything, just one part of the specification.
+				// By 15.3.4.2, “Function.prototype.toString” should returns a string following the syntax of a “FunctionDeclaration” when called on a function object.
+				// In particular, such a string should be parsable by “eval” without trouble.
+				// The specification allows to add additional properties not mentionned in it, in particular a different property “toString” to “String” has to be checked.
+				try {
+					eval (Function.prototype.toString.call (String))
+				} catch (_){
+					addErrorMsgKey ("badJS")
+				}
 			}())
 		// --><!]]>
 		</script>

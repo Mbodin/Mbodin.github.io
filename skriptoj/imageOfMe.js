@@ -68,29 +68,34 @@
 	add_image ("台北", 5, true)
 	add_image ("垦丁", 2, true)
 
-	applyNode ("imageOfMe", function (img){
+    var updateMyImage
 
-			var updateMyImage = function (first){
-					return function (){
-						var tries = 0
-						var maxTriesLoaded = 42
-						var maxTries = 84
+    applyNode ("imageOfMe", function (img){
 
-						do {
-							tries++
-							var i = get_image (randInt (prob_tot))
-						} while (tries < maxTries && (
-							   (first && !i.first)
-							|| (tries < maxTriesLoaded && !i.loaded)
-							))
+            updateMyImage = function (first){
+                    return function (){
+                        var tries = 0
+                        var maxTriesLoaded = 42
+                        var maxTries = 84
 
-						img.setAttribute ("src", i.src)
-					}
-				}
+                        do {
+                            tries++
+                            var i = get_image (randInt (prob_tot))
+                        } while (tries < maxTries && (
+                               (first && !i.first)
+                            || (tries < maxTriesLoaded && !i.loaded)
+                            ))
 
-			img.parentNode.onclick = updateMyImage (false)
+                        img.setAttribute ("src", i.src)
+                    }
+                }
 
-			updateMyImage (true)()
-		})
+            img.parentNode.onclick = updateMyImage (false)
+
+            updateMyImage (true)()
+        })
+
+    if (updateMyImage)
+        setInterval (updateMyImage (true), 20000)
 }())
 

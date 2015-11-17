@@ -18,9 +18,9 @@ Por bone foliumi tiun retejon, mi konsilas al vi uzi retfoliumilon kiu kapablas 
 =JSCSSnotthere
 Se vi legas tiun ĉi mesaĝon, signifas ke nek <span class = "name">JavaScript</span>, nek <span class = "name">CSS</span> ruleblas (aŭ estas ŝaltata) per via nuna foliumilo.
 =badJS
-Aspektas ke via retfoliumilo ne perfekte respektas la normo <span class = "name">ECMAScript</span> de <span class = "name">Javaskripto</span>, versio 5, en kiu ĉi tiu retejo sinbazas.
+Aspektas ke via retfoliumilo ne perfekte respektas la normo <span class = "name">ECMAScript</span> de <span class = "name">Javaskripto</span>, versio 5.1, en kiu ĉi tiu retejo sinbazas.
 =noLanguageDetected
-<a class = "switchLanguage_eo internalLink" href = "#eo">Alklaki tie por legi tiun retpaĝon Esperante</a>.
+<a class = "switchLanguage_eo internalLink" href = "#eo">Alklaku ĉi tie por legi tiun retpaĝon Esperante</a>.
 =relocation
 Tiu retejo baldaŭ ŝanĝos sian retlokon.  Mi do konsilegas al vi kontroli ĉu la nova pretas tie:  
 =working
@@ -30,13 +30,13 @@ Tiu parto de tiu ĉi retejo ne nun ĝisdatas… sed mi konscias tion kaj baldaŭ
 =created
 Retejo kreita per <span class = "name">Martin Bodin</span>.  Se vi renkontas ian ajn problemon kun ĝi, bonvolu <span class = "contactme">kontakti min</span>.
 =socials
-Alklaki ĉi tie pro aktivigi sociajn skriptojn.
+Alklaku ĉi tie pro aktivigi sociajn skriptojn (vi klakante akceptas kuketojn kaj eksterajn kromrimedojn).
 =validHTML5
 Normale estas valida laŭ <span class = "name">HTML5</span>
 =validCSS3
 Normale estas valida laŭ <span class = "name">CSS3</span>
 =wrongLang
-Ŝajnas ke tiu paĝo ne afiŝas per la ĝusta lingvo:  <a class = "switchLanguage_eo internalLink" href = "#eo">ĉu pliŝatus vi legi ĝin Esperante</a>?
+Tiu ĉi paĝo eble ne afiŝas per la ĝusta lingvo:  <a class = "switchLanguage_eo internalLink" href = "#eo">ĉu pliŝatus vi legi ĝin Esperante</a>?
 =errorInSocial
 Ia problemo okazis dum la eko de ies socia skripto…
 =spyingSocials
@@ -46,7 +46,7 @@ Por aŭtomate aktivigi sociajn skriptojn dum vi retumas en ĉi tiu retejo sen de
 =contactmeNoJS
 mailto:martin[Bonvolu anstataŭigi tiun ĉi per punkto]bodin[kaj tiun ĉi per ĉe-signo]inria[kaj per alia puntko]fr
 =switchLanguage
-Ŝanĝi je lingvo
+Ŝanĝi la lingvon
 
 en
 =langname
@@ -68,7 +68,7 @@ To correctly visualise this website, I advise you to use a browser able to execu
 =JSCSSnotthere
 If you read this message, this means that neither <span class = "name">JavaScript</span>, nor <span class = "name">CSS</span> are compatible with (or set up by) your current browser.
 =badJS
-It seems that your browser is not strictly following the <span class = "name">ECMAScript</span> standard of <span class = "name">JavaScript</span>, version 5, on which this site has been based on.
+It seems that your browser is not strictly following the <span class = "name">ECMAScript</span> standard of <span class = "name">JavaScript</span>, version 5.1, on which this site has been based on.
 =noLanguageDetected
 <a class = "switchLanguage_en internalLink" href = "#en">Click here to get the English version of this webpage.</a>
 =relocation
@@ -80,13 +80,13 @@ This part of the website is not up to date yet… but I am conscious of it and s
 =created
 Website created by <span class = "name">Martin Bodin</span>.  In case of issues with this website, do not hesitate to <span class = "contactme">contact me</span>.
 =socials
-Click here to activate social scripts.
+Click here to activate social scripts (by clicking you accept cookies and third party sources).
 =validHTML5
 Should be valid according to <span class = "name">HTML5</span>
 =validCSS3
 Should be valid according to <span class = "name">CSS3</span>
 =wrongLang
-It seems that this page is not displayed in your prefered language:  <a class = "switchLanguage_en internalLink" href = "#en">would you prefer to read it in English</a>?
+This page may not be displayed in your prefered language:  <a class = "switchLanguage_en internalLink" href = "#en">would you prefer to read it in English</a>?
 =errorInSocial
 An error occured while executing some social scripts…
 =spyingSocials
@@ -118,7 +118,7 @@ Pour naviguer correctement sur ce site, je conseille fortement d’utiliser un n
 =JSCSSnotthere
 Si vous lisez ce message, c’est que ni <span class = "name">JavaScript</span>, ni <span class = "name">CSS</span> ne sont supportés (ou activés) par votre navigateur actuel.
 =badJS
-Il semblerait que votre navigateur ne respecte pas strictement la norme <span class = "name">ECMAScript</span> de <span class = "name">JavaScript</span> dans sa version 5, sur laquelle ce site est basée.
+Il semblerait que votre navigateur ne respecte pas strictement la norme <span class = "name">ECMAScript</span> de <span class = "name">JavaScript</span> dans sa version 5.1, sur laquelle ce site est basée.
 =noLanguageDetected
 <a class = "switchLanguage_fr internalLink" href = "#fr">Cliquez ici pour voir le contenu de cette page en Français</a>.
 =relocation
@@ -130,13 +130,13 @@ Cette partie du site n’est pas à jour… mais j’en ai bien conscience et de
 =created
 Site conçu par <span class = "name">Martin Bodin</span>.  En cas de problème avec ce site, n’hésitez pas à <span class = "contactme">me contacter</span>.
 =socials
-Cliquez ici pour activer les scripts sociaux.
+Cliquez ici pour activer les scripts sociaux (vous acceptez en cliquant à l‘usage des témoins de connexion et des ressources tierces).
 =validHTML5
 Devrait respecter l’<span class = "name">HTML5</span>
 =validCSS3
 Devrait respecter le <span class = "name">CSS3</span>
 =wrongLang
-Il semblerait que cette page ne s’affiche pas dans votre langue préférée :  <a class = "switchLanguage_fr internalLink" href = "#fr">préférez-vous la lire en Français</a> ?
+Il est possible que cette page ne s’affiche pas dans votre langue préférée :  <a class = "switchLanguage_fr internalLink" href = "#fr">préférez-vous la lire en Français</a> ?
 =errorInSocial
 Une erreur s’est produite lors de l’exécution de certain scripts sociaux.
 =spyingSocials

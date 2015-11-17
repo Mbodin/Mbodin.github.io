@@ -33,13 +33,13 @@ body {
 }
 
 .langcontainer {
-    margin:  0 ;
-    padding:  0 ;
+	margin:  0 ;
+	padding:  0 ;
 }
 
 div.needlang, div.nolanguagedetected, div.langen, div.langeo, div.langfr {
-    margin:  0 ;
-    padding:  0 ;
+	margin:  0 ;
+	padding:  0 ;
 }
 
 .needlang, .langen, .langeo, .langfr {
@@ -52,11 +52,11 @@ div.needlang, div.nolanguagedetected, div.langen, div.langeo, div.langfr {
 #en:target .needlang,
 #eo:target .needlang,
 #fr:target .needlang {
-    display:  block ;
+	display:  block ;
 }
 
 .nolanguagedetected {
-    display:  block ;
+	display:  block ;
 	margin-left:  auto ;
 	margin-right:  auto ;
 	text-align:  center ;
@@ -88,6 +88,9 @@ a:hover, a:active {
 	color:  #eeeeec ;
 }
 
+.message a {
+	color:  #d3d7cf ;
+}
 
 .paperName {
 	font-weight: bold ;
@@ -270,6 +273,10 @@ h3:hover {
 	width:  95% ;
 }
 
+.projectDescription:empty {
+	padding: 0px ;
+}
+
 .englobingProjectItemDescription {
 	display:  inline-block ;
 	vertical-align:  top ;
@@ -322,7 +329,7 @@ h3:hover {
 #en:target .flag_en,
 #eo:target .flag_eo,
 #fr:target .flag_fr {
-    display:  none ;
+	display:  none ;
 }
 
 #en:target #menu li.flag_list_alt,

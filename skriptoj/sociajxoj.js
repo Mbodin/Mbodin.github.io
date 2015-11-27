@@ -271,6 +271,10 @@ function checkLang (lang){
 			"permanentSocials"
 		], fetchNodesLang)
 
+    applyNode ("social-button-activation", function (node){
+            node.setAttribute ("class", "")
+        })
+
 	checkLang ("en")
 	checkLang ("eo")
 	checkLang ("fr")

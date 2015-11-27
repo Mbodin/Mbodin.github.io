@@ -96,9 +96,9 @@ function displayTocTitle (label, idCommand){
 
 function undismissAll (){
 	var i
-	for (i = 0 ; i < applyFunctionOnAll.length ; i++) {
-		applyFunctionOnAll[i] (displayTocTitle)
-	}
+    iterTab (applyFunctionOnAll, function (f){
+            f (displayTocTitle)
+        })
 
 	numberOfDisplayedSection = totalNumberOfSection
 	numberOfDisplayedSectionChanged ()
@@ -106,10 +106,10 @@ function undismissAll (){
 
 function dismissAll (){
 	var i
-	for (i = 0 ; i < applyFunctionOnAll.length ; i++) {
-		applyFunctionOnAll[i] (displayTocTitle)
-		applyFunctionOnAll[i] (switchStateToc)
-	}
+    iterTab (applyFunctionOnAll, function (f){
+            f (displayTocTitle)
+            f (switchStateToc)
+        })
 
 	numberOfDisplayedSection = 0
 	numberOfDisplayedSectionChanged ()
@@ -133,47 +133,50 @@ function dismissAll (){
 
 			totalNumberOfSection = numberOfDisplayedSection = hs.length
 
-			for (i = 0 ; i < hs.length ; i++) {
-				if (hs[i].getAttribute ("class") !== langclass) continue
+			iterTab (hs, function (h){
+                    if (h.getAttribute ("class") !== langclass) return
 
-				label = "titleWhoseAutomaticallyGeneratedNumberIs" + (i + 1)
+                    label = "titleWhoseAutomaticallyGeneratedNumberIs" + (i + 1)
 
-				if (hs[i].hasAttribute ("id"))
-					label = hs[i].getAttribute ("id")
-				else hs[i].setAttribute ("id", label)
+                    if (h.hasAttribute ("id"))
+                        label = h.getAttribute ("id")
+                    else h.setAttribute ("id", label)
 
-				localA = document.createElement ("a")
-				appendChilds (localA, hs[i], true)
-				localA.setAttribute ("href", "#" + label)
-				localA.onclick = function (l){
-					return function (){
-						displayTocTitle (l, tocCommand + l)
-					}} (label)
+                    localA = document.createElement ("a")
+                    appendChilds (localA, h, true)
+                    localA.setAttribute ("href", "#" + label)
+                    localA.onclick = function (l){
+                        return function (){
+                            displayTocTitle (l, tocCommand + l)
+                        }} (label)
 
-				localP = document.createElement ("li")
-				localP.appendChild (localA)
-				localP.appendChild (createTocCommand (label))
-				toc.appendChild (localP)
+                    localP = document.createElement ("li")
+                    localP.appendChild (localA)
+                    localP.appendChild (createTocCommand (label))
+                    toc.appendChild (localP)
 
-				hs[i].appendChild (createTocCommand (label))
+                    h.appendChild (createTocCommand (label))
 
-				linkA = document.createElement ("a")
-				linkA.setAttribute ("class", "toc_command")
-				linkA.setAttribute ("href", siteRootURL + pathFromRoot + getPageName () + "#" + label)
-				linkA.appendChild (document.createTextNode (textLink))
-				hs[i].appendChild (linkA)
-			}
+                    linkA = document.createElement ("a")
+                    linkA.setAttribute ("class", "toc_command")
+                    linkA.setAttribute ("href", siteRootURL + pathFromRoot + getPageName () + "#" + label)
+                    linkA.appendChild (document.createTextNode (textLink))
+                    h.appendChild (linkA)
+                })
+
 			tocBox.setAttribute ("class", "toc") // To only display the box when the table of content has been computed.
 
 			{
 				var tocAll = document.createElement ("div")
 				tocAll.setAttribute ("class", "tocAll")
 				var localUl = document.createElement ("ul")
-				for (var b in {"": false, "true": true}) {
-					localP = document.createElement ("li")
-					localP.appendChild (createTocCommandAll (b))
-					localUl.appendChild (localP)
-				}
+                var addLocalP = function (b){
+                        localP = document.createElement ("li")
+                        localP.appendChild (createTocCommandAll (b))
+                        localUl.appendChild (localP)
+                    }
+                addLocalP (false)
+                addLocalP (true)
 				tocAll.appendChild (localUl)
 				tocBox.appendChild (tocAll)
 			}

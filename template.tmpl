@@ -160,7 +160,7 @@
 			<section class = "needlang">
 				<hr />
 				<tmpl_loop name = "allLanguages">
-				<h2 xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" class = "lang<tmpl_var name = lang />" <tmpl_if name = "hasName">id = "<tmpl_var name = name>"</tmpl_if>><tmpl_var name = "titleDescriptionPage" /></h2>
+				<h2 xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" class = "lang<tmpl_var name = lang />" <tmpl_if name = "hasName">id = "<tmpl_var name = name>_<tmpl_var name = lang />"</tmpl_if>><tmpl_var name = "titleDescriptionPage" /></h2>
 				</tmpl_loop>
 				<tmpl_loop name = "allLanguages">
 				<tmpl_loop name = "presentationDescriptionPage">

@@ -244,33 +244,35 @@ function getPageLang (){
 	return lang
 }
 
+function setContentTextNodeToNode (idText, node){
+    var text = getText (idText)
+    
+    if (!text)
+    	return
+    
+    clearNode (node)
+    
+    node.appendChild (
+    	document.createTextNode (text))
+    
+    addLanguageFunction (function (newLang){
+    		if (!node.parentNode) // This means the node is no longer in the DOM (note that this is not checked immediately but only when changing language).
+    			return true
+    
+    		var text = getText (idText)
+    
+    		if (!text)
+    			return true
+    
+    		clearNode (node)
+    
+    		node.appendChild (
+    			document.createTextNode (text))
+    	})
+}
+
 function setContentTextNode (idNode, idText){
-	applyNode (idNode, function (node){
-			var text = getText (idText)
-
-			if (!text)
-				return
-
-			clearNode (node)
-
-			node.appendChild (
-				document.createTextNode (text))
-
-			addLanguageFunction (function (newLang){
-					if (!node.parentNode) // This means the node is no longer in the DOM.
-						return true
-
-					var text = getText (idText)
-
-					if (!text)
-						return true
-
-					clearNode (node)
-
-					node.appendChild (
-						document.createTextNode (text))
-				})
-		})
+	applyNode (idNode, setContentTextNodeToNode.bind (undefined, idText))
 }
 
 function markSwitchLanguage (){

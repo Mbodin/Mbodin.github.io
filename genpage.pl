@@ -7,6 +7,8 @@ use strict 'refs';
 use warnings;
 use HTML::Template;
 use URI::Encode qw(uri_encode uri_decode);
+use HTTP::DAV;
+use Term::ReadKey;
 
 my ($true, $false) = (1, 0);
 
@@ -17,7 +19,7 @@ my $workingOnWebSite = $false;
 my $changingAdress = $false;
 
 {
-	open GENERAL, "<$generalDatas" or die "error while reading file $generalDatas.";
+	open GENERAL, "<$generalDatas" or die "error while reading file $generalDatas.\n";
 
 	my $languageName = $true;
 	my $parsekey = $false;
@@ -61,14 +63,27 @@ my %allMenuParsed = ();
 
 my @pagesToBeParsed = ();
 
+my $publish = $false;
+
 foreach my $name (@ARGV){
 	if ($name =~ m/\.content/){
 		push @pagesToBeParsed, $name;
 	} elsif ($name =~ m/\.tree/){
 		push @menusToBeParsed, $name;
+    } elsif ($name eq "publish"){
+        $publish = $true;
 	} else {
-		die "Don't know what to do with $name…";
+		die "Don't know what to do with $name…\n";
 	}
+}
+
+my $password;
+
+if ($publish) {
+    print "Type your password: ";
+    ReadMode ('noecho'); # don't echo
+    chomp ($password = <STDIN>);
+    ReadMode (0);        # back to normal
 }
 
 my %allParsedPages = ();
@@ -129,7 +144,7 @@ while (scalar @pagesToBeParsed + scalar @menusToBeParsed != 0){
 		my $content = $directory.$name.".content";
 
 		print "Reading content of file $content…";
-		open CONTENT, "<$content" or die "error while reading file $content.";
+		open CONTENT, "<$content" or die "error while reading file $content.\n";
 
 		my @allPages = ();
 		my $allSections = [];
@@ -292,13 +307,17 @@ while (scalar @pagesToBeParsed + scalar @menusToBeParsed != 0){
 						if ($currentField eq $allID){
 							for my $lang (@languages){
                                 if (exists ${$$tab[-1]}{$lang}){
-                                    ${$$tab[-1]}{$lang} .= "\n";
+                                    if (${$$tab[-1]}{$lang} ne ""){
+                                        ${$$tab[-1]}{$lang} .= "\n";
+                                    }
                                 }
 								${$$tab[-1]}{$lang} .= $_;
 							}
 						} else {
 							if (exists ${$$tab[-1]}{$currentField}){
-							    ${$$tab[-1]}{$currentField} .= "\n";
+							    if (${$$tab[-1]}{$currentField} ne ""){
+							        ${$$tab[-1]}{$currentField} .= "\n";
+                                }
                             }
 							${$$tab[-1]}{$currentField} .= $_;
 						}
@@ -306,15 +325,19 @@ while (scalar @pagesToBeParsed + scalar @menusToBeParsed != 0){
 						if ($currentField eq $allID){
 							for my $lang (@languages){
 								if (exists $$currentObject{$lang}){
-								    $$currentObject{$lang} .= "\n";
+								    if ($$currentObject{$lang} ne ""){
+								        $$currentObject{$lang} .= "\n";
+                                    }
                                 }
 								$$currentObject{$lang} .= $_;
 							}
 						} else {
 							if (exists $$currentObject{$currentField}){
-                                $$currentObject{$currentField} .= "\n";
+                                if ($$currentObject{$currentField} ne ""){
+                                    $$currentObject{$currentField} .= "\n";
+                                }
                             }
-							$$currentObject{$currentField} .= "\n" . $_;
+							$$currentObject{$currentField} .= $_;
 						}
 					}
 				} else {
@@ -328,7 +351,7 @@ while (scalar @pagesToBeParsed + scalar @menusToBeParsed != 0){
 		close CONTENT;
 
 		if (not (scalar @allPages == 1)){
-			die "More than one page defined!";
+			die "More than one page defined!\n";
 		}
 		$allParsedPages{$directory.$name} = $allPages[0];
 		${$allParsedPages{$directory.$name}}{$nameID} = $name;
@@ -350,7 +373,7 @@ while (scalar @pagesToBeParsed + scalar @menusToBeParsed != 0){
 		print "Loading menu ".$name."…";
 
 		my $content = $directory.$name;
-		open CONTENT, "<$content" or die "error while reading file $content.";
+		open CONTENT, "<$content" or die "error while reading file $content.\n";
 
 		my $allMenuItems = [];
 
@@ -409,12 +432,12 @@ while (scalar @pagesToBeParsed + scalar @menusToBeParsed != 0){
 				$readingText = $false;
 			} elsif (/^$keywordSpace$/){
 				if (not $nowleft){
-					die "The identifer “$keywordSpace” is present more than one time in file $menuFile.";
+					die "The identifer “$keywordSpace” is present more than one time in file $menuFile.\n";
 				}
 				$nowleft = $false;
 			} elsif (/^$keywordEndHidden$/){
 				if ($nowhidden){
-					die "The identifer “$keywordEndHidden” is not used correctly in $menuFile.";
+					die "The identifer “$keywordEndHidden” is not used correctly in $menuFile.\n";
 				}
 				$nowhidden = $false;
 			} elsif (/^$keywordEnd$/){
@@ -817,10 +840,34 @@ while (my ($directoryname, $page) = each %allParsedPages){
 
 	$page->param (%pageMain);
 
-	open OUT, ">$htmlfile" or die "error while writing file $htmlfile.";
+	open OUT, ">$htmlfile" or die "error while writing file $htmlfile.\n";
 	print OUT $page->output;
 	close OUT;
 
 	print "	Done.\n";
+
+    if ($publish){
+        print "Sending file $htmlfile…";
+
+        my $d = new HTTP::DAV;
+        my $url = "https://webdav.irisa.fr/people.irisa.fr/htdocs/";
+
+        $d->credentials(
+                -user => "mbodin",
+                -pass => $password, 
+                -url => $url,
+                -realm => "WebDav"
+            );
+
+        $d->open( -url => $url )
+            or die ("Couldn’t open $url: " .$d->message . "\n");
+
+        # Upload multiple files to newdir.
+        $d->put( -local => $htmlfile, -url => $url )
+            or die "Upload failed: " . $d->message . "\n";
+
+	    print "	Done.\n";
+    }
+
 }
 

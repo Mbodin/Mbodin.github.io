@@ -1,8 +1,5 @@
 // TODO:  Track language change:  those variables have to be reloaded each time the language is changed…
-var tocLangDiff = addIfNotEmpty (getPageLang (), "_")
-var textLink = getContent (document.getElementById ("toc_link" + tocLangDiff))
-var textDismiss = getContent (document.getElementById ("toc_dismiss" + tocLangDiff)), textUndismiss = getContent (document.getElementById ("toc_undismiss" + tocLangDiff))
-var textDismissAll = getContent (document.getElementById ("toc_dismiss_all" + tocLangDiff)), textUndismissAll = getContent (document.getElementById ("toc_undismiss_all" + tocLangDiff))
+
 var tocCommand = "tocCommand_"
 var applyFunctionOnAll = new Array ()
 var numberOfDisplayedSection = 0, totalNumberOfSection = 0
@@ -10,6 +7,14 @@ var numberOfDisplayedSection = 0, totalNumberOfSection = 0
 ;
 
 (function (){
+	iterTab ([
+			"toc_link",
+            "toc_dismiss",
+            "toc_undismiss",
+            "toc_dismiss_all",
+            "toc_undismiss_all"
+		], fetchTextLang)
+
     // All the strings have been fetched:  we can remove their container (in case there is no CSS).
     removeNodeId ("tocLangContents")
 }())
@@ -25,7 +30,7 @@ function createTocCommand (label){
 	makeADoNothing (node)
 	node.onclick = function (){ switchStateToc (label, myId) }
 
-	node.appendChild (document.createTextNode (textDismiss))
+    setContentTextNodeToNode (node, "toc_dismiss")
 
 	return node
 }
@@ -40,7 +45,7 @@ function createTocCommandAll (hide){
 	node.setAttribute ("id", "TOC_" + (hide ? "hide" : "show") + "_all")
 	node.style.display = hide ? "inline" : "none"
 
-	node.appendChild (document.createTextNode (hide ? textDismissAll : textUndismissAll))
+    setContentTextNodeToNode (node, hide ? "toc_dismiss_all" : "toc_undismiss_all"))
 
 	return node
 }
@@ -68,12 +73,12 @@ function switchStateToc (label, idCommand){
 
 	if (container.style.display === "none") {
 		container.style.display = "inline"
-		command.childNodes[0].nodeValue = textDismiss
+		command.childNodes[0].nodeValue = getText ("toc_dismiss")
 
 		numberOfDisplayedSection++
 	} else {
 		container.style.display = "none"
-		command.childNodes[0].nodeValue = textUndismiss
+		command.childNodes[0].nodeValue = getText ("toc_undismiss")
 
 		numberOfDisplayedSection--
 	}
@@ -87,7 +92,7 @@ function displayTocTitle (label, idCommand){
 
 	if (container.style.display != "inline") {
 		container.style.display = "inline"
-		command.childNodes[0].nodeValue = textDismiss
+		command.childNodes[0].nodeValue = getText ("toc_dismiss")
 
 		numberOfDisplayedSection++
 		numberOfDisplayedSectionChanged ()
@@ -123,7 +128,7 @@ function dismissAll (){
 
 	if (hs != null && tocBox != null)
 		(function (){
-			var toc, i, localP, localA, linkA, txt, label
+			var toc, i = 0, localP, localA, linkA, txt, label
 
 			{
 				toc = document.createElement ("ul")
@@ -136,7 +141,7 @@ function dismissAll (){
 			iterTab (hs, function (h){
                     if (h.getAttribute ("class") !== langclass) return
 
-                    label = "titleWhoseAutomaticallyGeneratedNumberIs" + (i + 1)
+                    label = "titleWhoseAutomaticallyGeneratedNumberIs" + ++i
 
                     if (h.hasAttribute ("id"))
                         label = h.getAttribute ("id")
@@ -160,7 +165,8 @@ function dismissAll (){
                     linkA = document.createElement ("a")
                     linkA.setAttribute ("class", "toc_command")
                     linkA.setAttribute ("href", siteRootURL + pathFromRoot + getPageName () + "#" + label)
-                    linkA.appendChild (document.createTextNode (textLink))
+                    setContentTextNodeToNode (linkA, "toc_link")
+
                     h.appendChild (linkA)
                 })
 

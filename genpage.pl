@@ -159,8 +159,9 @@ while (scalar @pagesToBeParsed + scalar @menusToBeParsed != 0){
 		my $currentObject;
 		my $currentField;
 
-		while (<CONTENT>){
+        LINE: while (<CONTENT>){
 			$_ =~ s/\n//;
+            next LINE if /^#/;
 			if ($stackIntoObject){
 				if (/^$keywordEnd$/){
 					$stackIntoObject = $false;
@@ -836,7 +837,7 @@ while (my ($directoryname, $page) = each %allParsedPages){
 
 	print "Generating file $htmlfile…";
 
-	my $page = HTML::Template->new (filename => 'template.tmpl');
+	my $page = HTML::Template->new (filename => 'template.tmpl', global_vars => $true);
 
 	$page->param (%pageMain);
 

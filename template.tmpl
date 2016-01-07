@@ -1,272 +1,276 @@
 <!DOCTYPE html>
 <html xmlns = "http://www.w3.org/1999/xhtml">
-	<!-- Here the content of page “<tmpl_var name = "pageName" />”. -->
-	<head>
-		<meta charset="utf-8">
-		<!-- This page has been generated using home-made Perl scripts…  I hope nothing wrong appeared in it.  Do not hesitate to contact me if you notice anything. -->
-		<title id = "documentTitle"><tmpl_var name = "titlePageAllLanguages" /></title>
-		<meta http-equiv = "Content-Type" content = "text/html; charset=utf-8" />
-		<link rel = "icon" type = "image/svg+xml" href = "<tmpl_var name = pathToRoot />rimedoj/favicon.svg" sizes = "any" />
-		<link rel = "stylesheet" type = "text/css" href = "<tmpl_var name = pathToRoot />rimedoj/cxefa.css" />
-		<meta name = "viewport" content = "width=device-width" />
-		<!-- <meta name = "description" content = "" /> --> <!-- TODO -->
-	</head>
-	<body>
-		<tmpl_loop name = "allLanguages">
-		<div class = "langcontainer" id = "<tmpl_var name = lang />"> <!-- Language container for <tmpl_var name = "langname" />. -->
-		</tmpl_loop>
-		<div class = "invisible">
-			<tmpl_loop name = "allLanguages">
-			<div xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "messageToBeRemoved_<tmpl_var name = lang />" class = "lang<tmpl_var name = lang />">
-				<p class = "message">
-					<tmpl_var name = "JSCSSnotthere" />
-				</p>
-				<p class = "message">
-					<tmpl_var name = "needJSCSS" />
-				</p>
-			</div>
-			</tmpl_loop>
-		</div>
-		<div class = "invisible">
-		<tmpl_loop name = "allLanguages">
-			<p xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "titlePage_<tmpl_var name = lang />"><tmpl_var name = "titlePage" /></p>
-		</tmpl_loop>
-		</div>
-		<script type = "text/javascript"><!--//--><![CDATA[//><!--
-			// TODO:  Remove this once getPathFromRoot and getPathToRoot would have been implemented properly.
-			var pathToRoot = "<tmpl_var name = pathToRoot />"
-			var pathFromRoot = "<tmpl_var name = pathFromRoot />"
-		// --><!]]>
-		</script>
-		<script type = "text/javascript" src = "<tmpl_var name = pathToRoot />skriptoj/komunajxoj.js"></script>
-		<header id = "titlebar" class = "needlang">
-			<tmpl_loop name = "allLanguages">
-			<h1 id = "title_<tmpl_var name = lang />" xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" class = "lang<tmpl_var name = lang />">
-				<a class = "internalLink" href = "<tmpl_var name = pathToRoot />index.html?lang=<tmpl_var name = lang />#<tmpl_var name = lang />"><span class = "name">Martin Bodin</span></a><tmpl_var name = "titlePageWithBar" />
-			</h1>
-			</tmpl_loop>
-			<nav id = "menu">
-				<tmpl_loop name = "allMenus">
-				<ul class = "menu">
-					<tmpl_loop name = "allMenuItems">
-					<tmpl_loop name = "allLanguages">
-					<tmpl_if name = "isFlag">
-					<li class = "divflag flag_<tmpl_var name = lang /><tmpl_var name = otherClasses />">
-						<a id = "link_<tmpl_var name = lang />" href = "#<tmpl_var name = lang />" class = "switchLanguage_<tmpl_var name = lang /> internalLink">
-							<img src = "<tmpl_var name = pathToRoot />rimedoj/<tmpl_var name = lang />.svg" alt = "<tmpl_var name = langname />" class = "flag" /> <!-- TODO: Put directly an SVG object here, including the corresponding SVG inside using the <image> feature of SVG. -->
-						</a>
-					</li>
-					<tmpl_else>
-					<tmpl_if name = "isFlagDescr">
-					<li xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" class = "lang<tmpl_var name = lang /> flag_list_alt<tmpl_var name = otherClasses />">
-						<a href = "javascript: void 42" id = "flag_list_alt_<tmpl_var name = lang />"><tmpl_var name = "switchLanguage" /></a>
-					</li>
-					<tmpl_else>
-					<li xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" class = "lang<tmpl_var name = lang /><tmpl_var name = otherClasses />">
-						<a href = "<tmpl_var name = menuLink /><tmpl_if name = isInternalLink>?lang=<tmpl_var name = lang />#<tmpl_var name = lang /></tmpl_if>"<tmpl_if name = "isInternalLink"> class = "internalLink"</tmpl_if><tmpl_if name = "isContact"> class = "contactme"</tmpl_if>><tmpl_var name = "menuName" /></a>
-					</li>
-					</tmpl_if>
-					</tmpl_if>
-					</tmpl_loop>
-					</tmpl_loop>
-				</ul>
-				</tmpl_loop>
-			</nav>
-		</header>
-		<aside id = "messages">
-			<tmpl_if name = "isWorking">
-			<tmpl_loop name = "allLanguages">
-			<div xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "onProgress_<tmpl_var name = lang />" class = "lang<tmpl_var name = lang />">
-				<p class = "message">
-					<tmpl_var name = "working" />
-				</p>
-			</div>
-			</tmpl_loop>
-			</tmpl_if>
-			<tmpl_if name = "isNotUpToDate">
-			<tmpl_loop name = "allLanguages">
-			<div xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "notUpToDate_<tmpl_var name = lang />" class = "lang<tmpl_var name = lang />">
-				<p class = "message">
-					<tmpl_var name = "notUpToDate" />
-				</p>
-			</div>
-			</tmpl_loop>
-			</tmpl_if>
-			<div class = "invisible">
+    <!-- Here the content of page “<tmpl_var name = "pageName" />”. -->
+    <head>
+        <meta charset="utf-8">
+        <!-- This page has been generated using home-made Perl scripts…  I hope nothing wrong appeared in it.  Do not hesitate to contact me if you notice anything. -->
+        <title id = "documentTitle"><tmpl_var name = "titlePageAllLanguages" /></title>
+        <meta http-equiv = "Content-Type" content = "text/html; charset=utf-8" />
+        <link rel = "icon" type = "image/svg+xml" href = "<tmpl_var name = pathToRoot />rimedoj/favicon.svg" sizes = "any" />
+        <link rel = "stylesheet" type = "text/css" href = "<tmpl_var name = pathToRoot />rimedoj/cxefa.css" />
+        <meta name = "viewport" content = "width=device-width" />
+        <!-- <meta name = "description" content = "" /> --> <!-- TODO -->
+        <tmpl_loop name = "allLanguages">
+        <link rel = "alternate" href = "<tmpl_var name = pathFromRoot /><tmpl_var name = "pageName" />.html?lang=<tmpl_var name = lang />#<tmpl_var name = lang />" hreflang = "<tmpl_var name = lang />" />
+        </tmpl_loop>
+        <link rel = "alternate" href = "<tmpl_var name = pathFromRoot /><tmpl_var name = "pageName" />.html" hreflang = "x-default" />
+    </head>
+    <body>
+        <tmpl_loop name = "allLanguages">
+        <div class = "langcontainer" id = "<tmpl_var name = lang />"> <!-- Language container for <tmpl_var name = "langname" />. -->
+        </tmpl_loop>
+        <div class = "invisible">
+            <tmpl_loop name = "allLanguages">
+            <div xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "messageToBeRemoved_<tmpl_var name = lang />" class = "lang<tmpl_var name = lang />">
+                <p class = "message">
+                    <tmpl_var name = "JSCSSnotthere" />
+                </p>
+                <p class = "message">
+                    <tmpl_var name = "needJSCSS" />
+                </p>
+            </div>
+            </tmpl_loop>
+        </div>
+        <div class = "invisible">
+        <tmpl_loop name = "allLanguages">
+            <p xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "titlePage_<tmpl_var name = lang />"><tmpl_var name = "titlePage" /></p>
+        </tmpl_loop>
+        </div>
+        <script type = "text/javascript"><!--//--><![CDATA[//><!--
+            // TODO:  Remove this once getPathFromRoot and getPathToRoot would have been implemented properly.
+            var pathToRoot = "<tmpl_var name = pathToRoot />"
+            var pathFromRoot = "<tmpl_var name = pathFromRoot />"
+        // --><!]]>
+        </script>
+        <script type = "text/javascript" src = "<tmpl_var name = pathToRoot />skriptoj/komunajxoj.js"></script>
+        <header id = "titlebar" class = "needlang">
+            <tmpl_loop name = "allLanguages">
+            <h1 id = "title_<tmpl_var name = lang />" xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" class = "lang<tmpl_var name = lang />">
+                <a class = "internalLink" href = "<tmpl_var name = pathToRoot />index.html?lang=<tmpl_var name = lang />#<tmpl_var name = lang />"><span class = "name">Martin Bodin</span></a><tmpl_var name = "titlePageWithBar" />
+            </h1>
+            </tmpl_loop>
+            <nav id = "menu">
+                <tmpl_loop name = "allMenus">
+                <ul class = "menu">
+                    <tmpl_loop name = "allMenuItems">
+                    <tmpl_loop name = "allLanguages">
+                    <tmpl_if name = "isFlag">
+                    <li class = "divflag flag_<tmpl_var name = lang /><tmpl_var name = otherClasses />">
+                        <a id = "link_<tmpl_var name = lang />" href = "#<tmpl_var name = lang />" class = "switchLanguage_<tmpl_var name = lang /> internalLink">
+                            <img src = "<tmpl_var name = pathToRoot />rimedoj/<tmpl_var name = lang />.svg" alt = "<tmpl_var name = langname />" class = "flag" /> <!-- TODO: Put directly an SVG object here, including the corresponding SVG inside using the <image> feature of SVG. -->
+                        </a>
+                    </li>
+                    <tmpl_else>
+                    <tmpl_if name = "isFlagDescr">
+                    <li xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" class = "lang<tmpl_var name = lang /> flag_list_alt<tmpl_var name = otherClasses />">
+                        <a href = "javascript: void 42" id = "flag_list_alt_<tmpl_var name = lang />"><tmpl_var name = "switchLanguage" /></a>
+                    </li>
+                    <tmpl_else>
+                    <li xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" class = "lang<tmpl_var name = lang /><tmpl_var name = otherClasses />">
+                        <a href = "<tmpl_var name = menuLink /><tmpl_if name = isInternalLink>?lang=<tmpl_var name = lang />#<tmpl_var name = lang /></tmpl_if>"<tmpl_if name = "isInternalLink"> class = "internalLink"</tmpl_if><tmpl_if name = "isContact"> class = "contactme"</tmpl_if>><tmpl_var name = "menuName" /></a>
+                    </li>
+                    </tmpl_if>
+                    </tmpl_if>
+                    </tmpl_loop>
+                    </tmpl_loop>
+                </ul>
+                </tmpl_loop>
+            </nav>
+        </header>
+        <aside id = "messages">
+            <tmpl_if name = "isWorking">
+            <tmpl_loop name = "allLanguages">
+            <div xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "onProgress_<tmpl_var name = lang />" class = "lang<tmpl_var name = lang />">
+                <p class = "message">
+                    <tmpl_var name = "working" />
+                </p>
+            </div>
+            </tmpl_loop>
+            </tmpl_if>
+            <tmpl_if name = "isNotUpToDate">
+            <tmpl_loop name = "allLanguages">
+            <div xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "notUpToDate_<tmpl_var name = lang />" class = "lang<tmpl_var name = lang />">
+                <p class = "message">
+                    <tmpl_var name = "notUpToDate" />
+                </p>
+            </div>
+            </tmpl_loop>
+            </tmpl_if>
+            <div class = "invisible">
                 <!-- See “lingvoj” for more details. -->
-				<tmpl_loop name = "allLanguages">
-				<p class = "message" xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "wrongLang_<tmpl_var name = lang />"><tmpl_var name = "wrongLang" /></p>
-				<p class = "message" xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "badJS_<tmpl_var name = lang />"><tmpl_var name = "badJS" /></p>
-				<p class = "message" xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "errorInSocial_<tmpl_var name = lang />"><tmpl_var name = "errorInSocial" /></p>
-				</tmpl_loop>
-			</div>
-			<!-- TODO:  A script that adds a close button at the end of each “message”-classed node. -->
-		</aside>
-		<nav class = "nolanguagedetected">
-			<tmpl_loop name = "allLanguages">
-			<p xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" class = "nolanguagedetected">
-				<tmpl_var name = "noLanguageDetected" />
-			</p>
-			</tmpl_loop>
-		</nav>
-		<script type = "text/javascript" src = "<tmpl_var name = pathToRoot />skriptoj/lingvoj.js"></script>
-		<script type = "text/javascript"><!--//--><![CDATA[//><!--
-			(function (){
-				// Removing JavaScript warning message (I prefer to do this that way, as the “script” tag stands for more things than just JavaScript).
-				iterLanguages (function (lang){
-					removeNode (document.getElementById ("messageToBeRemoved" + addIfNotEmpty (lang, "_")))
-					})
+                <tmpl_loop name = "allLanguages">
+                <p class = "message" xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "wrongLang_<tmpl_var name = lang />"><tmpl_var name = "wrongLang" /></p>
+                <p class = "message" xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "badJS_<tmpl_var name = lang />"><tmpl_var name = "badJS" /></p>
+                <p class = "message" xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "errorInSocial_<tmpl_var name = lang />"><tmpl_var name = "errorInSocial" /></p>
+                </tmpl_loop>
+            </div>
+            <!-- TODO:  A script that adds a close button at the end of each “message”-classed node. -->
+        </aside>
+        <nav class = "nolanguagedetected">
+            <tmpl_loop name = "allLanguages">
+            <p xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" class = "nolanguagedetected">
+                <tmpl_var name = "noLanguageDetected" />
+            </p>
+            </tmpl_loop>
+        </nav>
+        <script type = "text/javascript" src = "<tmpl_var name = pathToRoot />skriptoj/lingvoj.js"></script>
+        <script type = "text/javascript"><!--//--><![CDATA[//><!--
+            (function (){
+                // Removing JavaScript warning message (I prefer to do this that way, as the “script” tag stands for more things than just JavaScript).
+                iterLanguages (function (lang){
+                    removeNode (document.getElementById ("messageToBeRemoved" + addIfNotEmpty (lang, "_")))
+                    })
 
-				// Checking whether the browser correctly implements EcmaScript 5.1, version of JavaScript on which this website has been developped.
-				// Of course, we won’t check everything, just one part of the specification.
-				// By 15.3.4.2, “Function.prototype.toString” should returns a string following the syntax of a “FunctionDeclaration” when called on a function object.
-				// In particular, such a string should be parsable by “eval” without trouble.
-				// The specification allows to add additional properties not mentionned in it, in particular a different property “toString” to “String” has to be checked.
-				try {
-					eval (Function.prototype.toString.call (String))
-				} catch (_){
-					addErrorMsgKey ("badJS")
-				}
-			}())
-		// --><!]]>
-		</script>
-		<script type = "text/javascript" src = "<tmpl_var name = pathToRoot />skriptoj/kapajxoj.js"></script> <!-- Requires “lingvoj”. -->
-		<tmpl_if name = "isMaintainer">
-		<div id = "maintainer" class = "needlang">
-			<tmpl_var name = "maintainer" />
-		</div>
-		</tmpl_if>
-		<div id = "main">
-			<tmpl_if name = "tocTmpl">
-			<nav id = "toc"></nav>
-			<div id = "tocLangContents" class = "invisible">
-				<tmpl_loop name = "allLanguages">
-				<p xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "toc_link_<tmpl_var name = lang />"><tmpl_var name = "textLink" /></p>
-				<p xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "toc_dismiss_<tmpl_var name = lang />"><tmpl_var name = "textHide" /></p>
-				<p xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "toc_undismiss_<tmpl_var name = lang />"><tmpl_var name = "textShow" /></p>
-				<p xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "toc_dismiss_all_<tmpl_var name = lang />"><tmpl_var name = "textHideAll" /></p>
-				<p xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "toc_undismiss_all_<tmpl_var name = lang />"><tmpl_var name = "textShowAll" /></p>
-				</tmpl_loop>
-			</div>
-			</tmpl_if>
+                // Checking whether the browser correctly implements EcmaScript 5.1, version of JavaScript on which this website has been developped.
+                // Of course, we won’t check everything, just one part of the specification.
+                // By 15.3.4.2, “Function.prototype.toString” should returns a string following the syntax of a “FunctionDeclaration” when called on a function object.
+                // In particular, such a string should be parsable by “eval” without trouble.
+                // The specification allows to add additional properties not mentionned in it, in particular a different property “toString” to “String” has to be checked.
+                try {
+                    eval (Function.prototype.toString.call (String))
+                } catch (_){
+                    addErrorMsgKey ("badJS")
+                }
+            }())
+        // --><!]]>
+        </script>
+        <script type = "text/javascript" src = "<tmpl_var name = pathToRoot />skriptoj/kapajxoj.js"></script> <!-- Requires “lingvoj”. -->
+        <tmpl_if name = "isMaintainer">
+        <div id = "maintainer" class = "needlang">
+            <tmpl_var name = "maintainer" />
+        </div>
+        </tmpl_if>
+        <div id = "main">
+            <tmpl_if name = "tocTmpl">
+            <nav id = "toc"></nav>
+            <div id = "tocLangContents" class = "invisible">
+                <tmpl_loop name = "allLanguages">
+                <p xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "toc_link_<tmpl_var name = lang />"><tmpl_var name = "textLink" /></p>
+                <p xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "toc_dismiss_<tmpl_var name = lang />"><tmpl_var name = "textHide" /></p>
+                <p xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "toc_undismiss_<tmpl_var name = lang />"><tmpl_var name = "textShow" /></p>
+                <p xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "toc_dismiss_all_<tmpl_var name = lang />"><tmpl_var name = "textHideAll" /></p>
+                <p xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "toc_undismiss_all_<tmpl_var name = lang />"><tmpl_var name = "textShowAll" /></p>
+                </tmpl_loop>
+            </div>
+            </tmpl_if>
 
-			<tmpl_loop name = "presentationList">
-			<tmpl_loop name = "allLanguages">
-			<<tmpl_if name = "isPDescription">p<tmpl_else>div</tmpl_if> xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" class = "lang<tmpl_var name = lang />"><tmpl_var name = "content" /></<tmpl_if name = "isPDescription">p<tmpl_else>div</tmpl_if>>
-			</tmpl_loop>
-			</tmpl_loop>
+            <tmpl_loop name = "presentationList">
+            <tmpl_loop name = "allLanguages">
+            <<tmpl_if name = "isPDescription">p<tmpl_else>div</tmpl_if> xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" class = "lang<tmpl_var name = lang />"><tmpl_var name = "content" /></<tmpl_if name = "isPDescription">p<tmpl_else>div</tmpl_if>>
+            </tmpl_loop>
+            </tmpl_loop>
 
-			<tmpl_loop name = "descriptionPage">
-			<section class = "needlang">
-				<hr />
-				<tmpl_loop name = "allLanguages">
-				<h2 xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" class = "lang<tmpl_var name = lang />" <tmpl_if name = "hasName">id = "<tmpl_var name = name>_<tmpl_var name = lang />"</tmpl_if>><tmpl_var name = "titleDescriptionPage" /></h2>
-				</tmpl_loop>
-				<tmpl_loop name = "allLanguages">
-				<tmpl_loop name = "presentationDescriptionPage">
-				<<tmpl_if name = "isPDescription">p<tmpl_else>div</tmpl_if> xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" class = "lang<tmpl_var name = lang />"><tmpl_var name = "content" /></<tmpl_if name = "isPDescription">p<tmpl_else>div</tmpl_if>>
-				</tmpl_loop>
-				</tmpl_loop>
-				<tmpl_loop name = "projects">
-				<tmpl_loop name = "allLanguages">
-				<article xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" class = "lang<tmpl_var name = lang />">
-					<div class = "englobingProjectItem">
-						<div class = "englobingProjectItemDescription">
-							<h3><tmpl_var name = "projectsTitle" /></h3>
-							<tmpl_loop name = "projectsDescriptions">
-							<tmpl_if name = "isPDescription"><p class = "projectDescription"><tmpl_else><div class = "projectDescription"></tmpl_if>
-							<tmpl_var name = "projectsDescription" />
-							<tmpl_if name = "isPDescription"></p><tmpl_else></div></tmpl_if>
-							</tmpl_loop>
-						</div>
-						<nav class = "englobingProjectLinks">
-							<tmpl_if name = "hasLinks">
-							<ul class = "projectLinks">
-								<tmpl_loop name = "allLinks">
-								<tmpl_if name = "isInternal">
-								<li><a class = "internalLink" href = "<tmpl_var name = link />?lang=<tmpl_var name = lang /><tmpl_if name = hasnosharp>#<tmpl_var name = lang /></tmpl_if>"><tmpl_var name = "text" /></a></li>
-								<tmpl_else>
-								<li><tmpl_var name = "projectsLinks" /></li>
-								</tmpl_if>
-								</tmpl_loop>
-							</ul>
-							</tmpl_if>
-						</nav>
-					</div>
-				</article>
-				</tmpl_loop>
-				</tmpl_loop>
-				<tmpl_var name = "additionnalScripts" /> <!-- TODO:  How to get something clean about language there?  I have to merge every language features as in “toc.js”. -->
-			</section>
-			</tmpl_loop>
+            <tmpl_loop name = "descriptionPage">
+            <section class = "needlang">
+                <hr />
+                <tmpl_loop name = "allLanguages">
+                <h2 xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" class = "lang<tmpl_var name = lang />" <tmpl_if name = "hasName">id = "<tmpl_var name = name>_<tmpl_var name = lang />"</tmpl_if>><tmpl_var name = "titleDescriptionPage" /></h2>
+                </tmpl_loop>
+                <tmpl_loop name = "allLanguages">
+                <tmpl_loop name = "presentationDescriptionPage">
+                <<tmpl_if name = "isPDescription">p<tmpl_else>div</tmpl_if> xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" class = "lang<tmpl_var name = lang />"><tmpl_var name = "content" /></<tmpl_if name = "isPDescription">p<tmpl_else>div</tmpl_if>>
+                </tmpl_loop>
+                </tmpl_loop>
+                <tmpl_loop name = "projects">
+                <tmpl_loop name = "allLanguages">
+                <article xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" class = "lang<tmpl_var name = lang />">
+                    <div class = "englobingProjectItem">
+                        <div class = "englobingProjectItemDescription">
+                            <h3><tmpl_var name = "projectsTitle" /></h3>
+                            <tmpl_loop name = "projectsDescriptions">
+                            <tmpl_if name = "isPDescription"><p class = "projectDescription"><tmpl_else><div class = "projectDescription"></tmpl_if>
+                            <tmpl_var name = "projectsDescription" />
+                            <tmpl_if name = "isPDescription"></p><tmpl_else></div></tmpl_if>
+                            </tmpl_loop>
+                        </div>
+                        <nav class = "englobingProjectLinks">
+                            <tmpl_if name = "hasLinks">
+                            <ul class = "projectLinks">
+                                <tmpl_loop name = "allLinks">
+                                <tmpl_if name = "isInternal">
+                                <li><a class = "internalLink" href = "<tmpl_var name = link />?lang=<tmpl_var name = lang /><tmpl_if name = hasnosharp>#<tmpl_var name = lang /></tmpl_if>"><tmpl_var name = "text" /></a></li>
+                                <tmpl_else>
+                                <li><tmpl_var name = "projectsLinks" /></li>
+                                </tmpl_if>
+                                </tmpl_loop>
+                            </ul>
+                            </tmpl_if>
+                        </nav>
+                    </div>
+                </article>
+                </tmpl_loop>
+                </tmpl_loop>
+                <tmpl_var name = "additionnalScripts" /> <!-- TODO:  How to get something clean about language there?  I have to merge every language features as in “toc.js”. -->
+            </section>
+            </tmpl_loop>
 
-			<tmpl_if name = "tocTmpl">
-			<script type = "text/javascript" src = "<tmpl_var name = pathToRoot />skriptoj/toc.js" async = "async"></script>
-			</tmpl_if>
-		</div> <!-- Closing “main”. -->
-		<footer>
-			<div class = "needlang">
-				<hr />
-				<tmpl_loop name = "allLanguages">
-				<p xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" class = "footbar lang<tmpl_var name = lang />">
-					<tmpl_var name = "created" />
-				</p>
-				</tmpl_loop>
-			</div>
-			<div class = "needlang">
-				<div id = "socials" class = "invisible">
-					<p class = "tabparagraph">
-						<a href = "http://lernu.net/" id = "lernu-social"></a>
-					</p>
-					<p class = "tabparagraph">
-						<a href = "#" id = "hacker-social"></a>
-					</p>
-					<p class = "tabparagraph">
-						<a href = "http://plus.google.com/+MartinBodin" rel = "author" style = "text-decoration:none;" id = "g-social-img"></a>
-					</p>
-					<div class = "tabparagraph">
-						<div id = "g-social" class = "g-plusone" data-size = "medium" data-annotation = "inline" data-width = "300"></div>
-					</div>
-					<p class = "tabparagraph">
-						<a class = "twitter-follow-button" href = "https://twitter.com/MartinShadok">Follow @MartinShadok</a>
-					</p>
-					<p class = "tabparagraph">
-						<a id = "t-social" href = "https://twitter.com/share" class = "twitter-share-button" data-count = "none">Twitter</a>
-					</p>
-					<div id = "f-social" class = "tabparagraph"></div>
-					<div id = "tjs-social" class = "tabparagraph">
-						<tmpl_loop name = "allLanguages">
-						<button id = "TogetherJSButton-<tmpl_var name = lang />" xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" class = "lang<tmpl_var name = lang />"><tmpl_var name = "textStart" /> TogetherJS</button>
-						</tmpl_loop>
-					</div>
-				</div>
-				<div id = "social-button-activation" class = "invisible">
-					<tmpl_loop name = "allLanguages">
-					<p class = "footbar lang<tmpl_var name = lang />" id = "social-<tmpl_var name = lang />" xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />"><tmpl_var name = "socials" /></p>
-					</tmpl_loop>
-				</div>
-				<div class = "invisible">
-				<tmpl_loop name = "allLanguages">
-					<p class = "footbar" xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "spyingSocials_<tmpl_var name = lang />"><tmpl_var name = "spyingSocials" /></p>
-					<p class = "footbar" xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "permanentSocials_<tmpl_var name = lang />"><tmpl_var name = "permanentSocials" /></p>
-				</tmpl_loop>
-				</div>
-				<div id = "social-messages"></div>
-				<script type = "text/javascript" src = "<tmpl_var name = pathToRoot />skriptoj/sociajxoj.js" async = "async"></script>
-			</div>
-			<div class = "needlang">
-				<div id = "CSSHTMLValid" class = "invisible">
-					<tmpl_loop name = "allLanguages">
-					<p id = "val_HTML5_<tmpl_var name = lang />" xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />"><tmpl_var name = "validHTML5" /></p>
-					<p id = "val_CSS3_<tmpl_var name = lang />" xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />"><tmpl_var name = "validCSS3" /></p>
-					</tmpl_loop>
-				</div>
-			</div>
-		</footer>
-		<script type = "text/javascript" src = "<tmpl_var name = pathToRoot />skriptoj/stilajxoj.js" async = "async"></script>
-		<tmpl_loop name = "allLanguages">
-		</div> <!-- Closing language container for <tmpl_var name = "langname" />. -->
-		</tmpl_loop>
-	</body>
+            <tmpl_if name = "tocTmpl">
+            <script type = "text/javascript" src = "<tmpl_var name = pathToRoot />skriptoj/toc.js" async = "async"></script>
+            </tmpl_if>
+        </div> <!-- Closing “main”. -->
+        <footer>
+            <div class = "needlang">
+                <hr />
+                <tmpl_loop name = "allLanguages">
+                <p xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" class = "footbar lang<tmpl_var name = lang />">
+                    <tmpl_var name = "created" />
+                </p>
+                </tmpl_loop>
+            </div>
+            <div class = "needlang">
+                <div id = "socials" class = "invisible">
+                    <p class = "tabparagraph">
+                        <a href = "http://lernu.net/" id = "lernu-social"></a>
+                    </p>
+                    <p class = "tabparagraph">
+                        <a href = "#" id = "hacker-social"></a>
+                    </p>
+                    <p class = "tabparagraph">
+                        <a href = "http://plus.google.com/+MartinBodin" rel = "author" style = "text-decoration:none;" id = "g-social-img"></a>
+                    </p>
+                    <div class = "tabparagraph">
+                        <div id = "g-social" class = "g-plusone" data-size = "medium" data-annotation = "inline" data-width = "300"></div>
+                    </div>
+                    <p class = "tabparagraph">
+                        <a class = "twitter-follow-button" href = "https://twitter.com/MartinShadok">Follow @MartinShadok</a>
+                    </p>
+                    <p class = "tabparagraph">
+                        <a id = "t-social" href = "https://twitter.com/share" class = "twitter-share-button" data-count = "none">Twitter</a>
+                    </p>
+                    <div id = "f-social" class = "tabparagraph"></div>
+                    <div id = "tjs-social" class = "tabparagraph">
+                        <tmpl_loop name = "allLanguages">
+                        <button id = "TogetherJSButton-<tmpl_var name = lang />" xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" class = "lang<tmpl_var name = lang />"><tmpl_var name = "textStart" /> TogetherJS</button>
+                        </tmpl_loop>
+                    </div>
+                </div>
+                <div id = "social-button-activation" class = "invisible">
+                    <tmpl_loop name = "allLanguages">
+                    <p class = "footbar lang<tmpl_var name = lang />" id = "social-<tmpl_var name = lang />" xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />"><tmpl_var name = "socials" /></p>
+                    </tmpl_loop>
+                </div>
+                <div class = "invisible">
+                <tmpl_loop name = "allLanguages">
+                    <p class = "footbar" xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "spyingSocials_<tmpl_var name = lang />"><tmpl_var name = "spyingSocials" /></p>
+                    <p class = "footbar" xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "permanentSocials_<tmpl_var name = lang />"><tmpl_var name = "permanentSocials" /></p>
+                </tmpl_loop>
+                </div>
+                <div id = "social-messages"></div>
+                <script type = "text/javascript" src = "<tmpl_var name = pathToRoot />skriptoj/sociajxoj.js" async = "async"></script>
+            </div>
+            <div class = "needlang">
+                <div id = "CSSHTMLValid" class = "invisible">
+                    <tmpl_loop name = "allLanguages">
+                    <p id = "val_HTML5_<tmpl_var name = lang />" xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />"><tmpl_var name = "validHTML5" /></p>
+                    <p id = "val_CSS3_<tmpl_var name = lang />" xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />"><tmpl_var name = "validCSS3" /></p>
+                    </tmpl_loop>
+                </div>
+            </div>
+        </footer>
+        <script type = "text/javascript" src = "<tmpl_var name = pathToRoot />skriptoj/stilajxoj.js" async = "async"></script>
+        <tmpl_loop name = "allLanguages">
+        </div> <!-- Closing language container for <tmpl_var name = "langname" />. -->
+        </tmpl_loop>
+    </body>
 </html>
 

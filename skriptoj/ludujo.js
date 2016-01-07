@@ -37,10 +37,6 @@ function runOnURL (url, continuation, errcont){
 	else errcont ()
 }
 
-function getContentXML (node){
-	return node.childNodes[0].nodeValue
-}
-
 function generateGameItem (item){
 	var div = document.createElement ("div")
 	div.setAttribute ("class", "englobingProjectItem")
@@ -53,7 +49,7 @@ function generateGameItem (item){
 	var name = document.createElement ("span")
 	name.setAttribute ("class", "name")
 
-	name.appendChild (document.createTextNode (getContentXML (item.getElementsByTagName ("name")[0])))
+	name.appendChild (document.createTextNode (getContent (item.getElementsByTagName ("name")[0])))
 
 	var title = document.createElement ("h3")
 	title.appendChild (name)
@@ -94,7 +90,7 @@ function generateGameItem (item){
 
 		if (tags.length > 0){
 			var a = document.createElement ("a")
-			a.setAttribute ("href", url (getContentXML (tags[0])))
+			a.setAttribute ("href", url (getContent (tags[0])))
 			var linkT = document.getElementById (id).childNodes
 			for (var i = 0 ; i < linkT.length ; i++){
 				a.appendChild (linkT.item (i).cloneNode (true))

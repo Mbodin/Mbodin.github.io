@@ -11,8 +11,6 @@ menu
 top.tree
 end
 
-updating
-
 description
 en
 	I am a PhD student at <span class = "name">INRIA</span> <span class = "town">Rennes</span> under the supervision of <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> and <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.
@@ -53,28 +51,6 @@ end
 
 item
 all
-JFLA 2016
-description
-en
-	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, and <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">An Abstract Separation Logic for Interlinked Extensible Records</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2016.
-eo
-	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> kaj <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">An Abstract Separation Logic for Interlinked Extensible Records</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2016.
-fr
-	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> et <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">An Abstract Separation Logic for Interlinked Extensible Records</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2016.
-link
-en
-	<a href = "papers/jfla16.pdf">Full text</a>
-eo
-	<a href = "papers/jfla16.pdf">Papero</a>
-fr
-	<a href = "papers/jfla16.pdf">Papier</a>
-link
-all
-	<!-- FIXME:  Add a BibTeX file. -->
-end
-
-item
-all
 CPP 2015
 description
 en
@@ -85,18 +61,18 @@ fr
 	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> et <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Certified Abstract Interpretation with Pretty-Big-Step Semantics</span>, <span class = "journal">Certified Programs and Proofs (CPP)</span>, 2015.
 link
 en
-	<a href = "papers/cpp15.pdf">Full text</a>
+	<a href = "paperoj/cpp15.pdf">Full text</a>
 eo
-	<a href = "papers/cpp15.pdf">Papero</a>
+	<a href = "paperoj/cpp15.pdf">Papero</a>
 fr
-	<a href = "papers/cpp15.pdf">Papier</a>
+	<a href = "paperoj/cpp15.pdf">Papier</a>
 link
 en
-	<a href = "papers/cpp15_slides.pdf">Slides</a>
+	<a href = "paperoj/cpp15_slides.pdf">Slides</a>
 eo
-	<a href = "papers/cpp15_slides.pdf">Diapozitivoj</a>
+	<a href = "paperoj/cpp15_slides.pdf">Diapozitivoj</a>
 fr
-	<a href = "papers/cpp15_slides.pdf">Présentation</a>
+	<a href = "paperoj/cpp15_slides.pdf">Présentation</a>
 link
 all
 	<!-- FIXME:  Add a BibTeX file. -->
@@ -114,40 +90,11 @@ fr
 	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.chargueraud.org/"><span class = "name">Arthur Charguéraud</span></a>, <a href = "http://dfilaretti.github.io/"><span class = "name">Daniele Filaretti</span></a>, <a href = "ihttps://www.doc.ic.ac.uk/~pg/"><span class = "name">Philippa Gardner</span></a>, <a href = "http://www.doc.ic.ac.uk/~maffeis/"><span class = "name">Sergio Maffeis</span></a>, <a href = "http://www.doc.ic.ac.uk/~dn911/"><span class = "name">Daiva Naudžiūnienė</span></a>, <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> et <a href = "http://www.totherme.org/"><span class = "name">Gareth Smith</span></a>, <span class = "paperName">A Trusted Mechanised <span class = "name">JavaScript</span> Specification</span>, <span class = "journal">Symposium on Principles of Programming Languages (POPL)</span>, 2014.
 link
 en
-	<a href = "papers/popl14.pdf">Full text</a>
+	<a href = "paperoj/popl14.pdf">Full text</a>
 eo
-	<a href = "papers/popl14.pdf">Papero</a>
+	<a href = "paperoj/popl14.pdf">Papero</a>
 fr
-	<a href = "papers/popl14.pdf">Papier</a>
-link
-all
-	<!-- FIXME:  Add a BibTeX file. -->
-end
-
-item
-all
-JFLA 2014
-description
-en
-	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, and <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Pretty-big-step-semantics-based Certified Abstract Interpretation</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2014.
-eo
-	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> kaj <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Pretty-big-step-semantics-based Certified Abstract Interpretation</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2014.
-fr
-	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> et <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Pretty-big-step-semantics-based Certified Abstract Interpretation</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2014.
-link
-en
-	<a href = "papers/jfla14.pdf">Full text</a>
-eo
-	<a href = "papers/jfla14.pdf">Papero</a>
-fr
-	<a href = "papers/jfla14.pdf">Papier</a>
-link
-en
-	<a href = "papers/jfla14_slides.pdf">Slides</a>
-eo
-	<a href = "papers/jfla14_slides.pdf">Diapozitivoj</a>
-fr
-	<a href = "papers/jfla14_slides.pdf">Présentation</a>
+	<a href = "paperoj/popl14.pdf">Papier</a>
 link
 all
 	<!-- FIXME:  Add a BibTeX file. -->
@@ -165,47 +112,18 @@ fr
 	<a href = "http://joerg.endrullis.de/"><span class = "name">Jörg Endrullis</span></a>, <a href = "http://www.cs.vu.nl/~diem/"><span class = "name">Dimitri Hendriks</span></a> et <a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <span class = "paperName">Circular Coinduction in Coq Using Bisimulation-Up-To Techniques</span>, <span class = "journal">Interactive Theorem Proving (ITP)</span>, 2013.
 link
 en
-	<a href = "papers/itp13.pdf">Full text</a>
+	<a href = "paperoj/itp13.pdf">Full text</a>
 eo
-	<a href = "papers/itp13.pdf">Papero</a>
+	<a href = "paperoj/itp13.pdf">Papero</a>
 fr
-	<a href = "papers/itp13.pdf">Papier</a>
+	<a href = "paperoj/itp13.pdf">Papier</a>
 link
 en
-	<a href = "papers/itp13_slides.pdf">Slides</a>
+	<a href = "paperoj/itp13_slides.pdf">Slides</a>
 eo
-	<a href = "papers/itp13_slides.pdf">Diapozitivoj</a>
+	<a href = "paperoj/itp13_slides.pdf">Diapozitivoj</a>
 fr
-	<a href = "papers/itp13_slides.pdf">Présentation</a>
-link
-all
-	<!-- FIXME:  Add a BibTeX file. -->
-end
-
-item
-all
-JFLA 2013
-description
-en
-	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a> and <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">A Certified <span class = "name">JavaScript</span> Interpreter</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2013.
-eo
-	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a> kaj <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">A Certified <span class = "name">JavaScript</span> Interpreter</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2013.
-fr
-	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a> et <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">A Certified <span class = "name">JavaScript</span> Interpreter</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2013.
-link
-en
-	<a href = "papers/jfla13.pdf">Full text</a>
-eo
-	<a href = "papers/jfla13.pdf">Papero</a>
-fr
-	<a href = "papers/jfla13.pdf">Papier</a>
-link
-en
-	<a href = "papers/jfla13_slides.pdf">Slides</a>
-eo
-	<a href = "papers/jfla13_slides.pdf">Diapozitivoj</a>
-fr
-	<a href = "papers/jfla13_slides.pdf">Présentation</a>
+	<a href = "paperoj/itp13_slides.pdf">Présentation</a>
 link
 all
 	<!-- FIXME:  Add a BibTeX file. -->
@@ -223,18 +141,18 @@ fr
 	<a href = "http://www-verimag.imag.fr/~monniaux/"><span class = "name">David Monniaux</span></a> et <a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <span class = "paperName">Modular Abstractions of Reactive Nodes using Disjunctive Invariants</span>, <span class = "journal">Programming Languages and Systems (APLAS)</span>, 2011.
 link
 en
-	<a href = "papers/aplas11.pdf">Full text</a>
+	<a href = "paperoj/aplas11.pdf">Full text</a>
 eo
-	<a href = "papers/aplas11.pdf">Papero</a>
+	<a href = "paperoj/aplas11.pdf">Papero</a>
 fr
-	<a href = "papers/aplas11.pdf">Papier</a>
+	<a href = "paperoj/aplas11.pdf">Papier</a>
 link
 en
-	<a href = "papers/aplas11_slides.pdf">Slides</a>
+	<a href = "paperoj/aplas11_slides.pdf">Slides</a>
 eo
-	<a href = "papers/aplas11_slides.pdf">Diapozitivoj</a>
+	<a href = "paperoj/aplas11_slides.pdf">Diapozitivoj</a>
 fr
-	<a href = "papers/aplas11_slides.pdf">Présentation</a>
+	<a href = "paperoj/aplas11_slides.pdf">Présentation</a>
 link
 all
 	<!-- FIXME:  Add a BibTeX file. -->
@@ -242,129 +160,93 @@ end
 
 section
 sectionName
-interniĝoj
+babilkongresoj
 en
-Internships Reports
+Workshops
 eo
-Raportoj de interniĝoj
+Babilkongresoj
 fr
-Rapports de stages
+Ateliers
 end
 
 item
 all
-2012, <span class = "town">Rennes</span>
+JFLA 2016
 description
 en
-	An internship I’ve done with <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> and <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> in <span class = "town">Rennes</span>.
-	I’ve made a <span class = "name">JavaScript</span> interpreter proven correct in <span class = "name">Coq</span>.
+	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, and <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">An Abstract Separation Logic for Interlinked Extensible Records</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2016.
 eo
-	Interniĝo farita kun <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> kaj <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> en <span class = "town">Rennes</span>.
-	Mi faritis interpretiston de <span class = "name">Javaskripto</span> pruvitan korektan per <span class = "name">Coq</span>.
+	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> kaj <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">An Abstract Separation Logic for Interlinked Extensible Records</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2016.
 fr
-	Un stage que j’ai fait sous la tutelle d’<a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> et de <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> dans la belle ville de <span class = "town">Rennes</span>.
-	J’y ai créé un interpréteur <span class = "name">JavaScript</span> prouvé correct en <span class = "name">Coq</span>.
+	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> et <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">An Abstract Separation Logic for Interlinked Extensible Records</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2016.
 link
 en
-	<a href = "M2/stage/rapport.pdf">Report</a>
+	<a href = "paperoj/jfla16.pdf">Full text</a>
 eo
-	<a href = "M2/stage/rapport.pdf">Raporto</a>
+	<a href = "paperoj/jfla16.pdf">Papero</a>
 fr
-	<a href = "M2/stage/rapport.pdf">Rapport</a>
+	<a href = "paperoj/jfla16.pdf">Papier</a>
 link
-en
-	<a href = "M2/stage/slides.pdf">Slides</a>
-eo
-	<a href = "M2/stage/slides.pdf">Diapozitivoj</a>
-fr
-	<a href = "M2/stage/slides.pdf">Présentation</a>
+all
+	<!-- FIXME:  Add a BibTeX file. -->
 end
 
 item
 all
-2011, <span class = "town">Amsterdam</span>
+JFLA 2014
 description
 en
-	An internship I’ve done with <a href = "http://www.cs.vu.nl/~diem/"><span class = "name">Dimitri Hendriks</span></a> and <a href = "http://joerg.endrullis.de/"><span class = "name">Jörg Endrullis</span></a> in <span class = "town">Amsterdam</span>.
-	The idea was to analysis streams and other coinductive types in <span class = "name">Coq</span> using rewriting reasoning.
+	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, and <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Pretty-big-step-semantics-based Certified Abstract Interpretation</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2014.
 eo
-	Interniĝo farita kun <a href = "http://www.cs.vu.nl/~diem/"><span class = "name">Dimitri Hendriks</span></a> kaj <a href = "http://joerg.endrullis.de/"><span class = "name">Jörg Endrullis</span></a> en <span class = "town">Amsterdam</span>.
-	Ĝia ideo estis analizi fluojn kaj alterajn coinduktajn tipojn en <span class = "name">Coq</span> per reverkadaj rezonadoj.
+	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> kaj <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Pretty-big-step-semantics-based Certified Abstract Interpretation</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2014.
 fr
-	Un stage que j’ai fait avec <a href = "http://www.cs.vu.nl/~diem/"><span class = "name">Dimitri Hendriks</span></a> and <a href = "http://joerg.endrullis.de/"><span class = "name">Jörg Endrullis</span></a> à <span class = "town">Amsterdam</span>.
-	Dans l’idée, je devais transformer automatiquement des preuves de réécriture sur des objets inductifs en des preuves <span class = "name">Coq</span> correctes.
+	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> et <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Pretty-big-step-semantics-based Certified Abstract Interpretation</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2014.
 link
 en
-	<a href = "M1/stages/2/rapport.v.pdf">Report</a>
+	<a href = "paperoj/jfla14.pdf">Full text</a>
 eo
-	<a href = "M1/stages/2/rapport.v.pdf">Raporto</a>
+	<a href = "paperoj/jfla14.pdf">Papero</a>
 fr
-	<a href = "M1/stages/2/rapport.v.pdf">Rapport</a>
+	<a href = "paperoj/jfla14.pdf">Papier</a>
 link
 en
-	<a href = "M1/stages/2/slides.v.pdf">Slides</a>
+	<a href = "paperoj/jfla14_slides.pdf">Slides</a>
 eo
-	<a href = "M1/stages/2/slides.v.pdf">Diapozitivoj</a>
+	<a href = "paperoj/jfla14_slides.pdf">Diapozitivoj</a>
 fr
-	<a href = "M1/stages/2/slides.v.pdf">Présentation</a>
+	<a href = "paperoj/jfla14_slides.pdf">Présentation</a>
+link
+all
+	<!-- FIXME:  Add a BibTeX file. -->
 end
 
 item
 all
-2011, <span class = "town">Paris</span>
+JFLA 2013
 description
 en
-	An internship I’ve done with <a href = "http://www.pps.univ-paris-diderot.fr/~gimenez/"><span class = "name">Stéphane Gimenez</span></a> in <span class = "town">Paris</span>.
-	I’ve been working on structures theory, linear logic, and all on the paths between them.
+	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a> and <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">A Certified <span class = "name">JavaScript</span> Interpreter</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2013.
 eo
-	Interniĝo farita kun <a href = "http://www.pps.univ-paris-diderot.fr/~gimenez/"><span class = "name">Stéphane Gimenez</span></a> en <span class = "town">Paris</span>.
-	Mi laboris sur teorio de strukturoj, lineara logiko, kaj la vojoj inter ilin.
+	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a> kaj <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">A Certified <span class = "name">JavaScript</span> Interpreter</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2013.
 fr
-	Un stage que j’ai fait avec <a href = "http://www.pps.univ-paris-diderot.fr/~gimenez/"><span class = "name">Stéphane Gimenez</span></a> à <span class = "town">Paris</span>.
-	J’ai travaillé sur la théorie des structures, la logique linéaire, et les liens que l’on peut faire entre eux.
+	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a> et <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">A Certified <span class = "name">JavaScript</span> Interpreter</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2013.
 link
 en
-	<a href = "M1/stages/1/rapport.pdf">Report</a>
+	<a href = "paperoj/jfla13.pdf">Full text</a>
 eo
-	<a href = "M1/stages/1/rapport.pdf">Raporto</a>
+	<a href = "paperoj/jfla13.pdf">Papero</a>
 fr
-	<a href = "M1/stages/1/rapport.pdf">Rapport</a>
+	<a href = "paperoj/jfla13.pdf">Papier</a>
 link
 en
-	<a href = "M1/stages/1/slides.pdf">Slides</a>
+	<a href = "paperoj/jfla13_slides.pdf">Slides</a>
 eo
-	<a href = "M1/stages/1/slides.pdf">Diapozitivoj</a>
+	<a href = "paperoj/jfla13_slides.pdf">Diapozitivoj</a>
 fr
-	<a href = "M1/stages/1/slides.pdf">Présentation</a>
-end
-
-item
+	<a href = "paperoj/jfla13_slides.pdf">Présentation</a>
+link
 all
-2010, <span class = "town">Grenoble</span>
-description
-en
-	An internship I’ve done with <a href = "http://www-verimag.imag.fr/~monniaux/"><span class = "name">David Monniaux</span></a> in <span class = "town">Grenoble</span>.
-	I’ve been working on an analysis of dataflow programming languages.
-eo
-	Mia unua interniĝo farita kun <a href = "http://www-verimag.imag.fr/~monniaux/"><span class = "name">David Monniaux</span></a> en <span class = "town">Grenoble</span>.
-	Mi laboris sur analizoj de ondaj progamlingvoj.
-fr
-	Mon premier stage, effectué sous la tutelle de <a href = "http://www-verimag.imag.fr/~monniaux/"><span class = "name">David Monniaux</span></a> à <span class = "town">Grenoble</span>.
-	Mon but était de faire des analyses automatiques de language de programmation par flots.
-link
-en
-	<a href = "L3/stage/rapport.pdf">Report</a>
-eo
-	<a href = "L3/stage/rapport.pdf">Raporto</a>
-fr
-	<a href = "L3/stage/rapport.pdf">Rapport</a>
-link
-en
-	<a href = "L3/stage/slides.pdf">Slides</a>
-eo
-	<a href = "L3/stage/slides.pdf">Diapozitivoj</a>
-fr
-	<a href = "L3/stage/slides.pdf">Présentation</a>
+	<!-- FIXME:  Add a BibTeX file. -->
 end
 
 section
@@ -394,10 +276,137 @@ fr
 	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> et <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)</span>, <span class = "journal">Festschrift of David Schmidt</span>, 2013.
 link
 en
-	<a href = "papers/Festschrift_Schmidt.pdf">Full text</a>
+	<a href = "paperoj/Festschrift_Schmidt.pdf">Full text</a>
 eo
-	<a href = "papers/Festschrift_Schmidt.pdf">Papero</a>
+	<a href = "paperoj/Festschrift_Schmidt.pdf">Papero</a>
 fr
-	<a href = "papers/Festschrift_Schmidt.pdf">Papier</a>
+	<a href = "paperoj/Festschrift_Schmidt.pdf">Papier</a>
 end
+
+#section
+#sectionName
+#interniĝoj
+#en
+#Internships Reports
+#eo
+#Raportoj de interniĝoj
+#fr
+#Rapports de stages
+#end
+
+#item
+#all
+#2012, <span class = "town">Rennes</span>
+#description
+#en
+#	An internship I’ve done with <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> and <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> in <span class = "town">Rennes</span>.
+#	I’ve made a <span class = "name">JavaScript</span> interpreter proven correct in <span class = "name">Coq</span>.
+#eo
+#	Interniĝo farita kun <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> kaj <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> en <span class = "town">Rennes</span>.
+#	Mi faritis interpretiston de <span class = "name">Javaskripto</span> pruvitan korektan per <span class = "name">Coq</span>.
+#fr
+#	Un stage que j’ai fait sous la tutelle d’<a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> et de <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> dans la belle ville de <span class = "town">Rennes</span>.
+#	J’y ai créé un interpréteur <span class = "name">JavaScript</span> prouvé correct en <span class = "name">Coq</span>.
+#link
+#en
+#	<a href = "M2/stage/rapport.pdf">Report</a>
+#eo
+#	<a href = "M2/stage/rapport.pdf">Raporto</a>
+#fr
+#	<a href = "M2/stage/rapport.pdf">Rapport</a>
+#link
+#en
+#	<a href = "M2/stage/slides.pdf">Slides</a>
+#eo
+#	<a href = "M2/stage/slides.pdf">Diapozitivoj</a>
+#fr
+#	<a href = "M2/stage/slides.pdf">Présentation</a>
+#end
+
+#item
+#all
+#2011, <span class = "town">Amsterdam</span>
+#description
+#en
+#	An internship I’ve done with <a href = "http://www.cs.vu.nl/~diem/"><span class = "name">Dimitri Hendriks</span></a> and <a href = "http://joerg.endrullis.de/"><span class = "name">Jörg Endrullis</span></a> in <span class = "town">Amsterdam</span>.
+#	The idea was to analysis streams and other coinductive types in <span class = "name">Coq</span> using rewriting reasoning.
+#eo
+#	Interniĝo farita kun <a href = "http://www.cs.vu.nl/~diem/"><span class = "name">Dimitri Hendriks</span></a> kaj <a href = "http://joerg.endrullis.de/"><span class = "name">Jörg Endrullis</span></a> en <span class = "town">Amsterdam</span>.
+#	Ĝia ideo estis analizi fluojn kaj alterajn coinduktajn tipojn en <span class = "name">Coq</span> per reverkadaj rezonadoj.
+#fr
+#	Un stage que j’ai fait avec <a href = "http://www.cs.vu.nl/~diem/"><span class = "name">Dimitri Hendriks</span></a> and <a href = "http://joerg.endrullis.de/"><span class = "name">Jörg Endrullis</span></a> à <span class = "town">Amsterdam</span>.
+#	Dans l’idée, je devais transformer automatiquement des preuves de réécriture sur des objets inductifs en des preuves <span class = "name">Coq</span> correctes.
+#link
+#en
+#	<a href = "M1/stages/2/rapport.v.pdf">Report</a>
+#eo
+#	<a href = "M1/stages/2/rapport.v.pdf">Raporto</a>
+#fr
+#	<a href = "M1/stages/2/rapport.v.pdf">Rapport</a>
+#link
+#en
+#	<a href = "M1/stages/2/slides.v.pdf">Slides</a>
+#eo
+#	<a href = "M1/stages/2/slides.v.pdf">Diapozitivoj</a>
+#fr
+#	<a href = "M1/stages/2/slides.v.pdf">Présentation</a>
+#end
+
+#item
+#all
+#2011, <span class = "town">Paris</span>
+#description
+#en
+#	An internship I’ve done with <a href = "http://www.pps.univ-paris-diderot.fr/~gimenez/"><span class = "name">Stéphane Gimenez</span></a> in <span class = "town">Paris</span>.
+#	I’ve been working on structures theory, linear logic, and all on the paths between them.
+#eo
+#	Interniĝo farita kun <a href = "http://www.pps.univ-paris-diderot.fr/~gimenez/"><span class = "name">Stéphane Gimenez</span></a> en <span class = "town">Paris</span>.
+#	Mi laboris sur teorio de strukturoj, lineara logiko, kaj la vojoj inter ilin.
+#fr
+#	Un stage que j’ai fait avec <a href = "http://www.pps.univ-paris-diderot.fr/~gimenez/"><span class = "name">Stéphane Gimenez</span></a> à <span class = "town">Paris</span>.
+#	J’ai travaillé sur la théorie des structures, la logique linéaire, et les liens que l’on peut faire entre eux.
+#link
+#en
+#	<a href = "M1/stages/1/rapport.pdf">Report</a>
+#eo
+#	<a href = "M1/stages/1/rapport.pdf">Raporto</a>
+#fr
+#	<a href = "M1/stages/1/rapport.pdf">Rapport</a>
+#link
+#en
+#	<a href = "M1/stages/1/slides.pdf">Slides</a>
+#eo
+#	<a href = "M1/stages/1/slides.pdf">Diapozitivoj</a>
+#fr
+#	<a href = "M1/stages/1/slides.pdf">Présentation</a>
+#end
+
+#item
+#all
+#2010, <span class = "town">Grenoble</span>
+#description
+#en
+#	An internship I’ve done with <a href = "http://www-verimag.imag.fr/~monniaux/"><span class = "name">David Monniaux</span></a> in <span class = "town">Grenoble</span>.
+#	I’ve been working on an analysis of dataflow programming languages.
+#eo
+#	Mia unua interniĝo farita kun <a href = "http://www-verimag.imag.fr/~monniaux/"><span class = "name">David Monniaux</span></a> en <span class = "town">Grenoble</span>.
+#	Mi laboris sur analizoj de ondaj progamlingvoj.
+#fr
+#	Mon premier stage, effectué sous la tutelle de <a href = "http://www-verimag.imag.fr/~monniaux/"><span class = "name">David Monniaux</span></a> à <span class = "town">Grenoble</span>.
+#	Mon but était de faire des analyses automatiques de language de programmation par flots.
+#link
+#en
+#	<a href = "L3/stage/rapport.pdf">Report</a>
+#eo
+#	<a href = "L3/stage/rapport.pdf">Raporto</a>
+#fr
+#	<a href = "L3/stage/rapport.pdf">Rapport</a>
+#link
+#en
+#	<a href = "L3/stage/slides.pdf">Slides</a>
+#eo
+#	<a href = "L3/stage/slides.pdf">Diapozitivoj</a>
+#fr
+#	<a href = "L3/stage/slides.pdf">Présentation</a>
+#end
 

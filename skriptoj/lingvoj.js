@@ -224,7 +224,7 @@ function getPageLang (){
 		lang = langset || lang
 	})
 
-	// The target property has priority on everything else:  have better not to conflict with any CSS visibilty property…
+	// The target property has priority on everything else:  have better not to conflict with any CSS visibility property…
 	dependingOnCurrentPage (function (_, target){
 		iterLanguages (function (lg){
 				if (target === lg){
@@ -250,10 +250,7 @@ function setContentTextNodeToNode (idText, node){
     if (!text)
     	return
     
-    clearNode (node)
-    
-    node.appendChild (
-    	document.createTextNode (text))
+    setContent (node, text)
     
     addLanguageFunction (function (newLang){
     		if (!node.parentNode) // This means the node is no longer in the DOM (note that this is not checked immediately but only when changing language).
@@ -264,10 +261,7 @@ function setContentTextNodeToNode (idText, node){
     		if (!text)
     			return true
     
-    		clearNode (node)
-    
-    		node.appendChild (
-    			document.createTextNode (text))
+            setContent (node, text)
     	})
 }
 

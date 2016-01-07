@@ -1,2 +1,10 @@
-ErrorDocument 404 /error.html
+AddDefaultCharset utf-8
+#ErrorDocument 404 /eraro.html
+
+# 12 weeks
+<FilesMatch "\.(jpg|jpeg|png|svg)$">
+<ifModule mod_headers.c>
+Header set Cache-Control "max-age=7257600, public"
+</ifModule>
+</FilesMatch>
 

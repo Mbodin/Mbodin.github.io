@@ -46,6 +46,14 @@ function getContent (node){
 	return node.childNodes[0].nodeValue
 }
 
+function setContent (node, value){
+    if (!node) return
+
+    clearNode (node)
+
+    node.appendChild (document.createTextNode (value))
+}
+
 function appendChilds (dest, node, clone){
 	var childs = node.childNodes
 

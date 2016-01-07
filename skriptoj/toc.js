@@ -30,7 +30,7 @@ function createTocCommand (label){
 	makeADoNothing (node)
 	node.onclick = function (){ switchStateToc (label, myId) }
 
-    setContentTextNodeToNode (node, "toc_dismiss")
+    setContentTextNodeToNode ("toc_dismiss", node)
 
 	return node
 }
@@ -45,7 +45,7 @@ function createTocCommandAll (hide){
 	node.setAttribute ("id", "TOC_" + (hide ? "hide" : "show") + "_all")
 	node.style.display = hide ? "inline" : "none"
 
-    setContentTextNodeToNode (node, hide ? "toc_dismiss_all" : "toc_undismiss_all"))
+    setContentTextNodeToNode (hide ? "toc_dismiss_all" : "toc_undismiss_all", node)
 
 	return node
 }
@@ -73,12 +73,12 @@ function switchStateToc (label, idCommand){
 
 	if (container.style.display === "none") {
 		container.style.display = "inline"
-		command.childNodes[0].nodeValue = getText ("toc_dismiss")
+		setContentTextNodeToNode ("toc_dismiss", command)
 
 		numberOfDisplayedSection++
 	} else {
 		container.style.display = "none"
-		command.childNodes[0].nodeValue = getText ("toc_undismiss")
+        setContentTextNodeToNode ("toc_undismiss", command)
 
 		numberOfDisplayedSection--
 	}
@@ -92,7 +92,7 @@ function displayTocTitle (label, idCommand){
 
 	if (container.style.display != "inline") {
 		container.style.display = "inline"
-		command.childNodes[0].nodeValue = getText ("toc_dismiss")
+        setContentTextNodeToNode ("toc_dismiss", command)
 
 		numberOfDisplayedSection++
 		numberOfDisplayedSectionChanged ()
@@ -165,7 +165,7 @@ function dismissAll (){
                     linkA = document.createElement ("a")
                     linkA.setAttribute ("class", "toc_command")
                     linkA.setAttribute ("href", siteRootURL + pathFromRoot + getPageName () + "#" + label)
-                    setContentTextNodeToNode (linkA, "toc_link")
+                    setContentTextNodeToNode ("toc_link", linkA)
 
                     h.appendChild (linkA)
                 })

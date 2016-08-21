@@ -179,9 +179,10 @@ function switchLanguage (newLang, firstTime){
 		], fetchNodesLang)
 
 	iterTab ([
-			"titlePage"
+			"titlePage",
+            "readMore"
 		], fetchTextLang)
-}())
+} ())
 
 function addErrorMsgKey (key, details, lang, toBeCalledAtChange){
 	if (lang === undefined)
@@ -190,7 +191,12 @@ function addErrorMsgKey (key, details, lang, toBeCalledAtChange){
 		return
 
 	applyNode ("messages", function (messagesNode){
-			appendNodeLanguage (messagesNode, key, lang, toBeCalledAtChange)
+			appendNodeLanguage (messagesNode, key, lang, function (lang){
+                    if (globalObject ().messageStyle)
+                        messageStyle (this)
+                    if (toBeCalledAtChange)
+                        toBeCalledAtChange.call (this, lang)
+                })
 			if (details)
 				addComment (messagesNode, details)
 		})
@@ -381,5 +387,5 @@ function removeWrongLanguageBlock (){
 	addLanguageFunction (function (lang){
 			setPassingArgument ("lang", lang)
 		})
-}())
+} ())
 

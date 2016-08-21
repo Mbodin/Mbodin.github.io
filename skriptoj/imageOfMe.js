@@ -97,5 +97,5 @@
 
     if (updateMyImage)
         setInterval (updateMyImage (true), 20000)
-}())
+} ())
 

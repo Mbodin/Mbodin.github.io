@@ -40,7 +40,7 @@ var siteRootURL = "http://people.irisa.fr/Martin.Bodin/"
 
 	if(!pathFromRoot)
 		pathFromRoot = ""
-}())
+} ())
 
 function getContent (node){
 	return node.childNodes[0].nodeValue
@@ -151,7 +151,7 @@ function newDummyNode (textMode){
 }
 
 function removeNodeAndReput (node){
-	// This function removes a node of the DOM and returns a function that reput it we called.
+	// This function removes a node of the DOM and returns a function which reputs it when called.
 	if (!node)
 		return function (){ }
 
@@ -245,5 +245,9 @@ function declarePassingArgument (name){
 
 function randInt (i){
 	return Math.floor (Math.random () * i)
+}
+
+function globalObject (){
+    return function (){ return this } ()
 }
 

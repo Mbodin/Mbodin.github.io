@@ -17,7 +17,7 @@ var numberOfDisplayedSection = 0, totalNumberOfSection = 0
 
     // All the strings have been fetched:  we can remove their container (in case there is no CSS).
     removeNodeId ("tocLangContents")
-}())
+} ())
 
 function createTocCommand (label){
 	var myId = tocCommand + label ;
@@ -100,7 +100,6 @@ function displayTocTitle (label, idCommand){
 }
 
 function undismissAll (){
-	var i
     iterTab (applyFunctionOnAll, function (f){
             f (displayTocTitle)
         })
@@ -110,7 +109,6 @@ function undismissAll (){
 }
 
 function dismissAll (){
-	var i
     iterTab (applyFunctionOnAll, function (f){
             f (displayTocTitle)
             f (switchStateToc)
@@ -186,6 +184,6 @@ function dismissAll (){
 				tocAll.appendChild (localUl)
 				tocBox.appendChild (tocAll)
 			}
-		}())
-}())
+		} ())
+} ())
 

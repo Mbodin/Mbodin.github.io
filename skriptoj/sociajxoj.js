@@ -127,7 +127,7 @@ function hackerSocial (lang){
 						case "en":
 							return "http://en.wikipedia.org/wiki/Hacker_(programmer_subculture)"
 					}
-				}()))
+				} ()))
 		})
 }
 
@@ -289,5 +289,5 @@ function checkLang (lang){
 						removeNodeId ("social-" + lang)
 					})
 		})
-}()) // TODO:  Update using “lingvoj”.
+} ()) // TODO:  Update using “lingvoj”.
 

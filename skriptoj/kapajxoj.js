@@ -44,5 +44,5 @@ function languageOn (time){
 		})
 
 	addLanguageFunction (function (){ languageOn () })
-}())
+} ())
 

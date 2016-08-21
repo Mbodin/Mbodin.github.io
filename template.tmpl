@@ -99,8 +99,13 @@
             <div class = "invisible">
                 <!-- See “lingvoj” for more details. -->
                 <tmpl_loop name = "allLanguages">
+                <p xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "readMore_<tmpl_var name = lang />" class = "messageButton"><tmpl_var name = "readMore" /></p>
+                <p xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "hideMessage_<tmpl_var name = lang />" class = "messageButton"><tmpl_var name = "hideMessage" /></p>
                 <p class = "message" xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "wrongLang_<tmpl_var name = lang />"><tmpl_var name = "wrongLang" /></p>
-                <p class = "message" xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "badJS_<tmpl_var name = lang />"><tmpl_var name = "badJS" /></p>
+                <div class = "message" xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "badJS_<tmpl_var name = lang />">
+                    <p><tmpl_var name = "badJS" /><span class = "readMore" id = "badJSexplain_readMore_<tmpl_var name = lang />"></span></p>
+                    <p class = "explanation" id = "badJSexplain_<tmpl_var name = lang />"><tmpl_var name = "badJSexplain" /></p>
+                </div>
                 <p class = "message" xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "errorInSocial_<tmpl_var name = lang />"><tmpl_var name = "errorInSocial" /></p>
                 </tmpl_loop>
             </div>
@@ -118,13 +123,13 @@
             (function (){
                 // Removing JavaScript warning message (I prefer to do this that way, as the “script” tag stands for more things than just JavaScript).
                 iterLanguages (function (lang){
-                    removeNode (document.getElementById ("messageToBeRemoved" + addIfNotEmpty (lang, "_")))
+                        removeNode (document.getElementById ("messageToBeRemoved" + addIfNotEmpty (lang, "_")))
                     })
 
                 // Checking whether the browser correctly implements EcmaScript 5.1, version of JavaScript on which this website has been developped.
                 // Of course, we won’t check everything, just one part of the specification.
                 // By 15.3.4.2, “Function.prototype.toString” should returns a string following the syntax of a “FunctionDeclaration” when called on a function object.
-                // In particular, such a string should be parsable by “eval” without trouble.
+                // In particular, such a string should be parsable (as it is a declaration, we can just run it by “eval”) without trouble.
                 // The specification allows to add additional properties not mentionned in it, in particular a different property “toString” to “String” has to be checked.
                 try {
                     eval (Function.prototype.toString.call (String))

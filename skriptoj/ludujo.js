@@ -33,7 +33,7 @@ function runOnURL (url, continuation, errcont){
 			} catch (_){
 				errcont ()
 			}
-		}())
+		} ())
 	else errcont ()
 }
 
@@ -145,5 +145,5 @@ function generateLudujo (globalNode, lastNode){
 	ludujoNode.appendChild (loadingNode)
 
 	generateLudujo (ludujoNode, loadingNode)
-}())
+} ())
 

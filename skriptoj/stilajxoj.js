@@ -60,7 +60,7 @@ function tocClick (time){
 			}
 		}
 	}
-}())
+} ())
 
 
 var idOfSetIntervalOfcheckExplainedItem = 0
@@ -125,7 +125,7 @@ function getEMail (mailto, first, name, domain, country){
 			element.appendChild (aNode)
 		}
 	}
-}())
+} ())
 
 
 function addValidity (p, id, url){
@@ -177,7 +177,7 @@ function addValidity (p, id, url){
 
 		addLanguageFunction (updateValidity)
 	}
-}())
+} ())
 
 ;
 
@@ -187,5 +187,60 @@ function addValidity (p, id, url){
 	markSwitchLanguage ()
 
 	removeWrongLanguageBlock ()
-}())
+} ())
+
+
+function messageStyle (messageNode){
+    // Adds dynamic features to the messages.
+    var childs = messageNode.childNodes
+
+    // First check whether this node has already been treated by looking for a hide button.
+    var dejavu = false
+    iterTab (childs, function (child){
+            if (child.class === "hide") dejavu = true
+        })
+    if (dejavu) return
+
+    var hideButton = appendNodeLanguage (messageNode, "hideMessage")
+
+    if (hideButton)
+        hideButton.onclick = function (){
+            removeNode (messageNode)
+        }
+
+    var explanations = []
+
+    iterTab (childs, function (child){
+            if (child.class === "explanation")
+                explanations.push (removeNodeAndReput (child))
+        })
+
+    var readMore = function (readMoreNode){
+            readMoreNode.class = "messageButton"
+            readMoreNode.onclick = function (){
+                    iterTab (explanations, function (appear){
+                            appear ()
+                        })
+                }
+        }
+
+    iterTab (childs, function (child){
+            if (child.class === "readMore") readMoreNode (child)
+
+            // They can hides in deeper levels.
+            cs = child.childNodes
+            iterTab (cs, function (child){
+                    if (child.class === "readMore") readMoreNode (child)
+                })
+        })
+}
+
+(function (){
+	if (document.getElementsByClassName){
+        var nodes = document.getElementsByClassName ("message")
+
+		for (var i = 0; i < nodes.length; i++)
+            messageStyle (nodes[i])
+    }
+} ())
 

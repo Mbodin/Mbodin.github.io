@@ -13,12 +13,18 @@ Malafiŝi ĉion
 Afiŝi ĉion
 =textStart
 Eki
+=readMore
+Legi pli
+=hideMessage
+Malmontri
 =needJSCSS
 Por bone foliumi tiun retejon, mi konsilas al vi uzi retfoliumilon kiu kapablas ruli <span class = "name">Javaskripto</span>n aŭ <span class = "name">CSS</span>n.
 =JSCSSnotthere
 Se vi legas tiun ĉi mesaĝon, signifas ke nek <span class = "name">JavaScript</span>, nek <span class = "name">CSS</span> ruleblas (aŭ estas ŝaltata) per via nuna foliumilo.
 =badJS
-Aspektas ke via retfoliumilo ne perfekte respektas la normo <span class = "name">ECMAScript</span> de <span class = "name">Javaskripto</span>, versio 5.1, en kiu ĉi tiu retejo sinbazas.
+Aspektas ke via retfoliumilo ne perfekte respektas la normon <span class = "name">ECMAScript</span> de <span class = "name">Javaskripto</span>, versio 5.1, en kiu ĉi tiu retejo sinbazas.
+=badJSexplain
+Ne tro zorgu: mi ne konas retfoliomilon kiu respektas ĝin entute.  Tiu averto pli celas konsciigi la diferencon inter teorio kaj praktiko, kaj ekŝalti cerbumadojn prie.
 =noLanguageDetected
 <a class = "switchLanguage_eo internalLink" href = "#eo">Alklaku ĉi tie por legi tiun retpaĝon Esperante</a>.
 =relocation
@@ -63,12 +69,18 @@ Hide All
 Show All
 =textStart
 Start
+=readMore
+Read more
+=hideMessage
+Hide
 =needJSCSS
 To correctly visualise this website, I advise you to use a browser able to execute <span class = "name">JavaScript</span> or <span class = "name">CSS</span>.
 =JSCSSnotthere
 If you read this message, this means that neither <span class = "name">JavaScript</span>, nor <span class = "name">CSS</span> are compatible with (or set up by) your current browser.
 =badJS
 It seems that your browser is not strictly following the <span class = "name">ECMAScript</span> standard of <span class = "name">JavaScript</span>, version 5.1, on which this site has been based on.
+=badJSexplain
+Do not worry too much: I am not aware of any browser completly following this standard.  This warning aims more at emphasing on the gap between theory and practise, and at yielding some thoughts about it.
 =noLanguageDetected
 <a class = "switchLanguage_en internalLink" href = "#en">Click here to get the English version of this webpage.</a>
 =relocation
@@ -113,12 +125,18 @@ Cacher tout
 Montrer tout
 =textStart
 Lancer
+=readMore
+En savoir plus
+=hideMessage
+Ne plus voir ce message
 =needJSCSS
 Pour naviguer correctement sur ce site, je conseille fortement d’utiliser un navigateur capable d’exécuter du <span class = "name">JavaScript</span> ou du <span class = "name">CSS</span>.
 =JSCSSnotthere
 Si vous lisez ce message, c’est que ni <span class = "name">JavaScript</span>, ni <span class = "name">CSS</span> ne sont supportés (ou activés) par votre navigateur actuel.
 =badJS
 Il semblerait que votre navigateur ne respecte pas strictement la norme <span class = "name">ECMAScript</span> de <span class = "name">JavaScript</span> dans sa version 5.1, sur laquelle ce site est basée.
+=badJSexplain
+Pas d’inquiétude : je ne connais pas de navigateur qui le respecte complètement.  Cet avertissement est plus destiné à faire prendre conscience du fossé entre théorie et pratique, afin de déclencher quelques réflexions.
 =noLanguageDetected
 <a class = "switchLanguage_fr internalLink" href = "#fr">Cliquez ici pour voir le contenu de cette page en Français</a>.
 =relocation

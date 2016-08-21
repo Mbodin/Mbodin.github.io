@@ -197,11 +197,15 @@ function messageStyle (messageNode){
     // First check whether this node has already been treated by looking for a hide button.
     var dejavu = false
     iterTab (childs, function (child){
-            if (child.class === "hide") dejavu = true
+            if (child.getAttribute && child.getAttribute ("class") === "hide")
+                dejavu = true
         })
     if (dejavu) return
 
-    var hideButton = appendNodeLanguage (messageNode, "hideMessage")
+    var hideButton = document.createElement ("p")
+    hideButton.setAttribute ("class", "messageButton")
+    setContentTextNodeToNode ("hideMessage", hideButton)
+    messageNode.appendChild (hideButton)
 
     if (hideButton)
         hideButton.onclick = function (){
@@ -211,26 +215,30 @@ function messageStyle (messageNode){
     var explanations = []
 
     iterTab (childs, function (child){
-            if (child.class === "explanation")
+            if (child.getAttribute && child.getAttribute ("class") === "explanation")
                 explanations.push (removeNodeAndReput (child))
         })
 
     var readMore = function (readMoreNode){
-            readMoreNode.class = "messageButton"
+            readMoreNode.setAttribute ("class", "messageButton")
+            setContentTextNodeToNode ("readMore", readMoreNode)
             readMoreNode.onclick = function (){
                     iterTab (explanations, function (appear){
                             appear ()
                         })
+                    removeNode (readMoreNode)
                 }
         }
 
     iterTab (childs, function (child){
-            if (child.class === "readMore") readMoreNode (child)
+            if (child.getAttribute && child.getAttribute ("class") === "readMore")
+                readMore (child)
 
             // They can hides in deeper levels.
             cs = child.childNodes
             iterTab (cs, function (child){
-                    if (child.class === "readMore") readMoreNode (child)
+                    if (child.getAttribute && child.getAttribute ("class") === "readMore")
+                        readMore (child)
                 })
         })
 }

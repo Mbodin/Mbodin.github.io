@@ -180,7 +180,8 @@ function switchLanguage (newLang, firstTime){
 
 	iterTab ([
 			"titlePage",
-            "readMore"
+            "readMore",
+            "hideMessage"
 		], fetchTextLang)
 } ())
 

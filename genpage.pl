@@ -587,6 +587,7 @@ while (my ($directoryname, $page) = each %allParsedPages){
 				"textShowAll",
 				"textStart",
 				"readMore",
+				"hideMessage",
 				"needJSCSS",
 				"JSCSSnotthere",
 				"badJS",

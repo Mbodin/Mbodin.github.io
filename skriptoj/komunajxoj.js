@@ -43,7 +43,8 @@ var siteRootURL = "http://people.irisa.fr/Martin.Bodin/"
 } ())
 
 function getContent (node){
-	return node.childNodes[0].nodeValue
+    if (node.childNodes[0])
+	    return node.childNodes[0].nodeValue
 }
 
 function setContent (node, value){

@@ -87,6 +87,7 @@ a:hover, a:active {
 	border:  2px solid #eeeeec ;
 	background-color:  #ad7fa8 ;
 	color:  #eeeeec ;
+    overflow:  hidden ;
 }
 
 .message p {
@@ -97,6 +98,18 @@ a:hover, a:active {
 .message a {
 	color:  #d3d7cf ;
 }
+
+.messageButton {
+	color:  #75507b ;
+    float:  right ;
+    display:  inline-block ;
+	vertical-align:  top ;
+}
+
+.messageButton:hover {
+	text-decoration:  underline ;
+}
+
 
 .paperName {
 	font-weight: bold ;

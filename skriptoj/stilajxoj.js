@@ -203,14 +203,19 @@ function messageStyle (messageNode){
     if (dejavu) return
 
     var hideButton = document.createElement ("p")
-    hideButton.setAttribute ("class", "messageButton")
-    setContentTextNodeToNode ("hideMessage", hideButton)
-    messageNode.appendChild (hideButton)
-
-    if (hideButton)
-        hideButton.onclick = function (){
-            removeNode (messageNode)
+    if (hideButton){
+        hideButton.setAttribute ("class", "messageButton")
+        var hideButtonLink = document.createElement ("a")
+        if (hideButtonLink){
+            hideButtonLink.setAttribute ("href", "#")
+            hideButton.appendChild (hideButtonLink)
+            setContentTextNodeToNode ("hideMessage", hideButtonLink)
+            hideButtonLink.onclick = function (){
+                removeNode (messageNode)
+            }
+            messageNode.appendChild (hideButton)
         }
+    }
 
     var explanations = []
 
@@ -221,13 +226,18 @@ function messageStyle (messageNode){
 
     var readMore = function (readMoreNode){
             readMoreNode.setAttribute ("class", "messageButton")
-            setContentTextNodeToNode ("readMore", readMoreNode)
-            readMoreNode.onclick = function (){
-                    iterTab (explanations, function (appear){
-                            appear ()
-                        })
-                    removeNode (readMoreNode)
-                }
+            var readMoreLink = document.createElement ("a")
+            if (readMoreLink){
+                readMoreNode.appendChild (readMoreLink)
+                setContentTextNodeToNode ("readMore", readMoreLink)
+                readMoreLink.setAttribute ("href", "#")
+                readMoreLink.onclick = function (){
+                        iterTab (explanations, function (appear){
+                                appear ()
+                            })
+                        removeNode (readMoreNode)
+                    }
+            }
         }
 
     iterTab (childs, function (child){

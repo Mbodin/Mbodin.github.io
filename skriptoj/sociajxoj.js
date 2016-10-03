@@ -92,7 +92,7 @@ function facebookSocial (lang, addr){
 function lernuSocial (lang){
 	return applyNode ("lernu-social", function (aimg){
 			var img = document.createElement ("img")
-			img.setAttribute ("src", "http://eo.lernu.net/grafikajhoj/aspekto/logo/1.png")
+			img.setAttribute ("src", "http://lernu.net/images/pages/esperanto/timeline_lernu.png")
 			img.setAttribute ("alt", "Lernu!")
 			img.setAttribute ("style", createStyles ([
 						["height", "32px"]
@@ -100,7 +100,7 @@ function lernuSocial (lang){
 			aimg.appendChild (img)
 
 			var change = function (lang){
-					aimg.setAttribute ("href", "http://" + lang + ".lernu.net/")
+					aimg.setAttribute ("href", "http://lernu.net/" + lang)
 				}
 
 			change (lang)
@@ -275,9 +275,7 @@ function checkLang (lang){
             node.setAttribute ("class", "")
         })
 
-	checkLang ("en")
-	checkLang ("eo")
-	checkLang ("fr")
+    iterLanguages (checkLang)
 
 	declarePassingArgument ("social")
 
@@ -288,6 +286,6 @@ function checkLang (lang){
 				iterLanguages (function (lang){
 						removeNodeId ("social-" + lang)
 					})
-		})
+		}, "no")
 } ()) // TODO:  Update using “lingvoj”.
 

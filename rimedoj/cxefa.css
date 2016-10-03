@@ -33,6 +33,17 @@ body {
 	padding:  0 ;
 }
 
+form {
+    padding:  0pt ;
+    margin:  0pt ;
+}
+
+input {
+    margin-left:  0pt ;
+    margin-right  .5em ;
+}
+
+
 .langcontainer {
 	margin:  0 ;
 	padding:  0 ;
@@ -93,6 +104,7 @@ a:hover, a:active {
 .message p {
     margin: .5ex 0 ;
     padding: 0 ;
+    display:  inline ;
 }
 
 .message a {
@@ -100,14 +112,18 @@ a:hover, a:active {
 }
 
 .messageButton {
+    margin: .5ex 0 ;
 	color:  #75507b ;
     float:  right ;
     display:  inline-block ;
-	vertical-align:  top ;
 }
 
 .messageButton:hover {
 	text-decoration:  underline ;
+}
+
+.message .explanation {
+    display:  block ;
 }
 
 
@@ -333,6 +349,12 @@ h3:hover {
 	background-position:  left center ;
 }
 
+li.cleanLink {
+	list-style:  none ;
+	padding-left:  0pt ;
+    background:  none ;
+}
+
 .englobingProjectItem:hover .englobingProjectLinks {
 	border-top:  2px solid #ad7fa8 ;
 }
@@ -522,7 +544,7 @@ h2:hover a.toc_command {
 	margin:  0.5ex auto ;
 }
 
-#text_zone textarea {
+textarea {
 	width:  100% ;
 	max-width:  100% ;
 	height:  auto ;
@@ -702,5 +724,26 @@ dl.tableDescription:after {
 	list-style-type:  none ;
 	margin:  1ex 1em ;
 	display:  inline-block ;
+}
+
+
+@keyframes ProgramResult {
+    from {
+        background-color:  #ad7fa8 ;
+    }
+    to {
+        background-color:  transparent ;
+    }
+}
+
+.program {
+    font-family:  monospace ;
+}
+
+.programResult {
+    font-family:  monospace ;
+    animation-name:  ProgramResult ;
+    animation-duration:  1s ;
+    animation-iteration-count:  1 ;
 }
 

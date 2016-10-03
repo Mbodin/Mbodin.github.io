@@ -3,9 +3,9 @@
     <!-- Here the content of page “<tmpl_var name = "pageName" />”. -->
     <head>
         <meta charset="utf-8">
-        <!-- This page has been generated using home-made Perl scripts…  I hope nothing wrong appeared in it.  Do not hesitate to contact me if you notice anything. -->
+        <!-- This page has been generated using home-made Perl scripts…  I know, I should learn how to use Org-mode.  I hope nothing to badly appear.  Do not hesitate to contact me if you notice anything wrong. -->
         <title id = "documentTitle"><tmpl_var name = "titlePageAllLanguages" /></title>
-        <meta http-equiv = "Content-Type" content = "text/html; charset=utf-8" />
+        <!-- meta http-equiv = "content-type" content = "text/html; charset=utf-8" / -->
         <link rel = "icon" type = "image/svg+xml" href = "<tmpl_var name = pathToRoot />rimedoj/favicon.svg" sizes = "any" />
         <link rel = "stylesheet" type = "text/css" href = "<tmpl_var name = pathToRoot />rimedoj/cxefa.css" />
         <meta name = "viewport" content = "width=device-width" />
@@ -109,7 +109,6 @@
                 <p class = "message" xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "errorInSocial_<tmpl_var name = lang />"><tmpl_var name = "errorInSocial" /></p>
                 </tmpl_loop>
             </div>
-            <!-- TODO:  A script that adds a close button at the end of each “message”-classed node. -->
         </aside>
         <nav class = "nolanguagedetected">
             <tmpl_loop name = "allLanguages">
@@ -126,15 +125,35 @@
                         removeNode (document.getElementById ("messageToBeRemoved" + addIfNotEmpty (lang, "_")))
                     })
 
-                // Checking whether the browser correctly implements EcmaScript 5.1, version of JavaScript on which this website has been developped.
-                // Of course, we won’t check everything, just one part of the specification.
-                // By 15.3.4.2, “Function.prototype.toString” should returns a string following the syntax of a “FunctionDeclaration” when called on a function object.
-                // In particular, such a string should be parsable (as it is a declaration, we can just run it by “eval”) without trouble.
-                // The specification allows to add additional properties not mentionned in it, in particular a different property “toString” to “String” has to be checked.
-                try {
-                    eval (Function.prototype.toString.call (String))
-                } catch (_){
-                    addErrorMsgKey ("badJS")
+                declarePassingArgument ("pedanticJS")
+
+                var pedanticJS = true;
+
+                getURLAttribute ("pedanticJS", function (p){
+                        if (p === "no") pedanticJS = false
+                    })
+
+                if (pedanticJS){
+                    // Checking whether the browser correctly implements EcmaScript 5.1, version of JavaScript on which this website has been developped.
+                    // Of course, we won’t check everything, just one part of the specification.
+                    // By 15.3.4.2, “Function.prototype.toString” should returns a string following the syntax of a “FunctionDeclaration” when called on a function object.
+                    // In particular, such a string should be parsable (as it is a declaration, we can just run it by “eval”) without trouble.
+                    // The specification allows to add additional properties not mentionned in it, in particular a different property “toString” to “String” has to be checked.
+                    try {
+                        eval (Function.prototype.toString.call (String))
+                    } catch (_){
+                        var pedanticJSNode = addErrorMsgKey ("badJS")
+                    }
+                }
+
+                noMorePedanticJS = function (){
+                    setPassingArgument ('pedanticJS', 'no')
+
+                    removeNode (pedanticJSNode)
+
+                    iterLanguages (function (lang){
+                            removeNodeId ("badJS_" + lang)
+                        })
                 }
             }())
         // --><!]]>
@@ -195,7 +214,7 @@
                                 <tmpl_if name = "isInternal">
                                 <li><a class = "internalLink" href = "<tmpl_var name = link />?lang=<tmpl_var name = lang /><tmpl_if name = hasnosharp>#<tmpl_var name = lang /></tmpl_if>"><tmpl_var name = "text" /></a></li>
                                 <tmpl_else>
-                                <li><tmpl_var name = "projectsLinks" /></li>
+                                <li <tmpl_if name = "isClean">class = "cleanLink"</tmpl_if>><tmpl_var name = "projectsLinks" /></li>
                                 </tmpl_if>
                                 </tmpl_loop>
                             </ul>

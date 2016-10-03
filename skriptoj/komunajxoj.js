@@ -13,15 +13,15 @@ function iterTab (t, f, backward, start){
 	return current
 }
 
-function removeNodeId (id){
-	removeNode (document.getElementById (id))
-}
-
 function applyNode (id, f){
 	var node = document.getElementById (id)
 
 	if (node)
 		return f (node)
+}
+
+function removeNodeId (id){
+    applyNode (id, removeNode)
 }
 
 var siteRootURL = "http://people.irisa.fr/Martin.Bodin/"
@@ -65,6 +65,8 @@ function appendChilds (dest, node, clone){
 }
 
 function clearNode (node){
+    if (!node) return
+
 	var childs = node.childNodes
 
 	for (var i = childs.length - 1; i >= 0; i--)
@@ -83,7 +85,7 @@ function addComment (node, message){
 	node.appendChild (document.createComment (" " + message + " "))
 }
 
-function getURLAttribute (attribute, continuation){
+function getURLAttribute (attribute, continuation, defaultValue){
 	var url = document.location.href
 
 	var reg = new RegExp ("(\\?|&|^)" + attribute + "=([^&#]*)([#&]|$)")
@@ -92,7 +94,8 @@ function getURLAttribute (attribute, continuation){
 	if (matches && matches[2] !== undefined){
 		var variable = decodeURIComponent(matches[2]).replace(/\+/g, ' ')
 		continuation (variable)
-	}
+	} else if (defaultValue !== undefined)
+        continuation (defaultValue)
 }
 
 function getPageName (complete){
@@ -237,10 +240,10 @@ function setPassingArgument (name, value, override){
 	}
 }
 
-function declarePassingArgument (name){
+function declarePassingArgument (name, defaultValue){
 	getURLAttribute (name, function (value){
 			setPassingArgument (name, value)
-		})
+		}, defaultValue)
 }
 
 

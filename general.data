@@ -24,7 +24,7 @@ Se vi legas tiun ĉi mesaĝon, signifas ke nek <span class = "name">JavaScript</
 =badJS
 Aspektas ke via retfoliumilo ne perfekte respektas la normon <span class = "name">ECMAScript</span> de <span class = "name">Javaskripto</span>, versio 5.1, en kiu ĉi tiu retejo sinbazas.
 =badJSexplain
-Ne tro zorgu: mi ne konas retfoliomilon kiu respektas ĝin entute.  Tiu averto pli celas konsciigi la diferencon inter teorio kaj praktiko, kaj ekŝalti cerbumadojn prie.
+Ne tro zorgu: mi ne konas retfoliumilon kiu respektas ĝin entute.  Tiu averto pli celas konsciigi la diferencon inter teorio kaj praktiko, kaj ekŝalti cerbumadojn prie.  Por ne plu vidi ĉi tiun averton, <a href = "#" onclick = "noMorePedanticJS ()">klaku ĉi tien</a>.
 =noLanguageDetected
 <a class = "switchLanguage_eo internalLink" href = "#eo">Alklaku ĉi tie por legi tiun retpaĝon Esperante</a>.
 =relocation
@@ -48,7 +48,7 @@ Ia problemo okazis dum la eko de ies socia skripto…
 =spyingSocials
 Sociaj skriptoj estas kodoj el diversaj ne-ĉiel-fidemaj retejoj kaj povas kaŝobservi vin.  Se vi ne fidas ilin, <a onclick = "setPassingArgument ('social', 'no', true)" class = "internalLink" href = "#">alklaku ĉi tie por malaktivigi ilin</a>.
 =permanentSocials
-Por aŭtomate aktivigi sociajn skriptojn dum vi retumas en ĉi tiu retejo sen devi alklaki ĉi sube, <a href = "javascript: permanentSocials ()">alklaku ĉi tie</a>.
+Por aŭtomate aktivigi sociajn skriptojn dum vi retumas en ĉi tiu retejo sen devi alklaki ĉi sube, <a href = "#" onclick = "permanentSocials ()">alklaku ĉi tie</a>.
 =contactmeNoJS
 mailto:martin[Bonvolu anstataŭigi tiun ĉi per punkto]bodin[kaj tiun ĉi per ĉe-signo]inria[kaj per alia puntko]fr
 =switchLanguage
@@ -80,7 +80,7 @@ If you read this message, this means that neither <span class = "name">JavaScrip
 =badJS
 It seems that your browser is not strictly following the <span class = "name">ECMAScript</span> standard of <span class = "name">JavaScript</span>, version 5.1, on which this site has been based on.
 =badJSexplain
-Do not worry too much: I am not aware of any browser completly following this standard.  This warning aims more at emphasing on the gap between theory and practise, and at yielding some thoughts about it.
+Do not worry too much: I am not aware of any browser completely following this standard.  This warning aims at emphasing on the gap between theory and practise, and at yielding some thoughts about it.  To stop displaying this message, <a href = "#" onclick = "noMorePedanticJS ()">click here</a>.
 =noLanguageDetected
 <a class = "switchLanguage_en internalLink" href = "#en">Click here to get the English version of this webpage.</a>
 =relocation
@@ -104,7 +104,7 @@ An error occured while executing some social scripts…
 =spyingSocials
 Social scripts involves third-party sources that can not always be trusted and that can spy you.  If you do not trust them, <a onclick = "setPassingArgument ('social', 'no', true)" class = "internalLink" href = "#">click here to disable them</a>.
 =permanentSocials
-To automatically enable social scripts while surfing in this website without being forced to click underneath, <a href = "javascript: permanentSocials ()">click here</a>.
+To automatically enable social scripts while surfing in this website without being forced to click underneath, <a href = "#" onclick = "permanentSocials ()">click here</a>.
 =contactmeNoJS
 mailto:martin[please replace this text by a dot]bodin[and this one by an at symbol]inria[and a dot again]fr
 =switchLanguage
@@ -128,15 +128,15 @@ Lancer
 =readMore
 En savoir plus
 =hideMessage
-Ne plus voir ce message
+Cacher ce message
 =needJSCSS
 Pour naviguer correctement sur ce site, je conseille fortement d’utiliser un navigateur capable d’exécuter du <span class = "name">JavaScript</span> ou du <span class = "name">CSS</span>.
 =JSCSSnotthere
 Si vous lisez ce message, c’est que ni <span class = "name">JavaScript</span>, ni <span class = "name">CSS</span> ne sont supportés (ou activés) par votre navigateur actuel.
 =badJS
-Il semblerait que votre navigateur ne respecte pas strictement la norme <span class = "name">ECMAScript</span> de <span class = "name">JavaScript</span> dans sa version 5.1, sur laquelle ce site est basée.
+Il semblerait que votre navigateur ne respecte pas strictement la norme <span class = "name">ECMAScript</span> de <span class = "name">JavaScript</span> dans sa version 5.1, sur laquelle ce site est basé.
 =badJSexplain
-Pas d’inquiétude : je ne connais pas de navigateur qui le respecte complètement.  Cet avertissement est plus destiné à faire prendre conscience du fossé entre théorie et pratique, afin de déclencher quelques réflexions.
+Pas d’inquiétude : je ne connais pas de navigateur qui le respecte complètement.  Cet avertissement est plus destiné à faire prendre conscience du fossé entre théorie et pratique, afin de déclencher quelques réflexions.  Pour arrêter d’afficher ce message, <a href = "#" onclick = "noMorePedanticJS ()">cliquez ici</a>.
 =noLanguageDetected
 <a class = "switchLanguage_fr internalLink" href = "#fr">Cliquez ici pour voir le contenu de cette page en Français</a>.
 =relocation
@@ -160,7 +160,7 @@ Une erreur s’est produite lors de l’exécution de certain scripts sociaux.
 =spyingSocials
 Les scripts sociaux nécessitent l’usage de scripts venant de sources tierces à qui l’on ne peut pas toujours faire confiance et qui peuvent vous espionner.  Si vous ne leur faites pas confiance, <a onclick = "setPassingArgument ('social', 'no', true)" class = "internalLink" href = "#">cliquez ici pour les désactiver</a>.
 =permanentSocials
-Pour activer automatiquement les scripts sociaux lors de la navigation sur ce site sans avoir à cliquer en bas de la page, <a href = "javascript: permanentSocials ()">cliquez ici</a>.
+Pour activer automatiquement les scripts sociaux lors de la navigation sur ce site sans avoir à cliquer en bas de la page, <a href = "#" onclick = "permanentSocials ()">cliquez ici</a>.
 =contactmeNoJS
 mailto:martin[merci de remplacer ceci par un point]bodin[et ceci par un arobase]inria[et encore un point]fr
 =switchLanguage

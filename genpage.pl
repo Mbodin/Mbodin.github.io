@@ -98,6 +98,7 @@ my $keywordDescription = "description";
 my $keywordSpecDescription = "specdescription";
 my $keywordLink = "link";
 my $keywordInternalLink = "internalLink";
+my $keywordLinkClean = "cleanLink";
 my $keywordEnd = "end";
 my $keywordScripts = "script";
 my $keywordAllLanguage = "all";
@@ -223,16 +224,22 @@ while (scalar @pagesToBeParsed + scalar @menusToBeParsed != 0){
 				$isLink = $false;
 			} elsif (/^$keywordLink$/){
 				my $tab = $$currentObject{$linksID};
-				push @$tab, { internal => $false };
+				push @$tab, { internal => $false, clean => $false };
 				$addLineToString = $false;
 				$isDescription = $false;
 				$isLink = $true;
 			} elsif (/^$keywordInternalLink$/){
 				my $tab = $$currentObject{$linksID};
-				push @$tab, { internal => $true };
+				push @$tab, { internal => $true, clean => $false };
 				$addLineToString = $false;
 				$isDescription = $false;
 				$parsingLinkFile = $true;
+				$isLink = $true;
+			} elsif (/^$keywordLinkClean$/){
+				my $tab = $$currentObject{$linksID};
+				push @$tab, { internal => $false, clean => $true };
+				$addLineToString = $false;
+				$isDescription = $false;
 				$isLink = $true;
 			} elsif (/^$keywordSection$/){
 				$currentSection = [];
@@ -814,9 +821,16 @@ while (my ($directoryname, $page) = each %allParsedPages){
 								text => ${$$linkTab[$j]}{$lang},
 								hasnosharp => $link !~ m/#/
 							};
+                        } elsif (${$$linkTab[$j]}{"clean"}){
+							push @$links, {
+								isInternal => $false,
+								isClean => $true,
+								projectsLinks => ${$$linkTab[$j]}{$lang}
+							};
 						} else {
 							push @$links, {
 								isInternal => $false,
+								isClean => $false,
 								projectsLinks => ${$$linkTab[$j]}{$lang}
 							};
 						}

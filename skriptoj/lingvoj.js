@@ -191,8 +191,8 @@ function addErrorMsgKey (key, details, lang, toBeCalledAtChange){
 	if (lang === undefined)
 		return
 
-	applyNode ("messages", function (messagesNode){
-			appendNodeLanguage (messagesNode, key, lang, function (lang){
+	return applyNode ("messages", function (messagesNode){
+			var node = appendNodeLanguage (messagesNode, key, lang, function (lang){
                     if (globalObject ().messageStyle)
                         messageStyle (this)
                     if (toBeCalledAtChange)
@@ -200,6 +200,7 @@ function addErrorMsgKey (key, details, lang, toBeCalledAtChange){
                 })
 			if (details)
 				addComment (messagesNode, details)
+            return node
 		})
 }
 
@@ -227,9 +228,9 @@ function getPageLang (){
 	lang = format (lang)
 
 	getURLAttribute ("lang", function (langset){
-		langset = format (langset)
-		lang = langset || lang
-	})
+            langset = format (langset)
+            lang = langset || lang
+        })
 
 	// The target property has priority on everything else:  have better not to conflict with any CSS visibility property…
 	dependingOnCurrentPage (function (_, target){

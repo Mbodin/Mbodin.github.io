@@ -279,6 +279,61 @@ all
 	<!-- FIXME:  Add a BibTeX file. -->
 end
 
+section
+sectionName
+doktorigxo
+en
+Thesis
+eo
+Doktoriĝo
+fr
+Thèse
+end
+
+item
+en
+Certified Semantics and Analysis of <span class = "name">JavaScript</span>
+eo
+Certigitaj semantiko kaj analizo de <span class = "name">JavaSkripto</span>
+fr
+Sémantique et analyse certifiées de <span class = "name">JavaScript</span>
+description
+en
+    I defended my PhD Thesis in 2016.
+    My PhD advisors were <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> and <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.
+eo
+    Mi doktoriĝis en 2016.
+    Miaj doktoriĝestroj estis <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> kaj <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.
+fr
+    J’ai soutenu en 2016.
+    Mes encadrants étaient <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> et <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.
+link
+en
+	<a href = "doktorigxo/manuscrit.pdf">Full text</a>
+eo
+	<a href = "doktorigxo/manuscrit.pdf">Doktoriĝdokumento</a>
+fr
+	<a href = "doktorigxo/manuscrit.pdf">Manuscrit</a>
+link
+en
+	<a href = "doktorigxo/planches.pdf">Slides</a>
+eo
+	<a href = "doktorigxo/planches.pdf">Diapozitivoj</a>
+fr
+	<a href = "doktorigxo/planches.pdf">Présentation</a>
+internalLink
+doktorigxo/companion
+en
+    Companion Webpage
+eo
+    Kundoktoriĝdokumento
+fr
+    Guide de thèse
+link
+all
+	<!-- FIXME:  Add a BibTeX file. -->
+end
+
 #section
 #sectionName
 #interniĝoj

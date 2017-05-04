@@ -24,7 +24,7 @@ function removeNodeId (id){
     applyNode (id, removeNode)
 }
 
-var siteRootURL = "http://people.irisa.fr/Martin.Bodin/"
+var siteRootURL = "http://www.dim.uchile.cl/~mbodin/"
 
 ;
 
@@ -88,7 +88,7 @@ function addComment (node, message){
 function getURLAttribute (attribute, continuation, defaultValue){
 	var url = document.location.href
 
-	var reg = new RegExp ("(\\?|&|^)" + attribute + "=([^&#]*)([#&]|$)")
+	var reg = new RegExp ("(\\?|&|^)" + attribute + "=([^&#]*)([&#]|$)")
 	var matches = url.match (reg)
 
 	if (matches && matches[2] !== undefined){
@@ -104,9 +104,13 @@ function getPageName (complete){
 	var reg = new RegExp (".*/\([^/]*\)\.html")
 	var matches = url.match (reg)
 
+    var ret
+
 	if (matches && matches[1] !== undefined)
-		return matches[1] + ((complete && matches[1]) ? ".html" : "")
-	else return ""
+		ret = matches[1]
+	else ret = "index"
+
+    return ret + (complete ? ".html" : "")
 }
 
 function getPathFromRoot (){ // TODO:  Do this function by parsing the URL of the current page.

@@ -99,16 +99,16 @@ function checkExplainedItem (){ // TODO:  I think there is now something in CSS3
 idOfSetIntervalOfcheckExplainedItem = setInterval (checkExplainedItem, 800)
 
 
-function getEMail (mailto, first, name, domain, country){
-	return mailto + first + "." + name + "@" + domain + "." + country
+function getEMail (mailto, first, name, department, university, country){
+	return mailto + first + name + "@" + department + "." + university + "." + country
 }
 
 (function (){
 	if (document.getElementsByClassName){
 		var elements = document.getElementsByClassName ("contactme")
 		
-		var mailto = "mailto:", first = "martin", name = "bodin", domain = "inria", country = "fr"
-		var href = getEMail (mailto, first, name, domain, country)
+		var mailto = "mailto:", first = "m", name = "bodin", department = "dim", university = "uchile", country = "cl"
+		var href = getEMail (mailto, first, name, department, university, country)
 
 		for (var i = 0 ; i < elements.length ; i++){
 			var element = elements[i], par = element.parentNode

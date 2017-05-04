@@ -11,16 +11,15 @@ menu
 top.tree
 end
 
+updating
+
 description
 en
-	I am a PhD student at <span class = "name">INRIA</span> <span class = "town">Rennes</span> under the supervision of <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> and <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.
-	I work on formal analysis of <span class = "name">JavaScript</span>.
+	I am a postdoc at the <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, in Santiago de Chile.
 eo
-	Mi estas doktoriĝanto ĉe <span class = "name">INRIA</span> <span class = "town">Rennes</span> superrigardate de <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> kaj <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.
-	Mi laboras pri formalaj analizoj de <span class = "name">Javaskripto</span>.
+	Mi estas postdoktorulo ĉe <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, en Santiago, Ĉilio.
 fr
-	Je suis doctorant à l’<span class = "name">INRIA</span> de <span class = "town">Rennes</span> sous la supervision d’<a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> et de <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.
-	Je travaille sur des analyses formelles de <span class = "name">JavaScript</span>.
+	Je suis post-doctorant au <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, à Santiago, Chile.
 end
 
 description

@@ -90,7 +90,7 @@ my %allParsedPages = ();
 
 my $keywordPage = "page";
 my $keywordMenu = "menu";
-my $keywordMaintainer = "maintainer";
+my $keywordRightImage = "rightImage";
 my $keywordSection = "section";
 my $keywordSectionName = "sectionName";
 my $keywordItem = "item";
@@ -108,7 +108,7 @@ my $descrID = "description";
 my $PDescrID = "Pdescr";
 my $linksID = "links";
 my $internalLinkID = "internalLink";
-my $maintainerID = "maintainer";
+my $rightImageID = "rightImage";
 my $menuID = "menu";
 my $scriptsID = "scripts";
 my $sectionNameID = "sectionName";
@@ -204,9 +204,9 @@ while (scalar @pagesToBeParsed + scalar @menusToBeParsed != 0){
 				$stackIntoObject = $true;
 			} elsif (/^$keywordNotUpToDate$/){
 				$$currentObject{$notUpToDateID} = $true;
-			} elsif (/^$keywordMaintainer$/){
-				$currentField = $maintainerID;
-				$$currentObject{$maintainerID} = "";
+			} elsif (/^$keywordRightImage$/){
+				$currentField = $rightImageID;
+				$$currentObject{$rightImageID} = "";
 				$addLineToString = $true;
 				$isDescription = $false;
 				$isLink = $false;
@@ -545,11 +545,11 @@ while (my ($directoryname, $page) = each %allParsedPages){
 		}
 	}
 
-	if (exists $$page{$maintainerID}){
-		$pageMain{"isMaintainer"} = $true;
-		$pageMain{"maintainer"} = $$page{$maintainerID};
+	if (exists $$page{$rightImageID}){
+		$pageMain{"isRightImage"} = $true;
+		$pageMain{"rightImage"} = $$page{$rightImageID};
 	} else {
-		$pageMain{"isMaintainer"} = $false;
+		$pageMain{"isRightImage"} = $false;
 	}
 
 

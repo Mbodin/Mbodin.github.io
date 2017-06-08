@@ -147,7 +147,7 @@ fr
 	</dl>
 end
 
-maintainer
+rightImage
 	<a href = "javascript:void 42"><img id = "imageOfMe" src = "rimedoj/moi.png" alt = "Me — Moi — Mi" /></a> <!-- TODO:  Change this “alt” property according to the language. -->
 	<script type = "text/javascript" src = "skriptoj/imageOfMe.js" async = "async"></script>
 end

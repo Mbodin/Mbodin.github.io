@@ -11,31 +11,28 @@ menu
 top.tree
 end
 
-updating
+# updating
 
 description
 en
-	I am a PhD student at <span class = "name">INRIA</span> <span class = "town">Rennes</span> under the supervision of <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> and <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.
-	I work on formal analysis of <span class = "name">JavaScript</span>.
+	I am a postdoc at the <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, in <span class = "town">Santiago de Chile</span>.
 eo
-	Mi estas doktoriĝanto ĉe <span class = "name">INRIA</span> <span class = "town">Rennes</span> superrigardate de <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> kaj <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.
-	Mi laboras pri formalaj analizoj de <span class = "name">Javaskripto</span>.
+	Mi estas postdoktorulo ĉe <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, en <span class = "town">Santiago, Ĉilio</span>.
 fr
-	Je suis doctorant à l’<span class = "name">INRIA</span> de <span class = "town">Rennes</span> sous la supervision d’<a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> et de <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.
-	Je travaille sur des analyses formelles de <span class = "name">JavaScript</span>.
+	Je suis post-doctorant au <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, à <span class = "town">Santiago, Chile</span>.
 end
 
 description
 en
-	I am part of <a href = "http://jscert.org">the <span class = "name">JSCert</span></a> and <a href = "http://www.seccloud.cominlabs.ueb.eu">the <span class = "name">SecCloud</span></a> projects.
+	I have been part of <a href = "http://jscert.org">the <span class = "name">JSCert</span></a> and <a href = "http://www.seccloud.cominlabs.ueb.eu">the <span class = "name">SecCloud</span></a> projects.
 	The <a href = "http://jscert.org">the <span class = "name">JSCert</span> project</a> aims to build models of <span class = "name">JavaScript</span> in <a href = "http://coq.inria.fr">the <span class = "name">Coq</span> proof assistant</a> and to design automated tools based on those semantics.
 	The <a href = "http://seccloud.cominlabs.ueb.eu">the <span class = "name">SecCloud</span> project</a> aims to provide a comprehensive language-based approach to the definition, analysis and implementation of secure applications developed using <span class = "name">JavaScript</span> and similar languages.
 eo
-	Mi estas parton de la projektoj <a href = "http://jscert.org"><span class = "name">JSCert</span></a> kaj <a href = "http://www.seccloud.cominlabs.ueb.eu"><span class = "name">SecCloud</span></a>.
+	Mi estis partoprenanto de la projektoj <a href = "http://jscert.org"><span class = "name">JSCert</span></a> kaj <a href = "http://www.seccloud.cominlabs.ueb.eu"><span class = "name">SecCloud</span></a>.
 	La <a href = "http://jscert.org">projekto <span class = "name">JSCert</span></a> celas al konstrui modelojn de <span class = "name">Javaskripto</span> en <a href = "http://coq.inria.fr">la pruvhelpilo <span class = "name">Coq</span></a> kaj konstrui aŭtomatajn ilojn purvatajn per tiuj semantikoj.
 	La <a href = "http://seccloud.cominlabs.ueb.eu">projekto <span class = "name">SecCloud</span></a> celas ellabori lingvaĵbazajn laborgvidojn por la difino, analizo kaj realigo de sekuraj programaĵoj ellaboritaj per <span class = "name">Javaskripto</span> aŭ similaj lingvaĵoj.
 fr
-	Je fais partie des projets <a href = "http://jscert.org"><span class = "name">JSCert</span></a> et <a href = "http://www.seccloud.cominlabs.ueb.eu"><span class = "name">SecCloud</span></a>.
+	J’ai fait partie des projets <a href = "http://jscert.org"><span class = "name">JSCert</span></a> et <a href = "http://www.seccloud.cominlabs.ueb.eu"><span class = "name">SecCloud</span></a>.
 	Le <a href = "http://jscert.org">projet <span class = "name">JSCert</span></a> a pour but de construire des modèles de <span class = "name">JavaScript</span> en <a href = "http://coq.inria.fr"><span class = "name">Coq</span></a> et de concevoir des outils d’analyses automatiques basés sur ces modèles formels.
 	Le <a href = "http://seccloud.cominlabs.ueb.eu">projet <span class = "name">SecCloud</span></a> a pour but de concevoir une approche orientée langages de programation pour la définition, l’analyse et l’implémentation d’applications sécurisées développées en <span class = "name">JavaScript</span> ou en des langages similaires.
 end

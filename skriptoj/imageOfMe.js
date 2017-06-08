@@ -70,7 +70,7 @@
 
     var updateMyImage
 
-    applyNode ("imageOfMe", function (img){
+    update_image = function (img){
 
             updateMyImage = function (first){
                     return function (){
@@ -93,9 +93,21 @@
             img.parentNode.onclick = updateMyImage (false)
 
             updateMyImage (true)()
-        })
+        }
+
+    applyNode ("imageOfMe", update_image)
 
     if (updateMyImage)
         setInterval (updateMyImage (true), 20000)
+    else /* The image has been removed, highly probably because of the language interaction. */
+        addLanguageFunction (function (){
+                if (!updateMyImage)
+                    applyNode ("imageOfMe", update_image)
+
+                if (updateMyImage){
+                    setInterval (updateMyImage (true), 20000)
+                    return true
+                }
+            })
 } ())
 

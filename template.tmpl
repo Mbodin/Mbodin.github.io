@@ -5,7 +5,6 @@
         <meta charset="utf-8">
         <!-- This page has been generated using home-made Perl scripts…  I know, I should learn how to use Org-mode.  I hope nothing to badly appear.  Do not hesitate to contact me if you notice anything wrong. -->
         <title id = "documentTitle"><tmpl_var name = "titlePageAllLanguages" /></title>
-        <!-- meta http-equiv = "content-type" content = "text/html; charset=utf-8" / -->
         <link rel = "icon" type = "image/svg+xml" href = "<tmpl_var name = pathToRoot />rimedoj/favicon.svg" sizes = "any" />
         <link rel = "stylesheet" type = "text/css" href = "<tmpl_var name = pathToRoot />rimedoj/cxefa.css" />
         <meta name = "viewport" content = "width=device-width" />
@@ -160,9 +159,9 @@
         </script>
         <script type = "text/javascript" src = "<tmpl_var name = pathToRoot />skriptoj/kapajxoj.js"></script> <!-- Requires “lingvoj”. -->
         <tmpl_if name = "isMaintainer">
-        <div id = "maintainer" class = "needlang">
+        <aside id = "maintainer" class = "needlang">
             <tmpl_var name = "maintainer" />
-        </div>
+        </aside>
         </tmpl_if>
         <div id = "main">
             <tmpl_if name = "tocTmpl">

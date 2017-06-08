@@ -143,6 +143,10 @@ a:hover, a:active {
 	font-variant: small-caps ;
 }
 
+.country {
+	font-variant: small-caps ;
+}
+
 
 ul.blocks {
 	list-style:  none ;

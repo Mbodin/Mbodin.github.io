@@ -11,15 +11,30 @@ menu
 top.tree
 end
 
-updating
+# updating
 
 description
 en
-	I am a postdoc at the <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, in Santiago de Chile.
+	I am a postdoc at the <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, in <span class = "town">Santiago de Chile</span>.
 eo
-	Mi estas postdoktorulo ĉe <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, en Santiago, Ĉilio.
+	Mi estas postdoktorulo ĉe <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, en <span class = "town">Santiago, Ĉilio</span>.
 fr
-	Je suis post-doctorant au <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, à Santiago, Chile.
+	Je suis post-doctorant au <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, à <span class = "town">Santiago, Chile</span>.
+end
+
+description
+en
+    I did my PhD at <span class = "name">INRIA</span> <span class = "town">Rennes</span> under the supervision of <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> and <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.
+    I then worked on formal analysis of the <span class = "name">JavaScript</span> programming language.
+    More information can be found <a class = "switchLanguage_en internalLink" href = "doktorigxo/companion.html?lang=en#en">in my thesis companion</a>.
+eo
+    Mi doktoriĝis ĉe <span class = "name">INRIA</span> <span class = "town">Rennes</span> superrigardite de <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> kaj <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.
+    Mi tiam laboris pri formala analizo de la <span class = "name">Javaskripta</span> programlingvaĵo.
+    Pli da informoj troviĝas <a class = "switchLanguage_eo internalLink" href = "doktorigxo/companion.html?lang=eo#eo">en mia kundoktoriĝdokumento</a>.
+fr
+    J’ai fait mon doctorat à <span class = "name">INRIA</span> de <span class = "town">Rennes</span> sous la supervision d’<a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> et de <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.
+    Je travaillais alors sur l’analyse formelle du langage de programmation <span class = "name">JavaScript</span>.
+    Plus d’informations peuvent se trouver <a class = "switchLanguage_fr internalLink" href = "doktorigxo/companion.html?lang=fr#fr">sur mon guide de thèse</a>.
 end
 
 description
@@ -40,101 +55,93 @@ specdescription
 en
 	<dl class = "tableDescription">
 		<dt>Current position</dt>
-		<dd>Ph.D. student at <a href = "http://www.irisa.fr/en"><span class = "name">IRISA</span></a>, <span class = "town">Rennes</span> under the supervision of <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> and <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.</dd>
-		<dt>Team</dt>
-		<dd><a href = "http://www.irisa.fr/celtique/"><span class = "name">Celtique</span></a></dd>
+		<dd>Postdoc at the <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, in <span class = "town">Santiago de Chile</span>.</dd>
+		<!--<dt>Team</dt>
+		<dd><a href = "http://www.irisa.fr/celtique/"><span class = "name">Celtique</span></a></dd>-->
 		<dt>Address</dt>
-		<dd>Bureau F213,
-			Campus de <span class = "name">Beaulieu</span>,
-			263 avenue du général <span class = "name">Leclerc</span> — Bâtiment 12,
-			35 042 <span class = "town">Rennes</span> cedex,
-			<span class = "town">France</span>
+		<dd>Office 718,
+            <span class = "name">Beauchef</span> 851,
+            Edificio Norte – Piso 7,
+			<span class = "town">Santiago</span>,
+			<span class = "country">Chile</span>
 		</dd>
 		<dt>Phone number</dt>
-		<dd>+33 2 99 84 22 51</dd>
+		<dd>+56 2 2978 4463</dd>
 		<dt>CV</dt>
 		<dd><a href = "rimedoj/cv_en.pdf">Available there</a></dd>
 		<dt>Public key</dt>
 		<dd><a href = "rimedoj/id_rsa.pub">Available there</a></dd>
-		<dt>Other pages about me</dt>
+		<dt>Internet presence</dt>
 		<dd>
 			<ul class = "blocks">
+				<li><a href = "http://orcid.org/0000-0003-3588-3782"><span class = "name">ORCID</span></a></li>
 				<li><a href = "http://dblp.uni-trier.de/pers/hd/b/Bodin:Martin.html"><span class = "name">DBLP</span></a></li>
 				<li><a href = "http://scholar.google.fr/citations?user=OoWGEVEAAAAJ&amp;hl=en"><span class = "name">Google Scholar</span></a></li>
 				<li><a href = "http://en.wikipedia.org/wiki/User:Greatfermat"><span class = "name">Wikipedia</span></a></li>
 				<li><a href = "http://en.wiktionary.org/wiki/User:Greatfermat"><span class = "name">Wiktionary</span></a></li>
                 <li><a href = "https://github.com/Mbodin"><span class = "name">GitHub</span></a></li>
-				<li><a href = "https://launchpad.net/~martin-bodin"><span class = "name">Launchpad</span></a></li>
-				<li><a href = "http://sourceforge.net/users/greatfermat"><span class = "name">Sourceforge</span></a></li>
-				<li><a href = "http://tatoeba.org/eng/user/profile/MartinShadock"><span class = "name">Tatoeba</span></a></li>
-				<!--<li><a href = "http://www.duolingo.com/MartinShadock"><span class = "name">Duolingo</span></a></li>-->
 			</ul>
 		</dd>
 	</dl>
 eo
 	<dl class = "tableDescription">
 		<dt>Nuna pozicio</dt>
-		<dd>Doctorado studento en la <a href = "http://www.irisa.fr/"><span class = "name">IRISA</span></a>, <span class = "town">Rennes</span> superrigardate de <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> kaj <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.</dd>
-		<dt>Skipo</dt>
-		<dd><a href = "http://www.irisa.fr/celtique/"><span class = "name">Celtique</span></a></dd>
+		<dd>Postdoktorulo ĉe <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, en <span class = "town">Santiago, Ĉilio</span>.</dd>
+		<!--<dt>Skipo</dt>
+		<dd><a href = "http://www.irisa.fr/celtique/"><span class = "name">Celtique</span></a></dd>-->
 		<dt>Adreso</dt>
-		<dd>Bureau F213,
-			Campus de <span class = "name">Beaulieu</span>,
-			263 avenue du général <span class = "name">Leclerc</span> — Bâtiment 12,
-			35 042 <span class = "town">Rennes</span> cedex,
-			<span class = "town">Francio</span>
+		<dd>Oficejo 718,
+            <span class = "name">Beauchef</span> 851,
+            Edificio Norte – Piso 7,
+			<span class = "town">Santiago</span>,
+			<span class = "country">Ĉilio</span>
 		</dd>
 		<dt>Telefono</dt>
-		<dd>+33 2 99 84 22 51</dd>
+		<dd>+56 2 2978 4463</dd>
 		<dt>Vivresumo</dt>
 		<dd><a href = "rimedoj/cv_eo.pdf">Havebla tie ĉi</a></dd>
 		<dt>Publika ŝlosilo</dt>
 		<dd><a href = "rimedoj/id_rsa.pub">Havebla tie ĉi</a></dd>
-		<dt>Aliaj paĝoj pri mi</dt>
+		<dt>Interreta ĉeesto</dt>
 		<dd>
 			<ul class = "blocks">
+				<li><a href = "http://orcid.org/0000-0003-3588-3782"><span class = "name">ORCID</span></a></li>
 				<li><a href = "http://dblp.uni-trier.de/pers/hd/b/Bodin:Martin.html"><span class = "name">DBLP</span></a></li>
 				<li><a href = "http://scholar.google.fr/citations?user=OoWGEVEAAAAJ&amp;hl=eo"><span class = "name">Google Scholar</span></a></li>
 				<li><a href = "http://eo.wikipedia.org/wiki/Uzanto:Greatfermat"><span class = "name">Vikipedio</span></a></li>
 				<li><a href = "http://eo.wiktionary.org/wiki/Uzanto:Greatfermat"><span class = "name">Vikivortaro</span></a></li>
                 <li><a href = "https://github.com/Mbodin"><span class = "name">GitHub</span></a></li>
-				<li><a href = "https://launchpad.net/~martin-bodin"><span class = "name">Launchpad</span></a></li>
-				<li><a href = "http://sourceforge.net/users/greatfermat"><span class = "name">Sourceforge</span></a></li>
-				<li><a href = "http://tatoeba.org/epo/user/profile/MartinShadock"><span class = "name">Tatoeba</span></a></li>
-				<!--<li><a href = "http://www.duolingo.com/MartinShadock"><span class = "name">Duolingo</span></a></li>-->
 			</ul>
 		</dd>
 	</dl>
 fr
 	<dl class = "tableDescription">
 		<dt>Position actuelle</dt>
-		<dd>Doctorant à l’<a href = "http://www.irisa.fr/fr"><span class = "name">IRISA</span></a>, <span class = "town">Rennes</span> sous la tutelle d’<a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> et de <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.</dd>
-		<dt>Équipe</dt>
-		<dd><a href = "http://www.irisa.fr/celtique/"><span class = "name">Celtique</span></a></dd>
+		<dd>Post-doctorant au <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, à <span class = "town">Santiago, Chile</span>.</dd>
+		<!--<dt>Équipe</dt>
+		<dd><a href = "http://www.irisa.fr/celtique/"><span class = "name">Celtique</span></a></dd>-->
 		<dt>Adresse</dt>
-		<dd>Bureau F213,
-			Campus de <span class = "name">Beaulieu</span>,
-			263 avenue du général <span class = "name">Leclerc</span> — Bâtiment 12,
-			35 042 <span class = "town">Rennes</span> cedex
+		<dd>Bureau 718,
+            <span class = "name">Beauchef</span> 851,
+            Edificio Norte – Piso 7,
+			<span class = "town">Santiago</span>,
+			<span class = "country">Chili</span>
 		</dd>
 		<dt>Téléphone</dt>
-		<dd>02 99 84 22 51</dd>
+		<dd>+56 2 2978 4463</dd>
 		<dt>CV</dt>
 		<dd><a href = "rimedoj/cv_fr.pdf">Disponible ici</a></dd>
 		<dt>Clef publique</dt>
 		<dd><a href = "rimedoj/id_rsa.pub">Disponible ici</a></dd>
-		<dt>D’autres pages me concernant</dt>
+		<dt>Présence sur Internet</dt>
 		<dd>
 			<ul class = "blocks">
+				<li><a href = "http://orcid.org/0000-0003-3588-3782"><span class = "name">ORCID</span></a></li>
 				<li><a href = "http://dblp.uni-trier.de/pers/hd/b/Bodin:Martin.html"><span class = "name">DBLP</span></a></li>
 				<li><a href = "http://scholar.google.fr/citations?user=OoWGEVEAAAAJ&amp;hl=fr"><span class = "name">Google Scholar</span></a></li>
 				<li><a href = "http://fr.wikipedia.org/wiki/Utilisateur:Greatfermat"><span class = "name">Wikipédia</span></a></li>
 				<li><a href = "http://fr.wiktionary.org/wiki/Utilisateur:Greatfermat"><span class = "name">Wiktionnaire</span></a></li>
                 <li><a href = "https://github.com/Mbodin"><span class = "name">GitHub</span></a></li>
-				<li><a href = "https://launchpad.net/~martin-bodin"><span class = "name">Launchpad</span></a></li>
-				<li><a href = "http://sourceforge.net/users/greatfermat"><span class = "name">Sourceforge</span></a></li>
-				<li><a href = "http://tatoeba.org/fre/user/profile/MartinShadock"><span class = "name">Tatoeba</span></a></li>
-				<!--<li><a href = "http://www.duolingo.com/MartinShadock"><span class = "name">Duolingo</span></a></li>-->
 			</ul>
 		</dd>
 	</dl>

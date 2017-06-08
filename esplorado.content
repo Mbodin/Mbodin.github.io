@@ -76,6 +76,13 @@ eo
 fr
 	<a href = "paperoj/cpp15_slides.pdf">Présentation</a>
 link
+en
+	<a href = "http://ajacs.inria.fr/coq/cpp2015/"><span class = "name">Coq</span> material</a>
+eo
+	<a href = "http://ajacs.inria.fr/coq/cpp2015/"><span class = "name">Coq</span>aj dosieroj</a>
+fr
+	<a href = "http://ajacs.inria.fr/coq/cpp2015/">Fichers <span class = "name">Coq</span></a>
+link
 all
 	<!-- FIXME:  Add a BibTeX file. -->
 end

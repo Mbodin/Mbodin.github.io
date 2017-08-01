@@ -1,0 +1,217 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{ifxetex}
+\ifxetex
+\usepackage{xunicode,fontspec,xltxtra}
+\else
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\fi
+
+\usepackage[francais, english]{babel}
+\usepackage{geometry}
+\usepackage{url}
+\usepackage{oldgerm}
+
+\usepackage[inline]{enumitem}
+
+\makeatletter
+% From http://tex.stackexchange.com/questions/51086/add-second-enumeration-item-on-the-same-line
+\newcommand{\inlineitem}[1][]{%
+\ifnum\enit@type=\tw@
+    {\descriptionlabel{#1}}
+  \hspace{\labelsep}%
+\else
+  \ifnum\enit@type=\z@
+       \refstepcounter{\@listctr}\fi
+    \qquad\@itemlabel\hspace{\labelsep}%
+\fi}
+\makeatother
+
+\ifxetex
+\setmainfont[Mapping=tex-text, Ligatures={Common}, Numbers={OldStyle}]{Linux Libertine O}
+\fi
+
+\geometry{
+	includeheadfoot,
+	margin = 2.54cm,
+	top = 1.5cm,
+	bottom = 1.5cm
+}
+
+\newcommand{\en}[1]{\foreignlanguage{english}{\textit{#1}}}
+
+\newcommand{\ie}{i.e.\,}
+
+\newenvironment{datecvsection}[1]%
+               {\subsection*{#1}%
+                 \noindent \begin{tabular}{@{}p{\annee}p{\texte}@{}}}
+               {\end{tabular}}
+
+\newenvironment{cvsection}[1]%
+               {\subsection*{#1}}
+               {}
+
+\newenvironment{itemcvsection}[1]%
+               {\subsection*{#1}\begin{itemize}}
+               {\end{itemize}}
+
+\def\arraystretch{1.5}
+
+\begin{document}
+
+% Pas de numéro de page
+\pagestyle{empty}
+
+% \annee est la largeur de la première colonne, c'est à dire celle
+% contenant l'année scolaire. Elle est ici définie comme étant la
+% largeur du texte « janvier-février ». À adapter le cas échéant.
+
+\newlength{\annee}
+\settowidth{\annee}{9999--9999}
+
+% \texte est la largeur de la deuxième colonne. Elle est définie comme
+% étant la largeur de la page moins celle de la première colonne.
+% 2\tabcolsep est la largeur de l'espacement entre les colonnes.
+
+\newlength{\texte}
+\setlength{\texte}{\textwidth} \addtolength{\texte}{-\annee} 
+	\addtolength{\texte}{-2\tabcolsep}
+
+\begin{center} \Huge \textsc{Martin~Bodin} \end{center}
+
+\parbox[c]{.5\textwidth}
+{
+  \noindent
+% Les Énaudières \\
+% 14, rue de la Libération \\
+% 50 220, \textsc{Saint-Quentin-sur-le-Homme} \\
+% \textsc{France}
+  Departamento 815B \\
+  Huerfanos, 1400 \\
+  \textsc{Santiago} \\
+  \textsc{Chili}
+}
+\parbox[c]{.55\textwidth}
+{
+\begin{flushright}
+  Né le 30 Décembre 1989 \\
+  \noindent Téléphone~: \mbox{06 27 00 58 84} \\
+  \url{martin.bodin@ens-lyon.org} \\
+  \url{cmm.uchile.cl/~mbodin/}
+\end{flushright}
+}
+
+
+\begin{datecvsection}{Études}
+
+	2012–2016 & Doctorat en Informatique à l’\textsc{IRISA}, à \textsc{Rennes} sous la direction d’\textsc{Alan~Schmitt} et \textsc{Thomas~Jensen} sur les analyses certifiées du \textsc{JavaScript}. \\
+
+	2010–2012 & Master d’Informatique, mention bien à l’École Normale Supérieure de \textsc{Lyon}. \\
+
+	2009–2010 & Licence d’Informatique, mention très bien à l’École Normale Supérieure de \textsc{Lyon}. \\
+
+	2007–2009 & Classes préparatoires aux Grandes Écoles au lycée \textsc{Henri~iv} à \textsc{Paris}. \\
+
+	2007 & Baccalauréat spécialité Mathématiques, mention très bien. \\
+
+\end{datecvsection}
+
+\begin{cvsection}{Langues}
+\parbox{.45\textwidth}{
+\begin{itemize}
+   \item Français langue maternelle,
+   \item Très bon niveau d’espéranto,
+\end{itemize}}
+\parbox{.45\textwidth}{
+\begin{itemize}
+   \item Bon niveau d’anglais,
+   \item Notions d’allemand, de portugais, et d’espagnol.
+\end{itemize}}
+\end{cvsection}
+
+\begin{datecvsection}{Expérience personnelle}
+
+    2017–2018 & Post-doctorant au \textsc{CMM}, à \textsc{Santiago} (\textsc{Chili}) \\
+
+	2013–2016 & Membre du projet \textsc{SecCloud}~:  \url{http://www.seccloud.cominlabs.ueb.eu/} \\
+
+	2012–2016 & Membre du projet \textsc{JsCert}~:  \url{http://jscert.org/} \\
+
+	2012 & Stage à \textsc{Inria} (\textsc{Rennes}) avec \textsc{Alan~Schmitt} et \textsc{Thomas~Jensen}~:
+	\en{\textit{A Certified \textsc{JavaScript} Interpreter}} \\
+
+	2011 & Stage à \textsc{Vrĳe Universiteit} (\textsc{Amsterdam}) avec \textsc{Dimitri~Hendriks} et \textsc{Jörg~Endrullis}~:
+	\en{\textit{Proving Stream Equalities in \textsc{Coq}}} \\
+
+	2011 & Stage à \textsc{pps} (\textsc{Paris}) avec \textsc{Stéphane Gimenez} et \textsc{Christine Tasson}~:
+	\en{\textit{Sequentialization of Proof Nets to Structures}} \\
+
+	2010 & Participation au projet \textsc{Cartomancer}~:  \url{http://sourceforge.net/projects/cartomancer/} \\
+
+	2010 & Stage à \textsc{Vérimag} (\textsc{Grenoble}) avec \textsc{David~Monniaux}~:
+	\textit{Détection de modes de fonctionnements d’un programme \textsc{Lustre}} \\
+
+\end{datecvsection}
+
+\begin{datecvsection}{Conférences}
+
+  2015 & \textit{Certified Abstract Interpretation with Pretty-Big-Step Semantics}, Martin \textsc{Bodin}, Thomas \textsc{Jensen} et Alan \textsc{Schmitt} (CPP~2015). \\
+
+  2014 & \textit{A Trusted Mechanised JavaScript Specification}, Martin \textsc{Bodin}, Arthur \textsc{Charguéraud}, Daniele \textsc{Filaretti}, Philippa \textsc{Gardner}, Sergio \textsc{Maffeis}, Daiva \textsc{Naudziuniene}, Alan \textsc{Schmitt} et Gareth \textsc{Smith} (POPL~2014). \\
+
+  2013 & \textit{Circular Coinduction in Coq Using Bisimulation-up-to Techniques}, Jörg \textsc{Endrullis}, Dimitri \textsc{Hendriks} et Martin \textsc{Bodin} (ITP~2013). \\
+
+  2011 & \textit{Modular Abstractions of Reactive Nodes using Disjunctive Invariants}, David \textsc{Monniaux} and Martin \textsc{Bodin} (APLAS~2011). \\
+
+\end{datecvsection}
+
+\begin{datecvsection}{Ateliers}
+
+  2016 & \textit{An Abstract Separation Logic for Interlinked Extensible Records}, Martin \textsc{Bodin}, Thomas \textsc{Jensen} et Alan \textsc{Schmitt} (JFLA~2016). \\
+
+  2014 & \textit{Certified Abstract Interpretation with Pretty-Big-Step Semantics}, Martin \textsc{Bodin}, Thomas \textsc{Jensen} et Alan \textsc{Schmitt} (JFLA~2014). \\
+
+  2013 & \textit{Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)}, Martin \textsc{Bodin}, Thomas \textsc{Jensen} et Alan \textsc{Schmitt} in \textit{Semantics, Abstract Interpretation, and Reasoning about Programs: Essays Dedicated to David A. \textsc{Schmidt} on the Occasion of his Sixtieth Birthday}, volume 129 of EPTCS, pages 360–383. \\
+
+  2013 & \textit{A Certified JavaScript Interpreter}, Martin \textsc{Bodin} and Alan \textsc{Schmitt} (JFLA~2013). \\
+
+\end{datecvsection}
+
+\begin{itemcvsection}{Compétences informatiques}
+
+  \item Bon niveau dans les langages de programmation suivants~:  \textsc{Coq}, \textsc{JavaScript}, \LaTeX, \textsc{OCaml}\ldots
+  \item Familier avec le système d’exploitation \textsc{GNU/Linux}.
+  \item Capable d’utiliser \textsc{Vim}, \textsc{Git}, \textsc{The~Gimp}, \textsc{Inkscape}, \textsc{Graphviz}\ldots
+
+\end{itemcvsection}
+
+\begin{datecvsection}{Vie associative}
+
+    2014–2015 & Membre actif d’\textsc{Espéranto-Rennes}. \\
+	2012 & Trésorier de l’association de théâtre l’\textsc{ASCREB} à \textsc{Rennes}. \\
+	2010 & Secrétaire de l’association \textsc{INFO-ENS} à \textsc{Lyon}. \\
+
+\end{datecvsection}
+
+\begin{datecvsection}{Expériences diverses}
+
+    2014 & Conception et vérification formelle de programmes, travaux dirigés de M1 à l’École Normale Supérieure \\
+
+    2013–2014 & Langages formels, travaux dirigés de L3 à l’École Normale Supérieure \\
+
+    2013 & Introduction à \textsc{Scheme}, travaux pratiques et dirigés de L1 à l’\textsc{Insa} de \textsc{Rennes} \\
+
+	2012, 2014 & Surveillance de l’épreuve pratique d’algorithmique et de programmation du concours d’entrée à l’École Normale Supérieure.
+
+\end{datecvsection}
+
+\begin{itemcvsection}{Intérêts personnels}
+
+  \item Jeux de plateaux, de cartes, de rôles, d’improvisation, soirées enquêtes, etc.
+  \item Activités espérantistes.
+
+\end{itemcvsection}
+
+\end{document}
+

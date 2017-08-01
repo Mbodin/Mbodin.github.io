@@ -1,0 +1,218 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{ifxetex}
+\ifxetex
+\usepackage{xunicode,fontspec,xltxtra}
+\else
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\fi
+
+\usepackage[esperanto, francais, english]{babel}
+\usepackage{geometry}
+\usepackage{url}
+\usepackage{oldgerm}
+
+\usepackage[inline]{enumitem}
+
+\makeatletter
+% From http://tex.stackexchange.com/questions/51086/add-second-enumeration-item-on-the-same-line
+\newcommand{\inlineitem}[1][]{%
+\ifnum\enit@type=\tw@
+    {\descriptionlabel{#1}}
+  \hspace{\labelsep}%
+\else
+  \ifnum\enit@type=\z@
+       \refstepcounter{\@listctr}\fi
+    \qquad\@itemlabel\hspace{\labelsep}%
+\fi}
+\makeatother
+
+\ifxetex
+\setmainfont[Mapping=tex-text, Ligatures={Common}, Numbers={OldStyle}]{Linux Libertine O}
+\fi
+
+\geometry{
+	includeheadfoot,
+	margin = 2.54cm,
+	top = 1.5cm,
+	bottom = 1.5cm
+}
+
+\newcommand{\en}[1]{\foreignlanguage{english}{\textit{#1}}}
+\newcommand{\fr}[1]{\foreignlanguage{francais}{\textit{#1}}}
+
+\newcommand{\ie}{t.e.\,}
+
+\newenvironment{datecvsection}[1]%
+               {\subsection*{#1}%
+                 \noindent \begin{tabular}{@{}p{\annee}p{\texte}@{}}}
+               {\end{tabular}}
+
+\newenvironment{cvsection}[1]%
+               {\subsection*{#1}}
+               {}
+
+\newenvironment{itemcvsection}[1]%
+               {\subsection*{#1}\begin{itemize}}
+               {\end{itemize}}
+
+\def\arraystretch{1.5}
+
+\begin{document}
+
+% Pas de numéro de page
+\pagestyle{empty}
+
+% \annee est la largeur de la première colonne, c'est à dire celle
+% contenant l'année scolaire. Elle est ici définie comme étant la
+% largeur du texte « janvier-février ». À adapter le cas échéant.
+
+\newlength{\annee}
+\settowidth{\annee}{9999--9999}
+
+% \texte est la largeur de la deuxième colonne. Elle est définie comme
+% étant la largeur de la page moins celle de la première colonne.
+% 2\tabcolsep est la largeur de l'espacement entre les colonnes.
+
+\newlength{\texte}
+\setlength{\texte}{\textwidth} \addtolength{\texte}{-\annee} 
+	\addtolength{\texte}{-2\tabcolsep}
+
+\begin{center} \Huge \textsc{Martin~Bodin} \end{center}
+
+\parbox[c]{.5\textwidth}
+{
+  \noindent
+% Les Énaudières \\
+% 14, rue de la Libération \\
+% 50 220, \textsc{Saint-Quentin-sur-le-Homme} \\
+% \textsc{Francio}
+  Departamento 815B \\
+  Huerfanos, 1400 \\
+  \textsc{Santiago} \\
+  \textsc{Ĉilio}
+}
+\parbox[c]{.55\textwidth}
+{
+\begin{flushright}
+  Naskiĝis la 30an de decembro, 1989 \\
+  \noindent Telefonnumero~: \mbox{+33 6 27 00 58 84} \\
+  \url{martin.bodin@ens-lyon.org} \\
+  \url{cmm.uchile.cl/~mbodin/}
+\end{flushright}
+}
+
+
+\begin{datecvsection}{Studaro}
+
+	2012–2016 & Doktoriĝo informatika en la \textsc{Irisa} en \textsc{Rennes} estrigita de \textsc{Alan~Schmitt} kaj \textsc{Thomas~Jensen} pri korektpruvigitaj \textsc{Javaskript}aj analizoj. \\
+
+	2010–2012 & \fr{Master d’Informatique} (\ie informatika Majstro), en la \fr{École Normale Supérieure de \textsc{Lyon}} (franca \fr{Grande École} — \ie ĉeflernejo de altnivela instruado — specialigita en la edukado de esploradistoj). \\
+
+    2009–2010 & Licence d’Informatique, mention très bien (\ie komputika licencio, kun granda laŭdo) à l’École Normale Supérieure de \textsc{Lyon}. \\
+
+    2007–2009 & Classes préparatoires aux Grandes Écoles au lycée \textsc{Henri~iv} à \textsc{Paris} (dujara intenskurso preparanta al la enirkonkurso de la \fr{grandes Écoles}). \\
+
+    2007 & Baccalauréat spécialité Mathématiques, mention très bien (abiturienta ekzameno kies ĉefaj fakoj estas matekmatiko, fiziko kaj biologio, kun granda laŭdo). \\
+
+\end{datecvsection}
+
+\begin{cvsection}{Lingvoj}
+\parbox{.4\textwidth}{
+\begin{itemize}
+   \item Denaska nivelo de la franca,
+   \item Flua en Esperanto,
+\end{itemize}}
+\parbox{.55\textwidth}{
+\begin{itemize}
+   \item Altnivela nivelo de la angla,
+   \item Kompreneto de la germana, la portugala, kaj la hispana.
+\end{itemize}}
+\end{cvsection}
+
+\begin{datecvsection}{Laboraj spertoj}
+
+    2017–2018 & Postdoktorulo ĉe la \textsc{CMM} en \textsc{Santiago} (\textsc{Ĉilio}) \\
+
+	2013–2016 & Ano de la \textsc{SecCloud} projekto:  \url{http://www.seccloud.cominlabs.ueb.eu/} \\
+
+	2012–2016 & Ano de la \textsc{JsCert} projekto:  \url{http://jscert.org/} \\
+
+	2012 & Lernoservo ĉe \textsc{Inria} (\textsc{Rennes}) kun \textsc{Alan~Schmitt} kaj \textsc{Thomas~Jensen}:
+	\en{\textit{A Certified \textsc{JavaScript} Interpreter}} \\
+
+	2011 & Lernoservo ĉe \textsc{Vrĳe Universiteit} (\textsc{Amsterdam}) kun \textsc{Dimitri~Hendriks} kaj \textsc{Jörg~Endrullis}:
+	\en{\textit{Proving Stream Equalities in \textsc{Coq}}} \\
+
+	2011 & Lernoservo ĉe \textsc{pps} (\textsc{Paris}) kun \textsc{Stéphane Gimenez} kaj \textsc{Christine Tasson}:
+	\en{\textit{Sequentialization of Proof Nets to Structures}} \\
+
+	2010 & Partoprenado al la \textsc{Cartomancer} projekto:  \url{http://sourceforge.net/projects/cartomancer/} \\
+
+	2010 & Lernoservo ĉe \textsc{Vérimag} (\textsc{Grenoble}) kun \textsc{David~Monniaux}:
+	\textit{Détection de modes de fonctionnements d’un programme \textsc{Lustre}} \\
+
+\end{datecvsection}
+
+\begin{datecvsection}{Kongresoj}
+
+  2015 & \textit{Certified Abstract Interpretation with Pretty-Big-Step Semantics}, Martin \textsc{Bodin}, Thomas \textsc{Jensen} kaj Alan \textsc{Schmitt} (CPP~2015). \\
+
+  2014 & \textit{A Trusted Mechanised JavaScript Specification}, Martin \textsc{Bodin}, Arthur \textsc{Charguéraud}, Daniele \textsc{Filaretti}, Philippa \textsc{Gardner}, Sergio \textsc{Maffeis}, Daiva \textsc{Naudziuniene}, Alan \textsc{Schmitt} kaj Gareth \textsc{Smith} (POPL~2014). \\
+
+  2013 & \textit{Circular Coinduction in Coq Using Bisimulation-up-to Techniques}, Jörg \textsc{Endrullis}, Dimitri \textsc{Hendriks} kaj Martin \textsc{Bodin} (ITP~2013). \\
+
+  2011 & \textit{Modular Abstractions of Reactive Nodes using Disjunctive Invariants}, David \textsc{Monniaux} and Martin \textsc{Bodin} (APLAS~2011). \\
+
+\end{datecvsection}
+
+\begin{datecvsection}{Babilkongresoj}
+
+  2016 & \textit{An Abstract Separation Logic for Interlinked Extensible Records}, Martin \textsc{Bodin}, Thomas \textsc{Jensen} kaj Alan \textsc{Schmitt} (JFLA~2016). \\
+
+  2014 & \textit{Certified Abstract Interpretation with Pretty-Big-Step Semantics}, Martin \textsc{Bodin}, Thomas \textsc{Jensen} kaj Alan \textsc{Schmitt} (JFLA~2014). \\
+
+  2013 & \textit{Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)}, Martin \textsc{Bodin}, Thomas \textsc{Jensen} kaj Alan \textsc{Schmitt} in \textit{Semantics, Abstract Interpretation, and Reasoning about Programs: Essays Dedicated to David A. \textsc{Schmidt} on the Occasion of his Sixtieth Birthday}, volume 129 of EPTCS, pages 360–383. \\
+
+  2013 & \textit{A Certified JavaScript Interpreter}, Martin \textsc{Bodin} and Alan \textsc{Schmitt} (JFLA~2013). \\
+
+\end{datecvsection}
+
+\begin{itemcvsection}{Komputilaj kapabloj}
+
+  \item Bona nivelo en la jenaj programlingvoj:  \textsc{Coq}, \textsc{JavaScript}, \LaTeX, \textsc{OCaml}\ldots
+  \item Kutimuzanto de la sistemo \textsc{GNU/Linux}.
+  \item Kapabla uzi \textsc{Vim}, \textsc{The~Gimp}, \textsc{Inkscape}, \textsc{Graphviz}…
+
+\end{itemcvsection}
+
+\begin{datecvsection}{Asocia vivo}
+
+    2014–2015 & Aktiva ano de \textsc{Espéranto-Rennes}. \\
+	2012 & Kasisto de la teatra asocio \textsc{ASCREB} en \textsc{Rennes}. \\
+	2010 & Sekretario de la asocio \textsc{INFO-ENS} en \textsc{Lyon}.
+
+\end{datecvsection}
+
+\begin{datecvsection}{Kromspertoj}
+
+    2014 & Program-konceptado kaj pruvo, ekzercinstruado de M1a nivelo ĉe la \fr{École Normale Supérieure} \\
+
+    2013–2014 & Formalaj lingvaĵoj, ekzercinstruado de L3a nivelo ĉe la \fr{École Normale Supérieure} \\
+
+    2013 & Enkonduko al \textsc{Scheme}, ekzercinstruado de L1a nivelo ĉe \textsc{Insa} de \textsc{Rennes} \\
+
+	2012, 2014 & Superkontrolado de la algoritma malteoria ekzameno eniganta la \fr{École Normale Supérieure}.
+
+\end{datecvsection}
+
+\begin{itemcvsection}{Personaj interesigaĵoj}
+
+  \item Ludoj: tabelaj, kartaj, rolaj, vesperenketoj, ktp.
+  \item Esperantaj agadoj.
+
+\end{itemcvsection}
+
+\end{document}
+

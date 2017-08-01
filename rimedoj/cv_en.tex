@@ -1,0 +1,224 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{ifxetex}
+\ifxetex
+\usepackage{xunicode,fontspec,xltxtra}
+\else
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\fi
+
+\usepackage[francais, english]{babel}
+\usepackage{geometry}
+\usepackage{url}
+\usepackage{oldgerm}
+
+\usepackage[inline]{enumitem}
+
+\makeatletter
+% From http://tex.stackexchange.com/questions/51086/add-second-enumeration-item-on-the-same-line
+\newcommand{\inlineitem}[1][]{%
+\ifnum\enit@type=\tw@
+    {\descriptionlabel{#1}}
+  \hspace{\labelsep}%
+\else
+  \ifnum\enit@type=\z@
+       \refstepcounter{\@listctr}\fi
+    \qquad\@itemlabel\hspace{\labelsep}%
+\fi}
+\makeatother
+
+\ifxetex
+\setmainfont[Mapping=tex-text, Ligatures={Common}, Numbers={OldStyle}]{Linux Libertine O}
+\fi
+
+\geometry{
+	includeheadfoot,
+	margin = 2.54cm,
+	top = 1.5cm,
+	bottom = 1.5cm
+}
+
+\newcommand{\fr}[1]{\foreignlanguage{francais}{\textit{#1}}}
+
+\newcommand{\ie}{i.e.\,}
+
+\newenvironment{datecvsection}[1]%
+               {\subsection*{#1}%
+                 \noindent \begin{tabular}{@{}p{\annee}p{\texte}@{}}}
+               {\end{tabular}}
+
+\newenvironment{cvsection}[1]%
+               {\subsection*{#1}}
+               {}
+
+\newenvironment{itemcvsection}[1]%
+               {\subsection*{#1}\begin{itemize}}
+               {\end{itemize}}
+
+\def\arraystretch{1.5}
+
+\begin{document}
+
+% Pas de numéro de page
+\pagestyle{empty}
+
+% \annee est la largeur de la première colonne, c'est à dire celle
+% contenant l'année scolaire. Elle est ici définie comme étant la
+% largeur du texte « janvier-février ». À adapter le cas échéant.
+
+\newlength{\annee}
+\settowidth{\annee}{9999—9999} % January--February}
+
+% \texte est la largeur de la deuxième colonne. Elle est définie comme
+% étant la largeur de la page moins celle de la première colonne.
+% 2\tabcolsep est la largeur de l'espacement entre les colonnes.
+
+\newlength{\texte}
+\setlength{\texte}{\textwidth} \addtolength{\texte}{-\annee} 
+	\addtolength{\texte}{-2\tabcolsep}
+
+\begin{center} \Huge \textsc{Martin~Bodin} \end{center}
+
+\parbox{0.5\textwidth}
+{
+  \noindent
+% Les Énaudières \\
+% 14, rue de la Libération \\
+% 50 220, \textsc{Saint-Quentin-sur-le-Homme} \\
+% \textsc{France}
+  Departamento 815B \\
+  Huerfanos, 1400 \\
+  \textsc{Santiago} \\
+  \textsc{Chile}
+}
+\parbox{.55\textwidth}
+{
+\begin{flushright}
+  Born the 30\(^{th}\) of December 1989. \\
+  \noindent Phone Number: \mbox{+33 6 27 00 58 84} \\
+  \url{martin.bodin@ens-lyon.org} \\
+  \url{cmm.uchile.cl/~mbodin/}
+\end{flushright}
+}
+
+
+\begin{datecvsection}{Education}
+
+	2012–2016 & Ph.D. in Computer Sciences at \textsc{IRISA}, in \textsc{Rennes} under the direction of \textsc{Alan~Schmitt} and \textsc{Thomas~Jensen} on certified analyses of \textsc{JavaScript}. \\
+
+	2010–2012 & \fr{Master d’Informatique} (\ie a Computer Science
+	Master) in the \fr{École Normale Supérieure de Lyon} (a French
+	\fr{grande École}—\ie a leading institution of higher
+    education—specialized in the formation of searchers). \\
+
+	2009–2010 & \fr{Licence d’Informatique, mention très bien} (\ie
+	a Computer Science Licence degree, magna cum laude) in the
+	\fr{École Normale Supérieure de Lyon}. \\
+
+	2007–2009 & \fr{Classes préparatoires aux grandes Écoles} in the
+	\fr{lycée Henri~IV} in Paris (a two-years intensive course
+	preparing to the competitive entrance of \fr{grandes Écoles}). \\
+
+	2007 & \fr{Baccalauréat Scientifique, mention très bien}
+	(equivalent to British A-levels with a major in Mathematics, Physics
+	and Biology, magna cum laude). \\
+
+\end{datecvsection}
+
+\begin{cvsection}{Languages}
+\parbox{.45\textwidth}{
+\begin{itemize}
+   \item Native in French;
+   \item Fluent in Esperanto;
+\end{itemize}}
+\parbox{.45\textwidth}{
+\begin{itemize}
+   \item Good level in English;
+   \item Notions of German, Portuguese, and Spanish.
+\end{itemize}}
+\end{cvsection}
+
+\begin{datecvsection}{Related Experience}
+
+    2017–2018 & Post-doc in the \textsc{CMM} at \textsc{Santiago} (\textsc{Chile}) \\
+
+	2013–2016 & Member of the \textsc{SecCloud} project:  \url{www.seccloud.cominlabs.ueb.eu/}. \\
+
+	2012–2016 & Member of the \textsc{JsCert} project:  \url{jscert.org/}. \\
+
+	2012 & Internship in \textsc{Inria} at \textsc{Rennes} with \textsc{Alan~Schmitt} and \textsc{Thomas~Jensen}:
+	\textit{A Certified \textsc{JavaScript} Interpreter}. \\
+
+	2011 & Internship in \textsc{Vrĳe~Universiteit} at \textsc{Amsterdam} with \textsc{Dimitri~Hendriks} and \textsc{Jörg~Endrullis}:
+	\textit{Proving Stream Equalities in \textsc{Coq}}. \\
+
+	2011 & Internship in \fr{\sc PPS} at \textsc{Paris} with \textsc{Stéphane~Gimenez} and \textsc{Christine~Tasson}:
+	\textit{Sequentialization of proof nets to structures}. \\
+
+	2010 & Internship in \fr{\sc Vérimag} at \textsc{Grenoble} with \textsc{David~Monniaux}:
+        \fr{Détection de modes de fonctionnements d’un programme \textsc{Lustre}}. \\
+
+\end{datecvsection}
+
+\begin{datecvsection}{Conferences}
+
+  2015 & \textit{Certified Abstract Interpretation with Pretty-Big-Step Semantics}, Martin \textsc{Bodin}, Thomas \textsc{Jensen}, and Alan \textsc{Schmitt} (CPP~2015). \\
+
+  2014 & \textit{A Trusted Mechanised JavaScript Specification}, Martin \textsc{Bodin}, Arthur \textsc{Charguéraud}, Daniele \textsc{Filaretti}, Philippa \textsc{Gardner}, Sergio \textsc{Maffeis}, Daiva \textsc{Naudziuniene}, Alan \textsc{Schmitt}, and Gareth \textsc{Smith} (POPL~2014). \\
+
+  2013 & \textit{Circular Coinduction in Coq Using Bisimulation-up-to Techniques}, Jörg \textsc{Endrullis}, Dimitri \textsc{Hendriks}, and Martin \textsc{Bodin} (ITP~2013). \\
+
+  2011 & \textit{Modular Abstractions of Reactive Nodes using Disjunctive Invariants}, David \textsc{Monniaux} and Martin \textsc{Bodin} (APLAS~2011). \\
+
+\end{datecvsection}
+
+\begin{datecvsection}{Workshops}
+
+  2016 & \textit{An Abstract Separation Logic for Interlinked Extensible Records}, Martin \textsc{Bodin}, Thomas \textsc{Jensen}, and Alan \textsc{Schmitt} (JFLA~2016). \\
+
+  2014 & \textit{Certified Abstract Interpretation with Pretty-Big-Step Semantics}, Martin \textsc{Bodin}, Thomas \textsc{Jensen}, and Alan \textsc{Schmitt} (JFLA~2014). \\
+
+  2013 & \textit{Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)}, Martin \textsc{Bodin}, Thomas \textsc{Jensen}, and Alan \textsc{Schmitt} in \textit{Semantics, Abstract Interpretation, and Reasoning about Programs: Essays Dedicated to David A. \textsc{Schmidt}} \\ % on the Occasion of his Sixtieth Birthday}, volume 129 of EPTCS, pages 360–383. \\
+
+  2013 & \textit{A Certified JavaScript Interpreter}, Martin \textsc{Bodin} and Alan \textsc{Schmitt} (JFLA~2013). \\
+
+\end{datecvsection}
+
+\begin{itemcvsection}{Computer Proficiencies}
+
+	\item Good commands in the following programming languages:  \textsc{Coq}, \textsc{JavaScript}, \LaTeX, \textsc{OCaml}\ldots
+	\item Familiar with \textsc{GNU/Linux} as an operating system.
+	\item Able to use \textsc{Vim}, \textsc{Git}, \textsc{The~Gimp}, \textsc{Inkscape}, \textsc{Graphviz}\ldots
+
+\end{itemcvsection}
+
+\begin{datecvsection}{Association Experience}
+
+    2014–2015 & Active member of \textsc{Espéranto-Rennes}. \\
+	2012 & Treasurer of the theater association \textsc{ASCREB} in \textsc{Rennes} \\
+	2010 & Secretary of the \textsc{INFO-ENS} association in \textsc{Lyon}. \\
+
+\end{datecvsection}
+
+\begin{datecvsection}{Other Experience}
+
+    2014 & Software design and verification, M1 tutoring in the \fr{École Normale Supérieure} \\
+
+    2013–2014 & Formal Languages, tutoring for L3 students in the \fr{École Normale Supérieure} \\
+
+    2013 & Introduction to \textsc{Scheme}, tutoring for L1 students in the \textsc{Insa} of \textsc{Rennes} \\
+
+	2012, 2014 & Monitoring the algorithmic practice examination for the entrance of the \fr{École Normale Supérieure}.
+
+\end{datecvsection}
+
+\begin{itemcvsection}{Personnal Interests}
+
+	\item Board games, card games, improvisation games, role playing games, etc.
+    \item Esperanto related activities.
+
+\end{itemcvsection}
+
+\end{document}
+

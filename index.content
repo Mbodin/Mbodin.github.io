@@ -24,6 +24,15 @@ end
 
 description
 en
+    I am currently working on formalising <a href = "https://r-project.org/">the <span class = "name">R</span> programming language</a> in <a href = "http://coq.inria.fr">the <span class = "name">Coq</span> proof assistant</a>.
+eo
+    Mi nun estas formaliganta <a href = "https://r-project.org/">la <span class = "name">R</span> programlingvaĵon</a> en <a href = "http://coq.inria.fr">la <span class = "name">Coq</span> pruvilo</a>.
+fr
+    Je suis actuellement en train de formaliser <a href = "https://r-project.org/">le langage de programmation <span class = "name">R</span></a> dans <a href = "http://coq.inria.fr">l’assistant de preuve <span class = "name">Coq</span></a>.
+end
+
+description
+en
     I did my PhD at <span class = "name">INRIA</span> <span class = "town">Rennes</span> under the supervision of <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> and <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.
     I then worked on formal analysis of the <span class = "name">JavaScript</span> programming language.
     More information can be found <a class = "switchLanguage_en internalLink" href = "doktorigxo/companion.html?lang=en#en">in my thesis companion</a>.

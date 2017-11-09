@@ -79,7 +79,12 @@ en
 		<dt>CV</dt>
 		<dd><a href = "rimedoj/cv_en.pdf">Available there</a></dd>
 		<dt>Public key</dt>
-		<dd><a href = "rimedoj/id_rsa.pub">Available there</a></dd>
+		<dd>
+            <ul class = "blocks">
+                <li><a href = "rimedoj/id_rsa.pub">Console</a></li>
+                <li><a href = "rimedoj/0x6CC4BC7F.asc">Mailing</a></li>
+			</ul>
+        </dd>
 		<dt>Internet presence</dt>
 		<dd>
 			<ul class = "blocks">
@@ -110,7 +115,12 @@ eo
 		<dt>Vivresumo</dt>
 		<dd><a href = "rimedoj/cv_eo.pdf">Havebla tie ĉi</a></dd>
 		<dt>Publika ŝlosilo</dt>
-		<dd><a href = "rimedoj/id_rsa.pub">Havebla tie ĉi</a></dd>
+		<dd>
+            <ul class = "blocks">
+                <li><a href = "rimedoj/id_rsa.pub">Terminale</a></li>
+                <li><a href = "rimedoj/0x6CC4BC7F.asc">Mesaĝe</a></li>
+			</ul>
+        </dd>
 		<dt>Interreta ĉeesto</dt>
 		<dd>
 			<ul class = "blocks">
@@ -141,7 +151,12 @@ fr
 		<dt>CV</dt>
 		<dd><a href = "rimedoj/cv_fr.pdf">Disponible ici</a></dd>
 		<dt>Clef publique</dt>
-		<dd><a href = "rimedoj/id_rsa.pub">Disponible ici</a></dd>
+		<dd>
+            <ul class = "blocks">
+                <li><a href = "rimedoj/id_rsa.pub">Console</a></li>
+                <li><a href = "rimedoj/0x6CC4BC7F.asc">Courriers</a></li>
+			</ul>
+        </dd>
 		<dt>Présence sur Internet</dt>
 		<dd>
 			<ul class = "blocks">

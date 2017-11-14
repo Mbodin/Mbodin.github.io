@@ -78,11 +78,11 @@ en
 		<dd>+56 2 2978 4463</dd>
 		<dt>CV</dt>
 		<dd><a href = "rimedoj/cv_en.pdf">Available there</a></dd>
-		<dt>Public key</dt>
+		<dt>Public keys</dt>
 		<dd>
             <ul class = "blocks">
-                <li><a href = "rimedoj/id_rsa.pub">Console</a></li>
-                <li><a href = "rimedoj/0x6CC4BC7F.asc">Mailing</a></li>
+                <li><a href = "rimedoj/id_rsa.pub">SSH</a></li>
+                <li><a href = "rimedoj/0x6CC4BC7F.asc">GPG</a></li>
 			</ul>
         </dd>
 		<dt>Internet presence</dt>
@@ -114,11 +114,11 @@ eo
 		<dd>+56 2 2978 4463</dd>
 		<dt>Vivresumo</dt>
 		<dd><a href = "rimedoj/cv_eo.pdf">Havebla tie ĉi</a></dd>
-		<dt>Publika ŝlosilo</dt>
+		<dt>Publikaj ŝlosiloj</dt>
 		<dd>
             <ul class = "blocks">
-                <li><a href = "rimedoj/id_rsa.pub">Terminale</a></li>
-                <li><a href = "rimedoj/0x6CC4BC7F.asc">Mesaĝe</a></li>
+                <li><a href = "rimedoj/id_rsa.pub">SSH</a></li>
+                <li><a href = "rimedoj/0x6CC4BC7F.asc">GPG</a></li>
 			</ul>
         </dd>
 		<dt>Interreta ĉeesto</dt>
@@ -150,11 +150,11 @@ fr
 		<dd>+56 2 2978 4463</dd>
 		<dt>CV</dt>
 		<dd><a href = "rimedoj/cv_fr.pdf">Disponible ici</a></dd>
-		<dt>Clef publique</dt>
+		<dt>Clefs publiques</dt>
 		<dd>
             <ul class = "blocks">
-                <li><a href = "rimedoj/id_rsa.pub">Console</a></li>
-                <li><a href = "rimedoj/0x6CC4BC7F.asc">Courriers</a></li>
+                <li><a href = "rimedoj/id_rsa.pub">SSH</a></li>
+                <li><a href = "rimedoj/0x6CC4BC7F.asc">GPG</a></li>
 			</ul>
         </dd>
 		<dt>Présence sur Internet</dt>

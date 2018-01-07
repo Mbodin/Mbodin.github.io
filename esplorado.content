@@ -53,11 +53,11 @@ all
 CPP 2015
 description
 en
-	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, and <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Certified Abstract Interpretation with Pretty-Big-Step Semantics</span>, <span class = "journal">Certified Programs and Proofs (CPP)</span>, 2015.
+	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, and <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Certified Abstract Interpretation with Pretty-Big-Step Semantics</span>, <span class = "journal">Certified Programs and Proofs (CPP)</span>, 2015.
 eo
-	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> kaj <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Certified Abstract Interpretation with Pretty-Big-Step Semantics</span>, <span class = "journal">Certified Programs and Proofs (CPP)</span>, 2015.
+	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> kaj <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Certified Abstract Interpretation with Pretty-Big-Step Semantics</span>, <span class = "journal">Certified Programs and Proofs (CPP)</span>, 2015.
 fr
-	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> et <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Certified Abstract Interpretation with Pretty-Big-Step Semantics</span>, <span class = "journal">Certified Programs and Proofs (CPP)</span>, 2015.
+	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> et <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Certified Abstract Interpretation with Pretty-Big-Step Semantics</span>, <span class = "journal">Certified Programs and Proofs (CPP)</span>, 2015.
 link
 en
 	<a href = "paperoj/cpp15.pdf">Full text</a>
@@ -89,11 +89,11 @@ all
 POPL 2014
 description
 en
-	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.chargueraud.org/"><span class = "name">Arthur Charguéraud</span></a>, <a href = "http://dfilaretti.github.io/"><span class = "name">Daniele Filaretti</span></a>, <a href = "ihttps://www.doc.ic.ac.uk/~pg/"><span class = "name">Philippa Gardner</span></a>, <a href = "http://www.doc.ic.ac.uk/~maffeis/"><span class = "name">Sergio Maffeis</span></a>, <a href = "http://www.doc.ic.ac.uk/~dn911/"><span class = "name">Daiva Naudžiūnienė</span></a>, <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, and <a href = "http://www.totherme.org/"><span class = "name">Gareth Smith</span></a>, <span class = "paperName">A Trusted Mechanised <span class = "name">JavaScript</span> Specification</span>, <span class = "journal">Symposium on Principles of Programming Languages (POPL)</span>, 2014.
+	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.chargueraud.org/"><span class = "name">Arthur Charguéraud</span></a>, <a href = "http://dfilaretti.github.io/"><span class = "name">Daniele Filaretti</span></a>, <a href = "ihttps://www.doc.ic.ac.uk/~pg/"><span class = "name">Philippa Gardner</span></a>, <a href = "http://www.doc.ic.ac.uk/~maffeis/"><span class = "name">Sergio Maffeis</span></a>, <a href = "http://www.doc.ic.ac.uk/~dn911/"><span class = "name">Daiva Naudžiūnienė</span></a>, <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, and <a href = "http://www.totherme.org/"><span class = "name">Gareth Smith</span></a>, <span class = "paperName">A Trusted Mechanised <span class = "name">JavaScript</span> Specification</span>, <span class = "journal">Symposium on Principles of Programming Languages (POPL)</span>, 2014.
 eo
-	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.chargueraud.org/"><span class = "name">Arthur Charguéraud</span></a>, <a href = "http://dfilaretti.github.io/"><span class = "name">Daniele Filaretti</span></a>, <a href = "ihttps://www.doc.ic.ac.uk/~pg/"><span class = "name">Philippa Gardner</span></a>, <a href = "http://www.doc.ic.ac.uk/~maffeis/"><span class = "name">Sergio Maffeis</span></a>, <a href = "http://www.doc.ic.ac.uk/~dn911/"><span class = "name">Daiva Naudžiūnienė</span></a>, <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> kaj <a href = "http://www.totherme.org/"><span class = "name">Gareth Smith</span></a>, <span class = "paperName">A Trusted Mechanised <span class = "name">JavaScript</span> Specification</span>, <span class = "journal">Symposium on Principles of Programming Languages (POPL)</span>, 2014.
+	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.chargueraud.org/"><span class = "name">Arthur Charguéraud</span></a>, <a href = "http://dfilaretti.github.io/"><span class = "name">Daniele Filaretti</span></a>, <a href = "ihttps://www.doc.ic.ac.uk/~pg/"><span class = "name">Philippa Gardner</span></a>, <a href = "http://www.doc.ic.ac.uk/~maffeis/"><span class = "name">Sergio Maffeis</span></a>, <a href = "http://www.doc.ic.ac.uk/~dn911/"><span class = "name">Daiva Naudžiūnienė</span></a>, <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> kaj <a href = "http://www.totherme.org/"><span class = "name">Gareth Smith</span></a>, <span class = "paperName">A Trusted Mechanised <span class = "name">JavaScript</span> Specification</span>, <span class = "journal">Symposium on Principles of Programming Languages (POPL)</span>, 2014.
 fr
-	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.chargueraud.org/"><span class = "name">Arthur Charguéraud</span></a>, <a href = "http://dfilaretti.github.io/"><span class = "name">Daniele Filaretti</span></a>, <a href = "ihttps://www.doc.ic.ac.uk/~pg/"><span class = "name">Philippa Gardner</span></a>, <a href = "http://www.doc.ic.ac.uk/~maffeis/"><span class = "name">Sergio Maffeis</span></a>, <a href = "http://www.doc.ic.ac.uk/~dn911/"><span class = "name">Daiva Naudžiūnienė</span></a>, <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> et <a href = "http://www.totherme.org/"><span class = "name">Gareth Smith</span></a>, <span class = "paperName">A Trusted Mechanised <span class = "name">JavaScript</span> Specification</span>, <span class = "journal">Symposium on Principles of Programming Languages (POPL)</span>, 2014.
+	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.chargueraud.org/"><span class = "name">Arthur Charguéraud</span></a>, <a href = "http://dfilaretti.github.io/"><span class = "name">Daniele Filaretti</span></a>, <a href = "ihttps://www.doc.ic.ac.uk/~pg/"><span class = "name">Philippa Gardner</span></a>, <a href = "http://www.doc.ic.ac.uk/~maffeis/"><span class = "name">Sergio Maffeis</span></a>, <a href = "http://www.doc.ic.ac.uk/~dn911/"><span class = "name">Daiva Naudžiūnienė</span></a>, <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> et <a href = "http://www.totherme.org/"><span class = "name">Gareth Smith</span></a>, <span class = "paperName">A Trusted Mechanised <span class = "name">JavaScript</span> Specification</span>, <span class = "journal">Symposium on Principles of Programming Languages (POPL)</span>, 2014.
 link
 en
 	<a href = "paperoj/popl14.pdf">Full text</a>
@@ -111,11 +111,11 @@ all
 ITP 2013
 description
 en
-	<a href = "http://joerg.endrullis.de/"><span class = "name">Jörg Endrullis</span></a>, <a href = "http://www.cs.vu.nl/~diem/"><span class = "name">Dimitri Hendriks</span></a>, and <a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <span class = "paperName">Circular Coinduction in Coq Using Bisimulation-Up-To Techniques</span>, <span class = "journal">Interactive Theorem Proving (ITP)</span>, 2013.
+	<a href = "http://joerg.endrullis.de/"><span class = "name">Jörg Endrullis</span></a>, <a href = "http://www.cs.vu.nl/~diem/"><span class = "name">Dimitri Hendriks</span></a>, and <a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <span class = "paperName">Circular Coinduction in Coq Using Bisimulation-Up-To Techniques</span>, <span class = "journal">Interactive Theorem Proving (ITP)</span>, 2013.
 eo
-	<a href = "http://joerg.endrullis.de/"><span class = "name">Jörg Endrullis</span></a>, <a href = "http://www.cs.vu.nl/~diem/"><span class = "name">Dimitri Hendriks</span></a> kaj <a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <span class = "paperName">Circular Coinduction in Coq Using Bisimulation-Up-To Techniques</span>, <span class = "journal">Interactive Theorem Proving (ITP)</span>, 2013.
+	<a href = "http://joerg.endrullis.de/"><span class = "name">Jörg Endrullis</span></a>, <a href = "http://www.cs.vu.nl/~diem/"><span class = "name">Dimitri Hendriks</span></a> kaj <a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <span class = "paperName">Circular Coinduction in Coq Using Bisimulation-Up-To Techniques</span>, <span class = "journal">Interactive Theorem Proving (ITP)</span>, 2013.
 fr
-	<a href = "http://joerg.endrullis.de/"><span class = "name">Jörg Endrullis</span></a>, <a href = "http://www.cs.vu.nl/~diem/"><span class = "name">Dimitri Hendriks</span></a> et <a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <span class = "paperName">Circular Coinduction in Coq Using Bisimulation-Up-To Techniques</span>, <span class = "journal">Interactive Theorem Proving (ITP)</span>, 2013.
+	<a href = "http://joerg.endrullis.de/"><span class = "name">Jörg Endrullis</span></a>, <a href = "http://www.cs.vu.nl/~diem/"><span class = "name">Dimitri Hendriks</span></a> et <a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <span class = "paperName">Circular Coinduction in Coq Using Bisimulation-Up-To Techniques</span>, <span class = "journal">Interactive Theorem Proving (ITP)</span>, 2013.
 link
 en
 	<a href = "paperoj/itp13.pdf">Full text</a>
@@ -140,11 +140,11 @@ all
 APLAS 2011
 description
 en
-	<a href = "http://www-verimag.imag.fr/~monniaux/"><span class = "name">David Monniaux</span></a> and <a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <span class = "paperName">Modular Abstractions of Reactive Nodes using Disjunctive Invariants</span>, <span class = "journal">Programming Languages and Systems (APLAS)</span>, 2011.
+	<a href = "http://www-verimag.imag.fr/~monniaux/"><span class = "name">David Monniaux</span></a> and <a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <span class = "paperName">Modular Abstractions of Reactive Nodes using Disjunctive Invariants</span>, <span class = "journal">Programming Languages and Systems (APLAS)</span>, 2011.
 eo
-	<a href = "http://www-verimag.imag.fr/~monniaux/"><span class = "name">David Monniaux</span></a> kaj <a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <span class = "paperName">Modular Abstractions of Reactive Nodes using Disjunctive Invariants</span>, <span class = "journal">Programming Languages and Systems (APLAS)</span>, 2011.
+	<a href = "http://www-verimag.imag.fr/~monniaux/"><span class = "name">David Monniaux</span></a> kaj <a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <span class = "paperName">Modular Abstractions of Reactive Nodes using Disjunctive Invariants</span>, <span class = "journal">Programming Languages and Systems (APLAS)</span>, 2011.
 fr
-	<a href = "http://www-verimag.imag.fr/~monniaux/"><span class = "name">David Monniaux</span></a> et <a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <span class = "paperName">Modular Abstractions of Reactive Nodes using Disjunctive Invariants</span>, <span class = "journal">Programming Languages and Systems (APLAS)</span>, 2011.
+	<a href = "http://www-verimag.imag.fr/~monniaux/"><span class = "name">David Monniaux</span></a> et <a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <span class = "paperName">Modular Abstractions of Reactive Nodes using Disjunctive Invariants</span>, <span class = "journal">Programming Languages and Systems (APLAS)</span>, 2011.
 link
 en
 	<a href = "paperoj/aplas11.pdf">Full text</a>
@@ -177,14 +177,39 @@ end
 
 item
 all
+CoqPL 2018
+description
+all
+	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <span class = "paperName">A <span class = "name">Coq</span> Formalisation of a Core of <span class = "name">R</span></span>, <span class = "journal">CoqPL</span>, 2018.
+link
+en
+	<a href = "paperoj/coqpl18.pdf">Full text</a>
+eo
+	<a href = "paperoj/coqpl18.pdf">Papero</a>
+fr
+	<a href = "paperoj/coqpl18.pdf">Papier</a>
+link
+en
+	<a href = "paperoj/coqpl18_slides.pdf">Slides</a>
+eo
+	<a href = "paperoj/coqpl18_slides.pdf">Diapozitivoj</a>
+fr
+	<a href = "paperoj/coqpl18_slides.pdf">Présentation</a>
+link
+all
+	<!-- FIXME:  Add a BibTeX file. -->
+end
+
+item
+all
 JFLA 2016
 description
 en
-	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, and <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">An Abstract Separation Logic for Interlinked Extensible Records</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2016.
+	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, and <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">An Abstract Separation Logic for Interlinked Extensible Records</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2016.
 eo
-	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> kaj <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">An Abstract Separation Logic for Interlinked Extensible Records</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2016.
+	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> kaj <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">An Abstract Separation Logic for Interlinked Extensible Records</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2016.
 fr
-	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> et <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">An Abstract Separation Logic for Interlinked Extensible Records</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2016.
+	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> et <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">An Abstract Separation Logic for Interlinked Extensible Records</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2016.
 link
 en
 	<a href = "paperoj/jfla16.pdf">Full text</a>
@@ -209,11 +234,11 @@ all
 JFLA 2014
 description
 en
-	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, and <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Pretty-big-step-semantics-based Certified Abstract Interpretation</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2014.
+	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, and <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Pretty-big-step-semantics-based Certified Abstract Interpretation</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2014.
 eo
-	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> kaj <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Pretty-big-step-semantics-based Certified Abstract Interpretation</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2014.
+	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> kaj <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Pretty-big-step-semantics-based Certified Abstract Interpretation</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2014.
 fr
-	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> et <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Pretty-big-step-semantics-based Certified Abstract Interpretation</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2014.
+	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> et <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Pretty-big-step-semantics-based Certified Abstract Interpretation</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2014.
 link
 en
 	<a href = "paperoj/jfla14.pdf">Full text</a>
@@ -242,11 +267,11 @@ fr
 Festschrift pour David Schmidt
 description
 en
-	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, and <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)</span>, <span class = "journal">Festschrift of David Schmidt</span>, 2013.
+	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, and <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)</span>, <span class = "journal">Festschrift of David Schmidt</span>, 2013.
 eo
-	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> kaj <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)</span>, <span class = "journal">Festschrift of David Schmidt</span>, 2013.
+	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> kaj <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)</span>, <span class = "journal">Festschrift of David Schmidt</span>, 2013.
 fr
-	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> et <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)</span>, <span class = "journal">Festschrift of David Schmidt</span>, 2013.
+	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> et <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)</span>, <span class = "journal">Festschrift of David Schmidt</span>, 2013.
 link
 en
 	<a href = "paperoj/Festschrift_Schmidt.pdf">Full text</a>
@@ -261,11 +286,11 @@ all
 JFLA 2013
 description
 en
-	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a> and <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">A Certified <span class = "name">JavaScript</span> Interpreter</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2013.
+	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a> and <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">A Certified <span class = "name">JavaScript</span> Interpreter</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2013.
 eo
-	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a> kaj <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">A Certified <span class = "name">JavaScript</span> Interpreter</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2013.
+	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a> kaj <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">A Certified <span class = "name">JavaScript</span> Interpreter</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2013.
 fr
-	<a href = "http://people.irisa.fr/Martin.Bodin/" class = "internalLink"><span class = "name">Martin Bodin</span></a> et <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">A Certified <span class = "name">JavaScript</span> Interpreter</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2013.
+	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a> et <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">A Certified <span class = "name">JavaScript</span> Interpreter</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2013.
 link
 en
 	<a href = "paperoj/jfla13.pdf">Full text</a>

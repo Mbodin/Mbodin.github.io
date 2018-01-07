@@ -33,6 +33,15 @@ end
 
 description
 en
+    My current contract will end relatively soon. If you are interested in working with me, please <a class = "contactme">contact me</a>.
+eo
+    Mia nuna kontrakto relative baldaŭ finiĝos. Se interesigus vin labori kun mi, <a class = "contactme">bonvolu kontaktu min</a>.
+fr
+    Mon contrat actuel se terminera bientôt. Si vous êtes intéressés par travailler avec moi, <a class = "contactme">contactez-moi</a>.
+end
+
+description
+en
     I did my PhD at <span class = "name">INRIA</span> <span class = "town">Rennes</span> under the supervision of <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> and <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.
     I then worked on formal analysis of the <span class = "name">JavaScript</span> programming language.
     More information can be found <a class = "switchLanguage_en internalLink" href = "doktorigxo/companion.html?lang=en#en">in my thesis companion</a>.

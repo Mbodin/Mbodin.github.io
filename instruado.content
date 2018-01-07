@@ -15,11 +15,54 @@ updating
 
 description
 en
-	Here stands my teaching activity.
+	Here stands some of my teaching activity.
 eo
-	Jen mia instruistaro.
+	Jen parto de mia instruistaro.
 fr
-	Cette page recense les travaux d’enseignement auxquels j’ai participé.
+	Cette page quelques travaux d’enseignement auxquels j’ai participé.
+end
+
+section
+sectionName
+2017
+all
+	2017
+end
+
+item
+all
+	<a href = "http://www.uchile.cl/"><span class = "name">Universidad de Chile</span></a>, Introducción a <span class = "name">Coq</name>: Lógica, Tipos y Verificación
+description
+all
+    CC7125/MA7125 
+link
+en
+	<a href = "http://pleiad.dcc.uchile.cl/teaching/cc7125"><span class = "name">Éric Tanter</span>’s page for this course</a>
+eo
+	<a href = "http://pleiad.dcc.uchile.cl/teaching/cc7125">La paĝo de <span class = "name">Éric Tanter</span> pri ĝi</a>
+fr
+	<a href = "http://pleiad.dcc.uchile.cl/teaching/cc7125">La page de <span class = "name">Éric Tanter</span> sur ce cours</a>
+link
+en
+    <a href = "instruado/2017/jscert1.pdf"><span class = "name">JSCert</span> Presentation, first part</a>
+eo
+    <a href = "instruado/2017/jscert1.pdf"><span class = "name">JSCert</span> prelego, unua parto</a>
+fr
+    <a href = "instruado/2017/jscert1.pdf">Présentation de <span class = "name">JSCert</span>, première partie</a>
+link
+en
+    <a href = "instruado/2017/jscert2.pdf"><span class = "name">JSCert</span> Presentation, second part</a>
+eo
+    <a href = "instruado/2017/jscert2.pdf"><span class = "name">JSCert</span> prelego, dua parto</a>
+fr
+    <a href = "instruado/2017/jscert2.pdf">Présentation de <span class = "name">JSCert</span>, seconde partie</a>
+link
+en
+    <a href = "instruado/2017/jscert.tar.gz"><span class = "name">JSCert</span> Tutorial</a>
+eo
+    <a href = "instruado/2017/jscert.tar.gz">Ekzercioj pri <span class = "name">JSCert</span></a>
+fr
+    <a href = "instruado/2017/jscert.tar.gz">Exercices sur <span class = "name">JSCert</span></a>
 end
 
 section

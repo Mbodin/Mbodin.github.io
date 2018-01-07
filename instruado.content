@@ -67,6 +67,40 @@ end
 
 section
 sectionName
+2013_2014
+all
+	2013–2014
+end
+
+item
+all
+	<a href = "http://www.bretagne.ens-cachan.fr/"><span class = "name">ENS Cachan Bretagne</span></a>, Software design and verification
+description
+en
+	Tutorials for M1 students.
+eo
+	Superrigardaj laboroj por M1 lernantoj.
+fr
+	TD pour des normaliens de deuxième année (M1).
+internalLink
+instruado/2013/CVFP/index
+en
+	Go to the module’s page
+eo
+	Iri al ties paĝo
+fr
+	Aller à la page du module
+link
+en
+	<a href = "http://people.irisa.fr/Francois.Schwarzentruber/mit2_cvfp_2013/"><span class = "name">François Schwarzentruber</span>’s page for this course</a>
+eo
+	<a href = "http://people.irisa.fr/Francois.Schwarzentruber/mit2_cvfp_2013/">La paĝo de <span class = "name">François Schwarzentruber</span> pri ĝi</a>
+fr
+	<a href = "http://people.irisa.fr/Francois.Schwarzentruber/mit2_cvfp_2013/">La page de <span class = "name">François Schwarzentruber</span> sur ce cours</a>
+end
+
+section
+sectionName
 2012_2013
 all
 	2012–2013

@@ -212,139 +212,139 @@ fr
 	<a href = "td7_el.tex">Sources</a>
 end
 
-item
-en
-8st T:	Algebraic Languages and Stack Automata (II)
-eo
-8a SL:	Algebraj lingvaĵoj kaj Stakaj Aŭtomatoj (sekvantaĵoj)
-fr
-TD 8 :	Langages algébriques et Automates à pile (suite)
-description
-link
-en
-	<a href = "td8.pdf">Subject</a>
-eo
-	<a href = "td8.pdf">Subjekto</a>
-fr
-	<a href = "td8.pdf">Sujet</a>
-link
-en
-	<a href = "td8_el.tex">Sources</a>
-eo
-	<a href = "td8_el.tex">Fontoj</a>
-fr
-	<a href = "td8_el.tex">Sources</a>
-end
+#item
+#en
+#8st T:	Algebraic Languages and Stack Automata (II)
+#eo
+#8a SL:	Algebraj lingvaĵoj kaj Stakaj Aŭtomatoj (sekvantaĵoj)
+#fr
+#TD 8 :	Langages algébriques et Automates à pile (suite)
+#description
+#link
+#en
+#	<a href = "td8.pdf">Subject</a>
+#eo
+#	<a href = "td8.pdf">Subjekto</a>
+#fr
+#	<a href = "td8.pdf">Sujet</a>
+#link
+#en
+#	<a href = "td8_el.tex">Sources</a>
+#eo
+#	<a href = "td8_el.tex">Fontoj</a>
+#fr
+#	<a href = "td8_el.tex">Sources</a>
+#end
 
-item
-en
-9st T:	Syntactic Analysis
-eo
-9a SL:	Sintaksa analizo
-fr
-TD 9 :	Analyse syntaxique
-description
-link
-en
-	<a href = "td9.pdf">Subject</a>
-eo
-	<a href = "td9.pdf">Subjekto</a>
-fr
-	<a href = "td9.pdf">Sujet</a>
-link
-en
-	<a href = "td9_el.tex">Sources</a>
-eo
-	<a href = "td9_el.tex">Fontoj</a>
-fr
-	<a href = "td9_el.tex">Sources</a>
-end
+#item
+#en
+#9st T:	Syntactic Analysis
+#eo
+#9a SL:	Sintaksa analizo
+#fr
+#TD 9 :	Analyse syntaxique
+#description
+#link
+#en
+#	<a href = "td9.pdf">Subject</a>
+#eo
+#	<a href = "td9.pdf">Subjekto</a>
+#fr
+#	<a href = "td9.pdf">Sujet</a>
+#link
+#en
+#	<a href = "td9_el.tex">Sources</a>
+#eo
+#	<a href = "td9_el.tex">Fontoj</a>
+#fr
+#	<a href = "td9_el.tex">Sources</a>
+#end
 
-item
-en
-10st T:	Syntactic Analysis and Algebraic Languages
-eo
-10a SL:	Sintaksa analizo kaj Algebraj lingvaĵoj
-fr
-TD 10 :	Analyse syntaxique et Langages algébriques
-description
-link
-en
-	<a href = "td10.pdf">Subject</a>
-eo
-	<a href = "td10.pdf">Subjekto</a>
-fr
-	<a href = "td10.pdf">Sujet</a>
-link
-en
-	<a href = "td10_el.tex">Sources</a>
-eo
-	<a href = "td10_el.tex">Fontoj</a>
-fr
-	<a href = "td10_el.tex">Sources</a>
-end
+#item
+#en
+#10st T:	Syntactic Analysis and Algebraic Languages
+#eo
+#10a SL:	Sintaksa analizo kaj Algebraj lingvaĵoj
+#fr
+#TD 10 :	Analyse syntaxique et Langages algébriques
+#description
+#link
+#en
+#	<a href = "td10.pdf">Subject</a>
+#eo
+#	<a href = "td10.pdf">Subjekto</a>
+#fr
+#	<a href = "td10.pdf">Sujet</a>
+#link
+#en
+#	<a href = "td10_el.tex">Sources</a>
+#eo
+#	<a href = "td10_el.tex">Fontoj</a>
+#fr
+#	<a href = "td10_el.tex">Sources</a>
+#end
 
-item
-en
-11st T:	<span class = "name">Turing</span> Machines
-eo
-11a SL:	<span class = "name">Turing</span>aj maŝinoj
-fr
-TD 11 :	Machines de <span class = "name">Turing</span>
-description
-link
-en
-	<a href = "td11_el.tex">Sources</a>
-eo
-	<a href = "td11_el.tex">Fontoj</a>
-fr
-	<a href = "td11_el.tex">Sources</a>
-end
+#item
+#en
+#11st T:	<span class = "name">Turing</span> Machines
+#eo
+#11a SL:	<span class = "name">Turing</span>aj maŝinoj
+#fr
+#TD 11 :	Machines de <span class = "name">Turing</span>
+#description
+#link
+#en
+#	<a href = "td11_el.tex">Sources</a>
+#eo
+#	<a href = "td11_el.tex">Fontoj</a>
+#fr
+#	<a href = "td11_el.tex">Sources</a>
+#end
 
-item
-en
-12st T:	Primitive recursive functions
-eo
-12a SL:	Primitivaj memuzataj funkcioj
-fr
-TD 12 :	Fonctions primitives récursives
-description
-link
-en
-	<li><a href = "td12.pdf">Subject</a></li>
-eo
-	<li><a href = "td12.pdf">Subjekto</a></li>
-fr
-	<li><a href = "td12.pdf">Sujet</a></li>
-link
-en
-	<li><a href = "td12_el.tex">Sources</a></li>
-eo
-	<li><a href = "td12_el.tex">Fontoj</a></li>
-fr
-	<li><a href = "td12_el.tex">Sources</a></li>
-end
+#item
+#en
+#12st T:	Primitive recursive functions
+#eo
+#12a SL:	Primitivaj memuzataj funkcioj
+#fr
+#TD 12 :	Fonctions primitives récursives
+#description
+#link
+#en
+#	<li><a href = "td12.pdf">Subject</a></li>
+#eo
+#	<li><a href = "td12.pdf">Subjekto</a></li>
+#fr
+#	<li><a href = "td12.pdf">Sujet</a></li>
+#link
+#en
+#	<li><a href = "td12_el.tex">Sources</a></li>
+#eo
+#	<li><a href = "td12_el.tex">Fontoj</a></li>
+#fr
+#	<li><a href = "td12_el.tex">Sources</a></li>
+#end
 
-section
-en
-Annals
-eo
-Analoj
-fr
-Annales
-description
-end
+#section
+#en
+#Annals
+#eo
+#Analoj
+#fr
+#Annales
+#description
+#end
 
-item
-all
-2012–2013
-description
-link
-en
-	<a href = "examen_12–13.pdf">Subject</a>
-eo
-	<a href = "examen_12–13.pdf">Subjekto</a>
-fr
-	<a href = "examen_12–13.pdf">Sujet</a>
-end
+#item
+#all
+#2012–2013
+#description
+#link
+#en
+#	<a href = "examen_12–13.pdf">Subject</a>
+#eo
+#	<a href = "examen_12–13.pdf">Subjekto</a>
+#fr
+#	<a href = "examen_12–13.pdf">Sujet</a>
+#end
 

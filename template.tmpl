@@ -10,9 +10,9 @@
         <meta name = "viewport" content = "width=device-width" />
         <!-- <meta name = "description" content = "" /> --> <!-- TODO -->
         <tmpl_loop name = "allLanguages">
-        <link rel = "alternate" href = "<tmpl_var name = pathFromRoot /><tmpl_var name = "pageName" />.html?lang=<tmpl_var name = lang />#<tmpl_var name = lang />" hreflang = "<tmpl_var name = lang />" />
+        <link rel = "alternate" href = "<tmpl_var name = "pageName" />.html?lang=<tmpl_var name = lang />#<tmpl_var name = lang />" hreflang = "<tmpl_var name = lang />" />
         </tmpl_loop>
-        <link rel = "alternate" href = "<tmpl_var name = pathFromRoot /><tmpl_var name = "pageName" />.html" hreflang = "x-default" />
+        <link rel = "alternate" href = "<tmpl_var name = "pageName" />.html" hreflang = "x-default" />
     </head>
     <body>
         <tmpl_loop name = "allLanguages">

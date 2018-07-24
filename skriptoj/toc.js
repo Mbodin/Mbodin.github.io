@@ -1,3 +1,5 @@
+// @license magnet:?xt=urn:btih:90dc5c0be029de84e523b9b3922520e79e0e6f08&dn=cc0.txt CC0
+
 // TODO:  Track language change:  those variables have to be reloaded each time the language is changed…
 
 var tocCommand = "tocCommand_"
@@ -186,4 +188,6 @@ function dismissAll (){
 			}
 		} ())
 } ())
+
+// @license-end
 

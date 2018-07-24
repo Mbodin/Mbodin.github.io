@@ -1,3 +1,4 @@
+// @license magnet:?xt=urn:btih:90dc5c0be029de84e523b9b3922520e79e0e6f08&dn=cc0.txt CC0
 
 var languageBool = true
 var currentTimer = 0
@@ -45,4 +46,6 @@ function languageOn (time){
 
 	addLanguageFunction (function (){ languageOn () })
 } ())
+
+// @license-end
 

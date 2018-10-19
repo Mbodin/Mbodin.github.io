@@ -50,6 +50,42 @@ end
 
 item
 all
+DLS 2018
+description
+en
+	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, Tomás Diaz, and <a href = "https://pleiad.cl/people/etanter"><span class = "name">Éric Tanter</span></a>, <span class = "paperName">A Trustworthy Mechanized Formalization of R</span>, <span class = "journal">Dynamic Languages Symposium (DLS)</span>, 2018.
+eo
+	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, Tomás Diaz, kaj <a href = "https://pleiad.cl/people/etanter"><span class = "name">Éric Tanter</span></a>, <span class = "paperName">A Trustworthy Mechanized Formalization of R</span>, <span class = "journal">Dynamic Languages Symposium (DLS)</span>, 2018.
+fr
+	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, Tomás Diaz, et <a href = "https://pleiad.cl/people/etanter"><span class = "name">Éric Tanter</span></a>, <span class = "paperName">A Trustworthy Mechanized Formalization of R</span>, <span class = "journal">Dynamic Languages Symposium (DLS)</span>, 2018.
+link
+en
+	<a href = "paperoj/dls18.pdf">Full text</a>
+eo
+	<a href = "paperoj/dls18.pdf">Papero</a>
+fr
+	<a href = "paperoj/dls18.pdf">Papier</a>
+#link
+#en
+#	<a href = "paperoj/dls18_slides.pdf">Slides</a>
+#eo
+#	<a href = "paperoj/dls18_slides.pdf">Diapozitivoj</a>
+#fr
+#	<a href = "paperoj/dls18_slides.pdf">Présentation</a>
+link
+en
+	<a href = "https://github.com/Mbodin/CoqR/releases/tag/DLS2018"><span class = "name">Coq</span> material</a>
+eo
+	<a href = "https://github.com/Mbodin/CoqR/releases/tag/DLS2018"><span class = "name">Coq</span>aj dosieroj</a>
+fr
+	<a href = "https://github.com/Mbodin/CoqR/releases/tag/DLS2018">Fichers <span class = "name">Coq</span></a>
+link
+all
+	<!-- FIXME:  Add a BibTeX file. -->
+end
+
+item
+all
 CPP 2015
 description
 en

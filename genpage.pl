@@ -7,7 +7,7 @@ use strict 'refs';
 use warnings;
 use HTML::Template;
 use URI::Encode qw(uri_encode uri_decode);
-use HTTP::DAV;
+# use HTTP::DAV;
 use Term::ReadKey;
 
 my ($true, $false) = (1, 0);

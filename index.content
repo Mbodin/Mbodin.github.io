@@ -91,7 +91,7 @@ en
 		<dd>
             <ul class = "blocks">
                 <li><a href = "rimedoj/id_rsa.pub">SSH</a></li>
-                <li><a href = "rimedoj/0x6CC4BC7F.asc">GPG</a></li>
+                <li><a href = "rimedoj/0x6CC4BC7F.asc">OpenPGP</a></li>
 			</ul>
         </dd>
 		<dt>Internet presence</dt>
@@ -127,7 +127,7 @@ eo
 		<dd>
             <ul class = "blocks">
                 <li><a href = "rimedoj/id_rsa.pub">SSH</a></li>
-                <li><a href = "rimedoj/0x6CC4BC7F.asc">GPG</a></li>
+                <li><a href = "rimedoj/0x6CC4BC7F.asc">OpenPGP</a></li>
 			</ul>
         </dd>
 		<dt>Interreta ĉeesto</dt>
@@ -163,7 +163,7 @@ fr
 		<dd>
             <ul class = "blocks">
                 <li><a href = "rimedoj/id_rsa.pub">SSH</a></li>
-                <li><a href = "rimedoj/0x6CC4BC7F.asc">GPG</a></li>
+                <li><a href = "rimedoj/0x6CC4BC7F.asc">OpenPGP</a></li>
 			</ul>
         </dd>
 		<dt>Présence sur Internet</dt>

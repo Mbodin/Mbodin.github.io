@@ -79,6 +79,15 @@
             </nav>
         </header>
         <aside id = "messages">
+            <tmpl_if name = "isRelocated">
+            <tmpl_loop name = "allLanguages">
+            <div xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "relocation_<tmpl_var name = lang />" class = "lang<tmpl_var name = lang />">
+                <p class = "message">
+                    <tmpl_var name = "relocation" />
+                </p>
+            </div>
+            </tmpl_loop>
+            </tmpl_if>
             <tmpl_if name = "isWorking">
             <tmpl_loop name = "allLanguages">
             <div xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "onProgress_<tmpl_var name = lang />" class = "lang<tmpl_var name = lang />">

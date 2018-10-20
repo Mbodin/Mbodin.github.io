@@ -528,6 +528,7 @@ while (my ($directoryname, $page) = each %allParsedPages){
 	$pageMain{"pathToRoot"} = $pathToRoot;
 	$pageMain{"pathFromRoot"} = $directory;
 
+	$pageMain{"isRelocated"} = $changingAdress;
 	$pageMain{"isWorking"} = $workingOnWebSite;
 
 	$pageMain{"isNotUpToDate"} = $$page{$notUpToDateID};

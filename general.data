@@ -50,7 +50,7 @@ Sociaj skriptoj estas kodoj el diversaj ne-ĉiel-fidemaj retejoj kaj povas kaŝo
 =permanentSocials
 Por aŭtomate aktivigi sociajn skriptojn dum vi retumas en ĉi tiu retejo sen devi alklaki ĉi sube, <a href = "#" onclick = "permanentSocials ()">alklaku ĉi tie</a>.
 =contactmeNoJS
-mailto:mbodin[bonvolu anstataŭigi tiun ĉi tekston per ĉe-signo]dim[kaj tiun ĉi per punkto]uchile[kaj per alia puntko]cl
+mailto:mbodin[bonvolu anstataŭigi tiun ĉi tekston per ĉe-signo]ic[kaj tiun ĉi per punkto]ac[kaj per alia puntko]uk
 =switchLanguage
 Ŝanĝi la lingvon
 
@@ -106,7 +106,7 @@ Social scripts involves third-party sources that can not always be trusted and t
 =permanentSocials
 To automatically enable social scripts while surfing in this website without being forced to click underneath, <a href = "#" onclick = "permanentSocials ()">click here</a>.
 =contactmeNoJS
-mailto:mbodin[please replace this text by an at symbol]dim[and this one by a dot]uchile[and a dot again]cl
+mailto:mbodin[please replace this text by an at symbol]ic[and this one by a dot]ac[and a dot again]uk
 =switchLanguage
 Switch Language
 
@@ -162,7 +162,7 @@ Les scripts sociaux nécessitent l’usage de scripts venant de sources tierces 
 =permanentSocials
 Pour activer automatiquement les scripts sociaux lors de la navigation sur ce site sans avoir à cliquer en bas de la page, <a href = "#" onclick = "permanentSocials ()">cliquez ici</a>.
 =contactmeNoJS
-mailto:mbodin[merci de remplacer cette phrase par un arobase]dim[et ceci par un point]uchile[et encore un point]cl
+mailto:mbodin[merci de remplacer cette phrase par un arobase]ic[et ceci par un point]ac[et encore un point]uk
 =switchLanguage
 Changer de langue
 

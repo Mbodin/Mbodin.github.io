@@ -15,29 +15,20 @@ end
 
 description
 en
-	I am <span class = "name">Martin Bodin</span> /maʁtɛ̃ bodɛ̃/, postdoc at the <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, in <span class = "town">Santiago de Chile</span>.
+	I am <span class = "name">Martin Bodin</span> /maʁtɛ̃ bodɛ̃/, postdoc at the <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, in <span class = "town">London</span>.
 eo
-	Mi estas <span class = "name">Martin Bodin</span> /maʁtɛ̃ bodɛ̃/, postdoktorulo ĉe <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, en <span class = "town">Santiago, Ĉilio</span>.
+	Mi estas <span class = "name">Martin Bodin</span> /maʁtɛ̃ bodɛ̃/, postdoktorulo ĉe <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, en <span class = "town">Londono</span>.
 fr
-	Je suis <span class = "name">Martin Bodin</span> /maʁtɛ̃ bodɛ̃/, post-doctorant au <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, à <span class = "town">Santiago, Chile</span>.
+	Je suis <span class = "name">Martin Bodin</span> /maʁtɛ̃ bodɛ̃/, post-doctorant au <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, à <span class = "town">Londres</span>.
 end
 
 description
 en
-    I am currently working on formalising <a href = "https://r-project.org/">the <span class = "name">R</span> programming language</a> in <a href = "http://coq.inria.fr">the <span class = "name">Coq</span> proof assistant</a>.
+    I am currently working on a formalism called skeletons to represent the semantics of real-world language, and get as much properties as possible certified in the <a href = "http://coq.inria.fr"><span class = "name">Coq</span> proof assistant</a>.
 eo
-    Mi nun estas formaliganta <a href = "https://r-project.org/">la <span class = "name">R</span> programlingvaĵon</a> en <a href = "http://coq.inria.fr">la <span class = "name">Coq</span> pruvilo</a>.
+    Mi nun laboras pri formalismo (kiu nomiĝas skeleton) por reprezenti la semantikon de vervivaj programlingvaĵoj, kaj ricevi la plej multe da ecoj pruvitaj en <a href = "http://coq.inria.fr">la <span class = "name">Coq</span> pruvilo</a>.
 fr
-    Je suis actuellement en train de formaliser <a href = "https://r-project.org/">le langage de programmation <span class = "name">R</span></a> dans <a href = "http://coq.inria.fr">l’assistant de preuve <span class = "name">Coq</span></a>.
-end
-
-description
-en
-    My current contract will end relatively soon. If you are interested in working with me, please <a class = "contactme">contact me</a>.
-eo
-    Mia nuna kontrakto relative baldaŭ finiĝos. Se interesigus vin labori kun mi, <a class = "contactme">bonvolu kontaktu min</a>.
-fr
-    Mon contrat actuel se terminera bientôt. Si vous êtes intéressés par travailler avec moi, <a class = "contactme">contactez-moi</a>.
+    Je travaille actuellement sur un formalisme appelé squelette représentant la sémantique de langages de programmation complexes, tout en obtenant autant de propriétés que possibles certifiées dans <a href = "http://coq.inria.fr">l’assistant de preuve <span class = "name">Coq</span></a>.
 end
 
 description
@@ -73,18 +64,9 @@ specdescription
 en
 	<dl class = "tableDescription">
 		<dt>Current position</dt>
-		<dd>Postdoc at the <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, in <span class = "town">Santiago de Chile</span>.</dd>
+		<dd>Postdoc at the <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, in <span class = "town">London</span>.</dd>
 		<!--<dt>Team</dt>
 		<dd><a href = "http://www.irisa.fr/celtique/"><span class = "name">Celtique</span></a></dd>-->
-		<dt>Address</dt>
-		<dd>Office 718,
-            <span class = "name">Beauchef</span> 851,
-            Edificio Norte – Piso 7,
-			<span class = "town">Santiago</span>,
-			<span class = "country">Chile</span>
-		</dd>
-		<dt>Phone number</dt>
-		<dd>+56 2 2978 4463</dd>
 		<dt>CV</dt>
 		<dd><a href = "rimedoj/cv_en.pdf">Available there</a></dd>
 		<dt>Public keys</dt>
@@ -109,18 +91,9 @@ en
 eo
 	<dl class = "tableDescription">
 		<dt>Nuna pozicio</dt>
-		<dd>Postdoktorulo ĉe <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, en <span class = "town">Santiago, Ĉilio</span>.</dd>
+		<dd>Postdoktorulo ĉe <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, en <span class = "town">Londono</span>.</dd>
 		<!--<dt>Skipo</dt>
 		<dd><a href = "http://www.irisa.fr/celtique/"><span class = "name">Celtique</span></a></dd>-->
-		<dt>Adreso</dt>
-		<dd>Oficejo 718,
-            <span class = "name">Beauchef</span> 851,
-            Edificio Norte – Piso 7,
-			<span class = "town">Santiago</span>,
-			<span class = "country">Ĉilio</span>
-		</dd>
-		<dt>Telefono</dt>
-		<dd>+56 2 2978 4463</dd>
 		<dt>Vivresumo</dt>
 		<dd><a href = "rimedoj/cv_eo.pdf">Havebla tie ĉi</a></dd>
 		<dt>Publikaj ŝlosiloj</dt>
@@ -145,18 +118,9 @@ eo
 fr
 	<dl class = "tableDescription">
 		<dt>Position actuelle</dt>
-		<dd>Post-doctorant au <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, à <span class = "town">Santiago, Chile</span>.</dd>
+		<dd>Post-doctorant au <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, à <span class = "town">Londres</span>.</dd>
 		<!--<dt>Équipe</dt>
 		<dd><a href = "http://www.irisa.fr/celtique/"><span class = "name">Celtique</span></a></dd>-->
-		<dt>Adresse</dt>
-		<dd>Bureau 718,
-            <span class = "name">Beauchef</span> 851,
-            Edificio Norte – Piso 7,
-			<span class = "town">Santiago</span>,
-			<span class = "country">Chili</span>
-		</dd>
-		<dt>Téléphone</dt>
-		<dd>+56 2 2978 4463</dd>
 		<dt>CV</dt>
 		<dd><a href = "rimedoj/cv_fr.pdf">Disponible ici</a></dd>
 		<dt>Clefs publiques</dt>

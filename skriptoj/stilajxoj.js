@@ -108,8 +108,8 @@ function getEMail (mailto, first, name, department, university, country){
 	if (document.getElementsByClassName){
 		var elements = document.getElementsByClassName ("contactme")
 		
-		var mailto = "mailto:", first = "m", name = "bodin", department = "dim", university = "uchile", country = "cl"
-		var href = getEMail (mailto, first, name, department, university, country)
+		var mailto = "mailto:", first = "m", name = "bodin", university = "ic", academia = "ac", country = "uk"
+		var href = getEMail (mailto, first, name, university, academia, country)
 
 		for (var i = 0 ; i < elements.length ; i++){
 			var element = elements[i], par = element.parentNode

@@ -65,13 +65,13 @@ eo
 	<a href = "paperoj/dls18.pdf">Papero</a>
 fr
 	<a href = "paperoj/dls18.pdf">Papier</a>
-#link
-#en
-#	<a href = "paperoj/dls18_slides.pdf">Slides</a>
-#eo
-#	<a href = "paperoj/dls18_slides.pdf">Diapozitivoj</a>
-#fr
-#	<a href = "paperoj/dls18_slides.pdf">Présentation</a>
+link
+en
+	<a href = "paperoj/dls18_slides.pdf">Slides</a>
+eo
+	<a href = "paperoj/dls18_slides.pdf">Diapozitivoj</a>
+fr
+	<a href = "paperoj/dls18_slides.pdf">Présentation</a>
 link
 en
 	<a href = "https://github.com/Mbodin/CoqR/releases/tag/DLS2018"><span class = "name">Coq</span> material</a>

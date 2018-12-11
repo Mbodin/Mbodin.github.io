@@ -3,17 +3,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 	   <url>
-		   <loc>http://www.cmm.uchile.cl/~mbodin/index.html</loc>
+           <loc>https://www.doc.ic.ac.uk/~mbodin/index.html</loc>
 		   <priority>1.0</priority>
 	   </url>
 
 	   <url>
-		   <loc>http://www.cmm.uchile.cl/~mbodin/esplorado.html</loc>
+		   <loc>https://www.doc.ic.ac.uk/~mbodin/esplorado.html</loc>
 		   <priority>1.0</priority>
 	   </url>
 
 	   <url>
-		   <loc>http://www.cmm.uchile.cl/~mbodin/doktorigxo/companion.html</loc>
+		   <loc>https://www.doc.ic.ac.uk/~mbodin/doktorigxo/companion.html</loc>
 		   <priority>0.5</priority>
 	   </url>
 

@@ -79,9 +79,9 @@ eo
 	<a href = "http://skeletons.inria.fr/popl2019/index.html">Kunretejo</a>
 fr
 	<a href = "http://skeletons.inria.fr/popl2019/index.html">Site associé</a>
-link
-all
-	<!-- FIXME:  Add a BibTeX file. -->
+#link
+#all
+#	<!-- FIXME:  Add a BibTeX file. -->
 end
 
 item
@@ -115,9 +115,9 @@ eo
 	<a href = "https://github.com/Mbodin/CoqR/releases/tag/DLS2018"><span class = "name">Coq</span>aj dosieroj</a>
 fr
 	<a href = "https://github.com/Mbodin/CoqR/releases/tag/DLS2018">Fichers <span class = "name">Coq</span></a>
-link
-all
-	<!-- FIXME:  Add a BibTeX file. -->
+#link
+#all
+#	<!-- FIXME:  Add a BibTeX file. -->
 end
 
 item
@@ -151,9 +151,9 @@ eo
 	<a href = "http://ajacs.inria.fr/coq/cpp2015/"><span class = "name">Coq</span>aj dosieroj</a>
 fr
 	<a href = "http://ajacs.inria.fr/coq/cpp2015/">Fichers <span class = "name">Coq</span></a>
-link
-all
-	<!-- FIXME:  Add a BibTeX file. -->
+#link
+#all
+#	<!-- FIXME:  Add a BibTeX file. -->
 end
 
 item
@@ -174,8 +174,15 @@ eo
 fr
 	<a href = "paperoj/popl14.pdf">Papier</a>
 link
-all
-	<!-- FIXME:  Add a BibTeX file. -->
+en
+	<a href = "http://jscert.org">Website</a>
+eo
+	<a href = "http://jscert.org">Kunretejo</a>
+fr
+	<a href = "http://jscert.org">Site web</a>
+#link
+#all
+#	<!-- FIXME:  Add a BibTeX file. -->
 end
 
 item
@@ -202,9 +209,9 @@ eo
 	<a href = "paperoj/itp13_slides.pdf">Diapozitivoj</a>
 fr
 	<a href = "paperoj/itp13_slides.pdf">Présentation</a>
-link
-all
-	<!-- FIXME:  Add a BibTeX file. -->
+#link
+#all
+#	<!-- FIXME:  Add a BibTeX file. -->
 end
 
 item
@@ -231,9 +238,9 @@ eo
 	<a href = "paperoj/aplas11_slides.pdf">Diapozitivoj</a>
 fr
 	<a href = "paperoj/aplas11_slides.pdf">Présentation</a>
-link
-all
-	<!-- FIXME:  Add a BibTeX file. -->
+#link
+#all
+#	<!-- FIXME:  Add a BibTeX file. -->
 end
 
 section
@@ -267,9 +274,9 @@ eo
 	<a href = "paperoj/coqpl18_slides.pdf">Diapozitivoj</a>
 fr
 	<a href = "paperoj/coqpl18_slides.pdf">Présentation</a>
-link
-all
-	<!-- FIXME:  Add a BibTeX file. -->
+#link
+#all
+#	<!-- FIXME:  Add a BibTeX file. -->
 end
 
 item
@@ -296,9 +303,9 @@ eo
 	<a href = "paperoj/jfla16_slides.pdf">Diapozitivoj</a>
 fr
 	<a href = "paperoj/jfla16_slides.pdf">Présentation</a>
-link
-all
-	<!-- FIXME:  Add a BibTeX file. -->
+#link
+#all
+#	<!-- FIXME:  Add a BibTeX file. -->
 end
 
 item
@@ -325,9 +332,9 @@ eo
 	<a href = "paperoj/jfla14_slides.pdf">Diapozitivoj</a>
 fr
 	<a href = "paperoj/jfla14_slides.pdf">Présentation</a>
-link
-all
-	<!-- FIXME:  Add a BibTeX file. -->
+#link
+#all
+#	<!-- FIXME:  Add a BibTeX file. -->
 end
 
 item
@@ -377,9 +384,9 @@ eo
 	<a href = "paperoj/jfla13_slides.pdf">Diapozitivoj</a>
 fr
 	<a href = "paperoj/jfla13_slides.pdf">Présentation</a>
-link
-all
-	<!-- FIXME:  Add a BibTeX file. -->
+#link
+#all
+#	<!-- FIXME:  Add a BibTeX file. -->
 end
 
 section
@@ -432,9 +439,9 @@ eo
     Kundoktoriĝdokumento
 fr
     Guide de thèse
-link
-all
-	<!-- FIXME:  Add a BibTeX file. -->
+#link
+#all
+#	<!-- FIXME:  Add a BibTeX file. -->
 end
 
 #section

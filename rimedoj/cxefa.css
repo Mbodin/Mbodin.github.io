@@ -26,6 +26,7 @@ html {
 }
 
 body {
+    min-width: 200px ;
 	color:  #2e3436 ;
 	background-color:  #eeeeec ;
 	margin:  0 ;
@@ -251,7 +252,7 @@ p.footbar {
 
 #main {
 	width:  90% ;
-	padding:  20px 5% 20px 5% ;
+	padding:  20px 5% ;
 	overflow:  visible ;
 }
 
@@ -341,15 +342,20 @@ h3:hover {
 	margin:  0 ;
 }
 
-.projectLinks li, .errorLog li, .allLoadedFighters li, .listitem li {
-	/* If you have a better way to use an svg image and to set its length in a “li” item, I’m interested! */
-	list-style-type:  none ;
-	padding-left:  1.5em ;
+.projectLinks li:before, .errorLog li:before, .allLoadedFighters li:before, .listitem li:before {
+    content:  "" ;
 	background-size:  1em ;
 	background-image:  url(puce.svg) ;
 	background-color:  #eeeeec ;
 	background-repeat:  no-repeat ;
 	background-position:  left center ;
+    display:  inline-block ;
+    width:  1em ;
+    height:  1ex ;
+}
+
+.projectLinks li, .errorLog li, .allLoadedFighters li, .listitem li {
+	list-style-type:  none ;
 }
 
 li.cleanLink {

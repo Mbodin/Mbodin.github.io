@@ -823,17 +823,21 @@ while (my ($directoryname, $page) = each %allParsedPages){
 								hasnosharp => $link !~ m/#/
 							};
                         } elsif (${$$linkTab[$j]}{"clean"}){
-							push @$links, {
-								isInternal => $false,
-								isClean => $true,
-								projectsLinks => ${$$linkTab[$j]}{$lang}
-							};
+                            if (${$$linkTab[$j]}{$lang} ne ""){
+						        push @$links, {
+						        	isInternal => $false,
+						        	isClean => $true,
+						        	projectsLinks => ${$$linkTab[$j]}{$lang}
+						        };
+                            }
 						} else {
-							push @$links, {
-								isInternal => $false,
-								isClean => $false,
-								projectsLinks => ${$$linkTab[$j]}{$lang}
-							};
+                            if (${$$linkTab[$j]}{$lang} ne ""){
+						        push @$links, {
+						        	isInternal => $false,
+						        	isClean => $false,
+						        	projectsLinks => ${$$linkTab[$j]}{$lang}
+						        };
+                            }
 						}
 					}
 				}

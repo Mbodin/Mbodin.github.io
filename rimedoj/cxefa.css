@@ -26,7 +26,6 @@ html {
 }
 
 body {
-	min-width:  800px ;
 	color:  #2e3436 ;
 	background-color:  #eeeeec ;
 	margin:  0 ;
@@ -94,7 +93,7 @@ a:hover, a:active {
 	margin-right:  auto ;
 	width:  90% ;
 	text-align:  center ;
-	padding:  3px 1em ;
+	padding:  3px 4% ;
 	border:  2px solid #eeeeec ;
 	background-color:  #ad7fa8 ;
 	color:  #eeeeec ;
@@ -252,7 +251,7 @@ p.footbar {
 
 #main {
 	width:  90% ;
-	padding:  60px 60px 60px 60px ;
+	padding:  20px 5% 20px 5% ;
 	overflow:  visible ;
 }
 

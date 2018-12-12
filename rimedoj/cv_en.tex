@@ -3,12 +3,19 @@
 \usepackage{ifxetex}
 \ifxetex
 \usepackage{xunicode,fontspec,xltxtra}
+\usepackage{polyglossia}
+\setmainlanguage{english}
+\setotherlanguage{french}
+\setotherlanguage{spanish}
+\newcommand{\fr}[1]{\foreignlanguage{french}{\textit{#1}}}
+\newcommand{\es}[1]{\foreignlanguage{spanish}{\textit{#1}}}
 \else
 \usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage[francais, english]{babel}
+\newcommand{\fr}[1]{\foreignlanguage{francais}{\textit{#1}}}
 \fi
 
-\usepackage[francais, english]{babel}
 \usepackage{geometry}
 \usepackage{url}
 \usepackage{oldgerm}
@@ -38,8 +45,6 @@
 	top = 1.5cm,
 	bottom = 1.5cm
 }
-
-\newcommand{\fr}[1]{\foreignlanguage{francais}{\textit{#1}}}
 
 \newcommand{\ie}{i.e.\,}
 
@@ -83,31 +88,53 @@
 \parbox{0.5\textwidth}
 {
   \noindent
-  Huerfanos 1400, Departamento 815B \\
-  Santiago centro \\
-  \textsc{Chile}
-%  Les Énaudières \\
-%  14, rue de la Libération \\
-%  50 220, \textsc{Saint-Quentin-sur-le-Homme} \\
-%  \textsc{France}
+  14, rue de la libération,
+  Les Énaudières \\
+  50~220 Saint-Quentin-sur-le-Homme \\
+  \textsc{France}
 }
 \parbox{.55\textwidth}
 {
 \begin{flushright}
   Born the 30\(^{th}\) of December 1989. \\
   \noindent Phone Number: \mbox{+33 6 27 00 58 84} \\
-  % \url{martin.bodin@ens-lyon.org} \\
-  \url{mbodin@dim.uchile.cl} \\
-  \url{http://www.cmm.uchile.cl/~mbodin}
+  \url{martin.bodin@ens-lyon.org} \\
+  \url{https://www.doc.ic.ac.uk/~mbodin}
 \end{flushright}
 }
 
 
+\begin{datecvsection}{Employment}
+
+    2018–2019 & Postdoc at the \textsc{Imperial College}, in \textsc{London} (\textsc{United Kingdom}) on the theoretical foundations of the analysis of real-world languages. \\
+
+    2017–2018 & Postdoc at the \textsc{CMM} (the Center of Mathematical Modeling, part of the \es{Universidad de Chile}), in \textsc{Santiago} (\textsc{Chile}) on the formalisation of the R programming language in the Coq proof assistant. \\
+
+\end{datecvsection}
+
+\begin{datecvsection}{Related Experience}
+
+	2013–2016 & Member of the \textsc{SecCloud} project:  \url{www.seccloud.cominlabs.ueb.eu/}. \\
+
+	2012–2016 & Member of the \textsc{JsCert} project:  \url{jscert.org/}. \\
+
+	2012 & Internship in \textsc{Inria} at \textsc{Rennes} with \textsc{Alan~Schmitt} and \textsc{Thomas~Jensen}:
+	\textit{A Certified JavaScript Interpreter}. \\
+
+	2011 & Internship in \textsc{Vrĳe~Universiteit} at \textsc{Amsterdam} with \textsc{Dimitri~Hendriks} and \textsc{Jörg~Endrullis}:
+	\textit{Proving Stream Equalities in Coq}. \\
+
+	2011 & Internship in \fr{\sc PPS} at \textsc{Paris} with \textsc{Stéphane~Gimenez} and \textsc{Christine~Tasson}:
+	\textit{Sequentialization of proof nets to structures}. \\
+
+	2010 & Internship in \fr{\sc Vérimag} at \textsc{Grenoble} with \textsc{David~Monniaux}:
+        \fr{Détection de modes de fonctionnements d’un programme \textsc{Lustre}}. \\
+
+\end{datecvsection}
+
 \begin{datecvsection}{Education}
 
-    2017 & Postdoc at the \textsc{CMM}, in \textsc{Santiago}, (\textsc{Chile}) on the formalisation of the \textsc{R} programming language. \\
-
-    2012–2016 & Ph.D. in Computer Sciences at \textsc{IRISA}, in \textsc{Rennes} (\textsc{France}), under the direction of \textsc{Alan~Schmitt} and \textsc{Thomas~Jensen} on certified analyses of \textsc{JavaScript}. \\
+    2012–2016 & Ph.D. in Computer Sciences at \textsc{IRISA}, in \textsc{Rennes} (\textsc{France}), under the direction of \textsc{Alan~Schmitt} and \textsc{Thomas~Jensen} on certified analyses of JavaScript. \\
 
 	2010–2012 & \fr{Master d’Informatique} (\ie a Computer Science
 	Master) in the \fr{École Normale Supérieure de Lyon} (a French
@@ -129,88 +156,86 @@
 \end{datecvsection}
 
 \begin{cvsection}{Languages}
-\parbox{.45\textwidth}{
+\parbox{.4\textwidth}{
 \begin{itemize}
    \item Native in French;
    \item Fluent in Esperanto;
    \item Notions of German.
 \end{itemize}}
-\parbox{.45\textwidth}{
+\parbox{.5\textwidth}{
 \begin{itemize}
-   \item Good level in English;
-   \item Basic level in Portuguese and Spanish;
-\end{itemize}}
+   \item Good level of English;
+   \item Basic level of Portuguese and Spanish;
+\end{itemize}
+~\\}
 \end{cvsection}
-
-\begin{datecvsection}{Related Experience}
-
-	2013–2016 & Member of the \textsc{SecCloud} project:  \url{www.seccloud.cominlabs.ueb.eu/}. \\
-
-	2012–2016 & Member of the \textsc{JsCert} project:  \url{jscert.org/}. \\
-
-	2012 & Internship in \textsc{Inria} at \textsc{Rennes} with \textsc{Alan~Schmitt} and \textsc{Thomas~Jensen}:
-	\textit{A Certified \textsc{JavaScript} Interpreter}. \\
-
-	2011 & Internship in \textsc{Vrĳe~Universiteit} at \textsc{Amsterdam} with \textsc{Dimitri~Hendriks} and \textsc{Jörg~Endrullis}:
-	\textit{Proving Stream Equalities in \textsc{Coq}}. \\
-
-	2011 & Internship in \fr{\sc PPS} at \textsc{Paris} with \textsc{Stéphane~Gimenez} and \textsc{Christine~Tasson}:
-	\textit{Sequentialization of proof nets to structures}. \\
-
-	2010 & Internship in \fr{\sc Vérimag} at \textsc{Grenoble} with \textsc{David~Monniaux}:
-        \fr{Détection de modes de fonctionnements d’un programme \textsc{Lustre}}. \\
-
-\end{datecvsection}
 
 \begin{datecvsection}{Conferences}
 
-  2015 & \textit{Certified Abstract Interpretation with Pretty-Big-Step Semantics}, Martin \textsc{Bodin}, Thomas \textsc{Jensen}, and Alan \textsc{Schmitt} (CPP~2015). \\
+  2019 & Martin \textsc{Bodin}, Philippa \textsc{Gardner}, Thomas \textsc{Jensen}, and Alan \textsc{Schmitt}. \textit{Skeletal Semantics and Their Interpretations}. In POPL. \\
 
-  2014 & \textit{A Trusted Mechanised JavaScript Specification}, Martin \textsc{Bodin}, Arthur \textsc{Charguéraud}, Daniele \textsc{Filaretti}, Philippa \textsc{Gardner}, Sergio \textsc{Maffeis}, Daiva \textsc{Naudziuniene}, Alan \textsc{Schmitt}, and Gareth \textsc{Smith} (POPL~2014). \\
+  2018 & Martin \textsc{Bodin}, Tomás \textsc{Diaz}, and Éric \textsc{Tanter}. \textit{A Trustworthy Mechanized Formalization of R}. In DLS. \\
 
-  2013 & \textit{Circular Coinduction in Coq Using Bisimulation-up-to Techniques}, Jörg \textsc{Endrullis}, Dimitri \textsc{Hendriks}, and Martin \textsc{Bodin} (ITP~2013). \\
+  2015 & Martin \textsc{Bodin}, Thomas \textsc{Jensen}, and Alan \textsc{Schmitt}. \textit{Certified Abstract Interpretation with Pretty-Big-Step Semantics}. In CPP. \\
 
-  2011 & \textit{Modular Abstractions of Reactive Nodes using Disjunctive Invariants}, David \textsc{Monniaux} and Martin \textsc{Bodin} (APLAS~2011). \\
+  2014 & Martin \textsc{Bodin}, Arthur \textsc{Charguéraud}, Daniele \textsc{Filaretti}, Philippa \textsc{Gardner}, Sergio \textsc{Maffeis}, Daiva \textsc{Naudžiūnienė}, Alan \textsc{Schmitt}, and Gareth \textsc{Smith}. \textit{A Trusted Mechanised JavaScript Specification}. In POPL. \\
+
+  2013 & Jörg \textsc{Endrullis}, Dimitri \textsc{Hendriks}, and Martin \textsc{Bodin}. \textit{Circular Coinduction in Coq Using Bisimulation-up-to Techniques}. In ITP. \\
+
+  2011 & David \textsc{Monniaux} and Martin \textsc{Bodin}. \textit{Modular Abstractions of Reactive Nodes using Disjunctive Invariants}. In APLAS. \\
 
 \end{datecvsection}
 
 \begin{datecvsection}{Workshops}
 
-  2016 & \textit{An Abstract Separation Logic for Interlinked Extensible Records}, Martin \textsc{Bodin}, Thomas \textsc{Jensen}, and Alan \textsc{Schmitt} (JFLA~2016). \\
+  2018 & Martin \textsc{Bodin}. \textit{A Coq Formalisation of a Core of R}. In CoqPL. \\
 
-  2014 & \textit{Certified Abstract Interpretation with Pretty-Big-Step Semantics}, Martin \textsc{Bodin}, Thomas \textsc{Jensen}, and Alan \textsc{Schmitt} (JFLA~2014). \\
+  2016 & Martin \textsc{Bodin}, Thomas \textsc{Jensen}, and Alan \textsc{Schmitt}. \textit{An Abstract Separation Logic for Interlinked Extensible Records}. In JFLA. \\
 
-  2013 & \textit{Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)}, Martin \textsc{Bodin}, Thomas \textsc{Jensen}, and Alan \textsc{Schmitt} in \textit{Semantics, Abstract Interpretation, and Reasoning about Programs: Essays Dedicated to David A. \textsc{Schmidt}} \\ % on the Occasion of his Sixtieth Birthday}, volume 129 of EPTCS, pages 360–383. \\
+  2014 & Martin \textsc{Bodin}, Thomas \textsc{Jensen}, and Alan \textsc{Schmitt}. \textit{Certified Abstract Interpretation with Pretty-Big-Step Semantics}. In JFLA. \\
 
-  2013 & \textit{A Certified JavaScript Interpreter}, Martin \textsc{Bodin} and Alan \textsc{Schmitt} (JFLA~2013). \\
+  2013 & Martin \textsc{Bodin}, Thomas \textsc{Jensen}, and Alan \textsc{Schmitt}. \textit{Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)}. In \textit{Semantics, Abstract Interpretation, and Reasoning about Programs: Essays Dedicated to David A. \textsc{Schmidt}} \\ % on the Occasion of his Sixtieth Birthday}, volume 129 of EPTCS, pages 360–383. \\
+
+  2013 & Martin \textsc{Bodin} and Alan \textsc{Schmitt}. \textit{A Certified JavaScript Interpreter}. In JFLA. \\
+
+\end{datecvsection}
+
+\begin{datecvsection}{Other Publications}
+
+    2016 & Martin \textsc{Bodin}. \textit{Certified semantics and analysis of JavaScript}. Ph.D. thesis. \\
 
 \end{datecvsection}
 
 \begin{itemcvsection}{Computer Proficiencies}
 
-	\item Good commands in the following programming languages:  \textsc{Coq}, \textsc{JavaScript}, \LaTeX, \textsc{OCaml}\ldots
-	\item Familiar with \textsc{GNU/Linux} as an operating system.
-	\item Able to use \textsc{Vim}, \textsc{Git}, \textsc{The~Gimp}, \textsc{Inkscape}, \textsc{Graphviz}\ldots
+	\item Good commands in the following programming languages:  Coq, JavaScript, R, \LaTeX, OCaml, etc.
+	\item Familiar with GNU/Linux as an operating system.
+	\item Able to use Vim, Git, The~Gimp, Inkscape, etc.
 
 \end{itemcvsection}
 
 \begin{datecvsection}{Association Experience}
 
+    2017 & Esperanto Meetups in \textsc{Santiago}. \\
     2014–2015 & Active member of \textsc{Espéranto-Rennes}. \\
-	2012 & Treasurer of the theater association \textsc{ASCREB} in \textsc{Rennes} \\
+	2012 & Treasurer of the theater association \textsc{ASCREB} in \textsc{Rennes}. \\
 	2010 & Secretary of the \textsc{INFO-ENS} association in \textsc{Lyon}. \\
 
 \end{datecvsection}
 
-\begin{datecvsection}{Other Experience}
+\begin{datecvsection}{Teaching}
 
-    2014 & Software design and verification, M1 tutoring in the \fr{École Normale Supérieure} \\
+    2018 & Models of Computation. L2 tutoring at the Imperial College London. \\
 
-    2013–2014 & Formal Languages, tutoring for L3 students in the \fr{École Normale Supérieure} \\
+    2017 & Introduction to Coq: Logic, Types, and Verification. M2 tutoring at the \es{Universidad de Chile}. \\
 
-    2013 & Introduction to \textsc{Scheme}, tutoring for L1 students in the \textsc{Insa} of \textsc{Rennes} \\
+    2014 & Software Design and Verification. M1 tutoring at the \fr{École Normale Supérieure}. \\
 
-	2012, 2014 & Monitoring the algorithmic practice examination for the entrance of the \fr{École Normale Supérieure}.
+    2013–2014 & Formal Languages. L3 tutoring at the \fr{École Normale Supérieure}. \\
+
+    2013 & Introduction to Scheme. L1 tutoring at the \textsc{Insa} of \textsc{Rennes}. \\
+
+	2012, 2014 & Monitoring the algorithmic practice examination for the entrance of the \fr{École Normale Supérieure}. \\
 
 \end{datecvsection}
 

@@ -3,12 +3,20 @@
 \usepackage{ifxetex}
 \ifxetex
 \usepackage{xunicode,fontspec,xltxtra}
+\usepackage{polyglossia}
+\setmainlanguage{esperanto}
+\setotherlanguage{english}
+\setotherlanguage{french}
+\setotherlanguage{spanish}
+\newcommand{\en}[1]{\foreignlanguage{english}{\textit{#1}}}
+\newcommand{\fr}[1]{\foreignlanguage{french}{\textit{#1}}}
+\newcommand{\es}[1]{\foreignlanguage{spanish}{\textit{#1}}}
 \else
 \usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage[esperanto, francais, english]{babel}
 \fi
 
-\usepackage[esperanto, francais, english]{babel}
 \usepackage{geometry}
 \usepackage{url}
 \usepackage{oldgerm}
@@ -38,9 +46,6 @@
 	top = 1.5cm,
 	bottom = 1.5cm
 }
-
-\newcommand{\en}[1]{\foreignlanguage{english}{\textit{#1}}}
-\newcommand{\fr}[1]{\foreignlanguage{francais}{\textit{#1}}}
 
 \newcommand{\ie}{t.e.\,}
 
@@ -84,29 +89,31 @@
 \parbox[c]{.5\textwidth}
 {
   \noindent
-  Huerfanos 1400, Departamento 815B \\
-  Santiago centro \\
-  \textsc{Ĉilio}
-% Les Énaudières \\
-% 14, rue de la Libération \\
-% 50 220, \textsc{Saint-Quentin-sur-le-Homme} \\
-% \textsc{Francia}
+  14, rue de la libération,
+  Les Énaudières \\
+  50~220 Saint-Quentin-sur-le-Homme \\
+  \textsc{Francio}
 }
 \parbox[c]{.55\textwidth}
 {
 \begin{flushright}
   Naskiĝis la 30an de decembro, 1989 \\
   \noindent Telefonnumero~: \mbox{+33 6 27 00 58 84} \\
-  % \url{martin.bodin@ens-lyon.org} \\
-  \url{mbodin@dim.uchile.cl} \\
-  \url{http://www.cmm.uchile.cl/~mbodin}
+  \url{martin.bodin@ens-lyon.org} \\
+  \url{https://www.doc.ic.ac.uk/~mbodin}
 \end{flushright}
 }
 
 
-\begin{datecvsection}{Studaro}
+\begin{datecvsection}{Laboro}
 
-    2017 & Postdoktorado ĉe la \textsc{CMM} en \textsc{Santiago} (\textsc{Ĉilio}) pri formalizado de la programlingvaĵo \textsc{R}. \\
+    2018–2019 & Postdoktorado ĉe la \en{Imperial College}, en \textsc{Londono} (\textsc{Unuiĝinta Reĝlando}) pri la teoriaj fundamentoj de la analizado de vervivaj programlingvaĵoj. \\
+
+    2017–2018 & Postdoktorado ĉe la \textsc{CMM} (la \en{Center of Mathematical Modeling}, parto de la \es{Universidad de Chile}) en \textsc{Santiago} (\textsc{Ĉilio}) pri formalizado de la programlingvaĵo \textsc{R} en la pruvilo \textsc{Coq}. \\
+
+\end{datecvsection}
+
+\begin{datecvsection}{Studaro}
 
     2012–2016 & Doktoriĝo informatika ĉe la \textsc{Irisa} en \textsc{Rennes} (\textsc{Francio}) estrigita de \textsc{Alan~Schmitt} kaj \textsc{Thomas~Jensen} pri korektpruvigitaj \textsc{Javaskript}aj analizoj. \\
 
@@ -116,7 +123,7 @@
 
     2007–2009 & Classes préparatoires aux Grandes Écoles au lycée \textsc{Henri~iv} en \textsc{Parizo} (\ie dujara intenskurso preparanta al la enirkonkurso de la \fr{grandes Écoles}). \\
 
-    2007 & Baccalauréat spécialité Mathématiques, mention très bien (\ie bakalaŭrea ekzameno kies ĉefaj fakoj estas matekmatiko, fiziko kaj biologio, kun granda laŭdo). \\
+    2007 & Baccalauréat spécialité Mathématiques, mention très bien (\ie bakalaŭrea ekzameno kies ĉefaj fakoj estas matematiko, fiziko kaj biologio, kun granda laŭdo). \\
 
 \end{datecvsection}
 
@@ -158,51 +165,68 @@
 
 \begin{datecvsection}{Kongresoj}
 
-  2015 & \textit{Certified Abstract Interpretation with Pretty-Big-Step Semantics}, Martin \textsc{Bodin}, Thomas \textsc{Jensen} kaj Alan \textsc{Schmitt} (CPP~2015). \\
+  2019 & Martin \textsc{Bodin}, Philippa \textsc{Gardner}, Thomas \textsc{Jensen}, kaj Alan \textsc{Schmitt}. \textit{Skeletal Semantics kaj Their Interpretations}. Je POPL. \\
 
-  2014 & \textit{A Trusted Mechanised JavaScript Specification}, Martin \textsc{Bodin}, Arthur \textsc{Charguéraud}, Daniele \textsc{Filaretti}, Philippa \textsc{Gardner}, Sergio \textsc{Maffeis}, Daiva \textsc{Naudziuniene}, Alan \textsc{Schmitt} kaj Gareth \textsc{Smith} (POPL~2014). \\
+  2018 & Martin \textsc{Bodin}, Tomás \textsc{Diaz}, kaj Éric \textsc{Tanter}. \textit{A Trustworthy Mechanized Formalization of R}. Je DLS. \\
 
-  2013 & \textit{Circular Coinduction in Coq Using Bisimulation-up-to Techniques}, Jörg \textsc{Endrullis}, Dimitri \textsc{Hendriks} kaj Martin \textsc{Bodin} (ITP~2013). \\
+  2015 & Martin \textsc{Bodin}, Thomas \textsc{Jensen}, kaj Alan \textsc{Schmitt}. \textit{Certified Abstract Interpretation with Pretty-Big-Step Semantics}. Je CPP. \\
 
-  2011 & \textit{Modular Abstractions of Reactive Nodes using Disjunctive Invariants}, David \textsc{Monniaux} and Martin \textsc{Bodin} (APLAS~2011). \\
+  2014 & Martin \textsc{Bodin}, Arthur \textsc{Charguéraud}, Daniele \textsc{Filaretti}, Philippa \textsc{Gardner}, Sergio \textsc{Maffeis}, Daiva \textsc{Naudžiūnienė}, Alan \textsc{Schmitt}, kaj Gareth \textsc{Smith}. \textit{A Trusted Mechanised JavaScript Specification}. Je POPL. \\
+
+  2013 & Jörg \textsc{Endrullis}, Dimitri \textsc{Hendriks}, kaj Martin \textsc{Bodin}. \textit{Circular Coinduction in Coq Using Bisimulation-up-to Techniques}. Je ITP. \\
+
+  2011 & David \textsc{Monniaux} kaj Martin \textsc{Bodin}. \textit{Modular Abstractions of Reactive Nodes using Disjunctive Invariants}. Je APLAS. \\
 
 \end{datecvsection}
 
 \begin{datecvsection}{Babilkongresoj}
 
-  2016 & \textit{An Abstract Separation Logic for Interlinked Extensible Records}, Martin \textsc{Bodin}, Thomas \textsc{Jensen} kaj Alan \textsc{Schmitt} (JFLA~2016). \\
+  2018 & Martin \textsc{Bodin}. \textit{A Coq Formalisation of a Core of R}. Je CoqPL. \\
 
-  2014 & \textit{Certified Abstract Interpretation with Pretty-Big-Step Semantics}, Martin \textsc{Bodin}, Thomas \textsc{Jensen} kaj Alan \textsc{Schmitt} (JFLA~2014). \\
+  2016 & Martin \textsc{Bodin}, Thomas \textsc{Jensen}, kaj Alan \textsc{Schmitt}. \textit{An Abstract Separation Logic for Interlinked Extensible Records}. Je JFLA. \\
 
-  2013 & \textit{Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)}, Martin \textsc{Bodin}, Thomas \textsc{Jensen} kaj Alan \textsc{Schmitt} in \textit{Semantics, Abstract Interpretation, and Reasoning about Programs: Essays Dedicated to David A. \textsc{Schmidt} on the Occasion of his Sixtieth Birthday}, volume 129 of EPTCS, pages 360–383. \\
+  2014 & Martin \textsc{Bodin}, Thomas \textsc{Jensen}, kaj Alan \textsc{Schmitt}. \textit{Certified Abstract Interpretation with Pretty-Big-Step Semantics}. Je JFLA. \\
 
-  2013 & \textit{A Certified JavaScript Interpreter}, Martin \textsc{Bodin} and Alan \textsc{Schmitt} (JFLA~2013). \\
+  2013 & Martin \textsc{Bodin}, Thomas \textsc{Jensen}, kaj Alan \textsc{Schmitt}. \textit{Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)}. Je \textit{Semantics, Abstract Interpretation, kaj Reasoning about Programs: Essays Dedicated to David A. \textsc{Schmidt}} \\ % on the Occasion of his Sixtieth Birthday}, volume 129 of EPTCS, pages 360–383. \\
+
+  2013 & Martin \textsc{Bodin} kaj Alan \textsc{Schmitt}. \textit{A Certified JavaScript Interpreter}. Je JFLA. \\
+
+\end{datecvsection}
+
+\begin{datecvsection}{Aliaj eldonaĵoj}
+
+    2016 & Martin \textsc{Bodin}. \textit{Sémantique et analyse certifiées de JavaScript}. Doktoriĝdokumento. \\
 
 \end{datecvsection}
 
 \begin{itemcvsection}{Komputilaj kapabloj}
 
-  \item Bona nivelo en la jenaj programlingvoj:  \textsc{Coq}, \textsc{JavaScript}, \LaTeX, \textsc{OCaml}\ldots
-  \item Kutimuzanto de la sistemo \textsc{GNU/Linux}.
-  \item Kapabla uzi \textsc{Vim}, \textsc{The~Gimp}, \textsc{Inkscape}, \textsc{Graphviz}…
+  \item Bona nivelo en la jenaj programlingvoj:  Coq, Javaskripto, R, \LaTeX, OCaml, ktp.
+  \item Kutimuzanto de la sistemo GNU/Linux.
+  \item Kapabla uzi Vim, Git, The~Gimp, Inkscape, ktp.
 
 \end{itemcvsection}
 
 \begin{datecvsection}{Asocia vivo}
 
+    2017 & Esperantaj renkontiĝoj en \textsc{Santiago}. \\
     2014–2015 & Aktiva ano de \textsc{Espéranto-Rennes}. \\
 	2012 & Kasisto de la teatra asocio \textsc{ASCREB} en \textsc{Rennes}. \\
 	2010 & Sekretario de la asocio \textsc{INFO-ENS} en \textsc{Lyon}.
 
 \end{datecvsection}
 
-\begin{datecvsection}{Kromspertoj}
+\begin{datecvsection}{Instruado}
 
-    2014 & Program-konceptado kaj pruvo, ekzercinstruado de M1a nivelo ĉe la \fr{École Normale Supérieure} \\
+    2018 & Models of Computation. Ekzercinstruado de L2a nivelo ĉe la \en{Imperial College London}. \\
 
-    2013–2014 & Formalaj lingvaĵoj, ekzercinstruado de L3a nivelo ĉe la \fr{École Normale Supérieure} \\
+    2017 & Introducción a Coq: Lógica, Tipos y Verificación. Ekzercinstruado de M2a nivelo ĉe la \es{Universidad de Chile}. \\
 
-    2013 & Enkonduko al \textsc{Scheme}, ekzercinstruado de L1a nivelo ĉe \textsc{Insa} de \textsc{Rennes} \\
+    2014 & Program-konceptado kaj pruvo. Ekzercinstruado de M1a nivelo ĉe la \fr{École Normale Supérieure} \\
+
+    2013–2014 & Formalaj lingvaĵoj. Ekzercinstruado de L3a nivelo ĉe la \fr{École Normale Supérieure} \\
+
+    2013 & Enkonduko al Scheme. Ekzercinstruado de L1a nivelo ĉe \textsc{Insa} de \textsc{Rennes} \\
 
 	2012, 2014 & Superkontrolado de la algoritma malteoria ekzameno eniganta la \fr{École Normale Supérieure}.
 

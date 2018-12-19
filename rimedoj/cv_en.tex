@@ -2,18 +2,19 @@
 
 \usepackage{ifxetex}
 \ifxetex
-\usepackage{xunicode,fontspec,xltxtra}
+\usepackage{fontspec}
 \usepackage{polyglossia}
 \setmainlanguage{english}
 \setotherlanguage{french}
 \setotherlanguage{spanish}
-\newcommand{\fr}[1]{\foreignlanguage{french}{\textit{#1}}}
-\newcommand{\es}[1]{\foreignlanguage{spanish}{\textit{#1}}}
+\newcommand{\fr}[1]{\foreignlanguage{french}{{#1}}}
+\newcommand{\es}[1]{\foreignlanguage{spanish}{{#1}}}
 \else
 \usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[francais, english]{babel}
-\newcommand{\fr}[1]{\foreignlanguage{francais}{\textit{#1}}}
+\usepackage[english, francais, spanish]{babel}
+\newcommand{\fr}[1]{\foreignlanguage{francais}{{#1}}}
+\newcommand{\es}[1]{\foreignlanguage{spanish}{{#1}}}
 \fi
 
 \usepackage{geometry}
@@ -63,6 +64,9 @@
 
 \def\arraystretch{1.5}
 
+\newcommand\familyName{\textsc}
+\newcommand\placeName{}
+
 \begin{document}
 
 % Pas de numéro de page
@@ -83,7 +87,7 @@
 \setlength{\texte}{\textwidth} \addtolength{\texte}{-\annee} 
 	\addtolength{\texte}{-2\tabcolsep}
 
-\begin{center} \Huge \textsc{Martin~Bodin} \end{center}
+\begin{center} \Huge Martin~\familyName{Bodin} \end{center}
 
 \parbox{0.5\textwidth}
 {
@@ -106,9 +110,9 @@
 
 \begin{datecvsection}{Employment}
 
-    2018–2019 & Postdoc at the \textsc{Imperial College}, in \textsc{London} (\textsc{United Kingdom}) on the theoretical foundations of the analysis of real-world languages. \\
+    2018–2019 & Postdoc at the \placeName{Imperial College}, in \placeName{London} (\placeName{United Kingdom}) on the theoretical foundations of the analysis of real-world languages. \\
 
-    2017–2018 & Postdoc at the \textsc{CMM} (the Center of Mathematical Modeling, part of the \es{Universidad de Chile}), in \textsc{Santiago} (\textsc{Chile}) on the formalisation of the R programming language in the Coq proof assistant. \\
+    2017–2018 & Postdoc at the {CMM} (the Center of Mathematical Modeling, part of the \es{\placeName{Universidad de Chile}}), in \placeName{Santiago} (\placeName{Chile}) on the formalisation of the R programming language in the Coq proof assistant. \\
 
 \end{datecvsection}
 
@@ -118,35 +122,35 @@
 
 	2012–2016 & Member of the \textsc{JsCert} project:  \url{jscert.org/}. \\
 
-	2012 & Internship in \textsc{Inria} at \textsc{Rennes} with \textsc{Alan~Schmitt} and \textsc{Thomas~Jensen}:
+	2012 & Internship in \placeName{Inria} at \placeName{Rennes} with Alan~\familyName{Schmitt} and Thomas~\familyName{Jensen}:
 	\textit{A Certified JavaScript Interpreter}. \\
 
-	2011 & Internship in \textsc{Vrĳe~Universiteit} at \textsc{Amsterdam} with \textsc{Dimitri~Hendriks} and \textsc{Jörg~Endrullis}:
+	2011 & Internship in \placeName{Vrĳe~Universiteit} at \placeName{Amsterdam} with Dimitri~\familyName{Hendriks} and Jörg~\familyName{Endrullis}:
 	\textit{Proving Stream Equalities in Coq}. \\
 
-	2011 & Internship in \fr{\sc PPS} at \textsc{Paris} with \textsc{Stéphane~Gimenez} and \textsc{Christine~Tasson}:
+    2011 & Internship in \fr{\placeName{PPS}} at \placeName{Paris} with Stéphane~\familyName{Gimenez} and Christine~\familyName{Tasson}:
 	\textit{Sequentialization of proof nets to structures}. \\
 
-	2010 & Internship in \fr{\sc Vérimag} at \textsc{Grenoble} with \textsc{David~Monniaux}:
+    2010 & Internship in \fr{\placeName{Vérimag}} at \placeName{Grenoble} with David~\familyName{Monniaux}:
         \fr{Détection de modes de fonctionnements d’un programme \textsc{Lustre}}. \\
 
 \end{datecvsection}
 
 \begin{datecvsection}{Education}
 
-    2012–2016 & Ph.D. in Computer Sciences at \textsc{IRISA}, in \textsc{Rennes} (\textsc{France}), under the direction of \textsc{Alan~Schmitt} and \textsc{Thomas~Jensen} on certified analyses of JavaScript. \\
+    2012–2016 & Ph.D. in Computer Sciences at \placeName{IRISA}, in \placeName{Rennes} (\placeName{France}), under the direction of Alan~\familyName{Schmitt} and Thomas~\familyName{Jensen} on certified analyses of JavaScript. \\
 
 	2010–2012 & \fr{Master d’Informatique} (\ie a Computer Science
-	Master) in the \fr{École Normale Supérieure de Lyon} (a French
+    Master) in the \fr{\placeName{École Normale Supérieure de Lyon}} (a French
 	\fr{grande École}—\ie a leading institution of higher
     education—specialized in the formation of searchers). \\
 
 	2009–2010 & \fr{Licence d’Informatique, mention très bien} (\ie
 	a Computer Science Licence degree, magna cum laude) in the
-	\fr{École Normale Supérieure de Lyon}. \\
+    \fr{\placeName{École Normale Supérieure de Lyon}}. \\
 
 	2007–2009 & \fr{Classes préparatoires aux grandes Écoles} in the
-	\fr{lycée Henri~IV} in Paris (a two-years intensive course
+    \fr{\placeName{lycée Henri~\textsc{iv}}} in Paris (a two-years intensive course
 	preparing to the competitive entrance of \fr{grandes Écoles}). \\
 
 	2007 & \fr{Baccalauréat Scientifique, mention très bien}
@@ -172,37 +176,60 @@
 
 \begin{datecvsection}{Conferences}
 
-  2019 & Martin \textsc{Bodin}, Philippa \textsc{Gardner}, Thomas \textsc{Jensen}, and Alan \textsc{Schmitt}. \textit{Skeletal Semantics and Their Interpretations}. In POPL. \\
+  2019 & Martin~\familyName{Bodin}, Philippa~\familyName{Gardner}, Thomas~\familyName{Jensen}, and Alan~\familyName{Schmitt}. \textit{Skeletal Semantics and Their Interpretations}. In POPL. \\
 
-  2018 & Martin \textsc{Bodin}, Tomás \textsc{Diaz}, and Éric \textsc{Tanter}. \textit{A Trustworthy Mechanized Formalization of R}. In DLS. \\
+  2018 & Martin~\familyName{Bodin}, Tomás~\familyName{Diaz}, and Éric~\familyName{Tanter}. \textit{A Trustworthy Mechanized Formalization of R}. In DLS. \\
 
-  2015 & Martin \textsc{Bodin}, Thomas \textsc{Jensen}, and Alan \textsc{Schmitt}. \textit{Certified Abstract Interpretation with Pretty-Big-Step Semantics}. In CPP. \\
+  2015 & Martin~\familyName{Bodin}, Thomas~\familyName{Jensen}, and Alan~\familyName{Schmitt}. \textit{Certified Abstract Interpretation with Pretty-Big-Step Semantics}. In CPP. \\
 
-  2014 & Martin \textsc{Bodin}, Arthur \textsc{Charguéraud}, Daniele \textsc{Filaretti}, Philippa \textsc{Gardner}, Sergio \textsc{Maffeis}, Daiva \textsc{Naudžiūnienė}, Alan \textsc{Schmitt}, and Gareth \textsc{Smith}. \textit{A Trusted Mechanised JavaScript Specification}. In POPL. \\
+  2014 & Martin~\familyName{Bodin}, Arthur~\familyName{Charguéraud}, Daniele~\familyName{Filaretti}, Philippa~\familyName{Gardner}, Sergio~\familyName{Maffeis}, Daiva~\familyName{Naudžiūnienė}, Alan~\familyName{Schmitt}, and Gareth~\familyName{Smith}. \textit{A Trusted Mechanised JavaScript Specification}. In POPL. \\
 
-  2013 & Jörg \textsc{Endrullis}, Dimitri \textsc{Hendriks}, and Martin \textsc{Bodin}. \textit{Circular Coinduction in Coq Using Bisimulation-up-to Techniques}. In ITP. \\
+  2013 & Jörg~\familyName{Endrullis}, Dimitri~\familyName{Hendriks}, and Martin~\familyName{Bodin}. \textit{Circular Coinduction in Coq Using Bisimulation-up-to Techniques}. In ITP. \\
 
-  2011 & David \textsc{Monniaux} and Martin \textsc{Bodin}. \textit{Modular Abstractions of Reactive Nodes using Disjunctive Invariants}. In APLAS. \\
+  2011 & David~\familyName{Monniaux} and Martin~\familyName{Bodin}. \textit{Modular Abstractions of Reactive Nodes using Disjunctive Invariants}. In APLAS. \\
 
 \end{datecvsection}
 
 \begin{datecvsection}{Workshops}
 
-  2018 & Martin \textsc{Bodin}. \textit{A Coq Formalisation of a Core of R}. In CoqPL. \\
+  2018 & Martin~\familyName{Bodin}. \textit{A Coq Formalisation of a Core of R}. In CoqPL. \\
 
-  2016 & Martin \textsc{Bodin}, Thomas \textsc{Jensen}, and Alan \textsc{Schmitt}. \textit{An Abstract Separation Logic for Interlinked Extensible Records}. In JFLA. \\
+  2016 & Martin~\familyName{Bodin}, Thomas~\familyName{Jensen}, and Alan~\familyName{Schmitt}. \textit{An Abstract Separation Logic for Interlinked Extensible Records}. In JFLA. \\
 
-  2014 & Martin \textsc{Bodin}, Thomas \textsc{Jensen}, and Alan \textsc{Schmitt}. \textit{Certified Abstract Interpretation with Pretty-Big-Step Semantics}. In JFLA. \\
+  2014 & Martin~\familyName{Bodin}, Thomas~\familyName{Jensen}, and Alan~\familyName{Schmitt}. \textit{Certified Abstract Interpretation with Pretty-Big-Step Semantics}. In JFLA. \\
 
-  2013 & Martin \textsc{Bodin}, Thomas \textsc{Jensen}, and Alan \textsc{Schmitt}. \textit{Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)}. In \textit{Semantics, Abstract Interpretation, and Reasoning about Programs: Essays Dedicated to David A. \textsc{Schmidt}} \\ % on the Occasion of his Sixtieth Birthday}, volume 129 of EPTCS, pages 360–383. \\
+  2013 & Martin~\familyName{Bodin}, Thomas~\familyName{Jensen}, and Alan~\familyName{Schmitt}. \textit{Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)}. In \textit{Semantics, Abstract Interpretation, and Reasoning about Programs: Essays Dedicated to David A.~\familyName{Schmidt}} \\ % on the Occasion of his Sixtieth Birthday}, volume 129 of EPTCS, pages 360–383. \\
 
-  2013 & Martin \textsc{Bodin} and Alan \textsc{Schmitt}. \textit{A Certified JavaScript Interpreter}. In JFLA. \\
+  2013 & Martin~\familyName{Bodin} and Alan~\familyName{Schmitt}. \textit{A Certified JavaScript Interpreter}. In JFLA. \\
 
 \end{datecvsection}
 
 \begin{datecvsection}{Other Publications}
 
-    2016 & Martin \textsc{Bodin}. \textit{Certified semantics and analysis of JavaScript}. Ph.D. thesis. \\
+    2016 & Martin~\familyName{Bodin}. \textit{Certified semantics and analysis of JavaScript}. Ph.D. thesis. \\
+
+\end{datecvsection}
+
+\begin{datecvsection}{Supervising}
+
+    2019 & Benjamin~\familyName{Gunton}, with Philippa~\familyName{Gardner} \\
+    2017–2018 & Tomás~\familyName{Diaz}, with Éric~\familyName{Tanter} \\
+
+\end{datecvsection}
+
+\begin{datecvsection}{Teaching}
+
+    2018 & Models of Computation. L2 tutoring at the Imperial College London. \\
+
+    2017 & Introduction to Coq: Logic, Types, and Verification. M2 tutoring at the \es{\placeName{Universidad de Chile}}. \\
+
+    2014 & Software Design and Verification. M1 tutoring at the \fr{\placeName{École Normale Supérieure}}. \\
+
+    2013–2014 & Formal Languages. L3 tutoring at the \fr{\placeName{École Normale Supérieure}}. \\
+
+    2013 & Introduction to Scheme. L1 tutoring at the \placeName{Insa} of \placeName{Rennes}. \\
+
+    2012, 2014 & Monitoring the algorithmic practice examination for the entrance of the \fr{\placeName{École Normale Supérieure}}. \\
 
 \end{datecvsection}
 
@@ -216,26 +243,10 @@
 
 \begin{datecvsection}{Association Experience}
 
-    2017 & Esperanto Meetups in \textsc{Santiago}. \\
-    2014–2015 & Active member of \textsc{Espéranto-Rennes}. \\
-	2012 & Treasurer of the theater association \textsc{ASCREB} in \textsc{Rennes}. \\
-	2010 & Secretary of the \textsc{INFO-ENS} association in \textsc{Lyon}. \\
-
-\end{datecvsection}
-
-\begin{datecvsection}{Teaching}
-
-    2018 & Models of Computation. L2 tutoring at the Imperial College London. \\
-
-    2017 & Introduction to Coq: Logic, Types, and Verification. M2 tutoring at the \es{Universidad de Chile}. \\
-
-    2014 & Software Design and Verification. M1 tutoring at the \fr{École Normale Supérieure}. \\
-
-    2013–2014 & Formal Languages. L3 tutoring at the \fr{École Normale Supérieure}. \\
-
-    2013 & Introduction to Scheme. L1 tutoring at the \textsc{Insa} of \textsc{Rennes}. \\
-
-	2012, 2014 & Monitoring the algorithmic practice examination for the entrance of the \fr{École Normale Supérieure}. \\
+    2017 & Esperanto Meetups in \placeName{Santiago}. \\
+    2014–2015 & Active member of {Espéranto-Rennes}. \\
+	2012 & Treasurer of the theater association {ASCREB} in \placeName{Rennes}. \\
+	2010 & Secretary of the \textsc{INFO-ENS} association in \placeName{Lyon}. \\
 
 \end{datecvsection}
 

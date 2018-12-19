@@ -2,19 +2,22 @@
 
 \usepackage{ifxetex}
 \ifxetex
-\usepackage{xunicode,fontspec,xltxtra}
+\usepackage{fontspec}
 \usepackage{polyglossia}
 \setmainlanguage{esperanto}
 \setotherlanguage{english}
 \setotherlanguage{french}
 \setotherlanguage{spanish}
-\newcommand{\en}[1]{\foreignlanguage{english}{\textit{#1}}}
-\newcommand{\fr}[1]{\foreignlanguage{french}{\textit{#1}}}
-\newcommand{\es}[1]{\foreignlanguage{spanish}{\textit{#1}}}
+\newcommand{\en}[1]{\foreignlanguage{english}{{#1}}}
+\newcommand{\fr}[1]{\foreignlanguage{french}{{#1}}}
+\newcommand{\es}[1]{\foreignlanguage{spanish}{{#1}}}
 \else
 \usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[esperanto, francais, english]{babel}
+\usepackage[esperanto, francais, english, spanish]{babel}
+\newcommand{\en}[1]{\foreignlanguage{english}{{#1}}}
+\newcommand{\fr}[1]{\foreignlanguage{french}{{#1}}}
+\newcommand{\es}[1]{\foreignlanguage{spanish}{{#1}}}
 \fi
 
 \usepackage{geometry}
@@ -64,6 +67,9 @@
 
 \def\arraystretch{1.5}
 
+\newcommand\familyName{\textsc}
+\newcommand\placeName{}
+
 \begin{document}
 
 % Pas de numéro de page
@@ -84,7 +90,7 @@
 \setlength{\texte}{\textwidth} \addtolength{\texte}{-\annee} 
 	\addtolength{\texte}{-2\tabcolsep}
 
-\begin{center} \Huge \textsc{Martin~Bodin} \end{center}
+\begin{center} \Huge Martin~\familyName{Bodin} \end{center}
 
 \parbox[c]{.5\textwidth}
 {
@@ -107,23 +113,23 @@
 
 \begin{datecvsection}{Laboro}
 
-    2018–2019 & Postdoktorado ĉe la \en{Imperial College}, en \textsc{Londono} (\textsc{Unuiĝinta Reĝlando}) pri la teoriaj fundamentoj de la analizado de vervivaj programlingvaĵoj. \\
+    2018–2019 & Postdoktorado ĉe la \en{\placeName{Imperial College}}, en \placeName{Londono} (\placeName{Unuiĝinta Reĝlando}) pri la teoriaj fundamentoj de la analizado de vervivaj programlingvaĵoj. \\
 
-    2017–2018 & Postdoktorado ĉe la \textsc{CMM} (la \en{Center of Mathematical Modeling}, parto de la \es{Universidad de Chile}) en \textsc{Santiago} (\textsc{Ĉilio}) pri formalizado de la programlingvaĵo \textsc{R} en la pruvilo \textsc{Coq}. \\
+    2017–2018 & Postdoktorado ĉe la \placeName{CMM} (la \en{\placeName{Center of Mathematical Modeling}}, parto de la \es{\placeName{Universidad de Chile}}) en \placeName{Santiago} (\placeName{Ĉilio}) pri formalizado de la programlingvaĵo R en la pruvilo Coq. \\
 
 \end{datecvsection}
 
 \begin{datecvsection}{Studaro}
 
-    2012–2016 & Doktoriĝo informatika ĉe la \textsc{Irisa} en \textsc{Rennes} (\textsc{Francio}) estrigita de \textsc{Alan~Schmitt} kaj \textsc{Thomas~Jensen} pri korektpruvigitaj \textsc{Javaskript}aj analizoj. \\
+    2012–2016 & Doktoriĝo informatika ĉe la \placeName{Irisa} en \placeName{Rennes} (\placeName{Francio}) estrigita de Alan~\familyName{Schmitt} kaj Thomas~\familyName{Jensen} pri korektpruvigitaj {Javaskript}aj analizoj. \\
 
-	2010–2012 & \fr{Master d’Informatique} (\ie informatika Majstro), en la \fr{École Normale Supérieure de \textsc{Lyon}} (franca \fr{Grande École} — \ie ĉeflernejo de altnivela instruado — specialigita en la edukado de esploradistoj). \\
+    2010–2012 & \fr{Master d’Informatique} (\ie komputika Majstro), en la \fr{\placeName{École Normale Supérieure de Lyon}} (franca \fr{Grande École} — \ie ĉeflernejo de altnivela instruado — specialigita en la edukado de esploradistoj). \\
 
-    2009–2010 & Licence d’Informatique, mention très bien (\ie komputika licencio, kun granda laŭdo) à l’École Normale Supérieure de \textsc{Lyon}. \\
+    2009–2010 & \fr{Licence d’Informatique, mention très bien} (\ie komputika licencio, kun granda laŭdo) je la \fr{\placeName{École Normale Supérieure de Lyon}}. \\
 
-    2007–2009 & Classes préparatoires aux Grandes Écoles au lycée \textsc{Henri~iv} en \textsc{Parizo} (\ie dujara intenskurso preparanta al la enirkonkurso de la \fr{grandes Écoles}). \\
+    2007–2009 & \fr{Classes préparatoires aux Grandes Écoles} en la gimnazio \placeName{Henri~\textsc{iv}} en \placeName{Parizo} (\ie dujara intenskurso preparanta al la enirkonkurso de la \fr{grandes Écoles}). \\
 
-    2007 & Baccalauréat spécialité Mathématiques, mention très bien (\ie bakalaŭrea ekzameno kies ĉefaj fakoj estas matematiko, fiziko kaj biologio, kun granda laŭdo). \\
+    2007 & \fr{Baccalauréat spécialité Mathématiques, mention très bien} (\ie bakalaŭrea ekzameno kies ĉefaj fakoj estas matematiko, fiziko kaj biologio, kun granda laŭdo). \\
 
 \end{datecvsection}
 
@@ -147,55 +153,62 @@
 
 	2012–2016 & Ano de la \textsc{JsCert} projekto:  \url{http://jscert.org/} \\
 
-	2012 & Lernoservo ĉe \textsc{Inria} (\textsc{Rennes}) kun \textsc{Alan~Schmitt} kaj \textsc{Thomas~Jensen}:
-	\en{\textit{A Certified \textsc{JavaScript} Interpreter}} \\
+    2012 & Lernoservo ĉe \placeName{Inria} (\placeName{Rennes}) kun Alan~\familyName{Schmitt} kaj Thomas~\familyName{Jensen}:
+	\en{\textit{A Certified JavaScript Interpreter}} \\
 
-	2011 & Lernoservo ĉe \textsc{Vrĳe Universiteit} (\textsc{Amsterdam}) kun \textsc{Dimitri~Hendriks} kaj \textsc{Jörg~Endrullis}:
-	\en{\textit{Proving Stream Equalities in \textsc{Coq}}} \\
+    2011 & Lernoservo ĉe \placeName{Vrĳe Universiteit} (\placeName{Amsterdam}) kun Dimitri~\familyName{Hendriks} kaj Jörg~\familyName{Endrullis}:
+	\en{\textit{Proving Stream Equalities in Coq}} \\
 
-	2011 & Lernoservo ĉe \textsc{pps} (\textsc{Paris}) kun \textsc{Stéphane Gimenez} kaj \textsc{Christine Tasson}:
+    2011 & Lernoservo ĉe \placeName{PPS} (\placeName{Parizo}) kun Stéphane~\familyName{Gimenez} kaj Christine~\familyName{Tasson}:
 	\en{\textit{Sequentialization of Proof Nets to Structures}} \\
 
-	2010 & Partoprenado al la \textsc{Cartomancer} projekto:  \url{http://sourceforge.net/projects/cartomancer/} \\
+	2010 & Partoprenado al la projekto \textsc{Cartomancer}:  \url{http://sourceforge.net/projects/cartomancer/} \\
 
-	2010 & Lernoservo ĉe \textsc{Vérimag} (\textsc{Grenoble}) kun \textsc{David~Monniaux}:
-	\textit{Détection de modes de fonctionnements d’un programme \textsc{Lustre}} \\
+    2010 & Lernoservo ĉe \placeName{Vérimag} (\placeName{Grenoble}) kun David~\familyName{Monniaux}:
+    \fr{\textit{Détection de modes de fonctionnements d’un programme \textsc{Lustre}}} \\
 
 \end{datecvsection}
 
 \begin{datecvsection}{Kongresoj}
 
-  2019 & Martin \textsc{Bodin}, Philippa \textsc{Gardner}, Thomas \textsc{Jensen}, kaj Alan \textsc{Schmitt}. \textit{Skeletal Semantics kaj Their Interpretations}. Je POPL. \\
+  2019 & Martin~\familyName{Bodin}, Philippa~\familyName{Gardner}, Thomas~\familyName{Jensen}, kaj Alan~\familyName{Schmitt}. \textit{Skeletal Semantics kaj Their Interpretations}. Je POPL. \\
 
-  2018 & Martin \textsc{Bodin}, Tomás \textsc{Diaz}, kaj Éric \textsc{Tanter}. \textit{A Trustworthy Mechanized Formalization of R}. Je DLS. \\
+  2018 & Martin~\familyName{Bodin}, Tomás~\familyName{Diaz}, kaj Éric~\familyName{Tanter}. \textit{A Trustworthy Mechanized Formalization of R}. Je DLS. \\
 
-  2015 & Martin \textsc{Bodin}, Thomas \textsc{Jensen}, kaj Alan \textsc{Schmitt}. \textit{Certified Abstract Interpretation with Pretty-Big-Step Semantics}. Je CPP. \\
+  2015 & Martin~\familyName{Bodin}, Thomas~\familyName{Jensen}, kaj Alan~\familyName{Schmitt}. \textit{Certified Abstract Interpretation with Pretty-Big-Step Semantics}. Je CPP. \\
 
-  2014 & Martin \textsc{Bodin}, Arthur \textsc{Charguéraud}, Daniele \textsc{Filaretti}, Philippa \textsc{Gardner}, Sergio \textsc{Maffeis}, Daiva \textsc{Naudžiūnienė}, Alan \textsc{Schmitt}, kaj Gareth \textsc{Smith}. \textit{A Trusted Mechanised JavaScript Specification}. Je POPL. \\
+  2014 & Martin~\familyName{Bodin}, Arthur~\familyName{Charguéraud}, Daniele~\familyName{Filaretti}, Philippa~\familyName{Gardner}, Sergio~\familyName{Maffeis}, Daiva~\familyName{Naudžiūnienė}, Alan~\familyName{Schmitt}, kaj Gareth~\familyName{Smith}. \textit{A Trusted Mechanised JavaScript Specification}. Je POPL. \\
 
-  2013 & Jörg \textsc{Endrullis}, Dimitri \textsc{Hendriks}, kaj Martin \textsc{Bodin}. \textit{Circular Coinduction in Coq Using Bisimulation-up-to Techniques}. Je ITP. \\
+  2013 & Jörg~\familyName{Endrullis}, Dimitri~\familyName{Hendriks}, kaj Martin~\familyName{Bodin}. \textit{Circular Coinduction in Coq Using Bisimulation-up-to Techniques}. Je ITP. \\
 
-  2011 & David \textsc{Monniaux} kaj Martin \textsc{Bodin}. \textit{Modular Abstractions of Reactive Nodes using Disjunctive Invariants}. Je APLAS. \\
+  2011 & David~\familyName{Monniaux} kaj Martin~\familyName{Bodin}. \textit{Modular Abstractions of Reactive Nodes using Disjunctive Invariants}. Je APLAS. \\
 
 \end{datecvsection}
 
 \begin{datecvsection}{Babilkongresoj}
 
-  2018 & Martin \textsc{Bodin}. \textit{A Coq Formalisation of a Core of R}. Je CoqPL. \\
+  2018 & Martin~\familyName{Bodin}. \textit{A Coq Formalisation of a Core of R}. Je CoqPL. \\
 
-  2016 & Martin \textsc{Bodin}, Thomas \textsc{Jensen}, kaj Alan \textsc{Schmitt}. \textit{An Abstract Separation Logic for Interlinked Extensible Records}. Je JFLA. \\
+  2016 & Martin~\familyName{Bodin}, Thomas~\familyName{Jensen}, kaj Alan~\familyName{Schmitt}. \textit{An Abstract Separation Logic for Interlinked Extensible Records}. Je JFLA. \\
 
-  2014 & Martin \textsc{Bodin}, Thomas \textsc{Jensen}, kaj Alan \textsc{Schmitt}. \textit{Certified Abstract Interpretation with Pretty-Big-Step Semantics}. Je JFLA. \\
+  2014 & Martin~\familyName{Bodin}, Thomas~\familyName{Jensen}, kaj Alan~\familyName{Schmitt}. \textit{Certified Abstract Interpretation with Pretty-Big-Step Semantics}. Je JFLA. \\
 
-  2013 & Martin \textsc{Bodin}, Thomas \textsc{Jensen}, kaj Alan \textsc{Schmitt}. \textit{Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)}. Je \textit{Semantics, Abstract Interpretation, kaj Reasoning about Programs: Essays Dedicated to David A. \textsc{Schmidt}} \\ % on the Occasion of his Sixtieth Birthday}, volume 129 of EPTCS, pages 360–383. \\
+  2013 & Martin~\familyName{Bodin}, Thomas~\familyName{Jensen}, kaj Alan~\familyName{Schmitt}. \textit{Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)}. Je \textit{Semantics, Abstract Interpretation, kaj Reasoning about Programs: Essays Dedicated to David A.~\familyName{Schmidt}} \\ % on the Occasion of his Sixtieth Birthday}, volume 129 of EPTCS, pages 360–383. \\
 
-  2013 & Martin \textsc{Bodin} kaj Alan \textsc{Schmitt}. \textit{A Certified JavaScript Interpreter}. Je JFLA. \\
+  2013 & Martin~\familyName{Bodin} kaj Alan~\familyName{Schmitt}. \textit{A Certified JavaScript Interpreter}. Je JFLA. \\
 
 \end{datecvsection}
 
 \begin{datecvsection}{Aliaj eldonaĵoj}
 
-    2016 & Martin \textsc{Bodin}. \textit{Sémantique et analyse certifiées de JavaScript}. Doktoriĝdokumento. \\
+    2016 & Martin~\familyName{Bodin}. \textit{Sémantique et analyse certifiées de JavaScript}. Doktoriĝdokumento. \\
+
+\end{datecvsection}
+
+\begin{datecvsection}{Gvidado}
+
+    2019 & Benjamin~\familyName{Gunton}, kun Philippa~\familyName{Gardner} \\
+    2017–2018 & Tomás~\familyName{Diaz}, kun Éric~\familyName{Tanter} \\
 
 \end{datecvsection}
 
@@ -209,26 +222,26 @@
 
 \begin{datecvsection}{Asocia vivo}
 
-    2017 & Esperantaj renkontiĝoj en \textsc{Santiago}. \\
-    2014–2015 & Aktiva ano de \textsc{Espéranto-Rennes}. \\
-	2012 & Kasisto de la teatra asocio \textsc{ASCREB} en \textsc{Rennes}. \\
-	2010 & Sekretario de la asocio \textsc{INFO-ENS} en \textsc{Lyon}.
+    2017 & Esperantaj renkontiĝoj en \placeName{Santiago}. \\
+    2014–2015 & Aktiva ano de {Espéranto-Rennes}. \\
+	2012 & Kasisto de la teatra asocio {ASCREB} en \placeName{Rennes}. \\
+	2010 & Sekretario de la asocio \textsc{INFO-ENS} en \placeName{Lyon}.
 
 \end{datecvsection}
 
 \begin{datecvsection}{Instruado}
 
-    2018 & Models of Computation. Ekzercinstruado de L2a nivelo ĉe la \en{Imperial College London}. \\
+    2018 & Models of Computation. Ekzercinstruado de L2a nivelo ĉe la \en{\placeName{Imperial College}}. \\
 
-    2017 & Introducción a Coq: Lógica, Tipos y Verificación. Ekzercinstruado de M2a nivelo ĉe la \es{Universidad de Chile}. \\
+    2017 & Introducción a Coq: Lógica, Tipos y Verificación. Ekzercinstruado de M2a nivelo ĉe la \es{\placeName{Universidad de Chile}}. \\
 
-    2014 & Program-konceptado kaj pruvo. Ekzercinstruado de M1a nivelo ĉe la \fr{École Normale Supérieure} \\
+    2014 & Program-konceptado kaj pruvo. Ekzercinstruado de M1a nivelo ĉe la \fr{\placeName{École Normale Supérieure}}. \\
 
-    2013–2014 & Formalaj lingvaĵoj. Ekzercinstruado de L3a nivelo ĉe la \fr{École Normale Supérieure} \\
+    2013–2014 & Formalaj lingvaĵoj. Ekzercinstruado de L3a nivelo ĉe la \fr{\placeName{École Normale Supérieure}}. \\
 
-    2013 & Enkonduko al Scheme. Ekzercinstruado de L1a nivelo ĉe \textsc{Insa} de \textsc{Rennes} \\
+    2013 & Enkonduko al Scheme. Ekzercinstruado de L1a nivelo ĉe \placeName{Insa} de \placeName{Rennes}. \\
 
-	2012, 2014 & Superkontrolado de la algoritma malteoria ekzameno eniganta la \fr{École Normale Supérieure}.
+    2012, 2014 & Superkontrolado de la algoritma malteoria ekzameno eniganta la \fr{\placeName{École Normale Supérieure}}.
 
 \end{datecvsection}
 

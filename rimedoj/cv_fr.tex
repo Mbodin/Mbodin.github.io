@@ -2,18 +2,19 @@
 
 \usepackage{ifxetex}
 \ifxetex
-\usepackage{xunicode,fontspec,xltxtra}
+\usepackage{fontspec}
 \usepackage{polyglossia}
 \setmainlanguage{french}
 \setotherlanguage{english}
 \setotherlanguage{spanish}
-\newcommand{\en}[1]{\foreignlanguage{english}{\textit{#1}}}
-\newcommand{\es}[1]{\foreignlanguage{spanish}{\textit{#1}}}
+\newcommand{\en}[1]{\foreignlanguage{english}{{#1}}}
+\newcommand{\es}[1]{\foreignlanguage{spanish}{{#1}}}
 \else
 \usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[francais, english]{babel}
-\newcommand{\en}[1]{\foreignlanguage{english}{\textit{#1}}}
+\usepackage[francais, english, spanish]{babel}
+\newcommand{\en}[1]{\foreignlanguage{english}{{#1}}}
+\newcommand{\es}[1]{\foreignlanguage{spanish}{{#1}}}
 \fi
 
 \usepackage{geometry}
@@ -62,6 +63,9 @@
                {\end{itemize}}
 
 \def\arraystretch{1.5}
+ 
+\newcommand\familyName{\textsc}
+\newcommand\placeName{}
 
 \begin{document}
 
@@ -83,7 +87,7 @@
 \setlength{\texte}{\textwidth} \addtolength{\texte}{-\annee} 
 	\addtolength{\texte}{-2\tabcolsep}
 
-\begin{center} \Huge \textsc{Martin~Bodin} \end{center}
+\begin{center} \Huge Martin~\familyName{Bodin} \end{center}
 
 \parbox[c]{.5\textwidth}
 {
@@ -106,21 +110,21 @@
 
 \begin{datecvsection}{Positions}
 
-    2018–2019 & Postdoc à l’\en{Imperial College}, à \textsc{Londres} (\textsc{Royaume-Uni}) sur les fondations théoriques de l’analyse de langages de programmation complexes. \\
+    2018–2019 & Postdoc à l’\en{\placeName{Imperial College}}, à \placeName{Londres} (\placeName{Royaume-Uni}) sur les fondations théoriques de l’analyse de langages de programmation complexes. \\
 
-    2017–2018 & Postdoc au \textsc{CMM} (le \en{Center of Mathematical Modeling}, attaché à l’\es{Universidad de Chile}), à \textsc{Santiago} (\textsc{Chili}), sur la formalisation du langage de programmation R dans l’assistant de preuve Coq. \\
+    2017–2018 & Postdoc au \placeName{CMM} (le \en{\placeName{Center of Mathematical Modeling}}, attaché à l’\es{\placeName{Universidad de Chile}}), à \placeName{Santiago} (\placeName{Chili}), sur la formalisation du langage de programmation R dans l’assistant de preuve Coq. \\
 
 \end{datecvsection}
 
 \begin{datecvsection}{Études}
 
-    2012–2016 & Doctorat en Informatique à l’\textsc{IRISA}, à \textsc{Rennes}, sous la direction d’\textsc{Alan~Schmitt} et \textsc{Thomas~Jensen} sur les analyses certifiées du JavaScript. \\
+    2012–2016 & Doctorat en Informatique à l’\placeName{IRISA}, à \placeName{Rennes}, sous la direction d’Alan~\familyName{Schmitt} et Thomas~\familyName{Jensen} sur les analyses certifiées du JavaScript. \\
 
-	2010–2012 & Master d’Informatique, mention bien à l’École Normale Supérieure de \textsc{Lyon}. \\
+	2010–2012 & Master d’Informatique, mention bien à l’École Normale Supérieure de \placeName{Lyon}. \\
 
-	2009–2010 & Licence d’Informatique, mention très bien à l’École Normale Supérieure de \textsc{Lyon}. \\
+	2009–2010 & Licence d’Informatique, mention très bien à l’École Normale Supérieure de \placeName{Lyon}. \\
 
-	2007–2009 & Classes préparatoires aux Grandes Écoles au lycée \textsc{Henri~iv} à \textsc{Paris}. \\
+    2007–2009 & Classes préparatoires aux Grandes Écoles au lycée \placeName{Henri~\textsc{iv}} à \placeName{Paris}. \\
 
 	2007 & Baccalauréat spécialité Mathématiques, mention très bien. \\
 
@@ -142,55 +146,62 @@
 
 	2012–2016 & Membre du projet \textsc{JsCert}~:  \url{http://jscert.org/} \\
 
-	2012 & Stage à \textsc{Inria} (\textsc{Rennes}) avec \textsc{Alan~Schmitt} et \textsc{Thomas~Jensen}~:
+    2012 & Stage à \placeName{Inria} (\placeName{Rennes}) avec Alan~\familyName{Schmitt} et Thomas~\familyName{Jensen}~:
 	\en{\textit{A Certified JavaScript Interpreter}} \\
 
-	2011 & Stage à \textsc{Vrĳe Universiteit} (\textsc{Amsterdam}) avec \textsc{Dimitri~Hendriks} et \textsc{Jörg~Endrullis}~:
+    2011 & Stage à \placeName{Vrĳe Universiteit} (\placeName{Amsterdam}) avec Dimitri~\familyName{Hendriks} et Jörg~\familyName{Endrullis}~:
 	\en{\textit{Proving Stream Equalities in Coq}} \\
 
-	2011 & Stage à \textsc{pps} (\textsc{Paris}) avec \textsc{Stéphane Gimenez} et \textsc{Christine Tasson}~:
+    2011 & Stage à \placeName{PPS} (\placeName{Paris}) avec Stéphane~\familyName{Gimenez} et Christine~\familyName{Tasson}~:
 	\en{\textit{Sequentialization of Proof Nets to Structures}} \\
 
 	2010 & Participation au projet \textsc{Cartomancer}~:  \url{http://sourceforge.net/projects/cartomancer/} \\
 
-	2010 & Stage à \textsc{Vérimag} (\textsc{Grenoble}) avec \textsc{David~Monniaux}~:
+    2010 & Stage à \placeName{Vérimag} (\placeName{Grenoble}) avec David~\familyName{Monniaux}~:
 	\textit{Détection de modes de fonctionnements d’un programme \textsc{Lustre}} \\
 
 \end{datecvsection}
 
 \begin{datecvsection}{Conférences}
 
-  2019 & Martin \textsc{Bodin}, Philippa \textsc{Gardner}, Thomas \textsc{Jensen}, et Alan \textsc{Schmitt}. \textit{Skeletal Semantics et Their Interpretations}. À POPL. \\
+  2019 & Martin~\familyName{Bodin}, Philippa~\familyName{Gardner}, Thomas~\familyName{Jensen}, et Alan~\familyName{Schmitt}. \textit{Skeletal Semantics et Their Interpretations}. À POPL. \\
 
-  2018 & Martin \textsc{Bodin}, Tomás \textsc{Diaz}, et Éric \textsc{Tanter}. \textit{A Trustworthy Mechanized Formalization of R}. À DLS. \\
+  2018 & Martin~\familyName{Bodin}, Tomás~\familyName{Diaz}, et Éric~\familyName{Tanter}. \textit{A Trustworthy Mechanized Formalization of R}. À DLS. \\
 
-  2015 & Martin \textsc{Bodin}, Thomas \textsc{Jensen}, et Alan \textsc{Schmitt}. \textit{Certified Abstract Interpretation with Pretty-Big-Step Semantics}. À CPP. \\
+  2015 & Martin~\familyName{Bodin}, Thomas~\familyName{Jensen}, et Alan~\familyName{Schmitt}. \textit{Certified Abstract Interpretation with Pretty-Big-Step Semantics}. À CPP. \\
 
-  2014 & Martin \textsc{Bodin}, Arthur \textsc{Charguéraud}, Daniele \textsc{Filaretti}, Philippa \textsc{Gardner}, Sergio \textsc{Maffeis}, Daiva \textsc{Naudžiūnienė}, Alan \textsc{Schmitt}, et Gareth \textsc{Smith}. \textit{A Trusted Mechanised JavaScript Specification}. À POPL. \\
+  2014 & Martin~\familyName{Bodin}, Arthur~\familyName{Charguéraud}, Daniele~\familyName{Filaretti}, Philippa~\familyName{Gardner}, Sergio~\familyName{Maffeis}, Daiva~\familyName{Naudžiūnienė}, Alan~\familyName{Schmitt}, et Gareth~\familyName{Smith}. \textit{A Trusted Mechanised JavaScript Specification}. À POPL. \\
 
-  2013 & Jörg \textsc{Endrullis}, Dimitri \textsc{Hendriks}, et Martin \textsc{Bodin}. \textit{Circular Coinduction in Coq Using Bisimulation-up-to Techniques}. À ITP. \\
+  2013 & Jörg~\familyName{Endrullis}, Dimitri~\familyName{Hendriks}, et Martin~\familyName{Bodin}. \textit{Circular Coinduction in Coq Using Bisimulation-up-to Techniques}. À ITP. \\
 
-  2011 & David \textsc{Monniaux} et Martin \textsc{Bodin}. \textit{Modular Abstractions of Reactive Nodes using Disjunctive Invariants}. À APLAS. \\
+  2011 & David~\familyName{Monniaux} et Martin~\familyName{Bodin}. \textit{Modular Abstractions of Reactive Nodes using Disjunctive Invariants}. À APLAS. \\
 
 \end{datecvsection}
 
 \begin{datecvsection}{Ateliers}
 
-  2018 & Martin \textsc{Bodin}. \textit{A Coq Formalisation of a Core of R}. À CoqPL. \\
+  2018 & Martin~\familyName{Bodin}. \textit{A Coq Formalisation of a Core of R}. À CoqPL. \\
 
-  2016 & Martin \textsc{Bodin}, Thomas \textsc{Jensen}, et Alan \textsc{Schmitt}. \textit{An Abstract Separation Logic for Interlinked Extensible Records}. À JFLA. \\
+  2016 & Martin~\familyName{Bodin}, Thomas~\familyName{Jensen}, et Alan~\familyName{Schmitt}. \textit{An Abstract Separation Logic for Interlinked Extensible Records}. À JFLA. \\
 
-  2014 & Martin \textsc{Bodin}, Thomas \textsc{Jensen}, et Alan \textsc{Schmitt}. \textit{Certified Abstract Interpretation with Pretty-Big-Step Semantics}. À JFLA. \\
+  2014 & Martin~\familyName{Bodin}, Thomas~\familyName{Jensen}, et Alan~\familyName{Schmitt}. \textit{Certified Abstract Interpretation with Pretty-Big-Step Semantics}. À JFLA. \\
 
-  2013 & Martin \textsc{Bodin}, Thomas \textsc{Jensen}, et Alan \textsc{Schmitt}. \textit{Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)}. À \textit{Semantics, Abstract Interpretation, et Reasoning about Programs: Essays Dedicated to David A. \textsc{Schmidt}} \\ % on the Occasion of his Sixtieth Birthday}, volume 129 of EPTCS, pages 360–383. \\
+  2013 & Martin~\familyName{Bodin}, Thomas~\familyName{Jensen}, et Alan~\familyName{Schmitt}. \textit{Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)}. À \textit{Semantics, Abstract Interpretation, et Reasoning about Programs: Essays Dedicated to David A. \textsc{Schmidt}} \\ % on the Occasion of his Sixtieth Birthday}, volume 129 of EPTCS, pages 360–383. \\
 
-  2013 & Martin \textsc{Bodin} et Alan \textsc{Schmitt}. \textit{A Certified JavaScript Interpreter}. À JFLA. \\
+  2013 & Martin~\familyName{Bodin} et Alan~\familyName{Schmitt}. \textit{A Certified JavaScript Interpreter}. À JFLA. \\
 
 \end{datecvsection}
 
 \begin{datecvsection}{Autres Publications}
 
-    2016 & Martin \textsc{Bodin}. \textit{Sémantique et analyse certifiées de JavaScript}. Thèse. \\
+    2016 & Martin~\familyName{Bodin}. \textit{Sémantique et analyse certifiées de JavaScript}. Thèse. \\
+
+\end{datecvsection}
+
+\begin{datecvsection}{Encadrement}
+
+    2019 & Benjamin~\familyName{Gunton}, avec Philippa~\familyName{Gardner} \\
+    2017–2018 & Tomás~\familyName{Diaz}, avec Éric~\familyName{Tanter} \\
 
 \end{datecvsection}
 
@@ -204,26 +215,26 @@
 
 \begin{datecvsection}{Vie associative}
 
-    2017 & Rencontres d’espérantistes à \textsc{Santiago}. \\
-    2014–2015 & Membre actif d’\textsc{Espéranto-Rennes}. \\
-	2012 & Trésorier de l’association de théâtre l’\textsc{ASCREB} à \textsc{Rennes}. \\
-	2010 & Secrétaire de l’association \textsc{INFO-ENS} à \textsc{Lyon}. \\
+    2017 & Rencontres d’espérantistes à \placeName{Santiago}. \\
+    2014–2015 & Membre actif d’{Espéranto-Rennes}. \\
+	2012 & Trésorier de l’association de théâtre l’{ASCREB} à \placeName{Rennes}. \\
+    2010 & Secrétaire de l’association \textsc{INFO-ENS} à \placeName{Lyon}. \\
 
 \end{datecvsection}
 
 \begin{datecvsection}{Enseignement}
 
-    2018 & Models of Computation. Travaux dirigés de L2 à l’\en{Imperial College London}. \\
+    2018 & Models of Computation. Travaux dirigés de L2 à l’\en{\placeName{Imperial College}}. \\
 
-    2017 & Introducción a Coq: Lógica, Tipos y Verificación. Travaux pratiques de M2 à l’\es{Universidad de Chile}. \\
+    2017 & Introducción a Coq: Lógica, Tipos y Verificación. Travaux pratiques de M2 à l’\es{\placeName{Universidad de Chile}}. \\
 
-    2014 & Conception et vérification formelle de programmes. Travaux dirigés de M1 à l’École Normale Supérieure \\
+    2014 & Conception et vérification formelle de programmes. Travaux dirigés de M1 à l’\placeName{École Normale Supérieure}. \\
 
-    2013–2014 & Langages formels. Travaux dirigés de L3 à l’École Normale Supérieure \\
+    2013–2014 & Langages formels. Travaux dirigés de L3 à l’\placeName{École Normale Supérieure}. \\
 
-    2013 & Introduction à Scheme. Travaux pratiques et dirigés de L1 à l’\textsc{Insa} de \textsc{Rennes} \\
+    2013 & Introduction à Scheme. Travaux pratiques et dirigés de L1 à l’\placeName{Insa} de \placeName{Rennes}. \\
 
-	2012, 2014 & Surveillance de l’épreuve pratique d’algorithmique et de programmation du concours d’entrée à l’École Normale Supérieure.
+    2012, 2014 & Surveillance de l’épreuve pratique d’algorithmique et de programmation du concours d’entrée à l’\placeName{École Normale Supérieure}.
 
 \end{datecvsection}
 

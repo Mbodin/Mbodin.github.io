@@ -6,9 +6,9 @@
         <title id = "documentTitle"><tmpl_var name = "titlePageAllLanguages" /></title>
         <link rel = "icon" type = "image/svg+xml" href = "<tmpl_var name = pathToRoot />rimedoj/favicon.svg" sizes = "any" />
         <link rel = "stylesheet" type = "text/css" href = "<tmpl_var name = pathToRoot />rimedoj/cxefa.css" />
-        <meta name = "viewport" content = "width=device-width" />
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
         <!-- <meta name = "description" content = "" /> --> <!-- TODO -->
-        <link rel = "canonical" href = "<tmpl_var name = pageName />.html" />
+        <link rel = "canonical" href = "<tmpl_var name = pageName />.html?pedanticJS=no" />
         <tmpl_loop name = "allLanguages">
         <link rel = "alternate" href = "<tmpl_var name = pageName />.html?lang=<tmpl_var name = lang />#<tmpl_var name = lang />" hreflang = "<tmpl_var name = lang />" />
         </tmpl_loop>

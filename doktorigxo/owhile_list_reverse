@@ -1,0 +1,25 @@
+
+global.nil := {} ;
+
+global.x := global.nil ;
+global.length := 5 ;
+
+(* List creation *)
+while global.length (
+    global.length := global.length + -1 ;
+    run (λ t.
+        t.next := global.x ;
+        global.x := t ;
+        return {}) {}
+) ;
+
+(* Reversing [x] *)
+global.y := global.nil ;
+
+while (¬ global.x = global.nil)
+    run (λ t.
+        global.x.next := global.y ;
+        global.y := global.x ;
+        global.x := t ;
+        return {}) global.x.next
+

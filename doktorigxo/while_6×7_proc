@@ -1,0 +1,13 @@
+procedure prod (n) := (
+    if (n > 0) (
+        prod (n + -1) ;
+        res := res + b
+    ) (
+        res := 0
+    )
+)
+
+a := 6 ;
+b := 7 ;
+prod (a)
+

@@ -1,0 +1,41 @@
+
+global.nil := {} ;
+
+global.zero := (λ f. return (λ x. return x)) ;
+
+global.one := (λ f. return (λ x. return f x)) ;
+
+
+global.add := (λ n. return (λ m. return (λ f. return (λ x. return n f (m f x))))) ;
+
+global.two := global.add global.one global.one ;
+
+global.three := global.add global.two global.one ;
+
+
+global.mult := (λ n. return (λ m. return (λ f. return (λ x. return n (m f) x)))) ;
+
+global.six := global.mult global.two global.three ;
+
+
+global.exp := (λ n. return (λ m. return m n)) ;
+
+global.square := (λ n. return global.exp n global.two) ;
+
+global.ten := global.add global.one (global.square global.three) ;
+
+
+global.succ_number := (λ x. return (x + 1)) ;
+global.flat_number := (λ n. return n global.succ_number 0) ;
+
+
+global.ten_number := global.flat_number global.ten ;
+
+global.succ_list := (λ o.
+    return (λ o'.
+        o'.next := o ;
+        return o') {}) ;
+global.flat_list := (λ n. return n global.succ_list global.nil) ;
+
+global.ten_list := global.flat_list global.ten
+

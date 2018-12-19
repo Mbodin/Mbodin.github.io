@@ -1,0 +1,26 @@
+
+global.nil := {} ;
+
+global.x := global.nil ;
+global.length := 5 ;
+
+(* List creation *)
+while global.length (
+    global.length := global.length + -1 ;
+    run (λ t.
+        t.next := global.x ;
+        t.value := 0 ;
+        global.x := t ;
+        return {}) {}
+) ;
+
+global.f := (λ v. return v + 1) ;
+
+(* Mapping [f] in [x]. *)
+global.y := global.x ;
+
+while (¬ global.y = global.nil) (
+    global.y.value := global.f global.y.value ;
+    global.y := global.y.next
+)
+

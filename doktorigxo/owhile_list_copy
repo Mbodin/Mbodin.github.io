@@ -1,0 +1,26 @@
+
+global.nil := {} ;
+
+global.x := global.nil ;
+global.length := 5 ;
+
+(* List creation *)
+while global.length (
+    global.length := global.length + -1 ;
+    run (λ t.
+        t.next := global.x ;
+        global.x := t ;
+        return {}) {}
+) ;
+
+(* Copying the list [x] into the list [z]. *)
+global.t := {} ;
+global.z := global.t ;
+global.y := global.x ;
+while (¬ global.y = global.nil) (
+    global.t.next := {} ;
+    global.t := global.t.next ;
+    global.t.next := global.nil ;
+    global.y := global.y.next
+)
+

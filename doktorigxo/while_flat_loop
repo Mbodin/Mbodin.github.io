@@ -1,0 +1,12 @@
+x := 1 ; while (x > 0) skip
+
+(* This is an oracle. For the analyser to consider it, please provide a non-zero value for the number of oracle. *)
+(* This example is similar to the example of Figure 4.10b of the dissertation. *)
+oracle
+x -> 1 ;
+|
+while (x > 0) skip
+|
+x -> -1 ; y -> 0 ;
+
+(* Note that if this oracle is not provided (comment or remove the corresponding lines), the analyser will spontaneously use the most precise result it can find. Without the oracle, we get an example similar to the example of Figure 4.10a of the dissertation. *)

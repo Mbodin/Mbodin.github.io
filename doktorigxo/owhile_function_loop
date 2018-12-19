@@ -1,0 +1,5 @@
+
+global.delta := (λ x. run x x) ;
+
+run global.delta global.delta
+

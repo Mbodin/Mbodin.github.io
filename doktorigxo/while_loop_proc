@@ -1,0 +1,17 @@
+(* Mutually (non-well-founded) recursive procedures. This is analysed in our formalism in the exact same way than while loops are analysed. *)
+
+procedure f (x) := (
+    g (1)
+)
+
+procedure g (x) := (
+    h (x)
+)
+
+procedure h (y) := (
+    f (x) (* Note: this x is global. *)
+)
+
+x := 0 ;
+g (-1)
+

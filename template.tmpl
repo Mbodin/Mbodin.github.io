@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns = "http://www.w3.org/1999/xhtml" lang = "">
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" />
         <!-- This page has been generated using home-made Perl scripts…  I know, I should learn how to use Org-mode.  I hope nothing to badly appear.  Do not hesitate to contact me if you notice anything wrong. -->
         <title id = "documentTitle"><tmpl_var name = "titlePageAllLanguages" /></title>
         <link rel = "icon" type = "image/svg+xml" href = "<tmpl_var name = pathToRoot />rimedoj/favicon.svg" sizes = "any" />
@@ -10,7 +10,7 @@
         <!-- <meta name = "description" content = "" /> --> <!-- TODO -->
         <link rel = "canonical" href = "<tmpl_var name = pageName />.html?pedanticJS=no" />
         <tmpl_loop name = "allLanguages">
-        <link rel = "alternate" href = "<tmpl_var name = pageName />.html?lang=<tmpl_var name = lang />#<tmpl_var name = lang />" hreflang = "<tmpl_var name = lang />" />
+        <link rel = "alternate" href = "<tmpl_var name = pageName />.html?pedanticJS=no&lang=<tmpl_var name = lang />#<tmpl_var name = lang />" hreflang = "<tmpl_var name = lang />" />
         </tmpl_loop>
     </head>
     <body>

@@ -26,7 +26,7 @@ html {
 }
 
 body {
-    min-width: 200px ;
+    min-width:  200px ;
 	color:  #2e3436 ;
 	background-color:  #eeeeec ;
 	margin:  0 ;
@@ -102,8 +102,8 @@ a:hover, a:active {
 }
 
 .message p {
-    margin: .5ex 0 ;
-    padding: 0 ;
+    margin:  .5ex 0 ;
+    padding:  0 ;
     display:  inline ;
 }
 
@@ -112,7 +112,7 @@ a:hover, a:active {
 }
 
 .messageButton {
-    margin: .5ex 0 ;
+    margin:  .5ex 0 ;
 	color:  #75507b ;
     float:  right ;
     display:  inline-block ;
@@ -128,23 +128,23 @@ a:hover, a:active {
 
 
 .paperName {
-	font-weight: bold ;
+	font-weight:  bold ;
 }
 
 .journal {
-	font-style: italic ;
+	font-style:  italic ;
 }
 
 .name {
-	font-variant: small-caps ;
+	font-variant:  small-caps ;
 }
 
 .town {
-	font-variant: small-caps ;
+	font-variant:  small-caps ;
 }
 
 .country {
-	font-variant: small-caps ;
+	font-variant:  small-caps ;
 }
 
 
@@ -314,7 +314,7 @@ h3:hover {
 }
 
 .projectDescription:empty {
-	padding: 0px ;
+	padding:  0px ;
 }
 
 .englobingProjectItemDescription {
@@ -370,7 +370,7 @@ li.cleanLink {
 
 
 #rightImage {
-	text-align: right ;
+	text-align:  right ;
 }
 
 .flag_en, .flag_eo, .flag_fr {

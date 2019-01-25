@@ -15,11 +15,11 @@ end
 
 description
 en
-	I am <span class = "name">Martin Bodin</span> /maʁtɛ̃ bodɛ̃/, postdoc at the <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, in <span class = "town">London</span>.
+	I am <span class = "name">Martin Bodin</span><sup><a href = "#familyName_en">1</a></sup> /maʁtɛ̃ bodɛ̃/, postdoc at the <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, in <span class = "town">London</span>.
 eo
-	Mi estas <span class = "name">Martin Bodin</span> /maʁtɛ̃ bodɛ̃/, postdoktorulo ĉe <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, en <span class = "town">Londono</span>.
+	Mi estas <span class = "name">Martin Bodin</span><sup><a href = "#familyName_eo">1</a></sup> /maʁtɛ̃ bodɛ̃/, postdoktorulo ĉe <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, en <span class = "town">Londono</span>.
 fr
-	Je suis <span class = "name">Martin Bodin</span> /maʁtɛ̃ bodɛ̃/, post-doctorant au <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, à <span class = "town">Londres</span>.
+	Je suis <span class = "name">Martin Bodin</span><sup><a href = "#familyName_fr">1</a></sup> /maʁtɛ̃ bodɛ̃/, post-doctorant au <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, à <span class = "town">Londres</span>.
 end
 
 description
@@ -53,6 +53,15 @@ eo
 	Tiu ĉi retejo ankaŭ disponeblas <a class = "switchLanguage_en internalLink" href = "index.html?lang=en#en">angle</a> kaj <a class = "switchLanguage_fr internalLink" href = "index.html?lang=fr#fr">france</a>.
 fr
 	Ce site est aussi disponible en <a class = "switchLanguage_eo internalLink" href = "index.html?lang=eo#eo">espéranto</a> et en <a class = "switchLanguage_en internalLink" href = "index.html?lang=en#en">anglais</a>.
+end
+
+description
+en
+    <small><span id = "familyName_en">1</span> Also Martin Constantino–Bodin.</small>
+eo
+    <small><span id = "familyName_eo">1</span> Ankaŭ Martin Constantino–Bodin.</small>
+fr
+    <small><span id = "familyName_fr">1</span> Ou Martin Constantino–Bodin.</small>
 end
 
 description

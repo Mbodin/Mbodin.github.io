@@ -2,7 +2,7 @@
 <html xmlns = "http://www.w3.org/1999/xhtml" lang = "">
     <head>
         <meta charset="utf-8" />
-        <!-- This page has been generated using home-made Perl scripts…  I know, I should learn how to use Org-mode.  I hope nothing to badly appear.  Do not hesitate to contact me if you notice anything wrong. -->
+        <!-- This page has been generated using home-made Perl scripts…  I know, I should learn how to use Org-mode.  I hope that nothing badly appears.  Do not hesitate to contact me if you notice anything wrong. -->
         <title id = "documentTitle"><tmpl_var name = "titlePageAllLanguages" /></title>
         <link rel = "icon" type = "image/svg+xml" href = "<tmpl_var name = pathToRoot />rimedoj/favicon.svg" sizes = "any" />
         <link rel = "stylesheet" type = "text/css" href = "<tmpl_var name = pathToRoot />rimedoj/cxefa.css" />
@@ -106,7 +106,7 @@
             </tmpl_loop>
             </tmpl_if>
             <div class = "invisible">
-                <!-- See “lingvoj” for more details. -->
+                <!-- See “lingvoj.js” for more details. -->
                 <tmpl_loop name = "allLanguages">
                 <p xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "readMore_<tmpl_var name = lang />" class = "messageButton"><tmpl_var name = "readMore" /></p>
                 <p xml:lang = "<tmpl_var name = lang />" lang = "<tmpl_var name = lang />" id = "hideMessage_<tmpl_var name = lang />" class = "messageButton"><tmpl_var name = "hideMessage" /></p>
@@ -130,7 +130,7 @@
         <script type = "text/javascript"><!--//--><![CDATA[//><!--
             // @license magnet:?xt=urn:btih:90dc5c0be029de84e523b9b3922520e79e0e6f08&dn=cc0.txt CC0
             (function (){
-                // Removing JavaScript warning message (I prefer to do this that way, as the “script” tag stands for more things than just JavaScript).
+                // Removing JavaScript warning message (I prefer to do this that way, as the “noscript” html tag may stand for more things than just JavaScript).
                 iterLanguages (function (lang){
                         removeNode (document.getElementById ("messageToBeRemoved" + addIfNotEmpty (lang, "_")))
                     })
@@ -148,9 +148,12 @@
                     // Of course, we won’t check everything, just one part of the specification.
                     // By 15.3.4.2, “Function.prototype.toString” should returns a string following the syntax of a “FunctionDeclaration” when called on a function object.
                     // In particular, such a string should be parsable (as it is a declaration, we can just run it by “eval”) without trouble.
+                    // We do it in a closure for additional safety.
                     // The specification allows to add additional properties not mentionned in it, in particular a different property “toString” to “String” has to be checked.
                     try {
-                        eval (Function.prototype.toString.call (String))
+                        (function (){
+                            eval (Function.prototype.toString.call (String))
+                        }) ()
                     } catch (_){
                         var pedanticJSNode = addErrorMsgKey ("badJS")
                     }
@@ -169,7 +172,7 @@
             // @license-end
         // --><!]]>
         </script>
-        <script type = "text/javascript" src = "<tmpl_var name = pathToRoot />skriptoj/kapajxoj.js"></script> <!-- Requires “lingvoj”. -->
+        <script type = "text/javascript" src = "<tmpl_var name = pathToRoot />skriptoj/kapajxoj.js"></script> <!-- Requires “lingvoj.js”. -->
         <tmpl_if name = "isRightImage">
         <aside id = "rightImage" class = "needlang">
             <tmpl_var name = "rightImage" />

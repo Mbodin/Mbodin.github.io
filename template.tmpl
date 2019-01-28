@@ -77,7 +77,7 @@
         </tmpl_loop>
       </nav>
     </header>
-    <details id="messages">
+    <aside id="messages">
       <tmpl_if name="isRelocated">
       <tmpl_loop name="allLanguages">
       <div xml:lang="<tmpl_var name=lang />" lang="<tmpl_var name=lang />" id="relocation_<tmpl_var name=lang />" class="lang<tmpl_var name=lang />">
@@ -118,7 +118,7 @@
         <p class="message" xml:lang="<tmpl_var name=lang />" lang="<tmpl_var name=lang />" id="errorInSocial_<tmpl_var name=lang />"><tmpl_var name="errorInSocial" /></p>
         </tmpl_loop>
       </div>
-    </details>
+    </aside>
     <nav class="nolanguagedetected">
       <tmpl_loop name="allLanguages">
       <p xml:lang="<tmpl_var name=lang />" lang="<tmpl_var name=lang />" class="nolanguagedetected">

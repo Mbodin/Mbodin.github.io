@@ -1,5 +1,5 @@
 
-global.f := (λ x. throw (* This throws an error an break the control-flow. *)) ;
+global.f := (λ x. throw (* This throws an error and breaks the control-flow. *)) ;
 
 global.g := (λ x. run global.f x) ;
 

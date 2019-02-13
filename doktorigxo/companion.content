@@ -1143,6 +1143,7 @@ en
     <option value = "list_map">Applying a function through a list</option>
     <option value = "union_find_naive">A simple implementation of a union-find structure</option>
     <option value = "union_find">An optimised implementation of a union-find structure</option>
+    <option value = "arithmetic">An interpreter of arithmetical expressions</option>
     </select>
 fr
 eo

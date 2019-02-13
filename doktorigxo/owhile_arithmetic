@@ -1,0 +1,117 @@
+
+(* Definition of arithmetical expressions. *)
+
+global.new := (λ f.
+    return f {}) ;
+
+global.flag := {} ;
+global.flag.number := 0 ;
+global.flag.add := 1 ;
+global.flag.sub := 2 ;
+global.flag.mult := 3 ;
+global.flag.div := 4 ;
+global.flag.mod := 5 ;
+
+global.create := {} ;
+global.create.number := (λ n.
+    return global.new (λ o.
+        o.flag := global.flag.number ;
+        o.n := n ;
+        return o)) ;
+global.create.binary := (λ flag.
+    return (λ e1.
+        return (λ e2.
+            return global.new (λ o.
+                o.flag := flag ;
+                o.e1 := e1 ;
+                o.e2 := e2 ;
+                return o)))) ;
+global.create.add := global.create.binary global.flag.add ;
+global.create.sub := global.create.binary global.flag.sub ;
+global.create.mult := global.create.binary global.flag.mult ;
+global.create.div := global.create.binary global.flag.div ;
+global.create.mod := global.create.binary global.flag.mod ;
+
+(* Interpreter *)
+
+global.substract := (λ v1.
+    return (λ v2.
+        if (v2 = 0)
+            return v1
+            return global.substract (v1 + (-1)) (v2 + (-1)))) ;
+
+global.multiply := (λ v1.
+    return (λ v2.
+        if (v1 = 0)
+            return 0
+            return v2 + (global.multiply (v1 + (-1)) v2))) ;
+
+global.euclid := (λ v1.
+    return (λ v2.
+        if (v2 > v1)
+            return global.new (λ o.
+                o.q := 0 ;
+                o.r := v1 ;
+                return o)
+            return (λ o.
+                o.q := 1 + o.q ;
+                return o) (global.euclid (global.substract v1 v2) v2))) ;
+
+global.division := (λ v1.
+    return (λ v2.
+        return (global.euclid v1 v2).q)) ;
+
+global.modulo := (λ v1.
+    return (λ v2.
+        return (global.euclid v1 v2).r)) ;
+
+global.interpretBinary := (λ f.
+    return (λ e1.
+        return (λ e2.
+            return f (global.interpret e1) (global.interpret e2)))) ;
+
+global.getBinary := (λ f.
+    if (f = global.flag.add)
+        return (λ v1.
+            return (λ v2.
+                return v1 + v2))
+        if (f = global.flag.sub)
+            return global.substract
+            if (f = global.flag.mult)
+                return global.multiply
+                if (f = global.flag.div)
+                    return global.division
+                    if (f = global.flag.mod)
+                        return global.modulo
+                        throw) ;
+
+global.interpret := (λ e.
+    if (e.flag = global.flag.number)
+        return e.n
+        return global.interpretBinary (global.getBinary e.flag) e.e1 e.e2) ;
+
+
+(* Usage *)
+
+global.r1 := global.interpret (global.create.number 42) ;
+global.r2 := global.interpret (global.create.add (global.create.number 40) (global.create.number 2)) ;
+global.r3 := global.interpret (global.create.sub (global.create.number 50) (global.create.number 8)) ;
+global.r4 := global.interpret (global.create.mult (global.create.number 6) (global.create.number 7)) ;
+global.r5 :=
+    global.interpret
+        (global.create.mult
+            (global.create.mult
+                (global.create.mod
+                    (global.create.number 8)
+                    (global.create.number 3))
+                (global.create.add
+                    (global.create.div
+                        (global.create.number 9)
+                        (global.create.number 2))
+                    (global.create.number (-1))))
+            (global.create.add
+                (global.create.number 4)
+                (global.create.sub
+                    (global.create.number 5)
+                    (global.create.number 2))))
+

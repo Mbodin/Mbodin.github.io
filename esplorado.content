@@ -256,6 +256,28 @@ end
 
 item
 all
+FMfSS 2019
+description
+en
+	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, Tomás Diaz, and <a href = "https://pleiad.cl/people/etanter"><span class = "name">Éric Tanter</span></a>, <span class = "paperName">A Trustworthy Mechanized Formalization of R</span>, <span class = "journal">Formal Methods for Statistical Software (FMfSS)</span>, 2019.
+eo
+	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, Tomás Diaz, kaj <a href = "https://pleiad.cl/people/etanter"><span class = "name">Éric Tanter</span></a>, <span class = "paperName">A Trustworthy Mechanized Formalization of R</span>, <span class = "journal">Formal Methods for Statistical Software (FMfSS)</span>, 2019.
+fr
+	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, Tomás Diaz, et <a href = "https://pleiad.cl/people/etanter"><span class = "name">Éric Tanter</span></a>, <span class = "paperName">A Trustworthy Mechanized Formalization of R</span>, <span class = "journal">Formal Methods for Statistical Software (FMfSS)</span>, 2019.
+link
+en
+	<a href = "paperoj/fmfss19_slides.pdf">Slides</a>
+eo
+	<a href = "paperoj/fmfss19_slides.pdf">Diapozitivoj</a>
+fr
+	<a href = "paperoj/fmfss19_slides.pdf">Présentation</a>
+#link
+#all
+#	<!-- FIXME:  Add a BibTeX file. -->
+end
+
+item
+all
 CoqPL 2018
 description
 all

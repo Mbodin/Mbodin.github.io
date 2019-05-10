@@ -4,13 +4,14 @@
 global.new := (λ f.
     return f {}) ;
 
+(* Any identifier would have worked here: I could have used numbers instead of location, but locations are guaranteed to always be fresh. *)
 global.flag := {} ;
-global.flag.number := 0 ;
-global.flag.add := 1 ;
-global.flag.sub := 2 ;
-global.flag.mult := 3 ;
-global.flag.div := 4 ;
-global.flag.mod := 5 ;
+global.flag.number := {} ;
+global.flag.add := {} ;
+global.flag.sub := {} ;
+global.flag.mult := {} ;
+global.flag.div := {} ;
+global.flag.mod := {} ;
 
 global.create := {} ;
 global.create.number := (λ n.

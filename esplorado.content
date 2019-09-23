@@ -593,3 +593,40 @@ end
 #	<a href = "L3/stage/slides.pdf">Présentation</a>
 #end
 
+section
+sectionName
+aliaĵoj
+en
+Miscellaneous
+eo
+Aliaĵoj
+fr
+Autres
+end
+
+item
+all
+Verified Software Workshop 2019
+description
+en
+    Poster for the <a href = "https://vetss.org.uk/verified-software-workshop-programme/">Verified Software Workshop</a>, 2019.
+eo
+    Afiŝprelego por la <a href = "https://vetss.org.uk/verified-software-workshop-programme/">Verified Software Workshop</a> en 2019.
+fr
+    Poster pour le <a href = "https://vetss.org.uk/verified-software-workshop-programme/">Verified Software Workshop</a> de 2019.
+link
+en
+	<a href = "esplorado/Verified-Software-Workshop-2019.pdf">Poster</a>
+eo
+	<a href = "esplorado/Verified-Software-Workshop-2019.pdf">Afiŝo</a>
+fr
+	<a href = "esplorado/Verified-Software-Workshop-2019.pdf">Poster</a>
+link
+en
+	<a href = "esplorado/Verified-Software-Workshop-2019.tar.bz2">Sources</a>
+eo
+	<a href = "esplorado/Verified-Software-Workshop-2019.tar.bz2">Fontoj</a>
+fr
+	<a href = "esplorado/Verified-Software-Workshop-2019.tar.bz2">Sources</a>
+end
+

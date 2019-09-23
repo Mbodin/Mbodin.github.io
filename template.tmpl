@@ -137,10 +137,10 @@
 
         declarePassingArgument ("pedanticJS")
 
-        var pedanticJS = true;
+        var pedanticJS = false;
 
         getURLAttribute ("pedanticJS", function (p){
-                if (p === "no") pedanticJS = false
+                if (p === "yes") pedanticJS = true
             })
 
         if (pedanticJS){

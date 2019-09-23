@@ -26,7 +26,7 @@ description
 en
     I am currently working on a formalism called skeletons to represent the semantics of real-world language, and get as much properties as possible certified in the <a href = "http://coq.inria.fr"><span class = "name">Coq</span> proof assistant</a>.
 eo
-    Mi nun laboras pri formalismo (kiu nomiĝas skeleton) por reprezenti la semantikon de vervivaj programlingvaĵoj, kaj ricevi la plej multe da ecoj pruvitaj en <a href = "http://coq.inria.fr">la <span class = "name">Coq</span> pruvilo</a>.
+    Mi nun laboras pri formalismo (kiu nomiĝas ostaron) por reprezenti la semantikon de vervivaj programlingvaĵoj, kaj ricevi la plej multe da ecoj pruvitaj en <a href = "http://coq.inria.fr">la <span class = "name">Coq</span> pruvilo</a>.
 fr
     Je travaille actuellement sur un formalisme appelé squelette représentant la sémantique de langages de programmation complexes, tout en obtenant autant de propriétés que possibles certifiées dans <a href = "http://coq.inria.fr">l’assistant de preuve <span class = "name">Coq</span></a>.
 end

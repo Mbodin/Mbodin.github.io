@@ -6,6 +6,16 @@ function createStyles (styles){
 			}, false, "")
 }
 
+function framadsenseSocial (lang){
+	var ad = document.createElement ("script")
+	ad.setAttribute ("data-sense3", "728x90;;#eeeeec,#5c3566,#2e3436,#75507b,#5c3566,#babdb6;;" + lang)
+	ad.setAttribute ("src", "https://sense.framasoft.org/sense3.js")
+
+    applyNode ("ad-social", function (p){
+            p.appendChild (ad)
+        })
+}
+
 function googleSocial (lang, addr){
 	if (addr !== "")
 		applyNode ("g-social", function (d){
@@ -278,6 +288,7 @@ function performsSocial (lang){
 
 	var allFunctions = [
 			["TogetherJS", togetherJSSocial],
+			["Framadsense", framadsenseSocial],
 			["Lernu", lernuSocial],
 			["Hacker", hackerSocial],
 			["Mastodon", mastodonSocial],

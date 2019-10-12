@@ -56,7 +56,7 @@
 	add_image ("chevalier", 3, false)
 	add_image ("Coliseum", 1, false)
 	add_image ("gangster", 1, false)
-	add_image ("Giverny", 8, true)
+	add_image ("Giverny", 2, true)
 	add_image ("Grenoble", 1, false)
 	add_image ("impro", 3, false)
 	add_image ("Maastricht", 5, false)
@@ -64,10 +64,15 @@
 	add_image ("MJ", 2, false)
 	add_image ("narrateur", 1, false)
 	add_image ("pirate", 1, false)
-	add_image ("Rome", 10, true)
-	add_image ("San_Diego", 5, true)
-	add_image ("台北", 5, true)
-	add_image ("垦丁", 2, true)
+	add_image ("Rome", 8, true)
+	add_image ("San_Diego", 1, true)
+	add_image ("台北", 4, true)
+	add_image ("垦丁", 2, false)
+	add_image ("Cambridge", 7, true)
+	add_image ("London", 8, true)
+	add_image ("Valdivia", 4, false)
+	add_image ("lac", 4, true)
+	add_image ("montagne", 1, false)
 
     var updateMyImage
 
@@ -100,7 +105,7 @@
 
     if (updateMyImage)
         setInterval (updateMyImage (true), 20000)
-    else /* The image has been removed, highly probably because of the language interaction. */
+    else /* The image has been removed, high probably because of the language interaction. */
         addLanguageFunction (function (){
                 if (!updateMyImage)
                     applyNode ("imageOfMe", update_image)

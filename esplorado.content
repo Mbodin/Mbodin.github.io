@@ -62,9 +62,9 @@ link
 en
 	<a href = "esplorado/popl19.pdf">Full text</a>
 eo
-	<a href = "esplorado/popl19.pdf">Papero</a>
+	<a href = "esplorado/popl19.pdf">Artikolo</a>
 fr
-	<a href = "esplorado/popl19.pdf">Papier</a>
+	<a href = "esplorado/popl19.pdf">Article</a>
 link
 en
 	<a href = "https://gitlab.inria.fr/skeletons/Coq/tree/POPL2019"><span class = "name">Coq</span> material</a>
@@ -86,6 +86,9 @@ eo
 	<a href = "https://www.youtube.com/watch?v=h2Nk7dmj6Hg">Registrita prelego</a>
 fr
 	<a href = "https://www.youtube.com/watch?v=h2Nk7dmj6Hg">Capture vidéo de la présentation</a>
+link
+fr
+	<a href = "esplorado/résumé_popl19.pdf">Résumé en français de l’article</a>
 #link
 #all
 #	<!-- FIXME:  Add a BibTeX file. -->
@@ -105,9 +108,9 @@ link
 en
 	<a href = "esplorado/dls18.pdf">Full text</a>
 eo
-	<a href = "esplorado/dls18.pdf">Papero</a>
+	<a href = "esplorado/dls18.pdf">Artikolo</a>
 fr
-	<a href = "esplorado/dls18.pdf">Papier</a>
+	<a href = "esplorado/dls18.pdf">Article</a>
 link
 en
 	<a href = "esplorado/dls18_slides.pdf">Slides</a>
@@ -126,9 +129,9 @@ link
 en
 	<a href = "esplorado/dls18.tar.bz2">Paper sources</a>
 eo
-	<a href = "esplorado/dls18.tar.bz2">Paperfontoj</a>
+	<a href = "esplorado/dls18.tar.bz2">Artikolfontoj</a>
 fr
-	<a href = "esplorado/dls18.tar.bz2">Sources du papier</a>
+	<a href = "esplorado/dls18.tar.bz2">Sources de l’article</a>
 link
 en
 	<a href = "esplorado/dls18_slides.tar.bz2">Slides sources</a>
@@ -136,6 +139,9 @@ eo
 	<a href = "esplorado/dls18_slides.tar.bz2">Diapozitivfontoj</a>
 fr
 	<a href = "esplorado/dls18_slides.tar.bz2">Sources de la présentation</a>
+link
+fr
+	<a href = "esplorado/résumé_dls18.pdf">Résumé en français de l’article</a>
 #link
 #all
 #	<!-- FIXME:  Add a BibTeX file. -->
@@ -155,9 +161,9 @@ link
 en
 	<a href = "esplorado/cpp15.pdf">Full text</a>
 eo
-	<a href = "esplorado/cpp15.pdf">Papero</a>
+	<a href = "esplorado/cpp15.pdf">Artikolo</a>
 fr
-	<a href = "esplorado/cpp15.pdf">Papier</a>
+	<a href = "esplorado/cpp15.pdf">Article</a>
 link
 en
 	<a href = "esplorado/cpp15_slides.pdf">Slides</a>
@@ -198,9 +204,9 @@ link
 en
 	<a href = "esplorado/popl14.pdf">Full text</a>
 eo
-	<a href = "esplorado/popl14.pdf">Papero</a>
+	<a href = "esplorado/popl14.pdf">Artikolo</a>
 fr
-	<a href = "esplorado/popl14.pdf">Papier</a>
+	<a href = "esplorado/popl14.pdf">Article</a>
 link
 en
 	<a href = "http://jscert.org">Website</a>
@@ -208,6 +214,9 @@ eo
 	<a href = "http://jscert.org">Kunretejo</a>
 fr
 	<a href = "http://jscert.org">Site web</a>
+link
+fr
+	<a href = "esplorado/résumé_popl14.pdf">Résumé en français de l’article</a>
 #link
 #all
 #	<!-- FIXME:  Add a BibTeX file. -->
@@ -227,9 +236,9 @@ link
 en
 	<a href = "esplorado/itp13.pdf">Full text</a>
 eo
-	<a href = "esplorado/itp13.pdf">Papero</a>
+	<a href = "esplorado/itp13.pdf">Artikolo</a>
 fr
-	<a href = "esplorado/itp13.pdf">Papier</a>
+	<a href = "esplorado/itp13.pdf">Article</a>
 link
 en
 	<a href = "esplorado/itp13_slides.pdf">Slides</a>
@@ -256,9 +265,9 @@ link
 en
 	<a href = "esplorado/aplas11.pdf">Full text</a>
 eo
-	<a href = "esplorado/aplas11.pdf">Papero</a>
+	<a href = "esplorado/aplas11.pdf">Artikolo</a>
 fr
-	<a href = "esplorado/aplas11.pdf">Papier</a>
+	<a href = "esplorado/aplas11.pdf">Article</a>
 link
 en
 	<a href = "esplorado/aplas11_slides.pdf">Slides</a>
@@ -321,9 +330,9 @@ link
 en
 	<a href = "esplorado/coqpl18.pdf">Full text</a>
 eo
-	<a href = "esplorado/coqpl18.pdf">Papero</a>
+	<a href = "esplorado/coqpl18.pdf">Artikolo</a>
 fr
-	<a href = "esplorado/coqpl18.pdf">Papier</a>
+	<a href = "esplorado/coqpl18.pdf">Article</a>
 link
 en
 	<a href = "esplorado/coqpl18_slides.pdf">Slides</a>
@@ -350,9 +359,9 @@ link
 en
 	<a href = "esplorado/jfla16.pdf">Full text</a>
 eo
-	<a href = "esplorado/jfla16.pdf">Papero</a>
+	<a href = "esplorado/jfla16.pdf">Artikolo</a>
 fr
-	<a href = "esplorado/jfla16.pdf">Papier</a>
+	<a href = "esplorado/jfla16.pdf">Article</a>
 link
 en
 	<a href = "esplorado/jfla16_slides.pdf">Slides</a>
@@ -386,9 +395,9 @@ link
 en
 	<a href = "esplorado/jfla14.pdf">Full text</a>
 eo
-	<a href = "esplorado/jfla14.pdf">Papero</a>
+	<a href = "esplorado/jfla14.pdf">Artikolo</a>
 fr
-	<a href = "esplorado/jfla14.pdf">Papier</a>
+	<a href = "esplorado/jfla14.pdf">Article</a>
 link
 en
 	<a href = "esplorado/jfla14_slides.pdf">Slides</a>
@@ -419,9 +428,9 @@ link
 en
 	<a href = "esplorado/Festschrift_Schmidt.pdf">Full text</a>
 eo
-	<a href = "esplorado/Festschrift_Schmidt.pdf">Papero</a>
+	<a href = "esplorado/Festschrift_Schmidt.pdf">Artikolo</a>
 fr
-	<a href = "esplorado/Festschrift_Schmidt.pdf">Papier</a>
+	<a href = "esplorado/Festschrift_Schmidt.pdf">Article</a>
 end
 
 item
@@ -438,9 +447,9 @@ link
 en
 	<a href = "esplorado/jfla13.pdf">Full text</a>
 eo
-	<a href = "esplorado/jfla13.pdf">Papero</a>
+	<a href = "esplorado/jfla13.pdf">Artikolo</a>
 fr
-	<a href = "esplorado/jfla13.pdf">Papier</a>
+	<a href = "esplorado/jfla13.pdf">Article</a>
 link
 en
 	<a href = "esplorado/jfla13_slides.pdf">Slides</a>

@@ -87,6 +87,14 @@ eo
 fr
 	<a href = "https://www.youtube.com/watch?v=h2Nk7dmj6Hg">Capture vidéo de la présentation</a>
 link
+en
+	<a href = "esplorado/popl19.tar.bz2">Paper sources</a>
+eo
+	<a href = "esplorado/popl19.tar.bz2">Artikolfontoj</a>
+fr
+	<a href = "esplorado/popl19.tar.bz2">Sources de l’article</a>
+link
+all
 fr
 	<a href = "esplorado/résumé_popl19.pdf">Résumé en français de l’article</a>
 #link
@@ -140,6 +148,7 @@ eo
 fr
 	<a href = "esplorado/dls18_slides.tar.bz2">Sources de la présentation</a>
 link
+all
 fr
 	<a href = "esplorado/résumé_dls18.pdf">Résumé en français de l’article</a>
 #link
@@ -180,6 +189,13 @@ fr
 	<a href = "http://ajacs.inria.fr/coq/cpp2015/">Fichers <span class = "name">Coq</span></a>
 link
 en
+	<a href = "esplorado/cpp15.tar.bz2">Paper sources</a>
+eo
+	<a href = "esplorado/cpp15.tar.bz2">Artikolfontoj</a>
+fr
+	<a href = "esplorado/cpp15.tar.bz2">Sources de l’article</a>
+link
+en
 	<a href = "esplorado/cpp15_slides.tar.bz2">Slides sources</a>
 eo
 	<a href = "esplorado/cpp15_slides.tar.bz2">Diapozitivfontoj</a>
@@ -215,8 +231,16 @@ eo
 fr
 	<a href = "http://jscert.org">Site web</a>
 link
+all
 fr
 	<a href = "esplorado/résumé_popl14.pdf">Résumé en français de l’article</a>
+link
+en
+	<a href = "http://jscert.org/popl14/">Slides</a>
+eo
+	<a href = "http://jscert.org/popl14/">Diapozitivoj</a>
+fr
+	<a href = "http://jscert.org/popl14/">Présentation</a>
 #link
 #all
 #	<!-- FIXME:  Add a BibTeX file. -->
@@ -369,6 +393,13 @@ eo
 	<a href = "esplorado/jfla16_slides.pdf">Diapozitivoj</a>
 fr
 	<a href = "esplorado/jfla16_slides.pdf">Présentation</a>
+link
+en
+	<a href = "esplorado/jfla16.tar.bz2">Paper sources</a>
+eo
+	<a href = "esplorado/jfla16.tar.bz2">Artikolfontoj</a>
+fr
+	<a href = "esplorado/jfla16.tar.bz2">Sources de l’article</a>
 link
 en
 	<a href = "esplorado/jfla16_slides.tar.bz2">Slides sources</a>

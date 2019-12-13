@@ -283,11 +283,11 @@ all
 APLAS 2011
 description
 en
-	<a href = "http://www-verimag.imag.fr/~monniaux/"><span class = "name">David Monniaux</span></a> and <a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <span class = "paperName">Modular Abstractions of Reactive Nodes using Disjunctive Invariants</span>, <span class = "journal">Programming Languages and Systems (APLAS)</span>, 2011.
+	<a href = "http://www-verimag.imag.fr/~monniaux/"><span class = "name">David Monniaux</span></a> and <a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <span class = "paperName">Modular Abstractions of Reactive Nodes using Disjunctive Invariants</span>, <span class = "journal">Asian Symposium on Programming Languages and Systems (APLAS)</span>, 2011.
 eo
-	<a href = "http://www-verimag.imag.fr/~monniaux/"><span class = "name">David Monniaux</span></a> kaj <a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <span class = "paperName">Modular Abstractions of Reactive Nodes using Disjunctive Invariants</span>, <span class = "journal">Programming Languages and Systems (APLAS)</span>, 2011.
+	<a href = "http://www-verimag.imag.fr/~monniaux/"><span class = "name">David Monniaux</span></a> kaj <a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <span class = "paperName">Modular Abstractions of Reactive Nodes using Disjunctive Invariants</span>, <span class = "journal">Asian Symposium on Programming Languages and Systems (APLAS)</span>, 2011.
 fr
-	<a href = "http://www-verimag.imag.fr/~monniaux/"><span class = "name">David Monniaux</span></a> et <a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <span class = "paperName">Modular Abstractions of Reactive Nodes using Disjunctive Invariants</span>, <span class = "journal">Programming Languages and Systems (APLAS)</span>, 2011.
+	<a href = "http://www-verimag.imag.fr/~monniaux/"><span class = "name">David Monniaux</span></a> et <a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <span class = "paperName">Modular Abstractions of Reactive Nodes using Disjunctive Invariants</span>, <span class = "journal">Asian Symposium on Programming Languages and Systems (APLAS)</span>, 2011.
 link
 en
 	<a href = "esplorado/aplas11.pdf">Full text</a>
@@ -446,18 +446,18 @@ end
 
 item
 en
-Festschrift of David Schmidt
+Festschrift for David Schmidt
 eo
 Festverkaĵaro al David Schmidt
 fr
 Festschrift pour David Schmidt
 description
 en
-	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, and <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)</span>, <span class = "journal">Festschrift of David Schmidt</span>, 2013.
+	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, and <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)</span>, <span class = "journal">Festschrift for David Schmidt</span>, 2013.
 eo
-	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, kaj <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)</span>, <span class = "journal">Festschrift of David Schmidt</span>, 2013.
+	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, kaj <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)</span>, <span class = "journal">Festschrift for David Schmidt</span>, 2013.
 fr
-	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, et <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)</span>, <span class = "journal">Festschrift of David Schmidt</span>, 2013.
+	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, et <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)</span>, <span class = "journal">Festschrift for David Schmidt</span>, 2013.
 link
 en
 	<a href = "esplorado/Festschrift_Schmidt.pdf">Full text</a>

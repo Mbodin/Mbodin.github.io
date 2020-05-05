@@ -51,85 +51,86 @@ fr
 Publications
 end
 
-# TODO
-# article
-# conference
-# POPL
-# year
-# 2019
-# name
-# Skeletal Semantics and Their Interpretations
-# author
-# <a href = "index.html" class = "internalLink">Martin Bodin</a>
-# author
-# <a href = "https://www.doc.ic.ac.uk/~pg/">Philippa Gardner</a>
-# author
-# TODO
-# doi
-# 10.1145/3290357
-# end
-
-# description
-# en
-# 	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "https://www.doc.ic.ac.uk/~pg/"><span class = "name">Philippa Gardner</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, and <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Skeletal Semantics and Their Interpretations</span>, <span class = "journal">Symposium on Principles of Programming Languages (POPL)</span>, 2019, DOI: <a href = "https://doi.org/10.1145/3290357">10.1145/3290357</a>.
-# eo
-# 	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "https://www.doc.ic.ac.uk/~pg/"><span class = "name">Philippa Gardner</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, kaj <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Skeletal Semantics and Their Interpretations</span>, <span class = "journal">Symposium on Principles of Programming Languages (POPL)</span>, 2019, DOI: <a href = "https://doi.org/10.1145/3290357">10.1145/3290357</a>.
-# fr
-# 	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "https://www.doc.ic.ac.uk/~pg/"><span class = "name">Philippa Gardner</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, et <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Skeletal Semantics and Their Interpretations</span>, <span class = "journal">Symposium on Principles of Programming Languages (POPL)</span>, 2019, DOI : <a href = "https://doi.org/10.1145/3290357">10.1145/3290357</a>.
-# link
-# en
-# 	<a href = "esplorado/popl19.pdf">Full text</a>
-# eo
-# 	<a href = "esplorado/popl19.pdf">Artikolo</a>
-# fr
-# 	<a href = "esplorado/popl19.pdf">Article</a>
-# link
-# en
-# 	<a href = "https://gitlab.inria.fr/skeletons/Coq/tree/POPL2019"><span class = "name">Coq</span> material</a>
-# eo
-# 	<a href = "https://gitlab.inria.fr/skeletons/Coq/tree/POPL2019"><span class = "name">Coq</span>aj dosieroj</a>
-# fr
-# 	<a href = "https://gitlab.inria.fr/skeletons/Coq/tree/POPL2019">Fichers <span class = "name">Coq</span></a>
-# link
-# en
-# 	<a href = "http://skeletons.inria.fr/popl2019/index.html">Companion website</a>
-# eo
-# 	<a href = "http://skeletons.inria.fr/popl2019/index.html">Kunretejo</a>
-# fr
-# 	<a href = "http://skeletons.inria.fr/popl2019/index.html">Site associé</a>
-# link
-# en
-# 	<a href = "https://www.youtube.com/watch?v=h2Nk7dmj6Hg">Recorded presentation</a>
-# eo
-# 	<a href = "https://www.youtube.com/watch?v=h2Nk7dmj6Hg">Registrita prelego</a>
-# fr
-# 	<a href = "https://www.youtube.com/watch?v=h2Nk7dmj6Hg">Capture vidéo de la présentation</a>
-# link
-# en
-# 	<a href = "esplorado/popl19.tar.bz2">Paper sources</a>
-# eo
-# 	<a href = "esplorado/popl19.tar.bz2">Artikolfontoj</a>
-# fr
-# 	<a href = "esplorado/popl19.tar.bz2">Sources de l’article</a>
-# link
-# all
-# fr
-# 	<a href = "esplorado/résumé_popl19.pdf">Résumé en français de l’article</a>
-# #link
-# #all
-# #	<!-- FIXME:  Add a BibTeX file. -->
-# end
-
-item
-all
-DLS 2018
-description
+article
+conference
+POPL
+conferenceLong
+Symposium on Principles of Programming Languages
+year
+2019
+name
+Skeletal Semantics and Their Interpretations
+author
+<a href = "index.html" class = "internalLink">Martin Bodin</a>
+author
+<a href = "https://www.doc.ic.ac.uk/~pg/">Philippa Gardner</a>
+author
+<a href = "http://www.irisa.fr/lande/jensen/">Thomas Jensen</a>
+author
+<a href = "http://www.irisa.fr/celtique/aschmitt/">Alan Schmitt</a>
+doi
+10.1145/3290357
+link
 en
-	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, Tomás Diaz, and <a href = "https://pleiad.cl/people/etanter"><span class = "name">Éric Tanter</span></a>, <span class = "paperName">A Trustworthy Mechanized Formalization of R</span>, <span class = "journal">Dynamic Languages Symposium (DLS)</span>, 2018, DOI: <a href = "https://doi.org/10.1145/3276945.3276946">10.1145/3276945.3276946</a>.
+	<a href = "esplorado/popl19.pdf">Full text</a>
 eo
-	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, Tomás Diaz, kaj <a href = "https://pleiad.cl/people/etanter"><span class = "name">Éric Tanter</span></a>, <span class = "paperName">A Trustworthy Mechanized Formalization of R</span>, <span class = "journal">Dynamic Languages Symposium (DLS)</span>, 2018, DOI: <a href = "https://doi.org/10.1145/3276945.3276946">10.1145/3276945.3276946</a>.
+	<a href = "esplorado/popl19.pdf">Artikolo</a>
 fr
-	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, Tomás Diaz, et <a href = "https://pleiad.cl/people/etanter"><span class = "name">Éric Tanter</span></a>, <span class = "paperName">A Trustworthy Mechanized Formalization of R</span>, <span class = "journal">Dynamic Languages Symposium (DLS)</span>, 2018, DOI : <a href = "https://doi.org/10.1145/3276945.3276946">10.1145/3276945.3276946</a>.
+	<a href = "esplorado/popl19.pdf">Article</a>
+link
+en
+	<a href = "https://gitlab.inria.fr/skeletons/Coq/tree/POPL2019"><span class = "name">Coq</span> material</a>
+eo
+	<a href = "https://gitlab.inria.fr/skeletons/Coq/tree/POPL2019"><span class = "name">Coq</span>aj dosieroj</a>
+fr
+	<a href = "https://gitlab.inria.fr/skeletons/Coq/tree/POPL2019">Fichers <span class = "name">Coq</span></a>
+link
+en
+	<a href = "http://skeletons.inria.fr/popl2019/index.html">Companion website</a>
+eo
+	<a href = "http://skeletons.inria.fr/popl2019/index.html">Kunretejo</a>
+fr
+	<a href = "http://skeletons.inria.fr/popl2019/index.html">Site associé</a>
+link
+en
+	<a href = "https://www.youtube.com/watch?v=h2Nk7dmj6Hg">Recorded presentation</a>
+eo
+	<a href = "https://www.youtube.com/watch?v=h2Nk7dmj6Hg">Registrita prelego</a>
+fr
+	<a href = "https://www.youtube.com/watch?v=h2Nk7dmj6Hg">Capture vidéo de la présentation</a>
+link
+en
+	<a href = "esplorado/popl19.tar.bz2">Paper sources</a>
+eo
+	<a href = "esplorado/popl19.tar.bz2">Artikolfontoj</a>
+fr
+	<a href = "esplorado/popl19.tar.bz2">Sources de l’article</a>
+link
+all
+fr
+	<a href = "esplorado/résumé_popl19.pdf">Résumé en français de l’article</a>
+#link
+#all
+#	<!-- FIXME:  Add a BibTeX file. -->
+end
+
+article
+conference
+DLS
+conferenceLong
+Dynamic Languages Symposium
+year
+2018
+name
+A Trustworthy Mechanized Formalization of R
+author
+<a href = "index.html" class = "internalLink">Martin Bodin</a>
+author
+Tomás Diaz
+author
+<a href = "https://pleiad.cl/people/etanter">Éric Tanter</a>
+doi
+10.1145/3276945.3276946
 link
 en
 	<a href = "esplorado/dls18.pdf">Full text</a>
@@ -174,16 +175,23 @@ fr
 #	<!-- FIXME:  Add a BibTeX file. -->
 end
 
-item
-all
-CPP 2015
-description
-en
-	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, and <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Certified Abstract Interpretation with Pretty-Big-Step Semantics</span>, <span class = "journal">Certified Programs and Proofs (CPP)</span>, 2015, DOI: <a href = "https://doi.org/10.1145/2676724.2693174">10.1145/2676724.2693174</a>.
-eo
-	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, kaj <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Certified Abstract Interpretation with Pretty-Big-Step Semantics</span>, <span class = "journal">Certified Programs and Proofs (CPP)</span>, 2015, DOI: <a href = "https://doi.org/10.1145/2676724.2693174">10.1145/2676724.2693174</a>.
-fr
-	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, et <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Certified Abstract Interpretation with Pretty-Big-Step Semantics</span>, <span class = "journal">Certified Programs and Proofs (CPP)</span>, 2015, DOI : <a href = "https://doi.org/10.1145/2676724.2693174">10.1145/2676724.2693174</a>.
+article
+conference
+CPP
+conferenceLong
+Certified Programs and Proofs
+year
+2015
+name
+Certified Abstract Interpretation with Pretty-Big-Step Semantics
+author
+<a href = "index.html" class = "internalLink">Martin Bodin</a>
+author
+<a href = "http://www.irisa.fr/lande/jensen/">Thomas Jensen</a>
+author
+<a href = "http://www.irisa.fr/celtique/aschmitt/">Alan Schmitt</a>
+doi
+10.1145/2676724.2693174
 link
 en
 	<a href = "esplorado/cpp15.pdf">Full text</a>
@@ -224,16 +232,33 @@ fr
 #	<!-- FIXME:  Add a BibTeX file. -->
 end
 
-item
-all
-POPL 2014
-description
-en
-	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.chargueraud.org/"><span class = "name">Arthur Charguéraud</span></a>, <a href = "http://dfilaretti.github.io/"><span class = "name">Daniele Filaretti</span></a>, <a href = "https://www.doc.ic.ac.uk/~pg/"><span class = "name">Philippa Gardner</span></a>, <a href = "http://www.doc.ic.ac.uk/~maffeis/"><span class = "name">Sergio Maffeis</span></a>, <a href = "http://www.doc.ic.ac.uk/~dn911/"><span class = "name">Daiva Naudžiūnienė</span></a>, <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, and <a href = "http://www.totherme.org/"><span class = "name">Gareth Smith</span></a>, <span class = "paperName">A Trusted Mechanised <span class = "name">JavaScript</span> Specification</span>, <span class = "journal">Symposium on Principles of Programming Languages (POPL)</span>, 2014, DOI: <a href = "https://doi.org/10.1145/2578855.2535876">10.1145/2578855.2535876</a>.
-eo
-	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.chargueraud.org/"><span class = "name">Arthur Charguéraud</span></a>, <a href = "http://dfilaretti.github.io/"><span class = "name">Daniele Filaretti</span></a>, <a href = "https://www.doc.ic.ac.uk/~pg/"><span class = "name">Philippa Gardner</span></a>, <a href = "http://www.doc.ic.ac.uk/~maffeis/"><span class = "name">Sergio Maffeis</span></a>, <a href = "http://www.doc.ic.ac.uk/~dn911/"><span class = "name">Daiva Naudžiūnienė</span></a>, <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, kaj <a href = "http://www.totherme.org/"><span class = "name">Gareth Smith</span></a>, <span class = "paperName">A Trusted Mechanised <span class = "name">JavaScript</span> Specification</span>, <span class = "journal">Symposium on Principles of Programming Languages (POPL)</span>, 2014, DOI: <a href = "https://doi.org/10.1145/2578855.2535876">10.1145/2578855.2535876</a>.
-fr
-	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.chargueraud.org/"><span class = "name">Arthur Charguéraud</span></a>, <a href = "http://dfilaretti.github.io/"><span class = "name">Daniele Filaretti</span></a>, <a href = "https://www.doc.ic.ac.uk/~pg/"><span class = "name">Philippa Gardner</span></a>, <a href = "http://www.doc.ic.ac.uk/~maffeis/"><span class = "name">Sergio Maffeis</span></a>, <a href = "http://www.doc.ic.ac.uk/~dn911/"><span class = "name">Daiva Naudžiūnienė</span></a>, <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, et <a href = "http://www.totherme.org/"><span class = "name">Gareth Smith</span></a>, <span class = "paperName">A Trusted Mechanised <span class = "name">JavaScript</span> Specification</span>, <span class = "journal">Symposium on Principles of Programming Languages (POPL)</span>, 2014, DOI : <a href = "https://doi.org/10.1145/2578855.2535876">10.1145/2578855.2535876</a>.
+article
+conference
+POPL
+conferenceLong
+Symposium on Principles of Programming Languages
+year
+2014
+name
+A Trusted Mechanised <span class = "name">JavaScript</span> Specification
+author
+<a href = "index.html" class = "internalLink">Martin Bodin</a>
+author
+<a href = "http://www.chargueraud.org/">Arthur Charguéraud</a>
+author
+<a href = "http://dfilaretti.github.io/">Daniele Filaretti</a>
+author
+<a href = "https://www.doc.ic.ac.uk/~pg/">Philippa Gardner</a>
+author
+<a href = "http://www.doc.ic.ac.uk/~maffeis/">Sergio Maffeis</a>
+author
+<a href = "http://www.doc.ic.ac.uk/~dn911/">Daiva Naudžiūnienė</a>
+author
+<a href = "http://www.irisa.fr/celtique/aschmitt/">Alan Schmitt</a>
+author
+<a href = "http://www.totherme.org/">Gareth Smith</a>
+doi
+10.1145/2578855.2535876
 link
 en
 	<a href = "esplorado/popl14.pdf">Full text</a>
@@ -264,16 +289,21 @@ fr
 #	<!-- FIXME:  Add a BibTeX file. -->
 end
 
-item
-all
-ITP 2013
-description
-en
-	<a href = "http://joerg.endrullis.de/"><span class = "name">Jörg Endrullis</span></a>, <a href = "http://www.cs.vu.nl/~diem/"><span class = "name">Dimitri Hendriks</span></a>, and <a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <span class = "paperName">Circular Coinduction in Coq Using Bisimulation-Up-To Techniques</span>, <span class = "journal">Interactive Theorem Proving (ITP)</span>, 2013.
-eo
-	<a href = "http://joerg.endrullis.de/"><span class = "name">Jörg Endrullis</span></a>, <a href = "http://www.cs.vu.nl/~diem/"><span class = "name">Dimitri Hendriks</span></a>, kaj <a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <span class = "paperName">Circular Coinduction in Coq Using Bisimulation-Up-To Techniques</span>, <span class = "journal">Interactive Theorem Proving (ITP)</span>, 2013.
-fr
-	<a href = "http://joerg.endrullis.de/"><span class = "name">Jörg Endrullis</span></a>, <a href = "http://www.cs.vu.nl/~diem/"><span class = "name">Dimitri Hendriks</span></a>, et <a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <span class = "paperName">Circular Coinduction in Coq Using Bisimulation-Up-To Techniques</span>, <span class = "journal">Interactive Theorem Proving (ITP)</span>, 2013.
+article
+conference
+ITP
+conferenceLong
+Interactive Theorem Proving
+year
+2013
+name
+Circular Coinduction in Coq Using Bisimulation-Up-To Techniques
+author
+<a href = "http://joerg.endrullis.de/">Jörg Endrullis</a>
+author
+<a href = "http://www.cs.vu.nl/~diem/">Dimitri Hendriks</a>
+author
+<a href = "index.html" class = "internalLink">Martin Bodin</a>
 link
 en
 	<a href = "esplorado/itp13.pdf">Full text</a>
@@ -293,16 +323,19 @@ fr
 #	<!-- FIXME:  Add a BibTeX file. -->
 end
 
-item
-all
-APLAS 2011
-description
-en
-	<a href = "http://www-verimag.imag.fr/~monniaux/"><span class = "name">David Monniaux</span></a> and <a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <span class = "paperName">Modular Abstractions of Reactive Nodes using Disjunctive Invariants</span>, <span class = "journal">Asian Symposium on Programming Languages and Systems (APLAS)</span>, 2011.
-eo
-	<a href = "http://www-verimag.imag.fr/~monniaux/"><span class = "name">David Monniaux</span></a> kaj <a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <span class = "paperName">Modular Abstractions of Reactive Nodes using Disjunctive Invariants</span>, <span class = "journal">Asian Symposium on Programming Languages and Systems (APLAS)</span>, 2011.
-fr
-	<a href = "http://www-verimag.imag.fr/~monniaux/"><span class = "name">David Monniaux</span></a> et <a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <span class = "paperName">Modular Abstractions of Reactive Nodes using Disjunctive Invariants</span>, <span class = "journal">Asian Symposium on Programming Languages and Systems (APLAS)</span>, 2011.
+article
+conference
+APLAS
+conferenceLong
+Asian Symposium on Programming Languages and Systems
+year
+2011
+name
+Modular Abstractions of Reactive Nodes using Disjunctive Invariants
+author
+<a href = "http://www-verimag.imag.fr/~monniaux/">David Monniaux</a>
+author
+<a href = "index.html" class = "internalLink">Martin Bodin</a>
 link
 en
 	<a href = "esplorado/aplas11.pdf">Full text</a>
@@ -333,16 +366,21 @@ fr
 Colloques
 end
 
-item
-all
-FMfSS 2019
-description
-en
-	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, Tomás Diaz, and <a href = "https://pleiad.cl/people/etanter"><span class = "name">Éric Tanter</span></a>, <span class = "paperName">A Trustworthy Mechanized Formalization of R</span>, <span class = "journal">Formal Methods for Statistical Software (FMfSS)</span>, 2019.
-eo
-	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, Tomás Diaz, kaj <a href = "https://pleiad.cl/people/etanter"><span class = "name">Éric Tanter</span></a>, <span class = "paperName">A Trustworthy Mechanized Formalization of R</span>, <span class = "journal">Formal Methods for Statistical Software (FMfSS)</span>, 2019.
-fr
-	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, Tomás Diaz, et <a href = "https://pleiad.cl/people/etanter"><span class = "name">Éric Tanter</span></a>, <span class = "paperName">A Trustworthy Mechanized Formalization of R</span>, <span class = "journal">Formal Methods for Statistical Software (FMfSS)</span>, 2019.
+article
+conference
+FMfSS
+conferenceLong
+Formal Methods for Statistical Software
+year
+2019
+name
+A Trustworthy Mechanized Formalization of R
+author
+<a href = "index.html" class = "internalLink">Martin Bodin</a>
+author
+Tomás Diaz
+author
+<a href = "https://pleiad.cl/people/etanter">Éric Tanter</a>
 link
 en
 	<a href = "esplorado/fmfss19_slides.pdf">Slides</a>
@@ -362,12 +400,15 @@ fr
 #	<!-- FIXME:  Add a BibTeX file. -->
 end
 
-item
-all
-CoqPL 2018
-description
-all
-	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <span class = "paperName">A <span class = "name">Coq</span> Formalisation of a Core of <span class = "name">R</span></span>, <span class = "journal">CoqPL</span>, 2018.
+article
+conference
+CoqPL
+year
+2018
+name
+A <span class = "name">Coq</span> Formalisation of a Core of <span class = "name">R</span>
+author
+<a href = "index.html" class = "internalLink">Martin Bodin</a>
 link
 en
 	<a href = "esplorado/coqpl18.pdf">Full text</a>
@@ -387,16 +428,21 @@ fr
 #	<!-- FIXME:  Add a BibTeX file. -->
 end
 
-item
-all
-JFLA 2016
-description
-en
-	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, and <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">An Abstract Separation Logic for Interlinked Extensible Records</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2016.
-eo
-	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, kaj <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">An Abstract Separation Logic for Interlinked Extensible Records</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2016.
-fr
-	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, et <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">An Abstract Separation Logic for Interlinked Extensible Records</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2016.
+article
+conference
+JFLA
+conferenceLong
+Journées Francophones des Langages Applicatifs
+year
+2016
+name
+An Abstract Separation Logic for Interlinked Extensible Records
+author
+<a href = "index.html" class = "internalLink">Martin Bodin</a>
+author
+<a href = "http://www.irisa.fr/lande/jensen/">Thomas Jensen</a>
+author
+<a href = "http://www.irisa.fr/celtique/aschmitt/">Alan Schmitt</a>
 link
 en
 	<a href = "esplorado/jfla16.pdf">Full text</a>
@@ -430,16 +476,21 @@ fr
 #	<!-- FIXME:  Add a BibTeX file. -->
 end
 
-item
-all
-JFLA 2014
-description
-en
-	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, and <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Pretty-big-step-semantics-based Certified Abstract Interpretation</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2014.
-eo
-	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, kaj <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Pretty-big-step-semantics-based Certified Abstract Interpretation</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2014.
-fr
-	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, et <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Pretty-big-step-semantics-based Certified Abstract Interpretation</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2014.
+article
+conference
+JFLA
+conferenceLong
+Journées Francophones des Langages Applicatifs
+year
+2014
+name
+Pretty-big-step-semantics-based Certified Abstract Interpretation
+author
+<a href = "index.html" class = "internalLink">Martin Bodin</a>
+author
+<a href = "http://www.irisa.fr/lande/jensen/">Thomas Jensen</a>
+author
+<a href = "http://www.irisa.fr/celtique/aschmitt/">Alan Schmitt</a>
 link
 en
 	<a href = "esplorado/jfla14.pdf">Full text</a>
@@ -459,20 +510,19 @@ fr
 #	<!-- FIXME:  Add a BibTeX file. -->
 end
 
-item
-en
+article
+conference
 Festschrift for David Schmidt
-eo
-Festverkaĵaro al David Schmidt
-fr
-Festschrift pour David Schmidt
-description
-en
-	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, and <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)</span>, <span class = "journal">Festschrift for David Schmidt</span>, 2013.
-eo
-	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, kaj <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)</span>, <span class = "journal">Festschrift for David Schmidt</span>, 2013.
-fr
-	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, et <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)</span>, <span class = "journal">Festschrift for David Schmidt</span>, 2013.
+year
+2013
+name
+Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)
+author
+<a href = "index.html" class = "internalLink">Martin Bodin</a>
+author
+<a href = "http://www.irisa.fr/lande/jensen/">Thomas Jensen</a>
+author
+<a href = "http://www.irisa.fr/celtique/aschmitt/">Alan Schmitt</a>
 link
 en
 	<a href = "esplorado/Festschrift_Schmidt.pdf">Full text</a>
@@ -482,16 +532,19 @@ fr
 	<a href = "esplorado/Festschrift_Schmidt.pdf">Article</a>
 end
 
-item
-all
-JFLA 2013
-description
-en
-	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a> and <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">A Certified <span class = "name">JavaScript</span> Interpreter</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2013.
-eo
-	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a> kaj <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">A Certified <span class = "name">JavaScript</span> Interpreter</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2013.
-fr
-	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a> et <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">A Certified <span class = "name">JavaScript</span> Interpreter</span>, <span class = "journal">Journées Francophones des Langages Applicatifs (JFLA)</span>, 2013.
+article
+conference
+JFLA
+conferenceLong
+Journées Francophones des Langages Applicatifs
+year
+2013
+name
+A Certified JavaScript Interpreter
+author
+<a href = "index.html" class = "internalLink">Martin Bodin</a>
+author
+<a href = "http://www.irisa.fr/celtique/aschmitt/">Alan Schmitt</a>
 link
 en
 	<a href = "esplorado/jfla13.pdf">Full text</a>

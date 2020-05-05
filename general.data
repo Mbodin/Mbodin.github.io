@@ -55,6 +55,10 @@ mailto:mbodin[bonvolu anstataŭigi tiun ĉi tekston per ĉe-signo]ic[kaj tiun ĉ
 Ŝanĝi la lingvon
 =lastUpdate
 Laste ŝanĝita je la
+=and
+, kaj
+=doi
+DOI:
 
 en
 =langname
@@ -113,6 +117,10 @@ mailto:mbodin[please replace this text by an at symbol]ic[and this one by a dot]
 Switch Language
 =lastUpdate
 Last update the
+=and
+, and
+=doi
+DOI:
 
 fr
 =langname
@@ -171,4 +179,8 @@ mailto:mbodin[merci de remplacer cette phrase par un arobase]ic[et ceci par un p
 Changer de langue
 =lastUpdate
 Dernière mise à jour le
+=and
+ et
+=doi
+DOI :
 

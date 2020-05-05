@@ -9,8 +9,8 @@ use HTML::Template;
 use URI::Encode qw(uri_encode uri_decode);
 # use HTTP::DAV;
 use Term::ReadKey;
-# use Data::Printer;
 use POSIX qw(strftime);
+# use Data::Printer;
 
 my ($true, $false) = (1, 0);
 my $none = "none";
@@ -110,6 +110,7 @@ my $keywordArticle = "article";
 my $keywordName = "name";
 my $keywordAuthor = "author";
 my $keywordConference = "conference";
+my $keywordConferenceLong = "conferenceLong";
 my $keywordYear = "year";
 my $keywordDOI = "doi";
 
@@ -129,8 +130,10 @@ my $pathToRootID = "pathToRoot";
 my $sectionsID = "sections";
 my $isArticleID = "isArticle";
 my $authorID = "author";
+my $yearID = "year";
 my $doiID = "doi";
 my $conferenceID = "conference";
+my $conferenceLongID = "conferenceLong";
 
 my $menuTypeID = "type";
 my $menuItemLinkID = "link";
@@ -277,23 +280,42 @@ while (scalar @pagesToBeParsed + scalar @menusToBeParsed != 0){
 				$$currentObject{$authorID} = [];
 				$$currentObject{$doiID} = "";
 				$$currentObject{$conferenceID} = "";
+				$$currentObject{$conferenceLongID} = "";
 				$$currentObject{$linksID} = [];
 				push @$currentSection, $currentObject;
 				$addLineToString = $false;
 				$addingToTab = $false;
 			} elsif (/^$keywordAuthor$/){
 				my $tab = $$currentObject{$authorID};
-				push @$tab, { $PDescrID => $true };
-				$addLineToString = $false;
+				push @$tab, "";
+				$addLineToString = $true;
+				$currentLang = $none;
 				$currentField = $authorID;
 				$addingToTab = $true;
 			} elsif (/^$keywordConference$/){
 				$addLineToString = $true;
+				$currentLang = $none;
 				$currentField = $conferenceID;
+				$addingToTab = $false;
+			} elsif (/^$keywordConferenceLong$/){
+				$addLineToString = $true;
+				$currentLang = $none;
+				$currentField = $conferenceLongID;
+				$addingToTab = $false;
+			} elsif (/^$keywordYear$/){
+				$addLineToString = $true;
+				$currentLang = $none;
+				$currentField = $yearID;
 				$addingToTab = $false;
 			} elsif (/^$keywordDOI$/){
 				$addLineToString = $true;
+				$currentLang = $none;
 				$currentField = $doiID;
+				$addingToTab = $false;
+			} elsif (/^$keywordName$/){
+				$addLineToString = $true;
+				$currentLang = $none;
+				$currentField = $nameID;
 				$addingToTab = $false;
 			} elsif (/^$keywordDescription$/){
 				my $tab = $$currentObject{$descrID};
@@ -821,14 +843,56 @@ while (my ($directoryname, $page) = each %allParsedPages){
 		}
 
 		for (my $i = 1; $i <= $#sectionTab ; $i++){
+
 			my $tab = [];
 			push @$projects, {
 				allLanguages => $tab
 			};
 
-			foreach my $lang (@languages){
-				my %item = %{$sectionTab[$i]};
+			my %item = %{$sectionTab[$i]};
 
+			# TODO
+			if ($item{$isArticleID}){
+				my $description = { $PDescrID => $false };
+				$item{$descrID} = [ $description ] ;
+
+				foreach my $lang (@languages){
+					$item{$lang} = $item{$conferenceID} . " " . $item{$yearID};
+
+					$$description{$lang} = "";
+					my $currentAuthor = 0;
+					foreach my $author (@{$item{$authorID}}) {
+						if (($currentAuthor == $#{$item{$authorID}}) && ($currentAuthor != 0)){
+							$$description{$lang} .= ${$general{$lang}}{"and"} . " ";
+						} elsif ($currentAuthor != 0){
+							$$description{$lang} .= ", ";
+						}
+						$$description{$lang} .= "<span class = \"name\">" . $author . "</span>";
+						$currentAuthor++;
+					}
+					$$description{$lang} .= ", ";
+					$$description{$lang} .= "<span class = \"paperName\">" . $item{$nameID} . "</span>";
+					$$description{$lang} .= ", ";
+					$$description{$lang} .= "<span class = \"journal\">";
+					if ($item{$conferenceLongID} ne ""){
+						$$description{$lang} .= $item{$conferenceLongID} . " (" . $item{$conferenceID} . ")";
+					} else {
+						$$description{$lang} .= $item{$conferenceID};
+					}
+					$$description{$lang} .= "</span>";
+					$$description{$lang} .= ", ";
+					$$description{$lang} .= $item{$yearID};
+					if ($item{$doiID} ne ""){
+						$$description{$lang} .= ", ";
+						$$description{$lang} .= ${$general{$lang}}{"doi"} . " ";
+						$$description{$lang} .= "<a href = \"https://doi.org/$item{$doiID}\">";
+						$$description{$lang} .= "$item{$doiID}</a>";
+					}
+					$$description{$lang} .= ".";
+				}
+			}
+
+			foreach my $lang (@languages){
 				my $descrtab = [];
 				for (my $j = 0; $j <= $#{$item{$descrID}}; $j++){
 					push @$descrtab, {
@@ -851,22 +915,22 @@ while (my ($directoryname, $page) = each %allParsedPages){
 								text => ${$$linkTab[$j]}{$lang},
 								hasnosharp => $link !~ m/#/
 							};
-                        } elsif (${$$linkTab[$j]}{"clean"}){
-                            if (${$$linkTab[$j]}{$lang} ne ""){
-						        push @$links, {
-						        	isInternal => $false,
-						        	isClean => $true,
-						        	projectsLinks => ${$$linkTab[$j]}{$lang}
-						        };
-                            }
+						} elsif (${$$linkTab[$j]}{"clean"}){
+							if (${$$linkTab[$j]}{$lang} ne ""){
+								push @$links, {
+									isInternal => $false,
+									isClean => $true,
+									projectsLinks => ${$$linkTab[$j]}{$lang}
+								};
+							}
 						} else {
-                            if (${$$linkTab[$j]}{$lang} ne ""){
-						        push @$links, {
-						        	isInternal => $false,
-						        	isClean => $false,
-						        	projectsLinks => ${$$linkTab[$j]}{$lang}
-						        };
-                            }
+							if (${$$linkTab[$j]}{$lang} ne ""){
+								push @$links, {
+									isInternal => $false,
+									isClean => $false,
+									projectsLinks => ${$$linkTab[$j]}{$lang}
+								};
+							}
 						}
 					}
 				}

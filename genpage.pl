@@ -103,6 +103,12 @@ my $keywordEnd = "end";
 my $keywordScripts = "script";
 my $keywordAllLanguage = "all";
 my $keywordNotUpToDate = "updating";
+my $keywordArticle = "article";
+my $keywordName = "name";
+my $keywordAuthor = "author";
+my $keywordConference = "conference";
+my $keywordYear = "year";
+my $keywordDOI = "doi";
 
 my $descrID = "description";
 my $PDescrID = "Pdescr";
@@ -118,6 +124,10 @@ my $nameID = "name";
 my $directoryID = "directory";
 my $pathToRootID = "pathToRoot";
 my $sectionsID = "sections";
+my $isArticleID = "isArticle";
+my $authorID = "author";
+my $doiID = "doi";
+my $conferenceID = "conference";
 
 my $menuTypeID = "type";
 my $menuItemLinkID = "link";
@@ -151,18 +161,18 @@ while (scalar @pagesToBeParsed + scalar @menusToBeParsed != 0){
 		my $allSections = [];
 
 		my $addLineToString = $false;
-		my $isDescription = $false;
-		my $isLink = $false;
+		my $addingToTab = $false;
 		my $stackIntoObject = $false;
 		my $parsingLinkFile = $false;
 
 		my $currentSection;
 		my $currentObject;
+		my $currentChangedObject;
 		my $currentField;
 
-        LINE: while (<CONTENT>){
+    LINE: while (<CONTENT>){
 			$_ =~ s/\n//;
-            next LINE if /^#/;
+      next LINE if /^#/;
 			if ($stackIntoObject){
 				if (/^$keywordEnd$/){
 					$stackIntoObject = $false;
@@ -187,17 +197,17 @@ while (scalar @pagesToBeParsed + scalar @menusToBeParsed != 0){
 						push @pagesToBeParsed, $fileNameSimpl;
 					}
 				}
-				my $tab = $$currentObject{$linksID};
-				${$$tab[-1]}{$internalLinkID} = $file;
+				$$currentChangedObject{$internalLinkID} = $file;
+				$currentChangedObject = $currentObject;
 				$parsingLinkFile = $false;
 			} elsif (/^$keywordPage$/){
 				$currentObject = {};
+				$currentChangedObject = $currentObject;
 				$$currentObject{$descrID} = [];
 				$$currentObject{$notUpToDateID} = $false;
 				push @allPages, $currentObject;
 				$addLineToString = $false;
-				$isDescription = $false;
-				$isLink = $false;
+				$addingToTab = $false;
 			} elsif (/^$keywordMenu$/){
 				$currentField = $menuID;
 				$$currentObject{$menuID} = [];
@@ -208,79 +218,104 @@ while (scalar @pagesToBeParsed + scalar @menusToBeParsed != 0){
 				$currentField = $rightImageID;
 				$$currentObject{$rightImageID} = "";
 				$addLineToString = $true;
-				$isDescription = $false;
-				$isLink = $false;
+				$addingToTab = $false;
 			} elsif (/^$keywordScripts$/){
 				$$currentObject{$scriptsID} = {};
 				$currentObject = $$currentObject{$scriptsID};
 				$addLineToString = $false;
-				$isDescription = $false;
-				$isLink = $false;
+				$addingToTab = $false;
 			} elsif (/^$keywordSectionName$/){
 				$$currentObject{$sectionNameID} = "";
 				$currentField = $sectionNameID;
 				$addLineToString = $true;
-				$isDescription = $false;
-				$isLink = $false;
+				$addingToTab = $false;
 			} elsif (/^$keywordLink$/){
 				my $tab = $$currentObject{$linksID};
-				push @$tab, { internal => $false, clean => $false };
+				$currentChangedObject = { internal => $false, clean => $false };
+				push @$tab, $currentChangedObject;
 				$addLineToString = $false;
-				$isDescription = $false;
-				$isLink = $true;
+				$currentField = $linksID;
+				$addingToTab = $false;
 			} elsif (/^$keywordInternalLink$/){
 				my $tab = $$currentObject{$linksID};
-				push @$tab, { internal => $true, clean => $false };
+				$currentChangedObject = { internal => $true, clean => $false };
+				push @$tab, $currentChangedObject;
 				$addLineToString = $false;
-				$isDescription = $false;
 				$parsingLinkFile = $true;
-				$isLink = $true;
+				$currentField = $linksID;
+				$addingToTab = $false;
 			} elsif (/^$keywordLinkClean$/){
 				my $tab = $$currentObject{$linksID};
-				push @$tab, { internal => $false, clean => $true };
+				$currentChangedObject = { internal => $false, clean => $true };
+				push @$tab, $currentChangedObject;
 				$addLineToString = $false;
-				$isDescription = $false;
-				$isLink = $true;
+				$currentField = $linksID;
+				$addingToTab = $false;
 			} elsif (/^$keywordSection$/){
 				$currentSection = [];
 				$currentObject = {};
+				$currentChangedObject = $currentObject;
 				$$currentObject{$descrID} = [];
 				push @$currentSection, $currentObject;
 				push @$allSections, $currentSection;
 				$addLineToString = $false;
-				$isDescription = $false;
-				$isLink = $false;
+				$addingToTab = $false;
 			} elsif (/^$keywordItem$/){
 				$currentObject = {};
+				$currentChangedObject = $currentObject;
+				$$currentObject{$isArticleID} = $false;
 				$$currentObject{$descrID} = [];
 				$$currentObject{$linksID} = [];
 				push @$currentSection, $currentObject;
 				$addLineToString = $false;
-				$isDescription = $false;
-				$isLink = $false;
+				$addingToTab = $false;
+			} elsif (/^$keywordArticle$/){
+				$currentObject = {};
+				$currentChangedObject = $currentObject;
+				$$currentObject{$isArticleID} = $true;
+				$$currentObject{$authorID} = [];
+				$$currentObject{$doiID} = "";
+				$$currentObject{$conferenceID} = "";
+				$$currentObject{$linksID} = [];
+				push @$currentSection, $currentObject;
+				$addLineToString = $false;
+				$addingToTab = $false;
+			} elsif (/^$keywordAuthor$/){
+				my $tab = $$currentObject{$authorID};
+				$currentChangedObject = { $PDescrID => $true };
+				push @$tab, $currentChangedObject;
+				$addLineToString = $false;
+				$currentField = $authorID;
+				$addingToTab = $false;
+			} elsif (/^$keywordConference$/){
+				$addLineToString = $true;
+				$currentField = $conferenceID;
+				$addingToTab = $false;
+			} elsif (/^$keywordDOI$/){
+				$addLineToString = $true;
+				$currentField = $doiID;
+				$addingToTab = $false;
 			} elsif (/^$keywordDescription$/){
 				my $tab = $$currentObject{$descrID};
-				push @$tab, { $PDescrID => $true };
+				$currentChangedObject = { $PDescrID => $true };
+				push @$tab, $currentChangedObject;
 				$addLineToString = $false;
-				$isDescription = $true;
-				$isLink = $false;
+				$addingToTab = $false;
+				$currentField = $descrID;
 			} elsif (/^$keywordSpecDescription$/){
 				my $tab = $$currentObject{$descrID};
 				push @$tab, { $PDescrID => $false };
 				$addLineToString = $false;
-				$isDescription = $true;
-				$isLink = $false;
+				$addingToTab = $false;
+				$currentField = $descrID;
 			} elsif (/^$keywordEnd$/){
 				$addLineToString = $false;
 			} elsif (/^$keywordAllLanguage$/){
 				$addLineToString = $true;
 				$currentField = $allID;
 				foreach my $lang (@languages){
-					if ($isDescription){
-						my $tab = $$currentObject{$descrID};
-						${$$tab[-1]}{$lang} = "";
-					} elsif ($isLink){
-						my $tab = $$currentObject{$linksID};
+					if ($addingToTab){
+						my $tab = $$currentObject{$currentField};
 						${$$tab[-1]}{$lang} = "";
 					} else {
 						$$currentObject{$lang} = "";
@@ -291,61 +326,49 @@ while (scalar @pagesToBeParsed + scalar @menusToBeParsed != 0){
 				if (exists $general{$_}){
 					$addLineToString = $true;
 					$currentField = $_;
-					if ($isDescription or $isLink){
-						my $field = "";
-						if ($isDescription){
-							$field = $descrID;
-						} else {
-							$field = $linksID;
-						}
-						my $tab = $$currentObject{$field};
+					if ($addingToTab){
+						my $tab = $$currentChangedObject{$currentField};
 						${$$tab[-1]}{$_} = "";
 					} else {
 						$$currentObject{$_} = "";
 					}
 				} elsif ($addLineToString){
-					if ($isDescription or $isLink){
-						my $field = "";
-						if ($isDescription){
-							$field = $descrID;
-						} else {
-							$field = $linksID;
-						}
-						my $tab = $$currentObject{$field};
+					if ($addingToTab){
+						my $tab = $$currentChangedObject{$currentField};
 						if ($currentField eq $allID){
 							for my $lang (@languages){
-                                if (exists ${$$tab[-1]}{$lang}){
-                                    if (${$$tab[-1]}{$lang} ne ""){
-                                        ${$$tab[-1]}{$lang} .= "\n";
-                                    }
-                                }
+								if (exists ${$$tab[-1]}{$lang}){
+									if (${$$tab[-1]}{$lang} ne ""){
+										${$$tab[-1]}{$lang} .= "\n";
+									}
+								}
 								${$$tab[-1]}{$lang} .= $_;
 							}
 						} else {
 							if (exists ${$$tab[-1]}{$currentField}){
-							    if (${$$tab[-1]}{$currentField} ne ""){
-							        ${$$tab[-1]}{$currentField} .= "\n";
-                                }
-                            }
+								if (${$$tab[-1]}{$currentField} ne ""){
+									${$$tab[-1]}{$currentField} .= "\n";
+								}
+							}
 							${$$tab[-1]}{$currentField} .= $_;
 						}
 					} else {
 						if ($currentField eq $allID){
 							for my $lang (@languages){
-								if (exists $$currentObject{$lang}){
-								    if ($$currentObject{$lang} ne ""){
-								        $$currentObject{$lang} .= "\n";
-                                    }
-                                }
-								$$currentObject{$lang} .= $_;
+								if (exists $$currentChangedObject{$lang}){
+									if ($$currentChangedObject{$lang} ne ""){
+									  $$currentChangedObject{$lang} .= "\n";
+									}
+								}
+								$$currentChangedObject{$lang} .= $_;
 							}
 						} else {
-							if (exists $$currentObject{$currentField}){
-                                if ($$currentObject{$currentField} ne ""){
-                                    $$currentObject{$currentField} .= "\n";
-                                }
-                            }
-							$$currentObject{$currentField} .= $_;
+							if (exists $$currentChangedObject{$currentField}){
+								if ($$currentChangedObject{$currentField} ne ""){
+									$$currentChangedObject{$currentField} .= "\n";
+								}
+							}
+							$$currentChangedObject{$currentField} .= $_;
 						}
 					}
 				} else {

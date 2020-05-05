@@ -51,59 +51,74 @@ fr
 Publications
 end
 
-item
-all
-POPL 2019
-description
-en
-	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "https://www.doc.ic.ac.uk/~pg/"><span class = "name">Philippa Gardner</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, and <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Skeletal Semantics and Their Interpretations</span>, <span class = "journal">Symposium on Principles of Programming Languages (POPL)</span>, 2019, DOI: <a href = "https://doi.org/10.1145/3290357">10.1145/3290357</a>.
-eo
-	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "https://www.doc.ic.ac.uk/~pg/"><span class = "name">Philippa Gardner</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, kaj <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Skeletal Semantics and Their Interpretations</span>, <span class = "journal">Symposium on Principles of Programming Languages (POPL)</span>, 2019, DOI: <a href = "https://doi.org/10.1145/3290357">10.1145/3290357</a>.
-fr
-	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "https://www.doc.ic.ac.uk/~pg/"><span class = "name">Philippa Gardner</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, et <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Skeletal Semantics and Their Interpretations</span>, <span class = "journal">Symposium on Principles of Programming Languages (POPL)</span>, 2019, DOI : <a href = "https://doi.org/10.1145/3290357">10.1145/3290357</a>.
-link
-en
-	<a href = "esplorado/popl19.pdf">Full text</a>
-eo
-	<a href = "esplorado/popl19.pdf">Artikolo</a>
-fr
-	<a href = "esplorado/popl19.pdf">Article</a>
-link
-en
-	<a href = "https://gitlab.inria.fr/skeletons/Coq/tree/POPL2019"><span class = "name">Coq</span> material</a>
-eo
-	<a href = "https://gitlab.inria.fr/skeletons/Coq/tree/POPL2019"><span class = "name">Coq</span>aj dosieroj</a>
-fr
-	<a href = "https://gitlab.inria.fr/skeletons/Coq/tree/POPL2019">Fichers <span class = "name">Coq</span></a>
-link
-en
-	<a href = "http://skeletons.inria.fr/popl2019/index.html">Companion website</a>
-eo
-	<a href = "http://skeletons.inria.fr/popl2019/index.html">Kunretejo</a>
-fr
-	<a href = "http://skeletons.inria.fr/popl2019/index.html">Site associé</a>
-link
-en
-	<a href = "https://www.youtube.com/watch?v=h2Nk7dmj6Hg">Recorded presentation</a>
-eo
-	<a href = "https://www.youtube.com/watch?v=h2Nk7dmj6Hg">Registrita prelego</a>
-fr
-	<a href = "https://www.youtube.com/watch?v=h2Nk7dmj6Hg">Capture vidéo de la présentation</a>
-link
-en
-	<a href = "esplorado/popl19.tar.bz2">Paper sources</a>
-eo
-	<a href = "esplorado/popl19.tar.bz2">Artikolfontoj</a>
-fr
-	<a href = "esplorado/popl19.tar.bz2">Sources de l’article</a>
-link
-all
-fr
-	<a href = "esplorado/résumé_popl19.pdf">Résumé en français de l’article</a>
-#link
-#all
-#	<!-- FIXME:  Add a BibTeX file. -->
-end
+# TODO
+# article
+# conference
+# POPL
+# year
+# 2019
+# name
+# Skeletal Semantics and Their Interpretations
+# author
+# <a href = "index.html" class = "internalLink">Martin Bodin</a>
+# author
+# <a href = "https://www.doc.ic.ac.uk/~pg/">Philippa Gardner</a>
+# author
+# TODO
+# doi
+# 10.1145/3290357
+# end
+
+# description
+# en
+# 	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "https://www.doc.ic.ac.uk/~pg/"><span class = "name">Philippa Gardner</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, and <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Skeletal Semantics and Their Interpretations</span>, <span class = "journal">Symposium on Principles of Programming Languages (POPL)</span>, 2019, DOI: <a href = "https://doi.org/10.1145/3290357">10.1145/3290357</a>.
+# eo
+# 	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "https://www.doc.ic.ac.uk/~pg/"><span class = "name">Philippa Gardner</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, kaj <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Skeletal Semantics and Their Interpretations</span>, <span class = "journal">Symposium on Principles of Programming Languages (POPL)</span>, 2019, DOI: <a href = "https://doi.org/10.1145/3290357">10.1145/3290357</a>.
+# fr
+# 	<a href = "index.html" class = "internalLink"><span class = "name">Martin Bodin</span></a>, <a href = "https://www.doc.ic.ac.uk/~pg/"><span class = "name">Philippa Gardner</span></a>, <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>, et <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a>, <span class = "paperName">Skeletal Semantics and Their Interpretations</span>, <span class = "journal">Symposium on Principles of Programming Languages (POPL)</span>, 2019, DOI : <a href = "https://doi.org/10.1145/3290357">10.1145/3290357</a>.
+# link
+# en
+# 	<a href = "esplorado/popl19.pdf">Full text</a>
+# eo
+# 	<a href = "esplorado/popl19.pdf">Artikolo</a>
+# fr
+# 	<a href = "esplorado/popl19.pdf">Article</a>
+# link
+# en
+# 	<a href = "https://gitlab.inria.fr/skeletons/Coq/tree/POPL2019"><span class = "name">Coq</span> material</a>
+# eo
+# 	<a href = "https://gitlab.inria.fr/skeletons/Coq/tree/POPL2019"><span class = "name">Coq</span>aj dosieroj</a>
+# fr
+# 	<a href = "https://gitlab.inria.fr/skeletons/Coq/tree/POPL2019">Fichers <span class = "name">Coq</span></a>
+# link
+# en
+# 	<a href = "http://skeletons.inria.fr/popl2019/index.html">Companion website</a>
+# eo
+# 	<a href = "http://skeletons.inria.fr/popl2019/index.html">Kunretejo</a>
+# fr
+# 	<a href = "http://skeletons.inria.fr/popl2019/index.html">Site associé</a>
+# link
+# en
+# 	<a href = "https://www.youtube.com/watch?v=h2Nk7dmj6Hg">Recorded presentation</a>
+# eo
+# 	<a href = "https://www.youtube.com/watch?v=h2Nk7dmj6Hg">Registrita prelego</a>
+# fr
+# 	<a href = "https://www.youtube.com/watch?v=h2Nk7dmj6Hg">Capture vidéo de la présentation</a>
+# link
+# en
+# 	<a href = "esplorado/popl19.tar.bz2">Paper sources</a>
+# eo
+# 	<a href = "esplorado/popl19.tar.bz2">Artikolfontoj</a>
+# fr
+# 	<a href = "esplorado/popl19.tar.bz2">Sources de l’article</a>
+# link
+# all
+# fr
+# 	<a href = "esplorado/résumé_popl19.pdf">Résumé en français de l’article</a>
+# #link
+# #all
+# #	<!-- FIXME:  Add a BibTeX file. -->
+# end
 
 item
 all

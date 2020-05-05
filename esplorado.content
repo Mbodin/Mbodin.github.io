@@ -109,9 +109,6 @@ link
 all
 fr
 	<a href = "esplorado/résumé_popl19.pdf">Résumé en français de l’article</a>
-#link
-#all
-#	<!-- FIXME:  Add a BibTeX file. -->
 end
 
 article
@@ -170,9 +167,6 @@ link
 all
 fr
 	<a href = "esplorado/résumé_dls18.pdf">Résumé en français de l’article</a>
-#link
-#all
-#	<!-- FIXME:  Add a BibTeX file. -->
 end
 
 article
@@ -227,9 +221,6 @@ eo
 	<a href = "esplorado/cpp15_slides.tar.bz2">Diapozitivfontoj</a>
 fr
 	<a href = "esplorado/cpp15_slides.tar.bz2">Sources de la présentation</a>
-#link
-#all
-#	<!-- FIXME:  Add a BibTeX file. -->
 end
 
 article
@@ -284,9 +275,6 @@ eo
 	<a href = "http://jscert.org/popl14/">Diapozitivoj</a>
 fr
 	<a href = "http://jscert.org/popl14/">Présentation</a>
-#link
-#all
-#	<!-- FIXME:  Add a BibTeX file. -->
 end
 
 article
@@ -297,7 +285,7 @@ Interactive Theorem Proving
 year
 2013
 name
-Circular Coinduction in Coq Using Bisimulation-Up-To Techniques
+Circular Coinduction in <span class = "name">Coq</span> Using Bisimulation-Up-To Techniques
 author
 <a href = "http://joerg.endrullis.de/">Jörg Endrullis</a>
 author
@@ -320,9 +308,6 @@ eo
 	<a href = "esplorado/itp13_slides.pdf">Diapozitivoj</a>
 fr
 	<a href = "esplorado/itp13_slides.pdf">Présentation</a>
-#link
-#all
-#	<!-- FIXME:  Add a BibTeX file. -->
 end
 
 article
@@ -354,9 +339,6 @@ eo
 	<a href = "esplorado/aplas11_slides.pdf">Diapozitivoj</a>
 fr
 	<a href = "esplorado/aplas11_slides.pdf">Présentation</a>
-#link
-#all
-#	<!-- FIXME:  Add a BibTeX file. -->
 end
 
 section
@@ -378,7 +360,7 @@ Formal Methods for Statistical Software
 year
 2019
 name
-A Trustworthy Mechanized Formalization of R
+A Trustworthy Mechanized Formalization of <span class = "name">R</span>
 author
 <a href = "index.html" class = "internalLink">Martin Bodin</a>
 author
@@ -399,9 +381,6 @@ eo
 	<a href = "esplorado/fmfss19_slides.tar.bz2">Fontoj</a>
 fr
 	<a href = "esplorado/fmfss19_slides.tar.bz2">Sources</a>
-#link
-#all
-#	<!-- FIXME:  Add a BibTeX file. -->
 end
 
 article
@@ -427,9 +406,6 @@ eo
 	<a href = "esplorado/coqpl18_slides.pdf">Diapozitivoj</a>
 fr
 	<a href = "esplorado/coqpl18_slides.pdf">Présentation</a>
-#link
-#all
-#	<!-- FIXME:  Add a BibTeX file. -->
 end
 
 article
@@ -475,9 +451,6 @@ eo
 	<a href = "esplorado/jfla16_slides.tar.bz2">Diapozitivfontoj</a>
 fr
 	<a href = "esplorado/jfla16_slides.tar.bz2">Sources de la présentation</a>
-#link
-#all
-#	<!-- FIXME:  Add a BibTeX file. -->
 end
 
 article
@@ -509,9 +482,6 @@ eo
 	<a href = "esplorado/jfla14_slides.pdf">Diapozitivoj</a>
 fr
 	<a href = "esplorado/jfla14_slides.pdf">Présentation</a>
-#link
-#all
-#	<!-- FIXME:  Add a BibTeX file. -->
 end
 
 article
@@ -565,9 +535,6 @@ eo
 	<a href = "esplorado/jfla13_slides.pdf">Diapozitivoj</a>
 fr
 	<a href = "esplorado/jfla13_slides.pdf">Présentation</a>
-#link
-#all
-#	<!-- FIXME:  Add a BibTeX file. -->
 end
 
 section
@@ -620,9 +587,6 @@ eo
     Kundoktoriĝdokumento
 fr
     Guide de thèse
-#link
-#all
-#	<!-- FIXME:  Add a BibTeX file. -->
 end
 
 #section

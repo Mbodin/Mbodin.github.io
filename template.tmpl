@@ -226,7 +226,9 @@
                 <tmpl_if name="isInternal">
                 <li><a class="internalLink" href="<tmpl_var name=link />?lang=<tmpl_var name=lang /><tmpl_if name=hasnosharp>#<tmpl_var name=lang /></tmpl_if>"><tmpl_var name="text" /></a></li>
                 <tmpl_else>
-                <li <tmpl_if name="isClean">class="cleanLink"</tmpl_if>><tmpl_var name="projectsLinks" /></li>
+                <li <tmpl_if name="isClean">class="cleanLink"</tmpl_if>>
+									<tmpl_var name="projectsLinks" />
+								</li>
                 </tmpl_if>
                 </tmpl_loop>
               </ul>

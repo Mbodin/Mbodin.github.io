@@ -56,9 +56,11 @@ mailto:mbodin[bonvolu anstataŭigi tiun ĉi tekston per ĉe-signo]ic[kaj tiun ĉ
 =lastUpdate
 Laste ŝanĝita je la
 =and
-, kaj
+kaj
 =doi
 DOI:
+=bibtex
+Dosiero BibTeX
 
 en
 =langname
@@ -118,9 +120,11 @@ Switch Language
 =lastUpdate
 Last update the
 =and
-, and
+and
 =doi
 DOI:
+=bibtex
+BibTeX file
 
 fr
 =langname
@@ -180,7 +184,9 @@ Changer de langue
 =lastUpdate
 Dernière mise à jour le
 =and
- et
+et
 =doi
 DOI :
+=bibtex
+Fichier BibTeX
 

@@ -10,6 +10,8 @@ use URI::Encode qw(uri_encode uri_decode);
 # use HTTP::DAV;
 use Term::ReadKey;
 use POSIX qw(strftime);
+use MIME::Base64 qw(encode_base64);
+use Encode qw(encode);
 # use Data::Printer;
 
 my ($true, $false) = (1, 0);
@@ -856,14 +858,58 @@ while (my ($directoryname, $page) = each %allParsedPages){
 				my $description = { $PDescrID => $true };
 				$item{$descrID} = [ $description ] ;
 
+				my $name = $item{$conferenceID} . " " . $item{$yearID};
+
+				my $bibtext = "@" . "inproceedings{";
+				$bibtext .= $name =~ s/[  ]/_/gr =~ s/<[^>]*>//gr . ",\n";
+				$bibtext .= "\ttitle = {" . $item{$nameID} =~ s/<[^>]*>//gr . "},\n";
+				if ($item{$conferenceLongID} eq ""){
+					$bibtext .= "\tbooktitle = {" . $item{$conferenceID} =~ s/<[^>]*>//gr . "},\n";
+				} else {
+					$bibtext .= "\tbooktitle = {" . $item{$conferenceLongID} =~ s/<[^>]*>//gr . "},\n";
+				}
+				if ($item{$doiID} ne ""){
+					$bibtext .= "\tdoi = {" . $item{$doiID} =~ s/<[^>]*>//gr . "},\n";
+				}
+				$bibtext .= "\tauthor = {";
+				{
+					my $currentAuthor = 0;
+					foreach my $author (@{$item{$authorID}}) {
+						if ($currentAuthor != 0){
+							$bibtext .= " and ";
+						}
+						$bibtext .= $author =~ s/<[^>]*>//gr;
+						$currentAuthor++;
+					}
+				}
+				$bibtext .= "},\n";
+				$bibtext .= "\tyear = {" . $item{$yearID} =~ s/<[^>]*>//gr . "}\n";
+				$bibtext .= "}\n";
+
+				my $biburl = "data:application/x-bibtex;charset=utf-8;base64,";
+				$biburl .= encode_base64($bibtext);
+
+				my $biblink = { internal => $false, clean => $false };
+				{
+					my $tab = $item{$linksID};
+					push @$tab, $biblink;
+				}
+
 				foreach my $lang (@languages){
-					$item{$lang} = $item{$conferenceID} . " " . $item{$yearID};
+					$item{$lang} = $name;
+
+					$$biblink{$lang} = "<a href = \"" . $biburl . "\" ";
+					$$biblink{$lang} .= "download = \"" . $name =~ s/[  ]/_/gr =~ s/<[^>]*>//gr . ".bib\">";
+					$$biblink{$lang} .= ${$general{$lang}}{"bibtex"} . "</a>";
 
 					$$description{$lang} = "";
 					my $currentAuthor = 0;
 					foreach my $author (@{$item{$authorID}}) {
 						if (($currentAuthor == $#{$item{$authorID}}) && ($currentAuthor != 0)){
-							$$description{$lang} .= ${$general{$lang}}{"and"} . " ";
+							if ($#{$item{$authorID}} != 1){
+								$$description{$lang} .= ",";
+							}
+							$$description{$lang} .= " " . ${$general{$lang}}{"and"} . " ";
 						} elsif ($currentAuthor != 0){
 							$$description{$lang} .= ", ";
 						}

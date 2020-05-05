@@ -10,6 +10,7 @@ use URI::Encode qw(uri_encode uri_decode);
 # use HTTP::DAV;
 use Term::ReadKey;
 # use Data::Printer;
+use POSIX qw(strftime);
 
 my ($true, $false) = (1, 0);
 my $none = "none";
@@ -558,6 +559,8 @@ while (my ($directoryname, $page) = each %allParsedPages){
 
 	$pageMain{"isNotUpToDate"} = $$page{$notUpToDateID};
 
+	$pageMain{"currentDate"} = strftime "%F", localtime;
+
 	{
 		$pageMain{"titlePageAllLanguages"} = "";
 		foreach my $lang (@languages){
@@ -633,7 +636,8 @@ while (my ($directoryname, $page) = each %allParsedPages){
 				"wrongLang",
 				"errorInSocial",
 				"spyingSocials",
-				"permanentSocials"
+				"permanentSocials",
+				"lastUpdate"
 			);
 			if ($changingAdress){
 				push @allKeys, "relocation";

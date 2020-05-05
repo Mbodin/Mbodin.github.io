@@ -304,6 +304,11 @@
           </tmpl_loop>
         </div>
       </div>
+      <div class="needlang">
+        <tmpl_loop name="allLanguages">
+        <p xml:lang="<tmpl_var name=lang />" lang="<tmpl_var name=lang />" class="footbar lang<tmpl_var name=lang />"><tmpl_var name="lastUpdate" /> <tmpl_var name="currentDate" /></p>
+        </tmpl_loop>
+      </div>
     </footer>
     <script type="text/javascript" src="<tmpl_var name=pathToRoot />skriptoj/stilajxoj.js" async="async"></script>
     <tmpl_loop name="allLanguages">

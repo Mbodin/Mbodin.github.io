@@ -239,6 +239,7 @@ while (scalar @pagesToBeParsed + scalar @menusToBeParsed != 0){
 				$currentField = $sectionNameID;
 				$addLineToString = $true;
 				$addingToTab = $false;
+				$currentLang = $none;
 			} elsif (/^$keywordLink$/){
 				my $tab = $$currentObject{$linksID};
 				push @$tab, { internal => $false, clean => $false };
@@ -851,9 +852,8 @@ while (my ($directoryname, $page) = each %allParsedPages){
 
 			my %item = %{$sectionTab[$i]};
 
-			# TODO
 			if ($item{$isArticleID}){
-				my $description = { $PDescrID => $false };
+				my $description = { $PDescrID => $true };
 				$item{$descrID} = [ $description ] ;
 
 				foreach my $lang (@languages){

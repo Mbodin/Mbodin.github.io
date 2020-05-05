@@ -5,7 +5,7 @@
 
 p {
 	text-align:  justify ;
-    text-indent:  1em ;
+	text-indent:  1em ;
 }
 
 .center {
@@ -26,7 +26,7 @@ html {
 }
 
 body {
-    min-width:  200px ;
+	min-width:  200px ;
 	color:  #2e3436 ;
 	background-color:  #eeeeec ;
 	margin:  0 ;
@@ -34,13 +34,13 @@ body {
 }
 
 form {
-    padding:  0pt ;
-    margin:  0pt ;
+	padding:  0pt ;
+	margin:  0pt ;
 }
 
 input {
-    margin-left:  0pt ;
-    margin-right:  .5em ;
+	margin-left:  0pt ;
+	margin-right:  .5em ;
 }
 
 
@@ -98,13 +98,13 @@ a:hover, a:active {
 	border:  2px solid #eeeeec ;
 	background-color:  #ad7fa8 ;
 	color:  #eeeeec ;
-    overflow:  hidden ;
+	overflow:  hidden ;
 }
 
 .message p {
-    margin:  .5ex 0 ;
-    padding:  0 ;
-    display:  inline ;
+	margin:  .5ex 0 ;
+	padding:  0 ;
+	display:  inline ;
 }
 
 .message a {
@@ -112,10 +112,10 @@ a:hover, a:active {
 }
 
 .messageButton {
-    margin:  .5ex 0 ;
+	margin:  .5ex 0 ;
 	color:  #75507b ;
-    float:  right ;
-    display:  inline-block ;
+	float:  right ;
+	display:  inline-block ;
 }
 
 .messageButton:hover {
@@ -123,7 +123,7 @@ a:hover, a:active {
 }
 
 .message .explanation {
-    display:  block ;
+	display:  block ;
 }
 
 
@@ -305,9 +305,9 @@ h3:hover {
 }
 
 @media screen and (min-width: 639px) {
-  .englobingProjectItem:hover h3 {
-      border-right:  2px solid #ad7fa8 ;
-  }
+	.englobingProjectItem:hover h3 {
+		border-right:  2px solid #ad7fa8 ;
+	}
 }
 
 .projectDescription {
@@ -315,7 +315,7 @@ h3:hover {
 	padding:  0.5ex 0 1ex 1ex ;
 	border-left:  2px solid #ad7fa8 ;
 	width:  95% ;
-    text-indent:  0 ;
+	text-indent:  0 ;
 }
 
 .projectDescription:empty {
@@ -323,41 +323,41 @@ h3:hover {
 }
 
 .englobingProjectItemDescription {
-    display:  inline-block ;
-    vertical-align:  top ;
-    margin:  0 ;
-    padding:  0 ;
-    font-size:  1rem ;
+	display:  inline-block ;
+	vertical-align:  top ;
+	margin:  0 ;
+	padding:  0 ;
+	font-size:  1rem ;
 }
 
 .englobingProjectLinks {
-    display:  inline-block ;
-    vertical-align:  top ;
-    padding:  0.5ex 0.7em 0.5ex 0 ;
-    margin:  0 ;
-    min-height:  2em ;
-    border-top:  2px solid #eeeeec ;
-    font-size:  1rem ;
+	display:  inline-block ;
+	vertical-align:  top ;
+	padding:  0.5ex 0.7em 0.5ex 0 ;
+	margin:  0 ;
+	min-height:  2em ;
+	border-top:  2px solid #eeeeec ;
+	font-size:  1rem ;
 }
 
 @media screen and (min-width: 639px) {
-  .englobingProjectItemDescription {
-      width:  75% ;
-  }
+	.englobingProjectItemDescription {
+		width:  75% ;
+	}
 
-  .englobingProjectLinks {
-      width:  23% ;
-  }
+	.englobingProjectLinks {
+		width:  23% ;
+	}
 }
 
 @media screen and (max-width: 639px) {
-  .englobingProjectItemDescription {
-      width:  100% ;
-  }
+	.englobingProjectItemDescription {
+		width:  100% ;
+	}
 
-  .englobingProjectLinks {
-      width:  100% ;
-  }
+	.englobingProjectLinks {
+		width:  100% ;
+	}
 }
 
 .projectLinks {
@@ -366,15 +366,15 @@ h3:hover {
 }
 
 .projectLinks li:before, .errorLog li:before, .allLoadedFighters li:before, .listitem li:before {
-    content:  "" ;
+	content:  "" ;
 	background-size:  1em ;
 	background-image:  url(puce.svg) ;
 	background-color:  #eeeeec ;
 	background-repeat:  no-repeat ;
 	background-position:  left center ;
-    display:  inline-block ;
-    width:  1em ;
-    height:  1ex ;
+	display:  inline-block ;
+	width:  1em ;
+	height:  1ex ;
 }
 
 .projectLinks li, .errorLog li, .allLoadedFighters li, .listitem li {
@@ -384,7 +384,7 @@ h3:hover {
 li.cleanLink {
 	list-style:  none ;
 	padding-left:  0pt ;
-    background:  none ;
+	background:  none ;
 }
 
 .englobingProjectItem:hover .englobingProjectLinks {
@@ -760,22 +760,22 @@ dl.tableDescription:after {
 
 
 @keyframes ProgramResult {
-    from {
-        background-color:  #ad7fa8 ;
-    }
-    to {
-        background-color:  transparent ;
-    }
+	from {
+		background-color:  #ad7fa8 ;
+	}
+	to {
+		background-color:  transparent ;
+	}
 }
 
 .program {
-    font-family:  monospace ;
+	font-family:  monospace ;
 }
 
 .programResult {
-    font-family:  monospace ;
-    animation-name:  ProgramResult ;
-    animation-duration:  1s ;
-    animation-iteration-count:  1 ;
+	font-family:  monospace ;
+	animation-name:  ProgramResult ;
+	animation-duration:  1s ;
+	animation-iteration-count:  1 ;
 }
 

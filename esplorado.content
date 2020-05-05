@@ -304,6 +304,8 @@ author
 <a href = "http://www.cs.vu.nl/~diem/">Dimitri Hendriks</a>
 author
 <a href = "index.html" class = "internalLink">Martin Bodin</a>
+doi
+10.1007/978-3-642-39634-2_26
 link
 en
 	<a href = "esplorado/itp13.pdf">Full text</a>
@@ -336,6 +338,8 @@ author
 <a href = "http://www-verimag.imag.fr/~monniaux/">David Monniaux</a>
 author
 <a href = "index.html" class = "internalLink">Martin Bodin</a>
+doi
+10.1007/978-3-642-25318-8_5
 link
 en
 	<a href = "esplorado/aplas11.pdf">Full text</a>
@@ -523,6 +527,8 @@ author
 <a href = "http://www.irisa.fr/lande/jensen/">Thomas Jensen</a>
 author
 <a href = "http://www.irisa.fr/celtique/aschmitt/">Alan Schmitt</a>
+doi
+10.4204/EPTCS.129.23
 link
 en
 	<a href = "esplorado/Festschrift_Schmidt.pdf">Full text</a>
@@ -540,7 +546,7 @@ Journées Francophones des Langages Applicatifs
 year
 2013
 name
-A Certified JavaScript Interpreter
+A Certified <span class = "name">JavaScript</span> Interpreter
 author
 <a href = "index.html" class = "internalLink">Martin Bodin</a>
 author

@@ -9,8 +9,10 @@ use HTML::Template;
 use URI::Encode qw(uri_encode uri_decode);
 # use HTTP::DAV;
 use Term::ReadKey;
+# use Data::Printer;
 
 my ($true, $false) = (1, 0);
+my $none = "none";
 
 my $generalDatas = "general.data";
 my %general = ();
@@ -167,8 +169,8 @@ while (scalar @pagesToBeParsed + scalar @menusToBeParsed != 0){
 
 		my $currentSection;
 		my $currentObject;
-		my $currentChangedObject;
 		my $currentField;
+		my $currentLang;
 
     LINE: while (<CONTENT>){
 			$_ =~ s/\n//;
@@ -197,12 +199,15 @@ while (scalar @pagesToBeParsed + scalar @menusToBeParsed != 0){
 						push @pagesToBeParsed, $fileNameSimpl;
 					}
 				}
-				$$currentChangedObject{$internalLinkID} = $file;
-				$currentChangedObject = $currentObject;
+				if ($addingToTab){
+					my $tab = $$currentObject{$currentField};
+					${$$tab[-1]}{$internalLinkID} = $file;
+				} else {
+					$$currentObject{$internalLinkID} = $file;
+				}
 				$parsingLinkFile = $false;
 			} elsif (/^$keywordPage$/){
 				$currentObject = {};
-				$currentChangedObject = $currentObject;
 				$$currentObject{$descrID} = [];
 				$$currentObject{$notUpToDateID} = $false;
 				push @allPages, $currentObject;
@@ -215,10 +220,11 @@ while (scalar @pagesToBeParsed + scalar @menusToBeParsed != 0){
 			} elsif (/^$keywordNotUpToDate$/){
 				$$currentObject{$notUpToDateID} = $true;
 			} elsif (/^$keywordRightImage$/){
-				$currentField = $rightImageID;
 				$$currentObject{$rightImageID} = "";
+				$currentField = $rightImageID;
 				$addLineToString = $true;
 				$addingToTab = $false;
+				$currentLang = $none;
 			} elsif (/^$keywordScripts$/){
 				$$currentObject{$scriptsID} = {};
 				$currentObject = $$currentObject{$scriptsID};
@@ -231,30 +237,26 @@ while (scalar @pagesToBeParsed + scalar @menusToBeParsed != 0){
 				$addingToTab = $false;
 			} elsif (/^$keywordLink$/){
 				my $tab = $$currentObject{$linksID};
-				$currentChangedObject = { internal => $false, clean => $false };
-				push @$tab, $currentChangedObject;
+				push @$tab, { internal => $false, clean => $false };
 				$addLineToString = $false;
 				$currentField = $linksID;
-				$addingToTab = $false;
+				$addingToTab = $true;
 			} elsif (/^$keywordInternalLink$/){
 				my $tab = $$currentObject{$linksID};
-				$currentChangedObject = { internal => $true, clean => $false };
-				push @$tab, $currentChangedObject;
+				push @$tab, { internal => $true, clean => $false };
 				$addLineToString = $false;
 				$parsingLinkFile = $true;
 				$currentField = $linksID;
-				$addingToTab = $false;
+				$addingToTab = $true;
 			} elsif (/^$keywordLinkClean$/){
 				my $tab = $$currentObject{$linksID};
-				$currentChangedObject = { internal => $false, clean => $true };
-				push @$tab, $currentChangedObject;
+				push @$tab, { internal => $false, clean => $true };
 				$addLineToString = $false;
 				$currentField = $linksID;
-				$addingToTab = $false;
+				$addingToTab = $true;
 			} elsif (/^$keywordSection$/){
 				$currentSection = [];
 				$currentObject = {};
-				$currentChangedObject = $currentObject;
 				$$currentObject{$descrID} = [];
 				push @$currentSection, $currentObject;
 				push @$allSections, $currentSection;
@@ -262,7 +264,6 @@ while (scalar @pagesToBeParsed + scalar @menusToBeParsed != 0){
 				$addingToTab = $false;
 			} elsif (/^$keywordItem$/){
 				$currentObject = {};
-				$currentChangedObject = $currentObject;
 				$$currentObject{$isArticleID} = $false;
 				$$currentObject{$descrID} = [];
 				$$currentObject{$linksID} = [];
@@ -271,7 +272,6 @@ while (scalar @pagesToBeParsed + scalar @menusToBeParsed != 0){
 				$addingToTab = $false;
 			} elsif (/^$keywordArticle$/){
 				$currentObject = {};
-				$currentChangedObject = $currentObject;
 				$$currentObject{$isArticleID} = $true;
 				$$currentObject{$authorID} = [];
 				$$currentObject{$doiID} = "";
@@ -282,11 +282,10 @@ while (scalar @pagesToBeParsed + scalar @menusToBeParsed != 0){
 				$addingToTab = $false;
 			} elsif (/^$keywordAuthor$/){
 				my $tab = $$currentObject{$authorID};
-				$currentChangedObject = { $PDescrID => $true };
-				push @$tab, $currentChangedObject;
+				push @$tab, { $PDescrID => $true };
 				$addLineToString = $false;
 				$currentField = $authorID;
-				$addingToTab = $false;
+				$addingToTab = $true;
 			} elsif (/^$keywordConference$/){
 				$addLineToString = $true;
 				$currentField = $conferenceID;
@@ -297,22 +296,20 @@ while (scalar @pagesToBeParsed + scalar @menusToBeParsed != 0){
 				$addingToTab = $false;
 			} elsif (/^$keywordDescription$/){
 				my $tab = $$currentObject{$descrID};
-				$currentChangedObject = { $PDescrID => $true };
-				push @$tab, $currentChangedObject;
+				push @$tab, { $PDescrID => $true };
 				$addLineToString = $false;
-				$addingToTab = $false;
 				$currentField = $descrID;
+				$addingToTab = $true;
 			} elsif (/^$keywordSpecDescription$/){
 				my $tab = $$currentObject{$descrID};
 				push @$tab, { $PDescrID => $false };
 				$addLineToString = $false;
-				$addingToTab = $false;
+				$addingToTab = $true;
 				$currentField = $descrID;
 			} elsif (/^$keywordEnd$/){
 				$addLineToString = $false;
 			} elsif (/^$keywordAllLanguage$/){
 				$addLineToString = $true;
-				$currentField = $allID;
 				foreach my $lang (@languages){
 					if ($addingToTab){
 						my $tab = $$currentObject{$currentField};
@@ -321,21 +318,22 @@ while (scalar @pagesToBeParsed + scalar @menusToBeParsed != 0){
 						$$currentObject{$lang} = "";
 					}
 				}
+				$currentLang = $allID;
 			} else {
 				# Checking if it’s a language.
 				if (exists $general{$_}){
 					$addLineToString = $true;
-					$currentField = $_;
+					$currentLang = $_;
 					if ($addingToTab){
-						my $tab = $$currentChangedObject{$currentField};
+						my $tab = $$currentObject{$currentField};
 						${$$tab[-1]}{$_} = "";
 					} else {
 						$$currentObject{$_} = "";
 					}
 				} elsif ($addLineToString){
 					if ($addingToTab){
-						my $tab = $$currentChangedObject{$currentField};
-						if ($currentField eq $allID){
+						my $tab = $$currentObject{$currentField};
+						if ($currentLang eq $allID){
 							for my $lang (@languages){
 								if (exists ${$$tab[-1]}{$lang}){
 									if (${$$tab[-1]}{$lang} ne ""){
@@ -344,31 +342,35 @@ while (scalar @pagesToBeParsed + scalar @menusToBeParsed != 0){
 								}
 								${$$tab[-1]}{$lang} .= $_;
 							}
+						} elsif ($currentLang eq $none){
+							$$tab[-1] .= $_;
 						} else {
-							if (exists ${$$tab[-1]}{$currentField}){
-								if (${$$tab[-1]}{$currentField} ne ""){
-									${$$tab[-1]}{$currentField} .= "\n";
+							if (exists ${$$tab[-1]}{$currentLang}){
+								if (${$$tab[-1]}{$currentLang} ne ""){
+									${$$tab[-1]}{$currentLang} .= "\n";
 								}
 							}
-							${$$tab[-1]}{$currentField} .= $_;
+							${$$tab[-1]}{$currentLang} .= $_;
 						}
 					} else {
-						if ($currentField eq $allID){
+						if ($currentLang eq $allID){
 							for my $lang (@languages){
-								if (exists $$currentChangedObject{$lang}){
-									if ($$currentChangedObject{$lang} ne ""){
-									  $$currentChangedObject{$lang} .= "\n";
+								if (exists $$currentObject{$lang}){
+									if ($$currentObject{$lang} ne ""){
+									  $$currentObject{$lang} .= "\n";
 									}
 								}
-								$$currentChangedObject{$lang} .= $_;
+								$$currentObject{$lang} .= $_;
 							}
+						} elsif ($currentLang eq $none){
+							$$currentObject{$currentField} .= $_;
 						} else {
-							if (exists $$currentChangedObject{$currentField}){
-								if ($$currentChangedObject{$currentField} ne ""){
-									$$currentChangedObject{$currentField} .= "\n";
+							if (exists $$currentObject{$currentLang}){
+								if ($$currentObject{$currentLang} ne ""){
+									$$currentObject{$currentLang} .= "\n";
 								}
 							}
-							$$currentChangedObject{$currentField} .= $_;
+							$$currentObject{$currentLang} .= $_;
 						}
 					}
 				} else {

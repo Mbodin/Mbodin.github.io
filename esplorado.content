@@ -40,6 +40,148 @@ fr
 	Le <a href = "http://seccloud.cominlabs.ueb.eu">projet <span class = "name">SecCloud</span></a> a pour but de concevoir une approche orientée langages de programation pour la définition, l’analyse et l’implémentation d’applications sécurisées développées en <span class = "name">JavaScript</span> ou en des langages similaires.
 end
 
+## Author declarations
+
+declareAuthor
+mbodin
+firstName
+Martin
+familyName
+Bodin
+internalLink
+index
+end
+
+declareAuthor
+pgardner
+firstName
+Philippa
+familyName
+Gardner
+directLink
+https://www.doc.ic.ac.uk/~pg/
+end
+
+declareAuthor
+tjensen
+firstName
+Thomas
+familyName
+Jensen
+directLink
+http://www.irisa.fr/lande/jensen/
+end
+
+declareAuthor
+aschmitt
+firstName
+Alan
+familyName
+Schmitt
+directLink
+http://www.irisa.fr/celtique/aschmitt/
+end
+
+declareAuthor
+tdiaz
+firstName
+Tomás
+familyName
+Diaz
+end
+
+declareAuthor
+etanter
+firstName
+Éric
+familyName
+Tanter
+directLink
+https://pleiad.cl/people/etanter
+end
+
+declareAuthor
+achargueraud
+firstName
+Arthur
+familyName
+Charguéraud
+directLink
+http://www.chargueraud.org/
+end
+
+declareAuthor
+dfiliaretti
+firstName
+Daniele
+familyName
+Filaretti
+directLink
+http://dfilaretti.github.io/
+end
+
+declareAuthor
+smaffeis
+firstName
+Sergio
+familyName
+Maffeis
+directLink
+http://www.doc.ic.ac.uk/~maffeis/"
+end
+
+declareAuthor
+dnaudziuniene
+firstName
+Daiva
+familyName
+Naudžiūnienė
+directLink
+https://dblp.org/pers/n/Naudziuniene:Daiva.html
+end
+
+declareAuthor
+gsmith
+firstName
+Gareth
+familyName
+Smith
+directLink
+http://www.totherme.org/
+end
+
+declareAuthor
+jendrullis
+firstName
+Jörg
+familyName
+Endrullis
+directLink
+http://joerg.endrullis.de/
+end
+
+declareAuthor
+dhendriks
+firstName
+Dimitri
+familyName
+Hendriks
+directLink
+https://dblp.org/pers/h/Hendriks:Dimitri.html
+end
+
+declareAuthor
+dmonniaux
+firstName
+David
+familyName
+Monniaux
+directLink
+http://www-verimag.imag.fr/~monniaux/
+end
+
+## Sections
+
 section
 sectionName
 eldonaĵoj
@@ -61,13 +203,13 @@ year
 name
 Skeletal Semantics and Their Interpretations
 author
-<a href = "index.html" class = "internalLink">Martin Bodin</a>
+mbodin
 author
-<a href = "https://www.doc.ic.ac.uk/~pg/">Philippa Gardner</a>
+pgardner
 author
-<a href = "http://www.irisa.fr/lande/jensen/">Thomas Jensen</a>
+tjensen
 author
-<a href = "http://www.irisa.fr/celtique/aschmitt/">Alan Schmitt</a>
+aschmitt
 doi
 10.1145/3290357
 link
@@ -121,11 +263,11 @@ year
 name
 A Trustworthy Mechanized Formalization of R
 author
-<a href = "index.html" class = "internalLink">Martin Bodin</a>
+mbodin
 author
-Tomás Diaz
+tdiaz
 author
-<a href = "https://pleiad.cl/people/etanter">Éric Tanter</a>
+etanter
 doi
 10.1145/3276945.3276946
 link
@@ -179,11 +321,11 @@ year
 name
 Certified Abstract Interpretation with Pretty-Big-Step Semantics
 author
-<a href = "index.html" class = "internalLink">Martin Bodin</a>
+mbodin
 author
-<a href = "http://www.irisa.fr/lande/jensen/">Thomas Jensen</a>
+tjensen
 author
-<a href = "http://www.irisa.fr/celtique/aschmitt/">Alan Schmitt</a>
+aschmitt
 doi
 10.1145/2676724.2693174
 link
@@ -233,21 +375,21 @@ year
 name
 A Trusted Mechanised <span class = "name">JavaScript</span> Specification
 author
-<a href = "index.html" class = "internalLink">Martin Bodin</a>
+mbodin
 author
-<a href = "http://www.chargueraud.org/">Arthur Charguéraud</a>
+achargueraud
 author
-<a href = "http://dfilaretti.github.io/">Daniele Filaretti</a>
+dfiliaretti
 author
-<a href = "https://www.doc.ic.ac.uk/~pg/">Philippa Gardner</a>
+pgardner
 author
-<a href = "http://www.doc.ic.ac.uk/~maffeis/">Sergio Maffeis</a>
+smaffeis
 author
-<a href = "http://www.doc.ic.ac.uk/~dn911/">Daiva Naudžiūnienė</a>
+dnaudziuniene
 author
-<a href = "http://www.irisa.fr/celtique/aschmitt/">Alan Schmitt</a>
+aschmitt
 author
-<a href = "http://www.totherme.org/">Gareth Smith</a>
+gsmith
 doi
 10.1145/2578855.2535876
 link
@@ -287,11 +429,11 @@ year
 name
 Circular Coinduction in <span class = "name">Coq</span> Using Bisimulation-Up-To Techniques
 author
-<a href = "http://joerg.endrullis.de/">Jörg Endrullis</a>
+jendrullis
 author
-<a href = "http://www.cs.vu.nl/~diem/">Dimitri Hendriks</a>
+dhendriks
 author
-<a href = "index.html" class = "internalLink">Martin Bodin</a>
+mbodin
 doi
 10.1007/978-3-642-39634-2_26
 link
@@ -320,9 +462,9 @@ year
 name
 Modular Abstractions of Reactive Nodes using Disjunctive Invariants
 author
-<a href = "http://www-verimag.imag.fr/~monniaux/">David Monniaux</a>
+dmonniaux
 author
-<a href = "index.html" class = "internalLink">Martin Bodin</a>
+mbodin
 doi
 10.1007/978-3-642-25318-8_5
 link
@@ -353,7 +495,7 @@ Colloques
 end
 
 article
-nobib
+noBib
 conference
 FMfSS
 conferenceLong
@@ -363,11 +505,11 @@ year
 name
 A Trustworthy Mechanized Formalization of <span class = "name">R</span>
 author
-<a href = "index.html" class = "internalLink">Martin Bodin</a>
+mbodin
 author
-Tomás Diaz
+tdiaz
 author
-<a href = "https://pleiad.cl/people/etanter">Éric Tanter</a>
+etanter
 link
 en
 	<a href = "esplorado/fmfss19_slides.pdf">Slides</a>
@@ -392,7 +534,7 @@ year
 name
 A <span class = "name">Coq</span> Formalisation of a Core of <span class = "name">R</span>
 author
-<a href = "index.html" class = "internalLink">Martin Bodin</a>
+mbodin
 link
 en
 	<a href = "esplorado/coqpl18.pdf">Full text</a>
@@ -419,11 +561,11 @@ year
 name
 An Abstract Separation Logic for Interlinked Extensible Records
 author
-<a href = "index.html" class = "internalLink">Martin Bodin</a>
+mbodin
 author
-<a href = "http://www.irisa.fr/lande/jensen/">Thomas Jensen</a>
+tjensen
 author
-<a href = "http://www.irisa.fr/celtique/aschmitt/">Alan Schmitt</a>
+aschmitt
 link
 en
 	<a href = "esplorado/jfla16.pdf">Full text</a>
@@ -464,11 +606,11 @@ year
 name
 Pretty-big-step-semantics-based Certified Abstract Interpretation
 author
-<a href = "index.html" class = "internalLink">Martin Bodin</a>
+mbodin
 author
-<a href = "http://www.irisa.fr/lande/jensen/">Thomas Jensen</a>
+tjensen
 author
-<a href = "http://www.irisa.fr/celtique/aschmitt/">Alan Schmitt</a>
+aschmitt
 link
 en
 	<a href = "esplorado/jfla14.pdf">Full text</a>
@@ -493,11 +635,11 @@ year
 name
 Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)
 author
-<a href = "index.html" class = "internalLink">Martin Bodin</a>
+mbodin
 author
-<a href = "http://www.irisa.fr/lande/jensen/">Thomas Jensen</a>
+tjensen
 author
-<a href = "http://www.irisa.fr/celtique/aschmitt/">Alan Schmitt</a>
+aschmitt
 doi
 10.4204/EPTCS.129.23
 link
@@ -519,9 +661,9 @@ year
 name
 A Certified <span class = "name">JavaScript</span> Interpreter
 author
-<a href = "index.html" class = "internalLink">Martin Bodin</a>
+mbodin
 author
-<a href = "http://www.irisa.fr/celtique/aschmitt/">Alan Schmitt</a>
+aschmitt
 link
 en
 	<a href = "esplorado/jfla13.pdf">Full text</a>

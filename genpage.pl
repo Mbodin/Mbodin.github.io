@@ -1,6 +1,14 @@
 #!/usr/bin/env perl
 
-# Working on it…
+# This script is generating html webpages from the *.content and *.tree files it is given.
+# This script is a mess: it is my only Perl program, but I am stuck with it.
+# I usually program in Coq and OCaml, but I kept this script, bashing new features as I needed them.
+# The resulting script is a monster.
+# You can use it as much as you want to, for any purpose.
+# But you probably shouldn’t.
+# Just use org-mode or any other such framework instead.
+# You have been warned.
+# — Martin Constantino–Bodin.
 
 use strict;
 use strict 'refs';
@@ -16,6 +24,8 @@ use Encode qw(encode);
 
 my ($true, $false) = (1, 0);
 my $none = "none";
+
+my $linkLang = "link"; # This is a hack for links to be added as this field.
 
 my $generalDatas = "general.data";
 my %general = ();
@@ -103,7 +113,7 @@ my $keywordDescription = "description";
 my $keywordSpecDescription = "specdescription";
 my $keywordLink = "link";
 my $keywordInternalLink = "internalLink";
-my $keywordLinkClean = "cleanLink";
+my $keywordLinkClean = "cleanLink"; # No item arrow.
 my $keywordEnd = "end";
 my $keywordScripts = "script";
 my $keywordAllLanguage = "all";
@@ -115,7 +125,11 @@ my $keywordConference = "conference";
 my $keywordConferenceLong = "conferenceLong";
 my $keywordYear = "year";
 my $keywordDOI = "doi";
-my $keywordNoBib = "nobib";
+my $keywordNoBib = "noBib";
+my $keywordDeclareAuthor = "declareAuthor";
+my $keywordFirstName = "firstName";
+my $keywordFamilyName = "familyName";
+my $keywordDirectLink = "directLink";
 
 my $descrID = "description";
 my $PDescrID = "Pdescr";
@@ -131,13 +145,7 @@ my $nameID = "name";
 my $directoryID = "directory";
 my $pathToRootID = "pathToRoot";
 my $sectionsID = "sections";
-my $isArticleID = "isArticle";
-my $authorID = "author";
-my $yearID = "year";
-my $doiID = "doi";
-my $conferenceID = "conference";
-my $conferenceLongID = "conferenceLong";
-my $doBibID = "dobib";
+my $declaredAuthorsID = "declaredAuthors";
 
 my $menuTypeID = "type";
 my $menuItemLinkID = "link";
@@ -150,6 +158,17 @@ my $menuContactID = "contact";
 my $menuFlagsID = "flags";
 my $menuFlagsDescrID = "flagsDescription";
 my $isInternalID = "internal";
+my $isArticleID = "isArticle";
+my $authorID = "author"; # ID of the author.
+my $authorsID = "authors"; # Full declaration of the author.
+my $yearID = "year";
+my $doiID = "doi";
+my $conferenceID = "conference";
+my $conferenceLongID = "conferenceLong";
+my $doBibID = "dobib";
+my $firstNameID = "firstName";
+my $familyNameID = "familyName";
+my $authoridID = "author_id"; # Field of the author ID.
 
 while (scalar @pagesToBeParsed + scalar @menusToBeParsed != 0){
 	foreach my $name (@pagesToBeParsed){
@@ -169,6 +188,7 @@ while (scalar @pagesToBeParsed + scalar @menusToBeParsed != 0){
 
 		my @allPages = ();
 		my $allSections = [];
+		my $declaredAuthors = [];
 
 		my $addLineToString = $false;
 		my $addingToTab = $false;
@@ -221,6 +241,34 @@ while (scalar @pagesToBeParsed + scalar @menusToBeParsed != 0){
 				push @allPages, $currentObject;
 				$addLineToString = $false;
 				$addingToTab = $false;
+			} elsif (/^$keywordDeclareAuthor$/){
+				$currentObject = {};
+				push @$declaredAuthors, $currentObject;
+				$$currentObject{$firstNameID} = "";
+				$$currentObject{$familyNameID} = "";
+				$$currentObject{$linksID} = [];
+				$$currentObject{$authoridID} = "";
+				$currentField = $authoridID;
+				$currentLang = $none;
+				$addLineToString = $true;
+				$addingToTab = $false;
+			} elsif (/^$keywordFirstName$/){
+				$currentField = $firstNameID;
+				$addLineToString = $true;
+				$addingToTab = $false;
+				$currentLang = $none;
+			} elsif (/^$keywordFamilyName$/){
+				$currentField = $familyNameID;
+				$addLineToString = $true;
+				$addingToTab = $false;
+				$currentLang = $none;
+			} elsif (/^$keywordDirectLink$/){
+				my $tab = $$currentObject{$linksID};
+				push @$tab, { internal => $false, clean => $false };
+				$addLineToString = $true;
+				$currentField = $linksID;
+				$addingToTab = $true;
+				$currentLang = $linkLang;
 			} elsif (/^$keywordMenu$/){
 				$currentField = $menuID;
 				$$currentObject{$menuID} = [];
@@ -422,6 +470,7 @@ while (scalar @pagesToBeParsed + scalar @menusToBeParsed != 0){
 		${$allParsedPages{$directory.$name}}{$directoryID} = $directory;
 		${$allParsedPages{$directory.$name}}{$pathToRootID} = $pathToRoot;
 		${$allParsedPages{$directory.$name}}{$sectionsID} = $allSections;
+		${$allParsedPages{$directory.$name}}{$declaredAuthorsID} = $declaredAuthors;
 
 		print "	Done.\n";
 	}
@@ -572,6 +621,7 @@ while (my ($directoryname, $page) = each %allParsedPages){
 	my $directory = $$page{$directoryID};
 	my $pathToRoot = $$page{$pathToRootID};
 	my $allSections = $$page{$sectionsID};
+	my $allAuthors = $$page{$declaredAuthorsID};
 
 	my $htmlfile = $directory.$name.".html";
 
@@ -860,6 +910,19 @@ while (my ($directoryname, $page) = each %allParsedPages){
 			my %item = %{$sectionTab[$i]};
 
 			if ($item{$isArticleID}){
+
+				# Fetching the authors
+				my $authors = [];
+				foreach my $author (@{$item{$authorID}}){
+					my $res;
+					foreach my $authorInfos (@{$allAuthors}){
+						if($$authorInfos{$authoridID} eq $author){
+							$res = $authorInfos;
+						}
+					}
+					push @$authors, $res;
+				}
+
 				my $description = { $PDescrID => $true };
 				$item{$descrID} = [ $description ] ;
 
@@ -876,18 +939,22 @@ while (my ($directoryname, $page) = each %allParsedPages){
 				if ($item{$doiID} ne ""){
 					$bibtext .= "\tdoi = {" . $item{$doiID} =~ s/<[^>]*>//gr . "},\n";
 				}
-				$bibtext .= "\tauthor = {";
+				$bibtext .= "\tauthor = {\n";
 				{
 					my $currentAuthor = 0;
-					foreach my $author (@{$item{$authorID}}) {
+					foreach my $author (@$authors){
+						$bibtext .= "\t\t";
 						if ($currentAuthor != 0){
-							$bibtext .= " and ";
+							$bibtext .= "and ";
+						} else {
+							$bibtext .= "    ";
 						}
-						$bibtext .= "{" . $author =~ s/<[^>]*>//gr . "}";
+						$bibtext .= $$author{$familyNameID} . ", ";
+						$bibtext .= $$author{$firstNameID} . "\n";
 						$currentAuthor++;
 					}
 				}
-				$bibtext .= "},\n";
+				$bibtext .= "\t},\n";
 				$bibtext .= "\tyear = {" . $item{$yearID} =~ s/<[^>]*>//gr . "}\n";
 				$bibtext .= "}\n";
 
@@ -909,16 +976,30 @@ while (my ($directoryname, $page) = each %allParsedPages){
 
 					$$description{$lang} = "";
 					my $currentAuthor = 0;
-					foreach my $author (@{$item{$authorID}}) {
-						if (($currentAuthor == $#{$item{$authorID}}) && ($currentAuthor != 0)){
-							if ($#{$item{$authorID}} != 1){
+					foreach my $author (@$authors){
+						if (($currentAuthor == $#{$authors}) && ($currentAuthor != 0)){
+							if ($#{$authors} != 1){
 								$$description{$lang} .= ",";
 							}
 							$$description{$lang} .= " " . ${$general{$lang}}{"and"} . " ";
 						} elsif ($currentAuthor != 0){
 							$$description{$lang} .= ", ";
 						}
-						$$description{$lang} .= "<span class = \"name\">" . $author . "</span>";
+						my $linkContent = "";
+						$linkContent .= "<span class = \"name\">" . $$author{$firstNameID};
+						$linkContent .= " " . $$author{$familyNameID} . "</span>";
+						foreach my $link (@{$$author{$linksID}}){
+							my $linkText = "<a ";
+							if ($$link{$isInternalID}){
+								$linkText .= "class = \"internalLink\" ";
+								$linkText .= "href = \"" . $$link{$internalLinkID} . "\"";
+							} else {
+								$linkText .= "href = \"" . $$link{$linkLang} . "\"";
+							}
+							$linkText .= " />";
+							$linkContent = $linkText . $linkContent . "</a>";
+						}
+						$$description{$lang} .= $linkContent;
 						$currentAuthor++;
 					}
 					$$description{$lang} .= ", ";

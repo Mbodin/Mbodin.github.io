@@ -959,7 +959,7 @@ while (my ($directoryname, $page) = each %allParsedPages){
 				$bibtext .= "}\n";
 
 				my $biburl = "data:application/x-bibtex;charset=utf-8;base64,";
-				$biburl .= encode_base64($bibtext);
+				$biburl .= encode_base64($bibtext, "");
 
 				my $biblink = { internal => $false, clean => $false };
 				if ($item{$doBibID}){
@@ -996,7 +996,7 @@ while (my ($directoryname, $page) = each %allParsedPages){
 							} else {
 								$linkText .= "href = \"" . $$link{$linkLang} . "\"";
 							}
-							$linkText .= " />";
+							$linkText .= " >";
 							$linkContent = $linkText . $linkContent . "</a>";
 						}
 						$$description{$lang} .= $linkContent;

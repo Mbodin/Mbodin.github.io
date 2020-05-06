@@ -115,6 +115,7 @@ my $keywordConference = "conference";
 my $keywordConferenceLong = "conferenceLong";
 my $keywordYear = "year";
 my $keywordDOI = "doi";
+my $keywordNoBib = "nobib";
 
 my $descrID = "description";
 my $PDescrID = "Pdescr";
@@ -136,6 +137,7 @@ my $yearID = "year";
 my $doiID = "doi";
 my $conferenceID = "conference";
 my $conferenceLongID = "conferenceLong";
+my $doBibID = "dobib";
 
 my $menuTypeID = "type";
 my $menuItemLinkID = "link";
@@ -285,6 +287,7 @@ while (scalar @pagesToBeParsed + scalar @menusToBeParsed != 0){
 				$$currentObject{$conferenceID} = "";
 				$$currentObject{$conferenceLongID} = "";
 				$$currentObject{$linksID} = [];
+				$$currentObject{$doBibID} = $true;
 				push @$currentSection, $currentObject;
 				$addLineToString = $false;
 				$addingToTab = $false;
@@ -315,6 +318,8 @@ while (scalar @pagesToBeParsed + scalar @menusToBeParsed != 0){
 				$currentLang = $none;
 				$currentField = $doiID;
 				$addingToTab = $false;
+			} elsif (/^$keywordNoBib$/){
+				$$currentObject{$doBibID} = $false;
 			} elsif (/^$keywordName$/){
 				$addLineToString = $true;
 				$currentLang = $none;
@@ -878,7 +883,7 @@ while (my ($directoryname, $page) = each %allParsedPages){
 						if ($currentAuthor != 0){
 							$bibtext .= " and ";
 						}
-						$bibtext .= $author =~ s/<[^>]*>//gr;
+						$bibtext .= "{" . $author =~ s/<[^>]*>//gr . "}";
 						$currentAuthor++;
 					}
 				}
@@ -890,7 +895,7 @@ while (my ($directoryname, $page) = each %allParsedPages){
 				$biburl .= encode_base64($bibtext);
 
 				my $biblink = { internal => $false, clean => $false };
-				{
+				if ($item{$doBibID}){
 					my $tab = $item{$linksID};
 					push @$tab, $biblink;
 				}

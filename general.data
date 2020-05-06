@@ -60,7 +60,7 @@ kaj
 =doi
 DOI:
 =bibtex
-Dosiero BibTeX
+Dosiero Biber
 
 en
 =langname
@@ -124,7 +124,7 @@ and
 =doi
 DOI:
 =bibtex
-BibTeX file
+Biber file
 
 fr
 =langname
@@ -188,5 +188,5 @@ et
 =doi
 DOI :
 =bibtex
-Fichier BibTeX
+Fichier Biber
 

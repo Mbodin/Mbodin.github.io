@@ -1,4 +1,3 @@
-
 // @license magnet:?xt=urn:btih:90dc5c0be029de84e523b9b3922520e79e0e6f08&dn=cc0.txt CC0
 
 var allLanguages = ["eo", "fr", "en"]
@@ -210,48 +209,64 @@ function getPageLang (){
 	if (currentLanguage !== undefined)
 		return currentLanguage
 
-	var format = function (str){
-		return iterLanguages (function (lg, old){
-				if (old !== undefined)
-					return old
+	var possibleLanguage = function (str){
+		var lg =
+			iterLanguages (function (lg, old){
+					if (old !== undefined)
+						return old
 
-				if (str.indexOf (lg) > -1)
-					return lg
-			})
+					if (str.indexOf (lg) > -1)
+						return lg
+				})
+
+		if (currentLanguage !== lg
+				&& currentLanguage !== undefined && lg !== undefined
+				&& !alreadyComplainsAgainstWrongLanguages){
+			alreadyComplainsAgainstWrongLanguages = true
+			addErrorMsgKey ("wrongLang", false, lg, function (){
+					removeNode (this) // This message should be removed when switching language.
+				})
+		}
+
+		currentLanguage = currentLanguage || lg
 	}
-	var lang
-
-	try {
-		lang = navigator.language
-	} catch (_) {
-		lang = ""
-	}
-
-	lang = format (lang)
-
-	getURLAttribute ("lang", function (langset){
-            langset = format (langset)
-            lang = langset || lang
-        })
 
 	// The target property has priority on everything else:  have better not to conflict with any CSS visibility property…
 	dependingOnCurrentPage (function (_, target){
 		iterLanguages (function (lg){
-				if (target === lg){
-					if (lang !== lg && lang !== undefined && !alreadyComplainsAgainstWrongLanguages){
-						alreadyComplainsAgainstWrongLanguages = true
-						addErrorMsgKey ("wrongLang", false, lang, function (){
-								removeNode (this) // This message should be removed when switching language.
-							})
-					}
-
-					lang = lg
-				}
+				if (target === lg) possibleLanguage (lg)
 			})
 	})
 
-	currentLanguage = lang
-	return lang
+	// Second, we check the “lang” argument.
+	getURLAttribute ("lang", possibleLanguage)
+
+	// Third, trying the navigator’s settings.
+	try {
+		possibleLanguage (navigator.language)
+	} catch (_) {}
+
+	// Lastly, trying to fetch the HTTP accept headers.
+	// We only try if we don’t already have a language, to avoid creating too many connections.
+	if (!currentLanguage){
+		var request = new XMLHttpRequest ()
+		request.open ("GET", document.location, false)
+		request.send (null)
+		if (request.status === 200){
+			request.getAllResponseHeaders ().toLowerCase ().trim ().split (/[\r\n]+/).forEach (function (line){
+					line = line.split (": ")
+					if (line[0] === "accept-language"){
+						line[1].split (/[,; ]/).forEach (function (str){
+								if (str === "*")
+									iterLanguages (possibleLanguage)
+								else possibleLanguage (str.split ("-")[0])
+							})
+					}
+				})
+		}
+	}
+
+	return currentLanguage
 }
 
 function setContentTextNodeToNode (idText, node){

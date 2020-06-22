@@ -104,14 +104,14 @@
     applyNode ("imageOfMe", update_image)
 
     if (updateMyImage)
-        setInterval (updateMyImage (true), 20000)
+        setInterval (updateMyImage (true), 30000)
     else /* The image has been removed, high probably because of the language interaction. */
         addLanguageFunction (function (){
                 if (!updateMyImage)
                     applyNode ("imageOfMe", update_image)
 
                 if (updateMyImage){
-                    setInterval (updateMyImage (true), 20000)
+                    setInterval (updateMyImage (true), 30000)
                     return true
                 }
             })

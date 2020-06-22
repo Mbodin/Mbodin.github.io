@@ -69,7 +69,7 @@ Thomas
 familyName
 Jensen
 directLink
-http://www.irisa.fr/lande/jensen/
+http://www.irisa.fr/celtique/jensen/
 end
 
 declareAuthor
@@ -79,7 +79,7 @@ Alan
 familyName
 Schmitt
 directLink
-http://www.irisa.fr/celtique/aschmitt/
+http://people.rennes.inria.fr/Alan.Schmitt/
 end
 
 declareAuthor
@@ -701,13 +701,13 @@ Sémantique et analyse certifiées de <span class = "name">JavaScript</span>
 description
 en
     I defended my PhD Thesis in 2016.
-    My PhD advisors were <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> and <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.
+    My PhD advisors were <a href = "http://people.rennes.inria.fr/Alan.Schmitt/"><span class = "name">Alan Schmitt</span></a> and <a href = "http://www.irisa.fr/celtique/jensen/"><span class = "name">Thomas Jensen</span></a>.
 eo
     Mi doktoriĝis en 2016.
-    Miaj doktoriĝestroj estis <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> kaj <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.
+    Miaj doktoriĝestroj estis <a href = "http://people.rennes.inria.fr/Alan.Schmitt/"><span class = "name">Alan Schmitt</span></a> kaj <a href = "http://www.irisa.fr/celtique/jensen/"><span class = "name">Thomas Jensen</span></a>.
 fr
     J’ai soutenu en 2016.
-    Mes encadrants étaient <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> et <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.
+    Mes encadrants étaient <a href = "http://people.rennes.inria.fr/Alan.Schmitt/"><span class = "name">Alan Schmitt</span></a> et <a href = "http://www.irisa.fr/celtique/jensen/"><span class = "name">Thomas Jensen</span></a>.
 link
 en
 	<a href = "doktorigxo/manuscrit.pdf">Full text</a>
@@ -748,13 +748,13 @@ end
 #2012, <span class = "town">Rennes</span>
 #description
 #en
-#	An internship I’ve done with <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> and <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> in <span class = "town">Rennes</span>.
+#	An internship I’ve done with <a href = "http://people.rennes.inria.fr/Alan.Schmitt/"><span class = "name">Alan Schmitt</span></a> and <a href = "http://www.irisa.fr/celtique/jensen/"><span class = "name">Thomas Jensen</span></a> in <span class = "town">Rennes</span>.
 #	I’ve made a <span class = "name">JavaScript</span> interpreter proven correct in <span class = "name">Coq</span>.
 #eo
-#	Interniĝo farita kun <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> kaj <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> en <span class = "town">Rennes</span>.
+#	Interniĝo farita kun <a href = "http://people.rennes.inria.fr/Alan.Schmitt/"><span class = "name">Alan Schmitt</span></a> kaj <a href = "http://www.irisa.fr/celtique/jensen/"><span class = "name">Thomas Jensen</span></a> en <span class = "town">Rennes</span>.
 #	Mi faritis interpretiston de <span class = "name">Javaskripto</span> pruvitan korektan per <span class = "name">Coq</span>.
 #fr
-#	Un stage que j’ai fait sous la tutelle d’<a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> et de <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a> dans la belle ville de <span class = "town">Rennes</span>.
+#	Un stage que j’ai fait sous la tutelle d’<a href = "http://people.rennes.inria.fr/Alan.Schmitt/"><span class = "name">Alan Schmitt</span></a> et de <a href = "http://www.irisa.fr/celtique/jensen/"><span class = "name">Thomas Jensen</span></a> dans la belle ville de <span class = "town">Rennes</span>.
 #	J’y ai créé un interpréteur <span class = "name">JavaScript</span> prouvé correct en <span class = "name">Coq</span>.
 #link
 #en
@@ -894,5 +894,54 @@ eo
 	<a href = "esplorado/Verified-Software-Workshop-2019.tar.bz2">Fontoj</a>
 fr
 	<a href = "esplorado/Verified-Software-Workshop-2019.tar.bz2">Sources</a>
+end
+
+item
+all
+Qualification
+description
+en
+	This is the document that I prepared for the French “qualification” for the CNRS.
+fr
+	Ceci est le dossier que j’ai monté pour la qualification aux postes d’enseignents-checheurs aux CNRS.
+eo
+	Tio estas la dokumentaro kiun mi elpreparis por la franca “qualification”, por la CNRS.
+link
+en
+	<a href = "esplorado/qualification.pdf">Document</a>
+eo
+	<a href = "esplorado/qualification.pdf">Documentaro</a>
+fr
+	<a href = "esplorado/qualification.pdf">Dossier</a>
+end
+
+item
+en
+	Application at Spades
+eo
+	Kandidatio ĉe Spades
+fr
+	Candidature chez Spades
+description
+en
+	This is the documents that I prepared to apply for the <a href = "https://team.inria.fr/spades/"><span class = "name">Spades</span></a> team at <a href = "https://www.inria.fr/en"><span class = "name">Inria</span></a>.
+eo
+	Tio estas la dokumentaro kiun mi elpreparis por kandidatiĝi al la skipo <a href = "https://team.inria.fr/spades/"><span class = "name">Spades</span></a>, ĉe <a href = "https://www.inria.fr/"><span class = "name">Inria</span></a>.
+fr
+	Ceci est le dossier que j’ai monté pour candidater à l’équipe <a href = "https://team.inria.fr/spades/"><span class = "name">Spades</span></a>, à <a href = "https://www.inria.fr/fr"><span class = "name">Inria</span></a>.
+link
+en
+	<a href = "esplorado/inria_spades.pdf">Document</a>
+eo
+	<a href = "esplorado/inria_spades.pdf">Documentaro</a>
+fr
+	<a href = "esplorado/inria_spades.pdf">Dossier</a>
+link
+en
+	<a href = "esplorado/inria_spades_slides.pdf">Slides</a>
+eo
+	<a href = "esplorado/inria_spades_slides.pdf">Diapozitivoj</a>
+fr
+	<a href = "esplorado/inria_spades_slides.pdf">Présentation</a>
 end
 

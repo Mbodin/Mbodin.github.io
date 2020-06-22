@@ -1,10 +1,10 @@
 page
 en
-Home
+Home page
 eo
 Ĉefpaĝo
 fr
-Page principale
+Page personnelle
 end
 
 menu
@@ -15,35 +15,58 @@ end
 
 description
 en
-	I am <span class = "name">Martin Bodin</span><sup><a href = "#familyName_en">1</a></sup> /maʁtɛ̃ bodɛ̃/, postdoc at the <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, in <span class = "town">London</span>, in the <a href = "https://vtss.doc.ic.ac.uk/">Verified Trustworthy Software Specification</a> research group.
+	I am <span class = "name">Martin Bodin</span><sup><a href = "#familyName_en">1</a></sup>, postdoc at the <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, in <span class = "town">London</span>, in the <a href = "https://vtss.doc.ic.ac.uk/">Verified Trustworthy Software Specification</a> research group.
 eo
-	Mi estas <span class = "name">Martin Bodin</span><sup><a href = "#familyName_eo">1</a></sup> /maʁtɛ̃ bodɛ̃/, postdoktorulo ĉe <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, en <span class = "town">Londono</span>, je la esplorada grupo <a href = "https://vtss.doc.ic.ac.uk/">Verified Trustworthy Software Specification</a>.
+	Mi estas <span class = "name">Martin Bodin</span><sup><a href = "#familyName_eo">1</a></sup>, postdoktorulo ĉe <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, en <span class = "town">Londono</span>, je la esplorada grupo <a href = "https://vtss.doc.ic.ac.uk/">Verified Trustworthy Software Specification</a>.
 fr
-	Je suis <span class = "name">Martin Bodin</span><sup><a href = "#familyName_fr">1</a></sup> /maʁtɛ̃ bodɛ̃/, post-doctorant au <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, à <span class = "town">Londres</span>, dans le groupe de recherche <a href = "https://vtss.doc.ic.ac.uk/">Verified Trustworthy Software Specification</a>.
+	Je suis <span class = "name">Martin Bodin</span><sup><a href = "#familyName_fr">1</a></sup>, post-doctorant au <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, à <span class = "town">Londres</span>, dans le groupe de recherche <a href = "https://vtss.doc.ic.ac.uk/">Verified Trustworthy Software Specification</a>.
 end
 
 description
 en
-    I am currently working on a formalism called skeletons to represent the semantics of real-world language, and get as much properties as possible certified in the <a href = "http://coq.inria.fr"><span class = "name">Coq</span> proof assistant</a>.
+	I am currently working on a formalism called skeletons to represent the semantics of real-world language, and get as much properties as possible certified in the <a href = "http://coq.inria.fr"><span class = "name">Coq</span> proof assistant</a>.
 eo
-    Mi nun laboras pri formalismo (kiu nomiĝas ostaron) por reprezenti la semantikon de vervivaj programlingvaĵoj, kaj ricevi la plej multe da ecoj pruvitaj en <a href = "http://coq.inria.fr">la <span class = "name">Coq</span> pruvilo</a>.
+	Mi nun laboras pri formalismo (kiu nomiĝas ostaron) por reprezenti la semantikon de vervivaj programlingvaĵoj, kaj ricevi la plej multe da ecoj pruvitaj en <a href = "http://coq.inria.fr">la <span class = "name">Coq</span> pruvilo</a>.
 fr
-    Je travaille actuellement sur un formalisme appelé squelette représentant la sémantique de langages de programmation complexes, tout en obtenant autant de propriétés que possibles certifiées dans <a href = "http://coq.inria.fr">l’assistant de preuve <span class = "name">Coq</span></a>.
+	Je travaille actuellement sur un formalisme appelé squelette représentant la sémantique de langages de programmation complexes, tout en obtenant autant de propriétés que possibles certifiées dans <a href = "http://coq.inria.fr">l’assistant de preuve <span class = "name">Coq</span></a>.
 end
 
 description
 en
-    I did my PhD at <span class = "name">INRIA</span> <span class = "town">Rennes</span> under the supervision of <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> and <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.
-    I then worked on formal analysis of the <span class = "name">JavaScript</span> programming language.
-    More information can be found <a class = "switchLanguage_en internalLink" href = "doktorigxo/companion.html?lang=en#en">in my thesis companion</a>.
+	I am also working on a <a href = "https://github.com/Imperial-Wasm/wasm-coq-public">formalisation of <span class = "name">WebAssembly</span>/<span class = "name">Wasm</span></a> in <span class = "name">Coq</span>.
 eo
-    Mi doktoriĝis ĉe <span class = "name">INRIA</span> <span class = "town">Rennes</span> superrigardite de <a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> kaj <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.
-    Mi tiam laboris pri formala analizo de la <span class = "name">Javaskripta</span> programlingvaĵo.
-    Pli da informoj troviĝas <a class = "switchLanguage_eo internalLink" href = "doktorigxo/companion.html?lang=eo#eo">en mia kundoktoriĝdokumento</a>.
+	Mi ankaŭ laboras pri <a href = "https://github.com/Imperial-Wasm/wasm-coq-public">formaligado de <span class = "name">WebAssembly</span>/<span class = "name">Wasm</span></a> en <span class = "name">Coq</span>.
 fr
-    J’ai fait mon doctorat à <span class = "name">INRIA</span> de <span class = "town">Rennes</span> sous la supervision d’<a href = "http://www.irisa.fr/celtique/aschmitt/"><span class = "name">Alan Schmitt</span></a> et de <a href = "http://www.irisa.fr/lande/jensen/"><span class = "name">Thomas Jensen</span></a>.
-    Je travaillais alors sur l’analyse formelle du langage de programmation <span class = "name">JavaScript</span>.
-    Plus d’informations peuvent se trouver <a class = "switchLanguage_fr internalLink" href = "doktorigxo/companion.html?lang=fr#fr">sur mon guide de thèse</a>.
+	Je travaille aussi sur une <a href = "https://github.com/Imperial-Wasm/wasm-coq-public">formalisation de <span class = "name">WebAssembly</span>/<span class = "name">Wasm</span></a> en <span class = "name">Coq</span>.
+end
+
+description
+en
+	I did my PhD at <a href = "https://www.inria.fr/en"><span class = "name">Inria</span></a> <span class = "town">Rennes</span> under the supervision of <a href = "http://people.rennes.inria.fr/Alan.Schmitt/"><span class = "name">Alan Schmitt</span></a> and <a href = "http://www.irisa.fr/celtique/jensen/"><span class = "name">Thomas Jensen</span></a>.
+	My PhD was about formal analyses of the <span class = "name">JavaScript</span> programming language.
+	More information can be found <a class = "switchLanguage_en internalLink" href = "doktorigxo/companion.html?lang=en#en">in my thesis companion</a>.
+eo
+	Mi doktoriĝis ĉe <a href = "https://www.inria.fr/"><span class = "name">Inria</span></a> <span class = "town">Rennes</span> superrigardite de <a href = "http://people.rennes.inria.fr/Alan.Schmitt/"><span class = "name">Alan Schmitt</span></a> kaj <a href = "http://www.irisa.fr/celtique/jensen/"><span class = "name">Thomas Jensen</span></a>.
+	Mi tiam laboris pri formala analizo de la <span class = "name">Javaskripta</span> programlingvaĵo.
+	Pli da informoj troviĝas <a class = "switchLanguage_eo internalLink" href = "doktorigxo/companion.html?lang=eo#eo">en mia kundoktoriĝdokumento</a>.
+fr
+	J’ai fait mon doctorat à <a href = "https://www.inria.fr/fr"><span class = "name">Inria</span></a> de <span class = "town">Rennes</span> sous la supervision d’<a href = "http://people.rennes.inria.fr/Alan.Schmitt/"><span class = "name">Alan Schmitt</span></a> et de <a href = "http://www.irisa.fr/celtique/jensen/"><span class = "name">Thomas Jensen</span></a>.
+	Je travaillais alors sur l’analyse formelle du langage de programmation <span class = "name">JavaScript</span>.
+	Plus d’informations peuvent se trouver <a class = "switchLanguage_fr internalLink" href = "doktorigxo/companion.html?lang=fr#fr">sur mon guide de thèse</a>.
+end
+
+description
+en
+	I did a postdoc in the <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, in <span class = "name">Santiago de Chile</span>, where I formalised the <span class = "name">R</span> programming language in <span class = "name">Coq</span>.
+	The formalisation is available <a href = "https://github.com/Mbodin/CoqR">online</a>.
+eo
+	Mi postdoktoriĝis ĉe la <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, en <span class = "name">Santiago</span>, en <span class = "name">Ĉilio</span>.
+	Mi tiam formaligis la programlingvaĵon <span class = "name">R</span> en <span class = "name">Coq</span>.
+	La formaligado disponeblas <a href = "https://github.com/Mbodin/CoqR">rete</a>.
+fr
+	J’ai fait un postdoc au <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, à <span class = "name">Santiago</span>, au <span class = "name">Chili</span>.
+	J’y ai formalisé le langage de programmation <span class = "name">R</span> en <span class = "name">Coq</span>.
+	La formalisation est disponible <a href = "https://github.com/Mbodin/CoqR">en ligne</a>.
 end
 
 description
@@ -57,11 +80,11 @@ end
 
 description
 en
-    <small><span id = "familyName_en">1</span> Also, Martin Constantino–Bodin.</small>
+    <small><span id = "familyName_en">¹</span> Pronounced /maʁtɛ̃ bodɛ̃/.  I am also known as Martin Constantino–Bodin.</small>
 eo
-    <small><span id = "familyName_eo">1</span> Ankaŭ, Martin Constantino–Bodin.</small>
+    <small><span id = "familyName_eo">¹</span> Prononcita /maʁtɛ̃ bodɛ̃/.  Mi ankaŭ estas konata kiel Martin Constantino–Bodin.</small>
 fr
-    <small><span id = "familyName_fr">1</span> Aussi, Martin Constantino–Bodin.</small>
+    <small><span id = "familyName_fr">¹</span> Prononcé /maʁtɛ̃ bodɛ̃/.  On me connait aussi sous le nom de Martin Constantino–Bodin.</small>
 end
 
 description
@@ -74,26 +97,27 @@ en
 	<dl class = "tableDescription">
 		<dt>Current position</dt>
 		<dd>Postdoc at the <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, in <span class = "town">London</span>.</dd>
-		<!--<dt>Team</dt>
-		<dd><a href = "http://www.irisa.fr/celtique/"><span class = "name">Celtique</span></a></dd>-->
+		<dt>Team</dt>
+		<dd><a href = "https://vtss.doc.ic.ac.uk/">Verified Trustworthy Software Specification</a></dd>
 		<dt>CV</dt>
-		<dd><a href = "rimedoj/cv_en.pdf">Available there</a></dd>
+		<dd><a href = "rimedoj/cv_en.pdf" rel = "nofollow">Available there</a></dd>
 		<dt>Public keys</dt>
 		<dd>
-            <ul class = "blocks">
-                <li><a href = "rimedoj/id_rsa.pub">SSH</a></li>
-                <li><a href = "rimedoj/0x6CC4BC7F.asc">OpenPGP</a></li>
+			<ul class = "blocks">
+				<li><a href = "rimedoj/id_rsa.pub" rel = "nofollow">SSH</a></li>
+				<li><a href = "rimedoj/0x6CC4BC7F.asc" rel = "nofollow">OpenPGP</a></li>
 			</ul>
-        </dd>
+    </dd>
 		<dt>Internet presence</dt>
 		<dd>
 			<ul class = "blocks">
 				<li><a href = "http://orcid.org/0000-0003-3588-3782"><span class = "name">ORCID</span></a></li>
 				<li><a href = "http://dblp.uni-trier.de/pers/hd/b/Bodin:Martin.html"><span class = "name">DBLP</span></a></li>
 				<li><a href = "http://scholar.google.fr/citations?user=OoWGEVEAAAAJ&amp;hl=en"><span class = "name">Google Scholar</span></a></li>
+				<li><a href = "https://github.com/Mbodin"><span class = "name">GitHub</span></a></li>
 				<li><a href = "http://en.wikipedia.org/wiki/User:Greatfermat"><span class = "name">Wikipedia</span></a></li>
 				<li><a href = "http://en.wiktionary.org/wiki/User:Greatfermat"><span class = "name">Wiktionary</span></a></li>
-                <li><a href = "https://github.com/Mbodin"><span class = "name">GitHub</span></a></li>
+				<li><a href = "https://www.openstreetmap.org/user/Martin%20Constantino%E2%80%93Bodin"><span class = "name">OpenStreetMap</span></a></li>
 			</ul>
 		</dd>
 	</dl>
@@ -101,26 +125,27 @@ eo
 	<dl class = "tableDescription">
 		<dt>Nuna pozicio</dt>
 		<dd>Postdoktorulo ĉe <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, en <span class = "town">Londono</span>.</dd>
-		<!--<dt>Skipo</dt>
-		<dd><a href = "http://www.irisa.fr/celtique/"><span class = "name">Celtique</span></a></dd>-->
+		<dt>Skipo</dt>
+		<dd><a href = "https://vtss.doc.ic.ac.uk/">Verified Trustworthy Software Specification</a></dd>
 		<dt>Vivresumo</dt>
-		<dd><a href = "rimedoj/cv_eo.pdf">Havebla tie ĉi</a></dd>
+		<dd><a href = "rimedoj/cv_eo.pdf" rel = "nofollow">Havebla tie ĉi</a></dd>
 		<dt>Publikaj ŝlosiloj</dt>
 		<dd>
-            <ul class = "blocks">
-                <li><a href = "rimedoj/id_rsa.pub">SSH</a></li>
-                <li><a href = "rimedoj/0x6CC4BC7F.asc">OpenPGP</a></li>
+			<ul class = "blocks">
+				<li><a href = "rimedoj/id_rsa.pub" rel = "nofollow">SSH</a></li>
+				<li><a href = "rimedoj/0x6CC4BC7F.asc" rel = "nofollow">OpenPGP</a></li>
 			</ul>
-        </dd>
+		</dd>
 		<dt>Interreta ĉeesto</dt>
 		<dd>
 			<ul class = "blocks">
 				<li><a href = "http://orcid.org/0000-0003-3588-3782"><span class = "name">ORCID</span></a></li>
 				<li><a href = "http://dblp.uni-trier.de/pers/hd/b/Bodin:Martin.html"><span class = "name">DBLP</span></a></li>
 				<li><a href = "http://scholar.google.fr/citations?user=OoWGEVEAAAAJ&amp;hl=eo"><span class = "name">Google Scholar</span></a></li>
+				<li><a href = "https://github.com/Mbodin"><span class = "name">GitHub</span></a></li>
 				<li><a href = "http://eo.wikipedia.org/wiki/Uzanto:Greatfermat"><span class = "name">Vikipedio</span></a></li>
 				<li><a href = "http://eo.wiktionary.org/wiki/Uzanto:Greatfermat"><span class = "name">Vikivortaro</span></a></li>
-                <li><a href = "https://github.com/Mbodin"><span class = "name">GitHub</span></a></li>
+				<li><a href = "https://www.openstreetmap.org/user/Martin%20Constantino%E2%80%93Bodin"><span class = "name">OpenStreetMap</span></a></li>
 			</ul>
 		</dd>
 	</dl>
@@ -128,26 +153,27 @@ fr
 	<dl class = "tableDescription">
 		<dt>Position actuelle</dt>
 		<dd>Post-doctorant au <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, à <span class = "town">Londres</span>.</dd>
-		<!--<dt>Équipe</dt>
-		<dd><a href = "http://www.irisa.fr/celtique/"><span class = "name">Celtique</span></a></dd>-->
+		<dt>Équipe</dt>
+		<dd><a href = "https://vtss.doc.ic.ac.uk/">Verified Trustworthy Software Specification</a></dd>
 		<dt>CV</dt>
-		<dd><a href = "rimedoj/cv_fr.pdf">Disponible ici</a></dd>
+		<dd><a href = "rimedoj/cv_fr.pdf" rel = "nofollow">Disponible ici</a></dd>
 		<dt>Clefs publiques</dt>
 		<dd>
-            <ul class = "blocks">
-                <li><a href = "rimedoj/id_rsa.pub">SSH</a></li>
-                <li><a href = "rimedoj/0x6CC4BC7F.asc">OpenPGP</a></li>
+			<ul class = "blocks">
+				<li><a href = "rimedoj/id_rsa.pub" rel = "nofollow">SSH</a></li>
+				<li><a href = "rimedoj/0x6CC4BC7F.asc" rel = "nofollow">OpenPGP</a></li>
 			</ul>
-        </dd>
+		</dd>
 		<dt>Présence sur Internet</dt>
 		<dd>
 			<ul class = "blocks">
 				<li><a href = "http://orcid.org/0000-0003-3588-3782"><span class = "name">ORCID</span></a></li>
 				<li><a href = "http://dblp.uni-trier.de/pers/hd/b/Bodin:Martin.html"><span class = "name">DBLP</span></a></li>
 				<li><a href = "http://scholar.google.fr/citations?user=OoWGEVEAAAAJ&amp;hl=fr"><span class = "name">Google Scholar</span></a></li>
+				<li><a href = "https://github.com/Mbodin"><span class = "name">GitHub</span></a></li>
 				<li><a href = "http://fr.wikipedia.org/wiki/Utilisateur:Greatfermat"><span class = "name">Wikipédia</span></a></li>
 				<li><a href = "http://fr.wiktionary.org/wiki/Utilisateur:Greatfermat"><span class = "name">Wiktionnaire</span></a></li>
-                <li><a href = "https://github.com/Mbodin"><span class = "name">GitHub</span></a></li>
+				<li><a href = "https://www.openstreetmap.org/user/Martin%20Constantino%E2%80%93Bodin"><span class = "name">OpenStreetMap</span></a></li>
 			</ul>
 		</dd>
 	</dl>

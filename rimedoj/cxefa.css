@@ -260,7 +260,7 @@ p.footbar {
 	text-align:  center ;
 }
 
-@media screen and (min-width: 14cm) {
+@media screen and (min-width: 20cm) {
 	#rightImage {
 		float:  right ;
 		width:  10cm ;
@@ -272,13 +272,13 @@ p.footbar {
 	border:  4px solid #5c3566 ;
 }
 
-@media screen and (min-width: 7cm) {
+@media screen and (min-width: 11cm) {
 	#imageOfMe {
 		height:  6cm ;
 	}
 }
 
-@media screen and (max-width: 7cm) {
+@media screen and (max-width: 11cm) {
 	#imageOfMe {
 		width:  100% ;
 	}
@@ -725,33 +725,37 @@ dl.explainitem dd {
 }
 
 
-@media screen and (min-width: 10cm) {
+@media screen and (min-width: 20cm) {
 	dl.tableDescription {
 		margin:  2em 0px ;
-		width:  85% ;
+		width:  95% ;
 		clear:  both ;
 	}
 
 	dl.tableDescription dt {
-		width:  19% ;
-		margin-bottom:  1px ;
+		width:  20% ;
+		margin-bottom:  2px ;
 	}
 
 	dl.tableDescription dd {
-		width:  60% ;
+		width:  74% ;
 	}
 }
 
-@media screen and (max-width: 10cm) {
+@media screen and (max-width: 20cm) {
 	dl.tableDescription {
 		margin:  1ex 0px ;
 		width:  100% ;
 		clear:  both ;
 	}
 
-	dl.tableDescription dt,
+	dl.tableDescription dt {
+		width:  100% ;
+	}
+
 	dl.tableDescription dd {
 		width:  100% ;
+		padding-right:  1em ;
 	}
 }
 

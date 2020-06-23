@@ -26,34 +26,31 @@ description
 en
 	I am currently working on a formalism called <a href = "http://skeletons.inria.fr/">skeletons</a> to represent the semantics of real-world language (JavaScript, R, etc.).
 	This formalism enables to derive with a minimal effort a wide range of program analyses certified in the <a href = "http://coq.inria.fr"><span class = "name">Coq</span> proof assistant</a>.
+#
+	I am also working on a <a href = "https://github.com/Imperial-Wasm/wasm-coq-public">formalisation of <span class = "name">WebAssembly</span>/<span class = "name">Wasm</span></a> in <span class = "name">Coq</span>.
 eo
 	Mi nun laboras pri formalismo (kiu nomiĝas <a href = "http://skeletons.inria.fr/">ostaron</a>) por reprezenti la semantikon de vervivaj programlingvaĵoj (JavaScript, R, ktp.).
 	Ĉi tiu formalismo permesigas dedukti granddiversajn programanalizojn pruvitajn en <a href = "http://coq.inria.fr">la <span class = "name">Coq</span> pruvilo</a>.
+#
+	Mi ankaŭ laboras pri <a href = "https://github.com/Imperial-Wasm/wasm-coq-public">formaligado de <span class = "name">WebAssembly</span>/<span class = "name">Wasm</span></a> en <span class = "name">Coq</span>.
 fr
 	Je travaille actuellement sur un formalisme, <a href = "http://skeletons.inria.fr/">les squelettes</a>, représentant la sémantique de langages de programmation complexes(JavaScript, R, etc.).
 	Ce formalisme permet de déduire avec un effort minimal toute une gamme d’analyses de programmes certifiées dans <a href = "http://coq.inria.fr">l’assistant de preuve <span class = "name">Coq</span></a>.
-end
-
-description
-en
-	I am also working on a <a href = "https://github.com/Imperial-Wasm/wasm-coq-public">formalisation of <span class = "name">WebAssembly</span>/<span class = "name">Wasm</span></a> in <span class = "name">Coq</span>.
-eo
-	Mi ankaŭ laboras pri <a href = "https://github.com/Imperial-Wasm/wasm-coq-public">formaligado de <span class = "name">WebAssembly</span>/<span class = "name">Wasm</span></a> en <span class = "name">Coq</span>.
-fr
+#
 	Je travaille aussi sur une <a href = "https://github.com/Imperial-Wasm/wasm-coq-public">formalisation de <span class = "name">WebAssembly</span>/<span class = "name">Wasm</span></a> en <span class = "name">Coq</span>.
 end
 
 description
 en
-	Before this, I did a postdoc in the <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, in <span class = "name">Santiago de Chile</span>, where I formalised the <span class = "name">R</span> programming language in <span class = "name">Coq</span>.
+	Before this, I did a postdoc in the <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, in <span class = "name">Santiago de Chile</span>, where I formalised the <a href = "https://www.r-project.org/"><span class = "name">R</span></a> programming language in <span class = "name">Coq</span>.
 	The formalisation is available <a href = "https://github.com/Mbodin/CoqR">online</a>.
 eo
 	Antaŭ tio, mi postdoktoriĝis ĉe la <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, en <span class = "name">Santiago</span>, en <span class = "name">Ĉilio</span>.
-	Mi tiam formaligis la programlingvaĵon <span class = "name">R</span> en <span class = "name">Coq</span>.
+	Mi tiam formaligis la programlingvaĵon <a href = "https://www.r-project.org/"><span class = "name">R</span></a> en <span class = "name">Coq</span>.
 	La formaligado disponeblas <a href = "https://github.com/Mbodin/CoqR">rete</a>.
 fr
 	Avant cela, j’ai fait un postdoc au <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, à <span class = "name">Santiago</span>, au <span class = "name">Chili</span>.
-	J’y ai formalisé le langage de programmation <span class = "name">R</span> en <span class = "name">Coq</span>.
+	J’y ai formalisé le langage de programmation <a href = "https://www.r-project.org/"><span class = "name">R</span></a> en <span class = "name">Coq</span>.
 	La formalisation est disponible <a href = "https://github.com/Mbodin/CoqR">en ligne</a>.
 end
 
@@ -74,11 +71,41 @@ end
 
 description
 en
-	This website is also available in <a class = "switchLanguage_eo internalLink" href = "index.html?lang=eo#eo">Esperanto</a> and <a class = "switchLanguage_fr internalLink" href = "index.html?lang=fr#fr">French</a>.
+	My research interests are focussed around programming languages design and analyses.
+	I work with the <a href = "http://coq.inria.fr"><span class = "name">Coq</span> proof assistant</a>, which provides high confidence to the softwares I build.
+	I am especially interested in applying formal methods to real-world programming languages.
+	These languages usually come with a large range of special (and sometimes unexpected) behaviours, which can lead to serious programming mistakes.
+	I believe that formal methods can help programmers detect and avoid these mistakes.
 eo
-	Tiu ĉi retejo ankaŭ disponeblas <a class = "switchLanguage_en internalLink" href = "index.html?lang=en#en">angle</a> kaj <a class = "switchLanguage_fr internalLink" href = "index.html?lang=fr#fr">france</a>.
+	Mia esploradinteresoj fokusiĝas ĉirkaŭ programlingvaĵaj elkreok kaj analizoj.
+	Mi laboras kun la <a href = "http://coq.inria.fr"><span class = "name">Coq</span> pruvilo</a>, kiu donas altan fidon al la programaĵojn kiujn mi kreas.
+	Mi specife interesiĝas en apliki formalajn metodojn al vervivajn programlingvaĵojn.
+	Tiaj lingvaĵojn emas elmontri granddiversajn specialajn (kaj kelkfoje neatenditajn) komportamentojn, kiuj povas elkrei gravajn programerarojn.
+	Mi pensas ke formalaj metodoj povas helpi programistojn ekscii kaj eviti tiajn erarojn.
 fr
-	Ce site est aussi disponible en <a class = "switchLanguage_eo internalLink" href = "index.html?lang=eo#eo">espéranto</a> et en <a class = "switchLanguage_en internalLink" href = "index.html?lang=en#en">anglais</a>.
+	Mes thèmes de recherches se concentrent sur la conception et les analyses de langages de programmation.
+	Je travaille avec <a href = "http://coq.inria.fr">l’assistant de preuve <span class = "name">Coq</span></a>, qui garantit un haut niveau de confiance pour les programmes que je conçois.
+	Je suis particulièrement intéressé par l’application des méthodes formelles aux langages de programmation fréquemment utilisés en industrie.
+	Ces langages ont souvent une large gamme de comportements spéciaux, souvent inattendus, qui peuvent mener à des erreurs de programmation importantes.
+	Je pense que les méthodes formelles peuvent aider les programmeurs à détecter et éviter ces erreurs.
+end
+
+description
+en
+	In my research, I thus formalised widely used programming languages (<a href = "https://github.com/jscert/jscert">JavaScript</a>, <a href = "https://github.com/Mbodin/coqR">R</a>, and <a href = "https://github.com/Imperial-Wasm/wasm-coq-public">Wasm</a>).
+	These formalisations are notably large compared to other formalisations from the field.
+	I thus helped design <a href = "http://skeletons.inria.fr/">skeletons</a>, a formalism to express and derive formally-proven program analyses from such large formalisations.
+	I hope that these projects will help designing practical tools used for code-quality control in industry.
+eo
+	En mia esplorado, mi do formaligis multe uzitajn programlingvaĵojn (<a href = "https://github.com/jscert/jscert">JavaScript</a>, <a href = "https://github.com/Mbodin/coqR">R</a>, kaj <a href = "https://github.com/Imperial-Wasm/wasm-coq-public">Wasm</a>).
+	Tiuj formaligadoj rimarkiĝas per siaj grandecoj kompare al aliaj formaligadoj de la fako.
+	Mi do helpis elkrei la <a href = "http://skeletons.inria.fr/">ostarojn</a>, iu formalaĵo por defini kaj elkrei formalpruvitajn programanalizojn el tiaj grandaj formaligadoj.
+	Mi esperas ke tiaj projektoj helpos krei praktikajn ilojn uzitaj por kontroli kodkvaliton industrie.
+fr
+	Parmi mes travaux, j’ai ainsi formalisé des langages de programmation très utilisés (<a href = "https://github.com/jscert/jscert">JavaScript</a>, <a href = "https://github.com/Mbodin/coqR">R</a>, et <a href = "https://github.com/Imperial-Wasm/wasm-coq-public">Wasm</a>).
+	Ces formalisations se différencient des autres formalisations du domaine par leur taille importante.
+	J’ai donc participé à la conception des <a href = "http://skeletons.inria.fr/">squelettes</a>, un formalisme pour exprimer et dériver des analyses de programme certifiées à partir de telles formalisations.
+	J’ai bon espoir que ces projets permettrons de concevoir des outils pratiques de controle de qualité de code dans l’industrie.
 end
 
 description
@@ -88,11 +115,6 @@ eo
     <small><span id = "familyName_eo">¹</span> Prononcita /maʁtɛ̃ bodɛ̃/.  Mi ankaŭ estas konata kiel Martin Constantino–Bodin.</small>
 fr
     <small><span id = "familyName_fr">¹</span> Prononcé /maʁtɛ̃ bodɛ̃/.  On me connait aussi sous le nom de Martin Constantino–Bodin.</small>
-end
-
-description
-all
-	<span class = "name">Martin</span>.
 end
 
 specdescription

@@ -913,6 +913,13 @@ eo
 	<a href = "esplorado/qualification.pdf">Documentaro</a>
 fr
 	<a href = "esplorado/qualification.pdf">Dossier</a>
+link
+en
+	<a href = "esplorado/qualification.tar.xz">Sources</a>
+eo
+	<a href = "esplorado/qualification.tar.xz">Fontoj</a>
+fr
+	<a href = "esplorado/qualification.tar.xz">Sources</a>
 end
 
 item
@@ -943,5 +950,19 @@ eo
 	<a href = "esplorado/inria_spades_slides.pdf">Diapozitivoj</a>
 fr
 	<a href = "esplorado/inria_spades_slides.pdf">Présentation</a>
+link
+en
+	<a href = "esplorado/inria_spades.tar.xz">Document sources</a>
+eo
+	<a href = "esplorado/inria_spades.tar.xz">Dokumentfontoj</a>
+fr
+	<a href = "esplorado/inria_spades.tar.xz">Sources du dossier</a>
+link
+en
+	<a href = "esplorado/inria_spades_slides.tar.xz">Slides sources</a>
+eo
+	<a href = "esplorado/inria_spades_slides.tar.xz">Diapozitivfontoj</a>
+fr
+	<a href = "esplorado/inria_spades_slides.tar.xz">Sources de la présentation</a>
 end
 

@@ -24,11 +24,14 @@ end
 
 description
 en
-	I am currently working on a formalism called skeletons to represent the semantics of real-world language, and get as much properties as possible certified in the <a href = "http://coq.inria.fr"><span class = "name">Coq</span> proof assistant</a>.
+	I am currently working on a formalism called <a href = "http://skeletons.inria.fr/">skeletons</a> to represent the semantics of real-world language (JavaScript, R, etc.).
+	This formalism enables to derive with a minimal effort a wide range of program analyses certified in the <a href = "http://coq.inria.fr"><span class = "name">Coq</span> proof assistant</a>.
 eo
-	Mi nun laboras pri formalismo (kiu nomiĝas ostaron) por reprezenti la semantikon de vervivaj programlingvaĵoj, kaj ricevi la plej multe da ecoj pruvitaj en <a href = "http://coq.inria.fr">la <span class = "name">Coq</span> pruvilo</a>.
+	Mi nun laboras pri formalismo (kiu nomiĝas <a href = "http://skeletons.inria.fr/">ostaron</a>) por reprezenti la semantikon de vervivaj programlingvaĵoj (JavaScript, R, ktp.).
+	Ĉi tiu formalismo permesigas dedukti granddiversajn programanalizojn pruvitajn en <a href = "http://coq.inria.fr">la <span class = "name">Coq</span> pruvilo</a>.
 fr
-	Je travaille actuellement sur un formalisme appelé squelette représentant la sémantique de langages de programmation complexes, tout en obtenant autant de propriétés que possibles certifiées dans <a href = "http://coq.inria.fr">l’assistant de preuve <span class = "name">Coq</span></a>.
+	Je travaille actuellement sur un formalisme, <a href = "http://skeletons.inria.fr/">les squelettes</a>, représentant la sémantique de langages de programmation complexes(JavaScript, R, etc.).
+	Ce formalisme permet de déduire avec un effort minimal toute une gamme d’analyses de programmes certifiées dans <a href = "http://coq.inria.fr">l’assistant de preuve <span class = "name">Coq</span></a>.
 end
 
 description
@@ -38,6 +41,20 @@ eo
 	Mi ankaŭ laboras pri <a href = "https://github.com/Imperial-Wasm/wasm-coq-public">formaligado de <span class = "name">WebAssembly</span>/<span class = "name">Wasm</span></a> en <span class = "name">Coq</span>.
 fr
 	Je travaille aussi sur une <a href = "https://github.com/Imperial-Wasm/wasm-coq-public">formalisation de <span class = "name">WebAssembly</span>/<span class = "name">Wasm</span></a> en <span class = "name">Coq</span>.
+end
+
+description
+en
+	Before this, I did a postdoc in the <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, in <span class = "name">Santiago de Chile</span>, where I formalised the <span class = "name">R</span> programming language in <span class = "name">Coq</span>.
+	The formalisation is available <a href = "https://github.com/Mbodin/CoqR">online</a>.
+eo
+	Antaŭ tio, mi postdoktoriĝis ĉe la <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, en <span class = "name">Santiago</span>, en <span class = "name">Ĉilio</span>.
+	Mi tiam formaligis la programlingvaĵon <span class = "name">R</span> en <span class = "name">Coq</span>.
+	La formaligado disponeblas <a href = "https://github.com/Mbodin/CoqR">rete</a>.
+fr
+	Avant cela, j’ai fait un postdoc au <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, à <span class = "name">Santiago</span>, au <span class = "name">Chili</span>.
+	J’y ai formalisé le langage de programmation <span class = "name">R</span> en <span class = "name">Coq</span>.
+	La formalisation est disponible <a href = "https://github.com/Mbodin/CoqR">en ligne</a>.
 end
 
 description
@@ -53,20 +70,6 @@ fr
 	J’ai fait mon doctorat à <a href = "https://www.inria.fr/fr"><span class = "name">Inria</span></a> de <span class = "town">Rennes</span> sous la supervision d’<a href = "http://people.rennes.inria.fr/Alan.Schmitt/"><span class = "name">Alan Schmitt</span></a> et de <a href = "http://www.irisa.fr/celtique/jensen/"><span class = "name">Thomas Jensen</span></a>.
 	Je travaillais alors sur l’analyse formelle du langage de programmation <span class = "name">JavaScript</span>.
 	Plus d’informations peuvent se trouver <a class = "switchLanguage_fr internalLink" href = "doktorigxo/companion.html?lang=fr#fr">sur mon guide de thèse</a>.
-end
-
-description
-en
-	I did a postdoc in the <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, in <span class = "name">Santiago de Chile</span>, where I formalised the <span class = "name">R</span> programming language in <span class = "name">Coq</span>.
-	The formalisation is available <a href = "https://github.com/Mbodin/CoqR">online</a>.
-eo
-	Mi postdoktoriĝis ĉe la <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, en <span class = "name">Santiago</span>, en <span class = "name">Ĉilio</span>.
-	Mi tiam formaligis la programlingvaĵon <span class = "name">R</span> en <span class = "name">Coq</span>.
-	La formaligado disponeblas <a href = "https://github.com/Mbodin/CoqR">rete</a>.
-fr
-	J’ai fait un postdoc au <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, à <span class = "name">Santiago</span>, au <span class = "name">Chili</span>.
-	J’y ai formalisé le langage de programmation <span class = "name">R</span> en <span class = "name">Coq</span>.
-	La formalisation est disponible <a href = "https://github.com/Mbodin/CoqR">en ligne</a>.
 end
 
 description
@@ -113,7 +116,7 @@ en
 			<ul class = "blocks">
 				<li><a href = "http://orcid.org/0000-0003-3588-3782"><span class = "name">ORCID</span></a></li>
 				<li><a href = "http://dblp.uni-trier.de/pers/hd/b/Bodin:Martin.html"><span class = "name">DBLP</span></a></li>
-				<li><a href = "http://scholar.google.fr/citations?user=OoWGEVEAAAAJ&amp;hl=en"><span class = "name">Google Scholar</span></a></li>
+				<li><a href = "http://scholar.google.fr/citations?user=OoWGEVEAAAAJ&amp;hl=en"><span class = "name">Google Scholar</span></a></li>
 				<li><a href = "https://github.com/Mbodin"><span class = "name">GitHub</span></a></li>
 				<li><a href = "http://en.wikipedia.org/wiki/User:Greatfermat"><span class = "name">Wikipedia</span></a></li>
 				<li><a href = "http://en.wiktionary.org/wiki/User:Greatfermat"><span class = "name">Wiktionary</span></a></li>
@@ -141,7 +144,7 @@ eo
 			<ul class = "blocks">
 				<li><a href = "http://orcid.org/0000-0003-3588-3782"><span class = "name">ORCID</span></a></li>
 				<li><a href = "http://dblp.uni-trier.de/pers/hd/b/Bodin:Martin.html"><span class = "name">DBLP</span></a></li>
-				<li><a href = "http://scholar.google.fr/citations?user=OoWGEVEAAAAJ&amp;hl=eo"><span class = "name">Google Scholar</span></a></li>
+				<li><a href = "http://scholar.google.fr/citations?user=OoWGEVEAAAAJ&amp;hl=eo"><span class = "name">Google Scholar</span></a></li>
 				<li><a href = "https://github.com/Mbodin"><span class = "name">GitHub</span></a></li>
 				<li><a href = "http://eo.wikipedia.org/wiki/Uzanto:Greatfermat"><span class = "name">Vikipedio</span></a></li>
 				<li><a href = "http://eo.wiktionary.org/wiki/Uzanto:Greatfermat"><span class = "name">Vikivortaro</span></a></li>
@@ -152,7 +155,7 @@ eo
 fr
 	<dl class = "tableDescription">
 		<dt>Position actuelle</dt>
-		<dd>Post-doctorant au <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, à <span class = "town">Londres</span>.</dd>
+		<dd>Post-doctorant à l’<a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, à <span class = "town">Londres</span>.</dd>
 		<dt>Équipe</dt>
 		<dd><a href = "https://vtss.doc.ic.ac.uk/">Verified Trustworthy Software Specification</a></dd>
 		<dt>CV</dt>
@@ -169,7 +172,7 @@ fr
 			<ul class = "blocks">
 				<li><a href = "http://orcid.org/0000-0003-3588-3782"><span class = "name">ORCID</span></a></li>
 				<li><a href = "http://dblp.uni-trier.de/pers/hd/b/Bodin:Martin.html"><span class = "name">DBLP</span></a></li>
-				<li><a href = "http://scholar.google.fr/citations?user=OoWGEVEAAAAJ&amp;hl=fr"><span class = "name">Google Scholar</span></a></li>
+				<li><a href = "http://scholar.google.fr/citations?user=OoWGEVEAAAAJ&amp;hl=fr"><span class = "name">Google Scholar</span></a></li>
 				<li><a href = "https://github.com/Mbodin"><span class = "name">GitHub</span></a></li>
 				<li><a href = "http://fr.wikipedia.org/wiki/Utilisateur:Greatfermat"><span class = "name">Wikipédia</span></a></li>
 				<li><a href = "http://fr.wiktionary.org/wiki/Utilisateur:Greatfermat"><span class = "name">Wiktionnaire</span></a></li>

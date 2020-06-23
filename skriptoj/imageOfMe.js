@@ -5,28 +5,34 @@
 	var visitedImages = new Array ()
 	var prob_tot = 0
 
-	add_image = function (name, prob, toBeSeenAtFirst){
+	var add_image = function (name, prob, toBeSeenAtFirst){
 		var src = "rimedoj/moi_" + name + ".jpg"
 
-		var img = new Image ()
+		var load = function () {
+				var img = new Image ()
 
-		var o = {
-			img: img,
-			src: src,
-			prob: prob,
-			first: toBeSeenAtFirst,
-			loaded: false
-		}
+				var image = {
+					img: img,
+					src: src,
+					prob: prob,
+					first: toBeSeenAtFirst,
+					loaded: false
+				}
 
-		img.onload = function (){ o.loaded = true }
-		img.src = src
+				img.onload = function (){ image.loaded = true }
+				img.src = src
 
-		images.push (o)
+				images.push (image)
 
-		prob_tot += prob
+				prob_tot += prob
+			}
+
+		if (toBeSeenAtFirst) load ()
+		else setTimeout (load, 200 * images.length)
 	}
 
-	get_image = function (num){
+	/* Return the corresponding image given a number representing probabilities. */
+	var get_image = function (num){
 		var count = 0
 		for (var i = 0; i < images.length; i++){
 			count += images[i].prob
@@ -51,22 +57,22 @@
 		return ""
 	}
 
-	add_image ("Avranches", 2, true)
+	add_image ("Avranches", 2, false)
 	add_image ("Ćȩstorowa", 5, false)
-	add_image ("chevalier", 3, false)
-	add_image ("Coliseum", 1, false)
-	add_image ("gangster", 1, false)
+	// add_image ("chevalier", 3, false)
+	// add_image ("Coliseum", 1, false)
+	// add_image ("gangster", 1, false)
 	add_image ("Giverny", 2, true)
 	add_image ("Grenoble", 1, false)
-	add_image ("impro", 2, false)
+	// add_image ("impro", 2, false)
 	add_image ("Maastricht", 5, false)
-	add_image ("Madrid", 3, true)
-	add_image ("MJ", 1, false)
-	add_image ("narrateur", 1, false)
-	add_image ("pirate", 1, false)
-	add_image ("Rome", 5, true)
-	add_image ("San_Diego", 1, true)
-	add_image ("台北", 2, true)
+	add_image ("Madrid", 3, false)
+	// add_image ("MJ", 1, false)
+	// add_image ("narrateur", 1, false)
+	// add_image ("pirate", 1, false)
+	add_image ("Rome", 5, false)
+	add_image ("San_Diego", 1, false)
+	add_image ("台北", 2, false)
 	add_image ("垦丁", 2, false)
 	add_image ("Cambridge", 7, true)
 	add_image ("London", 9, true)
@@ -74,47 +80,48 @@
 	add_image ("lac", 5, true)
 	add_image ("montagne", 1, false)
 
-    var updateMyImage
+	var updateMyImage
 
-    update_image = function (img){
+	var update_image = function (img){
 
-            updateMyImage = function (first){
-                    return function (){
-                        var tries = 0
-                        var maxTriesLoaded = 42
-                        var maxTries = 84
+			updateMyImage = function (first){
+					return function (){
+						var tries = 0
+						var maxTriesLoaded = 42
+						var maxTries = 84
 
-                        do {
-                            tries++
-                            var i = get_image (randInt (prob_tot))
-                        } while (tries < maxTries && (
-                               (first && !i.first)
-                            || (tries < maxTriesLoaded && !i.loaded)
-                            ))
+						do {
+							tries++
+							var i = get_image (randInt (prob_tot))
+						} while (tries < maxTries && (
+							(first && !i.first)
+							|| (tries < maxTriesLoaded && !i.loaded)
+						))
 
-                        img.setAttribute ("src", i.src)
-                    }
-                }
+						img.setAttribute ("src", i.src)
+					}
+				}
 
-            img.parentNode.onclick = updateMyImage (false)
+			img.parentNode.onclick = updateMyImage (false)
 
-            updateMyImage (true)()
-        }
+			updateMyImage (true)()
+		}
 
-    applyNode ("imageOfMe", update_image)
+	applyNode ("imageOfMe", update_image)
 
-    if (updateMyImage)
-        setInterval (updateMyImage (true), 30000)
-    else /* The image has been removed, high probably because of the language interaction. */
-        addLanguageFunction (function (){
-                if (!updateMyImage)
-                    applyNode ("imageOfMe", update_image)
+	if (updateMyImage)
+		setInterval (updateMyImage (true), 60000)
+	else /* The image has been removed, high probably because of the language interaction. */
+		addLanguageFunction (function (){
+			if (!updateMyImage)
+				applyNode ("imageOfMe", update_image)
 
-                if (updateMyImage){
-                    setInterval (updateMyImage (true), 30000)
-                    return true
-                }
-            })
+			if (updateMyImage){
+				setInterval (updateMyImage (true), 60000)
+				return true
+			}
+		})
+
 } ())
 
 // @license-end

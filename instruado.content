@@ -15,11 +15,79 @@ end
 
 description
 en
-	Here stands some of my teaching activity.
+	This page lists my teaching activities, as well as some of the associated material that I helped created.
+	The language of these documents depends of the course and its students (mainly English and French).
 eo
-	Jen parto de mia instruistaro.
+	Ĉi tiu paĝo listas mian instruistaron, kune kun kelkaj de ties materialo kiun mi helpis krei.
+	La lingvo de tiuj dokumentoj dependas de la kurso kaj de ties studentoj (ĉefe france kaj angle).
 fr
-	Cette page quelques travaux d’enseignement auxquels j’ai participé.
+	Cette page recense les travaux d’enseignement auxquels j’ai participé, ainsi qu’une partie du matériel pédagogique que j’ai créé.
+	La langue des documents varie en fonction des cours et des étudiants (principalement français et anglais).
+end
+
+section
+sectionName
+2018, 2019
+all
+	2018_2019
+end
+
+item
+all
+	<a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College London</span></a>, Separation Logic
+description
+en
+	Tutorials for M1 students.
+	Course reference: CO404.
+eo
+	Superrigardaj laboroj por M1 lernantoj.
+	Kursreferenco: CO404.
+fr
+	TD pour des étudiants de M1.
+	Référence du cours : CO404.
+link
+en
+	<a href = "https://vtss.doc.ic.ac.uk/teaching/separationlogic.html">Webpage of the module</a>
+eo
+	<a href = "https://vtss.doc.ic.ac.uk/teaching/separationlogic.html">Retpaĝo de la kurso</a>
+fr
+	<a href = "https://vtss.doc.ic.ac.uk/teaching/separationlogic.html">Page du module</a>
+link
+en
+	<a href = "https://www.imperial.ac.uk/computing/current-students/courses/404/">Description of the module</a>
+eo
+	<a href = "https://www.imperial.ac.uk/computing/current-students/courses/404/">Priskribo de la kurso</a>
+fr
+	<a href = "https://www.imperial.ac.uk/computing/current-students/courses/404/">Description du module</a>
+end
+
+item
+all
+	<a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College London</span></a>, Models of Computation
+description
+en
+	Tutorials for L2 students.
+	Course reference: CO240.
+eo
+	Superrigardaj laboroj por L2 lernantoj.
+	Kursreferenco: CO240.
+fr
+	TD pour des étudiants de L2.
+	Référence du cours : CO240.
+link
+en
+	<a href = "https://vtss.doc.ic.ac.uk/teaching/ModelsComputation.html">Webpage of the module</a>
+eo
+	<a href = "https://vtss.doc.ic.ac.uk/teaching/ModelsComputation.html">Retpaĝo de la kurso</a>
+fr
+	<a href = "https://vtss.doc.ic.ac.uk/teaching/ModelsComputation.html">Page du module</a>
+link
+en
+	<a href = "https://www.imperial.ac.uk/computing/current-students/courses/240/">Description of the module</a>
+eo
+	<a href = "https://www.imperial.ac.uk/computing/current-students/courses/240/">Priskribo de la kurso</a>
+fr
+	<a href = "https://www.imperial.ac.uk/computing/current-students/courses/240/">Description du module</a>
 end
 
 section
@@ -33,13 +101,20 @@ item
 all
 	<a href = "http://www.uchile.cl/"><span class = "name">Universidad de Chile</span></a>, Introducción a <span class = "name">Coq</name>: Lógica, Tipos y Verificación
 description
-all
-    CC7125/MA7125 
+en
+	Courses and tutorials for M2 students.
+	Course reference: CC7125/MA7125.
+eo
+	Kursoj kaj superrigardataj laboroj por M2 lernantoj.
+	Kursreferenco: CC7125/MA7125.
+fr
+	Cours/TD et TP pour des étudiants de M2.
+	Référence du cours : CC7125/MA7125.
 link
 en
 	<a href = "http://pleiad.dcc.uchile.cl/teaching/cc7125"><span class = "name">Éric Tanter</span>’s page for this course</a>
 eo
-	<a href = "http://pleiad.dcc.uchile.cl/teaching/cc7125">La paĝo de <span class = "name">Éric Tanter</span> pri ĝi</a>
+	<a href = "http://pleiad.dcc.uchile.cl/teaching/cc7125">La retpaĝo de <span class = "name">Éric Tanter</span> pri ĝi</a>
 fr
 	<a href = "http://pleiad.dcc.uchile.cl/teaching/cc7125">La page de <span class = "name">Éric Tanter</span> sur ce cours</a>
 link
@@ -69,12 +144,12 @@ section
 sectionName
 2013_2014
 all
-	2013–2014
+	2013, 2014
 end
 
 item
 all
-	<a href = "http://www.bretagne.ens-cachan.fr/"><span class = "name">ENS Cachan Bretagne</span></a>, Software design and verification
+	<a href = "http://www.ens-rennes.fr/"><span class = "name">ENS Cachan Bretagne</span></a>, Software design and verification
 description
 en
 	Tutorials for M1 students.
@@ -94,21 +169,14 @@ link
 en
 	<a href = "http://people.irisa.fr/Francois.Schwarzentruber/mit2_cvfp_2013/"><span class = "name">François Schwarzentruber</span>’s page for this course</a>
 eo
-	<a href = "http://people.irisa.fr/Francois.Schwarzentruber/mit2_cvfp_2013/">La paĝo de <span class = "name">François Schwarzentruber</span> pri ĝi</a>
+	<a href = "http://people.irisa.fr/Francois.Schwarzentruber/mit2_cvfp_2013/">La retpaĝo de <span class = "name">François Schwarzentruber</span> pri ĝi</a>
 fr
 	<a href = "http://people.irisa.fr/Francois.Schwarzentruber/mit2_cvfp_2013/">La page de <span class = "name">François Schwarzentruber</span> sur ce cours</a>
 end
 
-section
-sectionName
-2012_2013
-all
-	2012–2013
-end
-
 item
 all
-	<a href = "http://www.bretagne.ens-cachan.fr/"><span class = "name">ENS Cachan Bretagne</span></a>, Langages formels
+	<a href = "http://www.ens-rennes.fr/"><span class = "name">ENS Cachan Bretagne</span></a>, Langages formels
 description
 en
 	Tutorials for L3 students.
@@ -126,28 +194,47 @@ fr
 	Aller à la page du module
 link
 en
-	<a href = "http://www.irisa.fr/celtique/cachera/Enseignement/LF/LF.html"><span class = "name">David Cachera</span>’s page for this course</a>
+	<a href = "http://people.irisa.fr/David.Cachera/Enseignement/LF/LF.html"><span class = "name">David Cachera</span>’s page for this course</a>
 eo
-	<a href = "http://www.irisa.fr/celtique/cachera/Enseignement/LF/LF.html">La paĝo de <span class = "name">David Cachera</span> pri ĝi</a>
+	<a href = "http://people.irisa.fr/David.Cachera/Enseignement/LF/LF.html">La retpaĝo de <span class = "name">David Cachera</span> pri ĝi</a>
 fr
-	<a href = "http://www.irisa.fr/celtique/cachera/Enseignement/LF/LF.html">La page de <span class = "name">David Cachera</span> sur ce cours</a>
+	<a href = "http://people.irisa.fr/David.Cachera/Enseignement/LF/LF.html">La page de <span class = "name">David Cachera</span> sur ce cours</a>
 link
 en
-	<a href = "http://www.irisa.fr/celtique/jobin/support_fr.html"><span class = "name">Arnaud Jobin</span>’s</a>
+	<a href = "https://web.archive.org/web/2016*/http://www.irisa.fr/celtique/jobin/support_fr.html"><span class = "name">Arnaud Jobin</span>’s page (archive)</a>
 eo
-	<a href = "http://www.irisa.fr/celtique/jobin/support_fr.html">Tiu de <span class = "name">Arnaud Jobin</span></a>
+	<a href = "https://web.archive.org/web/2016*/http://www.irisa.fr/celtique/jobin/support_fr.html">Tiu de <span class = "name">Arnaud Jobin</span> (arĥivita)</a>
 fr
-	<a href = "http://www.irisa.fr/celtique/jobin/support_fr.html">Celle d’<span class = "name">Arnaud Jobin</span></a>
+	<a href = "https://web.archive.org/web/2016*/http://www.irisa.fr/celtique/jobin/support_fr.html">Celle d’<span class = "name">Arnaud Jobin</span> (archive)</a>
 end
 
 item
 all
-	<a href = "http://www.insa-rennes.fr"><span class = "name">Insa Rennes</span></a>, Introduction à la programmation en <span class = "name">Scheme</span>
+	<a href = "https://www.univ-rennes1.fr/"><span class = "name">Université Rennes 1</span></a>, Introduction à la programmation fonctionnelle
 description
 en
 	Courses and tutorials for L1 students.
 eo
-	Kursoj kaj superrigardaj laboroj por L1 lernantoj.
+	Kursoj kaj superrigardataj laboroj por L1 lernantoj.
+fr
+	Cours/TD et TP pour des étudiants de L1.
+end
+
+section
+sectionName
+2012
+all
+	2012
+end
+
+item
+all
+	<a href = "http://www.insa-rennes.fr"><span class = "name">Insa Rennes</span></a>, Introduction à <span class = "name">Scheme</span>
+description
+en
+	Courses and tutorials for L1 students.
+eo
+	Kursoj kaj superrigardataj laboroj por L1 lernantoj.
 fr
 	Cours/TD et TP pour des étudiants de L1.
 end

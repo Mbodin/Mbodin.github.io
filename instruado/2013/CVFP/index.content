@@ -19,12 +19,18 @@ end
 
 item
 en
-Let’s Play With <span class = "name">Spin</span>
+	Let’s Play With <span class = "name">Spin</span>
 eo
-Unua <span class = "name">Spin</span>a uzado
+	Unua uzo de <span class = "name">Spin</span>
 fr
-Première utilisation de <span class = "name">Spin</span>
+	Première utilisation de <span class = "name">Spin</span>
 description
+en
+	A tutorial about dinning philosophers.
+eo
+	Superrigardata laboro pri manĝantaj filosofiistoj
+fr
+	Un TP sur le dîner des philosophes.
 link
 en
 	<a href = "tp1.pdf">Subject</a>
@@ -36,19 +42,25 @@ link
 en
 	<a href = "philosophers.pml">The dinning philosophers</a>
 eo
-	<a href = "philosophers.pml">La manĝantaj filosofioj</a>
+	<a href = "philosophers.pml">La manĝantaj filosofiistoj</a>
 fr
 	<a href = "philosophers.pml">Le dîner des philosophes</a>
 end
 
 item
 en
-Let’s Play With <span class = "name">Coq</span>
+	Let’s Play With <span class = "name">Coq</span>
 eo
-Pruvi programaĵojn per <span class = "name">Coq</span>
+	Pruvi programaĵojn per <span class = "name">Coq</span>
 fr
-Prouver des programmes à l’aide de <span class = "name">Coq</span>
+	Prouver des programmes à l’aide de <span class = "name">Coq</span>
 description
+en
+	A first usage of <span class = "name">Coq</span> on very simple programs.
+eo
+	Unua uzo de <span class = "name">Coq</span> en simplegaj programaĵoj.
+fr
+	Un premier cas d’utilisation de <span class = "name">Coq</span> pour des programmes très simples.
 link
 en
 	<a href = "tp2.pdf">Subject</a>
@@ -88,18 +100,24 @@ end
 
 section
 en
-Miscellanous
+	Miscellanous
 eo
-Aliaĵoj
+	Aliaĵoj
 fr
-Fourre-tout
+	Autres
 description
 end
 
 item
 all
-Pictionnary
+	Pictionnary
 description
+en
+	Students have to draw and guess sentences using only ULM diagrams (behaviour diagrams, structure diagrams, or interaction diagrams).
+eo
+	Studentoj devas desegne divenigi frazojn per UML-diagramoj (uzdiagramoj, klasdiagramoj, aŭ interagdiagramoj).
+fr
+	Les étudiants doivent faire deviner des phrases à l’aide de diagrammes UML (diagrammes de cas d’utilisations, diagrammes de classes, ou diagrammes de séquence).
 link
 en
 	<a href = "cards.pdf">Cards</a>

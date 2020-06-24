@@ -40,6 +40,18 @@ fr
 	Le <a href = "http://seccloud.cominlabs.ueb.eu">projet <span class = "name">SecCloud</span></a> a pour but de concevoir une approche orientée langages de programation pour la définition, l’analyse et l’implémentation d’applications sécurisées développées en <span class = "name">JavaScript</span> ou en des langages similaires.
 end
 
+description
+en
+	This page lists my publications.
+	You can also check my <a href = "http://orcid.org/0000-0003-3588-3782">Orcid</a>, <a href = "https://dblp.uni-trier.de/pers/hd/b/Bodin:Martin.html">DPLP</a>, or <a href = "https://scholar.google.fr/citations?user=OoWGEVEAAAAJ&hl=en">Google Scholar</a> profile.
+eo
+	Ĉi tiu paĝo listas miajn eldonaĵojn.
+	Vi ankaŭ povas kontroli miajn profilojn ĉe <a href = "http://orcid.org/0000-0003-3588-3782">Orcid</a>, <a href = "https://dblp.uni-trier.de/pers/hd/b/Bodin:Martin.html">DPLP</a>, aŭ <a href = "https://scholar.google.fr/citations?user=OoWGEVEAAAAJ&hl=en">Google Scholar</a>.
+fr
+	Cette page liste mes publications.
+	Vous pouvez aussi consulter mon profil <a href = "http://orcid.org/0000-0003-3588-3782">Orcid</a>, <a href = "https://dblp.uni-trier.de/pers/hd/b/Bodin:Martin.html">DPLP</a>, ou <a href = "https://scholar.google.fr/citations?user=OoWGEVEAAAAJ&hl=fr">Google Scholar</a>.
+end
+
 ## Author declarations
 
 declareAuthor

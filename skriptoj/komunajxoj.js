@@ -105,7 +105,7 @@ function getPageName (complete){
 	var reg = new RegExp (".*/\([^/]*\)\.html")
 	var matches = url.match (reg)
 
-    var ret
+  var ret
 
 	if (matches && matches[1] !== undefined)
 		ret = matches[1]

@@ -11,10 +11,10 @@ var numberOfDisplayedSection = 0, totalNumberOfSection = 0
 (function (){
 	iterTab ([
 			"toc_link",
-            "toc_dismiss",
-            "toc_undismiss",
-            "toc_dismiss_all",
-            "toc_undismiss_all"
+			"toc_dismiss",
+			"toc_undismiss",
+			"toc_dismiss_all",
+			"toc_undismiss_all"
 		], fetchTextLang)
 
     // All the strings have been fetched:  we can remove their container (in case there is no CSS).
@@ -164,7 +164,7 @@ function dismissAll (){
 
                     linkA = document.createElement ("a")
                     linkA.setAttribute ("class", "toc_command")
-                    linkA.setAttribute ("href", siteRootURL + pathFromRoot + getPageName () + "#" + label)
+                    linkA.setAttribute ("href", siteRootURL + pathFromRoot + getPageName (true) + "#" + label)
                     setContentTextNodeToNode ("toc_link", linkA)
 
                     h.appendChild (linkA)

@@ -32,6 +32,8 @@ my %general = ();
 
 my $workingOnWebSite = $false;
 my $changingAdress = $false;
+my $changingAdressPermanent = $false;
+my $permanentRedirectAddress = "https://www.doc.ic.ac.uk/~mbodin/";
 
 {
 	open GENERAL, "<$generalDatas" or die "error while reading file $generalDatas.\n";
@@ -635,6 +637,10 @@ while (my ($directoryname, $page) = each %allParsedPages){
 	$pageMain{"pathFromRoot"} = $directory;
 
 	$pageMain{"isRelocated"} = $changingAdress;
+	$pageMain{"isPermanentlyRelocated"} = $changingAdressPermanent;
+	if ($changingAdressPermanent){
+		$pageMain{"permanentRedirectAddress"} = $permanentRedirectAddress;
+	}
 	$pageMain{"isWorking"} = $workingOnWebSite;
 
 	$pageMain{"isNotUpToDate"} = $$page{$notUpToDateID};
@@ -721,6 +727,9 @@ while (my ($directoryname, $page) = each %allParsedPages){
 			);
 			if ($changingAdress){
 				push @allKeys, "relocation";
+			}
+			if ($changingAdressPermanent){
+				push @allKeys, "permanentRelocation";
 			}
 			if ($workingOnWebSite){
 				push @allKeys, "working";

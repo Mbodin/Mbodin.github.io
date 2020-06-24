@@ -233,15 +233,22 @@ function getPageLang (){
 
 	// The target property has priority on everything else:  have better not to conflict with any CSS visibility property…
 	dependingOnCurrentPage (function (_, target){
-		iterLanguages (function (lg){
-				if (target === lg) possibleLanguage (lg)
-			})
-	})
+			iterLanguages (function (lg){
+					if (target === lg) possibleLanguage (lg)
+				})
+		})
 
 	// Second, we check the “lang” argument.
 	getURLAttribute ("lang", possibleLanguage)
 
-	// Third, trying the navigator’s settings.
+	// The target links are somehow not as important for CSS, so it’s safe to have them afterwards.
+	dependingOnCurrentPage (function (_, target){
+			iterLanguages (function (lg){
+					if (target.endsWith (lg)) possibleLanguage (lg)
+				})
+		})
+
+	// Next, trying the navigator’s settings.
 	try {
 		possibleLanguage (navigator.language)
 	} catch (_) {}

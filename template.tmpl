@@ -8,9 +8,9 @@
     <link rel="stylesheet" type="text/css" href="<tmpl_var name=pathToRoot />rimedoj/cxefa.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <meta name="description" content="" /> --> <!-- TODO -->
-    <link rel="canonical" href="<tmpl_var name=pageName />.html?pedanticJS=no" />
+    <link rel="canonical" href="<tmpl_if name=isPermanentlyRelocated><tmpl_var name=permanentRedirectAddress /><tmpl_var name=pathFromRoot /></tmpl_if><tmpl_var name=pageName />.html?pedanticJS=no" />
     <tmpl_loop name="allLanguages">
-    <link rel="alternate" href="<tmpl_var name=pageName />.html?pedanticJS=no&lang=<tmpl_var name=lang />#<tmpl_var name=lang />" hreflang="<tmpl_var name=lang />" />
+    <link rel="alternate" href="<tmpl_if name=isPermanentlyRelocated><tmpl_var name=permanentRedirectAddress /><tmpl_var name=pathFromRoot /></tmpl_if><tmpl_var name=pageName />.html?pedanticJS=no&lang=<tmpl_var name=lang />#<tmpl_var name=lang />" hreflang="<tmpl_var name=lang />" />
     </tmpl_loop>
   </head>
   <body>
@@ -39,6 +39,11 @@
     // TODO:  Remove this once getPathFromRoot and getPathToRoot will have been implemented properly.
     var pathToRoot = "<tmpl_var name=pathToRoot />"
     var pathFromRoot = "<tmpl_var name=pathFromRoot />"
+		<tmpl_if name = "isPermanentlyRelocated">
+		if (window.location.assign)
+			window.location.assign ("<tmpl_var name=permanentRedirectAddress /><tmpl_var name=pathFromRoot /><tmpl_var name=pageName />.html?pedanticJS=no")
+		else window.location.href = "<tmpl_var name=permanentRedirectAddress /><tmpl_var name=pathFromRoot /><tmpl_var name=pageName />.html?pedanticJS=no"
+		</tmpl_if>
     // @license-end
     // --><!]]>
     </script>
@@ -83,6 +88,15 @@
       <div xml:lang="<tmpl_var name=lang />" lang="<tmpl_var name=lang />" id="relocation_<tmpl_var name=lang />" class="lang<tmpl_var name=lang />">
         <p class="message">
           <tmpl_var name="relocation" />
+        </p>
+      </div>
+      </tmpl_loop>
+      </tmpl_if>
+      <tmpl_if name="isPermanentlyRelocated">
+      <tmpl_loop name="allLanguages">
+      <div xml:lang="<tmpl_var name=lang />" lang="<tmpl_var name=lang />" id="permanent_relocation_<tmpl_var name=lang />" class="lang<tmpl_var name=lang />">
+        <p class="message">
+          <tmpl_var name="permanentRelocation" />
         </p>
       </div>
       </tmpl_loop>

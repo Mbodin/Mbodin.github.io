@@ -3,9 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <!-- This page has been generated using home-made Perl scripts…  I know, I should learn how to use Org-mode.  I hope that nothing badly appears.  Do not hesitate to contact me if you notice anything wrong. -->
-    <title id="documentTitle"><tmpl_var name="titlePageAllLanguages" /></title>
+		<meta name="description" content="Academic website of Martin Bodin" />
+		<meta name="author" content="Martin Bodin" />
+		<meta name="keywords" content="Martin Bodin, Formal methods, Programming languages, Coq, Language specification, Program verification" />
+    <title id="documentTitle"><tmpl_var name="titlePageAllLanguages" />	—	Martin Bodin</title>
     <link rel="icon" type="image/svg+xml" href="<tmpl_var name=pathToRoot />rimedoj/favicon.svg" sizes="any" />
     <link rel="stylesheet" type="text/css" href="<tmpl_var name=pathToRoot />rimedoj/cxefa.css" />
+		<link rel="sitemap" type="application/xml" title="Sitemap" href="<tmpl_var name=rootAddress />sitemap.xml" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <meta name="description" content="" /> --> <!-- TODO -->
     <link rel="canonical" href="<tmpl_if name=isPermanentlyRelocated><tmpl_var name=permanentRedirectAddress /><tmpl_var name=pathFromRoot /></tmpl_if><tmpl_var name=pageName />.html?pedanticJS=no" />
@@ -192,7 +196,7 @@
       <tmpl_var name="rightImage" />
     </figure>
     </tmpl_if>
-    <div id="main">
+    <main>
       <tmpl_if name="tocTmpl">
       <nav id="toc"></nav>
       <div id="tocLangContents" class="invisible">
@@ -258,7 +262,7 @@
       <tmpl_if name="tocTmpl">
       <script type="text/javascript" src="<tmpl_var name=pathToRoot />skriptoj/toc.js" async="async"></script>
       </tmpl_if>
-    </div> <!-- Closing “main”. -->
+    </main>
     <footer>
       <div class="needlang">
         <hr />

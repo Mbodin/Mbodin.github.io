@@ -19,23 +19,23 @@ en
 eo
 	Mi estas <span class = "name">Martin Bodin</span><sup><a href = "#familyName_eo">1</a></sup>, postdoktorulo ĉe <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, en <span class = "town">Londono</span>, je la esplorada grupo <a href = "https://vtss.doc.ic.ac.uk/">Verified Trustworthy Software Specification</a>.
 fr
-	Je suis <span class = "name">Martin Bodin</span><sup><a href = "#familyName_fr">1</a></sup>, post-doctorant au <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, à <span class = "town">Londres</span>, dans le groupe de recherche <a href = "https://vtss.doc.ic.ac.uk/">Verified Trustworthy Software Specification</a>.
+	Je suis <span class = "name">Martin Bodin</span><sup><a href = "#familyName_fr">1</a></sup>, post-doctorant à l’<a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, à <span class = "town">Londres</span>, dans le groupe de recherche <a href = "https://vtss.doc.ic.ac.uk/">Verified Trustworthy Software Specification</a>.
 end
 
 description
 en
-	I am currently working on a formalism called <a href = "http://skeletons.inria.fr/">skeletons</a> to represent the semantics of real-world language (JavaScript, R, etc.).
-	This formalism enables to derive with a minimal effort a wide range of program analyses certified in the <a href = "http://coq.inria.fr"><span class = "name">Coq</span> proof assistant</a>.
+	I am currently working on a formalism called <a href = "http://skeletons.inria.fr/">skeletons</a> to represent the semantics of real-world programming languages (JavaScript, R, etc.).
+	This formalism enables to derive with minimal effort a wide range of program analyses certified in the <a href = "http://coq.inria.fr"><span class = "name">Coq</span> proof assistant</a>.
 #
 	I am also working on a <a href = "https://github.com/Imperial-Wasm/wasm-coq-public">formalisation of <span class = "name">WebAssembly</span>/<span class = "name">Wasm</span></a> in <span class = "name">Coq</span>.
 eo
-	Mi nun laboras pri formalismo (kiu nomiĝas <a href = "http://skeletons.inria.fr/">ostaron</a>) por reprezenti la semantikon de vervivaj programlingvaĵoj (JavaScript, R, ktp.).
-	Ĉi tiu formalismo permesigas dedukti granddiversajn programanalizojn pruvitajn en <a href = "http://coq.inria.fr">la <span class = "name">Coq</span> pruvilo</a>.
+	Mi nun laboras pri formalismo (kiu nomiĝas <a href = "http://skeletons.inria.fr/">ostaron</a>) por reprezenti la semantikon de vervivaj programlingvaĵoj (Javaskripto, R, ktp.).
+	Ĉi tiu formalismo permesigas dedukti granddiversajn programanalizojn pruvitajn en la <a href = "http://coq.inria.fr"><span class = "name">Coq</span> pruvilo</a>.
 #
 	Mi ankaŭ laboras pri <a href = "https://github.com/Imperial-Wasm/wasm-coq-public">formaligado de <span class = "name">WebAssembly</span>/<span class = "name">Wasm</span></a> en <span class = "name">Coq</span>.
 fr
-	Je travaille actuellement sur un formalisme, <a href = "http://skeletons.inria.fr/">les squelettes</a>, représentant la sémantique de langages de programmation complexes(JavaScript, R, etc.).
-	Ce formalisme permet de déduire avec un effort minimal toute une gamme d’analyses de programmes certifiées dans <a href = "http://coq.inria.fr">l’assistant de preuve <span class = "name">Coq</span></a>.
+	Je travaille actuellement sur un formalisme, <a href = "http://skeletons.inria.fr/">les squelettes</a>, représentant la sémantique de langages de programmation complexes (JavaScript, R, etc.).
+	Ce formalisme permet de déduire avec un effort minimal toute une gamme d’analyses de programmes certifiées dans l’<a href = "http://coq.inria.fr">assistant de preuve <span class = "name">Coq</span></a>.
 #
 	Je travaille aussi sur une <a href = "https://github.com/Imperial-Wasm/wasm-coq-public">formalisation de <span class = "name">WebAssembly</span>/<span class = "name">Wasm</span></a> en <span class = "name">Coq</span>.
 end
@@ -56,7 +56,7 @@ end
 
 description
 en
-	I did my PhD at <a href = "https://www.inria.fr/en"><span class = "name">Inria</span></a> <span class = "town">Rennes</span> under the supervision of <a href = "http://people.rennes.inria.fr/Alan.Schmitt/"><span class = "name">Alan Schmitt</span></a> and <a href = "http://www.irisa.fr/celtique/jensen/"><span class = "name">Thomas Jensen</span></a>.
+	I did my PhD at <a href = "https://www.inria.fr/en"><span class = "name">Inria</span> <span class = "town">Rennes</span></a> under the supervision of <a href = "http://people.rennes.inria.fr/Alan.Schmitt/"><span class = "name">Alan Schmitt</span></a> and <a href = "http://www.irisa.fr/celtique/jensen/"><span class = "name">Thomas Jensen</span></a>.
 	My PhD was about formal analyses of the <span class = "name">JavaScript</span> programming language.
 	More information can be found <a class = "switchLanguage_en internalLink" href = "doktorigxo/companion.html?lang=en#en">in my thesis companion</a>.
 eo
@@ -64,7 +64,7 @@ eo
 	Mi tiam laboris pri formala analizo de la <span class = "name">Javaskripta</span> programlingvaĵo.
 	Pli da informoj troviĝas <a class = "switchLanguage_eo internalLink" href = "doktorigxo/companion.html?lang=eo#eo">en mia kundoktoriĝdokumento</a>.
 fr
-	J’ai fait mon doctorat à <a href = "https://www.inria.fr/fr"><span class = "name">Inria</span></a> de <span class = "town">Rennes</span> sous la supervision d’<a href = "http://people.rennes.inria.fr/Alan.Schmitt/"><span class = "name">Alan Schmitt</span></a> et de <a href = "http://www.irisa.fr/celtique/jensen/"><span class = "name">Thomas Jensen</span></a>.
+	J’ai fait mon doctorat à <a href = "https://www.inria.fr/fr"><span class = "name">Inria</span></a>, à <span class = "town">Rennes</span>, sous la supervision d’<a href = "http://people.rennes.inria.fr/Alan.Schmitt/"><span class = "name">Alan Schmitt</span></a> et de <a href = "http://www.irisa.fr/celtique/jensen/"><span class = "name">Thomas Jensen</span></a>.
 	Je travaillais alors sur l’analyse formelle du langage de programmation <span class = "name">JavaScript</span>.
 	Plus d’informations peuvent se trouver <a class = "switchLanguage_fr internalLink" href = "doktorigxo/companion.html?lang=fr#fr">sur mon guide de thèse</a>.
 end
@@ -74,7 +74,7 @@ en
 	My research interests are focussed around programming languages design and analyses.
 	I work with the <a href = "http://coq.inria.fr"><span class = "name">Coq</span> proof assistant</a>, which provides high confidence to the softwares I build.
 	I am especially interested in applying formal methods to real-world programming languages.
-	These languages usually come with a large range of special (and sometimes unexpected) behaviours, which can lead to serious programming mistakes.
+	These languages usually come with many special (and sometimes unexpected) behaviours, which can lead to serious programming mistakes.
 	I believe that formal methods can help programmers detect and avoid these mistakes.
 eo
 	Mia esploradinteresoj fokusiĝas ĉirkaŭ programlingvaĵaj elkreok kaj analizoj.
@@ -84,9 +84,9 @@ eo
 	Mi pensas ke formalaj metodoj povas helpi programistojn ekscii kaj eviti tiajn erarojn.
 fr
 	Mes thèmes de recherches se concentrent sur la conception et les analyses de langages de programmation.
-	Je travaille avec <a href = "http://coq.inria.fr">l’assistant de preuve <span class = "name">Coq</span></a>, qui garantit un haut niveau de confiance pour les programmes que je conçois.
+	Je travaille avec l’<a href = "http://coq.inria.fr">assistant de preuve <span class = "name">Coq</span></a>, qui garantit un haut niveau de confiance pour les programmes que je conçois.
 	Je suis particulièrement intéressé par l’application des méthodes formelles aux langages de programmation fréquemment utilisés en industrie.
-	Ces langages ont souvent une large gamme de comportements spéciaux, souvent inattendus, qui peuvent mener à des erreurs de programmation importantes.
+	Ces langages ont souvent de nombreux comportements spéciaux souvent inattendus, qui peuvent mener à des erreurs de programmation importantes.
 	Je pense que les méthodes formelles peuvent aider les programmeurs à détecter et éviter ces erreurs.
 end
 
@@ -95,7 +95,7 @@ en
 	In my research, I thus formalised widely used programming languages (<a href = "https://github.com/jscert/jscert">JavaScript</a>, <a href = "https://github.com/Mbodin/coqR">R</a>, and <a href = "https://github.com/Imperial-Wasm/wasm-coq-public">Wasm</a>).
 	These formalisations are notably large compared to other formalisations from the field.
 	I thus helped design <a href = "http://skeletons.inria.fr/">skeletons</a>, a formalism to express and derive formally-proven program analyses from such large formalisations.
-	I hope that these projects will help designing practical tools used for code-quality control in industry.
+	I hope that these projects will help designing practical tools for code-quality control in industry.
 eo
 	En mia esplorado, mi do formaligis multe uzitajn programlingvaĵojn (<a href = "https://github.com/jscert/jscert">JavaScript</a>, <a href = "https://github.com/Mbodin/coqR">R</a>, kaj <a href = "https://github.com/Imperial-Wasm/wasm-coq-public">Wasm</a>).
 	Tiuj formaligadoj rimarkiĝas per siaj grandecoj kompare al aliaj formaligadoj de la fako.
@@ -104,8 +104,8 @@ eo
 fr
 	Parmi mes travaux, j’ai ainsi formalisé des langages de programmation très utilisés (<a href = "https://github.com/jscert/jscert">JavaScript</a>, <a href = "https://github.com/Mbodin/coqR">R</a>, et <a href = "https://github.com/Imperial-Wasm/wasm-coq-public">Wasm</a>).
 	Ces formalisations se différencient des autres formalisations du domaine par leur taille importante.
-	J’ai donc participé à la conception des <a href = "http://skeletons.inria.fr/">squelettes</a>, un formalisme pour exprimer et dériver des analyses de programme certifiées à partir de telles formalisations.
-	J’ai bon espoir que ces projets permettrons de concevoir des outils pratiques de controle de qualité de code dans l’industrie.
+	J’ai donc participé à la conception des <a href = "http://skeletons.inria.fr/">squelettes</a>, un formalisme pour exprimer et dériver des analyses de programmes certifiées à partir de telles formalisations.
+	J’ai bon espoir que ces projets permettrons de concevoir des outils de controle de qualité de code pour l’industrie.
 end
 
 description

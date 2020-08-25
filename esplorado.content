@@ -742,6 +742,13 @@ eo
     Kundoktoriĝdokumento
 fr
     Guide de thèse
+link
+en
+	<a href = "doktorigxo/manuscrit.tar.bz2">Source code</a>
+eo
+	<a href = "doktorigxo/manuscrit.tar.bz2">Kodfontoj</a>
+fr
+	<a href = "doktorigxo/manuscrit.tar.bz2">Code Source</a>
 end
 
 #section

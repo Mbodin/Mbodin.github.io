@@ -33,7 +33,7 @@ my %general = ();
 my $workingOnWebSite = $false;
 my $changingAdress = $false;
 my $changingAdressPermanent = $false;
-my $permanentRedirectAddress = "https://www.doc.ic.ac.uk/~mbodin/";
+my $permanentRedirectAddress = "https://mbodin.github.io/";
 my $rootAddress = "https://www.doc.ic.ac.uk/~mbodin/";
 
 {

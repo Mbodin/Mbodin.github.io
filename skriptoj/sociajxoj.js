@@ -11,9 +11,9 @@ function framadsenseSocial (lang){
 	ad.setAttribute ("data-sense3", "728x90;;#eeeeec,#5c3566,#2e3436,#75507b,#5c3566,#babdb6;;" + lang)
 	ad.setAttribute ("src", "https://sense.framasoft.org/sense3.js")
 
-    applyNode ("ad-social", function (p){
-            p.appendChild (ad)
-        })
+	applyNode ("ad-social", function (p){
+			p.appendChild (ad)
+		})
 }
 
 function googleSocial (lang, addr){
@@ -55,20 +55,20 @@ function twitterSocial (lang, addr){
 	;
 
 	(function (d, s, id){
-		var js, fjs = d.getElementsByTagName (s)[0], t = window.twttr || {}
-		if (d.getElementById (id)) return t
-		js = d.createElement (s)
-		js.setAttribute ("id", id)
-		js.setAttribute ("src", "https://platform.twitter.com/widgets.js")
-		fjs.parentNode.insertBefore (js, fjs)
-
-        t._e = []
-        t.ready = function (f){
-            t._e.push (f)
-        }
-
-        return t
-	} (document, "script", "twitter-wjs"))
+			var js, fjs = d.getElementsByTagName (s)[0], t = window.twttr || {}
+			if (d.getElementById (id)) return t
+			js = d.createElement (s)
+			js.setAttribute ("id", id)
+			js.setAttribute ("src", "https://platform.twitter.com/widgets.js")
+			fjs.parentNode.insertBefore (js, fjs)
+		
+			t._e = []
+			t.ready = function (f){
+					t._e.push (f)
+				}
+		
+			return t
+		} (document, "script", "twitter-wjs"))
 
 	if (addr !== "")
 		return function (lang){
@@ -187,7 +187,7 @@ function analyticsSocial (){
 				(i[r].q = i[r].q || []).push(arguments)
 			}, i[r].l = 1 * new Date()
 		a = s.createElement (o),
-	    m = s.getElementsByTagName (o)[0]
+		m = s.getElementsByTagName (o)[0]
 		a.async = 1
 		a.src = g
 		m.parentNode.insertBefore (a, m)
@@ -200,54 +200,54 @@ function analyticsSocial (){
 
 function diasporaSocial (){
 	applyNode ("d-social", function (social){
-        var a = document.createElement ("a")
-        makeADoNothing (a)
+	var a = document.createElement ("a")
+	makeADoNothing (a)
 
-        var img = document.createElement ("img")
-        img.setAttribute ("src", "data:image/png;base64,"
-                + "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAABkklEQVQoUwXBPUhUAQAA4O/de5737qfS89AoEsEhFIciiiYjCAohCNrbWtpLcM1ojaCgVYcGJyGoLcekP4IGQbKUrqQ0z5877873Xt8XDIBQr1I+nsyP0FltLrWStkSGiECPSlib7puOyyESrcbO87+zjf2uTDAgrzpy8mX1YlGmJVOQc2h7pX7jy1pNMKgvP/x+cKJXYNd9mXkNoY7N1fUL241crDbTPxFJpA6dc14olYlUR2sPC3Llof6ZXrFBW5qga1dLQeTE3XJ/rng9DhNjHnnqqg1k7pk3qSvOx9ei/JlQoIxTHoAnYBSh/EgUxIEebyw4645xNLywZktZW5CPuj8TobLAoXFw3Hf/HJPT1F3PNV+3pRKpWTwzh8dIpTpaS7n91Z2FtsQVFXVvLaqrmJLq2H11sBYMqdWGv1ZrbcNCGzitalnBTuPHpT8rYeyomX2ObpYKTQd6RPZsCjX267c/LReERanVb4W5bCw3SipxpGVr6detj+8oCgYQiJRULpemohrd383FvQ9NXRn+A1iPlomQUIqjAAAAAElFTkSuQmCC")
-        img.setAttribute ("style", createStyles ([
-                ["border", "0px solid"],
-                ["display", "inline-block"],
-                ["padding-bottom", "3px"]
-            ]))
+	var img = document.createElement ("img")
+	img.setAttribute ("src", "data:image/png;base64,"
+		+ "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAABkklEQVQoUwXBPUhUAQAA4O/de5737qfS89AoEsEhFIciiiYjCAohCNrbWtpLcM1ojaCgVYcGJyGoLcekP4IGQbKUrqQ0z5877873Xt8XDIBQr1I+nsyP0FltLrWStkSGiECPSlib7puOyyESrcbO87+zjf2uTDAgrzpy8mX1YlGmJVOQc2h7pX7jy1pNMKgvP/x+cKJXYNd9mXkNoY7N1fUL241crDbTPxFJpA6dc14olYlUR2sPC3Llof6ZXrFBW5qga1dLQeTE3XJ/rng9DhNjHnnqqg1k7pk3qSvOx9ei/JlQoIxTHoAnYBSh/EgUxIEebyw4645xNLywZktZW5CPuj8TobLAoXFw3Hf/HJPT1F3PNV+3pRKpWTwzh8dIpTpaS7n91Z2FtsQVFXVvLaqrmJLq2H11sBYMqdWGv1ZrbcNCGzitalnBTuPHpT8rYeyomX2ObpYKTQd6RPZsCjX267c/LReERanVb4W5bCw3SipxpGVr6detj+8oCgYQiJRULpemohrd383FvQ9NXRn+A1iPlomQUIqjAAAAAElFTkSuQmCC")
+	img.setAttribute ("style", createStyles ([
+			["border", "0px solid"],
+			["display", "inline-block"],
+			["padding-bottom", "3px"]
+		]))
 
-        a.appendChild (img)
-        setContent (a, "diaspora*")
-        a.setAttribute ("rel", "nofollow")
-        a.setAttribute ("target", "_blank")
-        a.setAttribute ("style", createStyles ([
-                ["padding", "3px 4px 2px"],
-                ["background", "#fafafa"],
-                ["border", "1px solid #ddd"],
-                ["font-size", "13px"],
-                ["color", "#222"],
-                ["text-decoration", "none"]
-            ]))
+		a.appendChild (img)
+		setContent (a, "diaspora*")
+		a.setAttribute ("rel", "nofollow")
+		a.setAttribute ("target", "_blank")
+		a.setAttribute ("style", createStyles ([
+				["padding", "3px 4px 2px"],
+				["background", "#fafafa"],
+				["border", "1px solid #ddd"],
+				["font-size", "13px"],
+				["color", "#222"],
+				["text-decoration", "none"]
+			]))
 
-        a.onclick = function (){
-                window.open ("https://share.diasporafoundation.org/?url="
-                        + encodeURIComponent (location.href)
-                        +"&title="
-                        + encodeURIComponent(document.title),
-                    "das",
-                    "location=no,links=no,scrollbars=no,toolbar=no,width=620,height=550")
-            }
+		a.onclick = function (){
+				window.open ("https://share.diasporafoundation.org/?url="
+					+ encodeURIComponent (location.href)
+					+"&title="
+					+ encodeURIComponent(document.title),
+					"das",
+					"location=no,links=no,scrollbars=no,toolbar=no,width=620,height=550")
+			}
 
-        social.appendChild (a)
-    })
+		social.appendChild (a)
+	})
 }
 
 function mastodonSocial (){
 	applyNode ("m-social", function (social){
-        var a = document.createElement ("a")
-        a.setAttribute ("href", "https://aleph.land/web/accounts/27897")
-        a.setAttribute ("rel", "nofollow")
+			var a = document.createElement ("a")
+			a.setAttribute ("href", "https://aleph.land/web/accounts/27897")
+			a.setAttribute ("rel", "nofollow")
 
-        setContent (a, "Mastodon")
+			setContent (a, "Mastodon")
 
-        social.appendChild (a)
-    })
+			social.appendChild (a)
+		})
 }
 
 var permanentSocialsActions = []
@@ -337,11 +337,11 @@ function checkLang (lang){
 			"permanentSocials"
 		], fetchNodesLang)
 
-    applyNode ("social-button-activation", function (node){
-            node.setAttribute ("class", "")
-        })
+	applyNode ("social-button-activation", function (node){
+			node.setAttribute ("class", "")
+		})
 
-    iterLanguages (checkLang)
+	iterLanguages (checkLang)
 
 	declarePassingArgument ("social")
 
@@ -353,7 +353,7 @@ function checkLang (lang){
 						removeNodeId ("social-" + lang)
 					})
 		}, "no")
-} ()) // TODO:  Update using “lingvoj”.
+} ()) // TODO: Update using “lingvoj”.
 
 // @license-end
 

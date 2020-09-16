@@ -15,6 +15,7 @@ install:
 
 script:
   - ./genpage.pl top.tree
+  - sed -i '/^\*\.html$/d' .gitignore # Adding the webpages back to the tracked files.
 
 deploy:
   provider: pages

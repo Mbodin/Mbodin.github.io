@@ -8,7 +8,6 @@ os:
   - linux
 
 install:
-  - cpan App::cpanminus
   - cpanm HTML::Template
   - cpanm URI::Encode
   - cpanm Term::ReadKey
@@ -23,5 +22,5 @@ deploy:
   github-token: $GITHUB_TOKEN
   target_branch: gh-pages
   on:
-    branch: master
+    branch: main
 

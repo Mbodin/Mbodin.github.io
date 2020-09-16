@@ -57,6 +57,7 @@
 		return ""
 	}
 
+	add_image ("3×4", 15, true)
 	add_image ("Avranches", 2, false)
 	add_image ("Ćȩstorowa", 5, false)
 	// add_image ("chevalier", 3, false)

@@ -15,11 +15,14 @@ end
 
 description
 en
-	I am <span class = "name">Martin Bodin</span><sup><a href = "#familyName_en">1</a></sup>, postdoc at the <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, in <span class = "town">London</span>, in the <a href = "https://vtss.doc.ic.ac.uk/">Verified Trustworthy Software Specification</a> research group.
+	I am <span class = "name">Martin Bodin</span><sup><a href = "#familyName_en">1</a></sup>, in transition from a postdoc at the <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, in <span class = "town">London</span>, in the <a href = "https://vtss.doc.ic.ac.uk/">Verified Trustworthy Software Specification</a> research group.
+	I will soon be part of the <a href = "https://team.inria.fr/spades/"><span class = "name">Spades</span></a> team, in <span class = "town">Grenoble</span>, at <a href = "https://www.inria.fr/en"><span class = "name">Inria</span></a>.
 eo
-	Mi estas <span class = "name">Martin Bodin</span><sup><a href = "#familyName_eo">1</a></sup>, postdoktorulo ĉe <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, en <span class = "town">Londono</span>, je la esplorada grupo <a href = "https://vtss.doc.ic.ac.uk/">Verified Trustworthy Software Specification</a>.
+	Mi estas <span class = "name">Martin Bodin</span><sup><a href = "#familyName_eo">1</a></sup>, finiĝante mian postdoktoradon ĉe <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, en <span class = "town">Londono</span>, je la esplorada grupo <a href = "https://vtss.doc.ic.ac.uk/">Verified Trustworthy Software Specification</a>.
+	Mi baldaŭ estos skipano de <a href = "https://team.inria.fr/spades/"><span class = "name">Spades</span></a>, en <span class = "town">Grenoblo</span>, ĉe <a href = "https://www.inria.fr/"><span class = "name">Inria</span></a>.
 fr
-	Je suis <span class = "name">Martin Bodin</span><sup><a href = "#familyName_fr">1</a></sup>, post-doctorant à l’<a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, à <span class = "town">Londres</span>, dans le groupe de recherche <a href = "https://vtss.doc.ic.ac.uk/">Verified Trustworthy Software Specification</a>.
+	Je suis <span class = "name">Martin Bodin</span><sup><a href = "#familyName_fr">1</a></sup>, en transition de post-doctorant à l’<a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, à <span class = "town">Londres</span>, dans le groupe de recherche <a href = "https://vtss.doc.ic.ac.uk/">Verified Trustworthy Software Specification</a>.
+	Je serais bientôt membre de l’équipe <a href = "https://team.inria.fr/spades/"><span class = "name">Spades</span></a>, à <span class = "town">Grenoble</span>, à l’<a href = "https://www.inria.fr/"><span class = "name">Inria</span></a>.
 end
 
 description

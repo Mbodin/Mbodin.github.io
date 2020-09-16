@@ -916,6 +916,29 @@ fr
 end
 
 item
+en
+	Popular Science
+eo
+	Populariga filmeto
+fr
+	Vidéo de vulgarisation
+description
+eo
+	Small video in Esperanto to present my field of research.
+eo
+	Esperanta filmeto kiu prezentas mian esploradan temon.
+fr
+	Vidéo en espéranto sur une présentation générale de ma recherche.
+link
+en
+	<a href = "https://video.liberta.vip/video-channels/martinshadok_eo/videos">Link to the channel</a>
+eo
+	<a href = "https://video.liberta.vip/video-channels/martinshadok_eo/videos">Kanalligilo</a>
+fr
+	<a href = "https://video.liberta.vip/video-channels/martinshadok_eo/videos">Lien vers la chaîne</a>
+end
+
+item
 all
 Qualification
 description
@@ -945,7 +968,7 @@ item
 en
 	Application at Spades
 eo
-	Kandidatio ĉe Spades
+	Kandidatiĝo ĉe Spades
 fr
 	Candidature chez Spades
 description
@@ -959,7 +982,7 @@ link
 en
 	<a href = "esplorado/inria_spades.pdf">Document</a>
 eo
-	<a href = "esplorado/inria_spades.pdf">Documentaro</a>
+	<a href = "esplorado/inria_spades.pdf">Dokumentaro</a>
 fr
 	<a href = "esplorado/inria_spades.pdf">Dossier</a>
 link

@@ -1,0 +1,27 @@
+
+language: perl
+
+perl:
+  - "5.30"
+
+os:
+  - linux
+
+install:
+  - cpan App::cpanminus
+  - cpanm HTML::Template
+  - cpanm URI::Encode
+  - cpanm Term::ReadKey
+  - cpanm MIME::Base64
+
+script:
+  - ./genpage.pl top.tree
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github-token: $GITHUB_TOKEN
+  target_branch: gh-pages
+  on:
+    branch: master
+

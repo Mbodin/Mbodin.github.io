@@ -133,9 +133,9 @@ specdescription
 en
 	<dl class = "tableDescription">
 		<dt>Current position</dt>
-		<dd>Postdoc at the <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, in <span class = "town">London</span>.</dd>
+		<dd>Researcher at <a href = "https://www.inria.fr/en"><span class = "name">Inria</span></a>, in <span class = "town">Grenoble</span>.</dd>
 		<dt>Team</dt>
-		<dd><a href = "https://vtss.doc.ic.ac.uk/">Verified Trustworthy Software Specification</a></dd>
+		<dd><a href = "https://team.inria.fr/spades/">Spades</a></dd>
 		<dt>CV</dt>
 		<dd><a href = "rimedoj/cv_en.pdf" rel = "nofollow">Available there</a></dd>
 		<dt>Public keys</dt>
@@ -161,9 +161,9 @@ en
 eo
 	<dl class = "tableDescription">
 		<dt>Nuna pozicio</dt>
-		<dd>Postdoktorulo ĉe <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, en <span class = "town">Londono</span>.</dd>
+		<dd>Esploradisto ĉe <a href = "https://inria.fr"><span class = "name">Inria</span></a>, en <span class = "town">Grenoble</span>.</dd>
 		<dt>Skipo</dt>
-		<dd><a href = "https://vtss.doc.ic.ac.uk/">Verified Trustworthy Software Specification</a></dd>
+		<dd><a href = "https://team.inria.fr/spades/">Spades</a></dd>
 		<dt>Vivresumo</dt>
 		<dd><a href = "rimedoj/cv_eo.pdf" rel = "nofollow">Havebla tie ĉi</a></dd>
 		<dt>Publikaj ŝlosiloj</dt>
@@ -189,9 +189,9 @@ eo
 fr
 	<dl class = "tableDescription">
 		<dt>Position actuelle</dt>
-		<dd>Post-doctorant à l’<a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, à <span class = "town">Londres</span>.</dd>
+		<dd>Chargé de recherche à l’<a href = "https://www.inria.fr/fr"><span class = "name">Inria</span></a>, à <span class = "town">Grenoble</span>.</dd>
 		<dt>Équipe</dt>
-		<dd><a href = "https://vtss.doc.ic.ac.uk/">Verified Trustworthy Software Specification</a></dd>
+		<dd><a href = "https://team.inria.fr/spades/">Spades</a></dd>
 		<dt>CV</dt>
 		<dd><a href = "rimedoj/cv_fr.pdf" rel = "nofollow">Disponible ici</a></dd>
 		<dt>Clefs publiques</dt>

@@ -16,12 +16,13 @@ description
 en
     This page is meant to complete my thesis document,
     and in particular to show what could not be shown in a static pdf-document.
-    The thesis document can be found <a href = "manuscrit.pdf">here</a> and the sources <a href = "manuscrit.tar.bz2">here</a>.
+    The thesis document can be found <a href = "manuscrit.pdf">here</a> and its sources <a href = "manuscrit.tar.bz2">here</a>.
+    The slides of the defence can be found <a href = "planches.pdf">here</a> and its sources <a href = "planches.tar.xz">here</a>.
 eo
 #   Ĉi tiu paĝo celas kunesti mian doktoriĝan dokumenton,
 #   ekzemple por montri tion kio ne montreblas en nemovebla pdf-a dokumento.
 #   La doktoriĝa dokumento atingeblas <a href = "manuscrit.pdf">tie</a> kaj ties fontoj <a href = "manuscrit.tar.bz2">tie</a>.
-    Mi pardonpetas, sed ĉi tiu paĝo nur disponeblas <a class = "switchLanguage_en internalLink" href = "companion.html?lang=en#en">angle</a>.
+    Ĉi tiu paĝo nur disponeblas <a class = "switchLanguage_en internalLink" href = "companion.html?lang=en#en">angle</a>.
 fr
     Cette page n’est disponible qu’en <a class = "switchLanguage_en internalLink" href = "companion.html?lang=en#en">anglais</a>, désolé.
 end

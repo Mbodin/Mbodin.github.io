@@ -729,7 +729,7 @@ fr
 	<a href = "doktorigxo/manuscrit.pdf">Manuscrit</a>
 link
 en
-	<a href = "doktorigxo/planches.pdf">Slides</a>
+	<a href = "doktorigxo/planches.pdf">Defence Slides</a>
 eo
 	<a href = "doktorigxo/planches.pdf">Diapozitivoj</a>
 fr
@@ -749,6 +749,13 @@ eo
 	<a href = "doktorigxo/manuscrit.tar.bz2">Kodfontoj</a>
 fr
 	<a href = "doktorigxo/manuscrit.tar.bz2">Code Source</a>
+link
+en
+	<a href = "doktorigxo/planches.tar.xz">Slides sources</a>
+eo
+	<a href = "doktorigxo/planches.tar.xz">Diapozitivfontoj</a>
+fr
+	<a href = "doktorigxo/planches.tar.xz">Sources de la présentation</a>
 end
 
 #section

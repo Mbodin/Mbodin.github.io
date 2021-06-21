@@ -1,0 +1,23 @@
+a := 6 ;
+b := 7 ;
+
+n := a ;
+res := 0 ;
+while n (
+    res := res + b ;
+    n := n + -1
+)
+
+(* The sign domain is not precise enough to prove that this program terminates without using trace partitioning (see Section 4.4.2.2 of the dissertation). *)
+(* For the analysers to work, we thus have to provide an oracle such as the following. *)
+oracle
+a -> + ; b -> + ; n -> +0 ; res -> + ;
+|
+while n (
+    res := res + b ;
+    n := n + -1
+)
+|
+a -> + ; b -> + ; n -> +0 ; res -> + ;
+
+

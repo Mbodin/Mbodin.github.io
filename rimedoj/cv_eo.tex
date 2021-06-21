@@ -1,0 +1,281 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{ifxetex}
+\ifxetex
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainlanguage{esperanto}
+\setotherlanguage{english}
+\setotherlanguage{french}
+\setotherlanguage{spanish}
+\newcommand{\en}[1]{\foreignlanguage{english}{{#1}}}
+\newcommand{\fr}[1]{\foreignlanguage{french}{{#1}}}
+\newcommand{\es}[1]{\foreignlanguage{spanish}{{#1}}}
+\else
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[esperanto, francais, english, spanish]{babel}
+\newcommand{\en}[1]{\foreignlanguage{english}{{#1}}}
+\newcommand{\fr}[1]{\foreignlanguage{french}{{#1}}}
+\newcommand{\es}[1]{\foreignlanguage{spanish}{{#1}}}
+\fi
+
+\usepackage[hidelinks]{hyperref}
+\usepackage{geometry}
+\usepackage{url}
+\usepackage{oldgerm}
+
+\usepackage[inline]{enumitem}
+
+\makeatletter
+% From http://tex.stackexchange.com/questions/51086/add-second-enumeration-item-on-the-same-line
+\newcommand{\inlineitem}[1][]{%
+\ifnum\enit@type=\tw@
+    {\descriptionlabel{#1}}
+  \hspace{\labelsep}%
+\else
+  \ifnum\enit@type=\z@
+       \refstepcounter{\@listctr}\fi
+    \qquad\@itemlabel\hspace{\labelsep}%
+\fi}
+\makeatother
+
+\ifxetex
+\setmainfont[Mapping=tex-text, Ligatures={Common}, Numbers={OldStyle}]{Linux Libertine O}
+\fi
+
+\geometry{
+	includeheadfoot,
+	margin = 2.54cm,
+	top = 1.5cm,
+	bottom = 1.5cm
+}
+
+\newcommand{\ie}{t.e.\,}
+
+\newenvironment{datecvsection}[1]%
+               {\subsection*{#1}%
+                 \noindent \begin{tabular}{@{}p{\annee}p{\texte}@{}}}
+               {\end{tabular}}
+
+\newenvironment{cvsection}[1]%
+               {\subsection*{#1}}
+               {}
+
+\newenvironment{itemcvsection}[1]%
+               {\subsection*{#1}\begin{itemize}}
+               {\end{itemize}}
+
+\def\arraystretch{1.5}
+
+\newcommand\familyName{\textsc}
+\newcommand\placeName{}
+
+\begin{document}
+
+% Pas de numéro de page
+\pagestyle{empty}
+
+% \annee est la largeur de la première colonne, c'est à dire celle
+% contenant l'année scolaire. Elle est ici définie comme étant la
+% largeur du texte « janvier-février ». À adapter le cas échéant.
+
+\newlength{\annee}
+\settowidth{\annee}{9999--9999}
+
+% \texte est la largeur de la deuxième colonne. Elle est définie comme
+% étant la largeur de la page moins celle de la première colonne.
+% 2\tabcolsep est la largeur de l'espacement entre les colonnes.
+
+\newlength{\texte}
+\setlength{\texte}{\textwidth} \addtolength{\texte}{-\annee} 
+	\addtolength{\texte}{-2\tabcolsep}
+
+\begin{center} \Huge Martin~\familyName{Bodin} \end{center}
+
+\noindent
+\parbox[c]{.5\textwidth}
+{
+  \noindent
+	30, rue de Stalingrad, \\
+	38~100 Grenoble
+  \textsc{Francio}
+}
+\parbox[c]{.5\textwidth}
+{
+\begin{flushright}
+  Naskiĝis la 30an de decembro, 1989 \\
+  \noindent Telefonnumero~: \mbox{+33 6 27 00 58 84} \\
+  \url{martin.bodin@ens-lyon.org} \\
+  \url{https://mbodin.github.io/}
+\end{flushright}
+}
+
+
+\begin{datecvsection}{Laboro}
+
+		2020– & Esploradisto (chargé de recherche) en la skipo \placeName{Spades}, ĉe \placeName{Inria} en \placeName{Grenoble}. \\
+
+    2018–2020 & Postdoktorado ĉe la \en{\placeName{Imperial College}}, en \placeName{Londono} (\placeName{Unuiĝinta Reĝlando}) pri la teoriaj fundamentoj de la analizado de vervivaj programlingvaĵoj. \\
+
+    2017–2018 & Postdoktorado ĉe la \placeName{CMM} (la \en{\placeName{Center of Mathematical Modeling}}, parto de la \es{\placeName{Universidad de Chile}}) en \placeName{Santiago} (\placeName{Ĉilio}) pri formalizado de la programlingvaĵo R en la pruvilo Coq. \\
+
+\end{datecvsection}
+
+\begin{datecvsection}{Studaro}
+
+    2012–2016 & Doktoriĝo informatika ĉe la \placeName{Irisa} en \placeName{Rennes} (\placeName{Francio}) estrigita de Alan~\familyName{Schmitt} kaj Thomas~\familyName{Jensen} pri korektpruvigitaj {Javaskript}aj analizoj. \\
+
+    2010–2012 & \fr{Master d’Informatique} (\ie komputika Majstro), en la \fr{\placeName{École Normale Supérieure de Lyon}} (franca \fr{Grande École} — \ie ĉeflernejo de altnivela instruado — specialigita en la edukado de esploradistoj). \\
+
+    2009–2010 & \fr{Licence d’Informatique, mention très bien} (\ie komputika licencio, kun granda laŭdo) je la \fr{\placeName{École Normale Supérieure de Lyon}}. \\
+
+    2007–2009 & \fr{Classes préparatoires aux Grandes Écoles} en la gimnazio \placeName{Henri~\textsc{iv}} en \placeName{Parizo} (\ie dujara intenskurso preparanta al la enirkonkurso de la \fr{grandes Écoles}). \\
+
+    2007 & \fr{Baccalauréat spécialité Mathématiques, mention très bien} (\ie bakalaŭrea ekzameno kies ĉefaj fakoj estas matematiko, fiziko kaj biologio, kun granda laŭdo). \\
+
+\end{datecvsection}
+
+\begin{cvsection}{Lingvoj}
+\parbox{.4\textwidth}{
+\begin{itemize}
+   \item Denaska nivelo de la franca,
+   \item Flua en Esperanto,
+   \item Kompreneto de la germana.
+\end{itemize}}
+\parbox{.55\textwidth}{
+\begin{itemize}
+   \item Altnivela nivelo en la angla,
+	 \item Meznivelo en la portugala (Brazila),
+   \item Baznivelo en la hispana,
+\end{itemize}}
+\end{cvsection}
+
+\begin{datecvsection}{Kongresoj}
+
+  2019 & Martin~\familyName{Bodin}, Philippa~\familyName{Gardner}, Thomas~\familyName{Jensen}, kaj Alan~\familyName{Schmitt}. \textit{Skeletal Semantics kaj Their Interpretations}. Je POPL. \\
+
+  2018 & Martin~\familyName{Bodin}, Tomás~\familyName{Diaz}, kaj Éric~\familyName{Tanter}. \textit{A Trustworthy Mechanized Formalization of R}. Je DLS. \\
+
+  2015 & Martin~\familyName{Bodin}, Thomas~\familyName{Jensen}, kaj Alan~\familyName{Schmitt}. \textit{Certified Abstract Interpretation with Pretty-Big-Step Semantics}. Je CPP. \\
+
+  2014 & Martin~\familyName{Bodin}, Arthur~\familyName{Charguéraud}, Daniele~\familyName{Filaretti}, Philippa~\familyName{Gardner}, Sergio~\familyName{Maffeis}, Daiva~\familyName{Naudžiūnienė}, Alan~\familyName{Schmitt}, kaj Gareth~\familyName{Smith}. \textit{A Trusted Mechanised JavaScript Specification}. Je POPL. \\
+
+  2013 & Jörg~\familyName{Endrullis}, Dimitri~\familyName{Hendriks}, kaj Martin~\familyName{Bodin}. \textit{Circular Coinduction in Coq Using Bisimulation-up-to Techniques}. Je ITP. \\
+
+  2011 & David~\familyName{Monniaux} kaj Martin~\familyName{Bodin}. \textit{Modular Abstractions of Reactive Nodes using Disjunctive Invariants}. Je APLAS. \\
+
+\end{datecvsection}
+
+\begin{datecvsection}{Babilkongresoj}
+
+  2019 & Martin~\familyName{Bodin}, Tomás~\familyName{Diaz}, kaj Éric~\familyName{Tanter}. \textit{A Trustworthy Mechanized Formalization of R}. Je FMfSS. \\
+
+  2018 & Martin~\familyName{Bodin}. \textit{A Coq Formalisation of a Core of R}. Je CoqPL. \\
+
+  2016 & Martin~\familyName{Bodin}, Thomas~\familyName{Jensen}, kaj Alan~\familyName{Schmitt}. \textit{An Abstract Separation Logic for Interlinked Extensible Records}. Je JFLA. \\
+
+  2014 & Martin~\familyName{Bodin}, Thomas~\familyName{Jensen}, kaj Alan~\familyName{Schmitt}. \textit{Certified Abstract Interpretation with Pretty-Big-Step Semantics}. Je JFLA. \\
+
+  2013 & Martin~\familyName{Bodin}, Thomas~\familyName{Jensen}, kaj Alan~\familyName{Schmitt}. \textit{Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)}. Je \textit{Semantics, Abstract Interpretation, kaj Reasoning about Programs: Essays Dedicated to David A.~\familyName{Schmidt}} \\ % on the Occasion of his Sixtieth Birthday}, volume 129 of EPTCS, pages 360–383. \\
+
+  2013 & Martin~\familyName{Bodin} kaj Alan~\familyName{Schmitt}. \textit{A Certified JavaScript Interpreter}. Je JFLA. \\
+
+\end{datecvsection}
+
+\begin{datecvsection}{Aliaj eldonaĵoj}
+
+    2016 & Martin~\familyName{Bodin}. \textit{Sémantique et analyse certifiées de JavaScript}. Doktoriĝdokumento. \\
+
+\end{datecvsection}
+
+\begin{datecvsection}{Aliaĵoj}
+
+    2019 & Komitatano de la programaĵtaksado por POPL. \\
+
+    2012, 2014 & Superkontrolado de la algoritma praktika ekzameno eniganta la \fr{\placeName{École Normale Supérieure}}.
+
+\end{datecvsection}
+
+\begin{datecvsection}{Gvidado}
+
+		2020 & Rao~\familyName{Xiaojia}, kungviditaj de Philippa~\familyName{Gardner} \\
+		2019 & Benjamin~\familyName{Gunton}, kungvidita de Philippa~\familyName{Gardner} \\
+		2017–2018 & Tomás~\familyName{Diaz}, kungvidita de Éric~\familyName{Tanter} \\
+
+\end{datecvsection}
+
+\begin{itemcvsection}{Komputilaj kapabloj}
+
+  \item Bona nivelo en la jenaj programlingvoj:  Coq, OCaml, Javaskripto, \LaTeX, ktp.
+  \item Kutimuzanto de la sistemo GNU/Linux.
+  \item Kutimuzanto de Vim, Git, Inkscape, ktp.
+
+\end{itemcvsection}
+
+\begin{datecvsection}{Instruado}
+
+    2019 & Separation Logic. Ekzercinstruado de M1a nivelo ĉe la \en{\placeName{Imperial College}}. \\
+
+    2018 & Models of Computation. Ekzercinstruado de L2a nivelo ĉe la \en{\placeName{Imperial College}}. \\
+
+    2017 & Introducción a Coq: Lógica, Tipos y Verificación. Ekzercinstruado de M2a nivelo ĉe la \es{\placeName{Universidad de Chile}}. \\
+
+    2014 & Program-konceptado kaj pruvo. Ekzercinstruado de M1a nivelo ĉe la \fr{\placeName{École Normale Supérieure}}. \\
+
+    2013–2014 & Formalaj lingvaĵoj. Ekzercinstruado de L3a nivelo ĉe la \fr{\placeName{École Normale Supérieure}}. \\
+
+    2013–2014 & Enkonduko pri funkcia programado. Ekzercinstruado de L1a nivelo ĉe la \fr{université \placeName{Rennes}~1}. \\
+
+    2012 & Enkonduko pri Scheme. Ekzercinstruado de L1a nivelo ĉe \placeName{Insa} de \placeName{Rennes}. \\
+
+\end{datecvsection}
+
+\begin{datecvsection}{Aliaj Spertoj}
+
+	2013–2016 & Ano de la \textsc{SecCloud} projekto:  \url{http://www.seccloud.cominlabs.ueb.eu/} \\
+
+	2012–2016 & Ano de la \textsc{JsCert} projekto:  \url{http://jscert.org/} \\
+
+    2012 & Lernoservo ĉe \placeName{Inria} (\placeName{Rennes}) kun Alan~\familyName{Schmitt} kaj Thomas~\familyName{Jensen}:
+	\en{\textit{A Certified JavaScript Interpreter}} \\
+
+    2011 & Lernoservo ĉe \placeName{Vrĳe Universiteit} (\placeName{Amsterdam}) kun Dimitri~\familyName{Hendriks} kaj Jörg~\familyName{Endrullis}:
+	\en{\textit{Proving Stream Equalities in Coq}} \\
+
+    2011 & Lernoservo ĉe \placeName{PPS} (\placeName{Parizo}) kun Stéphane~\familyName{Gimenez} kaj Christine~\familyName{Tasson}:
+	\en{\textit{Sequentialization of Proof Nets to Structures}} \\
+
+	2010 & Partoprenado al la projekto \textsc{Cartomancer}:  \url{http://sourceforge.net/projects/cartomancer/} \\
+
+    2010 & Lernoservo ĉe \placeName{Vérimag} (\placeName{Grenoble}) kun David~\familyName{Monniaux}:
+    \fr{\textit{Détection de modes de fonctionnements d’un programme \textsc{Lustre}}} \\
+
+\end{datecvsection}
+
+\begin{itemcvsection}{Komputilaj kapabloj}
+
+  \item Bona nivelo en la jenaj programlingvoj:  Coq, Javaskripto, R, \LaTeX, OCaml, ktp.
+  \item Kutimuzanto de la sistemo GNU/Linux.
+  \item Kapabla uzi Vim, Git, The~Gimp, Inkscape, ktp.
+
+\end{itemcvsection}
+
+\begin{datecvsection}{Asocia vivo}
+
+		2017 & Esperantaj renkontiĝoj en \placeName{Santiago}. \\
+		2014–2015 & Aktiva ano de {Espéranto-Rennes}. \\
+		2012 & Kasisto de la teatra asocio {ASCREB} en \placeName{Rennes}. \\
+		2010 & Sekretario de la asocio \textsc{INFO-ENS} en \placeName{Lyon}.
+
+\end{datecvsection}
+
+\begin{itemcvsection}{Personaj interesoj}
+
+  \item Ludoj: tabelaj, kartaj, rolaj, vesperenketoj, ktp.
+  \item Esperantaj agadoj.
+
+\end{itemcvsection}
+
+\end{document}
+

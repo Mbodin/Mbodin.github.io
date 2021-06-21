@@ -1,0 +1,21 @@
+(* Instead of function, we here use procedures. One difference is that they can not be nested: a procedure is necessarily defined at top level. Another difference is that they do not return any result: they have to use side-effects for a similar effect. *)
+
+procedure id (x) := (
+    res := x
+)
+
+id (42) ;
+r1 := res ;
+
+id (-1) ;
+r2 := res ;
+
+id (0) ;
+r3 := res ;
+
+id (18) ;
+id (res) ;
+id (res) ;
+r4 := res
+
+(* Note an interesting feature of our formalism based on semantic triples: we could have analysed the procedure with only one semantic triple, leading to an unprecise flow-insensitive analysis. Instead, the analyser can chose to provide separate semantic triple for each call site, leading to a precise analysis. A more scalable alternative would be to provide several semantic triples for each function, depending on its different uses (for instance if its argument is positive or not, or if an object has a given field). Our formalism enables all these approaches. *)

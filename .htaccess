@@ -1,0 +1,5 @@
+AddDefaultCharset utf-8
+#ErrorDocument 404 /eraro.html
+
+order allow,deny
+allow from all

@@ -1,0 +1,112 @@
+\documentclass[11pt,a4paper]{article}
+  \usepackage[T1]{fontenc}%
+  \usepackage[obeyspaces]{url} % \urlstyle{sf}%
+  \usepackage{mathpazo}%
+\usepackage[dvips]{epsfig}
+\usepackage[latin1]{inputenc}
+\usepackage{textcomp}
+
+\input{../macroTD} 
+  
+\titreTD{Langages Formels}{TD 7}{Langages Algébriques et Automates à Pile} 
+
+\setboolean{corrige}{true}
+
+% \documentclass[11pt]{article}
+
+ 
+
+\parskip=0.3\baselineskip \sloppy
+
+
+\newcommand{\fleche}{\rightarrow}%
+\newcommand{\Rat}{\mathsf{Rat}}%
+\newcommand{\N}{\mathbb{N}}%
+\newcommand{\D}{\mathbb{D}}%
+\newcommand{\dist}{\mathop{\mathrm{d}}}%
+\newcommand{\fix}{\mathop{\mathrm{Fix}}}%
+\newcommand{\vertbar}{\ \vert \ }%
+%\newcommand{\vdashl}{\vdash\mspace{-6 mu}\textthreequartersemdash}%
+\def\vdashl{\mathrel {\scriptstyle |} \joinrel\mathrel {\scriptstyle -}\joinrel\mathrel {\scriptstyle -}\joinrel\mathrel {\scriptstyle -}}
+\def\vdashle{\mathrel {\scriptstyle |} \joinrel\mathrel {\scriptstyle \overset{*}{-}}\joinrel\mathrel {\scriptstyle -}\joinrel\mathrel {\scriptstyle -}}
+\def\vdashlp{\mathrel {\scriptstyle |} \joinrel\mathrel {\scriptstyle \overset{+}{-}}\joinrel\mathrel {\scriptstyle -}\joinrel\mathrel {\scriptstyle -}}
+
+\begin{document}
+
+\thispagestyle{empty}
+\maketitle
+
+
+\begin{exer}[Commençons par bricoler des automates.]
+
+\def\bin#1{(#1)_2}
+
+  Donner des automates à pile reconnaissant les langages suivants :
+
+  \begin{enumerate}
+  \item $L_1 = \{u \in \{a,b\}^*| \ |u|_a = |u|_b \}$
+  \item $L_2 = \{u \in \{a,b\}^*| \ |u|_a \geq |u|_b \}$
+  \item $L_3 = \{u \in \{a,b\}^*| \ |u|_a = 2 \cdot |u|_b \}$
+  \item $L_4 = \{u\# \overline{v}| \ u,v \in \{0,1\}^* \ \land \ \exists i \in \N , \ u = \bin{i} \
+    \land \ v = \bin{i+1} \}$ où $\bin{n}$ est l'écriture de $n$ en binaire.
+  \end{enumerate} 
+
+\end{exer}
+
+\Correction{
+}  
+
+
+
+\begin{exer}[Clôture par union dénombrable ?]
+
+  Soit $\Sigma = \{a,b\}$ et $n$ un entier positif.
+
+  \begin{question}
+    Donner un automate à pile déterministe qui reconnaisse le langage 
+    $$L_n = \{ a^m b^k a^m b^k| \ m\geq 1 \ \mbox{et} \ 1 \leq k \leq n \}$$
+  \end{question}
+
+\Correction{
+}
+
+
+  \begin{question}
+    Le langage $L = \displaystyle\bigcup_{n \geq 1} L_n$ est-il algébrique ?
+  \end{question}
+
+
+  \Correction{
+  }
+
+
+\end{exer}
+
+
+\begin{exer}[Clôture par complémentaire ?]
+  
+  Montrer que le langage $L = \{ ww| \ w \in \{a,b\}^*\}$ n'est pas algébrique alors que son
+  complémentaire l'est. Donner un automate à pile.
+
+
+  \Correction{
+  }
+
+\end{exer}
+
+
+\begin{exer}[Langages algébriques sur un seul caractère]
+
+  Montrer que tout langage algébrique $L$ sur l'alphabet $\{a\}$ est rationnel.
+
+\textit{$\blacktriangleright$ On pourra montrer qu'il existe $N_0$ et $p$ tels que pour tout mot $w$, si $|w| \geq N_0$, alors $w (a^p)^* \subseteq L$.}
+ 
+\Correction{
+}
+
+\end{exer}
+
+\newpage
+
+\end{document}
+

@@ -1,0 +1,198 @@
+eo
+=langname
+Esperanto
+=textLink
+Ligilo
+=textHide
+Malafiŝi
+=textShow
+Afiŝi
+=textHideAll
+Malafiŝi ĉion
+=textShowAll
+Afiŝi ĉion
+=textStart
+Eki
+=readMore
+Legi pli
+=hideMessage
+Malmontri
+=needJSCSS
+Por bone foliumi tiun retejon, mi konsilas al vi uzi retfoliumilon kiu kapablas ruli <span class = "name">Javaskripto</span>n aŭ <span class = "name">CSS</span>n.
+=JSCSSnotthere
+Se vi legas tiun ĉi mesaĝon, signifas ke nek <span class = "name">JavaScript</span>, nek <span class = "name">CSS</span> ruleblas (aŭ estas ŝaltata) per via nuna foliumilo.
+=badJS
+Aspektas ke via retfoliumilo ne perfekte respektas la normon <span class = "name">ECMAScript</span> de <span class = "name">Javaskripto</span>, versio 5.1, en kiu ĉi tiu retejo sinbazas.
+=badJSexplain
+Ne tro zorgu: mi ne konas retfoliumilon kiu respektas ĝin entute.  Tiu averto pli celas konsciigi la diferencon inter teorio kaj praktiko, kaj ekŝalti cerbumadojn prie.  Por ne plu vidi ĉi tiun averton, <a href = "#" onclick = "noMorePedanticJS ()">klaku ĉi tien</a>.
+=noLanguageDetected
+<a class = "switchLanguage_eo internalLink" href = "#eo">Alklaku ĉi tie por legi tiun retpaĝon Esperante</a>.
+=relocation
+Tiu retejo baldaŭ ŝanĝos sian retlokon.  Mi do konsilegas al vi kontroli ĉu la nova pretas <a href = "https://www.doc.ic.ac.uk/~mbodin/">tie</a>.
+=permanentRelocation
+Ĉi tiu retejo ŝanĝis adreson.  Se vi ne estas redirektigita, bonvole <a href = "https://www.doc.ic.ac.uk/~mbodin/">alklaki tie</a>.
+=working
+Mi ŝanĝas tiun ĉi retejon:  ĝi probable nun ŝajnas stranga… sed baldaŭ ne plu!
+=notUpToDate
+Tiu parto de tiu ĉi retejo ne nun ĝisdatas… sed mi konscias tion kaj baldaŭ zorgos pri tio!
+=created
+Retejo kreita per <span class = "name">Martin Bodin</span>.  Se vi renkontas ian ajn problemon kun ĝi, bonvolu <span class = "contactme">kontakti min</span>.
+=socials
+Alklaku ĉi tie pro aktivigi sociajn skriptojn (vi klakante akceptas kuketojn kaj eksterajn kromrimedojn).
+=validHTML5
+Normale estas valida laŭ <span class = "name">HTML5</span>
+=validCSS3
+Normale estas valida laŭ <span class = "name">CSS3</span>
+=wrongLang
+Tiu ĉi paĝo eble ne afiŝas en la ĝusta lingvo:  <a class = "switchLanguage_eo internalLink" href = "#eo">ĉu pliŝatus vi legi ĝin Esperante</a>?
+=errorInSocial
+Ia problemo okazis dum la eko de ies socia skripto…
+=spyingSocials
+Sociaj skriptoj estas kodoj el diversaj ne-ĉiel-fidemaj retejoj kaj povas kaŝobservi vin.  Se vi ne fidas ilin, <a onclick = "setPassingArgument ('social', 'no', true)" class = "internalLink" href = "#">alklaku ĉi tie por malaktivigi ilin</a>.
+=permanentSocials
+Por aŭtomate aktivigi sociajn skriptojn dum vi retumas en ĉi tiu retejo sen devi alklaki ĉi sube, <a href = "#" onclick = "permanentSocials ()">alklaku ĉi tie</a>.
+=contactmeNoJS
+mailto:mbodin[bonvolu anstataŭigi tiun ĉi tekston per ĉe-signo]ic[kaj tiun ĉi per punkto]ac[kaj per alia puntko]uk
+=switchLanguage
+Ŝanĝi la lingvon
+=lastUpdate
+Laste ŝanĝita je la
+=and
+kaj
+=doi
+DOI:
+=bibtex
+Dosiero Biber
+
+en
+=langname
+English
+=textLink
+Link
+=textHide
+Hide
+=textShow
+Show
+=textHideAll
+Hide All
+=textShowAll
+Show All
+=textStart
+Start
+=readMore
+Read more
+=hideMessage
+Hide
+=needJSCSS
+To correctly visualise this website, I advise you to use a browser able to execute <span class = "name">JavaScript</span> or <span class = "name">CSS</span>.
+=JSCSSnotthere
+If you read this message, this means that neither <span class = "name">JavaScript</span>, nor <span class = "name">CSS</span> are compatible with (or set up by) your current browser.
+=badJS
+It seems that your browser is not strictly following the <span class = "name">ECMAScript</span> standard of <span class = "name">JavaScript</span>, version 5.1, on which this site has been based on.
+=badJSexplain
+Do not worry too much: I am not aware of any browser completely following this standard.  This warning aims at emphasing on the gap between theory and practise, and at yielding some thoughts about it.  To stop displaying this message, <a href = "#" onclick = "noMorePedanticJS ()">click here</a>.
+=noLanguageDetected
+<a class = "switchLanguage_en internalLink" href = "#en">Click here to get the English version of this webpage.</a>
+=relocation
+This website will soon change its location.  I thus strongly advise you to check if the new one is already available <a href = "https://www.doc.ic.ac.uk/~mbodin/">there</a>.
+=permanentRelocation
+This website moved.  If you are not being redirected, please <a href = "https://www.doc.ic.ac.uk/~mbodin/">click here</a>.
+=working
+I am currently working on this website:  it probably now feels a bit weird… but it will not soon!
+=notUpToDate
+This part of the website is not up to date yet… but I am conscious of it and shall fix it soon!
+=created
+Website created by <span class = "name">Martin Bodin</span>.  In case of issues with this website, do not hesitate to <span class = "contactme">contact me</span>.
+=socials
+Click here to activate social scripts (by clicking you accept cookies and third party sources).
+=validHTML5
+Should be valid according to <span class = "name">HTML5</span>
+=validCSS3
+Should be valid according to <span class = "name">CSS3</span>
+=wrongLang
+This page may not be displayed in your prefered language:  <a class = "switchLanguage_en internalLink" href = "#en">would you prefer to read it in English</a>?
+=errorInSocial
+An error occured while executing some social scripts…
+=spyingSocials
+Social scripts involves third-party sources that can not always be trusted and that can spy you.  If you do not trust them, <a onclick = "setPassingArgument ('social', 'no', true)" class = "internalLink" href = "#">click here to disable them</a>.
+=permanentSocials
+To automatically enable social scripts while surfing in this website without being forced to click underneath, <a href = "#" onclick = "permanentSocials ()">click here</a>.
+=contactmeNoJS
+mailto:mbodin[please replace this text by an at symbol]ic[and this one by a dot]ac[and a dot again]uk
+=switchLanguage
+Switch Language
+=lastUpdate
+Last update the
+=and
+and
+=doi
+DOI:
+=bibtex
+Biber file
+
+fr
+=langname
+French
+=textLink
+Lien
+=textHide
+Cacher
+=textShow
+Montrer
+=textHideAll
+Cacher tout
+=textShowAll
+Montrer tout
+=textStart
+Lancer
+=readMore
+En savoir plus
+=hideMessage
+Cacher ce message
+=needJSCSS
+Pour naviguer correctement sur ce site, je conseille fortement d’utiliser un navigateur capable d’exécuter du <span class = "name">JavaScript</span> ou du <span class = "name">CSS</span>.
+=JSCSSnotthere
+Si vous lisez ce message, c’est que ni <span class = "name">JavaScript</span>, ni <span class = "name">CSS</span> ne sont supportés (ou activés) par votre navigateur actuel.
+=badJS
+Il semblerait que votre navigateur ne respecte pas strictement la norme <span class = "name">ECMAScript</span> de <span class = "name">JavaScript</span> dans sa version 5.1, sur laquelle ce site est basé.
+=badJSexplain
+Pas d’inquiétude : je ne connais pas de navigateur qui le respecte complètement.  Cet avertissement est plus destiné à faire prendre conscience du fossé entre théorie et pratique, afin de déclencher quelques réflexions.  Pour arrêter d’afficher ce message, <a href = "#" onclick = "noMorePedanticJS ()">cliquez ici</a>.
+=noLanguageDetected
+<a class = "switchLanguage_fr internalLink" href = "#fr">Cliquez ici pour voir le contenu de cette page en Français</a>.
+=relocation
+Ce site Internet va bientôt changer d’adresse.  Je vous recommande donc de vérifier si le nouveau site est déjà disponible <a href = "https://www.doc.ic.ac.uk/~mbodin/">ici</a>.
+=permanentRelocation
+Ce site a changé d’adresse.  Si vous n’êtes pas redirigés, merci de <a href = "https://www.doc.ic.ac.uk/~mbodin/">cliquer ici</a>.
+=working
+Je suis en train de bricoler ce site :  il doit sembler un brin étrange… mais ça devrait bientôt s’améliorer !
+=notUpToDate
+Cette partie du site n’est pas à jour… mais j’en ai bien conscience et devrait bientôt m’en occuper !
+=created
+Site conçu par <span class = "name">Martin Bodin</span>.  En cas de problème avec ce site, n’hésitez pas à <span class = "contactme">me contacter</span>.
+=socials
+Cliquez ici pour activer les scripts sociaux (vous acceptez en cliquant à l‘usage des témoins de connexion et des ressources tierces).
+=validHTML5
+Devrait respecter l’<span class = "name">HTML5</span>
+=validCSS3
+Devrait respecter le <span class = "name">CSS3</span>
+=wrongLang
+Il est possible que cette page ne s’affiche pas dans votre langue préférée :  <a class = "switchLanguage_fr internalLink" href = "#fr">préférez-vous la lire en Français</a> ?
+=errorInSocial
+Une erreur s’est produite lors de l’exécution de certain scripts sociaux.
+=spyingSocials
+Les scripts sociaux nécessitent l’usage de scripts venant de sources tierces à qui l’on ne peut pas toujours faire confiance et qui peuvent vous espionner.  Si vous ne leur faites pas confiance, <a onclick = "setPassingArgument ('social', 'no', true)" class = "internalLink" href = "#">cliquez ici pour les désactiver</a>.
+=permanentSocials
+Pour activer automatiquement les scripts sociaux lors de la navigation sur ce site sans avoir à cliquer en bas de la page, <a href = "#" onclick = "permanentSocials ()">cliquez ici</a>.
+=contactmeNoJS
+mailto:mbodin[merci de remplacer cette phrase par un arobase]ic[et ceci par un point]ac[et encore un point]uk
+=switchLanguage
+Changer de langue
+=lastUpdate
+Dernière mise à jour le
+=and
+et
+=doi
+DOI :
+=bibtex
+Fichier Biber
+

@@ -1,0 +1,143 @@
+\usepackage{fancyhdr}
+\usepackage[latin1]{inputenc}
+\usepackage{graphicx,multicol,amsmath,amssymb,ifthen}
+\usepackage[francais]{babel} \AutoSpaceBeforeFDP %
+\usepackage{color}
+\usepackage{framed}
+\usepackage{stmaryrd}
+
+
+\setlength{\oddsidemargin}{0cm}
+\addtolength{\textwidth}{70pt}
+\setlength{\topmargin}{0cm}
+\addtolength{\textheight}{3cm}
+
+
+\newcommand{\Correction}[1]
+{
+  \ifthenelse{\boolean{corrige}}
+  {\definecolor{shadecolor}{gray}{0.80} \begin{shaded} {\small #1} \end{shaded}}{}
+}
+
+
+
+\newcommand{\titreTD}[3]{%
+\title{Module #1 \\
+#2 : #3
+\Correction{Correction}}
+\author{}
+\date{}
+
+\pagestyle{fancy}
+\lhead{\sf MIT 1}
+\rhead{\sf Module #1 \ #2 \ifthenelse{\boolean{corrige}}{, correction}{}}}
+
+
+
+\newcounter{probleme} 
+\newcounter{question}
+\setcounter{probleme}{1} 
+\setcounter{question}{1} 
+\def\theprobleme{\Roman{probleme}}
+\def\thequestion{\arabic{question}}
+
+\newenvironment{probleme}[1]%
+{\setcounter{question}{1}
+\stepcounter{probleme}
+\subsection*{\theprobleme. #1}}%
+{}
+
+
+\newcounter{excounter}
+\newcounter{questcounter}[excounter]
+\newenvironment{exer}[1][]%
+{%
+  \setcounter{question}{1}%
+  \stepcounter{excounter}%
+  \vspace*{0.6cm}\noindent { \texttt{{\bf Exercice \arabic{excounter}} #1}}\\
+}{%
+  \vspace{.3cm}%
+}
+
+
+
+\newenvironment{question}[1][]{\setcounter{numsubquestion}{1}%
+\vspace*{0.5cm}\noindent{\bf {\large\theexcounter.\thequestion}. #1}}%
+{\stepcounter{question}\medskip}
+
+\newcounter{numdef}
+\setcounter{numdef}{0}
+
+
+
+
+\newenvironment{Def}[2]{%
+\definecolor{shadecolor}{gray}{0.90}
+\begin{shaded}\refstepcounter{numdef}%\vspace*{0.1cm}
+    \noindent{ {\label{#2}\bf Définition}~: {\it #1}} \\}%
+{\end{shaded}\medskip}
+
+
+\newenvironment{Th}[1]{%
+\begin{framed}\vspace*{0.1cm}\noindent{ {\bf Théorème (#1)} :} \\}%
+{\end{framed}}
+
+\newenvironment{Lemma}[1]{%
+\begin{framed}%\vspace*{0.1cm}
+    \noindent{ {\bf Lemme (#1)} :} \\}%
+{\end{framed}}
+
+
+\newenvironment{Prop}[0]{%
+\begin{framed}\vspace*{0.1cm}\noindent{ {\bf Proposition} :} \\}%
+{\end{framed}}
+
+
+
+\newcounter{numsubquestion}
+\setcounter{numsubquestion}{1}
+\newenvironment{subquestion}{\setcounter{numsubsubquestion}{1}%
+\vspace*{0.2cm}\noindent{ {\bf\theexcounter.\thequestion . \thenumsubquestion}}.}%
+{\stepcounter{numsubquestion}\medskip}
+
+
+\newcounter{numsubsubquestion}
+\newenvironment{subsubquestion}{\vspace*{0.1cm}\noindent{ {\bf\theexcounter.\thequestion.\thenumsubquestion.\thenumsubsubquestion}}.}%
+{\stepcounter{numsubsubquestion}\medskip}
+
+
+\let\bfseriesaux=\bfseries%
+\renewcommand{\bfseries}{\sffamily \bfseriesaux}
+
+\def\|{\leavevmode\url|}
+
+
+
+\newenvironment{remarque}%
+{\subparagraph{Remarque.}}%
+{}
+
+\newenvironment{programme}%
+{\verbatim}{\endverbatim}
+
+\newboolean{corrige} 
+
+\setlength{\parindent}{0cm}
+
+\newsavebox{\majbox}
+\newlength{\majhaut}
+\newenvironment{solution}{\color[gray]{0.5}%
+  \begin{lrbox}{\majbox}
+    \begin{minipage}[b]{.9\textwidth}}{%
+   \end{minipage}
+  \end{lrbox}
+  \settoheight{\majhaut}{\usebox{\majbox}}
+   \addtolength{\majhaut}{0.3mm}
+  \ifthenelse{\boolean{corrige}}{%
+    \rule{1mm}{\majhaut}\hspace*{2mm}\usebox{\majbox}}{}}
+
+\newcommand{\st}{\ |\ }
+
+\renewcommand\geq\geqslant
+\renewcommand\leq\leqslant
+

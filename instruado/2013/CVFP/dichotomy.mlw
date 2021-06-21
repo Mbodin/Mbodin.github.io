@@ -1,0 +1,50 @@
+
+module Dichotomy
+
+  use import int.Int
+  use import int.EuclideanDivision
+  use import ref.Ref
+  use import array.Array
+  (* use import array.ArraySorted *)
+
+  val swap (a : array int) (i j : int) : unit
+    writes { a }
+    requires { 0 <= i <= length a }
+    requires { 0 <= j <= length a }
+
+  let rec dichotomic_sort (a : array int) (n : int) : unit =
+    writes { a }
+    requires { 0 <= n = length a }
+    (* ensures  { sorted a } *)
+    for i = 0 to length a - 1 do
+        (* invariant { sorted_sub a 0 (i - 1) } *)
+
+        let current = a[i] in
+        (* Finding the place of [current] in the already sorted array. *)
+        let left = ref 0 in
+        let right = ref i in
+
+        while (!left < !right) do
+            variant { !right - !left }
+            invariant { 0 <= !left < length a }
+            invariant { 0 <= !right < length a }
+
+            let center = div (!left + !right) 2 in
+            if a[center] > current then
+                right := center
+            else
+                left := center + 1
+        done;
+
+        assert { !left = !right };
+        let place = !left in
+
+        for j = 0 to i - place do
+            let p = i - j in
+            swap a p (p + 1)
+        done
+
+    done
+
+end
+

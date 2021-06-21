@@ -1,0 +1,1017 @@
+page
+en
+Research
+eo
+Esplorado
+fr
+Travaux de recherche
+end
+
+menu
+top.tree
+end
+
+# updating
+
+description
+en
+	I am a postdoc at the <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, in <span class = "town">London</span>.
+	I work on the <a href = "https://vtss.doc.ic.ac.uk/">Verified Trustworthy Software Specification</a> research group.
+eo
+	Mi estas postdoktorulo ĉe <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, en <span class = "town">Londono</span>.
+	Mi laboras je la esplorada grupo <a href = "https://vtss.doc.ic.ac.uk/">Verified Trustworthy Software Specification</a>.
+fr
+	Je suis post-doctorant à l’<a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, à <span class = "town">Londres</span>.
+	Je travaille dans le groupe de recherche <a href = "https://vtss.doc.ic.ac.uk/">Verified Trustworthy Software Specification</a>.
+end
+
+description
+en
+	I have been part of <a href = "http://jscert.org">the <span class = "name">JSCert</span></a> and <a href = "http://www.seccloud.cominlabs.ueb.eu">the <span class = "name">SecCloud</span></a> projects.
+	The <a href = "http://jscert.org">the <span class = "name">JSCert</span> project</a> aims to build models of <span class = "name">JavaScript</span> in <a href = "http://coq.inria.fr">the <span class = "name">Coq</span> proof assistant</a> and to design automated tools based on those semantics.
+	The <a href = "http://seccloud.cominlabs.ueb.eu">the <span class = "name">SecCloud</span> project</a> aims to provide a comprehensive language-based approach to the definition, analysis and implementation of secure applications developed using <span class = "name">JavaScript</span> and similar languages.
+eo
+	Mi estis partoprenanto de la projektoj <a href = "http://jscert.org"><span class = "name">JSCert</span></a> kaj <a href = "http://www.seccloud.cominlabs.ueb.eu"><span class = "name">SecCloud</span></a>.
+	La <a href = "http://jscert.org">projekto <span class = "name">JSCert</span></a> celas al konstrui modelojn de <span class = "name">Javaskripto</span> en <a href = "http://coq.inria.fr">la pruvhelpilo <span class = "name">Coq</span></a> kaj konstrui aŭtomatajn ilojn purvatajn per tiuj semantikoj.
+	La <a href = "http://seccloud.cominlabs.ueb.eu">projekto <span class = "name">SecCloud</span></a> celas ellabori lingvaĵbazajn laborgvidojn por la difino, analizo kaj realigo de sekuraj programaĵoj ellaboritaj per <span class = "name">Javaskripto</span> aŭ similaj lingvaĵoj.
+fr
+	J’ai fait partie des projets <a href = "http://jscert.org"><span class = "name">JSCert</span></a> et <a href = "http://www.seccloud.cominlabs.ueb.eu"><span class = "name">SecCloud</span></a>.
+	Le <a href = "http://jscert.org">projet <span class = "name">JSCert</span></a> a pour but de construire des modèles de <span class = "name">JavaScript</span> en <a href = "http://coq.inria.fr"><span class = "name">Coq</span></a> et de concevoir des outils d’analyses automatiques basés sur ces modèles formels.
+	Le <a href = "http://seccloud.cominlabs.ueb.eu">projet <span class = "name">SecCloud</span></a> a pour but de concevoir une approche orientée langages de programation pour la définition, l’analyse et l’implémentation d’applications sécurisées développées en <span class = "name">JavaScript</span> ou en des langages similaires.
+end
+
+description
+en
+	This page lists my publications.
+	You can also check my <a href = "http://orcid.org/0000-0003-3588-3782">Orcid</a>, <a href = "https://dblp.uni-trier.de/pers/hd/b/Bodin:Martin.html">DPLP</a>, or <a href = "https://scholar.google.fr/citations?user=OoWGEVEAAAAJ&hl=en">Google Scholar</a> profile.
+eo
+	Ĉi tiu paĝo listas miajn eldonaĵojn.
+	Vi ankaŭ povas kontroli miajn profilojn ĉe <a href = "http://orcid.org/0000-0003-3588-3782">Orcid</a>, <a href = "https://dblp.uni-trier.de/pers/hd/b/Bodin:Martin.html">DPLP</a>, aŭ <a href = "https://scholar.google.fr/citations?user=OoWGEVEAAAAJ&hl=en">Google Scholar</a>.
+fr
+	Cette page liste mes publications.
+	Vous pouvez aussi consulter mon profil <a href = "http://orcid.org/0000-0003-3588-3782">Orcid</a>, <a href = "https://dblp.uni-trier.de/pers/hd/b/Bodin:Martin.html">DPLP</a>, ou <a href = "https://scholar.google.fr/citations?user=OoWGEVEAAAAJ&hl=fr">Google Scholar</a>.
+end
+
+## Author declarations
+
+declareAuthor
+mbodin
+firstName
+Martin
+familyName
+Bodin
+internalLink
+index
+end
+
+declareAuthor
+pgardner
+firstName
+Philippa
+familyName
+Gardner
+directLink
+https://www.doc.ic.ac.uk/~pg/
+end
+
+declareAuthor
+tjensen
+firstName
+Thomas
+familyName
+Jensen
+directLink
+http://www.irisa.fr/celtique/jensen/
+end
+
+declareAuthor
+aschmitt
+firstName
+Alan
+familyName
+Schmitt
+directLink
+http://people.rennes.inria.fr/Alan.Schmitt/
+end
+
+declareAuthor
+tdiaz
+firstName
+Tomás
+familyName
+Diaz
+end
+
+declareAuthor
+etanter
+firstName
+Éric
+familyName
+Tanter
+directLink
+https://pleiad.cl/people/etanter
+end
+
+declareAuthor
+achargueraud
+firstName
+Arthur
+familyName
+Charguéraud
+directLink
+http://www.chargueraud.org/
+end
+
+declareAuthor
+dfiliaretti
+firstName
+Daniele
+familyName
+Filaretti
+directLink
+http://dfilaretti.github.io/
+end
+
+declareAuthor
+smaffeis
+firstName
+Sergio
+familyName
+Maffeis
+directLink
+http://www.doc.ic.ac.uk/~maffeis/
+end
+
+declareAuthor
+dnaudziuniene
+firstName
+Daiva
+familyName
+Naudžiūnienė
+directLink
+https://dblp.org/pers/n/Naudziuniene:Daiva.html
+end
+
+declareAuthor
+gsmith
+firstName
+Gareth
+familyName
+Smith
+directLink
+http://www.totherme.org/
+end
+
+declareAuthor
+jendrullis
+firstName
+Jörg
+familyName
+Endrullis
+directLink
+http://joerg.endrullis.de/
+end
+
+declareAuthor
+dhendriks
+firstName
+Dimitri
+familyName
+Hendriks
+directLink
+https://dblp.org/pers/h/Hendriks:Dimitri.html
+end
+
+declareAuthor
+dmonniaux
+firstName
+David
+familyName
+Monniaux
+directLink
+http://www-verimag.imag.fr/~monniaux/
+end
+
+## Sections
+
+section
+sectionName
+eldonaĵoj
+en
+Publications
+eo
+Eldonaĵoj
+fr
+Publications
+end
+
+article
+conference
+POPL
+conferenceLong
+Symposium on Principles of Programming Languages
+year
+2019
+name
+Skeletal Semantics and Their Interpretations
+author
+mbodin
+author
+pgardner
+author
+tjensen
+author
+aschmitt
+doi
+10.1145/3290357
+link
+en
+	<a href = "esplorado/popl19.pdf">Full text</a>
+eo
+	<a href = "esplorado/popl19.pdf">Artikolo</a>
+fr
+	<a href = "esplorado/popl19.pdf">Article</a>
+link
+en
+	<a href = "https://gitlab.inria.fr/skeletons/Coq/tree/POPL2019"><span class = "name">Coq</span> material</a>
+eo
+	<a href = "https://gitlab.inria.fr/skeletons/Coq/tree/POPL2019"><span class = "name">Coq</span>aj dosieroj</a>
+fr
+	<a href = "https://gitlab.inria.fr/skeletons/Coq/tree/POPL2019">Fichers <span class = "name">Coq</span></a>
+link
+en
+	<a href = "http://skeletons.inria.fr/popl2019/index.html">Companion website</a>
+eo
+	<a href = "http://skeletons.inria.fr/popl2019/index.html">Kunretejo</a>
+fr
+	<a href = "http://skeletons.inria.fr/popl2019/index.html">Site associé</a>
+link
+en
+	<a href = "https://www.youtube.com/watch?v=h2Nk7dmj6Hg">Recorded presentation</a>
+eo
+	<a href = "https://www.youtube.com/watch?v=h2Nk7dmj6Hg">Registrita prelego</a>
+fr
+	<a href = "https://www.youtube.com/watch?v=h2Nk7dmj6Hg">Capture vidéo de la présentation</a>
+link
+en
+	<a href = "esplorado/popl19.tar.bz2">Paper sources</a>
+eo
+	<a href = "esplorado/popl19.tar.bz2">Artikolfontoj</a>
+fr
+	<a href = "esplorado/popl19.tar.bz2">Sources de l’article</a>
+link
+all
+fr
+	<a href = "esplorado/résumé_popl19.pdf">Résumé en français de l’article</a>
+end
+
+article
+conference
+DLS
+conferenceLong
+Dynamic Languages Symposium
+year
+2018
+name
+A Trustworthy Mechanized Formalization of R
+author
+mbodin
+author
+tdiaz
+author
+etanter
+doi
+10.1145/3276945.3276946
+link
+en
+	<a href = "esplorado/dls18.pdf">Full text</a>
+eo
+	<a href = "esplorado/dls18.pdf">Artikolo</a>
+fr
+	<a href = "esplorado/dls18.pdf">Article</a>
+link
+en
+	<a href = "esplorado/dls18_slides.pdf">Slides</a>
+eo
+	<a href = "esplorado/dls18_slides.pdf">Diapozitivoj</a>
+fr
+	<a href = "esplorado/dls18_slides.pdf">Présentation</a>
+link
+en
+	<a href = "https://github.com/Mbodin/CoqR/releases/tag/DLS2018"><span class = "name">Coq</span> material</a>
+eo
+	<a href = "https://github.com/Mbodin/CoqR/releases/tag/DLS2018"><span class = "name">Coq</span>aj dosieroj</a>
+fr
+	<a href = "https://github.com/Mbodin/CoqR/releases/tag/DLS2018">Fichers <span class = "name">Coq</span></a>
+link
+en
+	<a href = "esplorado/dls18.tar.bz2">Paper sources</a>
+eo
+	<a href = "esplorado/dls18.tar.bz2">Artikolfontoj</a>
+fr
+	<a href = "esplorado/dls18.tar.bz2">Sources de l’article</a>
+link
+en
+	<a href = "esplorado/dls18_slides.tar.bz2">Slides sources</a>
+eo
+	<a href = "esplorado/dls18_slides.tar.bz2">Diapozitivfontoj</a>
+fr
+	<a href = "esplorado/dls18_slides.tar.bz2">Sources de la présentation</a>
+link
+all
+fr
+	<a href = "esplorado/résumé_dls18.pdf">Résumé en français de l’article</a>
+end
+
+article
+conference
+CPP
+conferenceLong
+Certified Programs and Proofs
+year
+2015
+name
+Certified Abstract Interpretation with Pretty-Big-Step Semantics
+author
+mbodin
+author
+tjensen
+author
+aschmitt
+doi
+10.1145/2676724.2693174
+link
+en
+	<a href = "esplorado/cpp15.pdf">Full text</a>
+eo
+	<a href = "esplorado/cpp15.pdf">Artikolo</a>
+fr
+	<a href = "esplorado/cpp15.pdf">Article</a>
+link
+en
+	<a href = "esplorado/cpp15_slides.pdf">Slides</a>
+eo
+	<a href = "esplorado/cpp15_slides.pdf">Diapozitivoj</a>
+fr
+	<a href = "esplorado/cpp15_slides.pdf">Présentation</a>
+link
+en
+	<a href = "http://ajacs.inria.fr/coq/cpp2015/"><span class = "name">Coq</span> material</a>
+eo
+	<a href = "http://ajacs.inria.fr/coq/cpp2015/"><span class = "name">Coq</span>aj dosieroj</a>
+fr
+	<a href = "http://ajacs.inria.fr/coq/cpp2015/">Fichers <span class = "name">Coq</span></a>
+link
+en
+	<a href = "esplorado/cpp15.tar.bz2">Paper sources</a>
+eo
+	<a href = "esplorado/cpp15.tar.bz2">Artikolfontoj</a>
+fr
+	<a href = "esplorado/cpp15.tar.bz2">Sources de l’article</a>
+link
+en
+	<a href = "esplorado/cpp15_slides.tar.bz2">Slides sources</a>
+eo
+	<a href = "esplorado/cpp15_slides.tar.bz2">Diapozitivfontoj</a>
+fr
+	<a href = "esplorado/cpp15_slides.tar.bz2">Sources de la présentation</a>
+end
+
+article
+conference
+POPL
+conferenceLong
+Symposium on Principles of Programming Languages
+year
+2014
+name
+A Trusted Mechanised <span class = "name">JavaScript</span> Specification
+author
+mbodin
+author
+achargueraud
+author
+dfiliaretti
+author
+pgardner
+author
+smaffeis
+author
+dnaudziuniene
+author
+aschmitt
+author
+gsmith
+doi
+10.1145/2578855.2535876
+link
+en
+	<a href = "esplorado/popl14.pdf">Full text</a>
+eo
+	<a href = "esplorado/popl14.pdf">Artikolo</a>
+fr
+	<a href = "esplorado/popl14.pdf">Article</a>
+link
+en
+	<a href = "http://jscert.org">Website</a>
+eo
+	<a href = "http://jscert.org">Kunretejo</a>
+fr
+	<a href = "http://jscert.org">Site web</a>
+link
+all
+fr
+	<a href = "esplorado/résumé_popl14.pdf">Résumé en français de l’article</a>
+link
+en
+	<a href = "http://jscert.org/popl14/">Slides</a>
+eo
+	<a href = "http://jscert.org/popl14/">Diapozitivoj</a>
+fr
+	<a href = "http://jscert.org/popl14/">Présentation</a>
+end
+
+article
+conference
+ITP
+conferenceLong
+Interactive Theorem Proving
+year
+2013
+name
+Circular Coinduction in <span class = "name">Coq</span> Using Bisimulation-Up-To Techniques
+author
+jendrullis
+author
+dhendriks
+author
+mbodin
+doi
+10.1007/978-3-642-39634-2_26
+link
+en
+	<a href = "esplorado/itp13.pdf">Full text</a>
+eo
+	<a href = "esplorado/itp13.pdf">Artikolo</a>
+fr
+	<a href = "esplorado/itp13.pdf">Article</a>
+link
+en
+	<a href = "esplorado/itp13_slides.pdf">Slides</a>
+eo
+	<a href = "esplorado/itp13_slides.pdf">Diapozitivoj</a>
+fr
+	<a href = "esplorado/itp13_slides.pdf">Présentation</a>
+end
+
+article
+conference
+APLAS
+conferenceLong
+Asian Symposium on Programming Languages and Systems
+year
+2011
+name
+Modular Abstractions of Reactive Nodes using Disjunctive Invariants
+author
+dmonniaux
+author
+mbodin
+doi
+10.1007/978-3-642-25318-8_5
+link
+en
+	<a href = "esplorado/aplas11.pdf">Full text</a>
+eo
+	<a href = "esplorado/aplas11.pdf">Artikolo</a>
+fr
+	<a href = "esplorado/aplas11.pdf">Article</a>
+link
+en
+	<a href = "esplorado/aplas11_slides.pdf">Slides</a>
+eo
+	<a href = "esplorado/aplas11_slides.pdf">Diapozitivoj</a>
+fr
+	<a href = "esplorado/aplas11_slides.pdf">Présentation</a>
+end
+
+section
+sectionName
+babilkongresoj
+en
+Workshops
+eo
+Babilkongresoj
+fr
+Colloques
+end
+
+article
+noBib
+conference
+FMfSS
+conferenceLong
+Formal Methods for Statistical Software
+year
+2019
+name
+A Trustworthy Mechanized Formalization of <span class = "name">R</span>
+author
+mbodin
+author
+tdiaz
+author
+etanter
+link
+en
+	<a href = "esplorado/fmfss19_slides.pdf">Slides</a>
+eo
+	<a href = "esplorado/fmfss19_slides.pdf">Diapozitivoj</a>
+fr
+	<a href = "esplorado/fmfss19_slides.pdf">Présentation</a>
+link
+en
+	<a href = "esplorado/fmfss19_slides.tar.bz2">Sources</a>
+eo
+	<a href = "esplorado/fmfss19_slides.tar.bz2">Fontoj</a>
+fr
+	<a href = "esplorado/fmfss19_slides.tar.bz2">Sources</a>
+end
+
+article
+conference
+CoqPL
+year
+2018
+name
+A <span class = "name">Coq</span> Formalisation of a Core of <span class = "name">R</span>
+author
+mbodin
+link
+en
+	<a href = "esplorado/coqpl18.pdf">Full text</a>
+eo
+	<a href = "esplorado/coqpl18.pdf">Artikolo</a>
+fr
+	<a href = "esplorado/coqpl18.pdf">Article</a>
+link
+en
+	<a href = "esplorado/coqpl18_slides.pdf">Slides</a>
+eo
+	<a href = "esplorado/coqpl18_slides.pdf">Diapozitivoj</a>
+fr
+	<a href = "esplorado/coqpl18_slides.pdf">Présentation</a>
+end
+
+article
+conference
+JFLA
+conferenceLong
+Journées Francophones des Langages Applicatifs
+year
+2016
+name
+An Abstract Separation Logic for Interlinked Extensible Records
+author
+mbodin
+author
+tjensen
+author
+aschmitt
+link
+en
+	<a href = "esplorado/jfla16.pdf">Full text</a>
+eo
+	<a href = "esplorado/jfla16.pdf">Artikolo</a>
+fr
+	<a href = "esplorado/jfla16.pdf">Article</a>
+link
+en
+	<a href = "esplorado/jfla16_slides.pdf">Slides</a>
+eo
+	<a href = "esplorado/jfla16_slides.pdf">Diapozitivoj</a>
+fr
+	<a href = "esplorado/jfla16_slides.pdf">Présentation</a>
+link
+en
+	<a href = "esplorado/jfla16.tar.bz2">Paper sources</a>
+eo
+	<a href = "esplorado/jfla16.tar.bz2">Artikolfontoj</a>
+fr
+	<a href = "esplorado/jfla16.tar.bz2">Sources de l’article</a>
+link
+en
+	<a href = "esplorado/jfla16_slides.tar.bz2">Slides sources</a>
+eo
+	<a href = "esplorado/jfla16_slides.tar.bz2">Diapozitivfontoj</a>
+fr
+	<a href = "esplorado/jfla16_slides.tar.bz2">Sources de la présentation</a>
+end
+
+article
+conference
+JFLA
+conferenceLong
+Journées Francophones des Langages Applicatifs
+year
+2014
+name
+Pretty-big-step-semantics-based Certified Abstract Interpretation
+author
+mbodin
+author
+tjensen
+author
+aschmitt
+link
+en
+	<a href = "esplorado/jfla14.pdf">Full text</a>
+eo
+	<a href = "esplorado/jfla14.pdf">Artikolo</a>
+fr
+	<a href = "esplorado/jfla14.pdf">Article</a>
+link
+en
+	<a href = "esplorado/jfla14_slides.pdf">Slides</a>
+eo
+	<a href = "esplorado/jfla14_slides.pdf">Diapozitivoj</a>
+fr
+	<a href = "esplorado/jfla14_slides.pdf">Présentation</a>
+end
+
+article
+conference
+Festschrift for David Schmidt
+year
+2013
+name
+Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)
+author
+mbodin
+author
+tjensen
+author
+aschmitt
+doi
+10.4204/EPTCS.129.23
+link
+en
+	<a href = "esplorado/Festschrift_Schmidt.pdf">Full text</a>
+eo
+	<a href = "esplorado/Festschrift_Schmidt.pdf">Artikolo</a>
+fr
+	<a href = "esplorado/Festschrift_Schmidt.pdf">Article</a>
+end
+
+article
+conference
+JFLA
+conferenceLong
+Journées Francophones des Langages Applicatifs
+year
+2013
+name
+A Certified <span class = "name">JavaScript</span> Interpreter
+author
+mbodin
+author
+aschmitt
+link
+en
+	<a href = "esplorado/jfla13.pdf">Full text</a>
+eo
+	<a href = "esplorado/jfla13.pdf">Artikolo</a>
+fr
+	<a href = "esplorado/jfla13.pdf">Article</a>
+link
+en
+	<a href = "esplorado/jfla13_slides.pdf">Slides</a>
+eo
+	<a href = "esplorado/jfla13_slides.pdf">Diapozitivoj</a>
+fr
+	<a href = "esplorado/jfla13_slides.pdf">Présentation</a>
+end
+
+section
+sectionName
+doktorigxo
+en
+Thesis
+eo
+Doktoriĝo
+fr
+Thèse
+end
+
+item
+en
+Certified Semantics and Analysis of <span class = "name">JavaScript</span>
+eo
+Certigitaj semantiko kaj analizo de <span class = "name">JavaSkripto</span>
+fr
+Sémantique et analyse certifiées de <span class = "name">JavaScript</span>
+description
+en
+    I defended my PhD Thesis in 2016.
+    My PhD advisors were <a href = "http://people.rennes.inria.fr/Alan.Schmitt/"><span class = "name">Alan Schmitt</span></a> and <a href = "http://www.irisa.fr/celtique/jensen/"><span class = "name">Thomas Jensen</span></a>.
+eo
+    Mi doktoriĝis en 2016.
+    Miaj doktoriĝestroj estis <a href = "http://people.rennes.inria.fr/Alan.Schmitt/"><span class = "name">Alan Schmitt</span></a> kaj <a href = "http://www.irisa.fr/celtique/jensen/"><span class = "name">Thomas Jensen</span></a>.
+fr
+    J’ai soutenu en 2016.
+    Mes encadrants étaient <a href = "http://people.rennes.inria.fr/Alan.Schmitt/"><span class = "name">Alan Schmitt</span></a> et <a href = "http://www.irisa.fr/celtique/jensen/"><span class = "name">Thomas Jensen</span></a>.
+link
+en
+	<a href = "doktorigxo/manuscrit.pdf">Full text</a>
+eo
+	<a href = "doktorigxo/manuscrit.pdf">Doktoriĝdokumento</a>
+fr
+	<a href = "doktorigxo/manuscrit.pdf">Manuscrit</a>
+link
+en
+	<a href = "doktorigxo/planches.pdf">Defence Slides</a>
+eo
+	<a href = "doktorigxo/planches.pdf">Diapozitivoj</a>
+fr
+	<a href = "doktorigxo/planches.pdf">Présentation</a>
+internalLink
+doktorigxo/companion
+en
+    Companion Webpage
+eo
+    Kundoktoriĝdokumento
+fr
+    Guide de thèse
+link
+en
+	<a href = "doktorigxo/manuscrit.tar.bz2">Source code</a>
+eo
+	<a href = "doktorigxo/manuscrit.tar.bz2">Kodfontoj</a>
+fr
+	<a href = "doktorigxo/manuscrit.tar.bz2">Code Source</a>
+link
+en
+	<a href = "doktorigxo/planches.tar.xz">Slides sources</a>
+eo
+	<a href = "doktorigxo/planches.tar.xz">Diapozitivfontoj</a>
+fr
+	<a href = "doktorigxo/planches.tar.xz">Sources de la présentation</a>
+end
+
+#section
+#sectionName
+#interniĝoj
+#en
+#Internships Reports
+#eo
+#Raportoj de interniĝoj
+#fr
+#Rapports de stages
+#end
+
+#item
+#all
+#2012, <span class = "town">Rennes</span>
+#description
+#en
+#	An internship I’ve done with <a href = "http://people.rennes.inria.fr/Alan.Schmitt/"><span class = "name">Alan Schmitt</span></a> and <a href = "http://www.irisa.fr/celtique/jensen/"><span class = "name">Thomas Jensen</span></a> in <span class = "town">Rennes</span>.
+#	I’ve made a <span class = "name">JavaScript</span> interpreter proven correct in <span class = "name">Coq</span>.
+#eo
+#	Interniĝo farita kun <a href = "http://people.rennes.inria.fr/Alan.Schmitt/"><span class = "name">Alan Schmitt</span></a> kaj <a href = "http://www.irisa.fr/celtique/jensen/"><span class = "name">Thomas Jensen</span></a> en <span class = "town">Rennes</span>.
+#	Mi faritis interpretiston de <span class = "name">Javaskripto</span> pruvitan korektan per <span class = "name">Coq</span>.
+#fr
+#	Un stage que j’ai fait sous la tutelle d’<a href = "http://people.rennes.inria.fr/Alan.Schmitt/"><span class = "name">Alan Schmitt</span></a> et de <a href = "http://www.irisa.fr/celtique/jensen/"><span class = "name">Thomas Jensen</span></a> dans la belle ville de <span class = "town">Rennes</span>.
+#	J’y ai créé un interpréteur <span class = "name">JavaScript</span> prouvé correct en <span class = "name">Coq</span>.
+#link
+#en
+#	<a href = "M2/stage/rapport.pdf">Report</a>
+#eo
+#	<a href = "M2/stage/rapport.pdf">Raporto</a>
+#fr
+#	<a href = "M2/stage/rapport.pdf">Rapport</a>
+#link
+#en
+#	<a href = "M2/stage/slides.pdf">Slides</a>
+#eo
+#	<a href = "M2/stage/slides.pdf">Diapozitivoj</a>
+#fr
+#	<a href = "M2/stage/slides.pdf">Présentation</a>
+#end
+
+#item
+#all
+#2011, <span class = "town">Amsterdam</span>
+#description
+#en
+#	An internship I’ve done with <a href = "http://www.cs.vu.nl/~diem/"><span class = "name">Dimitri Hendriks</span></a> and <a href = "http://joerg.endrullis.de/"><span class = "name">Jörg Endrullis</span></a> in <span class = "town">Amsterdam</span>.
+#	The idea was to analysis streams and other coinductive types in <span class = "name">Coq</span> using rewriting reasoning.
+#eo
+#	Interniĝo farita kun <a href = "http://www.cs.vu.nl/~diem/"><span class = "name">Dimitri Hendriks</span></a> kaj <a href = "http://joerg.endrullis.de/"><span class = "name">Jörg Endrullis</span></a> en <span class = "town">Amsterdam</span>.
+#	Ĝia ideo estis analizi fluojn kaj alterajn coinduktajn tipojn en <span class = "name">Coq</span> per reverkadaj rezonadoj.
+#fr
+#	Un stage que j’ai fait avec <a href = "http://www.cs.vu.nl/~diem/"><span class = "name">Dimitri Hendriks</span></a> and <a href = "http://joerg.endrullis.de/"><span class = "name">Jörg Endrullis</span></a> à <span class = "town">Amsterdam</span>.
+#	Dans l’idée, je devais transformer automatiquement des preuves de réécriture sur des objets inductifs en des preuves <span class = "name">Coq</span> correctes.
+#link
+#en
+#	<a href = "M1/stages/2/rapport.v.pdf">Report</a>
+#eo
+#	<a href = "M1/stages/2/rapport.v.pdf">Raporto</a>
+#fr
+#	<a href = "M1/stages/2/rapport.v.pdf">Rapport</a>
+#link
+#en
+#	<a href = "M1/stages/2/slides.v.pdf">Slides</a>
+#eo
+#	<a href = "M1/stages/2/slides.v.pdf">Diapozitivoj</a>
+#fr
+#	<a href = "M1/stages/2/slides.v.pdf">Présentation</a>
+#end
+
+#item
+#all
+#2011, <span class = "town">Paris</span>
+#description
+#en
+#	An internship I’ve done with <a href = "http://www.pps.univ-paris-diderot.fr/~gimenez/"><span class = "name">Stéphane Gimenez</span></a> in <span class = "town">Paris</span>.
+#	I’ve been working on structures theory, linear logic, and all on the paths between them.
+#eo
+#	Interniĝo farita kun <a href = "http://www.pps.univ-paris-diderot.fr/~gimenez/"><span class = "name">Stéphane Gimenez</span></a> en <span class = "town">Paris</span>.
+#	Mi laboris sur teorio de strukturoj, lineara logiko, kaj la vojoj inter ilin.
+#fr
+#	Un stage que j’ai fait avec <a href = "http://www.pps.univ-paris-diderot.fr/~gimenez/"><span class = "name">Stéphane Gimenez</span></a> à <span class = "town">Paris</span>.
+#	J’ai travaillé sur la théorie des structures, la logique linéaire, et les liens que l’on peut faire entre eux.
+#link
+#en
+#	<a href = "M1/stages/1/rapport.pdf">Report</a>
+#eo
+#	<a href = "M1/stages/1/rapport.pdf">Raporto</a>
+#fr
+#	<a href = "M1/stages/1/rapport.pdf">Rapport</a>
+#link
+#en
+#	<a href = "M1/stages/1/slides.pdf">Slides</a>
+#eo
+#	<a href = "M1/stages/1/slides.pdf">Diapozitivoj</a>
+#fr
+#	<a href = "M1/stages/1/slides.pdf">Présentation</a>
+#end
+
+#item
+#all
+#2010, <span class = "town">Grenoble</span>
+#description
+#en
+#	An internship I’ve done with <a href = "http://www-verimag.imag.fr/~monniaux/"><span class = "name">David Monniaux</span></a> in <span class = "town">Grenoble</span>.
+#	I’ve been working on an analysis of dataflow programming languages.
+#eo
+#	Mia unua interniĝo farita kun <a href = "http://www-verimag.imag.fr/~monniaux/"><span class = "name">David Monniaux</span></a> en <span class = "town">Grenoble</span>.
+#	Mi laboris sur analizoj de ondaj progamlingvoj.
+#fr
+#	Mon premier stage, effectué sous la tutelle de <a href = "http://www-verimag.imag.fr/~monniaux/"><span class = "name">David Monniaux</span></a> à <span class = "town">Grenoble</span>.
+#	Mon but était de faire des analyses automatiques de language de programmation par flots.
+#link
+#en
+#	<a href = "L3/stage/rapport.pdf">Report</a>
+#eo
+#	<a href = "L3/stage/rapport.pdf">Raporto</a>
+#fr
+#	<a href = "L3/stage/rapport.pdf">Rapport</a>
+#link
+#en
+#	<a href = "L3/stage/slides.pdf">Slides</a>
+#eo
+#	<a href = "L3/stage/slides.pdf">Diapozitivoj</a>
+#fr
+#	<a href = "L3/stage/slides.pdf">Présentation</a>
+#end
+
+section
+sectionName
+aliaĵoj
+en
+Miscellaneous
+eo
+Aliaĵoj
+fr
+Autres
+end
+
+item
+all
+Verified Software Workshop 2019
+description
+en
+    Poster for the <a href = "https://vetss.org.uk/vetss-verified-software-workshop-24th-25th-september-2019/">Verified Software Workshop</a>, 2019.
+eo
+    Afiŝprelego por la <a href = "https://vetss.org.uk/vetss-verified-software-workshop-24th-25th-september-2019/">Verified Software Workshop</a> en 2019.
+fr
+    Poster pour le <a href = "https://vetss.org.uk/vetss-verified-software-workshop-24th-25th-september-2019/">Verified Software Workshop</a> de 2019.
+link
+en
+	<a href = "esplorado/Verified-Software-Workshop-2019.pdf">Poster</a>
+eo
+	<a href = "esplorado/Verified-Software-Workshop-2019.pdf">Afiŝo</a>
+fr
+	<a href = "esplorado/Verified-Software-Workshop-2019.pdf">Poster</a>
+link
+en
+	<a href = "esplorado/Verified-Software-Workshop-2019.tar.bz2">Sources</a>
+eo
+	<a href = "esplorado/Verified-Software-Workshop-2019.tar.bz2">Fontoj</a>
+fr
+	<a href = "esplorado/Verified-Software-Workshop-2019.tar.bz2">Sources</a>
+end
+
+item
+en
+	Popular Science
+eo
+	Populariga filmeto
+fr
+	Vidéo de vulgarisation
+description
+eo
+	Small video in Esperanto to present my field of research.
+eo
+	Esperanta filmeto kiu prezentas mian esploradan temon.
+fr
+	Vidéo en espéranto sur une présentation générale de ma recherche.
+link
+en
+	<a href = "https://video.liberta.vip/video-channels/martinshadok_eo/videos">Link to the channel</a>
+eo
+	<a href = "https://video.liberta.vip/video-channels/martinshadok_eo/videos">Kanalligilo</a>
+fr
+	<a href = "https://video.liberta.vip/video-channels/martinshadok_eo/videos">Lien vers la chaîne</a>
+end
+
+item
+all
+Qualification
+description
+en
+	This is the document that I prepared for the French “qualification” for the CNRS.
+fr
+	Ceci est le dossier que j’ai monté pour la qualification aux postes d’enseignents-checheurs aux CNRS.
+eo
+	Tio estas la dokumentaro kiun mi elpreparis por la franca “qualification”, por la CNRS.
+link
+en
+	<a href = "esplorado/qualification.pdf">Document</a>
+eo
+	<a href = "esplorado/qualification.pdf">Documentaro</a>
+fr
+	<a href = "esplorado/qualification.pdf">Dossier</a>
+link
+en
+	<a href = "esplorado/qualification.tar.xz">Sources</a>
+eo
+	<a href = "esplorado/qualification.tar.xz">Fontoj</a>
+fr
+	<a href = "esplorado/qualification.tar.xz">Sources</a>
+end
+
+item
+en
+	Application at Spades
+eo
+	Kandidatiĝo ĉe Spades
+fr
+	Candidature chez Spades
+description
+en
+	This is the documents that I prepared to apply for the <a href = "https://team.inria.fr/spades/"><span class = "name">Spades</span></a> team at <a href = "https://www.inria.fr/en"><span class = "name">Inria</span></a>.
+eo
+	Tio estas la dokumentaro kiun mi elpreparis por kandidatiĝi al la skipo <a href = "https://team.inria.fr/spades/"><span class = "name">Spades</span></a>, ĉe <a href = "https://www.inria.fr/"><span class = "name">Inria</span></a>.
+fr
+	Ceci est le dossier que j’ai monté pour candidater à l’équipe <a href = "https://team.inria.fr/spades/"><span class = "name">Spades</span></a>, à <a href = "https://www.inria.fr/fr"><span class = "name">Inria</span></a>.
+link
+en
+	<a href = "esplorado/inria_spades.pdf">Document</a>
+eo
+	<a href = "esplorado/inria_spades.pdf">Dokumentaro</a>
+fr
+	<a href = "esplorado/inria_spades.pdf">Dossier</a>
+link
+en
+	<a href = "esplorado/inria_spades_slides.pdf">Slides</a>
+eo
+	<a href = "esplorado/inria_spades_slides.pdf">Diapozitivoj</a>
+fr
+	<a href = "esplorado/inria_spades_slides.pdf">Présentation</a>
+link
+en
+	<a href = "esplorado/inria_spades.tar.xz">Document sources</a>
+eo
+	<a href = "esplorado/inria_spades.tar.xz">Dokumentfontoj</a>
+fr
+	<a href = "esplorado/inria_spades.tar.xz">Sources du dossier</a>
+link
+en
+	<a href = "esplorado/inria_spades_slides.tar.xz">Slides sources</a>
+eo
+	<a href = "esplorado/inria_spades_slides.tar.xz">Diapozitivfontoj</a>
+fr
+	<a href = "esplorado/inria_spades_slides.tar.xz">Sources de la présentation</a>
+end
+

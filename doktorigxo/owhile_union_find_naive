@@ -1,0 +1,43 @@
+
+(* Structure Definition *)
+
+global.makeSet := (λ x.
+    x.parent := x ;
+    return x) ;
+
+global.find := (λ x.
+    if (x.parent = x)
+        return x
+        return (global.find x.parent)) ;
+
+global.union := (λ x.
+    return (λ y.
+        return (λ xroot.
+            xroot.parent := global.find y ;
+            return xroot.parent) (global.find x))) ;
+
+global.same := (λ x.
+    return (λ y.
+        return (global.find x) = (global.find y))) ;
+
+
+(* Usage *)
+
+global.s1 := global.makeSet {} ;
+global.s2 := global.makeSet {} ;
+global.s3 := global.makeSet {} ;
+
+global.r1 := global.same global.s1 global.s2 ;
+
+run global.union global.s1 global.s2 ;
+
+global.r2 := global.same global.s1 global.s2 ;
+global.r3 := global.same global.s1 global.s3 ;
+global.r4 := global.same global.s2 global.s3 ;
+
+run global.union global.s2 global.s3 ;
+
+global.r5 := global.same global.s1 global.s2 ;
+global.r6 := global.same global.s1 global.s3 ;
+global.r7 := global.same global.s2 global.s3
+

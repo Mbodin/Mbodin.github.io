@@ -1,0 +1,9 @@
+
+global.x := 1 ;
+
+global.r1 := (λ x.
+    return (λ x.
+        return x) 2) 3 ;
+
+global.r2 := (λ a. return (λ b. return (λ c. return (λ d. return a)))) 1 2 3 4
+

@@ -1,0 +1,278 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{ifxetex}
+\ifxetex
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainlanguage{english}
+\setotherlanguage{french}
+\setotherlanguage{spanish}
+\newcommand{\fr}[1]{\foreignlanguage{french}{{#1}}}
+\newcommand{\es}[1]{\foreignlanguage{spanish}{{#1}}}
+\else
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english, francais, spanish]{babel}
+\newcommand{\fr}[1]{\foreignlanguage{francais}{{#1}}}
+\newcommand{\es}[1]{\foreignlanguage{spanish}{{#1}}}
+\fi
+
+\usepackage[hidelinks]{hyperref}
+\usepackage{geometry}
+\usepackage{url}
+\usepackage{oldgerm}
+
+\usepackage[inline]{enumitem}
+
+\makeatletter
+% From http://tex.stackexchange.com/questions/51086/add-second-enumeration-item-on-the-same-line
+\newcommand{\inlineitem}[1][]{%
+\ifnum\enit@type=\tw@
+    {\descriptionlabel{#1}}
+  \hspace{\labelsep}%
+\else
+  \ifnum\enit@type=\z@
+       \refstepcounter{\@listctr}\fi
+    \qquad\@itemlabel\hspace{\labelsep}%
+\fi}
+\makeatother
+
+\ifxetex
+\setmainfont[Mapping=tex-text, Ligatures={Common}, Numbers={OldStyle}]{Linux Libertine O}
+\fi
+
+\geometry{
+	includeheadfoot,
+	margin = 2.54cm,
+	top = 1.5cm,
+	bottom = 1.5cm
+}
+
+\newcommand{\ie}{i.e.\,}
+
+\newenvironment{datecvsection}[1]%
+               {\subsection*{#1}%
+                 \noindent \begin{tabular}{@{}p{\annee}p{\texte}@{}}}
+               {\end{tabular}}
+
+\newenvironment{cvsection}[1]%
+               {\subsection*{#1}}
+               {}
+
+\newenvironment{itemcvsection}[1]%
+               {\subsection*{#1}\begin{itemize}}
+               {\end{itemize}}
+
+\def\arraystretch{1.5}
+
+\newcommand\familyName{\textsc}
+\newcommand\placeName{}
+
+\begin{document}
+
+% Pas de numéro de page
+\pagestyle{empty}
+
+% \annee est la largeur de la première colonne, c'est à dire celle
+% contenant l'année scolaire. Elle est ici définie comme étant la
+% largeur du texte « janvier-février ». À adapter le cas échéant.
+
+\newlength{\annee}
+\settowidth{\annee}{9999—9999} % January--February}
+
+% \texte est la largeur de la deuxième colonne. Elle est définie comme
+% étant la largeur de la page moins celle de la première colonne.
+% 2\tabcolsep est la largeur de l'espacement entre les colonnes.
+
+\newlength{\texte}
+\setlength{\texte}{\textwidth} \addtolength{\texte}{-\annee} 
+	\addtolength{\texte}{-2\tabcolsep}
+
+\begin{center} \Huge Martin~\familyName{Bodin} \end{center}
+
+\noindent
+\parbox{.5\textwidth}
+{
+  \noindent
+	30, rue de Stalingrad, \\
+	38~100 Grenoble
+  \textsc{France}
+}
+\parbox{.5\textwidth}
+{
+\begin{flushright}
+  Born the 30\(^{th}\) of December 1989. \\
+  \noindent Phone Number: \mbox{+33 6 27 00 58 84} \\
+  \url{martin.bodin@ens-lyon.org} \\
+  \url{https://mbodin.github.io/}
+\end{flushright}
+}
+
+
+\begin{datecvsection}{Employment}
+
+		2020– & Researcher (chargé de recherche) in the \placeName{Spades} team, at \placeName{Inria} (\placeName{Grenoble}). \\
+
+    2018–2020 & Postdoc at the \placeName{Imperial College}, in \placeName{London} (\placeName{United Kingdom}) on the theoretical foundations of the analysis of real-world languages. \\
+
+    2017–2018 & Postdoc at the {CMM} (the Center of Mathematical Modeling, part of the \es{\placeName{Universidad de Chile}}), in \placeName{Santiago} (\placeName{Chile}) on the formalisation of the R programming language in the Coq proof assistant. \\
+
+\end{datecvsection}
+
+\begin{datecvsection}{Education}
+
+    2012–2016 & Ph.D. in Computer Sciences at \placeName{IRISA}, in \placeName{Rennes} (\placeName{France}), under the direction of Alan~\familyName{Schmitt} and Thomas~\familyName{Jensen} on certified analyses of JavaScript. \\
+
+	2010–2012 & \fr{Master d’Informatique} (\ie a Computer Science
+    Master) in the \fr{\placeName{École Normale Supérieure de Lyon}} (a French
+	\fr{grande École}—\ie a leading institution of higher
+    education—specialized in the formation of searchers). \\
+
+	2009–2010 & \fr{Licence d’Informatique, mention très bien} (\ie
+	a Computer Science Licence degree, magna cum laude) in the
+    \fr{\placeName{École Normale Supérieure de Lyon}}. \\
+
+	2007–2009 & \fr{Classes préparatoires aux grandes Écoles} in the
+    \fr{\placeName{lycée Henri~\textsc{iv}}} in Paris (a two-years intensive course
+	preparing to the competitive entrance of \fr{grandes Écoles}). \\
+
+	2007 & \fr{Baccalauréat Scientifique, mention très bien}
+	(equivalent to British A-levels with a major in Mathematics, Physics
+	and Biology, magna cum laude). \\
+
+\end{datecvsection}
+
+\begin{cvsection}{Languages}
+\parbox{.4\textwidth}{
+\begin{itemize}
+   \item Native in French;
+   \item Fluent in Esperanto;
+   \item Notions of German.
+\end{itemize}}
+\parbox{.5\textwidth}{
+\begin{itemize}
+   \item Good level of English;
+	 \item Average level of Portuguese (Brazil);
+   \item Basic level of Spanish;
+\end{itemize}
+}
+\end{cvsection}
+
+\begin{datecvsection}{Conferences}
+
+  2019 & Martin~\familyName{Bodin}, Philippa~\familyName{Gardner}, Thomas~\familyName{Jensen}, and Alan~\familyName{Schmitt}. \textit{Skeletal Semantics and Their Interpretations}. In POPL. \\
+
+  2018 & Martin~\familyName{Bodin}, Tomás~\familyName{Diaz}, and Éric~\familyName{Tanter}. \textit{A Trustworthy Mechanized Formalization of R}. In DLS. \\
+
+  2015 & Martin~\familyName{Bodin}, Thomas~\familyName{Jensen}, and Alan~\familyName{Schmitt}. \textit{Certified Abstract Interpretation with Pretty-Big-Step Semantics}. In CPP. \\
+
+  2014 & Martin~\familyName{Bodin}, Arthur~\familyName{Charguéraud}, Daniele~\familyName{Filaretti}, Philippa~\familyName{Gardner}, Sergio~\familyName{Maffeis}, Daiva~\familyName{Naudžiūnienė}, Alan~\familyName{Schmitt}, and Gareth~\familyName{Smith}. \textit{A Trusted Mechanised JavaScript Specification}. In POPL. \\
+
+  2013 & Jörg~\familyName{Endrullis}, Dimitri~\familyName{Hendriks}, and Martin~\familyName{Bodin}. \textit{Circular Coinduction in Coq Using Bisimulation-up-to Techniques}. In ITP. \\
+
+  2011 & David~\familyName{Monniaux} and Martin~\familyName{Bodin}. \textit{Modular Abstractions of Reactive Nodes using Disjunctive Invariants}. In APLAS. \\
+
+\end{datecvsection}
+
+\begin{datecvsection}{Workshops}
+
+  2019 & Martin~\familyName{Bodin}, Tomás~\familyName{Diaz}, and Éric~\familyName{Tanter}. \textit{A Trustworthy Mechanized Formalization of R}. In FMfSS. \\
+
+  2018 & Martin~\familyName{Bodin}. \textit{A Coq Formalisation of a Core of R}. In CoqPL. \\
+
+  2016 & Martin~\familyName{Bodin}, Thomas~\familyName{Jensen}, and Alan~\familyName{Schmitt}. \textit{An Abstract Separation Logic for Interlinked Extensible Records}. In JFLA. \\
+
+  2014 & Martin~\familyName{Bodin}, Thomas~\familyName{Jensen}, and Alan~\familyName{Schmitt}. \textit{Certified Abstract Interpretation with Pretty-Big-Step Semantics}. In JFLA. \\
+
+  2013 & Martin~\familyName{Bodin}, Thomas~\familyName{Jensen}, and Alan~\familyName{Schmitt}. \textit{Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)}. In \textit{Semantics, Abstract Interpretation, and Reasoning about Programs: Essays Dedicated to David A.~\familyName{Schmidt}} \\ % on the Occasion of his Sixtieth Birthday}, volume 129 of EPTCS, pages 360–383. \\
+
+  2013 & Martin~\familyName{Bodin} and Alan~\familyName{Schmitt}. \textit{A Certified JavaScript Interpreter}. In JFLA. \\
+
+\end{datecvsection}
+
+\begin{datecvsection}{Other Publications}
+
+    2016 & Martin~\familyName{Bodin}. \textit{Certified semantics and analysis of JavaScript}. Ph.D. thesis. \\
+
+\end{datecvsection}
+
+\begin{datecvsection}{Miscellaneous}
+
+    2019 & Member of the Artifact Evaluation Committe for POPL. \\
+
+    2012, 2014 & Monitoring the algorithmic practice examination for the entrance of the \fr{\placeName{École Normale Supérieure}}. \\
+
+\end{datecvsection}
+
+\begin{datecvsection}{Supervising}
+
+    2020 & Rao~\familyName{Xiaojia}, cosupervised with Philippa~\familyName{Gardner} \\
+    2019 & Benjamin~\familyName{Gunton}, cosupervised with Philippa~\familyName{Gardner} \\
+    2017–2018 & Tomás~\familyName{Diaz}, cosupervised with Éric~\familyName{Tanter} \\
+
+\end{datecvsection}
+
+\begin{datecvsection}{Teaching}
+
+    2019 & Separation Logic. M1 tutoring at the Imperial College London. \\
+
+    2018 & Models of Computation. L2 tutoring at the Imperial College London. \\
+
+    2017 & Introduction to Coq: Logic, Types, and Verification. M2 tutoring at the \es{\placeName{Universidad de Chile}}. \\
+
+    2014 & Software Design and Verification. M1 tutoring at the \fr{\placeName{École Normale Supérieure}}. \\
+
+    2013–2014 & Formal Languages. L3 tutoring at the \fr{\placeName{École Normale Supérieure}}. \\
+
+    2013–2014 & Introduction to Functional Programming. L1 tutoring at the \fr{université \placeName{Rennes}~1}. \\
+
+    2012 & Introduction to Scheme. L1 tutoring at the \placeName{Insa} of \placeName{Rennes}. \\
+
+\end{datecvsection}
+
+\begin{datecvsection}{Other Experiences}
+
+	2013–2016 & Member of the \textsc{SecCloud} project:  \url{www.seccloud.cominlabs.ueb.eu/}. \\
+
+	2012–2016 & Member of the \textsc{JsCert} project:  \url{jscert.org/}. \\
+
+	2012 & Internship in \placeName{Inria} at \placeName{Rennes} with Alan~\familyName{Schmitt} and Thomas~\familyName{Jensen}:
+	\textit{A Certified JavaScript Interpreter}. \\
+
+	2011 & Internship in \placeName{Vrĳe~Universiteit} at \placeName{Amsterdam} with Dimitri~\familyName{Hendriks} and Jörg~\familyName{Endrullis}:
+	\textit{Proving Stream Equalities in Coq}. \\
+
+    2011 & Internship in \fr{\placeName{PPS}} at \placeName{Paris} with Stéphane~\familyName{Gimenez} and Christine~\familyName{Tasson}:
+	\textit{Sequentialization of proof nets to structures}. \\
+
+    2010 & Internship in \fr{\placeName{Vérimag}} at \placeName{Grenoble} with David~\familyName{Monniaux}:
+        \fr{Détection de modes de fonctionnements d’un programme \textsc{Lustre}}. \\
+
+\end{datecvsection}
+
+\begin{itemcvsection}{Computer Proficiencies}
+
+	\item Good commands in the following programming languages:  Coq, OCaml, JavaScript, \LaTeX, etc.
+	\item Familiar with GNU/Linux as an operating system.
+	\item Familiar with Vim, Git, Inkscape, etc.
+
+\end{itemcvsection}
+
+\begin{datecvsection}{Association Experience}
+
+		2017 & Esperanto Meetups in \placeName{Santiago}. \\
+		2014–2015 & Active member of {Espéranto-Rennes}. \\
+		2012 & Treasurer of the theater association {ASCREB} in \placeName{Rennes}. \\
+		2010 & Secretary of the \textsc{INFO-ENS} association in \placeName{Lyon}. \\
+
+\end{datecvsection}
+
+\begin{itemcvsection}{Personnal Interests}
+
+		\item Board games, card games, improvisation games, role playing games, etc.
+    \item Esperanto related activities.
+
+\end{itemcvsection}
+
+\end{document}
+

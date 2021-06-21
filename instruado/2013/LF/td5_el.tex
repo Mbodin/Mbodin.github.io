@@ -1,0 +1,212 @@
+\documentclass[11pt,a4paper]{article}
+  \usepackage[T1]{fontenc}%
+  \usepackage[obeyspaces]{url} % \urlstyle{sf}%
+  \usepackage{mathpazo}%
+\usepackage[dvips]{epsfig}
+\usepackage[latin1]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{positioning,automata}
+
+\input{../macroTD} 
+  
+\titreTD{Langages Formels}{TD~5}{Grammaires et Langages algébriques} 
+
+\setboolean{corrige}{true}
+
+% \documentclass[11pt]{article}
+
+ 
+
+\parskip=0.3\baselineskip \sloppy
+
+
+\newcommand{\fleche}{\rightarrow}%
+\newcommand{\Rat}{\mathsf{Rat}}%
+\newcommand{\N}{\mathbb{N}}%
+\newcommand{\D}{\mathbb{D}}%
+\newcommand{\dist}{\mathop{\mathrm{d}}}%
+\newcommand{\fix}{\mathop{\mathrm{Fix}}}%
+\newcommand{\vertbar}{\ \vert \ }%
+
+
+
+
+\begin{document}
+
+\thispagestyle{empty}
+\maketitle
+
+\begin{exer}[There is a fire at the insurance agency.]
+  Quels sont les langages engendr\'es par les productions suivantes ?
+  \begin{enumerate}
+
+  \item $G_1~:
+    \left\{
+    \begin{array}{rclcrclcrcl}
+      S & \fleche & aSBC\ \vert \ aBC & \mbox{\hspace*{1cm}} & bB & \fleche & bb & \mbox{\hspace*{1cm}} & CB & \fleche & BC \\
+      bC & \fleche & bc & & aB & \fleche & ab & & cC & \fleche & cc\\
+    \end{array}
+    \right.
+    $
+
+
+  \item $G_2~:
+    \left\{
+    \begin{array}{rclcrclcrcl}
+      S & \fleche & CD & \mbox{\hspace*{1cm}} & Ab & \fleche & bA & \mbox{\hspace*{1cm}} & C & \fleche & aCA\ \vert \ bCB \\
+      Ba & \fleche & aB & & AD & \fleche & aD & & Bb & \fleche & bB\\
+      BD & \fleche & bD & & C & \fleche & \epsilon & & Aa & \fleche & aA \\
+      & & & & D & \fleche & \epsilon \\
+    \end{array}
+    \right.
+    $
+
+  \item $G_3~: \mbox{\hspace*{1cm}}
+    S\ \fleche \ aS |\ aSbS \ |\ \epsilon
+    $
+  \end{enumerate}
+
+  \Correction{
+  }
+
+
+
+\end{exer}
+
+
+
+\begin{exer}[John has a long mustache.]
+  Donner des grammaires engendrant les langages suivants.
+  \[
+    \{a^ib^jc^k,\ i>j \} \mbox{\hspace*{15mm}}
+    \{a^ib^jc^k,\ i\not= j\} \mbox{\hspace*{15mm}}
+    \{a^{2^n},\ n \geq 0 \} \mbox{\hspace*{15mm}}
+    \{a^{n^2},\ n \geq 0 \}
+  \]
+
+  \Correction{
+  }
+\end{exer}
+
+\begin{exer}[Un Langage intrinsèquement ambigu.]
+    On considère le langage $L = \left\{ a^lb^mc^n \middle| l = m \lor m = n \right\}$.
+
+\begin{question}
+    Montrer que ce langage est algébrique.
+\end{question}
+
+On rappelle le lemme d'\textsc{Ogden}.
+\begin{Lemma}{Ogden}
+  Soit $L$ un langage algébrique. Il existe un entier $N$ tel que pour
+  tout mot $z\in L$ dans lequel on marque au moins $N$ positions
+  distinctes, il est possible de décomposer $z$ sous la forme
+  $z=uxvyw$ avec
+  \begin{itemize}
+  \item $x$ ou $y$ contient au moins une position marquée,
+  \item $xvy$ contient au plus $N$ positions marquées,
+  \item pour tout $i\geq 0$, $ux^ivy^iw\in L$.
+  \end{itemize}
+\end{Lemma}
+
+\begin{question}
+    Soit $G$ une grammaire reconnaissant $L$.  Montrer qu'il existe $u \in L$ tel qu'il existe deux arbres de dérivation de $G$ disctincts menant à $u$.  Conclure.
+
+    \textit{$\blacktriangleright$ On pourra considérer les mots $a^Nb^Nc^{N + N!}$ et $a^{N + N!}b^Nc^N$ pour un $N$ bien choisi.}
+\end{question}
+
+    \Correction{
+    }
+\end{exer}
+
+
+\begin{exer}[Automates et nombres (suite)]
+Nous allons revenir à la notion de transducteur abordée au TD
+précédent, et continuer à explorer son application aux calculs sur les
+entiers.   Commençons par la définir plus précisément.
+\begin{Def}{}{}
+  Soit $A$ un alphabet d'entrée et $B$ un alphabet de sortie. 
+  Un transducteur {\em séquentiel} (gauche) est un automate fini à 2
+  bandes $\mathcal{A}=(Q,A \times B^*, i,Q,\delta)$ tel que :
+
+  \begin{itemize}
+  \item la projection sur la bande d'entrée ($(Q,A,i,Q,\delta)$) est
+    un automate fini déterministe ;
+  \item tout état est terminal.
+  \end{itemize}
+\end{Def}
+
+Les étiquettes des flèches d'un transducteur séquentiel sont des couples de
+$A\times B^*$. Si partant d'un état $q$ on lit la lettre $a\in A$ sur
+l'entrée pour arriver dans l'état $p$, on écrit en sortie $v\in B^*$,
+tel que $q\overset{(a,v)}\longrightarrow p$.
+
+La relation de mots (finis) $R\subseteq A^* \times B^*$ est \emph{réalisée
+par $\mathcal{A}$} si $R$ est l'ensemble des étiquettes des chemins finis
+commençant dans l'état $i$. En d'autres termes, un couple $(f,g)$ est
+reconnu par $\mathcal{A}$ s'il existe un état $q$ tel que  $i\overset{(f,g)}\longrightarrow q$.
+
+La fonction $\varphi$ est réalisable par un transducteur fini si la relation $(x,\varphi(x))$
+est réalisable par un transducteur fini.
+
+Un transducteur séquentiel droit lit et écrit les mots de droite à gauche.
+
+Un transducteur {\em sous-séquentiel droit} est un transducteur séquentiel droit qui admet
+un mode de reconnaissance tordu qui utilise une fonction dite {\em
+  terminale} $w:Q\rightarrow B^*$.  On dira alors que le couple $(f,g)$ est reconnu par
+$\mathcal{A}$ s'il existe un chemin $i\overset{f/g''}\longrightarrow q$ tel que
+$g=g'g''$ et $w(q)=g'$.
+
+\begin{question}
+  Donner un transducteur séquentiel qui efface les 0 en tête des mots (sur
+  $\{0,1\}$).
+\end{question}
+
+\Correction{
+}
+
+\begin{question}
+  Donner un transducteur sous-séquentiel droit qui ajoute $1$ à un entier en base $2$ (pour l'alphabet
+  d'entrée, prendre $\{0,1,\square\}$ avec $\square$ qui marque la fin de l'entier).
+\end{question}
+
+\Correction{
+}
+
+
+\begin{question}
+  Donner un transducteur sous-séquentiel droit qui additionne deux entiers
+  en base $2$
+  (pour l'alphabet d'entrée, prendre $\{0,1,\square\}^2$ $\rightarrow$ le couple $(10,3)$ s'écrira $(\square1010,
+  \square\square\square11)$ et correspondra au mot $(\square,\square)(1,\square)(0,\square)(1,1)(0,1)$).
+\end{question}
+
+\Correction{
+}
+
+
+
+\begin{question}
+  Donner un transducteur sous-séquentiel droit pour la soustraction
+  en base 2 (pour l'alphabet d'entrée, prendre $\{0,1,\square\}^2$).
+\end{question}
+
+\Correction{
+}
+
+
+\begin{question}
+  Donner un automate déterministe reconnaissant les mots finissant par le
+  motif $abbab$, puis un transducteur séquentiel gauche supprimant toutes les
+  occurrences de $abbab$ dans un mot.
+\end{question}
+
+\Correction{
+}
+
+
+\end{exer}
+
+
+\end{document}
+
+

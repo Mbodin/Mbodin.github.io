@@ -1,0 +1,7 @@
+
+global.f := (λ x. throw (* This throws an error and breaks the control-flow. *)) ;
+
+global.g := (λ x. run global.f x) ;
+
+run global.g 42
+

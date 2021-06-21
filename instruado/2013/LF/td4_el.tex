@@ -1,0 +1,245 @@
+\documentclass[11pt,a4paper]{article}
+  \usepackage[T1]{fontenc}%
+  \usepackage[obeyspaces]{url} % \urlstyle{sf}%
+  \usepackage{mathpazo}%
+\usepackage[dvips]{epsfig}
+\usepackage[latin1]{inputenc}
+\usepackage{pgf}
+\usepackage{tikz}
+\usetikzlibrary{automata}
+
+\input{../macroTD} 
+  
+\titreTD{Langages Formels}{TD 4}{Automates, nombres et congruences} 
+
+\setboolean{corrige}{true}
+
+% \documentclass[11pt]{article}
+
+ 
+
+%\parskip=0.3\baselineskip \sloppy
+
+
+\newcommand{\Rat}{\mathsf{Rat}}%
+\newcommand{\N}{\mathbb{N}}%
+\newcommand{\D}{\mathbb{D}}%
+\newcommand{\dist}{\mathop{\mathrm{d}}}%
+\newcommand{\fix}{\mathop{\mathrm{Fix}}}%
+
+\begin{document}
+
+\thispagestyle{empty}
+\maketitle
+
+
+\begin{exer}[Automates finis]
+Soit $L$ un langage sur $\Sigma$ reconnaissable par automate fini. 
+
+\begin{question}
+Montrer que les
+deux langages suivants sont aussi reconnaissables par automate fini.
+\[
+\begin{array}{l}
+L_r=\{a_2a_1a_4a_3\dots a_{2n}a_{2n-1} \mid a_i \in \Sigma,
+a_1a_2\dots a_{2n-1}a_{2n} \in L\}\\
+L_i=\{a_1a_3\dots a_{2n-1} \mid a_i \in \Sigma,
+a_1a_2\dots a_{2n-1}a_{2n} \in L\}
+\end{array}
+\]
+\end{question}
+
+\Correction{
+}
+
+\begin{question}
+Soit $K$ un langage quelconque sur le même alphabet. Montrer que
+$K^{-1}L$ est reconnaissable par automate fini.  
+\end{question}
+
+\Correction{
+}
+
+\end{exer}
+
+
+
+\begin{exer}[Automates et nombres]
+On a vu au TD2 un automate reconnaissant les mots multiples de $3$ en
+base $2$.
+
+\begin{question}
+Peut-on généraliser au cas des mots multiples de $k$ en base $b$, où
+$k$ et $b$ sont des entiers quelconques ?
+\end{question}
+
+
+\Correction{
+}
+
+
+On définit (informellement) un transducteur de la façon suivante : dans
+le graphe d'un automate, on ajoute sur les transitions, en plus des
+lettres d'un alphabet d'entrée $\Sigma$, des mots d'un alphabet de
+sortie $\Gamma$. Un transducteur peut donc représenter une fonction de
+$\Sigma^*$ dans $\Gamma^*$ (ou plus généralement ${\mathcal P}(\gamma^*)$).
+Par exemple, le transducteur suivant compte (en unaire !) le nombre de
+$a$ dans un mot sur $\{a,b\}$.
+
+\centerline{\begin{tikzpicture}[shorten >=1pt,node distance=2cm,auto] 
+\node[state,initial,accepting] (q_0) {$q_0$}; 
+\path[->] (q_0)  edge [loop above] node {$a|1$} (q_0) 
+edge [loop below] node {$b|\varepsilon$} (q_0); 
+\end{tikzpicture}} 
+
+ 
+\begin{question}
+Donner un transducteur qui calcule la division entière par $3$ d'un
+nombre écrit en binaire.
+\end{question}
+
+\Correction{
+}
+
+\begin{question}
+Peut-on généraliser à la division par $k$ en base $b$ ?
+\end{question}
+\Correction{
+}
+
+\begin{question}
+L'ensemble des codages des puissances de $2$ en base $2$ est-il
+reconnaissable par un automate sur $\{0,1\}$ ? Et les puissances de
+$3$ en base $2$ ?
+\end{question}
+
+\end{exer}
+
+\begin{exer}[Caractérisation de Nérode]
+
+  \begin{Def}{Congruences}{}
+    Une relation d'équivalence $\equiv$ est une {\bf congruence à droite} ssi $\forall t \in \Sigma^*, \
+    u \equiv v \Rightarrow ut \equiv vt$. C'est une {\bf congruence à gauche} ssi $\forall t \in \Sigma^*, \
+    u \equiv v \Rightarrow tu \equiv tv$. On parle de {\bf congruence} si elle est compatible à droite
+    et à gauche.
+    
+    Une congruence est {\bf d'index fini} ssi l'ensemble de ses classes d'équivalence est fini.
+  \end{Def}
+
+  Nous allons prouver le théorème suivant :
+  \begin{Th}{Myhill-Nérode}
+    Il y a équivalence entre les assertions suivantes :
+    \begin{enumerate}
+    \item $L$ est rationnel.
+    \item $L$ est une union de classes d'une congruence d'index fini.
+    \item $L$ est une union de classes d'une congruence à droite d'index fini.
+    \item La relation $\sim_L$ définie par $u \sim_L v \Leftrightarrow \forall t \in \Sigma^* (ut \in L \Leftrightarrow vt
+      \in L)$ est une congruence à droite d'index fini.
+    \end{enumerate}
+  \end{Th}
+
+
+  \begin{question}[$1\Rightarrow 2$]
+    Soit un langage $L$ rationnel, reconnu par un automate fini déterministe complet $A = (Q, \Sigma,
+    \delta, q_0, F)$. On définit $u \sim_A v$ par $\forall q \in Q, \ \delta(q,u) = \delta(q,v)$.
+    
+    \begin{subquestion}\label{synt}
+      Montrer que $\sim_A$ est une congruence.
+      \Correction{
+      }
+
+   \end{subquestion}
+
+    On considère l'application 
+    $$\varphi : \left . \begin{array}{lcl}
+      \Sigma^*/_{\sim_A} & \rightarrow & Q^Q \\
+      \overline{u}^A & \mapsto & (q \mapsto \delta(q,u))
+    \end{array} \right .$$
+
+    \begin{subquestion}
+      Montrer que $\varphi$ est injective. En déduire que $\sim_A$ est d'index fini, et que $L$ est
+      l'union de certaines de ses classes d'équivalence.
+
+      \Correction{
+      }
+
+    \end{subquestion}
+
+ \end{question}
+
+  \begin{question}[$3 \Rightarrow 4$]
+
+    Soit $\equiv$ la congruence à droite d'index fini donnée par hypothèse. On sait que $L =
+    \bigcup_{x \in X} \overline{x}$.
+
+    \begin{subquestion}
+      Montrer que $\sim_L$ est une congruence à droite.
+    \end{subquestion}
+
+    \Correction{
+    }
+
+    \begin{subquestion}\label{index}
+      Montrer que $\forall u,v \in \Sigma^*, \ u \equiv v \Rightarrow u \sim_L v$. En déduire que
+      $\sim_L$ est d'index fini.
+    \end{subquestion}
+
+    \Correction{
+    }
+
+  \end{question}
+
+
+  \begin{question}[$4 \Rightarrow 1$]
+
+    On suppose que $\sim_L$ est une congruence à droite d'index fini, montrer que $u \sim_L v \Leftrightarrow
+    u^{-1}L = v^{-1}L$. En conclure que $L$ est rationnel.
+
+    \Correction{
+    }
+  \end{question}
+
+  \begin{question}
+    Utiliser le théorème de Myhill-Nérode pour montrer que $\{a^nb^n \st n \in \N\}$ n'est pas
+    rationnel.
+
+    \Correction{
+    }
+
+  \end{question}
+
+\end{exer}
+
+\begin{exer}[Nérode et le monoïde syntaxique]
+Nous allons maintenant faire le lien entre la caractérisation de
+Nérode et la notion de monoïde syntaxique vue en cours.
+
+\begin{question}
+Lorsque $L$ est rationnel, faire le lien entre $\sim_L$ et l'automate
+minimal reconnaissant $L$.
+\end{question}
+\Correction{
+}
+
+\begin{question}
+Si $\equiv$ est une congruence, montrer que l'on peut obtenir un
+monoïde en quotientant $\Sigma^*$ par $\equiv$.
+\end{question}
+\Correction{
+}
+
+\begin{question}
+On définit la congruence $\equiv_L$ par
+\[ u \equiv_L v \iff (\forall t,s \in \Sigma^*, tus \in
+L \Leftrightarrow tvs \in L) \]
+Montrer que $L$ est reconnaissable si et seulement si son monoïde syntaxique est fini, 
+et dans ce cas montrer qu'il est isomorphe au monoïde de transition de l'automate 
+minimal. 
+\end{question}
+ \Correction{
+}
+
+
+\end{exer}
+\end{document}
+

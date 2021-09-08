@@ -15,30 +15,27 @@ end
 
 description
 en
-	I am a postdoc at the <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, in <span class = "town">London</span>.
-	I work on the <a href = "https://vtss.doc.ic.ac.uk/">Verified Trustworthy Software Specification</a> research group.
+	I am a member of the <a href = "https://team.inria.fr/spades/"><span class = "name">Spades</span></a> team, in <span class = "town">Grenoble</span>, at <a href = "https://www.inria.fr/en"><span class = "name">Inria</span></a>.
 eo
-	Mi estas postdoktorulo ĉe <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, en <span class = "town">Londono</span>.
-	Mi laboras je la esplorada grupo <a href = "https://vtss.doc.ic.ac.uk/">Verified Trustworthy Software Specification</a>.
+	Mi estas skipano de <a href = "https://team.inria.fr/spades/"><span class = "name">Spades</span></a>, en <span class = "town">Grenoblo</span>, ĉe <a href = "https://www.inria.fr/"><span class = "name">Inria</span></a>.
 fr
-	Je suis post-doctorant à l’<a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, à <span class = "town">Londres</span>.
-	Je travaille dans le groupe de recherche <a href = "https://vtss.doc.ic.ac.uk/">Verified Trustworthy Software Specification</a>.
+	Je suis membre de l’équipe <a href = "https://team.inria.fr/spades/"><span class = "name">Spades</span></a>, à <span class = "town">Grenoble</span>, à l’<a href = "https://www.inria.fr/"><span class = "name">Inria</span></a>.
 end
 
-description
-en
-	I have been part of <a href = "http://jscert.org">the <span class = "name">JSCert</span></a> and <a href = "http://www.seccloud.cominlabs.ueb.eu">the <span class = "name">SecCloud</span></a> projects.
-	The <a href = "http://jscert.org">the <span class = "name">JSCert</span> project</a> aims to build models of <span class = "name">JavaScript</span> in <a href = "http://coq.inria.fr">the <span class = "name">Coq</span> proof assistant</a> and to design automated tools based on those semantics.
-	The <a href = "http://seccloud.cominlabs.ueb.eu">the <span class = "name">SecCloud</span> project</a> aims to provide a comprehensive language-based approach to the definition, analysis and implementation of secure applications developed using <span class = "name">JavaScript</span> and similar languages.
-eo
-	Mi estis partoprenanto de la projektoj <a href = "http://jscert.org"><span class = "name">JSCert</span></a> kaj <a href = "http://www.seccloud.cominlabs.ueb.eu"><span class = "name">SecCloud</span></a>.
-	La <a href = "http://jscert.org">projekto <span class = "name">JSCert</span></a> celas al konstrui modelojn de <span class = "name">Javaskripto</span> en <a href = "http://coq.inria.fr">la pruvhelpilo <span class = "name">Coq</span></a> kaj konstrui aŭtomatajn ilojn purvatajn per tiuj semantikoj.
-	La <a href = "http://seccloud.cominlabs.ueb.eu">projekto <span class = "name">SecCloud</span></a> celas ellabori lingvaĵbazajn laborgvidojn por la difino, analizo kaj realigo de sekuraj programaĵoj ellaboritaj per <span class = "name">Javaskripto</span> aŭ similaj lingvaĵoj.
-fr
-	J’ai fait partie des projets <a href = "http://jscert.org"><span class = "name">JSCert</span></a> et <a href = "http://www.seccloud.cominlabs.ueb.eu"><span class = "name">SecCloud</span></a>.
-	Le <a href = "http://jscert.org">projet <span class = "name">JSCert</span></a> a pour but de construire des modèles de <span class = "name">JavaScript</span> en <a href = "http://coq.inria.fr"><span class = "name">Coq</span></a> et de concevoir des outils d’analyses automatiques basés sur ces modèles formels.
-	Le <a href = "http://seccloud.cominlabs.ueb.eu">projet <span class = "name">SecCloud</span></a> a pour but de concevoir une approche orientée langages de programation pour la définition, l’analyse et l’implémentation d’applications sécurisées développées en <span class = "name">JavaScript</span> ou en des langages similaires.
-end
+#description
+#en
+#	I have been part of <a href = "http://jscert.org">the <span class = "name">JSCert</span></a> and <a href = "http://www.seccloud.cominlabs.ueb.eu">the <span class = "name">SecCloud</span></a> projects.
+#	The <a href = "http://jscert.org">the <span class = "name">JSCert</span> project</a> aims to build models of <span class = "name">JavaScript</span> in <a href = "http://coq.inria.fr">the <span class = "name">Coq</span> proof assistant</a> and to design automated tools based on those semantics.
+#	The <a href = "http://seccloud.cominlabs.ueb.eu">the <span class = "name">SecCloud</span> project</a> aims to provide a comprehensive language-based approach to the definition, analysis and implementation of secure applications developed using <span class = "name">JavaScript</span> and similar languages.
+#eo
+#	Mi estis partoprenanto de la projektoj <a href = "http://jscert.org"><span class = "name">JSCert</span></a> kaj <a href = "http://www.seccloud.cominlabs.ueb.eu"><span class = "name">SecCloud</span></a>.
+#	La <a href = "http://jscert.org">projekto <span class = "name">JSCert</span></a> celas al konstrui modelojn de <span class = "name">Javaskripto</span> en <a href = "http://coq.inria.fr">la pruvhelpilo <span class = "name">Coq</span></a> kaj konstrui aŭtomatajn ilojn purvatajn per tiuj semantikoj.
+#	La <a href = "http://seccloud.cominlabs.ueb.eu">projekto <span class = "name">SecCloud</span></a> celas ellabori lingvaĵbazajn laborgvidojn por la difino, analizo kaj realigo de sekuraj programaĵoj ellaboritaj per <span class = "name">Javaskripto</span> aŭ similaj lingvaĵoj.
+#fr
+#	J’ai fait partie des projets <a href = "http://jscert.org"><span class = "name">JSCert</span></a> et <a href = "http://www.seccloud.cominlabs.ueb.eu"><span class = "name">SecCloud</span></a>.
+#	Le <a href = "http://jscert.org">projet <span class = "name">JSCert</span></a> a pour but de construire des modèles de <span class = "name">JavaScript</span> en <a href = "http://coq.inria.fr"><span class = "name">Coq</span></a> et de concevoir des outils d’analyses automatiques basés sur ces modèles formels.
+#	Le <a href = "http://seccloud.cominlabs.ueb.eu">projet <span class = "name">SecCloud</span></a> a pour but de concevoir une approche orientée langages de programation pour la définition, l’analyse et l’implémentation d’applications sécurisées développées en <span class = "name">JavaScript</span> ou en des langages similaires.
+#end
 
 description
 en
@@ -55,33 +52,13 @@ end
 ## Author declarations
 
 declareAuthor
-mbodin
+achargueraud
 firstName
-Martin
+Arthur
 familyName
-Bodin
-internalLink
-index
-end
-
-declareAuthor
-pgardner
-firstName
-Philippa
-familyName
-Gardner
+Charguéraud
 directLink
-https://www.doc.ic.ac.uk/~pg/
-end
-
-declareAuthor
-tjensen
-firstName
-Thomas
-familyName
-Jensen
-directLink
-http://www.irisa.fr/celtique/jensen/
+http://www.chargueraud.org/
 end
 
 declareAuthor
@@ -95,31 +72,13 @@ http://people.rennes.inria.fr/Alan.Schmitt/
 end
 
 declareAuthor
-tdiaz
+cwatt
 firstName
-Tomás
+Conrad
 familyName
-Diaz
-end
-
-declareAuthor
-etanter
-firstName
-Éric
-familyName
-Tanter
+Watt
 directLink
-https://pleiad.cl/people/etanter
-end
-
-declareAuthor
-achargueraud
-firstName
-Arthur
-familyName
-Charguéraud
-directLink
-http://www.chargueraud.org/
+https://www.cl.cam.ac.uk/~caw77/
 end
 
 declareAuthor
@@ -133,13 +92,23 @@ http://dfilaretti.github.io/
 end
 
 declareAuthor
-smaffeis
+dhendriks
 firstName
-Sergio
+Dimitri
 familyName
-Maffeis
+Hendriks
 directLink
-http://www.doc.ic.ac.uk/~maffeis/
+https://dblp.org/pers/h/Hendriks:Dimitri.html
+end
+
+declareAuthor
+dmonniaux
+firstName
+David
+familyName
+Monniaux
+directLink
+http://www-verimag.imag.fr/~monniaux/
 end
 
 declareAuthor
@@ -150,6 +119,16 @@ familyName
 Naudžiūnienė
 directLink
 https://dblp.org/pers/n/Naudziuniene:Daiva.html
+end
+
+declareAuthor
+etanter
+firstName
+Éric
+familyName
+Tanter
+directLink
+https://pleiad.cl/people/etanter
 end
 
 declareAuthor
@@ -173,23 +152,71 @@ http://joerg.endrullis.de/
 end
 
 declareAuthor
-dhendriks
+jpichon
 firstName
-Dimitri
+Jean
 familyName
-Hendriks
+Pichon-Pharabod
 directLink
-https://dblp.org/pers/h/Hendriks:Dimitri.html
+https://www.cl.cam.ac.uk/~jp622/
 end
 
 declareAuthor
-dmonniaux
+mbodin
 firstName
-David
+Martin
 familyName
-Monniaux
+Bodin
+internalLink
+index
+end
+
+declareAuthor
+pgardner
+firstName
+Philippa
+familyName
+Gardner
 directLink
-http://www-verimag.imag.fr/~monniaux/
+https://www.doc.ic.ac.uk/~pg/
+end
+
+declareAuthor
+smaffeis
+firstName
+Sergio
+familyName
+Maffeis
+directLink
+http://www.doc.ic.ac.uk/~maffeis/
+end
+
+declareAuthor
+tdiaz
+firstName
+Tomás
+familyName
+Diaz
+end
+
+declareAuthor
+tjensen
+firstName
+Thomas
+familyName
+Jensen
+directLink
+http://www.irisa.fr/celtique/jensen/
+end
+
+declareAuthor
+xrao
+firstName
+Xiaojia
+familyName
+Rao
+directLink
+https://vtss.doc.ic.ac.uk/people/rao.html
 end
 
 ## Sections
@@ -203,6 +230,41 @@ eo
 Eldonaĵoj
 fr
 Publications
+end
+
+article
+conference
+FM
+conferenceLong
+International Symposium on Formal Methods
+year
+2021
+name
+Two Mechanisations of WebAssembly 1.0
+author
+cwatt
+author
+xrao
+author
+jpichon
+author
+mbodin
+author
+pgardner
+link
+en
+	<a href = "esplorado/fm21.pdf">Full text</a>
+eo
+	<a href = "esplorado/fm21.pdf">Artikolo</a>
+fr
+	<a href = "esplorado/fm21.pdf">Article</a>
+link
+en
+	<a href = "https://github.com/WasmCert/WasmCert-Coq"><span class = "name">Coq</span> material</a>
+eo
+	<a href = "https://github.com/WasmCert/WasmCert-Coq"><span class = "name">Coq</span>aj dosieroj</a>
+fr
+	<a href = "https://github.com/WasmCert/WasmCert-Coq">Fichers <span class = "name">Coq</span></a>
 end
 
 article

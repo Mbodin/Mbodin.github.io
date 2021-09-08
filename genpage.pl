@@ -83,7 +83,14 @@ my @pagesToBeParsed = ();
 
 my $publish = $false;
 
-foreach my $name (@ARGV){
+my @arguments = @ARGV;
+if (!@arguments){
+	my $default = "top.tree";
+	print "No argument: adding $default in the list of tasks.\n";
+	push @arguments, $default;
+}
+
+foreach my $name (@arguments){
 	if ($name =~ m/\.content/){
 		push @pagesToBeParsed, $name;
 	} elsif ($name =~ m/\.tree/){

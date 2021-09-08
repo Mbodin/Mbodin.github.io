@@ -34,7 +34,7 @@ my $workingOnWebSite = $false;
 my $changingAdress = $false;
 my $changingAdressPermanent = $false;
 my $permanentRedirectAddress = "https://mbodin.github.io/";
-my $rootAddress = "https://www.doc.ic.ac.uk/~mbodin/";
+my $rootAddress = "https://mbodin.github.io/";
 
 {
 	open GENERAL, "<$generalDatas" or die "error while reading file $generalDatas.\n";

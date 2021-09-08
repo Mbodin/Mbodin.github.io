@@ -1,3 +1,6 @@
+# Only language-dependent values are stored here.
+# Other places includes genpage.pl and skriptoj/stilajxoj.js
+#
 eo
 =langname
 Esperanto
@@ -28,9 +31,9 @@ Ne tro zorgu: mi ne konas retfoliumilon kiu respektas ĝin entute.  Tiu averto p
 =noLanguageDetected
 <a class = "switchLanguage_eo internalLink" href = "#eo">Alklaku ĉi tie por legi tiun retpaĝon Esperante</a>.
 =relocation
-Tiu retejo baldaŭ ŝanĝos sian retlokon.  Mi do konsilegas al vi kontroli ĉu la nova pretas <a href = "https://www.doc.ic.ac.uk/~mbodin/">tie</a>.
+Tiu retejo baldaŭ ŝanĝos sian retlokon.  Mi do konsilegas al vi kontroli ĉu la nova pretas <a href = "https://mbodin.github.io/">tie</a>.
 =permanentRelocation
-Ĉi tiu retejo ŝanĝis adreson.  Se vi ne estas redirektigita, bonvole <a href = "https://www.doc.ic.ac.uk/~mbodin/">alklaki tie</a>.
+Ĉi tiu retejo ŝanĝis adreson.  Se vi ne estas redirektigita, bonvole <a href = "https://mbodin.github.io/">alklaki tie</a>.
 =working
 Mi ŝanĝas tiun ĉi retejon:  ĝi probable nun ŝajnas stranga… sed baldaŭ ne plu!
 =notUpToDate
@@ -52,7 +55,7 @@ Sociaj skriptoj estas kodoj el diversaj ne-ĉiel-fidemaj retejoj kaj povas kaŝo
 =permanentSocials
 Por aŭtomate aktivigi sociajn skriptojn dum vi retumas en ĉi tiu retejo sen devi alklaki ĉi sube, <a href = "#" onclick = "permanentSocials ()">alklaku ĉi tie</a>.
 =contactmeNoJS
-mailto:mbodin[bonvolu anstataŭigi tiun ĉi tekston per ĉe-signo]ic[kaj tiun ĉi per punkto]ac[kaj per alia puntko]uk
+mailto:martin[bonvolu anstataŭigi tiun ĉi tekston per punkto]bodin[kaj tiun ĉi tekston per ĉe-signo]inria[kaj tiun ĉi per alia punkto]fr
 =switchLanguage
 Ŝanĝi la lingvon
 =lastUpdate
@@ -94,9 +97,9 @@ Do not worry too much: I am not aware of any browser completely following this s
 =noLanguageDetected
 <a class = "switchLanguage_en internalLink" href = "#en">Click here to get the English version of this webpage.</a>
 =relocation
-This website will soon change its location.  I thus strongly advise you to check if the new one is already available <a href = "https://www.doc.ic.ac.uk/~mbodin/">there</a>.
+This website will soon change its location.  I thus strongly advise you to check if the new one is already available <a href = "https://mbodin.github.io/">there</a>.
 =permanentRelocation
-This website moved.  If you are not being redirected, please <a href = "https://www.doc.ic.ac.uk/~mbodin/">click here</a>.
+This website moved.  If you are not being redirected, please <a href = "https://mbodin.github.io/">click here</a>.
 =working
 I am currently working on this website:  it probably now feels a bit weird… but it will not soon!
 =notUpToDate
@@ -118,7 +121,7 @@ Social scripts involves third-party sources that can not always be trusted and t
 =permanentSocials
 To automatically enable social scripts while surfing in this website without being forced to click underneath, <a href = "#" onclick = "permanentSocials ()">click here</a>.
 =contactmeNoJS
-mailto:mbodin[please replace this text by an at symbol]ic[and this one by a dot]ac[and a dot again]uk
+mailto:martin[please replace this text by a dot]bodin[and this one by an at symbol]inria[and this one by a dot]fr
 =switchLanguage
 Switch Language
 =lastUpdate
@@ -160,9 +163,9 @@ Pas d’inquiétude : je ne connais pas de navigateur qui le respecte complètem
 =noLanguageDetected
 <a class = "switchLanguage_fr internalLink" href = "#fr">Cliquez ici pour voir le contenu de cette page en Français</a>.
 =relocation
-Ce site Internet va bientôt changer d’adresse.  Je vous recommande donc de vérifier si le nouveau site est déjà disponible <a href = "https://www.doc.ic.ac.uk/~mbodin/">ici</a>.
+Ce site Internet va bientôt changer d’adresse.  Je vous recommande donc de vérifier si le nouveau site est déjà disponible <a href = "https://mbodin.github.io/">ici</a>.
 =permanentRelocation
-Ce site a changé d’adresse.  Si vous n’êtes pas redirigés, merci de <a href = "https://www.doc.ic.ac.uk/~mbodin/">cliquer ici</a>.
+Ce site a changé d’adresse.  Si vous n’êtes pas redirigés, merci de <a href = "https://mbodin.github.io/">cliquer ici</a>.
 =working
 Je suis en train de bricoler ce site :  il doit sembler un brin étrange… mais ça devrait bientôt s’améliorer !
 =notUpToDate
@@ -184,7 +187,7 @@ Les scripts sociaux nécessitent l’usage de scripts venant de sources tierces 
 =permanentSocials
 Pour activer automatiquement les scripts sociaux lors de la navigation sur ce site sans avoir à cliquer en bas de la page, <a href = "#" onclick = "permanentSocials ()">cliquez ici</a>.
 =contactmeNoJS
-mailto:mbodin[merci de remplacer cette phrase par un arobase]ic[et ceci par un point]ac[et encore un point]uk
+mailto:martin[merci de remplacer cette phrase par un point]bodin[et cell-ci par un arobase]inria[et ceci par un point]fr
 =switchLanguage
 Changer de langue
 =lastUpdate

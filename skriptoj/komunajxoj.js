@@ -25,7 +25,7 @@ function removeNodeId (id){
     applyNode (id, removeNode)
 }
 
-var siteRootURL = "https://www.doc.ic.ac.uk/~mbodin/"
+var siteRootURL = "https://mbodin.github.io/"
 
 ;
 

@@ -27,6 +27,93 @@ end
 
 section
 sectionName
+2021
+all
+	2021
+end
+
+item
+all
+	<a href = "https://ensimag.grenoble-inp.fr/"><span class = "name">Ensimag</span></a>, Projet génie logiciel
+description
+en
+	Project for second-year students (M1).
+	Course reference : 4MMPGL6.
+eo
+	Programa projekto por studentoj de la dua inĝeniera jaro (M1).
+	Kursreferenco : 4MMPGL6.
+fr
+	Projet pour des étudiants de deuxième année (M1).
+	Référence du cours : 4MMPGL6.
+link
+en
+	<a href = "https://chamilo.grenoble-inp.fr/courses/ENSIMAG4MMPGL6/">Webpage of the course</a>
+eo
+	<a href = "https://chamilo.grenoble-inp.fr/courses/ENSIMAG4MMPGL6/">Retpaĝo de la kurso</a>
+fr
+	<a href = "https://chamilo.grenoble-inp.fr/courses/ENSIMAG4MMPGL6/">Page du module</a>
+link
+en
+	<a href = "https://ensimag.grenoble-inp.fr/fr/formation/software-engineering-project-4mmpgl">Description of the course</a>
+eo
+	<a href = "https://ensimag.grenoble-inp.fr/fr/formation/projet-g-eacute-nie-logiciel-4mmpgl">Priskriba paĝo de la kurso</a>
+fr
+	<a href = "https://ensimag.grenoble-inp.fr/fr/formation/projet-g-eacute-nie-logiciel-4mmpgl">Description du module</a>
+end
+
+item
+all
+	<a href = "https://ensimag.grenoble-inp.fr/"><span class = "name">Ensimag</span></a>, Théorie des langages 2
+description
+en
+	Tutorials for first-year students (L3).
+	Course reference : 3MMTL2.
+eo
+	Ekzercaro por studentoj de la unua inĝeniera jaro (L3).
+	Kursreferenco : 3MMTL2.
+fr
+	TD pour des étudiants de première année (L3).
+	Référence du cours : 3MMTL2.
+link
+en
+	<a href = "https://chamilo.grenoble-inp.fr/courses/ENSIMAG3MMTL2/">Webpage of the course</a>
+eo
+	<a href = "https://chamilo.grenoble-inp.fr/courses/ENSIMAG3MMTL2/">Retpaĝo de la kurso</a>
+fr
+	<a href = "https://chamilo.grenoble-inp.fr/courses/ENSIMAG3MMTL2/">Page du module</a>
+link
+en
+	<a href = "https://ensimag.grenoble-inp.fr/fr/formation/language-theory-2-3mmtl2">Description of the course</a>
+eo
+	<a href = "https://ensimag.grenoble-inp.fr/fr/formation/th-eacute-orie-des-langages-2-3mmtl2">Priskriba paĝo de la kurso</a>
+fr
+	<a href = "https://ensimag.grenoble-inp.fr/fr/formation/th-eacute-orie-des-langages-2-3mmtl2">Description du module</a>
+end
+
+item
+all
+	<a href = "https://www.grenoble-inp.fr/"><span class = "name">Imag</span></a>, Modèles de calculs
+description
+en
+	Tutorials for L3 students.
+	Course reference: MCAL.
+eo
+	Ekzercaro por L3 lernantoj.
+	Kursreferenco: MCAL.
+fr
+	TD pour des étudiants de L3.
+	Référence du cours : MCAL.
+link
+en
+	<a href = "https://www-verimag.imag.fr/~monin/Enseignement/MCAL/">Course material</a>
+eo
+	<a href = "https://www-verimag.imag.fr/~monin/Enseignement/MCAL/">Kursmaterialo</a>
+fr
+	<a href = "https://www-verimag.imag.fr/~monin/Enseignement/MCAL/">Matériel de cours</a>
+end
+
+section
+sectionName
 2018_2019
 all
 	2018, 2019
@@ -40,14 +127,14 @@ en
 	Tutorials for M1 students.
 	Course reference: CO404.
 eo
-	Superrigardaj laboroj por M1 lernantoj.
+	Ekzercaro por M1 lernantoj.
 	Kursreferenco: CO404.
 fr
 	TD pour des étudiants de M1.
 	Référence du cours : CO404.
 link
 en
-	<a href = "https://vtss.doc.ic.ac.uk/teaching/separationlogic.html">Webpage of the module</a>
+	<a href = "https://vtss.doc.ic.ac.uk/teaching/separationlogic.html">Webpage of the course</a>
 eo
 	<a href = "https://vtss.doc.ic.ac.uk/teaching/separationlogic.html">Retpaĝo de la kurso</a>
 fr
@@ -56,7 +143,7 @@ link
 en
 	<a href = "https://www.imperial.ac.uk/computing/current-students/courses/404/">Description of the module</a>
 eo
-	<a href = "https://www.imperial.ac.uk/computing/current-students/courses/404/">Priskribo de la kurso</a>
+	<a href = "https://www.imperial.ac.uk/computing/current-students/courses/404/">Priskriba paĝo de la kurso</a>
 fr
 	<a href = "https://www.imperial.ac.uk/computing/current-students/courses/404/">Description du module</a>
 end
@@ -69,14 +156,14 @@ en
 	Tutorials for L2 students.
 	Course reference: CO240.
 eo
-	Superrigardaj laboroj por L2 lernantoj.
+	Ekzercaro por L2 lernantoj.
 	Kursreferenco: CO240.
 fr
 	TD pour des étudiants de L2.
 	Référence du cours : CO240.
 link
 en
-	<a href = "https://vtss.doc.ic.ac.uk/teaching/ModelsComputation.html">Webpage of the module</a>
+	<a href = "https://vtss.doc.ic.ac.uk/teaching/ModelsComputation.html">Webpage of the course</a>
 eo
 	<a href = "https://vtss.doc.ic.ac.uk/teaching/ModelsComputation.html">Retpaĝo de la kurso</a>
 fr
@@ -85,7 +172,7 @@ link
 en
 	<a href = "https://www.imperial.ac.uk/computing/current-students/courses/240/">Description of the module</a>
 eo
-	<a href = "https://www.imperial.ac.uk/computing/current-students/courses/240/">Priskribo de la kurso</a>
+	<a href = "https://www.imperial.ac.uk/computing/current-students/courses/240/">Priskriba paĝo de la kurso</a>
 fr
 	<a href = "https://www.imperial.ac.uk/computing/current-students/courses/240/">Description du module</a>
 end
@@ -135,7 +222,7 @@ link
 en
     <a href = "instruado/2017/jscert.tar.gz"><span class = "name">JSCert</span> Tutorial</a>
 eo
-    <a href = "instruado/2017/jscert.tar.gz">Ekzercioj pri <span class = "name">JSCert</span></a>
+    <a href = "instruado/2017/jscert.tar.gz">Ekzercoj pri <span class = "name">JSCert</span></a>
 fr
     <a href = "instruado/2017/jscert.tar.gz">Exercices sur <span class = "name">JSCert</span></a>
 end
@@ -154,13 +241,13 @@ description
 en
 	Tutorials for M1 students.
 eo
-	Superrigardaj laboroj por M1 lernantoj.
+	Ekzercaro por M1 lernantoj.
 fr
 	TD pour des normaliens de deuxième année (M1).
 internalLink
 instruado/2013/CVFP/index
 en
-	Go to the module’s page
+	Go to the course’s page
 eo
 	Iri al ties paĝo
 fr
@@ -181,13 +268,13 @@ description
 en
 	Tutorials for L3 students.
 eo
-	Superrigardaj laboroj por L3 lernantoj.
+	Ekzercaro L3 lernantoj.
 fr
 	TD pour des normaliens de première année (L3).
 internalLink
 instruado/2013/LF/index
 en
-	Go to the module’s page
+	Go to the course’s page
 eo
 	Iri al ties paĝo
 fr

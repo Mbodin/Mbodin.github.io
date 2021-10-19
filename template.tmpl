@@ -68,14 +68,14 @@
 					<tmpl_loop name="allLanguages">
 					<tmpl_if name="isFlag">
 					<li class="divflag flag_<tmpl_var name=lang /><tmpl_var name=otherClasses />">
-						<a id="link_<tmpl_var name=lang />" href="#<tmpl_var name=lang />" class="switchLanguage_<tmpl_var name=lang /> internalLink">
+						<a xml:lang="<tmpl_var name=lang />" lang="<tmpl_var name=lang />" id="link_<tmpl_var name=lang />" href="#<tmpl_var name=lang />" class="switchLanguage_<tmpl_var name=lang /> internalLink">
 							<img src="<tmpl_var name=pathToRoot />rimedoj/<tmpl_var name=lang />.svg" alt="<tmpl_var name=langname />" class="flag" /> <!-- TODO: Use text instead of picture to represent language. -->
 						</a>
 					</li>
 					<tmpl_else>
 					<tmpl_if name="isFlagDescr">
 					<li xml:lang="<tmpl_var name=lang />" lang="<tmpl_var name=lang />" class="lang<tmpl_var name=lang /> flag_list_alt<tmpl_var name=otherClasses />">
-						<a href="javascript: void 42" id="flag_list_alt_<tmpl_var name=lang />"><tmpl_var name="switchLanguage" /></a>
+						<a id="flag_list_alt_<tmpl_var name=lang />"><tmpl_var name="switchLanguage" /></a>
 					</li>
 					<tmpl_else>
 					<li xml:lang="<tmpl_var name=lang />" lang="<tmpl_var name=lang />" class="lang<tmpl_var name=lang /><tmpl_var name=otherClasses />">
@@ -278,12 +278,8 @@
 			<div class="needlang">
 				<div id="socials" class="invisible">
 					<p class="tabparagraph" id="ad-social"></p>
-					<p class="tabparagraph">
-						<a href="http://lernu.net/" id="lernu-social"></a>
-					</p>
-					<p class="tabparagraph">
-						<a href="#" id="hacker-social"></a>
-					</p>
+					<p class="tabparagraph" id="lernu-social"></p>
+					<p class="tabparagraph" id="hacker-social"></p>
 					<p class="tabparagraph" id="m-social"></p>
 					<p class="tabparagraph" id="d-social"></p>
 					<div class="tabparagraph">

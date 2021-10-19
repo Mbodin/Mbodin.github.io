@@ -101,17 +101,20 @@ function facebookSocial (lang, addr){
 }
 
 function lernuSocial (lang){
-	return applyNode ("lernu-social", function (aimg){
+	return applyNode ("lernu-social", function (p){
+			var a = document.createElement ("a")
+
 			var img = document.createElement ("img")
 			img.setAttribute ("src", "http://lernu.net/images/pages/esperanto/timeline_lernu.png")
 			img.setAttribute ("alt", "Lernu!")
 			img.setAttribute ("style", createStyles ([
 						["height", "32px"]
 					]))
-			aimg.appendChild (img)
+			a.appendChild (img)
+			p.appendChild (a)
 
 			var change = function (lang){
-					aimg.setAttribute ("href", "http://lernu.net/" + lang)
+					a.setAttribute ("href", "http://lernu.net/" + lang)
 				}
 
 			change (lang)
@@ -121,24 +124,35 @@ function lernuSocial (lang){
 }
 
 function hackerSocial (lang){
-	applyNode ("hacker-social", function (aimg){
+	applyNode ("hacker-social", function (p){
+			var a = document.createElement ("a")
+
 			var img = document.createElement ("img")
 			img.setAttribute ("src", "http://upload.wikimedia.org/wikipedia/commons/4/45/Glider.svg")
 			img.setAttribute ("alt", "Hacker culture")
 			img.setAttribute ("style", createStyles ([
 						["height", "32px"]
 					]))
-			aimg.appendChild (img)
-			aimg.setAttribute ("href", (function (){
-					switch (lang){
-						case "fr":
-							return "http://fr.wikipedia.org/wiki/Hacker_(universit%C3%A9)"
-						case "eo":
-						default:
-						case "en":
-							return "http://en.wikipedia.org/wiki/Hacker_(programmer_subculture)"
-					}
-				} ()))
+			a.appendChild (img)
+			p.appendChild (a)
+
+			var change  = function (lang){
+					a.setAttribute ("href", (function (){
+							switch (lang){
+								case "fr":
+									return "https://fr.wikipedia.org/wiki/Hacker_(sous-culture)"
+								case "eo":
+									return "https://eo.wikipedia.org/wiki/Kodumulo"
+								default:
+								case "en":
+									return "https://en.wikipedia.org/wiki/Hacker_culture"
+							}
+						} ()))
+				}
+
+			change (lang)
+
+			return change
 		})
 }
 

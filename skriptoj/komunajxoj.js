@@ -147,7 +147,7 @@ function addIfNotEmpty (str, add, after){ // Default:  before.
 
 
 function makeADoNothing (node){
-	node.setAttribute ("href", "javascript: void 42")
+	node.removeAttribute ("href")
 }
 
 function newDummyNode (textMode){

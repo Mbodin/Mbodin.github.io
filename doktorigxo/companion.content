@@ -298,7 +298,7 @@ eo
 fr
 description
 en
-    <textarea id = "JSconsole" placeholder = "Your JavaScript input here"></textarea>
+    <textarea id = "JSconsole" placeholder = "Your JavaScript input here" aria-label = "Your JavaScript input here"></textarea>
     <span id = "JSconsoleOutput" class = "program"></span>
 eo
 fr
@@ -311,11 +311,11 @@ fr
     <a href = "javascript: void (readAndRunJavaScript ('JSconsole', 'JSconsoleOutput', 'clear_input_queries_fr'))">Exécuter</a>
 cleanLink
 en
-    <input type = "checkbox" id = "clear_input_queries_en" checked> Clear input at each query
+    <input type = "checkbox" id = "clear_input_queries_en" checked> <label for = "clear_input_queries_en">Clear input at each query</label>
 eo
-    <input type = "checkbox" id = "clear_input_queries_eo" checked> Forviŝi enirejon je ĉiuj programekoj
+    <input type = "checkbox" id = "clear_input_queries_eo" checked> <label for = "clear_input_queries_eo">Forviŝi enirejon je ĉiuj programekoj</label>
 fr
-    <input type = "checkbox" id = "clear_input_queries_fr" checked> Effacer la zone de texte à chaque exécution
+    <input type = "checkbox" id = "clear_input_queries_fr" checked> <label for = "clear_input_queries_fr">Effacer la zone de texte à chaque exécution</label>
 end
 
 #####################################################################################################
@@ -819,8 +819,8 @@ eo
 fr
 description
 en
-    <textarea id = "WhileConsole" placeholder = "Your input here"></textarea>
-    <textarea id = "WhileConsoleOutput" readonly placeholder = "Output"></textarea>
+    <textarea id = "WhileConsole" placeholder = "Your input here" aria-label = "Your input here"></textarea>
+    <textarea id = "WhileConsoleOutput" readonly placeholder = "Output" aria-label = "Output"></textarea>
 eo
 fr
 link
@@ -832,35 +832,35 @@ fr
     <a href = "javascript: void (readAndRunWhileFlat ('WhileConsole', 'WhileConsoleOutput', 'clear_input_while_flat_fr'))">Exécuter</a>
 cleanLink
 en
-    <input type = "checkbox" id = "clear_input_while_flat_en"> Clear input at each query
+    <input type = "checkbox" id = "clear_input_while_flat_en"> <label for = "clear_input_while_flat_en">Clear input at each query</label>
 eo
-    <input type = "checkbox" id = "clear_input_while_flat_eo"> Forviŝi enirejon je ĉiuj programekoj
+    <input type = "checkbox" id = "clear_input_while_flat_eo"> <label for = "clear_input_while_flat_eo">Forviŝi enirejon je ĉiuj programekoj</label>
 fr
-    <input type = "checkbox" id = "clear_input_while_flat_fr"> Effacer la zone de texte à chaque exécution
+    <input type = "checkbox" id = "clear_input_while_flat_fr"> <label for = "clear_input_while_flat_fr">Effacer la zone de texte à chaque exécution</label>
 cleanLink
 en
-    <input type = "checkbox" id = "small_step_while_flat_en"> Decrease fuel counter at each rule application (instead of only at potentially looping ones)
+    <input type = "checkbox" id = "small_step_while_flat_en"> <label for = "small_step_while_flat_en">Decrease fuel counter at each rule application (instead of only at potentially looping ones)</label>
 eo
-    <input type = "checkbox" id = "small_step_while_flat_eo"> Malaltigi la ciklbenzinon je ĉiuj regulapliko (anstataŭ je nur tiuj kiuj cikleblas)
+    <input type = "checkbox" id = "small_step_while_flat_eo"> <label for = "small_step_while_flat_eo">Malaltigi la ciklbenzinon je ĉiuj regulapliko (anstataŭ je nur tiuj kiuj cikleblas)</label>
 fr
-    <input type = "checkbox" id = "small_step_while_flat_fr"> Décrémenter le carburant à chaque application de règle (et non seulement à celles qui pourraient boucler)
+    <input type = "checkbox" id = "small_step_while_flat_fr"> <label for = "small_step_while_flat_fr">Décrémenter le carburant à chaque application de règle (et non seulement à celles qui pourraient boucler)</label>
 link
 en
-    Number of oracles: <input type = "number" id = "oracles_while_flat_en" min = "0" value = "3">
+    <label for = "oracles_while_flat_en">Number of oracles:</label> <input type = "number" id = "oracles_while_flat_en" min = "0" value = "3">
 eo
-    Kvanto da antaŭdiveno: <input type = "number" id = "oracles_while_flat_eo" min = "0" value = "3">
+    <label for = "oracles_while_flat_eo">Kvanto da antaŭdiveno:</label> <input type = "number" id = "oracles_while_flat_eo" min = "0" value = "3">
 fr
-    Nombre d’oracles : <input type = "number" id = "oracles_while_flat_fr" min = "0" value = "3">
+    <label for = "oracles_while_flat_fr">Nombre d’oracles :</label> <input type = "number" id = "oracles_while_flat_fr" min = "0" value = "3">
 link
 en
-    Fuel: <input type = "number" id = "fuel_while_flat_en" min = "1" value = "10">
+    <label for = "fuel_while_flat_en">Fuel:</label> <input type = "number" id = "fuel_while_flat_en" min = "1" value = "10">
 eo
-    Ciklbenzino: <input type = "number" id = "fuel_while_flat_eo" min = "1" value = "10">
+    <label for = "fuel_while_flat_eo">Ciklbenzino:</label> <input type = "number" id = "fuel_while_flat_eo" min = "1" value = "10">
 fr
-    Carburant : <input type = "number" id = "fuel_while_flat_fr" min = "1" value = "10">
+    <label for = "fuel_while_flat_fr">Carburant :</label> <input type = "number" id = "fuel_while_flat_fr" min = "1" value = "10">
 link
 en
-    <select id = "while_flat_examples_en" onchange = "getExample ('while', 'WhileConsole', 'while_flat_examples_en', 'WhileConsoleOutput')">
+    <select id = "while_flat_examples_en" onchange = "getExample ('while', 'WhileConsole', 'while_flat_examples_en', 'WhileConsoleOutput')" aria-label = "Select example">
     <option value = "example">Select example</option>
     <option value = "simple">Simple assignments</option>
     <option value = "loop">A simple loop</option>
@@ -893,8 +893,8 @@ eo
 fr
 description
 en
-    <textarea id = "WhileSignConsole" placeholder = "Your input here"></textarea>
-    <textarea id = "WhileSignConsoleOutput" readonly placeholder = "Output"></textarea>
+    <textarea id = "WhileSignConsole" placeholder = "Your input here" aria-label = "Your input here"></textarea>
+    <textarea id = "WhileSignConsoleOutput" readonly placeholder = "Output" aria-label = "Output"></textarea>
 eo
 fr
 link
@@ -906,35 +906,35 @@ fr
     <a href = "javascript: void (readAndRunWhileSign ('WhileSignConsole', 'WhileSignConsoleOutput', 'clear_input_while_sign_fr'))">Exécuter</a>
 cleanLink
 en
-    <input type = "checkbox" id = "clear_input_while_sign_en"> Clear input at each query
+    <input type = "checkbox" id = "clear_input_while_sign_en"> <label for = "clear_input_while_sign_en">Clear input at each query</label>
 eo
-    <input type = "checkbox" id = "clear_input_while_sign_eo"> Forviŝi enirejon je ĉiuj programekoj
+    <input type = "checkbox" id = "clear_input_while_sign_eo"> <label for = "clear_input_while_sign_eo">Forviŝi enirejon je ĉiuj programekoj</label>
 fr
-    <input type = "checkbox" id = "clear_input_while_sign_fr"> Effacer la zone de texte à chaque exécution
+    <input type = "checkbox" id = "clear_input_while_sign_fr"> <label for = "clear_input_while_sign_fr">Effacer la zone de texte à chaque exécution</label>
 cleanLink
 en
-    <input type = "checkbox" id = "small_step_while_sign_en"> Decrease fuel counter at each rule application (instead of only at potentially looping ones)
+    <input type = "checkbox" id = "small_step_while_sign_en"> <label for = "small_step_while_sign_en">Decrease fuel counter at each rule application (instead of only at potentially looping ones)</label>
 eo
-    <input type = "checkbox" id = "small_step_while_sign_eo"> Malaltigi la ciklbenzinon je ĉiuj regulapliko (anstataŭ je nur tiuj kiuj cikleblas)
+    <input type = "checkbox" id = "small_step_while_sign_eo"> <label for = "small_step_while_sign_eo">Malaltigi la ciklbenzinon je ĉiuj regulapliko (anstataŭ je nur tiuj kiuj cikleblas)</label>
 fr
-    <input type = "checkbox" id = "small_step_while_sign_fr"> Décrémenter le carburant à chaque application de règle (et non seulement à celles qui pourraient boucler)
+    <input type = "checkbox" id = "small_step_while_sign_fr"> <label for = "small_step_while_sign_fr">Décrémenter le carburant à chaque application de règle (et non seulement à celles qui pourraient boucler)</label>
 link
 en
-    Number of oracles: <input type = "number" id = "oracles_while_sign_en" min = "0" value = "3">
+    <label for = "oracles_while_sign_en">Number of oracles:</label> <input type = "number" id = "oracles_while_sign_en" min = "0" value = "3">
 eo
-    Kvanto da antaŭdiveno: <input type = "number" id = "oracles_while_sign_eo" min = "0" value = "3">
+    <label for = "oracles_while_sign_eo">Kvanto da antaŭdiveno:</label> <input type = "number" id = "oracles_while_sign_eo" min = "0" value = "3">
 fr
-    Nombre d’oracles : <input type = "number" id = "oracles_while_sign_fr" min = "0" value = "3">
+    <label for = "oracles_while_sign_fr">Nombre d’oracles :</label> <input type = "number" id = "oracles_while_sign_fr" min = "0" value = "3">
 link
 en
-    Fuel: <input type = "number" id = "fuel_while_sign_en" min = "1" value = "10">
+    <label for = "fuel_while_sign_en">Fuel:</label> <input type = "number" id = "fuel_while_sign_en" min = "1" value = "10">
 eo
-    Ciklbenzino: <input type = "number" id = "fuel_while_sign_eo" min = "1" value = "10">
+    <label for = "fuel_while_sign_eo">Ciklbenzino:</label> <input type = "number" id = "fuel_while_sign_eo" min = "1" value = "10">
 fr
-    Carburant : <input type = "number" id = "fuel_while_sign_fr" min = "1" value = "10">
+    <label for = "fuel_while_sign_fr">Carburant :</label> <input type = "number" id = "fuel_while_sign_fr" min = "1" value = "10">
 link
 en
-    <select id = "while_sign_examples_en" onchange = "getExample ('while', 'WhileSignConsole', 'while_sign_examples_en', 'WhileSignConsoleOutput')">
+    <select id = "while_sign_examples_en" onchange = "getExample ('while', 'WhileSignConsole', 'while_sign_examples_en', 'WhileSignConsoleOutput')" aria-label = "Select example">
     <option value = "example">Select example</option>
     <option value = "simple">Simple assignments</option>
     <option value = "loop">A simple loop</option>
@@ -1093,8 +1093,8 @@ eo
 fr
 description
 en
-    <textarea id = "OWhileConsole" placeholder = "Your input here"></textarea>
-    <textarea id = "OWhileConsoleOutput" readonly placeholder = "Output"></textarea>
+    <textarea id = "OWhileConsole" placeholder = "Your input here" aria-label = "Your input here"></textarea>
+    <textarea id = "OWhileConsoleOutput" readonly placeholder = "Output" aria-label = "Output"></textarea>
 eo
 fr
 link
@@ -1106,35 +1106,35 @@ fr
     <a href = "javascript: void (readAndRunOWhileFlat ('OWhileConsole', 'OWhileConsoleOutput', 'clear_input_owhile_flat_fr'))">Exécuter</a>
 cleanLink
 en
-    <input type = "checkbox" id = "clear_input_owhile_flat_en"> Clear input at each query
+    <input type = "checkbox" id = "clear_input_owhile_flat_en"> <label for = "clear_input_owhile_flat_en">Clear input at each query</label>
 eo
-    <input type = "checkbox" id = "clear_input_owhile_flat_eo"> Forviŝi enirejon je ĉiuj programekoj
+    <input type = "checkbox" id = "clear_input_owhile_flat_eo"> <label for = "clear_input_owhile_flat_eo">Forviŝi enirejon je ĉiuj programekoj</label>
 fr
-    <input type = "checkbox" id = "clear_input_owhile_flat_fr"> Effacer la zone de texte à chaque exécution
+    <input type = "checkbox" id = "clear_input_owhile_flat_fr"> <label for = "clear_input_owhile_flat_fr">Effacer la zone de texte à chaque exécution</label>
 cleanLink
 en
-    <input type = "checkbox" id = "small_step_owhile_flat_en"> Decrease fuel counter at each rule application (instead of only at potentially looping ones)
+    <input type = "checkbox" id = "small_step_owhile_flat_en"> <label for = "small_step_owhile_flat_en">Decrease fuel counter at each rule application (instead of only at potentially looping ones)</label>
 eo
-    <input type = "checkbox" id = "small_step_owhile_flat_eo"> Malaltigi la ciklbenzinon je ĉiuj regulapliko (anstataŭ je nur tiuj kiuj cikleblas)
+    <input type = "checkbox" id = "small_step_owhile_flat_eo"> <label for = "small_step_owhile_flat_eo">Malaltigi la ciklbenzinon je ĉiuj regulapliko (anstataŭ je nur tiuj kiuj cikleblas)</label>
 fr
-    <input type = "checkbox" id = "small_step_owhile_flat_fr"> Décrémenter le carburant à chaque application de règle (et non seulement à celles qui pourraient boucler)
+    <input type = "checkbox" id = "small_step_owhile_flat_fr"> <label for = "small_step_owhile_flat_fr">Décrémenter le carburant à chaque application de règle (et non seulement à celles qui pourraient boucler)</label>
 link
 en
-    Number of oracles: <input type = "number" id = "oracles_owhile_flat_en" min = "0" value = "1">
+    <label for = "oracles_owhile_flat_en">Number of oracles:</label> <input type = "number" id = "oracles_owhile_flat_en" min = "0" value = "1">
 eo
-    Kvanto da antaŭdiveno: <input type = "number" id = "oracles_owhile_flat_eo" min = "0" value = "1">
+    <label for = "oracles_owhile_flat_eo">Kvanto da antaŭdiveno:</label> <input type = "number" id = "oracles_owhile_flat_eo" min = "0" value = "1">
 fr
-    Nombre d’oracles : <input type = "number" id = "oracles_owhile_flat_fr" min = "0" value = "1">
+    <label for = "oracles_owhile_flat_fr">Nombre d’oracles :</label> <input type = "number" id = "oracles_owhile_flat_fr" min = "0" value = "1">
 link
 en
-    Fuel: <input type = "number" id = "fuel_owhile_flat_en" min = "1" value = "10">
+    <label for = "fuel_owhile_flat_en">Fuel:</label> <input type = "number" id = "fuel_owhile_flat_en" min = "1" value = "10">
 eo
-    Ciklbenzino: <input type = "number" id = "fuel_owhile_flat_eo" min = "1" value = "10">
+    <label for = "fuel_owhile_flat_eo">Ciklbenzino:</label> <input type = "number" id = "fuel_owhile_flat_eo" min = "1" value = "10">
 fr
-    Carburant : <input type = "number" id = "fuel_owhile_flat_fr" min = "1" value = "10">
+    <label for = "fuel_owhile_flat_fr">Carburant :</label> <input type = "number" id = "fuel_owhile_flat_fr" min = "1" value = "10">
 link
 en
-    <select id = "owhile_flat_examples_en" onchange = "getExample ('owhile', 'OWhileConsole', 'owhile_flat_examples_en', 'OWhileConsoleOutput')">
+    <select id = "owhile_flat_examples_en" onchange = "getExample ('owhile', 'OWhileConsole', 'owhile_flat_examples_en', 'OWhileConsoleOutput')" aria-label = "Select example">
     <option value = "example">Select example</option>
     <option value = "function_scope">The different scopes of functions</option>
     <option value = "function_loop">Looping using functions</option>

@@ -483,7 +483,7 @@ li.cleanLink {
 
 .toc a {
 	font:  bold small serif ;
-	color:  #ad7fa8 ;
+	color:  #75507b ;
 }
 
 .toc:hover a {
@@ -575,7 +575,7 @@ h2 a.toc_command {
 }
 
 h2:hover a.toc_command {
-	color:  #ad7fa8 ;
+	color:  #75507b ;
 }
 
 /* TODO:  Split this file to something more readable and modular. */

@@ -960,77 +960,28 @@ end
 
 item
 all
-Verified Software Workshop 2019
+TEJO-Scienco 2021
 description
 en
-    Poster for the <a href = "https://vetss.org.uk/vetss-verified-software-workshop-24th-25th-september-2019/">Verified Software Workshop</a>, 2019.
+    Talk at the Science group of <a href = "https://www.tejo.org/en/">TEJO</a>.
 eo
-    Afiŝprelego por la <a href = "https://vetss.org.uk/vetss-verified-software-workshop-24th-25th-september-2019/">Verified Software Workshop</a> en 2019.
+    Prelego por la Scienca grupo de <a href = "https://www.tejo.org/">TEJO</a>.
 fr
-    Poster pour le <a href = "https://vetss.org.uk/vetss-verified-software-workshop-24th-25th-september-2019/">Verified Software Workshop</a> de 2019.
+    Présentation pour le groupe Science de <a href = "https://www.tejo.org/fr/">TEJO</a>.
 link
 en
-	<a href = "esplorado/Verified-Software-Workshop-2019.pdf">Poster</a>
+	<a href = "esplorado/TEJOScienco21.pdf">Slides</a>
 eo
-	<a href = "esplorado/Verified-Software-Workshop-2019.pdf">Afiŝo</a>
+	<a href = "esplorado/TEJOScienco21.pdf">Diapozitivoj</a>
 fr
-	<a href = "esplorado/Verified-Software-Workshop-2019.pdf">Poster</a>
+	<a href = "esplorado/TEJOScienco21.pdf">Présentation</a>
 link
 en
-	<a href = "esplorado/Verified-Software-Workshop-2019.tar.bz2">Sources</a>
+	<a href = "esplorado/TEJOScienco21.tar.xz">Sources</a>
 eo
-	<a href = "esplorado/Verified-Software-Workshop-2019.tar.bz2">Fontoj</a>
+	<a href = "esplorado/TEJOScienco21.tar.xz">Fontoj</a>
 fr
-	<a href = "esplorado/Verified-Software-Workshop-2019.tar.bz2">Sources</a>
-end
-
-item
-en
-	Popular Science
-eo
-	Populariga filmeto
-fr
-	Vidéo de vulgarisation
-description
-eo
-	Small video in Esperanto to present my field of research.
-eo
-	Esperanta filmeto kiu prezentas mian esploradan temon.
-fr
-	Vidéo en espéranto sur une présentation générale de ma recherche.
-link
-en
-	<a href = "https://video.liberta.vip/video-channels/martinshadok_eo/videos">Link to the channel</a>
-eo
-	<a href = "https://video.liberta.vip/video-channels/martinshadok_eo/videos">Kanalligilo</a>
-fr
-	<a href = "https://video.liberta.vip/video-channels/martinshadok_eo/videos">Lien vers la chaîne</a>
-end
-
-item
-all
-Qualification
-description
-en
-	This is the document that I prepared for the French “qualification” for the CNRS.
-fr
-	Ceci est le dossier que j’ai monté pour la qualification aux postes d’enseignents-checheurs aux CNRS.
-eo
-	Tio estas la dokumentaro kiun mi elpreparis por la franca “qualification”, por la CNRS.
-link
-en
-	<a href = "esplorado/qualification.pdf">Document</a>
-eo
-	<a href = "esplorado/qualification.pdf">Documentaro</a>
-fr
-	<a href = "esplorado/qualification.pdf">Dossier</a>
-link
-en
-	<a href = "esplorado/qualification.tar.xz">Sources</a>
-eo
-	<a href = "esplorado/qualification.tar.xz">Fontoj</a>
-fr
-	<a href = "esplorado/qualification.tar.xz">Sources</a>
+	<a href = "esplorado/TEJOScienco21.tar.xz">Sources</a>
 end
 
 item
@@ -1044,7 +995,7 @@ description
 en
 	This is the documents that I prepared to apply for the <a href = "https://team.inria.fr/spades/"><span class = "name">Spades</span></a> team at <a href = "https://www.inria.fr/en"><span class = "name">Inria</span></a>.
 eo
-	Tio estas la dokumentaro kiun mi elpreparis por kandidatiĝi al la skipo <a href = "https://team.inria.fr/spades/"><span class = "name">Spades</span></a>, ĉe <a href = "https://www.inria.fr/"><span class = "name">Inria</span></a>.
+	Tio estas la dokumentaro kiun mi preparis por kandidatiĝi al la skipo <a href = "https://team.inria.fr/spades/"><span class = "name">Spades</span></a>, ĉe <a href = "https://www.inria.fr/"><span class = "name">Inria</span></a>.
 fr
 	Ceci est le dossier que j’ai monté pour candidater à l’équipe <a href = "https://team.inria.fr/spades/"><span class = "name">Spades</span></a>, à <a href = "https://www.inria.fr/fr"><span class = "name">Inria</span></a>.
 link
@@ -1075,5 +1026,80 @@ eo
 	<a href = "esplorado/inria_spades_slides.tar.xz">Diapozitivfontoj</a>
 fr
 	<a href = "esplorado/inria_spades_slides.tar.xz">Sources de la présentation</a>
+end
+
+item
+all
+Qualification
+description
+en
+	This is the document that I prepared for the French “qualification” for the CNRS.
+fr
+	Ceci est le dossier que j’ai monté pour la qualification aux postes d’enseignents-checheurs aux CNRS.
+eo
+	Tio estas la dokumentaro kiun mi preparis por la franca “qualification”, por la CNRS.
+link
+en
+	<a href = "esplorado/qualification.pdf">Document</a>
+eo
+	<a href = "esplorado/qualification.pdf">Documentaro</a>
+fr
+	<a href = "esplorado/qualification.pdf">Dossier</a>
+link
+en
+	<a href = "esplorado/qualification.tar.xz">Sources</a>
+eo
+	<a href = "esplorado/qualification.tar.xz">Fontoj</a>
+fr
+	<a href = "esplorado/qualification.tar.xz">Sources</a>
+end
+
+item
+en
+	Popular Science Video
+eo
+	Populariga filmeto
+fr
+	Vidéo de vulgarisation
+description
+en
+	Small video in Esperanto to present my field of research.
+eo
+	Esperanta filmeto kiu prezentas mian esploradan temon.
+fr
+	Vidéo en espéranto sur une présentation générale de ma recherche.
+link
+en
+	<a href = "https://video.liberta.vip/video-channels/martinshadok_eo/videos">Link to the channel</a>
+eo
+	<a href = "https://video.liberta.vip/video-channels/martinshadok_eo/videos">Kanalligilo</a>
+fr
+	<a href = "https://video.liberta.vip/video-channels/martinshadok_eo/videos">Lien vers la chaîne</a>
+end
+
+item
+all
+Verified Software Workshop 2019
+description
+en
+    Poster for the <a href = "https://vetss.org.uk/vetss-verified-software-workshop-24th-25th-september-2019/">Verified Software Workshop</a>, 2019.
+eo
+    Afiŝprelego por la <a href = "https://vetss.org.uk/vetss-verified-software-workshop-24th-25th-september-2019/">Verified Software Workshop</a> en 2019.
+fr
+    Poster pour le <a href = "https://vetss.org.uk/vetss-verified-software-workshop-24th-25th-september-2019/">Verified Software Workshop</a> de 2019.
+link
+en
+	<a href = "esplorado/Verified-Software-Workshop-2019.pdf">Poster</a>
+eo
+	<a href = "esplorado/Verified-Software-Workshop-2019.pdf">Afiŝo</a>
+fr
+	<a href = "esplorado/Verified-Software-Workshop-2019.pdf">Poster</a>
+link
+en
+	<a href = "esplorado/Verified-Software-Workshop-2019.tar.bz2">Sources</a>
+eo
+	<a href = "esplorado/Verified-Software-Workshop-2019.tar.bz2">Fontoj</a>
+fr
+	<a href = "esplorado/Verified-Software-Workshop-2019.tar.bz2">Sources</a>
 end
 

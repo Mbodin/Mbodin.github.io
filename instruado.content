@@ -192,7 +192,7 @@ end
 
 item
 all
-	<a href = "http://www.uchile.cl/"><span class = "name">Universidad de Chile</span></a>, Introducción a <span class = "name">Coq</name>: Lógica, Tipos y Verificación
+	<a href = "http://www.uchile.cl/"><span class = "name">Universidad de Chile</span></a>, Introducción a <span class = "name">Coq</span>: Lógica, Tipos y Verificación
 description
 en
 	Courses and tutorials for M2 students.

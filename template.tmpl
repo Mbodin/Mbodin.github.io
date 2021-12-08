@@ -205,7 +205,8 @@
 					if (currentMatches[1] !== previousMatches[1]){
 						// The domain has changed.
 						if (/[Bb]odin/.test (previousPage)){
-							// Somehow my name seems to be present in the previous page: this is possbily a redirection.
+							// Somehow my name seems to be present in the previous page: this is possibly a redirection.
+							// Note that this case is unlikely to happen as it means that the referrer’s policy enabled to return its full URL, which is considered insecure.
 							var regSubpage = new RegExp ("^.*[Bb]odin[^/]*/(.*)")
 							var matchesSubpage = previousPage.match (regSubpage)
 							if (matchesSubpage && matchesSubpage[1]){
@@ -219,7 +220,7 @@
 			if (betterPage){
 				addErrorMsgKey ("preferableRedirection")
 
-				var redirectLink = document.getElementById ("preferableRedirection_" + getPageLang ())
+				var redirectLink = document.getElementById ("preferableRedirectionLink_" + getPageLang ())
 				if (redirectLink){
 					redirectLink.setAttribute ("href", betterPage)
 				}

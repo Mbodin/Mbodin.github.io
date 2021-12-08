@@ -730,6 +730,7 @@ while (my ($directoryname, $page) = each %allParsedPages){
 				"validCSS3",
 				"wrongLang",
 				"errorInSocial",
+				"preferableRedirection",
 				"spyingSocials",
 				"permanentSocials",
 				"lastUpdate"

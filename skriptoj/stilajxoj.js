@@ -21,10 +21,12 @@ function getPositionTop (obj){
 }
 
 
-var currentTocTimer = 0
+var currentTocState = false;
 
 function tocHover (){
 	var toc = document.getElementById ("toc")
+
+	currentTocState = true
 
 	if (toc != null)
 		toc.setAttribute ("class", "tocHover")
@@ -33,22 +35,26 @@ function tocHover (){
 function tocUnhover (){
 	var toc = document.getElementById ("toc")
 
+	currentTocState = false
+
 	if (toc != null)
 		toc.setAttribute ("class", "toc")
 }
 
-function tocClick (time){
-	tocHover ()
+function tocSwitch (){
+	if (currentTocState) tocUnhover ()
+	else tocHover ()
+}
 
-	clearTimeout (currentTocTimer)
-	currentTocTimer = setTimeout (tocUnhover, time)
+function tocClick (){
+	tocSwitch ()
 }
 
 (function (){
 	var toc = document.getElementById ("toc")
 
 	if (toc){
-		toc.onclick = function (){ tocClick (30000) }
+		toc.onclick = function (){ tocClick () }
 
 		var allLinks = toc.getElementsByTagName ("a")
 

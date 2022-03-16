@@ -523,7 +523,15 @@ li.cleanLink {
 	padding:  0 1em 0 1em ;
 }
 
-.toc a.toc_command:hover, .tocHover a.toc_command:hover, .toc a.toc_command:focus, .tocHover a.toc_command:focus {
+.toc a.toc_command {
+	visibility:  hidden ;
+}
+
+.toc:hover a.toc_command, .tocHover a.toc_command {
+	visibility:  visible ;
+}
+
+a.toc_command:hover, a.toc_command:focus {
 	text-decoration:  underline ;
 	cursor:  pointer ;
 }
@@ -570,12 +578,13 @@ li.cleanLink {
 h2 a.toc_command {
 	font:  small serif ;
 	float:  right ;
-	color:  #eeeeec ;
 	padding:  0 1em 0 1em ;
+	color:  #75507b ;
+	visibility:  hidden ;
 }
 
 h2:hover a.toc_command {
-	color:  #75507b ;
+	visibility:  visible ;
 }
 
 /* TODO:  Split this file to something more readable and modular. */

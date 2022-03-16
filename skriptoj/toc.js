@@ -25,6 +25,7 @@ function createTocCommand (label){
 	var myId = tocCommand + label ;
 	var node = document.createElement ("a")
 	node.setAttribute ("class", "toc_command")
+	node.setAttribute ("role", "button")
 	node.setAttribute ("id", myId)
 
 	applyFunctionOnAll.push (function (f){ f (label, myId) })
@@ -32,7 +33,7 @@ function createTocCommand (label){
 	makeADoNothing (node)
 	node.onclick = function (){ switchStateToc (label, myId) }
 
-    setContentTextNodeToNode ("toc_dismiss", node)
+	setContentTextNodeToNode ("toc_dismiss", node)
 
 	return node
 }
@@ -40,6 +41,7 @@ function createTocCommand (label){
 function createTocCommandAll (hide){
 	var node = document.createElement ("a")
 	node.setAttribute ("class", "toc_command")
+	node.setAttribute ("role", "button")
 
 	makeADoNothing (node)
 	node.onclick = hide ? dismissAll : undismissAll
@@ -47,7 +49,7 @@ function createTocCommandAll (hide){
 	node.setAttribute ("id", "TOC_" + (hide ? "hide" : "show") + "_all")
 	node.style.display = hide ? "inline" : "none"
 
-    setContentTextNodeToNode (hide ? "toc_dismiss_all" : "toc_undismiss_all", node)
+	setContentTextNodeToNode (hide ? "toc_dismiss_all" : "toc_undismiss_all", node)
 
 	return node
 }

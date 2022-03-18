@@ -89,6 +89,24 @@ a:hover, a:active {
 	text-decoration:  underline ;
 }
 
+a.broken:hover, a.broken:active {
+	text-decoration-style:  wavy ;
+}
+
+a.archive:hover {
+	text-decoration-style:  dotted ;
+}
+
+a.archive::before {
+	content:  "[" ;
+	color:  #555753 ;
+}
+
+a.archive::after {
+	content:  "]" ;
+	color:  #555753 ;
+}
+
 .message {
 	margin-left:  auto ;
 	margin-right:  auto ;

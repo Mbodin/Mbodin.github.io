@@ -175,14 +175,15 @@ function switchLanguage (newLang, firstTime){
 
 	iterTab ([
 			"wrongLang",
-            "badJS",
-			"errorInSocial"
+			"badJS",
+			"errorInSocial",
+			"preferableRedirection"
 		], fetchNodesLang)
 
 	iterTab ([
 			"titlePage",
-            "readMore",
-            "hideMessage"
+			"readMore",
+			"hideMessage"
 		], fetchTextLang)
 } ())
 
@@ -201,7 +202,7 @@ function addErrorMsgKey (key, details, lang, toBeCalledAtChange){
                 })
 			if (details)
 				addComment (messagesNode, details)
-            return node
+			return node
 		})
 }
 

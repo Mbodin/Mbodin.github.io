@@ -141,11 +141,14 @@ fr
 	<a href = "https://vtss.doc.ic.ac.uk/teaching/separationlogic.html">Page du module</a>
 link
 en
-	<a href = "https://www.imperial.ac.uk/computing/current-students/courses/404/">Description of the module</a>
+	<a class = "broken" href = "https://www.imperial.ac.uk/computing/current-students/courses/404/">Description of the module</a>
+	<a class = "archive" href = "https://web.archive.org/web/20200624101818/https://www.imperial.ac.uk/computing/current-students/courses/404/">Archive</a>
 eo
-	<a href = "https://www.imperial.ac.uk/computing/current-students/courses/404/">Priskriba paĝo de la kurso</a>
+	<a class = "broken" href = "https://www.imperial.ac.uk/computing/current-students/courses/404/">Priskriba paĝo de la kurso</a>
+	<a class = "archive" href = "https://web.archive.org/web/20200624101818/https://www.imperial.ac.uk/computing/current-students/courses/404/">Arkivita</a>
 fr
-	<a href = "https://www.imperial.ac.uk/computing/current-students/courses/404/">Description du module</a>
+	<a class = "broken" href = "https://www.imperial.ac.uk/computing/current-students/courses/404/">Description du module</a>
+	<a class = "archive" href = "https://web.archive.org/web/20200624101818/https://www.imperial.ac.uk/computing/current-students/courses/404/">Archive</a>
 end
 
 item
@@ -170,11 +173,14 @@ fr
 	<a href = "https://vtss.doc.ic.ac.uk/teaching/ModelsComputation.html">Page du module</a>
 link
 en
-	<a href = "https://www.imperial.ac.uk/computing/current-students/courses/240/">Description of the module</a>
+	<a class = "broken" href = "https://www.imperial.ac.uk/computing/current-students/courses/240/">Description of the module</a>
+	<a class = "archive" href = "https://web.archive.org/web/20190330023400/http://www.imperial.ac.uk/computing/current-students/courses/240/">Archive</a>
 eo
-	<a href = "https://www.imperial.ac.uk/computing/current-students/courses/240/">Priskriba paĝo de la kurso</a>
+	<a class = "broken" href = "https://www.imperial.ac.uk/computing/current-students/courses/240/">Priskriba paĝo de la kurso</a>
+	<a class = "archive" href = "https://web.archive.org/web/20190330023400/http://www.imperial.ac.uk/computing/current-students/courses/240/">Arkivita</a>
 fr
-	<a href = "https://www.imperial.ac.uk/computing/current-students/courses/240/">Description du module</a>
+	<a class = "broken" href = "https://www.imperial.ac.uk/computing/current-students/courses/240/">Description du module</a>
+	<a class = "archive" href = "https://web.archive.org/web/20190330023400/http://www.imperial.ac.uk/computing/current-students/courses/240/">Archive</a>
 end
 
 section
@@ -186,7 +192,7 @@ end
 
 item
 all
-	<a href = "http://www.uchile.cl/"><span class = "name">Universidad de Chile</span></a>, Introducción a <span class = "name">Coq</name>: Lógica, Tipos y Verificación
+	<a href = "http://www.uchile.cl/"><span class = "name">Universidad de Chile</span></a>, Introducción a <span class = "name">Coq</span>: Lógica, Tipos y Verificación
 description
 en
 	Courses and tutorials for M2 students.
@@ -288,11 +294,14 @@ fr
 	<a href = "http://people.irisa.fr/David.Cachera/Enseignement/LF/LF.html">La page de <span class = "name">David Cachera</span> sur ce cours</a>
 link
 en
-	<a href = "https://web.archive.org/web/2016*/http://www.irisa.fr/celtique/jobin/support_fr.html"><span class = "name">Arnaud Jobin</span>’s page (archive)</a>
+	<a class = "broken" href = "http://www.irisa.fr/celtique/jobin/support_fr.html"><span class = "name">Arnaud Jobin</span>’s page</a>
+	<a class = "archive" href = "https://web.archive.org/web/2016*/http://www.irisa.fr/celtique/jobin/support_fr.html">Archive</a>
 eo
-	<a href = "https://web.archive.org/web/2016*/http://www.irisa.fr/celtique/jobin/support_fr.html">Tiu de <span class = "name">Arnaud Jobin</span> (arĥivita)</a>
+	<a class = "broken" href = "https://web.archive.org/web/2016*/http://www.irisa.fr/celtique/jobin/support_fr.html">Tiu de <span class = "name">Arnaud Jobin</span></a>
+	<a class = "archive" href = "https://web.archive.org/web/2016*/http://www.irisa.fr/celtique/jobin/support_fr.html">Arkivita</a>
 fr
-	<a href = "https://web.archive.org/web/2016*/http://www.irisa.fr/celtique/jobin/support_fr.html">Celle d’<span class = "name">Arnaud Jobin</span> (archive)</a>
+	<a class = "broken" href = "https://web.archive.org/web/2016*/http://www.irisa.fr/celtique/jobin/support_fr.html">Celle d’<span class = "name">Arnaud Jobin</span></a>
+	<a class = "archive" href = "https://web.archive.org/web/2016*/http://www.irisa.fr/celtique/jobin/support_fr.html">Archive</a>
 end
 
 item

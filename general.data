@@ -50,6 +50,8 @@ Normale estas valida laŭ <span class = "name">CSS3</span>
 Tiu ĉi paĝo eble ne afiŝas en la ĝusta lingvo:  <a class = "switchLanguage_eo internalLink" href = "#eo">ĉu pliŝatus vi legi ĝin Esperante</a>?
 =errorInSocial
 Ia problemo okazis dum la eko de ies socia skripto…
+=preferableRedirection
+Ŝajnas ke vi estis redirektigita al malĝusta paĝo:  se vi ne trovas kion vi serĉis, eble <a class = "internalLink" href = "#" id = "preferableRedirectionLink_eo">provu tie</a>.
 =spyingSocials
 Sociaj skriptoj estas kodoj el diversaj ne-ĉiel-fidemaj retejoj kaj povas kaŝobservi vin.  Se vi ne fidas ilin, <a onclick = "setPassingArgument ('social', 'no', true)" class = "internalLink" href = "#">alklaku ĉi tie por malaktivigi ilin</a>.
 =permanentSocials
@@ -116,6 +118,8 @@ Should be valid according to <span class = "name">CSS3</span>
 This page may not be displayed in your prefered language:  <a class = "switchLanguage_en internalLink" href = "#en">would you prefer to read it in English</a>?
 =errorInSocial
 An error occured while executing some social scripts…
+=preferableRedirection
+It seems that you were redirected to the wrong page:  if you don’t find what you were looking for here, maybe <a class = "internalLink" href = "#" id = "preferableRedirectionLink_en">try there</a>.
 =spyingSocials
 Social scripts involves third-party sources that can not always be trusted and that can spy you.  If you do not trust them, <a onclick = "setPassingArgument ('social', 'no', true)" class = "internalLink" href = "#">click here to disable them</a>.
 =permanentSocials
@@ -182,6 +186,8 @@ Devrait respecter le <span class = "name">CSS3</span>
 Il est possible que cette page ne s’affiche pas dans votre langue préférée :  <a class = "switchLanguage_fr internalLink" href = "#fr">préférez-vous la lire en Français</a> ?
 =errorInSocial
 Une erreur s’est produite lors de l’exécution de certain scripts sociaux.
+=preferableRedirection
+Il semblerait que vous ayez été redirigé vers la mauvaise page :  si vous ne trouvez pas ce que vous cherchez ici, vous pouvez <a class = "internalLink" href = "#" id = "preferableRedirectionLink_fr">essayer ici</a>.
 =spyingSocials
 Les scripts sociaux nécessitent l’usage de scripts venant de sources tierces à qui l’on ne peut pas toujours faire confiance et qui peuvent vous espionner.  Si vous ne leur faites pas confiance, <a onclick = "setPassingArgument ('social', 'no', true)" class = "internalLink" href = "#">cliquez ici pour les désactiver</a>.
 =permanentSocials

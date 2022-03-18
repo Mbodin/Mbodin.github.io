@@ -47,6 +47,7 @@
 		var pathToRoot = "<tmpl_var name=pathToRoot />"
 		var pathFromRoot = "<tmpl_var name=pathFromRoot />"
 		<tmpl_if name = "isPermanentlyRelocated">
+		// This page has been permanently redirected to <tmpl_var name=permanentRedirectAddress /><tmpl_var name=pathFromRoot /><tmpl_var name=pageName />.html
 		if (window.location.assign)
 			window.location.assign ("<tmpl_var name=permanentRedirectAddress /><tmpl_var name=pathFromRoot /><tmpl_var name=pageName />.html?pedanticJS=no")
 		else window.location.href = "<tmpl_var name=permanentRedirectAddress /><tmpl_var name=pathFromRoot /><tmpl_var name=pageName />.html?pedanticJS=no"
@@ -127,7 +128,7 @@
 			</tmpl_loop>
 			</tmpl_if>
 			<div class="invisible">
-				<!-- See “lingvoj.js” for more details. -->
+				<!-- Messages that we might want to display.  See “lingvoj.js” for more details. -->
 				<tmpl_loop name="allLanguages">
 				<p xml:lang="<tmpl_var name=lang />" lang="<tmpl_var name=lang />" id="readMore_<tmpl_var name=lang />" class="messageButton"><tmpl_var name="readMore" /></p>
 				<p xml:lang="<tmpl_var name=lang />" lang="<tmpl_var name=lang />" id="hideMessage_<tmpl_var name=lang />" class="messageButton"><tmpl_var name="hideMessage" /></p>
@@ -137,6 +138,7 @@
 					<p class="explanation" id="badJSexplain_<tmpl_var name=lang />"><tmpl_var name="badJSexplain" /></p>
 				</div>
 				<p class="message" xml:lang="<tmpl_var name=lang />" lang="<tmpl_var name=lang />" id="errorInSocial_<tmpl_var name=lang />"><tmpl_var name="errorInSocial" /></p>
+				<p class="message" xml:lang="<tmpl_var name=lang />" lang="<tmpl_var name=lang />" id="preferableRedirection_<tmpl_var name=lang />"><tmpl_var name="preferableRedirection" /></p>
 				</tmpl_loop>
 			</div>
 		</aside>
@@ -170,7 +172,8 @@
 				// By 15.3.4.2, “Function.prototype.toString” should returns a string following the syntax of a “FunctionDeclaration” when called on a function object.
 				// In particular, such a string should be parsable (as it is a declaration, we can just run it by “eval”) without trouble.
 				// We do it in a closure for additional safety.
-				// The specification allows to add additional properties not mentionned in it, in particular a different property “toString” to “String” has to be checked.
+				// The specification allows to add additional properties not mentionned in it, in particular a different property “toString” to “String” might be present.
+				// It is thus important to directly the “toString” property of “Function.property” and not of the string itself.
 				try {
 					(function (){
 						eval (Function.prototype.toString.call (String))
@@ -181,13 +184,46 @@
 			}
 			
 			noMorePedanticJS = function (){
-			setPassingArgument ('pedanticJS', 'no')
+					setPassingArgument ('pedanticJS', 'no')
 			
-			removeNode (pedanticJSNode)
+					removeNode (pedanticJSNode)
 			
-			iterLanguages (function (lang){
+					iterLanguages (function (lang){
 					removeNodeId ("badJS_" + lang)
 				})
+			}
+
+			var previousPage = document.referrer
+			var betterPage
+
+			if (previousPage){
+				var regDomain = new RegExp ("^(?:.*:/*)?([^/]*)(.*)")
+				var currentMatches = document.location.href.match (regDomain)
+				var previousMatches = previousPage.match (regDomain)
+
+				if (currentMatches && previousMatches && currentMatches[2] && previousMatches[2]){
+					if (currentMatches[1] !== previousMatches[1]){
+						// The domain has changed.
+						if (/[Bb]odin/.test (previousPage)){
+							// Somehow my name seems to be present in the previous page: this is possibly a redirection.
+							// Note that this case is unlikely to happen as it means that the referrer’s policy enabled to return its full URL, which is considered insecure.
+							var regSubpage = new RegExp ("^.*[Bb]odin[^/]*/(.*)")
+							var matchesSubpage = previousPage.match (regSubpage)
+							if (matchesSubpage && matchesSubpage[1]){
+								betterPage = pathToRoot + "/" + matchesSubpage[1]
+							} else betterPage = pathToRoot
+						}
+					}
+				}
+			}
+
+			if (betterPage){
+				addErrorMsgKey ("preferableRedirection")
+
+				var redirectLink = document.getElementById ("preferableRedirectionLink_" + getPageLang ())
+				if (redirectLink){
+					redirectLink.setAttribute ("href", betterPage)
+				}
 			}
 		}())
 		// @license-end

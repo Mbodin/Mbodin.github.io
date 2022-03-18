@@ -380,11 +380,21 @@ eo
 fr
 link
 en
-    <a href = "http://ajacs.inria.fr/jsexplain/driver.html">Website</a>
+    <a class = "broken" href = "http://ajacs.inria.fr/jsexplain/driver.html">Previous website</a>
+		<a class = "archive" href = "https://web.archive.org/web/20160609214608/https://ajacs.inria.fr/jsexplain/driver.html">Archive</a>
 eo
-    <a href = "http://ajacs.inria.fr/jsexplain/driver.html">Retejo</a>
+    <a class = "broken" href = "http://ajacs.inria.fr/jsexplain/driver.html">Antaŭa retejo</a>
+		<a class = "archive" href = "https://web.archive.org/web/20160609214608/https://ajacs.inria.fr/jsexplain/driver.html">Arkivita</a>
 fr
-    <a href = "http://ajacs.inria.fr/jsexplain/driver.html">Site web</a>
+    <a class = "broken" href = "http://ajacs.inria.fr/jsexplain/driver.html">Site web précédent</a>
+		<a class = "archive" href = "https://web.archive.org/web/20160609214608/https://ajacs.inria.fr/jsexplain/driver.html">Archive</a>
+link
+en
+    <a href = "https://star-explain.gitlabpages.inria.fr/jsexplain">Current website</a>
+eo
+    <a href = "https://star-explain.gitlabpages.inria.fr/jsexplain">Nuntempa retejo</a>
+fr
+    <a href = "https://star-explain.gitlabpages.inria.fr/jsexplain">Site actuel</a>
 link
 en
     <a href = "https://github.com/jscert/jsexplain">Repository</a>
@@ -710,11 +720,14 @@ fr
     <a href = "https://github.com/kframework/javascript-semantics/blob/d5aca308d12d3838c645e1f787e2abc9257ce43e/js-main.k#L3101">Fichier au répertoire du gestionnaire de version</a>
 link
 en
-    <a href = "http://www.kframework.org/imgs/releases/k/include/builtins/map.k">Documentation of <span class = "program">Map</span>s in <span class = "name">K</span></a>
+    <a class = "broken" href = "http://www.kframework.org/imgs/releases/k/include/builtins/map.k">Documentation of <span class = "program">Map</span>s in <span class = "name">K</span></a>
+		<a class = "archive" href = "https://web.archive.org/web/20200920210551/https://kframework.org/imgs/releases/k/include/builtins/map.k">Archive</a>
 eo
-    <a href = "http://www.kframework.org/imgs/releases/k/include/builtins/map.k">Dokumentaro pri la <span class = "program">Map</span> en <span class = "name">K</span></a>
+    <a class = "broken" href = "http://www.kframework.org/imgs/releases/k/include/builtins/map.k">Dokumentaro pri la <span class = "program">Map</span> en <span class = "name">K</span></a>
+		<a class = "archive" href = "https://web.archive.org/web/20200920210551/https://kframework.org/imgs/releases/k/include/builtins/map.k">Arkivita</a>
 fr
-    <a href = "http://www.kframework.org/imgs/releases/k/include/builtins/map.k">Documentation des <span class = "program">Map</span> en <span class = "name">K</span></a>
+    <a class = "broken" href = "http://www.kframework.org/imgs/releases/k/include/builtins/map.k">Documentation des <span class = "program">Map</span> en <span class = "name">K</span></a>
+		<a class = "archive" href = "https://web.archive.org/web/20200920210551/https://kframework.org/imgs/releases/k/include/builtins/map.k">Archive</a>
 end
 
 #####################################################################################################

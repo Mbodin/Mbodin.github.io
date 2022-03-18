@@ -102,7 +102,7 @@ function getURLAttribute (attribute, continuation, defaultValue){
 function getPageName (complete){
 	var url = document.location.href
 
-	var reg = new RegExp (".*/\([^/]*\)\.html")
+	var reg = new RegExp (".*/([^/]*)\\.html")
 	var matches = url.match (reg)
 
   var ret
@@ -111,7 +111,7 @@ function getPageName (complete){
 		ret = matches[1]
 	else ret = "index"
 
-    return ret + (complete ? ".html" : "")
+  return ret + (complete ? ".html" : "")
 }
 
 function getPathFromRoot (){ // TODO:  Do this function by parsing the URL of the current page.
@@ -132,7 +132,7 @@ function correctURL (url){
 function dependingOnCurrentPage (continuation /* : pageName × target × arguments → any */ ){
 	var url = document.location.href
 
-	var reg = new RegExp (".*/([^.]*)\\.html\\??([^#]*)#?([^#]*)")
+	var reg = new RegExp (".*/([^.]*)\\.html\\??([^#]*)#?(.*)")
 	var matches = url.match (reg)
 
 	if (matches && matches[3] !== undefined)

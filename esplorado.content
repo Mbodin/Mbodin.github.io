@@ -960,6 +960,32 @@ end
 
 item
 all
+Séminaire sport-étude de l’ENS Lyon
+description
+en
+	Talk to the students of the <a href = "http://www.ens-lyon.fr/">ENS Lyon</a>.
+eo
+	Prelego al la studentoj de la <a href = "http://www.ens-lyon.fr/">ENS Lyon</a>.
+fr
+	Présentation pour le séminaire sport-étude de l’<a href = "http://www.ens-lyon.fr/">ENS Lyon</a>.
+link
+en
+	<a href = "esplorado/ENSSportEtude22.pdf">Slides</a>
+eo
+	<a href = "esplorado/ENSSportEtude22.pdf">Diapozitivoj</a>
+fr
+	<a href = "esplorado/ENSSportEtude22.pdf">Présentation</a>
+link
+en
+	<a href = "esplorado/ENSSportEtude22.tar.xz">Sources</a>
+eo
+	<a href = "esplorado/ENSSportEtude22.tar.xz">Fontoj</a>
+fr
+	<a href = "esplorado/ENSSportEtude22.tar.xz">Sources</a>
+end
+
+item
+all
 TEJO-Scienco 2021
 description
 en

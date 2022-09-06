@@ -1017,11 +1017,18 @@ fr
 	<a href = "esplorado/MathC2plus.tar.xz">Sources</a>
 link
 en
-	<a href = "https://gitlab.inria.fr/mbodin1/math-coq-tests/-/raw/master/MathC2plus/coq/puissances.v"><span class = "name">Coq</span> file</a>
+	<a href = "https://gitlab.inria.fr/mbodin1/math-coq-tests/-/blob/master/MathC2plus/coq/puissances.v"><span class = "name">Coq</span> file (<span class = "name">Sophie Germain</span>’s numbers)</a>
 eo
-	<a href = "https://gitlab.inria.fr/mbodin1/math-coq-tests/-/raw/master/MathC2plus/coq/puissances.v"><span class = "name">Coq</span>a dosiero</a>
+	<a href = "https://gitlab.inria.fr/mbodin1/math-coq-tests/-/blob/master/MathC2plus/coq/puissances.v"><span class = "name">Coq</span>a dosiero pri la numeroj de <span class = "name">Sophie Germain</span></a>
 fr
-	<a href = "https://gitlab.inria.fr/mbodin1/math-coq-tests/-/raw/master/MathC2plus/coq/puissances.v">Fichier <span class = "name">Coq</span></a>
+	<a href = "https://gitlab.inria.fr/mbodin1/math-coq-tests/-/blob/master/MathC2plus/coq/puissances.v">Fichier <span class = "name">Coq</span> (Nombres de <span class = "name">Sophie Germain</span>)</a>
+link
+en
+	<a href = "https://gitlab.inria.fr/agirault/cours-math-c2-plus/-/blob/main/enfants-coq/enfants.v"><span class = "name">Coq</span> file (five children’s puzzle)</a>
+eo
+	<a href = "https://gitlab.inria.fr/agirault/cours-math-c2-plus/-/blob/main/enfants-coq/enfants.v"><span class = "name">Coq</span>a dosiero pri la enigmo de la kvin infanoj</a>
+fr
+	<a href = "https://gitlab.inria.fr/agirault/cours-math-c2-plus/-/blob/main/enfants-coq/enfants.v">Fichier <span class = "name">Coq</span> (problème des cinq enfants)</a>
 end
 
 item

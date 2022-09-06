@@ -40,13 +40,13 @@ end
 description
 en
 	This page lists my publications.
-	You can also check my <a href = "http://orcid.org/0000-0003-3588-3782">Orcid</a>, <a href = "https://dblp.uni-trier.de/pers/hd/b/Bodin:Martin.html">DPLP</a>, or <a href = "https://scholar.google.fr/citations?user=OoWGEVEAAAAJ&hl=en">Google Scholar</a> profile.
+	You can also check my <a href = "http://orcid.org/0000-0003-3588-3782">Orcid</a>, <a href = "https://dblp.uni-trier.de/pers/hd/b/Bodin:Martin.html">DBLP</a>, or <a href = "https://scholar.google.fr/citations?user=OoWGEVEAAAAJ&hl=en">Google Scholar</a> profile.
 eo
 	Ĉi tiu paĝo listas miajn eldonaĵojn.
-	Vi ankaŭ povas kontroli miajn profilojn ĉe <a href = "http://orcid.org/0000-0003-3588-3782">Orcid</a>, <a href = "https://dblp.uni-trier.de/pers/hd/b/Bodin:Martin.html">DPLP</a>, aŭ <a href = "https://scholar.google.fr/citations?user=OoWGEVEAAAAJ&hl=en">Google Scholar</a>.
+	Vi ankaŭ povas kontroli miajn profilojn ĉe <a href = "http://orcid.org/0000-0003-3588-3782">Orcid</a>, <a href = "https://dblp.uni-trier.de/pers/hd/b/Bodin:Martin.html">DBLP</a>, aŭ <a href = "https://scholar.google.fr/citations?user=OoWGEVEAAAAJ&hl=en">Google Scholar</a>.
 fr
 	Cette page liste mes publications.
-	Vous pouvez aussi consulter mon profil <a href = "http://orcid.org/0000-0003-3588-3782">Orcid</a>, <a href = "https://dblp.uni-trier.de/pers/hd/b/Bodin:Martin.html">DPLP</a>, ou <a href = "https://scholar.google.fr/citations?user=OoWGEVEAAAAJ&hl=fr">Google Scholar</a>.
+	Vous pouvez aussi consulter mon profil <a href = "http://orcid.org/0000-0003-3588-3782">Orcid</a>, <a href = "https://dblp.uni-trier.de/pers/hd/b/Bodin:Martin.html">DBLP</a>, ou <a href = "https://scholar.google.fr/citations?user=OoWGEVEAAAAJ&hl=fr">Google Scholar</a>.
 end
 
 ## Author declarations
@@ -578,6 +578,32 @@ end
 article
 noBib
 conference
+Séminaire de l’IREM
+year
+2022
+name
+Les Assistants de preuve : l’exemple de <span class = "name">Coq</span>
+author
+mbodin
+link
+en
+	<a href = "esplorado/irem22_slides.pdf">Slides</a>
+eo
+	<a href = "esplorado/irem22_slides.pdf">Diapozitivoj</a>
+fr
+	<a href = "esplorado/irem22_slides.pdf">Présentation</a>
+link
+en
+	<a href = "esplorado/irem22_slides.tar.xz">Sources</a>
+eo
+	<a href = "esplorado/irem22_slides.tar.xz">Fontoj</a>
+fr
+	<a href = "esplorado/irem22_slides.tar.xz">Sources</a>
+end
+
+article
+noBib
+conference
 FMfSS
 conferenceLong
 Formal Methods for Statistical Software
@@ -967,7 +993,40 @@ end
 
 item
 all
-Séminaire sport-étude de l’ENS Lyon
+<a href = "http://www.ac-grenoble.fr/maths/?q=fr/content/stage-math-c2-2022-dans-lacad%C3%A9mie-de-grenoble-0">Stage MathC2+</a>
+description
+en
+	Talk to high school students.
+eo
+	Prelego al mezlernejaj studentoj.
+fr
+	Présentation pour des étudiants de lycée.
+link
+en
+	<a href = "esplorado/MathC2plus.pdf">Slides</a>
+eo
+	<a href = "esplorado/MathC2plus.pdf">Diapozitivoj</a>
+fr
+	<a href = "esplorado/MathC2plus.pdf">Présentation</a>
+link
+en
+	<a href = "esplorado/MathC2plus.tar.xz">Sources</a>
+eo
+	<a href = "esplorado/MathC2plus.tar.xz">Fontoj</a>
+fr
+	<a href = "esplorado/MathC2plus.tar.xz">Sources</a>
+link
+en
+	<a href = "https://gitlab.inria.fr/mbodin1/math-coq-tests/-/raw/master/MathC2plus/coq/puissances.v"><span class = "name">Coq</span> file</a>
+eo
+	<a href = "https://gitlab.inria.fr/mbodin1/math-coq-tests/-/raw/master/MathC2plus/coq/puissances.v"><span class = "name">Coq</span>a dosiero</a>
+fr
+	<a href = "https://gitlab.inria.fr/mbodin1/math-coq-tests/-/raw/master/MathC2plus/coq/puissances.v">Fichier <span class = "name">Coq</span></a>
+end
+
+item
+all
+Séminaire sport-étude de l’ENS Lyon 2022
 description
 en
 	Talk to the students of the <a href = "http://www.ens-lyon.fr/">ENS Lyon</a>.

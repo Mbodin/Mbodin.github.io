@@ -136,6 +136,8 @@ en
 		<dd>Researcher at <a href = "https://www.inria.fr/en"><span class = "name">Inria</span></a>, in <span class = "town">Grenoble</span>.</dd>
 		<dt>Team</dt>
 		<dd><a href = "https://team.inria.fr/spades/">Spades</a></dd>
+		<dt>Professionnal address</dt>
+		<dd>Bureau B111, 655 avenue de l’Europe, 38 330 Montbonnot-Saint-Martin, France</dd>
 		<dt>CV</dt>
 		<dd><a href = "rimedoj/cv_en.pdf" rel = "nofollow">Available there</a></dd>
 		<dt>Public keys</dt>
@@ -155,15 +157,18 @@ en
 				<li><a href = "http://en.wikipedia.org/wiki/User:Greatfermat"><span class = "name">Wikipedia</span></a></li>
 				<li><a href = "http://en.wiktionary.org/wiki/User:Greatfermat"><span class = "name">Wiktionary</span></a></li>
 				<li><a href = "https://www.openstreetmap.org/user/Martin%20Constantino%E2%80%93Bodin"><span class = "name">OpenStreetMap</span></a></li>
+				<li><a rel = "me" href = "https://aleph.land/@MartinShadok"><span class = "name">Fediverse</span></a></li>
 			</ul>
 		</dd>
 	</dl>
 eo
 	<dl class = "tableDescription">
-		<dt>Nuna pozicio</dt>
+		<dt>Nuna posteno</dt>
 		<dd>Esploradisto ĉe <a href = "https://inria.fr"><span class = "name">Inria</span></a>, en <span class = "town">Grenoble</span>.</dd>
 		<dt>Skipo</dt>
 		<dd><a href = "https://team.inria.fr/spades/">Spades</a></dd>
+		<dt>Laboradreso</dt>
+		<dd>Bureau B111, 655 avenue de l’Europe, 38 330 Montbonnot-Saint-Martin, Francio</dd>
 		<dt>Vivresumo</dt>
 		<dd><a href = "rimedoj/cv_eo.pdf" rel = "nofollow">Havebla tie ĉi</a></dd>
 		<dt>Publikaj ŝlosiloj</dt>
@@ -183,6 +188,7 @@ eo
 				<li><a href = "http://eo.wikipedia.org/wiki/Uzanto:Greatfermat"><span class = "name">Vikipedio</span></a></li>
 				<li><a href = "http://eo.wiktionary.org/wiki/Uzanto:Greatfermat"><span class = "name">Vikivortaro</span></a></li>
 				<li><a href = "https://www.openstreetmap.org/user/Martin%20Constantino%E2%80%93Bodin"><span class = "name">OpenStreetMap</span></a></li>
+				<li><a rel = "me" href = "https://aleph.land/@MartinShadok"><span class = "name">Fediverso</span></a></li>
 			</ul>
 		</dd>
 	</dl>
@@ -192,6 +198,8 @@ fr
 		<dd>Chargé de recherche à l’<a href = "https://www.inria.fr/fr"><span class = "name">Inria</span></a>, à <span class = "town">Grenoble</span>.</dd>
 		<dt>Équipe</dt>
 		<dd><a href = "https://team.inria.fr/spades/">Spades</a></dd>
+		<dt>Adresse professionnelle</dt>
+		<dd>Bureau B111, 655 avenue de l’Europe, 38 330 Montbonnot-Saint-Martin</dd>
 		<dt>CV</dt>
 		<dd><a href = "rimedoj/cv_fr.pdf" rel = "nofollow">Disponible ici</a></dd>
 		<dt>Clefs publiques</dt>
@@ -211,6 +219,7 @@ fr
 				<li><a href = "http://fr.wikipedia.org/wiki/Utilisateur:Greatfermat"><span class = "name">Wikipédia</span></a></li>
 				<li><a href = "http://fr.wiktionary.org/wiki/Utilisateur:Greatfermat"><span class = "name">Wiktionnaire</span></a></li>
 				<li><a href = "https://www.openstreetmap.org/user/Martin%20Constantino%E2%80%93Bodin"><span class = "name">OpenStreetMap</span></a></li>
+				<li><a rel = "me" href = "https://aleph.land/@MartinShadok"><span class = "name">Fédivers</span></a></li>
 			</ul>
 		</dd>
 	</dl>

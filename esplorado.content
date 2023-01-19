@@ -251,6 +251,8 @@ author
 mbodin
 author
 pgardner
+doi
+10.1007/978-3-030-90870-6_4
 link
 en
 	<a href = "esplorado/fm21.pdf">Full text</a>
@@ -1003,18 +1005,18 @@ fr
 	Présentation pour des étudiants de lycée.
 link
 en
-	<a href = "esplorado/MathC2plus.pdf">Slides</a>
+	<a href = "esplorado/MathC2plus22.pdf">Slides</a>
 eo
-	<a href = "esplorado/MathC2plus.pdf">Diapozitivoj</a>
+	<a href = "esplorado/MathC2plus22.pdf">Diapozitivoj</a>
 fr
-	<a href = "esplorado/MathC2plus.pdf">Présentation</a>
+	<a href = "esplorado/MathC2plus22.pdf">Présentation</a>
 link
 en
-	<a href = "esplorado/MathC2plus.tar.xz">Sources</a>
+	<a href = "esplorado/MathC2plus22.tar.xz">Sources</a>
 eo
-	<a href = "esplorado/MathC2plus.tar.xz">Fontoj</a>
+	<a href = "esplorado/MathC2plus22.tar.xz">Fontoj</a>
 fr
-	<a href = "esplorado/MathC2plus.tar.xz">Sources</a>
+	<a href = "esplorado/MathC2plus22.tar.xz">Sources</a>
 link
 en
 	<a href = "https://gitlab.inria.fr/mbodin1/math-coq-tests/-/blob/master/MathC2plus/coq/puissances.v"><span class = "name">Coq</span> file (<span class = "name">Sophie Germain</span>’s numbers)</a>

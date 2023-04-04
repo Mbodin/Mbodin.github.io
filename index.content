@@ -37,7 +37,7 @@ eo
 	Mi pensas ke formalaj metodoj povas helpi programistojn ekscii kaj eviti tiajn erarojn.
 fr
 	Mes thèmes de recherches se concentrent majoritairement autour de la conception, la formalisation, et les analyses de langages de programmation.
-	Je travaille avec l’<a href = "http://coq.inria.fr">assistant de preuve <span class = "name">Coq</span></a>, qui garantit un haut niveau de confiance aux les programmes que je conçois.
+	Je travaille avec l’<a href = "http://coq.inria.fr">assistant de preuve <span class = "name">Coq</span></a>, qui garantit un haut niveau de confiance aux programmes que je conçois.
 	Je suis particulièrement intéressé par l’application des méthodes formelles aux langages de programmation fréquemment utilisés en industrie.
 	Ces langages ont souvent des comportements spéciaux parfois inattendus, qui peuvent mener à des erreurs de programmation importantes.
 	Je pense que les méthodes formelles peuvent aider les programmeurs à détecter et éviter ces erreurs.
@@ -45,38 +45,29 @@ end
 
 description
 en
-	In my research, I thus formalised widely used programming languages (<a href = "https://github.com/jscert/jscert">JavaScript</a>, <a href = "https://github.com/Mbodin/coqR">R</a>, and <a href = "https://github.com/Imperial-Wasm/wasm-coq-public">WebAssembly</a>).
-	These formalisations (with the exception of WebAssembly) are notably large compared to other formalisations from the field.
-	I thus helped design <a href = "http://skeletons.inria.fr/">skeletons</a>, a formalism to express and derive formally-proven program analyses from such large formalisations.
-	I hope that these projects will help designing practical tools for code-quality control in industry.
+	I currently work with the <a href = "https://irem.univ-grenoble-alpes.fr/"><span class = "name">IREM</span></a> within the <a href = "https://www.inria.fr/en/liberabaci"></span class = "name">LiberAbaci</span></a> project.
+	The goal is to understand how to design mathematics courses including <a href = "http://coq.inria.fr"><span class = "name">Coq</span>-based tutoriels, by working with mathematics teachers, for mathematics students (and not computer sciences’s).
 eo
-	En mia esplorado, mi formaligis multuzitajn programlingvaĵojn (<a href = "https://github.com/jscert/jscert">JavaScript</a>, <a href = "https://github.com/Mbodin/coqR">R</a>, kaj <a href = "https://github.com/Imperial-Wasm/wasm-coq-public">WebAssembly</a>).
-	Tiuj formaligadoj (krom WebAssembly) rimarkiĝas per siaj grandecoj kompare al aliaj formaligoj el la fako.
-	Mi do helpis elkrei la <a href = "http://skeletons.inria.fr/">ostarojn</a>, iu formalaĵo por defini kaj elkrei formalpruvitajn programanalizojn el tiaj grandaj formaligoj.
-	Mi esperas ke tiaj projektoj helpos krei praktikajn ilojn por industrie kontroli kodkvaliton.
+	Mi nuntempe laboras kun la <a href = "https://irem.univ-grenoble-alpes.fr/"><span class = "name">IREM</span></a> pere de la projekto <a href = "https://www.inria.fr/liberabaci"></span class = "name">LiberAbaci</span></a>.
+	La celo de tiu projekto temas pri kompreni kiel krei matematikajn kursojn parte-bazitaj en <a href = "http://coq.inria.fr"><span class = "name">Coq</span>, laborante kun matematikaj instruistoj, kaj celante matematikajn studentojn (kaj ne komputikajn).
 fr
-	Parmi mes travaux, j’ai ainsi formalisé des langages de programmation très utilisés (<a href = "https://github.com/jscert/jscert">JavaScript</a>, <a href = "https://github.com/Mbodin/coqR">R</a>, et <a href = "https://github.com/Imperial-Wasm/wasm-coq-public">WebAssembly</a>).
-	Ces formalisations (à l’exception de WebAssembly) se distinguent des autres formalisations du domaine par leur taille importante.
-	J’ai donc participé à la conception des <a href = "http://skeletons.inria.fr/">squelettes</a>, un formalisme pour exprimer et dériver des analyses de programmes certifiées à partir de telles formalisations.
-	J’ai bon espoir que ces projets permettrons de concevoir des outils de controle de qualité de code pour l’industrie.
+	Je travaille actuellement avec l’<a href = "https://irem.univ-grenoble-alpes.fr/"><span class = "name">IREM</span></a> dans le cadre du projet <a href = "https://www.inria.fr/fr/liberabaci"></span class = "name">LiberAbaci</span></a>.
+	Le projet consiste à comprendre comment concevoir des cours de mathématiques incluant des TPs <a href = "http://coq.inria.fr"><span class = "name">Coq</span>, en partenariat avec des professeurs de mathématiques, le tout dans un cursus mathématique (et non informatique).
 end
 
 description
 en
-	I am currently working on a formalism called <a href = "http://skeletons.inria.fr/">skeletons</a> to represent the semantics of real-world programming languages (JavaScript, R, etc.).
-	This formalism enables to derive with minimal effort a wide range of program analyses certified in the <a href = "http://coq.inria.fr"><span class = "name">Coq</span> proof assistant</a>.
-#
-	I am also working on a <a href = "https://github.com/Imperial-Wasm/wasm-coq-public">formalisation of <span class = "name">WebAssembly</span>/<span class = "name">Wasm</span></a> in <span class = "name">Coq</span>.
+	In my research, I also formalised widely used programming languages (<a href = "https://github.com/jscert/jscert">JavaScript</a>, <a href = "https://github.com/Mbodin/coqR">R</a>, and <a href = "https://github.com/WasmCert/WasmCert-Coq">WebAssembly</a>).
+	These formalisations (with the exception of WebAssembly) are notably large compared to other formalisations from the field.
+	I thus helped design <a href = "http://skeletons.inria.fr/">skeletons</a>, a formalism to express and derive formally-proven program analyses from such large formalisations.
 eo
-	Mi nun laboras pri formalismo (kiu nomiĝas <a href = "http://skeletons.inria.fr/">ostaron</a>) por reprezenti la semantikon de vervivaj programlingvaĵoj (Javaskripto, R, ktp.).
-	Ĉi tiu formalismo permesigas dedukti granddiversajn programanalizojn pruvitajn en la <a href = "http://coq.inria.fr"><span class = "name">Coq</span> pruvilo</a>.
-#
-	Mi ankaŭ laboras pri <a href = "https://github.com/Imperial-Wasm/wasm-coq-public">formaligado de <span class = "name">WebAssembly</span>/<span class = "name">Wasm</span></a> en <span class = "name">Coq</span>.
+	En mia esplorado, mi formaligis multuzitajn programlingvaĵojn (<a href = "https://github.com/jscert/jscert">JavaScript</a>, <a href = "https://github.com/Mbodin/coqR">R</a>, kaj <a href = "https://github.com/WasmCert/WasmCert-Coq">WebAssembly</a>).
+	Tiuj formaligadoj (krom WebAssembly) rimarkiĝas per siaj grandecoj kompare al aliaj formaligoj el la fako.
+	Mi do helpis elkrei la <a href = "http://skeletons.inria.fr/">ostarojn</a>, kiu estas formalaĵo por defini kaj elkrei formalpruvitajn programanalizojn el tiaj grandaj formaligoj.
 fr
-	Je travaille actuellement sur un formalisme, <a href = "http://skeletons.inria.fr/">les squelettes</a>, représentant la sémantique de langages de programmation complexes (JavaScript, R, etc.).
-	Ce formalisme permet de déduire avec un effort minimal toute une gamme d’analyses de programmes certifiées dans l’<a href = "http://coq.inria.fr">assistant de preuve <span class = "name">Coq</span></a>.
-#
-	Je travaille aussi sur une <a href = "https://github.com/Imperial-Wasm/wasm-coq-public">formalisation de <span class = "name">WebAssembly</span>/<span class = "name">Wasm</span></a> en <span class = "name">Coq</span>.
+	Parmi mes travaux, j’ai aussi formalisé des langages de programmation très utilisés (<a href = "https://github.com/jscert/jscert">JavaScript</a>, <a href = "https://github.com/Mbodin/coqR">R</a>, et <a href = "https://github.com/WasmCert/WasmCert-Coq">WebAssembly</a>).
+	Ces formalisations (à l’exception de WebAssembly) se distinguent des autres formalisations du domaine par leur taille importante.
+	J’ai donc participé à la conception des <a href = "http://skeletons.inria.fr/">squelettes</a>, un formalisme pour exprimer et dériver des analyses de programmes certifiées à partir de telles formalisations.
 end
 
 description

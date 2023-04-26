@@ -953,7 +953,7 @@ while (my ($directoryname, $page) = each %allParsedPages){
 				if ($item{$conferenceLongID} eq ""){
 					$bibtext .= "\tbooktitle = {" . $item{$conferenceID} =~ s/<[^>]*>//gr . "},\n";
 				} else {
-					$bibtext .= "\tbooktitle = {" . $item{$conferenceLongID} =~ s/<[^>]*>//gr . "},\n";
+					$bibtext .= "\tbooktitle = {" . $item{$conferenceLongID} =~ s/<[^>]*>//gr . " (" . $item{$conferenceID} =~ s/<[^>]*>//gr . ")},\n";
 				}
 				if ($item{$doiID} ne ""){
 					$bibtext .= "\tdoi = {" . $item{$doiID} =~ s/<[^>]*>//gr . "},\n";
@@ -1026,7 +1026,7 @@ while (my ($directoryname, $page) = each %allParsedPages){
 					$$description{$lang} .= ", ";
 					$$description{$lang} .= "<span class = \"journal\">";
 					if ($item{$conferenceLongID} ne ""){
-						$$description{$lang} .= $item{$conferenceLongID} . " (" . $item{$conferenceID} . ")";
+						$$description{$lang} .= $item{$conferenceLongID};
 					} else {
 						$$description{$lang} .= $item{$conferenceID};
 					}

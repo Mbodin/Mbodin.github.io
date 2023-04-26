@@ -122,6 +122,16 @@ https://dblp.org/pers/n/Naudziuniene:Daiva.html
 end
 
 declareAuthor
+ebeffara
+firstName
+Emmanuel
+familyName
+Beffara
+directLink
+https://lig-membres.imag.fr/beffarae/
+end
+
+declareAuthor
 etanter
 firstName
 Éric
@@ -139,6 +149,16 @@ familyName
 Smith
 directLink
 http://www.totherme.org/
+end
+
+declareAuthor
+jabousamra
+firstName
+Jean
+familyName
+About Samra
+directLink
+https://jean.abou-samra.fr/
 end
 
 declareAuthor
@@ -172,6 +192,16 @@ index
 end
 
 declareAuthor
+nmandran
+firstName
+Nadine
+familyName
+Mandran
+directLink
+https://thedre.imag.fr/?page_id=807
+end
+
+declareAuthor
 pgardner
 firstName
 Philippa
@@ -179,6 +209,16 @@ familyName
 Gardner
 directLink
 https://www.doc.ic.ac.uk/~pg/
+end
+
+declareAuthor
+rmolinier
+firstName
+Rémi
+familyName
+Molinier
+directLink
+https://www-fourier.ujf-grenoble.fr/~molinier/
 end
 
 declareAuthor
@@ -206,7 +246,7 @@ Thomas
 familyName
 Jensen
 directLink
-http://www.irisa.fr/celtique/jensen/
+https://people.rennes.inria.fr/Thomas.Jensen/
 end
 
 declareAuthor
@@ -217,6 +257,16 @@ familyName
 Rao
 directLink
 https://vtss.doc.ic.ac.uk/people/rao.html
+end
+
+declareAuthor
+yzakowski
+firstName
+Yannick
+familyName
+Zakowski
+directLink
+https://perso.ens-lyon.fr/yannick.zakowski/
 end
 
 ## Sections
@@ -578,6 +628,70 @@ Colloques
 end
 
 article
+conference
+EIAH
+conferenceLong
+Conférence sur les Environnements Informatiques pour l'Apprentissage Humain
+year
+2023
+name
+Instrumentation de l’association de registres sémiotiques dans un assistant de preuve
+author
+ebeffara
+author
+mbodin
+author
+nmandran
+author
+rmolinier
+link
+en
+	<a href = "esplorado/eiah23.pdf">Full text</a>
+eo
+	<a href = "esplorado/eiah23.pdf">Artikolo</a>
+fr
+	<a href = "esplorado/eiah23.pdf">Article</a>
+link
+en
+	<a href = "esplorado/eiah23.tar.xz">Paper sources</a>
+eo
+	<a href = "esplorado/eiah23.tar.xz">Artikolfontoj</a>
+fr
+	<a href = "esplorado/eiah23.tar.xz">Sources de l’article</a>
+end
+
+article
+conference
+JFLA
+conferenceLong
+Journées Francophones des Langages Applicatifs
+year
+2023
+name
+Effectful Programming across Heterogeneous Computations — Work in Progress
+author
+jabousamra
+author
+mbodin
+author
+yzakowski
+link
+en
+	<a href = "esplorado/jfla23.pdf">Full text</a>
+eo
+	<a href = "esplorado/jfla23.pdf">Artikolo</a>
+fr
+	<a href = "esplorado/jfla23.pdf">Article</a>
+link
+en
+	<a href = "esplorado/jfla23.tar.xz">Paper sources</a>
+eo
+	<a href = "esplorado/jfla23.tar.xz">Artikolfontoj</a>
+fr
+	<a href = "esplorado/jfla23.tar.xz">Sources de l’article</a>
+end
+
+article
 noBib
 conference
 Séminaire de l’IREM
@@ -601,6 +715,38 @@ eo
 	<a href = "esplorado/irem22_slides.tar.xz">Fontoj</a>
 fr
 	<a href = "esplorado/irem22_slides.tar.xz">Sources</a>
+end
+
+article
+noBib
+conference
+Verified Software Workshop
+year
+2019
+name
+Poster: Skeletal Semantics
+author
+mbodin
+author
+pgardner
+author
+tjensen
+author
+aschmitt
+link
+en
+	<a href = "esplorado/Verified-Software-Workshop-2019.pdf">Poster</a>
+eo
+	<a href = "esplorado/Verified-Software-Workshop-2019.pdf">Afiŝo</a>
+fr
+	<a href = "esplorado/Verified-Software-Workshop-2019.pdf">Poster</a>
+link
+en
+	<a href = "esplorado/Verified-Software-Workshop-2019.tar.bz2">Sources</a>
+eo
+	<a href = "esplorado/Verified-Software-Workshop-2019.tar.bz2">Fontoj</a>
+fr
+	<a href = "esplorado/Verified-Software-Workshop-2019.tar.bz2">Sources</a>
 end
 
 article
@@ -1176,31 +1322,5 @@ eo
 	<a href = "https://video.liberta.vip/video-channels/martinshadok_eo/videos">Kanalligilo</a>
 fr
 	<a href = "https://video.liberta.vip/video-channels/martinshadok_eo/videos">Lien vers la chaîne</a>
-end
-
-item
-all
-Verified Software Workshop 2019
-description
-en
-    Poster for the <a href = "https://vetss.org.uk/vetss-verified-software-workshop-24th-25th-september-2019/">Verified Software Workshop</a>, 2019.
-eo
-    Afiŝprelego por la <a href = "https://vetss.org.uk/vetss-verified-software-workshop-24th-25th-september-2019/">Verified Software Workshop</a> en 2019.
-fr
-    Poster pour le <a href = "https://vetss.org.uk/vetss-verified-software-workshop-24th-25th-september-2019/">Verified Software Workshop</a> de 2019.
-link
-en
-	<a href = "esplorado/Verified-Software-Workshop-2019.pdf">Poster</a>
-eo
-	<a href = "esplorado/Verified-Software-Workshop-2019.pdf">Afiŝo</a>
-fr
-	<a href = "esplorado/Verified-Software-Workshop-2019.pdf">Poster</a>
-link
-en
-	<a href = "esplorado/Verified-Software-Workshop-2019.tar.bz2">Sources</a>
-eo
-	<a href = "esplorado/Verified-Software-Workshop-2019.tar.bz2">Fontoj</a>
-fr
-	<a href = "esplorado/Verified-Software-Workshop-2019.tar.bz2">Sources</a>
 end
 

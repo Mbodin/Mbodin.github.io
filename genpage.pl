@@ -947,8 +947,24 @@ while (my ($directoryname, $page) = each %allParsedPages){
 
 				my $name = $item{$conferenceID} . " " . $item{$yearID};
 
+				my $nameBibtex = "";
+				if (scalar $authors != 0){
+					$nameBibtex = $$authors[0]{$familyNameID} . "-";
+				}
+
+				$nameBibtex .= $item{$yearID} . "-";
+
+				my $firstWord = $item{$nameID} =~ s/<[^>]*>//gr; # Removing HTML tags.
+				# Then getting the first long word.
+				if ($firstWord =~ /^(\w{0,3}\W)*(\w{4,}).*/g){ $firstWord = $2; }
+				else {
+					if ($firstWord =~ /^(\w?\W)*(\w{2,}).*/g){ $firstWord = $2; }
+					else { $firstWord = $firstWord =~ s/^\W*(\w+).*/$1/g; }
+				}
+				$nameBibtex .= $firstWord =~ s/[^a-zA-Z]//gr;
+
 				my $bibtext = "@" . "inproceedings{";
-				$bibtext .= $name =~ s/[  ]/_/gr =~ s/<[^>]*>//gr . ",\n";
+				$bibtext .= $nameBibtex =~ s/[  ]/_/gr =~ s/<[^>]*>//gr . ",\n";
 				$bibtext .= "\ttitle = {" . $item{$nameID} =~ s/<[^>]*>//gr . "},\n";
 				if ($item{$conferenceLongID} eq ""){
 					$bibtext .= "\tbooktitle = {" . $item{$conferenceID} =~ s/<[^>]*>//gr . "},\n";

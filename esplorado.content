@@ -1148,6 +1148,25 @@ end
 
 item
 all
+	Jeux des piles, Groupe <a href = "https://irem.univ-grenoble-alpes.fr/recherche-action/raisonnement-logique-situations-de-recherche-pour-la-classe/">SiRC</a> de l'<a href = "https://irem.univ-grenoble-alpes.fr">IREM de Grenoble</a>
+description
+en
+	Research situation within classes studied with <a href = "https://irem.univ-grenoble-alpes.fr">IREM</a>'s group.
+eo
+	Situacio de esplorado en klasoj studita en la grupo de la <a href = "https://irem.univ-grenoble-alpes.fr">IREM</a>.
+fr
+	Situation de recherche en classe travaillée dans le groupe de l'<a href = "https://irem.univ-grenoble-alpes.fr">IREM</a>.
+link
+en
+	<a href = "https://irem.univ-grenoble-alpes.fr/medias/fichier/main-final_1707766624705-pdf">Article</a>
+fr
+	<a href = "https://irem.univ-grenoble-alpes.fr/medias/fichier/main-final_1707766624705-pdf">Article</a>
+eo
+	<a href = "https://irem.univ-grenoble-alpes.fr/medias/fichier/main-final_1707766624705-pdf">Artikolo</a>
+end
+
+item
+all
 <a href = "http://www.ac-grenoble.fr/maths/?q=fr/content/stage-math-c2-2022-dans-lacad%C3%A9mie-de-grenoble-0">Stage MathC2+</a>
 description
 en

@@ -22,6 +22,18 @@ fr
 	Je suis membre de l’équipe <a href = "https://team.inria.fr/spades/"><span class = "name">Spades</span></a>, à <span class = "town">Grenoble</span>, à l’<a href = "https://www.inria.fr/"><span class = "name">Inria</span></a>.
 end
 
+description
+en
+	I currently work with the <a href = "https://irem.univ-grenoble-alpes.fr/"><span class = "name">IREM</span></a> within the <a href = "https://www.inria.fr/en/liberabaci"></span class = "name">LiberAbaci</span></a> project.
+	The goal is to understand how to design mathematics courses including <a href = "http://coq.inria.fr"><span class = "name">Coq</span>-based tutoriels, by working with mathematics teachers, for mathematics students (and not computer sciences’s).
+eo
+	Mi nuntempe laboras kun la <a href = "https://irem.univ-grenoble-alpes.fr/"><span class = "name">IREM</span></a> pere de la projekto <a href = "https://www.inria.fr/liberabaci"></span class = "name">LiberAbaci</span></a>.
+	La celo de tiu projekto temas pri kompreni kiel krei matematikajn kursojn parte-bazitaj en <a href = "http://coq.inria.fr"><span class = "name">Coq</span>, laborante kun matematikaj instruistoj, kaj celante matematikajn studentojn (kaj ne komputikajn).
+fr
+	Je travaille actuellement avec l’<a href = "https://irem.univ-grenoble-alpes.fr/"><span class = "name">IREM</span></a> dans le cadre du projet <a href = "https://www.inria.fr/fr/liberabaci"></span class = "name">LiberAbaci</span></a>.
+	Le projet consiste à comprendre comment concevoir des cours de mathématiques incluant des TPs <a href = "http://coq.inria.fr"><span class = "name">Coq</span>, en partenariat avec des professeurs de mathématiques, le tout dans un cursus mathématique (et non informatique).
+end
+
 #description
 #en
 #	I have been part of <a href = "http://jscert.org">the <span class = "name">JSCert</span></a> and <a href = "http://www.seccloud.cominlabs.ueb.eu">the <span class = "name">SecCloud</span></a> projects.
@@ -625,6 +637,42 @@ eo
 Babilkongresoj
 fr
 Colloques
+end
+
+article
+conference
+Adjectif
+conferenceLong
+Adjectif : analyses et recherches sur les TICE
+year
+2024
+name
+Un jeu de plateau pour comprendre la dualité en logique
+author
+ebeffara
+author
+mbodin
+link
+en
+	<a href = "esplorado/didapro24.pdf">Full text</a>
+eo
+	<a href = "esplorado/didapro24.pdf">Artikolo</a>
+fr
+	<a href = "esplorado/didapro24.pdf">Article</a>
+link
+en
+	<a href = "https://gitlab.inria.fr/mbodin1/logique-jeu/">Repository</a>
+eo
+	<a href = "https://gitlab.inria.fr/mbodin1/logique-jeu/">Dosierujo</a>
+fr
+	<a href = "https://gitlab.inria.fr/mbodin1/logique-jeu/">Répertoire</a>
+link
+en
+	<a href = "https://mbodin1.gitlabpages.inria.fr/logique-jeu/">Map generator</a>
+eo
+	<a href = "https://mbodin1.gitlabpages.inria.fr/logique-jeu/">Mapkreilo</a>
+fr
+	<a href = "https://mbodin1.gitlabpages.inria.fr/logique-jeu/">Générateur de cartes</a>
 end
 
 article

@@ -25,19 +25,19 @@ end
 description
 en
 	My research interests are mainly around programming languages design, formalisations, and analyses.
-	I work with the <a href = "http://coq.inria.fr"><span class = "name">Coq</span> proof assistant</a>, which provides strong guarantees to the softwares I build.
+	I work with the <a href = "http://coq.inria.fr"><span class = "name">Coq/Rocq</span> proof assistant</a>, which provides strong guarantees to the softwares I build.
 	I am especially interested in applying formal methods to real-world programming languages.
 	Such languages usually come with many special (possibly unexpected) behaviours, which can lead to serious programming mistakes.
 	I believe that formal methods can help programmers detect and avoid these mistakes.
 eo
 	Mia esploradinteresoj ĉefe fokusiĝas pri programlingvaĵaj elkreoj, formalizigoj, kaj analizoj.
-	Mi laboras kun la <a href = "http://coq.inria.fr"><span class = "name">Coq</span> pruvilo</a>, kiu alte fidigas la programaĵojn kiujn mi kreas.
+	Mi laboras kun la <a href = "http://coq.inria.fr"><span class = "name">Coq/Rocq</span> pruvilo</a>, kiu alte fidigas la programaĵojn kiujn mi kreas.
 	Mi specife interesiĝas pri apliki formalajn metodojn al industrie uzitajn programlingvaĵojn.
 	Tiaj lingvaĵojn elmontremas specialajn (kaj kelkfoje neatenditajn) komportamentojn, kiuj povas konduki al gravaj programeraroj.
 	Mi pensas ke formalaj metodoj povas helpi programistojn ekscii kaj eviti tiajn erarojn.
 fr
 	Mes thèmes de recherches se concentrent majoritairement autour de la conception, la formalisation, et les analyses de langages de programmation.
-	Je travaille avec l’<a href = "http://coq.inria.fr">assistant de preuve <span class = "name">Coq</span></a>, qui garantit un haut niveau de confiance aux programmes que je conçois.
+	Je travaille avec l’<a href = "http://coq.inria.fr">assistant de preuve <span class = "name">Coq/Rocq</span></a>, qui garantit un haut niveau de confiance aux programmes que je conçois.
 	Je suis particulièrement intéressé par l’application des méthodes formelles aux langages de programmation fréquemment utilisés en industrie.
 	Ces langages ont souvent des comportements spéciaux parfois inattendus, qui peuvent mener à des erreurs de programmation importantes.
 	Je pense que les méthodes formelles peuvent aider les programmeurs à détecter et éviter ces erreurs.
@@ -46,13 +46,13 @@ end
 description
 en
 	I currently work with the <a href = "https://irem.univ-grenoble-alpes.fr/"><span class = "name">IREM</span></a> within the <a href = "https://www.inria.fr/en/liberabaci"></span class = "name">LiberAbaci</span></a> project.
-	The goal is to understand how to design mathematics courses including <a href = "http://coq.inria.fr"><span class = "name">Coq</span>-based tutoriels, by working with mathematics teachers, for mathematics students (and not computer sciences’s).
+	The goal is to understand how to design mathematics courses including <a href = "http://coq.inria.fr"><span class = "name">Coq/Rocq</span>-based tutoriels, by working with mathematics teachers, for mathematics students (and not computer sciences’s).
 eo
 	Mi nuntempe laboras kun la <a href = "https://irem.univ-grenoble-alpes.fr/"><span class = "name">IREM</span></a> pere de la projekto <a href = "https://www.inria.fr/liberabaci"></span class = "name">LiberAbaci</span></a>.
-	La celo de tiu projekto temas pri kompreni kiel krei matematikajn kursojn parte-bazitaj en <a href = "http://coq.inria.fr"><span class = "name">Coq</span>, laborante kun matematikaj instruistoj, kaj celante matematikajn studentojn (kaj ne komputikajn).
+	La celo de tiu projekto temas pri kompreni kiel krei matematikajn kursojn parte-bazitaj en <a href = "http://coq.inria.fr"><span class = "name">Coq/Rocq</span>, laborante kun matematikaj instruistoj, kaj celante matematikajn studentojn (kaj ne komputikajn).
 fr
 	Je travaille actuellement avec l’<a href = "https://irem.univ-grenoble-alpes.fr/"><span class = "name">IREM</span></a> dans le cadre du projet <a href = "https://www.inria.fr/fr/liberabaci"></span class = "name">LiberAbaci</span></a>.
-	Le projet consiste à comprendre comment concevoir des cours de mathématiques incluant des TPs <a href = "http://coq.inria.fr"><span class = "name">Coq</span>, en partenariat avec des professeurs de mathématiques, le tout dans un cursus mathématique (et non informatique).
+	Le projet consiste à comprendre comment concevoir des cours de mathématiques incluant des TPs <a href = "http://coq.inria.fr"><span class = "name">Coq/Rocq</span>, en partenariat avec des professeurs de mathématiques, le tout dans un cursus mathématique (et non informatique).
 end
 
 description
@@ -87,28 +87,28 @@ end
 
 description
 en
-	I did a postdoc in the <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, in <span class = "name">Santiago de Chile</span>, where I formalised the <a href = "https://www.r-project.org/"><span class = "name">R</span></a> programming language in <span class = "name">Coq</span>.
+	I did a postdoc in the <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, in <span class = "name">Santiago de Chile</span>, where I formalised the <a href = "https://www.r-project.org/"><span class = "name">R</span></a> programming language in <span class = "name">Coq/Rocq</span>.
 	The formalisation is available <a href = "https://github.com/Mbodin/CoqR">online</a>.
 eo
 	Mi postdoktoriĝis ĉe la <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, en <span class = "name">Santiago</span>, en <span class = "name">Ĉilio</span>.
-	Mi tiam formaligis la programlingvaĵon <a href = "https://www.r-project.org/"><span class = "name">R</span></a> en <span class = "name">Coq</span>.
+	Mi tiam formaligis la programlingvaĵon <a href = "https://www.r-project.org/"><span class = "name">R</span></a> en <span class = "name">Coq/Rocq</span>.
 	La formaligado disponeblas <a href = "https://github.com/Mbodin/CoqR">rete</a>.
 fr
 	J’ai fait un post-doc au <a href = "http://www.cmm.uchile.cl/"><span class = "name">CMM</span></a>, à <span class = "name">Santiago</span>, au <span class = "name">Chili</span>.
-	J’y ai formalisé le langage de programmation <a href = "https://www.r-project.org/"><span class = "name">R</span></a> en <span class = "name">Coq</span>.
+	J’y ai formalisé le langage de programmation <a href = "https://www.r-project.org/"><span class = "name">R</span></a> en <span class = "name">Coq/Rocq</span>.
 	La formalisation est disponible <a href = "https://github.com/Mbodin/CoqR">en ligne</a>.
 end
 
 description
 en
 	I then did a postdoc at the <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, in <span class = "town">London</span>, in the <a href = "https://vtss.doc.ic.ac.uk/">Verified Trustworthy Software Specification</a> research group.
-	It led to two <span class = "name">Coq</span> formalisations: <a href = "https://gitlab.inria.fr/skeletons/Coq/tree/POPL2019">skeletal semantics</a>, and <a href = "https://github.com/WasmCert/WasmCert-Coq">WebAssembly</a>.
+	It led to two <span class = "name">Coq/Rocq</span> formalisations: <a href = "https://gitlab.inria.fr/skeletons/Coq/tree/POPL2019">skeletal semantics</a>, and <a href = "https://github.com/WasmCert/WasmCert-Coq">WebAssembly</a>.
 eo
 	Mi poste postdoktoriĝis ĉe <a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, en <span class = "town">Londono</span>, je la esplorada grupo <a href = "https://vtss.doc.ic.ac.uk/">Verified Trustworthy Software Specification</a>.
-	Ĝi alkondukis al du <span class = "name">Coq</span>aj formaligaĵoj: pri <a href = "https://gitlab.inria.fr/skeletons/Coq/tree/POPL2019">ostaraj semantikoj</a>, kaj <a href = "https://github.com/WasmCert/WasmCert-Coq">WebAssembly</a>.
+	Ĝi alkondukis al du <span class = "name">Coq/Rocq</span>aj formaligaĵoj: pri <a href = "https://gitlab.inria.fr/skeletons/Coq/tree/POPL2019">ostaraj semantikoj</a>, kaj <a href = "https://github.com/WasmCert/WasmCert-Coq">WebAssembly</a>.
 fr
 	J’ai ensuite été post-doctorant à l’<a href = "https://www.imperial.ac.uk/"><span class = "name">Imperial College</span></a>, à <span class = "town">Londres</span>, dans le groupe de recherche <a href = "https://vtss.doc.ic.ac.uk/">Verified Trustworthy Software Specification</a>.
-	Ce post-doc a conduit à deux formalisations <span class = "name">Coq</span>: une sur les <a href = "https://gitlab.inria.fr/skeletons/Coq/tree/POPL2019">sémantiques squelettiques</a>, et une sur <a href = "https://github.com/WasmCert/WasmCert-Coq">WebAssembly</a>.
+	Ce post-doc a conduit à deux formalisations <span class = "name">Coq/Rocq</span>: une sur les <a href = "https://gitlab.inria.fr/skeletons/Coq/tree/POPL2019">sémantiques squelettiques</a>, et une sur <a href = "https://github.com/WasmCert/WasmCert-Coq">WebAssembly</a>.
 end
 
 description

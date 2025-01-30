@@ -27,6 +27,51 @@ end
 
 section
 sectionName
+2022_2025
+all
+	2022–2025
+end
+
+item
+all
+	<a href = "https://www.grenoble-inp.fr/"><span class = "name">Imag</span></a>, Modèles de calculs
+description
+en
+	Tutorials for L3 students.
+eo
+	Ekzercaro por L3 lernantoj.
+fr
+	TD pour des étudiants de L3.
+link
+en
+	<a href = "https://team.inria.fr/spades/mcal-lc/">Course material</a>
+eo
+	<a href = "https://team.inria.fr/spades/mcal-lc/">Kursmaterialo</a>
+fr
+	<a href = "https://team.inria.fr/spades/mcal-lc/">Matériel de cours</a>
+end
+
+item
+all
+	<a href = "https://polytech.grenoble-inp.fr/"><span class = "name">Polytech</span></a>, Langages et Traducteurs, Programmation Fonctionnelle
+description
+en
+	Tutorials for M1 students.
+eo
+	Ekzercaro por M1 lernantoj.
+fr
+	TD pour des étudiants de M1.
+link
+en
+	<a href = "https://ltpf.gricad-pages.univ-grenoble-alpes.fr/">Course material</a>
+eo
+	<a href = "https://ltpf.gricad-pages.univ-grenoble-alpes.fr/">Kursmaterialo</a>
+fr
+	<a href = "https://ltpf.gricad-pages.univ-grenoble-alpes.fr/">Matériel de cours</a>
+end
+
+section
+sectionName
 2021
 all
 	2021

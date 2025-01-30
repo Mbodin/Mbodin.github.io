@@ -25,27 +25,27 @@ end
 description
 en
 	I currently work with the <a href = "https://irem.univ-grenoble-alpes.fr/"><span class = "name">IREMI</span></a> within the <a href = "https://www.inria.fr/en/liberabaci"></span class = "name">LiberAbaci</span></a> project.
-	The goal is to understand how to design mathematics courses including <a href = "http://coq.inria.fr"><span class = "name">Coq</span>-based tutoriels, by working with mathematics teachers, for mathematics students (and not computer sciences’s).
+	The goal is to understand how to design mathematics courses including <a href = "http://coq.inria.fr"><span class = "name">Coq/Rocq</span>-based tutoriels, by working with mathematics teachers, for mathematics students (and not computer sciences’s).
 eo
 	Mi nuntempe laboras kun la <a href = "https://irem.univ-grenoble-alpes.fr/"><span class = "name">IREMI</span></a> pere de la projekto <a href = "https://www.inria.fr/liberabaci"></span class = "name">LiberAbaci</span></a>.
-	La celo de tiu projekto temas pri kompreni kiel krei matematikajn kursojn parte-bazitaj en <a href = "http://coq.inria.fr"><span class = "name">Coq</span>, laborante kun matematikaj instruistoj, kaj celante matematikajn studentojn (kaj ne komputikajn).
+	La celo de tiu projekto temas pri kompreni kiel krei matematikajn kursojn parte-bazitaj en <a href = "http://coq.inria.fr"><span class = "name">Coq/Rocq</span>, laborante kun matematikaj instruistoj, kaj celante matematikajn studentojn (kaj ne komputikajn).
 fr
 	Je travaille actuellement avec l’<a href = "https://irem.univ-grenoble-alpes.fr/"><span class = "name">IREMI</span></a> dans le cadre du projet <a href = "https://www.inria.fr/fr/liberabaci"></span class = "name">LiberAbaci</span></a>.
-	Le projet consiste à comprendre comment concevoir des cours de mathématiques incluant des TPs <a href = "http://coq.inria.fr"><span class = "name">Coq</span>, en partenariat avec des professeurs de mathématiques, le tout dans un cursus mathématique (et non informatique).
+	Le projet consiste à comprendre comment concevoir des cours de mathématiques incluant des TPs <a href = "http://coq.inria.fr"><span class = "name">Coq/Rocq</span>, en partenariat avec des professeurs de mathématiques, le tout dans un cursus mathématique (et non informatique).
 end
 
 #description
 #en
 #	I have been part of <a href = "http://jscert.org">the <span class = "name">JSCert</span></a> and <a href = "http://www.seccloud.cominlabs.ueb.eu">the <span class = "name">SecCloud</span></a> projects.
-#	The <a href = "http://jscert.org">the <span class = "name">JSCert</span> project</a> aims to build models of <span class = "name">JavaScript</span> in <a href = "http://coq.inria.fr">the <span class = "name">Coq</span> proof assistant</a> and to design automated tools based on those semantics.
+#	The <a href = "http://jscert.org">the <span class = "name">JSCert</span> project</a> aims to build models of <span class = "name">JavaScript</span> in <a href = "http://coq.inria.fr">the <span class = "name">Coq/Rocq</span> proof assistant</a> and to design automated tools based on those semantics.
 #	The <a href = "http://seccloud.cominlabs.ueb.eu">the <span class = "name">SecCloud</span> project</a> aims to provide a comprehensive language-based approach to the definition, analysis and implementation of secure applications developed using <span class = "name">JavaScript</span> and similar languages.
 #eo
 #	Mi estis partoprenanto de la projektoj <a href = "http://jscert.org"><span class = "name">JSCert</span></a> kaj <a href = "http://www.seccloud.cominlabs.ueb.eu"><span class = "name">SecCloud</span></a>.
-#	La <a href = "http://jscert.org">projekto <span class = "name">JSCert</span></a> celas al konstrui modelojn de <span class = "name">Javaskripto</span> en <a href = "http://coq.inria.fr">la pruvhelpilo <span class = "name">Coq</span></a> kaj konstrui aŭtomatajn ilojn purvatajn per tiuj semantikoj.
+#	La <a href = "http://jscert.org">projekto <span class = "name">JSCert</span></a> celas al konstrui modelojn de <span class = "name">Javaskripto</span> en <a href = "http://coq.inria.fr">la pruvhelpilo <span class = "name">Coq/Rocq</span></a> kaj konstrui aŭtomatajn ilojn purvatajn per tiuj semantikoj.
 #	La <a href = "http://seccloud.cominlabs.ueb.eu">projekto <span class = "name">SecCloud</span></a> celas ellabori lingvaĵbazajn laborgvidojn por la difino, analizo kaj realigo de sekuraj programaĵoj ellaboritaj per <span class = "name">Javaskripto</span> aŭ similaj lingvaĵoj.
 #fr
 #	J’ai fait partie des projets <a href = "http://jscert.org"><span class = "name">JSCert</span></a> et <a href = "http://www.seccloud.cominlabs.ueb.eu"><span class = "name">SecCloud</span></a>.
-#	Le <a href = "http://jscert.org">projet <span class = "name">JSCert</span></a> a pour but de construire des modèles de <span class = "name">JavaScript</span> en <a href = "http://coq.inria.fr"><span class = "name">Coq</span></a> et de concevoir des outils d’analyses automatiques basés sur ces modèles formels.
+#	Le <a href = "http://jscert.org">projet <span class = "name">JSCert</span></a> a pour but de construire des modèles de <span class = "name">JavaScript</span> en <a href = "http://coq.inria.fr"><span class = "name">Coq/Rocq</span></a> et de concevoir des outils d’analyses automatiques basés sur ces modèles formels.
 #	Le <a href = "http://seccloud.cominlabs.ueb.eu">projet <span class = "name">SecCloud</span></a> a pour but de concevoir une approche orientée langages de programation pour la définition, l’analyse et l’implémentation d’applications sécurisées développées en <span class = "name">JavaScript</span> ou en des langages similaires.
 #end
 
@@ -194,6 +194,14 @@ https://www.cl.cam.ac.uk/~jp622/
 end
 
 declareAuthor
+lriboulet
+firstName
+Louis
+familyName
+Riboulet
+end
+
+declareAuthor
 mbodin
 firstName
 Martin
@@ -331,11 +339,11 @@ fr
 	<a href = "http://lcs.ios.ac.cn/fm2021/recordings/main_conference/monday/Conrad.mp4">Enregistrement de la présentation</a>
 link
 en
-	<a href = "https://github.com/WasmCert/WasmCert-Coq"><span class = "name">Coq</span> material</a>
+	<a href = "https://github.com/WasmCert/WasmCert-Coq"><span class = "name">Coq/Rocq</span> material</a>
 eo
-	<a href = "https://github.com/WasmCert/WasmCert-Coq"><span class = "name">Coq</span>aj dosieroj</a>
+	<a href = "https://github.com/WasmCert/WasmCert-Coq"><span class = "name">Coq/Rocq</span>aj dosieroj</a>
 fr
-	<a href = "https://github.com/WasmCert/WasmCert-Coq">Fichers <span class = "name">Coq</span></a>
+	<a href = "https://github.com/WasmCert/WasmCert-Coq">Fichers <span class = "name">Coq/Rocq</span></a>
 end
 
 article
@@ -366,11 +374,11 @@ fr
 	<a href = "esplorado/popl19.pdf">Article</a>
 link
 en
-	<a href = "https://gitlab.inria.fr/skeletons/Coq/tree/POPL2019"><span class = "name">Coq</span> material</a>
+	<a href = "https://gitlab.inria.fr/skeletons/Coq/tree/POPL2019"><span class = "name">Coq/Rocq</span> material</a>
 eo
-	<a href = "https://gitlab.inria.fr/skeletons/Coq/tree/POPL2019"><span class = "name">Coq</span>aj dosieroj</a>
+	<a href = "https://gitlab.inria.fr/skeletons/Coq/tree/POPL2019"><span class = "name">Coq/Rocq</span>aj dosieroj</a>
 fr
-	<a href = "https://gitlab.inria.fr/skeletons/Coq/tree/POPL2019">Fichers <span class = "name">Coq</span></a>
+	<a href = "https://gitlab.inria.fr/skeletons/Coq/tree/POPL2019">Fichers <span class = "name">Coq/Rocq</span></a>
 link
 en
 	<a href = "http://skeletons.inria.fr/popl2019/index.html">Companion website</a>
@@ -431,11 +439,11 @@ fr
 	<a href = "esplorado/dls18_slides.pdf">Présentation</a>
 link
 en
-	<a href = "https://github.com/Mbodin/CoqR/releases/tag/DLS2018"><span class = "name">Coq</span> material</a>
+	<a href = "https://github.com/Mbodin/CoqR/releases/tag/DLS2018"><span class = "name">Coq/Rocq</span> material</a>
 eo
-	<a href = "https://github.com/Mbodin/CoqR/releases/tag/DLS2018"><span class = "name">Coq</span>aj dosieroj</a>
+	<a href = "https://github.com/Mbodin/CoqR/releases/tag/DLS2018"><span class = "name">Coq/Rocq</span>aj dosieroj</a>
 fr
-	<a href = "https://github.com/Mbodin/CoqR/releases/tag/DLS2018">Fichers <span class = "name">Coq</span></a>
+	<a href = "https://github.com/Mbodin/CoqR/releases/tag/DLS2018">Fichers <span class = "name">Coq/Rocq</span></a>
 link
 en
 	<a href = "esplorado/dls18.tar.bz2">Paper sources</a>
@@ -489,11 +497,11 @@ fr
 	<a href = "esplorado/cpp15_slides.pdf">Présentation</a>
 link
 en
-	<a href = "http://ajacs.inria.fr/coq/cpp2015/"><span class = "name">Coq</span> material</a>
+	<a href = "http://ajacs.inria.fr/coq/cpp2015/"><span class = "name">Coq/Rocq</span> material</a>
 eo
-	<a href = "http://ajacs.inria.fr/coq/cpp2015/"><span class = "name">Coq</span>aj dosieroj</a>
+	<a href = "http://ajacs.inria.fr/coq/cpp2015/"><span class = "name">Coq/Rocq</span>aj dosieroj</a>
 fr
-	<a href = "http://ajacs.inria.fr/coq/cpp2015/">Fichers <span class = "name">Coq</span></a>
+	<a href = "http://ajacs.inria.fr/coq/cpp2015/">Fichers <span class = "name">Coq/Rocq</span></a>
 link
 en
 	<a href = "esplorado/cpp15.tar.bz2">Paper sources</a>
@@ -637,6 +645,44 @@ eo
 Babilkongresoj
 fr
 Colloques
+end
+
+article
+conference
+JFLA
+conferenceLong
+Journées Francophones des Langages Applicatifs
+year
+2025
+name
+Typechecking of Overloading in Programming Languages and Mechanized Mathematics
+author
+achargueraud
+author
+mbodin
+author
+lriboulet
+link
+en
+	<a href = "esplorado/jfla25.pdf">Full text</a>
+eo
+	<a href = "esplorado/jfla25.pdf">Artikolo</a>
+fr
+	<a href = "esplorado/jfla25.pdf">Article</a>
+link
+en
+	<a href = "esplorado/jfla25.tar.xz">Paper sources</a>
+eo
+	<a href = "esplorado/jfla25.tar.xz">Artikolfontoj</a>
+fr
+	<a href = "esplorado/jfla25.tar.xz">Sources de l’article</a>
+link
+en
+	<a href = "https://chargueraud.org/research/2025/overloading/proto.php">Prototype</a>
+eo
+	<a href = "https://chargueraud.org/research/2025/overloading/proto.php">Prototipo</a>
+fr
+	<a href = "https://chargueraud.org/research/2025/overloading/proto.php">Prototype</a>
 end
 
 article
@@ -1110,13 +1156,13 @@ end
 #description
 #en
 #	An internship I’ve done with <a href = "http://people.rennes.inria.fr/Alan.Schmitt/"><span class = "name">Alan Schmitt</span></a> and <a href = "http://www.irisa.fr/celtique/jensen/"><span class = "name">Thomas Jensen</span></a> in <span class = "town">Rennes</span>.
-#	I’ve made a <span class = "name">JavaScript</span> interpreter proven correct in <span class = "name">Coq</span>.
+#	I’ve made a <span class = "name">JavaScript</span> interpreter proven correct in <span class = "name">Coq/Rocq</span>.
 #eo
 #	Interniĝo farita kun <a href = "http://people.rennes.inria.fr/Alan.Schmitt/"><span class = "name">Alan Schmitt</span></a> kaj <a href = "http://www.irisa.fr/celtique/jensen/"><span class = "name">Thomas Jensen</span></a> en <span class = "town">Rennes</span>.
-#	Mi faritis interpretiston de <span class = "name">Javaskripto</span> pruvitan korektan per <span class = "name">Coq</span>.
+#	Mi faritis interpretiston de <span class = "name">Javaskripto</span> pruvitan korektan per <span class = "name">Coq/Rocq</span>.
 #fr
 #	Un stage que j’ai fait sous la tutelle d’<a href = "http://people.rennes.inria.fr/Alan.Schmitt/"><span class = "name">Alan Schmitt</span></a> et de <a href = "http://www.irisa.fr/celtique/jensen/"><span class = "name">Thomas Jensen</span></a> dans la belle ville de <span class = "town">Rennes</span>.
-#	J’y ai créé un interpréteur <span class = "name">JavaScript</span> prouvé correct en <span class = "name">Coq</span>.
+#	J’y ai créé un interpréteur <span class = "name">JavaScript</span> prouvé correct en <span class = "name">Coq/Rocq</span>.
 #link
 #en
 #	<a href = "M2/stage/rapport.pdf">Report</a>
@@ -1139,13 +1185,13 @@ end
 #description
 #en
 #	An internship I’ve done with <a href = "http://www.cs.vu.nl/~diem/"><span class = "name">Dimitri Hendriks</span></a> and <a href = "http://joerg.endrullis.de/"><span class = "name">Jörg Endrullis</span></a> in <span class = "town">Amsterdam</span>.
-#	The idea was to analysis streams and other coinductive types in <span class = "name">Coq</span> using rewriting reasoning.
+#	The idea was to analysis streams and other coinductive types in <span class = "name">Coq/Rocq</span> using rewriting reasoning.
 #eo
 #	Interniĝo farita kun <a href = "http://www.cs.vu.nl/~diem/"><span class = "name">Dimitri Hendriks</span></a> kaj <a href = "http://joerg.endrullis.de/"><span class = "name">Jörg Endrullis</span></a> en <span class = "town">Amsterdam</span>.
-#	Ĝia ideo estis analizi fluojn kaj alterajn coinduktajn tipojn en <span class = "name">Coq</span> per reverkadaj rezonadoj.
+#	Ĝia ideo estis analizi fluojn kaj alterajn coinduktajn tipojn en <span class = "name">Coq/Rocq</span> per reverkadaj rezonadoj.
 #fr
 #	Un stage que j’ai fait avec <a href = "http://www.cs.vu.nl/~diem/"><span class = "name">Dimitri Hendriks</span></a> and <a href = "http://joerg.endrullis.de/"><span class = "name">Jörg Endrullis</span></a> à <span class = "town">Amsterdam</span>.
-#	Dans l’idée, je devais transformer automatiquement des preuves de réécriture sur des objets inductifs en des preuves <span class = "name">Coq</span> correctes.
+#	Dans l’idée, je devais transformer automatiquement des preuves de réécriture sur des objets inductifs en des preuves <span class = "name">Coq/Rocq</span> correctes.
 #link
 #en
 #	<a href = "M1/stages/2/rapport.v.pdf">Report</a>
@@ -1302,18 +1348,18 @@ fr
 	<a href = "esplorado/MathC2plus22.tar.xz">Sources</a>
 link
 en
-	<a href = "https://gitlab.inria.fr/mbodin1/math-coq-tests/-/blob/master/MathC2plus/coq/puissances.v"><span class = "name">Coq</span> file (<span class = "name">Sophie Germain</span>’s numbers)</a>
+	<a href = "https://gitlab.inria.fr/mbodin1/math-coq-tests/-/blob/master/MathC2plus/coq/puissances.v"><span class = "name">Coq/Rocq</span> file (<span class = "name">Sophie Germain</span>’s numbers)</a>
 eo
-	<a href = "https://gitlab.inria.fr/mbodin1/math-coq-tests/-/blob/master/MathC2plus/coq/puissances.v"><span class = "name">Coq</span>a dosiero pri la numeroj de <span class = "name">Sophie Germain</span></a>
+	<a href = "https://gitlab.inria.fr/mbodin1/math-coq-tests/-/blob/master/MathC2plus/coq/puissances.v"><span class = "name">Coq/Rocq</span>a dosiero pri la numeroj de <span class = "name">Sophie Germain</span></a>
 fr
-	<a href = "https://gitlab.inria.fr/mbodin1/math-coq-tests/-/blob/master/MathC2plus/coq/puissances.v">Fichier <span class = "name">Coq</span> (Nombres de <span class = "name">Sophie Germain</span>)</a>
+	<a href = "https://gitlab.inria.fr/mbodin1/math-coq-tests/-/blob/master/MathC2plus/coq/puissances.v">Fichier <span class = "name">Coq/Rocq</span> (Nombres de <span class = "name">Sophie Germain</span>)</a>
 link
 en
-	<a href = "https://gitlab.inria.fr/agirault/cours-math-c2-plus/-/blob/main/enfants-coq/enfants.v"><span class = "name">Coq</span> file (five children’s puzzle)</a>
+	<a href = "https://gitlab.inria.fr/agirault/cours-math-c2-plus/-/blob/main/enfants-coq/enfants.v"><span class = "name">Coq/Rocq</span> file (five children’s puzzle)</a>
 eo
-	<a href = "https://gitlab.inria.fr/agirault/cours-math-c2-plus/-/blob/main/enfants-coq/enfants.v"><span class = "name">Coq</span>a dosiero pri la enigmo de la kvin infanoj</a>
+	<a href = "https://gitlab.inria.fr/agirault/cours-math-c2-plus/-/blob/main/enfants-coq/enfants.v"><span class = "name">Coq/Rocq</span>a dosiero pri la enigmo de la kvin infanoj</a>
 fr
-	<a href = "https://gitlab.inria.fr/agirault/cours-math-c2-plus/-/blob/main/enfants-coq/enfants.v">Fichier <span class = "name">Coq</span> (problème des cinq enfants)</a>
+	<a href = "https://gitlab.inria.fr/agirault/cours-math-c2-plus/-/blob/main/enfants-coq/enfants.v">Fichier <span class = "name">Coq/Rocq</span> (problème des cinq enfants)</a>
 end
 
 item

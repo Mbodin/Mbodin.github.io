@@ -25,27 +25,27 @@ end
 description
 en
 	I currently work with the <a href = "https://irem.univ-grenoble-alpes.fr/"><span class = "name">IREMI</span></a> within the <a href = "https://www.inria.fr/en/liberabaci"></span class = "name">LiberAbaci</span></a> project.
-	The goal is to understand how to design mathematics courses including <a href = "http://coq.inria.fr"><span class = "name">Coq/Rocq</span>-based tutoriels, by working with mathematics teachers, for mathematics students (and not computer sciences’s).
+	The goal is to understand how to design mathematics courses including <a href = "https://rocq-prover.org/"><span class = "name">Coq/Rocq</span>-based tutoriels, by working with mathematics teachers, for mathematics students (and not computer sciences’s).
 eo
 	Mi nuntempe laboras kun la <a href = "https://irem.univ-grenoble-alpes.fr/"><span class = "name">IREMI</span></a> pere de la projekto <a href = "https://www.inria.fr/liberabaci"></span class = "name">LiberAbaci</span></a>.
-	La celo de tiu projekto temas pri kompreni kiel krei matematikajn kursojn parte-bazitaj en <a href = "http://coq.inria.fr"><span class = "name">Coq/Rocq</span>, laborante kun matematikaj instruistoj, kaj celante matematikajn studentojn (kaj ne komputikajn).
+	La celo de tiu projekto temas pri kompreni kiel krei matematikajn kursojn parte-bazitaj en <a href = "https://rocq-prover.org/"><span class = "name">Coq/Rocq</span>, laborante kun matematikaj instruistoj, kaj celante matematikajn studentojn (kaj ne komputikajn).
 fr
 	Je travaille actuellement avec l’<a href = "https://irem.univ-grenoble-alpes.fr/"><span class = "name">IREMI</span></a> dans le cadre du projet <a href = "https://www.inria.fr/fr/liberabaci"></span class = "name">LiberAbaci</span></a>.
-	Le projet consiste à comprendre comment concevoir des cours de mathématiques incluant des TPs <a href = "http://coq.inria.fr"><span class = "name">Coq/Rocq</span>, en partenariat avec des professeurs de mathématiques, le tout dans un cursus mathématique (et non informatique).
+	Le projet consiste à comprendre comment concevoir des cours de mathématiques incluant des TPs <a href = "https://rocq-prover.org/"><span class = "name">Coq/Rocq</span>, en partenariat avec des professeurs de mathématiques, le tout dans un cursus mathématique (et non informatique).
 end
 
 #description
 #en
 #	I have been part of <a href = "http://jscert.org">the <span class = "name">JSCert</span></a> and <a href = "http://www.seccloud.cominlabs.ueb.eu">the <span class = "name">SecCloud</span></a> projects.
-#	The <a href = "http://jscert.org">the <span class = "name">JSCert</span> project</a> aims to build models of <span class = "name">JavaScript</span> in <a href = "http://coq.inria.fr">the <span class = "name">Coq/Rocq</span> proof assistant</a> and to design automated tools based on those semantics.
+#	The <a href = "http://jscert.org">the <span class = "name">JSCert</span> project</a> aims to build models of <span class = "name">JavaScript</span> in <a href = "https://rocq-prover.org/">the <span class = "name">Coq/Rocq</span> proof assistant</a> and to design automated tools based on those semantics.
 #	The <a href = "http://seccloud.cominlabs.ueb.eu">the <span class = "name">SecCloud</span> project</a> aims to provide a comprehensive language-based approach to the definition, analysis and implementation of secure applications developed using <span class = "name">JavaScript</span> and similar languages.
 #eo
 #	Mi estis partoprenanto de la projektoj <a href = "http://jscert.org"><span class = "name">JSCert</span></a> kaj <a href = "http://www.seccloud.cominlabs.ueb.eu"><span class = "name">SecCloud</span></a>.
-#	La <a href = "http://jscert.org">projekto <span class = "name">JSCert</span></a> celas al konstrui modelojn de <span class = "name">Javaskripto</span> en <a href = "http://coq.inria.fr">la pruvhelpilo <span class = "name">Coq/Rocq</span></a> kaj konstrui aŭtomatajn ilojn purvatajn per tiuj semantikoj.
+#	La <a href = "http://jscert.org">projekto <span class = "name">JSCert</span></a> celas al konstrui modelojn de <span class = "name">Javaskripto</span> en <a href = "https://rocq-prover.org/">la pruvhelpilo <span class = "name">Coq/Rocq</span></a> kaj konstrui aŭtomatajn ilojn purvatajn per tiuj semantikoj.
 #	La <a href = "http://seccloud.cominlabs.ueb.eu">projekto <span class = "name">SecCloud</span></a> celas ellabori lingvaĵbazajn laborgvidojn por la difino, analizo kaj realigo de sekuraj programaĵoj ellaboritaj per <span class = "name">Javaskripto</span> aŭ similaj lingvaĵoj.
 #fr
 #	J’ai fait partie des projets <a href = "http://jscert.org"><span class = "name">JSCert</span></a> et <a href = "http://www.seccloud.cominlabs.ueb.eu"><span class = "name">SecCloud</span></a>.
-#	Le <a href = "http://jscert.org">projet <span class = "name">JSCert</span></a> a pour but de construire des modèles de <span class = "name">JavaScript</span> en <a href = "http://coq.inria.fr"><span class = "name">Coq/Rocq</span></a> et de concevoir des outils d’analyses automatiques basés sur ces modèles formels.
+#	Le <a href = "http://jscert.org">projet <span class = "name">JSCert</span></a> a pour but de construire des modèles de <span class = "name">JavaScript</span> en <a href = "https://rocq-prover.org/"><span class = "name">Coq/Rocq</span></a> et de concevoir des outils d’analyses automatiques basés sur ces modèles formels.
 #	Le <a href = "http://seccloud.cominlabs.ueb.eu">projet <span class = "name">SecCloud</span></a> a pour but de concevoir une approche orientée langages de programation pour la définition, l’analyse et l’implémentation d’applications sécurisées développées en <span class = "name">JavaScript</span> ou en des langages similaires.
 #end
 

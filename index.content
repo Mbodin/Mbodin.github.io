@@ -25,19 +25,19 @@ end
 description
 en
 	My research interests are mainly around programming languages design, formalisations, and analyses.
-	I work with the <a href = "http://coq.inria.fr"><span class = "name">Coq/Rocq</span> proof assistant</a>, which provides strong guarantees to the softwares I build.
+	I work with the <a href = "https://rocq-prover.org/"><span class = "name">Coq/Rocq</span> proof assistant</a>, which provides strong guarantees to the softwares I build.
 	I am especially interested in applying formal methods to real-world programming languages.
 	Such languages usually come with many special (possibly unexpected) behaviours, which can lead to serious programming mistakes.
 	I believe that formal methods can help programmers detect and avoid these mistakes.
 eo
 	Mia esploradinteresoj ĉefe fokusiĝas pri programlingvaĵaj elkreoj, formalizigoj, kaj analizoj.
-	Mi laboras kun la <a href = "http://coq.inria.fr"><span class = "name">Coq/Rocq</span> pruvilo</a>, kiu alte fidigas la programaĵojn kiujn mi kreas.
+	Mi laboras kun la <a href = "https://rocq-prover.org/"><span class = "name">Coq/Rocq</span> pruvilo</a>, kiu alte fidigas la programaĵojn kiujn mi kreas.
 	Mi specife interesiĝas pri apliki formalajn metodojn al industrie uzitajn programlingvaĵojn.
 	Tiaj lingvaĵojn elmontremas specialajn (kaj kelkfoje neatenditajn) komportamentojn, kiuj povas konduki al gravaj programeraroj.
 	Mi pensas ke formalaj metodoj povas helpi programistojn ekscii kaj eviti tiajn erarojn.
 fr
 	Mes thèmes de recherches se concentrent majoritairement autour de la conception, la formalisation, et les analyses de langages de programmation.
-	Je travaille avec l’<a href = "http://coq.inria.fr">assistant de preuve <span class = "name">Coq/Rocq</span></a>, qui garantit un haut niveau de confiance aux programmes que je conçois.
+	Je travaille avec l’<a href = "https://rocq-prover.org/">assistant de preuve <span class = "name">Coq/Rocq</span></a>, qui garantit un haut niveau de confiance aux programmes que je conçois.
 	Je suis particulièrement intéressé par l’application des méthodes formelles aux langages de programmation fréquemment utilisés en industrie.
 	Ces langages ont souvent des comportements spéciaux parfois inattendus, qui peuvent mener à des erreurs de programmation importantes.
 	Je pense que les méthodes formelles peuvent aider les programmeurs à détecter et éviter ces erreurs.
@@ -46,13 +46,13 @@ end
 description
 en
 	I currently work with the <a href = "https://irem.univ-grenoble-alpes.fr/"><span class = "name">IREM</span></a> within the <a href = "https://www.inria.fr/en/liberabaci"></span class = "name">LiberAbaci</span></a> project.
-	The goal is to understand how to design mathematics courses including <a href = "http://coq.inria.fr"><span class = "name">Coq/Rocq</span>-based tutoriels, by working with mathematics teachers, for mathematics students (and not computer sciences’s).
+	The goal is to understand how to design mathematics courses including <a href = "https://rocq-prover.org/"><span class = "name">Coq/Rocq</span>-based tutoriels, by working with mathematics teachers, for mathematics students (and not computer sciences’s).
 eo
 	Mi nuntempe laboras kun la <a href = "https://irem.univ-grenoble-alpes.fr/"><span class = "name">IREM</span></a> pere de la projekto <a href = "https://www.inria.fr/liberabaci"></span class = "name">LiberAbaci</span></a>.
-	La celo de tiu projekto temas pri kompreni kiel krei matematikajn kursojn parte-bazitaj en <a href = "http://coq.inria.fr"><span class = "name">Coq/Rocq</span>, laborante kun matematikaj instruistoj, kaj celante matematikajn studentojn (kaj ne komputikajn).
+	La celo de tiu projekto temas pri kompreni kiel krei matematikajn kursojn parte-bazitaj en <a href = "https://rocq-prover.org/"><span class = "name">Coq/Rocq</span>, laborante kun matematikaj instruistoj, kaj celante matematikajn studentojn (kaj ne komputikajn).
 fr
 	Je travaille actuellement avec l’<a href = "https://irem.univ-grenoble-alpes.fr/"><span class = "name">IREM</span></a> dans le cadre du projet <a href = "https://www.inria.fr/fr/liberabaci"></span class = "name">LiberAbaci</span></a>.
-	Le projet consiste à comprendre comment concevoir des cours de mathématiques incluant des TPs <a href = "http://coq.inria.fr"><span class = "name">Coq/Rocq</span>, en partenariat avec des professeurs de mathématiques, le tout dans un cursus mathématique (et non informatique).
+	Le projet consiste à comprendre comment concevoir des cours de mathématiques incluant des TPs <a href = "https://rocq-prover.org/"><span class = "name">Coq/Rocq</span>, en partenariat avec des professeurs de mathématiques, le tout dans un cursus mathématique (et non informatique).
 end
 
 description

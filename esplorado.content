@@ -252,6 +252,14 @@ http://www.doc.ic.ac.uk/~maffeis/
 end
 
 declareAuthor
+tbaleras
+firstName
+Timothé
+familyName
+Baleras
+end
+
+declareAuthor
 tdiaz
 firstName
 Tomás
@@ -267,6 +275,14 @@ familyName
 Jensen
 directLink
 https://people.rennes.inria.fr/Thomas.Jensen/
+end
+
+declareAuthor
+ucomignani
+firstName
+Ugo
+familyName
+Comignani
 end
 
 declareAuthor
@@ -645,6 +661,58 @@ eo
 Babilkongresoj
 fr
 Colloques
+end
+
+article
+conference
+JFLA
+conferenceLong
+Journées Francophones des Langages Applicatifs
+year
+2026
+name
+COSMetyc : OpenStreetMap en OCaml
+author
+tbaleras
+author
+mbodin
+author
+ucomignani
+link
+en
+	<a href = "esplorado/jfla26.pdf">Full text</a>
+eo
+	<a href = "esplorado/jfla26.pdf">Artikolo</a>
+fr
+	<a href = "esplorado/jfla26.pdf">Article</a>
+link
+en
+	<a href = "esplorado/jfla26_slides.pdf">Slides</a>
+eo
+	<a href = "esplorado/jfla26_slides.pdf">Diapozitivoj</a>
+fr
+	<a href = "esplorado/jfla26_slides.pdf">Présentation</a>
+link
+en
+	<a href = "esplorado/jfla26.tar.xz">Paper sources</a>
+eo
+	<a href = "esplorado/jfla26.tar.xz">Artikolfontoj</a>
+fr
+	<a href = "esplorado/jfla26.tar.xz">Sources de l’article</a>
+link
+en
+	<a href = "esplorado/jfla26_slides.tar.xz">Slides sources</a>
+eo
+	<a href = "esplorado/jfla26_slides.tar.xz">Diapozitivfontoj</a>
+fr
+	<a href = "esplorado/jfla26_slides.tar.xz">Sources de la présentation</a>
+link
+en
+	<a href = "https://gitlab.inria.fr/mbodin1/logic-osm">Library</a>
+eo
+	<a href = "https://gitlab.inria.fr/mbodin1/logic-osm">Biblioteko</a>
+fr
+	<a href = "https://gitlab.inria.fr/mbodin1/logic-osm">Bibliothèque</a>
 end
 
 article

@@ -21,6 +21,7 @@
 \usepackage{geometry}
 \usepackage{url}
 \usepackage{oldgerm}
+\usepackage{longtable}
 
 \usepackage[inline]{enumitem}
 
@@ -52,8 +53,8 @@
 
 \newenvironment{datecvsection}[1]%
                {\subsection*{#1}%
-                 \noindent \begin{tabular}{@{}p{\annee}p{\texte}@{}}}
-               {\end{tabular}}
+                 \noindent \begin{longtable}{@{}p{\annee}p{\texte}@{}}}
+               {\end{longtable}}
 
 \newenvironment{cvsection}[1]%
                {\subsection*{#1}}
@@ -94,7 +95,7 @@
 \parbox[c]{.5\textwidth}
 {
   \noindent
-	30, rue de Stalingrad, \\
+	6, rue Jacques Thibaud, \\
 	38~100 Grenoble
 }
 \parbox[c]{.5\textwidth}
@@ -110,7 +111,7 @@
 
 \begin{datecvsection}{Positions}
 
-		2020– & Chargé de recherche dans l’équipe \placeName{Spades}, à l’\placeName{Inria} de \placeName{Grenoble}. \\
+		2020– & Chargé de recherche dans l’équipe \placeName{Spades}, à l’\placeName{Inria} \placeName{Grenoble}—\placeName{Alpes}. \\
 
     2018–2020 & Postdoc à l’\en{\placeName{Imperial College}}, à \placeName{Londres} (\placeName{Royaume-Uni}) sur les fondations théoriques de l’analyse de langages de programmation complexes. \\
 
@@ -137,11 +138,11 @@
 \begin{itemize}
    \item Français langue maternelle,
    \item Très bon niveau d’espéranto,
-   \item Bas niveau d’espagnol,
+   \item Notions d’espagnol,
 \end{itemize}}
 \parbox{.5\textwidth}{
 \begin{itemize}
-   \item Bon niveau d’anglais,
+   \item Très bon niveau d’anglais,
 	 \item Niveau moyen de portugais (Brésil),
    \item Notions d’allemand.
 \end{itemize}
@@ -149,6 +150,8 @@
 \end{cvsection}
 
 \begin{datecvsection}{Conférences}
+
+	2021 & Conrad~\familyName{Watt}, Xiaojia~\familyName{Rao}, Jean~\familyName{Pichon-Pharabod}, Martin~\familyName{Bodin}, et Philippa~\familyName{Gardner}, \textit{Two Mechanisations of WebAssembly 1.0}. FM. \\
 
   2019 & Martin~\familyName{Bodin}, Philippa~\familyName{Gardner}, Thomas~\familyName{Jensen}, et Alan~\familyName{Schmitt}. \textit{Skeletal Semantics et Their Interpretations}. À POPL. \\
 
@@ -166,27 +169,57 @@
 
 \begin{datecvsection}{Colloques}
 
+	2026 & Timothé~\familyName{Baleras}, Martin~\familyName{Bodin}, et Ugo~\familyName{Comignani}, \textit{COSMetyc : OpenStreetMap en OCaml}. Aux JFLA. \\
+
+	2025 & Arthur~\familyName{Charguéraud}, Martin~\familyName{Bodin}, et Louis~\familyName{Riboulet}, \textit{Typechecking of Overloading in Programming Languages and Mechanized Mathematics}. Aux JFLA. \\
+
+	2024 & Emmanuel~\familyName{Beffara}, Martin~\familyName{Bodin}, et Rémi~\familyName{Molinier}, \textit{Des Tableaux de variation interactifs}. Au Séminaire de l'IREMI. \\
+
+	2024 & Emmanuel~\familyName{Beffara} et Martin~\familyName{Bodin}, \textit{Un jeu de plateau pour comprendre la dualité en logique}. À Adjectif. \\
+
+	2023 & Emmanuel~\familyName{Beffara}, Martin~\familyName{Bodin}, Nadine~\familyName{Mandran}, et Rémi~\familyName{Molinier}, \textit{Instrumentation de l’association de registres sémiotiques dans un assistant de preuve}, À EIAH. \\
+
+	2023 & Jean~\familyName{Abou~Samra}, Martin~\familyName{Bodin}, et Yannick~\familyName{Zakowski}, \textit{Effectful Programming across Heterogeneous Computations — Work in Progress}. Aux JFLA. \\
+
+	2022 & Martin~\familyName{Bodin}, \textit{Les Assistants de preuve : l’exemple de Coq}. Au Séminaire de l'IREM. \\
+
+	2019 & Martin~\familyName{Bodin}, Philippa~\familyName{Gardner}, Thomas~\familyName{Jensen}, et Alan~\familyName{Schmitt}, \textit{Skeletal Semantics}. Au \textit{Verified Software Workshop}. \\
+
   2019 & Martin~\familyName{Bodin}, Tomás~\familyName{Diaz}, et Éric~\familyName{Tanter}. \textit{A Trustworthy Mechanized Formalization of R}. À FMfSS. \\
 
   2018 & Martin~\familyName{Bodin}. \textit{A Coq Formalisation of a Core of R}. À CoqPL. \\
 
-  2016 & Martin~\familyName{Bodin}, Thomas~\familyName{Jensen}, et Alan~\familyName{Schmitt}. \textit{An Abstract Separation Logic for Interlinked Extensible Records}. À JFLA. \\
+  2016 & Martin~\familyName{Bodin}, Thomas~\familyName{Jensen}, et Alan~\familyName{Schmitt}. \textit{An Abstract Separation Logic for Interlinked Extensible Records}. Aux JFLA. \\
 
-  2014 & Martin~\familyName{Bodin}, Thomas~\familyName{Jensen}, et Alan~\familyName{Schmitt}. \textit{Certified Abstract Interpretation with Pretty-Big-Step Semantics}. À JFLA. \\
+  2014 & Martin~\familyName{Bodin}, Thomas~\familyName{Jensen}, et Alan~\familyName{Schmitt}. \textit{Certified Abstract Interpretation with Pretty-Big-Step Semantics}. Aux JFLA. \\
 
   2013 & Martin~\familyName{Bodin}, Thomas~\familyName{Jensen}, et Alan~\familyName{Schmitt}. \textit{Pretty-big-step-semantics-based Certified Abstract Interpretation (Preliminary version)}. À \textit{Semantics, Abstract Interpretation, et Reasoning about Programs: Essays Dedicated to David A. \textsc{Schmidt}} \\ % on the Occasion of his Sixtieth Birthday}, volume 129 of EPTCS, pages 360–383. \\
 
-  2013 & Martin~\familyName{Bodin} et Alan~\familyName{Schmitt}. \textit{A Certified JavaScript Interpreter}. À JFLA. \\
+  2013 & Martin~\familyName{Bodin} et Alan~\familyName{Schmitt}. \textit{A Certified JavaScript Interpreter}. Aux JFLA. \\
 
 \end{datecvsection}
 
 \begin{datecvsection}{Autres Publications}
 
+		2025— & Travaux communs du groupe \textit{Informatique de l'école jusqu'au lycée} de l'IREMI de \placeName{Grenoble}. \\
+
+		2024 & Travaux communs du groupe \textit{Raisonnement, Logique, Situations de recherche pour la classe} de l'IREM de \placeName{Grenoble}. \\
+
     2016 & Martin~\familyName{Bodin}. \textit{Sémantique et analyses certifiées de JavaScript}. Thèse. \\
 
 \end{datecvsection}
 
+% \newpage
+
 \begin{datecvsection}{Prises de responsabilité}
+
+		2026 & Membre du comité d'organisation de la conférence Didapro. \\
+
+		2024– & Correspondant local pour le programme \textit{Chiche!} \\
+
+		2024 & Membre du comité de programme pour VSTTE. \\
+
+		2021 & Membre du jury de POPL Student Research Competition. \\
 
     2019 & Membre du comité d’évaluation des artéfacts pour POPL. \\
 
@@ -194,15 +227,21 @@
 
 \end{datecvsection}
 
-\begin{datecvsection}{Encadrement}
-
-    2020 & Rao~\familyName{Xiaojia}, co-encadrés avec Philippa~\familyName{Gardner} \\
-    2019 & Benjamin~\familyName{Gunton}, co-encadré avec Philippa~\familyName{Gardner} \\
-    2017–2018 & Tomás~\familyName{Diaz}, co-encadré avec Éric~\familyName{Tanter} \\
-
-\end{datecvsection}
+%\begin{datecvsection}{Encadrement}
+%
+%		2020 & Rao~\familyName{Xiaojia}, co-encadré avec Philippa~\familyName{Gardner} \\
+%		2019 & Benjamin~\familyName{Gunton}, co-encadré avec Philippa~\familyName{Gardner} \\
+%		2017–2018 & Tomás~\familyName{Diaz}, co-encadré avec Éric~\familyName{Tanter} \\
+%
+%\end{datecvsection}
 
 \begin{datecvsection}{Enseignement}
+
+		2024–2025 & Langage et traducteurs, Programmation Fonctionnelle. Travaux dirigés de M1 à \placeName{Polytech Grenoble}. \\
+
+		2021–2023 & Théorie des langages. Travaux dirigés de L3 à \placeName{Grenoble INP}. \\
+		2021–2026 & Modèles de calculs. Travaux dirigés de L3 à l’\placeName{UGA}. \\
+		2021–2022 & Projet génie logiciel. Projet de M1 à l’\placeName{ENSIMAG}. \\
 
     2019 & Separation Logic. Travaux dirigés de M1 à l’\en{\placeName{Imperial College}}. \\
 
@@ -220,51 +259,51 @@
 
 \end{datecvsection}
 
-\begin{datecvsection}{Autres expériences}
+%\begin{datecvsection}{Autres expériences}
+%
+%	2013–2016 & Membre du projet \textsc{SecCloud}~:  \url{http://www.seccloud.cominlabs.ueb.eu/} \\
+%
+%	2012–2016 & Membre du projet \textsc{JsCert}~:  \url{http://jscert.org/} \\
+%
+%		2012 & Stage à \placeName{Inria} (\placeName{Rennes}) avec Alan~\familyName{Schmitt} et Thomas~\familyName{Jensen}~:
+%	\en{\textit{A Certified JavaScript Interpreter}} \\
+%
+%		2011 & Stage à \placeName{Vrĳe Universiteit} (\placeName{Amsterdam}) avec Dimitri~\familyName{Hendriks} et Jörg~\familyName{Endrullis}~:
+%	\en{\textit{Proving Stream Equalities in Coq}} \\
+%
+%		2011 & Stage à \placeName{PPS} (\placeName{Paris}) avec Stéphane~\familyName{Gimenez} et Christine~\familyName{Tasson}~:
+%	\en{\textit{Sequentialization of Proof Nets to Structures}} \\
+%
+%	2010 & Participation au projet \textsc{Cartomancer}~:  \url{http://sourceforge.net/projects/cartomancer/} \\
+%
+%		2010 & Stage à \placeName{Vérimag} (\placeName{Grenoble}) avec David~\familyName{Monniaux}~:
+%	\textit{Détection de modes de fonctionnements d’un programme \textsc{Lustre}} \\
+%
+%\end{datecvsection}
 
-	2013–2016 & Membre du projet \textsc{SecCloud}~:  \url{http://www.seccloud.cominlabs.ueb.eu/} \\
+%\begin{itemcvsection}{Compétences informatiques}
+%
+%	\item Bon niveau dans les langages de programmation suivants~:  Rocq, OCaml, JavaScript, \LaTeX, etc.
+%	\item Familier avec le système d’exploitation GNU/Linux.
+%	\item Familier avec les logiciels Vim, Git, Inkscape, etc.
+%
+%\end{itemcvsection}
 
-	2012–2016 & Membre du projet \textsc{JsCert}~:  \url{http://jscert.org/} \\
-
-    2012 & Stage à \placeName{Inria} (\placeName{Rennes}) avec Alan~\familyName{Schmitt} et Thomas~\familyName{Jensen}~:
-	\en{\textit{A Certified JavaScript Interpreter}} \\
-
-    2011 & Stage à \placeName{Vrĳe Universiteit} (\placeName{Amsterdam}) avec Dimitri~\familyName{Hendriks} et Jörg~\familyName{Endrullis}~:
-	\en{\textit{Proving Stream Equalities in Coq}} \\
-
-    2011 & Stage à \placeName{PPS} (\placeName{Paris}) avec Stéphane~\familyName{Gimenez} et Christine~\familyName{Tasson}~:
-	\en{\textit{Sequentialization of Proof Nets to Structures}} \\
-
-	2010 & Participation au projet \textsc{Cartomancer}~:  \url{http://sourceforge.net/projects/cartomancer/} \\
-
-    2010 & Stage à \placeName{Vérimag} (\placeName{Grenoble}) avec David~\familyName{Monniaux}~:
-	\textit{Détection de modes de fonctionnements d’un programme \textsc{Lustre}} \\
-
-\end{datecvsection}
-
-\begin{itemcvsection}{Compétences informatiques}
-
-  \item Bon niveau dans les langages de programmation suivants~:  Coq, OCaml, JavaScript, \LaTeX, etc.
-  \item Familier avec le système d’exploitation GNU/Linux.
-  \item Familier avec les logiciels Vim, Git, Inkscape, etc.
-
-\end{itemcvsection}
-
-\begin{datecvsection}{Vie associative}
-
-		2017 & Rencontres espérantistes à \placeName{Santiago}. \\
-		2014–2015 & Membre actif d’{Espéranto-Rennes}. \\
-		2012 & Trésorier de l’association de théâtre l’{ASCREB} à \placeName{Rennes}. \\
-		2010 & Secrétaire de l’association \textsc{INFO-ENS} à \placeName{Lyon}. \\
-
-\end{datecvsection}
-
-\begin{itemcvsection}{Intérêts personnels}
-
-  \item Jeux de plateaux, de cartes, de rôles, d’improvisation, soirées enquêtes, etc.
-  \item Activités espérantistes.
-
-\end{itemcvsection}
+%\begin{datecvsection}{Vie associative}
+%
+%		2017 & Rencontres espérantistes à \placeName{Santiago}. \\
+%		2014–2015 & Membre actif d’{Espéranto-Rennes}. \\
+%		2012 & Trésorier de l’association de théâtre l’{ASCREB} à \placeName{Rennes}. \\
+%		2010 & Secrétaire de l’association \textsc{INFO-ENS} à \placeName{Lyon}. \\
+%
+%\end{datecvsection}
+%
+%\begin{itemcvsection}{Intérêts personnels}
+%
+%	\item Jeux de plateaux, de cartes, de rôles, d’improvisation, soirées enquêtes, etc.
+%	\item Activités espérantistes.
+%
+%\end{itemcvsection}
 
 \end{document}
 
